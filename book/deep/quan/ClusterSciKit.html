@@ -1,0 +1,76 @@
+
+<table class="docutils" border="1">
+  <colgroup>
+    <col width="15%">
+    <col width="16%">
+    <col width="20%">
+    <col width="27%">
+    <col width="22%">
+  </colgroup>
+  <thead valign="bottom">
+  <tr class="row-odd"><th class="head">Method name</th>
+    <th class="head">Parameters</th>
+    <th class="head">Scalability</th>
+    <th class="head">Usecase</th>
+    <th class="head">Geometry (metric used)</th>
+  </tr>
+  </thead>
+  <tbody valign="top">
+  <tr class="row-even"><td><a class="reference internal" href="#k-means"><span class="std std-ref">K-Means</span></a></td>
+    <td>number of clusters</td>
+    <td>Very large <code class="docutils literal"><span class="pre">n_samples</span></code>, medium <code class="docutils literal"><span class="pre">n_clusters</span></code> with
+      <a class="reference internal" href="#mini-batch-kmeans"><span class="std std-ref">MiniBatch code</span></a></td>
+    <td>General-purpose, even cluster size, flat geometry, not too many clusters</td>
+    <td>Distances between points</td>
+  </tr>
+  <tr class="row-odd"><td><a class="reference internal" href="#affinity-propagation"><span class="std std-ref">Affinity propagation</span></a></td>
+    <td>damping, sample preference</td>
+    <td>Not scalable with n_samples</td>
+    <td>Many clusters, uneven cluster size, non-flat geometry</td>
+    <td>Graph distance (e.g. nearest-neighbor graph)</td>
+  </tr>
+  <tr class="row-even"><td><a class="reference internal" href="#mean-shift"><span class="std std-ref">Mean-shift</span></a></td>
+    <td>bandwidth</td>
+    <td>Not scalable with <code class="docutils literal"><span class="pre">n_samples</span></code></td>
+    <td>Many clusters, uneven cluster size, non-flat geometry</td>
+    <td>Distances between points</td>
+  </tr>
+  <tr class="row-odd"><td><a class="reference internal" href="#spectral-clustering"><span class="std std-ref">Spectral clustering</span></a></td>
+    <td>number of clusters</td>
+    <td>Medium <code class="docutils literal"><span class="pre">n_samples</span></code>, small <code class="docutils literal"><span class="pre">n_clusters</span></code></td>
+    <td>Few clusters, even cluster size, non-flat geometry</td>
+    <td>Graph distance (e.g. nearest-neighbor graph)</td>
+  </tr>
+  <tr class="row-even"><td><a class="reference internal" href="#hierarchical-clustering"><span class="std std-ref">Ward hierarchical clustering</span></a></td>
+    <td>number of clusters</td>
+    <td>Large <code class="docutils literal"><span class="pre">n_samples</span></code> and <code class="docutils literal"><span class="pre">n_clusters</span></code></td>
+    <td>Many clusters, possibly connectivity constraints</td>
+    <td>Distances between points</td>
+  </tr>
+  <tr class="row-odd"><td><a class="reference internal" href="#hierarchical-clustering"><span class="std std-ref">Agglomerative clustering</span></a></td>
+    <td>number of clusters, linkage type, distance</td>
+    <td>Large <code class="docutils literal"><span class="pre">n_samples</span></code> and <code class="docutils literal"><span class="pre">n_clusters</span></code></td>
+    <td>Many clusters, possibly connectivity constraints, non Euclidean
+      distances</td>
+    <td>Any pairwise distance</td>
+  </tr>
+  <tr class="row-even"><td><a class="reference internal" href="#dbscan"><span class="std std-ref">DBSCAN</span></a></td>
+    <td>neighborhood size</td>
+    <td>Very large <code class="docutils literal"><span class="pre">n_samples</span></code>, medium <code class="docutils literal"><span class="pre">n_clusters</span></code></td>
+    <td>Non-flat geometry, uneven cluster sizes</td>
+    <td>Distances between nearest points</td>
+  </tr>
+  <tr class="row-odd"><td><a class="reference internal" href="mixture.html#mixture"><span class="std std-ref">Gaussian mixtures</span></a></td>
+    <td>many</td>
+    <td>Not scalable</td>
+    <td>Flat geometry, good for density estimation</td>
+    <td>Mahalanobis distances to  centers</td>
+  </tr>
+  <tr class="row-even"><td><a class="reference internal" href="#birch"><span class="std std-ref">Birch</span></a></td>
+    <td>branching factor, threshold, optional global clusterer.</td>
+    <td>Large <code class="docutils literal"><span class="pre">n_clusters</span></code> and <code class="docutils literal"><span class="pre">n_samples</span></code></td>
+    <td>Large dataset, outlier removal, data reduction.</td>
+    <td>Euclidean distance between points</td>
+  </tr>
+  </tbody>
+</table>
