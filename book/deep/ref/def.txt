@@ -1,0 +1,22 @@
+
+Regularize
+  * Any modification we make to a learning algorithm that is intended to
+    reduce its generalization error but not its training error
+
+  Estimator
+    * Works by trading increased bias for reduced variance
+    * An effective regularizer is one that makes a profitable
+      trade, reducing variance significantly while not overly increasing the bias.
+
+  Generating
+    * We are always trying to fit a square peg (the data generating process) into
+      a round hole (our model family).
+
+  Find
+    * We almost always do find—that the best fitting model (in the sense of minimizing
+      generalization error) is a large model that has been regularized appropriately
+
+  Parameter Norm Penalties
+    * Penalizes only the weights
+    * We do not induce too much variance by leaving the biases unregularized
+    * Regularizing the bias parameters can introduce a significant amount of underfitting

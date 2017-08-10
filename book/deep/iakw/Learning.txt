@@ -1,0 +1,108 @@
+
+
+     The activity of explaining some complex topic. (Generate)
+     The disassembly of a complex topic into simple terms. (Analogies perhaps?) (Decompose)
+     The reconstruction of the topic looking seeking any inconsistencies. (Compose and Validate)
+     The iterative nature of the method. (Iterate and Refine)
+
+Unsupervised
+  CollectData
+    ImplicitCollect
+    EmotionalSpaces
+    Density
+    TextRank
+  FeatureExtract
+    Hashing
+    Term Frequency
+    TextMining
+    Vocabulary
+  LatentVariable
+    ExpectationMax
+    MethodOfMoments
+    Dirichlet
+SemiSupervised
+  TrainData
+    Transducive
+    Inductive
+    Assumptions
+    Smoothness
+  Methods
+    LowDensity
+    GraphBased
+    Heuristics
+    Redundancy
+  Label
+    Propagate
+    Spreading
+    TestData
+  DeepLearning
+    BackPropagation
+    Convolutional
+    Deep Boltzmann
+    Deep Belief
+Supervise
+  ReviewData
+    Interface
+    Intelligence
+    Inference
+  Risk
+    Empirical
+    Structural
+    Noise
+    NonLinearity
+  Attribute
+    Represent
+    Dimensionality
+    Heterogeneity
+    Redundancy
+    Concept
+Reinforce
+  Explore Data
+    EpsilonGreedy
+    Boltzmann
+    Gaussian
+    StateDependent
+  ValueFunction
+    QLearning
+    SARSA
+    FittedQ
+  BlackBox
+    StochasticHill
+    Swarm
+    NaturalEvolution
+    FitnessExpect
+
+RepresentativeIG
+  GreedyLayerWise
+    Unsupervised
+    Pretraining
+  TransferLearning
+    DomainAdaptation
+  Semi-Supervised
+    CausalFactors
+    Disentangling
+  Distributed
+    Representation
+  Exponential
+    GainsFromDepth
+  UnderlyingCauses
+    ProvidingClues
+  Classic
+    PCA
+    Cluster
+    Manifold
+    SparseCoding
+    MultiLinearSubspace
+    DeepLearning
+  Similarity
+    Regress
+    Classify
+    Ranking
+    LocallySensitiveHashing
+    Metric
+  RuleBasedL
+    LearningClassifiers
+    AssociationRuleL
+    ArtificialImmune
+  SparseDictionaryL
+  LearningClassifiers

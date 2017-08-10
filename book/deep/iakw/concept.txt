@@ -1,0 +1,704 @@
+
+ScientificProcess
+
+  ExperimentalDesign
+  Acquistion
+  ROI
+  Analysis
+  Parameterization
+  Modeling
+  Statistics
+  Visualization
+  Archival
+  StudyComparison
+
+    # Machine
+    KMeans:              { study:"Clustering",     icon:"fa-star-o",  css:"ikw-topic", fill:"PWY", coursera:"y", measure:"Centroid"     }
+    GaussianMixture:     { study:"Clustering",     icon:"fa-star-o",  css:"ikw-topic", fill:"PWY", coursera:"y", measure:"Distribution" }
+    PowerIteration:      { study:"Clustering",     icon:"fa-star-o",  css:"ikw-topic", fill:"PWY", coursera:"y", measure:"Spectral"     }
+    LatentDirichlet:     { study:"Clustering",     icon:"fa-star-o",  css:"ikw-topic", fill:"PWY", coursera:"y", measure:"Connectivity" }
+    Density:             { study:"Clustering",     icon:"fa-circle",  css:"ikw-topic", fill:"PWY", coursera:"n", measure:"Density"      }
+    LinearLeastSquares:  { study:"Regression",     icon:"fa-star-o",  css:"ikw-topic", fill:"PWY", coursera:"y" }
+    Logistic:            { study:"Regression",     icon:"fa-star-o",  css:"ikw-topic", fill:"PWY", coursera:"y" }
+    Isotonic:            { study:"Regression",     icon:"fa-star-o",  css:"ikw-topic", fill:"PWY", coursera:"n" }
+    NonLinear:           { study:"Regression",     icon:"fa-circle",  css:"ikw-topic", fill:"PWY", coursera:"n" }
+    FrequentPattern:     { study:"Regression",     icon:"fa-star-o",  css:"ikw-topic", fill:"PWY", coursera:"n" }
+    SupportVector:       { study:"Classify",       icon:"fa-star-o",  css:"ikw-topic", fill:"PWY", coursera:"y" }
+    DecisionTree:        { study:"Classify",       icon:"fa-star-o",  css:"ikw-topic", fill:"PWY", coursera:"n" }
+    RandomForests:       { study:"Classify",       icon:"fa-star-o",  css:"ikw-topic", fill:"PWY", coursera:"n" }
+    NaiveBayes:          { study:"Classify",       icon:"fa-star-o",  css:"ikw-topic", fill:"PWY", coursera:"n" }
+    Ontology:            { study:"Classify",       icon:"fa-th-list", css:"ikw-topic", fill:"PWY"  }
+    Pivot:               { study:"Dimensional",    icon:"fa-star-o",  css:"ikw-topic", fill:"PWY", coursera:"y" }
+    PrincipleComponents: { study:"Dimensional",    icon:"fa-star-o",  css:"ikw-topic", fill:"PWY", coursera:"y" }
+    SingleValueDecom:    { study:"Dimensional",    icon:"fa-star-o",  css:"ikw-topic", fill:"PWY", coursera:"y" }
+    Feature:             { study:"Dimensional",    icon:"fa-star-o",  css:"ikw-topic", fill:"PWY", coursera:"n" }
+    Metadata:            { study:"Dimensional",    icon:"fa-list-ol", css:"ikw-topic", fill:"PWY"  }
+    #RegressEvaluation:   { study:"Regression",     icon:"fa-star-o",  css:"ikw-topic", fill:"PWY", coursera:"n" }
+    #GradientBoostedTrees:{ study:"Classify",       icon:"fa-star-o",  css:"ikw-topic", fill:"PWY", coursera:"n" }
+    #ClassifyEvaluation:  { study:"Classify",       icon:"fa-star-o",  css:"ikw-topic", fill:"PWY", coursera:"n" }
+
+     GradientDescent:  { study:"Algorithms", icon:"fa-star-o",  css:"ikw-topic", fill:"PWY", coursera:"n" }
+     LimitedMemory:    { study:"Algorithms", icon:"fa-star-o",  css:"ikw-topic", fill:"PWY", coursera:"n" }
+     Kernel:           { study:"Algorithms", icon:"fa-circle",  css:"ikw-topic", fill:"PWY", coursera:"n" }
+     CollabFilter:     { study:"Algorithms", icon:"fa-star-o",  css:"ikw-topic", fill:"PWY", coursera:"n" }
+     Constraint:       { study:"Algorithms", icon:"fa-square-o",    css:"ikw-topic", fill:"PWY"  }
+
+
+Regression
+  LinearLeastSquares
+  Logistic
+  Stepwise
+  Misc
+    MultivariateAdaptiveSplines
+    LocallyEstimatedScatterplotSmoothing
+
+Instance-based Algorithms
+  KNearestNeighbour
+  LearningVectorQuantization
+  SelfOrganizingMap
+  LocallyWeightedLearning
+
+Regularization Algorithms
+  RidgeRegression
+  LeastAbsoluteShrinkageAndSelectionOperatorLASSO
+  ElasticNet
+  LeastAngleRegression
+
+DecisionTree
+  ClassificationARegressionTreeCART
+  IterativeDichotomiser3ID3
+  C4.5NndC5.0
+  Chi-squaredAutomaticInteractionDetectionCHAID)
+  DecisionStump
+  M5
+  ConditionalDecisionTrees
+
+Bayesian
+  NaiveBayes
+    Gaussian
+    Multinomial
+  AveragedOneDependenceEstimators
+  BayesianNetwork
+    Belief
+
+Clustering Algorithms
+  KMeans
+  KMedians
+  ExpectationMaximization
+  Hierarchical
+
+AssociationRuleLearning
+  Apriori
+  Eclat
+
+Neural
+  Perceptron
+  BackPropagation
+  Hopfield
+  RadialBasisFunctionNetwork
+
+DeepLearning
+  DeepBoltzmannMachine
+  DeepBeliefNetworks
+  ConvolutionalNeural
+  StackedAutoEncoders
+
+Dimensional
+  PrincipalComponents
+  PrincipalComponentRegression
+  PartialLeastSquaresRegression
+  SammonMapping
+  MultidimensionalScaling
+  ProjectionPursuit
+  LinearDiscriminant
+  MixtureDiscriminantAnalysis
+  QuadraticDiscriminant
+  FlexibleDiscriminant
+
+Ensemble
+  Boosting
+  BootstrappedAggregation
+    Bagging
+  AdaBoost
+  StackedGeneralization
+    Blending
+  GradientBoostingMachines
+  GradientBoostedRegressionTrees
+  RandomForest
+
+Other
+    ComputationalIntelligence
+      Evolutionary
+    ComputerVision (CV)
+    NaturalLanguageProcessing (NLP)
+    Recommender
+    ReinforcementLearning
+    GraphicalModels
+
+
+1. Regression Algorithms
+
+    Ordinary Least Squares Regression (OLSR)
+    Linear Regression
+    Logistic Regression
+    Stepwise Regression
+    Multivariate Adaptive Regression Splines (MARS)
+    Locally Estimated Scatterplot Smoothing (LOESS)
+
+2. Instance-based Algorithms
+
+    k-Nearest Neighbour (kNN)
+    Learning Vector Quantization (LVQ)
+    Self-Organizing Map (SOM)
+    Locally Weighted Learning (LWL)
+
+3. Regularization Algorithms
+
+    Ridge Regression
+    Least Absolute Shrinkage and Selection Operator (LASSO)
+    Elastic Net
+    Least-Angle Regression (LARS)
+
+4. Decision Tree Algorithms
+
+    Classification and Regression Tree (CART)
+    Iterative Dichotomiser 3 (ID3)
+    C4.5 and C5.0 (different versions of a powerful approach)
+    Chi-squared Automatic Interaction Detection (CHAID)
+    Decision Stump
+    M5
+    Conditional Decision Trees
+
+5. Bayesian Algorithms
+
+    Naive Bayes
+    Gaussian Naive Bayes
+    Multinomial Naive Bayes
+    Averaged One-Dependence Estimators (AODE)
+    Bayesian Belief Network (BBN)
+    Bayesian Network (BN)
+
+6. Clustering Algorithms
+
+    k-Means
+    k-Medians
+    Expectation Maximisation (EM)
+    Hierarchical Clustering
+
+7. Association Rule Learning Algorithms
+
+    Apriori algorithm
+    Eclat algorithm
+
+8. Artificial Neural Network Algorithms
+
+    Perceptron
+    Back-Propagation
+    Hopfield Network
+    Radial Basis Function Network (RBFN)
+
+9. Deep Learning Algorithms
+
+    Deep Boltzmann Machine (DBM)
+    Deep Belief Networks (DBN)
+    Convolutional Neural Network (CNN)
+    Stacked Auto-Encoders
+
+10. Dimensionality Reduction Algorithms
+
+    Principal Component Analysis (PCA)
+    Principal Component Regression (PCR)
+    Partial Least Squares Regression (PLSR)
+    Sammon Mapping
+    Multidimensional Scaling (MDS)
+    Projection Pursuit
+    Linear Discriminant Analysis (LDA)
+    Mixture Discriminant Analysis (MDA)
+    Quadratic Discriminant Analysis (QDA)
+    Flexible Discriminant Analysis (FDA)
+
+11. Ensemble Algorithms
+
+    Boosting
+    Bootstrapped Aggregation (Bagging)
+    AdaBoost
+    Stacked Generalization (blending)
+    Gradient Boosting Machines (GBM)
+    Gradient Boosted Regression Trees (GBRT)
+    Random Forest
+
+12. Other Algorithms
+
+    Computational intelligence (evolutionary algorithms, etc.)
+    Computer Vision (CV)
+    Natural Language Processing (NLP)
+    Recommender Systems
+    Reinforcement Learning
+    Graphical Models
+
+
+
+
+
+
+
+Fundamentals
+
+Matrices
+LinearAlgebra
+HashFunctions
+BinaryTree
+O(n)
+RelationalAlebra
+DatabaseBasics
+Joins(Inner,Outer,Cross,Theta)
+CAPTheorum
+TabularData
+DataFrames
+DataSeices
+Sharding
+OLAP
+MultiDimensionalModel
+ETL
+Reporting
+BI
+Analytics
+JSON
+XML
+NoSQL
+Regex
+VendorLandscape
+EnvSetup
+
+Statistics
+
+PickAtDataset
+UCIRepo
+DescriptiveStatistics(Mean,Median,Range,StdDev,Variance)
+Historgrams
+Percentiles
+Outliers
+ProbabilityTheory
+BayesTheorum
+RandomVaribles
+CumululativeDistanceFunction
+ContinuousDistributions(Normal,Poisson,Gaussian)
+Skewnes
+ANOVA
+ProbabilityDensityFunction
+CentralLimitTheorum
+MonteCarloMethod
+HypothesisTesting
+PValue
+ChiSquare
+Estimation
+ConfidenceInterval
+MLE
+KernelDensityEstimate
+Reqression
+Covariance
+PearsonCoefficent
+Causation
+LeastFit
+EuclideanDistance
+
+Programming
+
+Python
+Excel
+R
+Scala
+Java
+Expressions
+IBM_SPSS
+RapidMiner
+Vectors
+Matricse
+Arrays
+Factors
+Lists
+DataFrames(Manipulation)
+CSV
+RawData
+DataSubsets
+Functions
+FactorAnalysis
+InstallPackages
+
+MachineLearning
+
+WhatIsMI?
+NumericalVar
+CategoricalVar
+SupervisedLearning
+SupervisedLearning
+Concepts
+Inputs
+Attributes
+TrainingData
+TestData
+Classifier
+Prediction
+Lift
+Overfitting
+Underfitting
+Bias
+Variance
+Trees
+Classification
+ClassificationRate
+DesisionTrees
+Boosting
+NaiveBayesClassifiers
+KNearestNeighbor
+LogisiticReqression
+Ranking
+LinearRegression
+Perceptron
+HierarchialClustering
+KMeansClustering
+NeuralNetworks
+SentimentAnalysis
+CollaborationFiltering
+Tagging
+
+TextMiningNLP
+
+VocabularyMapping
+ClassifyText
+UsingNLTK
+UsingWeka
+UsingMahout
+FeatureExtraction
+MarketBasedAnalysis
+AssociationRules
+SupportVectorMachines
+TermFrequency
+TermWeight
+TermDocumentMatrix
+UIMA
+TextAnalysis
+NameEntityRecognition
+Corpus
+
+Visualization
+
+DataExporationInR(Histagranm,Boxplot)
+Viz(Univariate,BiVariate,Multivariate)
+ggplots
+Uni(Histagranm,Pie)
+Tree
+TreeMap
+ScatterPlot
+LineCharts
+SpatialCharts
+SurveyPlot
+Timeline
+DecisionTree
+D3.js
+InfoVis
+IBM(ManyEyes)
+Tableau
+
+BigData
+
+MapReduce(Fundamentals,Programming)
+Hadoop(Components,)
+HDFS
+DataReplicationPrinciples
+NameNodes
+DataNodes
+Tracker(Job,Task)
+SqoopLoading
+UnstructoredData(Flume,Scribe)
+Pig(SQL)
+Hive(DWH)
+Weblog(Scribe,Chukwa)
+Mahoot
+Zookeeper
+Avro
+Storm
+Rhadoop
+rmr
+Cassandra
+Mongo
+Neo4J
+
+DataIngestion
+
+Formats(Summary,Data)
+DataDiscovery
+Data(Sources,Acquistion)
+DataItegration
+Transformation
+Enrichment
+DataSurvey
+OpenRefine(Google)
+HowMuchData
+UsingETL
+
+DataMunging
+
+PrincipleComponentAnalysis
+StratifiedSampling
+Sampling
+Denoising
+FeatureExtraction
+BinningSparseValues
+UnbiasedEstimators
+HandlingMissingValjues
+DataScubbing
+Normalization
+DimensionalityReduction
+NumberousityReduction
+
+Toolbox
+
+Excel(AnalysiisToolPak)
+Scala
+Java
+Python
+R(RStudio,Rattle)
+Weka(RWeka)
+Knime
+RapidMiner
+Hadoop
+Spark
+Storm
+Flume
+Scibe
+Chukwa
+Nutch
+Talend
+Scrapewiki
+Webscrape
+Flume
+Sqoop
+tm
+NLTK
+RHIPE
+D3
+ggplot2
+Shine
+IBMLanguageware
+Cassandra
+MongoDB
+
+ProbalityModels         LinearAlgebra
+Optimization            StatisticalLearning
+
+             MachineLearning
+
+                   AI
+
+ComputerVision GameTheory NLP
+
+
+DataMunging
+
+Refine
+
+QualityAssurance
+QualityControl
+DataProfiling
+Catalog
+DataProcessAudit
+FullAutomation
+ChangedDataCapture
+MasterDataManagement
+Extrapolate
+CrowdSource
+KeepOriginalValues
+KeepUsageLogs
+CleanUpAtSource
+Schema
+DataQualityIndicator
+GenerateTestData
+UseTheData
+PushTransformationsUpstream
+Metadata
+DataDefectTracking
+
+
+
+Source
+  ElasticSearch
+  ChangedDataCapture
+  KeepOriginalValues
+  GenerateTestData
+  PushTransformationsUpstream
+  UseTheData
+
+Refine
+  CleanUpAtSource
+  DataDefectTracking
+  DataQualityIndicator
+  CrowdSource
+  FullAutomation
+
+Schema
+  Dictionary
+  Catalog
+  Model
+  MasterDataManagement
+  SourceMetadata
+
+Verify
+  QualityAssurance
+  QualityControl
+  DataProfiling
+  KeepUsageLogs
+  DataProcessAudit
+
+The V's
+  Volume
+  Velocity
+
+DescriptiveStatistics
+  StatisticalResearchMethods
+  SamplePopulation
+  MeanMedianModeStandardDeviation.
+  interquartile range
+  ZScore
+  normalizing observations
+
+
+Probability
+  Interpretiing
+  Distributions
+    CentralLimitTheorem
+    Normal
+    Sampling
+  Predictions
+
+
+InferentialStatistics
+  Estimation
+  HypothesisTesting
+  ConfidenceIntervals
+  TTests
+  ANOVA
+  Correlation
+  Regression
+  ChiSquared
+
+SparkMLIB
+  Data types
+  Basic statistics
+      summary statistics
+      correlations
+      stratified sampling
+      hypothesis testing
+      random data generation
+  Classification and regression
+      linear models (SVMs, logistic regression, linear regression)
+      naive Bayes
+      decision trees
+      ensembles of trees (Random Forests and Gradient-Boosted Trees)
+      isotonic regression
+  Collaborative filtering
+      alternating least squares (ALS)
+  Clustering
+      k-means
+      Gaussian mixture
+      power iteration clustering (PIC)
+      latent Dirichlet allocation (LDA)
+      streaming k-means
+  Dimensionality reduction
+      singular value decomposition (SVD)
+      principal component analysis (PCA)
+  Feature extraction and transformation
+  Frequent pattern mining
+      FP-growth
+      association rules
+      PrefixSpan
+  Evaluation metrics
+  PMML model export
+  Optimization (developer)
+      stochastic gradient descent
+      limited-memory BFGS (L-BFGS)
+
+
+SparkML
+  Feature Extractors
+    TF-IDF (HashingTF and IDF)
+    Word2Vec
+    CountVectorizer
+  Feature Transformers
+    Tokenizer
+    StopWordsRemover
+    n-gram
+    Binarizer
+    PCA
+    PolynomialExpansion
+    Discrete Cosine Transform (DCT)
+    StringIndexer
+    OneHotEncoder
+    VectorIndexer
+    Normalizer
+    StandardScaler
+    MinMaxScaler
+    Bucketizer
+    ElementwiseProduct
+    VectorAssembler
+  Feature Selectors
+    VectorSlicer
+    RFormula
+
+  DecisionTrees
+    Overview
+    Inputs and Outputs
+        Input Columns
+        Output Columns
+    Examples
+        Classification
+        Regression
+
+
+
+
+Spark
+  Pipelines
+    Transformer
+    Estimator
+  Feature extraction, transformation, and selection
+  Decision Trees for classification and regression
+  Ensembles
+  Linear methods with elastic net regularization
+  Multilayer perceptron classifier
+
+
+     ###
+       LinearAlgebra
+       Overfittiing
+       Bias
+       Variance
+       SkewedData
+       Kernels
+       UnsupervisedLearning
+       SupervisedLearning
+       MultivariateGaussianDistribution
+     ###
+     ###
+       Linear   Regression OneVariable Multivariate
+       Logistic Regression
+       Neural Nets CostFunction BackPropagation Learing
+       SupportVectorMachines LargeMarginClassification
+       DimensionalityReduction
+       PrincipalComponentAnalysis
+       Clustering
+       KMeans
+       AnomalyDetection  DensityEstimation CollaborativeFiltering LowRankMatrixFactorization
+       GradientDescent
+     ###
+
+
+
+
+
+
+
+
+
+
+

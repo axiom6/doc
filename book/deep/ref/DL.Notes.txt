@@ -1,0 +1,56 @@
+
+
+Execution Uncertainty
+
+    Does the sequence of actions of the actors, from the environment’s initial state,
+    always lead to the same final state?
+
+    Fully deterministic. There is no noise in the rules of the game; if the two players take
+    the same sequence of actions, the states along the way will always be the same.
+
+Observational Uncertainty 
+
+    Do actors have complete information of the environment?
+
+    Fully observed. Each player has complete information and there are no hidden variables.
+    For example, Texas hold’em does not satisfy this property because you cannot see the cards
+    of the other player.
+
+Duration Uncertainty
+
+    Do the actors know how long the activity will last?
+
+    Each episode/game is relatively short, of approximately 200 actions.
+    This is a relatively short time horizon compared to other RL settings which may involve
+    thousands (or more) of actions per episode.
+
+
+Action Uncertainty 
+
+    Are the effects of the actor’s actions known exactly?
+
+    The action space is discrete. a number of unique moves are available.
+    In contrast, in robotics you might want to instead emit continuous-valued torques at each joint.
+
+    We have access to a perfect simulator (the game itself), so the effects of any action are known exactly.
+    This is a strong assumption that AlphaGo relies on quite strongly, but is also quite
+    rare in other real-world problems.
+
+
+Evaluation Uncertainty
+
+    Is there an evaluation criteria to measure the successful completion of the activity?
+
+    The evaluation is clear, fast and allows a lot of trial-and-error experience.
+    In other words, the agent can experience winning/losing millions of times,
+    which allows is to learn, slowly but surely, as is common with deep neural network optimization.
+
+Solution Uncertainty
+
+   Is there knowledge of previous solutions that can be used as a guidance to the successful completion?
+
+   There are huge datasets of human play game data available to bootstrap the learning,
+   so AlphaGo doesn’t have to start from scratch.
+
+
+

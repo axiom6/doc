@@ -1,0 +1,113 @@
+   Michael,
+
+   This is draft for a blog entry that I plan to write on Medium.
+
+   I stepped back from writing this week took time to gain a few insights
+that will influence my course of action.
+
+Reread Limitations  https://blog.keras.io/the-limitations-of-deep-learning.html
+
+1. The complex geometric transformations that Deep Learning derives are still far
+    away from meaningful knowledge representations that can be reasoned with.
+    I had expected more, but realize now that I had allowed myself to be caught in
+    a wave of wishful thinking. I appreciate that Limitations hit me with the cold bucket
+    of water that I needed.
+
+Read chapter 7 Regularization for Deep Learning in from the Deep Learning Book
+
+2. Was amazed at the shear amount of processing involved and I reflected on the
+    the over processing we did for 3D seismic at TI in 78, The effort to wring signal
+    from lots of data is staggering and not for the feint of heart especially with the
+    demands for skilled Data Scientists to set hyper parameters.
+
+Watched a Ray  Kurzweil video from 2014
+
+3. All that he presented was volume and velocity. How anybody can stand up
+    with a lack of convincing arguments is beyond me. The king of Futurists is
+    one of may pompous asses who think they can get away with pawning off
+    unsubstantiated conclusions on the public to make themselves feel important
+    and make money posing as experts.
+
+Reviewed the writing of a number of respected Machine Learning researchers.
+
+4. My feeling is that they are not the source of the AI hype. If anything they come
+    off as voice of reason. I sense that the hype is coming from Futurists and other
+    wannabees feeding contrived opinions to journalists who are drawn to sensational
+   stories like a moth to the flame. It is not software or data that is eating the world.
+   It is cascading hype.
+
+On Twitter I received a number of Tweets from people freaked out about the Facebook
+computers making up their own language
+
+5. This was great opportunity to gauge the public's perception. My immediate insight
+    is simple. The Facebook computers had no objective functions to constrain them to
+    the English language. Therefore the Facebook computers hatched no conspiracy to
+    detach from humans to begin taking over the world.
+
+6. Too much effort is being directed towards social media images, enhancing advertising
+    and recommender systems. My derogatory term for all this money making but poor use
+    of technology is "Click Baiting"
+
+-----------------------------------------------
+
+So what interpretation have I made from these insights?
+
+1. Deep Learning is a big advance in patterns, but not knowledge representations.
+
+2. AI is as far away from Knowledge or my Practices as ever.
+
+3. Almost no one has a clue of Emergence is or how it works. However unwittingly
+    people are invoking Emergence when assuming that computers will achieve
+    conscientiousness.
+
+4. All humans are predisposed to anthropomorphizing. Our conscienceless
+    leverages anthropomorphization to establish a frame of reference that make
+    us human. This provides a rich subjective reality, but AI and programming itself requires
+    an objective reality. It takes constant self examination and vigilance to achieve this.
+
+5, Super Intelligence to me has become a bigger joke than ever.
+
+-----------------------------------------------
+
+ Course Of Action
+
+The lack of a knowledge representation, complex processing, futuristic hype,
+public perception and Click Baiting have convinced me that my best course
+of action is to work harder on Humanistic Practices and place less of a priority
+on Machine Learning.
+
+The Augment Plane has already provided me with many benefits:
+
+1. It provides a bridge for Information to Knowledge traversal that
+    strengthens both.
+
+2 It provides a buffer for Machine Learning that allows one to embrace it
+   while keeping the hype at arms length.
+
+3. It puts Machine Learning and not Data Science in an ontological
+    straight jacket.
+
+4. I recognize that I have a lot more explaining to do so I am even more
+    committed to writing.
+
+5. Machine Learning was looming over me like a shadow, so I had to
+    metaphorically wrestle it to the ground.
+
+---------------------------------
+
+I can view Data Science again with the larger context of a profession.
+
+There is a lot of good solid work to be done in Data Science for informing people.
+
+As a profession Data Science has a future where AI does not.
+
+
+Tom
+
+
+
+
+
+
+
+

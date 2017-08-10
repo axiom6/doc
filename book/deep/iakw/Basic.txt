@@ -1,0 +1,67 @@
+Math
+  LinearAlgerbra
+    Vectors
+    Matrices
+      Identity
+      Inverse
+    Eigen
+      SingleValueDecopositionIG
+       MoorePenrosePseudoinverseIG
+       TraceOperatorIG
+       DeterminantIG
+    Multivariate
+  Symbolic
+    Graph
+Statistics
+  Measures
+    Basic
+    CentralTendency
+    Dispersion
+    Variance
+    Covariance
+    ANOVA
+    MeasureTheory
+  DescriptiveStatistics
+    StatisticalResearchMethods
+    SamplePopulation
+    MeanMedianModeStandardDeviation.
+    interquartile range
+    ZScore
+    NormalizingObservations
+Probability
+  ConceptsIG
+    RandomVariables
+    ContiniousVariables
+    Expection
+    InformationTheory
+    CommonFunctions
+  SampleSpace
+    SetTheory
+    DensityFunction
+  ConditionalIG
+    BayesRule
+    ChainRule
+    Independence
+    Marginal
+  Distribution
+    Characteristics
+      CentralLimitTheorem
+      Historgrams
+      Cummulative
+      Skewness
+      Percentiles
+    Multivariate
+      BaseballCard
+  UncertaintyBK
+    UncertainRisk
+    FuzzySets
+    FuzzyMeasure
+MachingLearningConceptsIG
+  CapacityOverfittingUnderfitting
+  HyperparametersValidationSets
+  EstimatorsBiasVariance
+  MaximumLikelihoodEstimation
+  BayesianStatistics
+  StochasticGradientDescent
+  Filter
+  StructuredModelsIG

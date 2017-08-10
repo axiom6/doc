@@ -1,0 +1,105 @@
+Acquire
+  Collect
+    Plan
+      VelVarVol
+      Context
+      Connect
+    Sources
+      Raw
+      Structured
+      Spatial
+      Sensor
+    Qualify
+      Observation
+      Survey
+      Interview
+    Manage
+      OriginalData
+      FormatData
+      DescribeData
+      UseTheData
+  Refine
+    Enrich
+      CleanSource
+      Indicator
+      CrowdSource
+      Automate
+    Quality
+      Assurance
+      Control
+      Profile
+      Noise
+    Track
+      Defect
+      Usage
+      Audit
+    Integrate
+  Schema
+    Domain
+      Entitlement
+      Proposition
+      Portfolio
+      Intelligence
+    Document
+      Dictionary
+      Catalog
+      Formats
+    Model
+      Experimental
+        CAP
+      Conceptual
+      Logical
+        RelationalAlgebra
+        NoSQL
+      Physical
+        MultiDimensional
+    Deploy
+      MapSources
+      RestURLs
+  Prepare
+    Filter
+      Relational
+      TagOutliers
+      Smoothing
+
+    Select
+      Sampling
+      Stratified
+      Region
+Culivate
+  Stream
+  RegularizeIG
+    Concerns
+      Generalization
+      Underfitting
+      Overfitting,
+      Bias
+      Variance
+    ParameterNormPenalties
+    Constrained Optimization
+    Under-Constrained
+    Noise Robustness
+    Semi-Supervised Learning
+    Multi-Task Learning
+    Early Stopping
+    Parameter Tying and Parameter Sharing
+    Sparse Representations
+    Bagging and Other Ensemble Methods
+    Dropout
+    Adversarial Training
+    Tangent Distance, Tangent Prop, and Manifold Tangent Classifier
+    Estimators
+  Imputate
+    Random
+    MonteCarlo
+    MarkovChain
+    Mean
+    Distributions
+  Transform
+    Deduplication
+    Conversion
+    Fourier
+    Wavelet
+    Coordinate
+  Metadata
+

@@ -1,0 +1,68 @@
+
+ MachineLearning
+  DecisionTreeL
+  AssociationRuleL
+  Neural
+  DeepLearning
+  Logic
+  SupportVector
+  Clustering
+  BayesianNetworks
+  Reinforce
+    Explore Data
+      EpsilonGreedy
+      Boltzmann
+      Gaussian
+      StateDependent
+    ValueFunction
+      QLearning
+      SARSA
+      FittedQ
+    BlackBox
+      StochasticHill
+      Swarm
+      NaturalEvolution
+      FitnessExpect
+  Represent
+    Classic
+      PCA
+      Cluster
+      Manifold
+      SparseCoding
+      MultiLinearSubspace
+      DeepLearning
+    Similarity
+      Regress
+      Classify
+      Ranking
+      LocallySensitiveHashing
+      Metric
+    SparseDictionaryL
+    Genetic
+      GeneticAP
+      EvolutionaryAP
+      GeneEspressionP
+      EvolutionStrategy
+      DifferentialEvolution
+      NoveltyMetaphor
+    Swarn
+      Boids
+      AntColony
+      ArificalBee
+      CukooSearcg
+      ParticalSwarm
+    RuleBasedL
+      LearningClassifiers
+      AssociationRuleL
+      ArtificialImmune
+    LearningClassifiers
+
+Assessment
+  HoldoutMethod
+  CrossValidation
+  Bootstrap
+
+ Sensitivity
+   Rate True.False.Postive.Negative
+   OperatingCharacteristic Total.Receiver.AreaUnderCurve
+

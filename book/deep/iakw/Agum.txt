@@ -1,0 +1,58 @@
+Engage
+  Scenario
+  Ethics
+  Group
+  Scope
+Domain
+  Tools
+  Proposal
+  Acquire
+  Associate
+Insight
+  Theorize
+    Principles
+    Proposition
+    Bias
+    Signifcance
+  Purpose
+  Ontology
+    Semantics
+    OWL
+    JSON-LD
+    SPARQL
+  Choose
+    DataSet
+    Samples
+    Schemas
+    Alogrithms
+    Learning
+Guide
+  Inquiry
+  Feedback
+  Heuristic
+  Complete
+Machine
+  Interface
+  Technique
+  Cultivate
+  Compile
+Advise
+  Finding
+  Rationale
+  Consequence
+  Context
+Prove
+  Diagnose
+  Conclude
+  Reproduce
+  Protect
+Process
+  Stream
+  Pipeline
+  Harvest
+  Platform
+Explain
+  Intuition
+  Decision
+  Conduct
+  Publish

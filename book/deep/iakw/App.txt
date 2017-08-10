@@ -1,0 +1,70 @@
+
+Report
+  Profile
+    Baseline
+    Detail
+    Relate
+    Difference
+  Summarize
+    Relational
+    Extraction
+    Abstraction
+  BI
+    DrillDown
+
+Investigate
+  Monitor
+    Detect
+    Diagnose
+  Pivot
+    DrillDown
+    RollUp
+
+Discover
+  Detect
+    Exceptions
+    Clusters
+    Trends
+  Calculate
+    Interpolate
+    Extrapalate
+
+Pattern
+  Representation
+    Smoothing
+    Regularization
+    Wavelet
+    Kernel
+  Assessment
+    BiasVariance
+    CrossValidation
+    Bootstrap
+    Correlation
+  Selection
+    Estimates
+    Errors
+    FuzzyMeasure
+    TTest
+  Inference
+    Likelyhood
+    Bayesian
+    ExpectationMax
+    Bagging
+    Stochastic
+  Distill
+
+Recommend
+  Ratings
+  Context
+    CollabFilter
+    ContentBased
+    KnowledgeBased
+    GraphBased
+  Sentiment
+
+Historical
+  Explain
+  Sentiment
+Forecast
+  Qualitative
+  Quanitative

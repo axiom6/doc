@@ -1,0 +1,3174 @@
+{
+  "Describe": {  "outline":"3",
+    "Cluster": { "outline":"B",
+      "Centroid": { "has":false,
+        "title": "Centroid",
+        "abstract": [
+          "In centroid-based clustering, clusters are represented by a central vector",
+          "This may not necessarily be a member of the data set.",
+          "When the number of clusters is fixed to k, k-means clustering gives a formal definition as an optimization problem:",
+          "find the  k cluster centers and assign the objects to the nearest cluster center, such that the squared distances from the cluster are minimized"
+        ],
+        "purpose": [
+          "Known number of clusters, very large samples"
+        ],
+        "KMeans": {
+          "title": "K Means",
+          "abstract": [
+            "A simple iterative method to partition a given dataset into a userspecified number of clusters"
+          ],
+          "purpose": [
+            "Known number of clusters, very large samples"
+          ],
+          "advantages": [
+            "Produces tighter clusters than hierarchical clustering",
+            "Faster than hierarchical clustering for large number of variables"
+          ],
+          "disadvantages": [
+            "The greedy-descent nature of k-means on a non-convex cost also implies that the convergence is only to a local optimum",
+            "Quite sensitive to the initial centroid locations",
+            "Falter whenever the data is not well described by reasonably separated spherical balls",
+            "Sensitive to the presence of outliers"
+          ],
+          "applications":[
+            "Use by major search engine to cluster web pages by similarity and identify the ‘relevance rate’ of search results to reduce access time"
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        },
+        "SelfOrganizingMaps": {
+          "title": "Self Organizing Maps",
+          "abstract": [
+            ""
+          ],
+          "purpose": [
+            "Known number of clusters, very large samples"
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        },
+        "Affinity": {
+          "title": "Affinity",
+          "abstract": [
+            "clusters data by diffusion in the similarity matrix."
+          ],
+          "purpose": [
+            "Many clusters, uneven cluster size, non-flat geometry"
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        },
+        "FuzzyCMeans": {
+          "title": "Fuzzy C Means",
+          "abstract": [
+            "computes fuzzy membership functions for each clusters rather than a hard one"
+          ],
+          "purpose": [
+            "Known number of clusters, very large samples"
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        }
+      },
+      "Hierarchial": { "has":false,
+        "title": "Hierarchial",
+        "abstract": [
+          "a general family of clustering algorithms that build nested clusters by merging them successively."
+        ],
+        "purpose": [
+          "Derive an ordered set of cluster with varialbe precision",
+          "Many clusters, possibly connectivity constraints"
+        ],
+        "Ward": {
+          "title": "Ward",
+          "abstract": [
+            "The Ward object performs a hierarchical clustering based on the Ward algorithm, that is a variance-minimizing approach.",
+            "At each step, it minimizes the sum of squared differences within all clusters (inertia criterion)."
+          ],
+          "purpose": [
+            "Derive an ordered set of cluster with varialbe precision"
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        },
+        "BIRCH": {
+          "title": "Balanced Iterative Reducing and Clustering using Hierarchies",
+          "abstract": [
+            ""
+          ],
+          "purpose": [
+            "Derive an ordered set of cluster with varialbe precision"
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        },
+        "Agglomerative": {
+          "title": "Agglomerative",
+          "abstract": [
+            ""
+          ],
+          "purpose": [
+            "Derive an ordered set of cluster with varialbe precision"
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        },
+        "Canopy": {
+          "title": "Canopy",
+          "abstract": [
+            ""
+          ],
+          "purpose": [
+            "Derive an ordered set of cluster with varialbe precision"
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        },
+        "Fractal": {
+          "title": "Fractal",
+          "abstract": [
+            ""
+          ],
+          "purpose": [
+            "Derive an ordered set of cluster with varialbe precision"
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        }
+      },
+      "Distribution": { "has":false,
+        "title": "Distribution",
+        "abstract": [
+          ""
+        ],
+        "purpose": [
+          ""
+        ],
+        "Spectral": {
+          "title": "Spectral",
+          "abstract": [
+            "does a low-dimension embedding of the affinity matrix between samples, followed by a KMeans in the low dimensional space."
+          ],
+          "purpose": [
+            "Few clusters, even cluster size, non-flat geometry"
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        },
+        "GaussianMixture": {
+          "title": "Gaussian Mixture",
+          "abstract": [
+            "Each cluster is described in terms of a Gaussian density, which has a centroid (as in K-means), and a covariance matrix."
+          ],
+          "purpose": [
+            ""
+          ],
+          "advantages": [
+            "Speed:: It is the fastest algorithm for learning mixture models",
+            "Agnostic:: This algorithm maximizes only the likelihood, it will not bias the means towards zero, or bias the cluster sizes to have specific structures that might or might not apply."
+          ],
+          "disadvantages": [
+            "Singularities:: when one has insufficiently many points per mixture, estimating the covariance matrices becomes difficult, and the algorithm is known to diverge and find solutions with infinite likelihood unless one regularizes the covariances artificially.",
+            "Number of Components:: this algorithm will always use all the components it has access to, needing heldout data or information theoretical criteria to decide how many components to use in the absence of external cues."
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        },
+        "GaussianProcess": {
+          "title": "Gaussian Process",
+          "abstract": [
+            ""
+          ],
+          "purpose": [
+            ""
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        },
+        "Correllation": {
+          "title": "Correllation",
+          "abstract": [
+            ""
+          ],
+          "purpose": [
+            ""
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        }
+      },
+      "Density": { "has":false,
+        "title": "Density",
+        "abstract": [
+          ""
+        ],
+        "purpose": [
+          ""
+        ],
+        "DBSCAN": {
+          "title": "DBSCAN",
+          "abstract": [
+            "The DBSCAN algorithm clusters data by finding core points which have many neighbours within a given radius.",
+            "After a core point is found, the cluster is expanded by adding its neighbours to the current cluster",
+            "and recursively checking if any are core points. Formally, a point is considered a core point",
+            "if it has more than min_points points which are of a similarity greater than the given threshold eps.",
+            "The algorithm can detect outliers which  are defined as points which do not belong to any current cluster",
+            "and donot have enough close neighbours to start a new cluster."
+          ],
+          "purpose": [
+            "Non-flat geometry, uneven cluster sizes"
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book":"",
+            "sklearn": ""
+          }
+        },
+        "MeanShift": {
+          "title": "Mean Shift",
+          "abstract": [
+            "clusters data by estimating blobs in a smooth density of points matrix."
+          ],
+          "purpose": [
+            "Many clusters, uneven cluster size, non-flat geometry"
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        },
+        "OPTIKS": {
+          "title": "OPTIKS",
+          "abstract": [
+            ""
+          ],
+          "purpose": [
+            ""
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        }
+      }
+    },
+    "Dimension": { "outline":"C",
+      "AssociationRule": {
+        "title": "Association Rule",
+        "abstract": [
+          ""
+        ],
+        "purpose": [
+          ""
+        ],
+        "Apriori": {
+          "title": "Apriori",
+          "abstract": [
+            ""
+          ],
+          "purpose": [
+            ""
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        },
+        "Dictionary": {
+          "title": "Dictionary",
+          "abstract": [
+            ""
+          ],
+          "purpose": [
+            ""
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        }
+      },
+      "Principal": {
+        "title": "Principal Component Analysis",
+        "abstract": [
+          ""
+        ],
+        "purpose": [
+          "Determine multi-dimensional correlation"
+        ],
+        "Independent": {
+          "title": "Independent Component Analysis",
+          "abstract": [
+            ""
+          ],
+          "purpose": [
+            "Determine multi-dimensional correlation"
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        },
+        "Correspondence": {
+          "title": "Correspondence Analysis",
+          "abstract": [
+            ""
+          ],
+          "purpose": [
+            "Determine multi-dimensional correlation"
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        },
+        "FactorAnalysis": {
+          "title": "Factor Analysis",
+          "abstract": [
+            ""
+          ],
+          "purpose": [
+            "Determine multi-dimensional correlation"
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        }
+      },
+      "Discriminant": {
+        "title": "Discriminant Analysis",
+        "abstract": [
+          ""
+        ],
+        "purpose": [
+          ""
+        ],
+        "Linear": {
+          "title": "Linear Discriminant Analysis",
+          "abstract": [
+            ""
+          ],
+          "purpose": [
+            ""
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        },
+        "Quadratic": {
+          "title": "Quadratic",
+          "abstract": [
+            ""
+          ],
+          "purpose": [
+            ""
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        },
+        "Regularized": {
+          "title": "Regularized",
+          "abstract": [
+            ""
+          ],
+          "purpose": [
+            ""
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        },
+        "Cross": {
+          "title": "Cross",
+          "abstract": [
+            ""
+          ],
+          "purpose": [
+            ""
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        }
+      },
+      "Manifold": {
+        "title": "Manifold",
+        "abstract": [
+          ""
+        ],
+        "purpose": [
+          "NonLinear"
+        ],
+        "Isomap": {
+          "title": "Isomap",
+          "abstract": [
+            ""
+          ],
+          "purpose": [
+            "NonLinear"
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        },
+        "ElasticMap": {
+          "title": "Elastic  Map",
+          "abstract": [
+            ""
+          ],
+          "purpose": [
+            "NonLinear"
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        },
+        "LocallyLinear": {
+          "title": "Locally Linear Embedding",
+          "abstract": [
+            ""
+          ],
+          "purpose": [
+            "NonLinear"
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        },
+        "SpectralEmbedding": {
+          "title": "Locally Linear Embedding",
+          "abstract": [
+            ""
+          ],
+          "purpose": [
+            "NonLinear"
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        },
+        "HessianEigen": {
+          "title": "Hessian Eigenmapping",
+          "abstract": [
+            ""
+          ],
+          "purpose": [
+            "NonLinear"
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        },
+        "LocalTangent": {
+          "title": "Local Tangent Space Alignment",
+          "abstract": [
+            ""
+          ],
+          "purpose": [
+            "NonLinear"
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        },
+        "MultiDimen": {
+          "title": "Multi-dimensional Scaling",
+          "abstract": [
+            ""
+          ],
+          "purpose": [
+            "NonLinear"
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        }
+      }
+    }
+  },
+  "Distill": {    "outline":"4",
+    "Regress": {  "outline":"B",
+      "LeastSquares": {
+        "title": "Least Squares Regression",
+        "abstract": [
+          ""
+        ],
+        "purpose": [
+          "Statistical measures needed"
+        ],
+        "Linear": {
+          "title": "Linear",
+          "abstract": [
+            ""
+          ],
+          "purpose": [
+            "Statistical measures needed"
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        },
+        "NonLinear": {
+          "title": "Non Linear Least Squares Regression",
+          "abstract": [
+            ""
+          ],
+          "purpose": [
+            "Statistical measures needed"
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        },
+        "Ridge": {
+          "title": "Ridge Regression",
+          "abstract": [
+            ""
+          ],
+          "purpose": [
+            "Statistical measures needed"
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        },
+        "Lasso": {
+          "title": "Lasso Regression",
+          "abstract": [
+            ""
+          ],
+          "purpose": [
+            "Statistical measures needed"
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        }
+      },
+      "SpecialCase": {
+        "title": "Special  Case",
+        "abstract": [
+          ""
+        ],
+        "purpose": [
+          ""
+        ],
+        "ElasticNet": {
+          "title": "Elastic Net",
+          "abstract": [
+            ""
+          ],
+          "purpose": [
+            ""
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        },
+        "LeastAngle": {
+          "title": "Least Angle Regression",
+          "abstract": [
+            ""
+          ],
+          "purpose": [
+            ""
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        },
+        "OrthogonalMatch": {
+          "title": "Orthogonal Matching Pursuit",
+          "abstract": [
+            ""
+          ],
+          "purpose": [
+            ""
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        },
+        "Stepwise": {
+          "title": "Stepwise Regression",
+          "abstract": [
+            ""
+          ],
+          "purpose": [
+            ""
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        }
+      },
+      "GausianProcess": {
+        "title": "Gausian  Process",
+        "abstract": [
+          ""
+        ],
+        "purpose": [
+          ""
+        ],
+        "GPRegress": {
+          "title": " GP  Regress",
+          "abstract": [
+            ""
+          ],
+          "purpose": [
+            ""
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        },
+        "GPClassify": {
+          "title": " GP  Classify",
+          "abstract": [
+            ""
+          ],
+          "purpose": [
+            ""
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        },
+        "GPKernel": {
+          "title": " GP  Kernel",
+          "abstract": [
+            ""
+          ],
+          "purpose": [
+            ""
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        }
+      },
+      "Distribution": {
+        "title": "Distribution",
+        "abstract": [
+          ""
+        ],
+        "purpose": [
+          "BayesianRidge ARD"
+        ],
+        "Bayesian": {
+          "title": "Bayesian",
+          "abstract": [
+            ""
+          ],
+          "purpose": [
+            "BayesianRidge ARD"
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        },
+        "AutoRelevance": {
+          "title": "Automatic Relevance Determination",
+          "abstract": [
+            ""
+          ],
+          "purpose": [
+            "BayesianRidge ARD"
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        },
+        "Logistic": {
+          "title": "Logistic",
+          "abstract": [
+            ""
+          ],
+          "purpose": [
+            "BayesianRidge ARD"
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        },
+        "Isotomic": {
+          "title": "Isotomic",
+          "abstract": [
+            ""
+          ],
+          "purpose": [
+            "BayesianRidge ARD"
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        },
+        "RobustRegress": {
+          "title": "Robust  Regress",
+          "abstract": [
+            ""
+          ],
+          "purpose": [
+            "BayesianRidge ARD"
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        }
+      }
+    },
+    "Model": { "outline":"C",
+      "Representation": {
+        "title": "Representation",
+        "abstract": [
+          ""
+        ],
+        "purpose": [
+          ""
+        ],
+        "Smoothing": {
+          "title": "Smoothing",
+          "abstract": [
+            ""
+          ],
+          "purpose": [
+            ""
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        },
+        "Regularization": {
+          "title": "Regularization",
+          "abstract": [
+            ""
+          ],
+          "purpose": [
+            ""
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        },
+        "Wavelet": {
+          "title": "Wavelet",
+          "abstract": [
+            ""
+          ],
+          "purpose": [
+            ""
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        },
+        "Kernel": {
+          "title": "Kernel",
+          "abstract": [
+            ""
+          ],
+          "purpose": [
+            ""
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        }
+      },
+      "Assessment": {
+        "title": "Assessment",
+        "abstract": [
+          ""
+        ],
+        "purpose": [
+          ""
+        ],
+        "BiasVariance": {
+          "title": "Bias  Variance",
+          "abstract": [
+            ""
+          ],
+          "purpose": [
+            ""
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        },
+        "CrossValidation": {
+          "title": "Cross  Validation",
+          "abstract": [
+            ""
+          ],
+          "purpose": [
+            ""
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        },
+        "Bootstrap": {
+          "title": "Bootstrap",
+          "abstract": [
+            ""
+          ],
+          "purpose": [
+            ""
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        }
+      },
+      "Selection": {
+        "title": "",
+        "abstract": [
+          ""
+        ],
+        "purpose": [
+          ""
+        ],
+        "Estimates": {
+          "title": "Estimates",
+          "abstract": [
+            ""
+          ],
+          "purpose": [
+            ""
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        },
+        "Errors": {
+          "title": "Errors",
+          "abstract": [
+            ""
+          ],
+          "purpose": [
+            ""
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        },
+        "FuzzyMeasure": {
+          "title": "Fuzzy  Measure",
+          "abstract": [
+            ""
+          ],
+          "purpose": [
+            ""
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        }
+      },
+      "Inference": {
+        "title": "Inference",
+        "abstract": [
+          ""
+        ],
+        "purpose": [
+          ""
+        ],
+        "Likelyhood": {
+          "title": "Probability Distribution Characteristics",
+          "abstract": [
+            ""
+          ],
+          "purpose": [
+            ""
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        },
+        "Bayesian": {
+          "title": "Bayesian",
+          "abstract": [
+            ""
+          ],
+          "purpose": [
+            ""
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        },
+        "ExpectationMax": {
+          "title": "Expectation  Max",
+          "abstract": [
+            ""
+          ],
+          "purpose": [
+            ""
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        },
+        "Bagging": {
+          "title": "Bagging",
+          "abstract": [
+            ""
+          ],
+          "purpose": [
+            ""
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        },
+        "Stochastic": {
+          "title": "Stochastic Search Bumping",
+          "abstract": [
+            ""
+          ],
+          "purpose": [
+            ""
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        }
+      }
+    }
+  },
+  "Predict": {     "outline":"5",
+    "Classify": {  "outline":"B",
+      "NaiveBayes": {
+        "title": "Naive  Bayes",
+        "abstract": [
+          ""
+        ],
+        "purpose": [
+          "Less than 20 dimensions"
+        ],
+        "NBGaussian": {
+          "title": " NB  Gaussian",
+          "abstract": [
+            ""
+          ],
+          "purpose": [
+            "Less than 20 dimensions"
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        },
+        "NBMultinomial": {
+          "title": " NB  Multinomial",
+          "abstract": [
+            ""
+          ],
+          "purpose": [
+            "Less than 20 dimensions"
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        },
+        "NBBernoulli": {
+          "title": " NB  Bernoulli",
+          "abstract": [
+            ""
+          ],
+          "purpose": [
+            "Less than 20 dimensions"
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        }
+      },
+      "SupportVector": {
+        "title": "Support Vector Machines",
+        "abstract": [
+          ""
+        ],
+        "purpose": [
+          "Don't know where to begin"
+        ],
+        "SVMMultiClass": {
+          "title": " SVM  Multi  Class",
+          "abstract": [
+            ""
+          ],
+          "purpose": [
+            "Don't know where to begin"
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        },
+        "SVMKernel": {
+          "title": " SVM  Kernel",
+          "abstract": [
+            ""
+          ],
+          "purpose": [
+            "Don't know where to begin"
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        },
+        "DensityEstimate": {
+          "title": "Density  Estimate",
+          "abstract": [
+            ""
+          ],
+          "purpose": [
+            "Don't know where to begin"
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        },
+        "NoveltyDetect": {
+          "title": "Novelty  Detect",
+          "abstract": [
+            ""
+          ],
+          "purpose": [
+            "Don't know where to begin"
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        },
+        "OutlierDetect": {
+          "title": "Outlier  Detect",
+          "abstract": [
+            ""
+          ],
+          "purpose": [
+            "Don't know where to begin"
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        }
+      },
+      "NearestNeighbor": {
+        "title": "Nearest Neighbor",
+        "abstract": [
+          ""
+        ],
+        "purpose": [
+          "Less than 20 dimensions"
+        ],
+        "NNBruteForce": {
+          "title": " NN  Brute  Force",
+          "abstract": [
+            ""
+          ],
+          "purpose": [
+            "Less than 20 dimensions"
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        },
+        "NNKDTree": {
+          "title": " NNKD  Tree",
+          "abstract": [
+            ""
+          ],
+          "purpose": [
+            "Less than 20 dimensions"
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        },
+        "NNBallTree": {
+          "title": " NN  Ball  Tree",
+          "abstract": [
+            ""
+          ],
+          "purpose": [
+            "Less than 20 dimensions"
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        },
+        "NNNearestCentroid": {
+          "title": " NN  Nearest  Centroid",
+          "abstract": [
+            ""
+          ],
+          "purpose": [
+            "Less than 20 dimensions"
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        },
+        "NNLSHForest": {
+          "title": "Locally Sensitive Hashing Forrest",
+          "abstract": [
+            ""
+          ],
+          "purpose": [
+            "Less than 20 dimensions"
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        }
+      },
+      "Stochastic": {
+        "title": "Stochastic Gradient Descent",
+        "abstract": [
+          ""
+        ],
+        "purpose": [
+          ""
+        ],
+        "SGDSparseData": {
+          "title": " SGD  Sparse  Data",
+          "abstract": [
+            ""
+          ],
+          "purpose": [
+            ""
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        }
+      }
+    },
+    "Arrange": { "outline":"C",
+      "DecisionTree": {
+        "title": "Decision  Tree",
+        "abstract": [
+          ""
+        ],
+        "purpose": [
+          "Require highly tranparent model"
+        ],
+        "CART": {
+          "title": "CART Classification and Regression Trees",
+          "abstract": [
+            ""
+          ],
+          "purpose": [
+            "Require highly tranparent model"
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        },
+        "PRIM": {
+          "title": "PRIM Patient Rule Induction Method",
+          "abstract": [
+            ""
+          ],
+          "purpose": [
+            "Require highly tranparent model"
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        },
+        "MARS": {
+          "title": "MARS Multivariate Adaptive Regression Splines",
+          "abstract": [
+            ""
+          ],
+          "purpose": [
+            "Require highly tranparent model"
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        },
+        "HME": {
+          "title": "HME Hierarchial Mixing of Experts",
+          "abstract": [
+            ""
+          ],
+          "purpose": [
+            "Require highly tranparent model"
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        },
+        "C4.5": {
+          "title": "C.4.5",
+          "abstract": [
+            ""
+          ],
+          "purpose": [
+            "Require highly tranparent model"
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        },
+        "RandomForests": {
+          "title": "Random  Forests",
+          "abstract": [
+            ""
+          ],
+          "purpose": [
+            "Require highly tranparent model"
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        }
+      },
+      "Multi": {
+        "title": "Multi",
+        "abstract": [
+          ""
+        ],
+        "purpose": [
+          ""
+        ]
+      },
+      "Ensemble": {
+        "title": "Ensemble",
+        "abstract": [
+          ""
+        ],
+        "purpose": [
+          ""
+        ],
+        "Bagging": {
+          "title": "Bagging",
+          "abstract": [
+            ""
+          ],
+          "purpose": [
+            ""
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        },
+        "AdaptiveBoost": {
+          "title": "Adaptive  Boost",
+          "abstract": [
+            ""
+          ],
+          "purpose": [
+            ""
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        },
+        "GradientBoost": {
+          "title": "Gradient Tree Boosting",
+          "abstract": [
+            ""
+          ],
+          "purpose": [
+            ""
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        }
+      },
+      "Neural": {
+        "title": "Neural Networks",
+        "abstract": [
+          ""
+        ],
+        "purpose": [
+          "Unsure of feature importance"
+        ],
+        "Perceptron": {
+          "title": "Perceptron",
+          "abstract": [
+            ""
+          ],
+          "purpose": [
+            "Unsure of feature importance"
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        },
+        "BackProp": {
+          "title": "Back Propragation",
+          "abstract": [
+            ""
+          ],
+          "purpose": [
+            "Unsure of feature importance"
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        },
+        "Deep Boltzmann": {
+          "title": "Deep Boltzmann Machine",
+          "abstract": [
+            ""
+          ],
+          "purpose": [
+            "Unsure of feature importance"
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        },
+        "Deep Belief ": {
+          "title": "Deep Belief Networks",
+          "abstract": [
+            ""
+          ],
+          "purpose": [
+            "Unsure of feature importance"
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        },
+        "Convolutional": {
+          "title": "Convolutional Neural Network",
+          "abstract": [
+            ""
+          ],
+          "purpose": [
+            "Unsure of feature importance"
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        },
+        "AutoEncoders": {
+          "title": "Stacked Auto-Encoders",
+          "abstract": [
+            ""
+          ],
+          "purpose": [
+            "Unsure of feature importance"
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        }
+      }
+    }
+  },
+  "Advise": {      "outline":"5",
+    "Optimize": {  "outline":"B",
+      "LinearAlgebra": {
+        "title": "Operations Research",
+        "abstract": [
+          ""
+        ],
+        "purpose": [
+          ""
+        ],
+        "Decomposition": {
+          "title": "",
+          "abstract": [
+            ""
+          ],
+          "purpose": [
+            ""
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        },
+        "BandMatrix": {
+          "title": "",
+          "abstract": [
+            ""
+          ],
+          "purpose": [
+            ""
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        },
+        "SparseMatrix": {
+          "title": "",
+          "abstract": [
+            ""
+          ],
+          "purpose": [
+            ""
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        }
+      },
+      "OR": {
+        "title": "Operations Research",
+        "abstract": [
+          ""
+        ],
+        "purpose": [
+          ""
+        ],
+        "Scheduling": {
+          "title": "",
+          "abstract": [
+            ""
+          ],
+          "purpose": [
+            ""
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        },
+        "Routing": {
+          "title": "",
+          "abstract": [
+            ""
+          ],
+          "purpose": [
+            ""
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        },
+        "Allocation": {
+          "title": "",
+          "abstract": [
+            ""
+          ],
+          "purpose": [
+            ""
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        }
+      },
+      "Approximate": {
+        "title": "Genetic Alorithms",
+        "abstract": [
+          ""
+        ],
+        "purpose": [
+          "Approximate solutuons acceptable"
+        ],
+        "Genetic": {
+          "title": "Genetic Alorithms",
+          "abstract": [
+            ""
+          ],
+          "purpose": [
+            "Approximate solutuons acceptable"
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        },
+        "Anealing": {
+          "title": "Simulated Anealing",
+          "abstract": [
+            ""
+          ],
+          "purpose": [
+            "Approximate solutuons acceptable"
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        },
+        "Gradient": {
+          "title": "GradientSearch",
+          "abstract": [
+            ""
+          ],
+          "purpose": [
+            "Approximate solutuons acceptable"
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        }
+      },
+      "Objective": {
+        "title": "Objective",
+        "abstract": [
+          ""
+        ],
+        "purpose": [
+          "Objective function defined"
+        ],
+        "ConstraintLogic": {
+          "title": "Constraint Logic Programming",
+          "abstract": [
+            ""
+          ],
+          "purpose": [
+            "Objective function defined"
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        },
+        "LinearProg": {
+          "title": "Linear Programming",
+          "abstract": [
+            ""
+          ],
+          "purpose": [
+            "Objective function defined"
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        },
+        "NonLinearProg": {
+          "title": "Non Linear Programming",
+          "abstract": [
+            ""
+          ],
+          "purpose": [
+            "Objective function defined"
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        },
+        "IntegerProg": {
+          "title": "Integer Programming",
+          "abstract": [
+            ""
+          ],
+          "purpose": [
+            "Objective function defined"
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        }
+      }
+    },
+    "Simulate": { "outline":"C",
+      "Event": {
+        "title": "Event",
+        "abstract": [
+          ""
+        ],
+        "purpose": [
+          "Inject events and observe influence"
+        ],
+        "Discrete": {
+          "title": "Discrete Event",
+          "abstract": [
+            ""
+          ],
+          "purpose": [
+            "Inject events and observe influence"
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        },
+        "Markov": {
+          "title": "Markov",
+          "abstract": [
+            ""
+          ],
+          "purpose": [
+            "Inject events and observe influence"
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        },
+        "MonteCarlo": {
+          "title": "Monte  Carlo",
+          "abstract": [
+            ""
+          ],
+          "purpose": [
+            "Inject events and observe influence"
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        }
+      },
+      "SelfOrganized": {
+        "title": "Self  Organized",
+        "abstract": [
+          ""
+        ],
+        "purpose": [
+          ""
+        ],
+        "OrgMaps": {
+          "title": "Self Organizing Maps",
+          "abstract": [
+            ""
+          ],
+          "purpose": [
+            ""
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        },
+        "Swarm": {
+          "title": "Swarm",
+          "abstract": [
+            ""
+          ],
+          "purpose": [
+            ""
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        },
+        "Agent": {
+          "title": "Agent Based",
+          "abstract": [
+            ""
+          ],
+          "purpose": [
+            ""
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        }
+      },
+      "PhasePlanes": {
+        "title": "Phase  Planes",
+        "abstract": [
+          ""
+        ],
+        "purpose": [
+          "Model entire systems"
+        ],
+        "Dynamics": {
+          "title": "System Dynamics",
+          "abstract": [
+            ""
+          ],
+          "purpose": [
+            "Model entire systems"
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        },
+        "Activity": {
+          "title": "Activity Based",
+          "abstract": [
+            ""
+          ],
+          "purpose": [
+            "Model entire systems"
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        },
+        "Differential": {
+          "title": "Differential",
+          "abstract": [
+            ""
+          ],
+          "purpose": [
+            "Model entire systems"
+          ],
+          "advantages": [
+            ""
+          ],
+          "disadvantages": [
+            ""
+          ],
+          "tools": {
+            "spark": "",
+            "scikit": "",
+            "r": ""
+          },
+          "links": {
+            "adoc": "",
+            "book": "",
+            "sklearn": ""
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,234 @@
+Cluster
+  Centroid
+    KMeans
+    XMeans
+    SOM
+    Affinity
+    FuzzyCMeans
+  Hierarchial
+    Agglomerative
+    Birch
+    Canopy
+    Fractal
+  Distribution
+    ExpectationMax
+    Spectral
+    Correllation
+    GaussianMixture
+  Density
+    DBSCAN
+    MeanShift
+  Other
+    TopicModeling
+    Fractal
+    LatentDirichlet
+    PowerIteration
+
+Dimension
+  Eigen
+    BlindSignal
+    SensitivityAnalysis
+    SingularValueDecomposition
+  Principal
+    Independent
+    Correspondence
+    FactorAnalysis
+  Discriminant
+    Linear
+    Quadratic
+    Regularized
+    Cross
+  Manifold
+    Isomap
+    LocallyLinear
+    Laplacian
+
+Regress
+  Linear
+    GeneralizedLinear
+    Logistic
+    Multiclass?
+    Multivariate
+  Regularized
+    Ridge
+    Lasso
+    ElasticNet
+    LeastAngle
+  Probabilistic
+    Bayesian
+    AutoRelevance
+    OrthogonalMatch
+    GausianProcess
+  Other
+    Stepwise
+    Isotomic
+    Robust
+    TreeBased
+
+Anomaly
+  DensityEstimation
+  MultivariateGaussian
+
+AssociationRule
+  Apriori
+  Dictionary
+  CollaborativeFiltering
+  AlternatingLeastSquares
+  LowRankMatrixFactorization
+  FrequentPatternMining
+  PrefixSpan
+
+Feature
+  Select
+    Genetic
+    Ensemble
+    SignalNoise
+    SumSquares
+    VectorSlicer
+    RFormula
+  Extract
+    TF-IDF
+    Word2Vec
+    CountVectorizer
+  Transform
+    Tokenizer
+    StopWordsRemover
+    N-Gram
+    Binarizer
+    PolynomialExpansion
+    DiscreteCosineTransform
+    StringIndexer
+    OneHotEncoder
+    VectorIndexer
+    Normalizer
+    StandardScaler
+    MinMaxScaler
+    Bucketizer
+    ElementwiseProduct
+    VectorAssembler
+
+Search
+  Grid
+  Exhaustive
+  BestFirst
+  Annealing
+
+Anomaly
+  Outlier
+  LocalOutlier
+  ModelBased
+  Smoothing
+
+Classify
+  NaiveBayes
+    NBGaussian
+    NBMultinomial
+    NBBernoulli
+    BayesianNetwork
+  SupportVector
+    Hyperplane
+    Kernel
+    LargeMargin
+  NearestNeighbor
+    K-NN
+  Classifiers
+    Multi-Class
+    Multi-Label
+
+Structure
+  DecisionTree
+    CART
+    C4.5
+  RandomForest
+  Ensemble
+    Bagging
+    AdaptiveBoost
+    GradientBoost
+    Lifting
+    Multiclass
+  Markov
+    HiddenMarkov
+
+Optimize
+  OperationsResearch
+    LinearAlgebra
+    Scheduling
+    Routing
+    Allocation
+  Approximate
+    SimulatedAnealing
+    GradientSearch
+  Objective
+    ConstraintLogic
+    LinearProg
+    NonLinearProg
+    IntegerProg
+
+Genetic
+  GeneticAP
+  EvolutionaryAP
+  GeneEspressionP
+  EvolutionStrategy
+  DifferentialEvolution
+  NoveltyMetaphor
+
+Swarn
+  Boids
+  AntColony
+  ArificalBee
+  CukooSearcg
+  ParticalSwarm
+
+Logic
+  FuzzyLogic
+
+Simulate
+  Event
+    Discrete
+    Markov
+    MonteCarlo
+    AgentBased
+  SelfOrganized
+    OrgMaps
+    Swarm
+    Agent
+  PhasePlanes
+    SystemDynamics
+    Activity
+    Differential
+
+Neural
+  Cost Function
+  Perceptron
+  Backpropagation
+
+DeepLearningIG
+  Feedforward
+  Regularization
+  Optimization
+  Convolution
+  Sequence
+  Research
+    Linear Factor
+    Autoencoders
+    Representation
+    Probabilistic
+    MonteCarlo
+    Partition
+    Inference
+    Generative
+      BoltzmannMachines
+        Restricted
+        DeepBeliefNetworks
+        Deep
+        RealValuedData
+        Convolutional
+        Other
+      BackPropagation
+      DeepBeliefNetworks
+      DirectedGenerativeNets
+      Autoencoders
+        DrawinSamples
+      GenerativeStochasticNetworks
+      OtherGeneratioSchemes
+      Evaluating Generative Models

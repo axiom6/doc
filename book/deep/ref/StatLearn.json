@@ -1,0 +1,30 @@
+{
+  "Concept":{
+    "Definitions":{
+      "MachineLearning": [
+        "Constructs algorithms that can learn from data."
+      ],
+      "StatisticalLearning": [
+        "A branch of applied statistics that emerged in response to machine learning.",
+        "It emphasizes statistical models and assessment of uncertainty."
+      ],
+      "DataScience": [
+        "The extraction of knowledge from data.",
+        "It leverages ideas from mathematics, statistics, machine learning, computer science, engineering..."
+      ],
+      "Contrast": [
+        "All of these displines are very similar with dierent emphases."
+      ]
+    },
+    "SupervisedLearing":{
+      "image":"SupervisedParadigm.jpg",
+      "Steps":["TrainingData","Fitting","Prediction"],
+      "TraditionalStatistics":[
+        "Domain experts work for 10 years to learn good features",
+        "Then they bring the statistician a small clean dataset"],
+      "TodaysApproach":[
+        "We start with a large dataset with many features.",
+        "Then use a machine learning algorithm to find the good ones.",
+        "A huge change."] }
+  }
+}

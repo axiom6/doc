@@ -1,0 +1,40 @@
+
+    The number of hidden layers
+    The number of neurons for each hidden layer
+    The activation function
+    The cost function
+    The optimization algorithm
+    The learning rate
+    The type of regularization
+    The regularization rate
+    The number of gradient descent steps
+    The way of evaluating the accuracy of the network
+
+
+---- Modularity ----
+
+    Splitting 
+    — Modules can be made independent.
+    - Pre-trained autoencoders can be split and reused as layers in another network.
+
+    Substituting
+     — Modules can be substituted and interchanged.
+     — Through transfer learning, student networks can serve as substitutes of teacher networks.
+
+    Augmenting 
+    — New Modules can be added to create new solutions.
+    — New networks can be added later to improve accuracy. You can joint train networks to improve generalization. Furthermore, outputs of a neural network can be used as neural embedding that can be used as representations for other neural networks.
+
+    Porting 
+    — Modules can be applied to different contexts.
+     — A neural network can be “ported” to a different context by replacing the top layers. This works is cases were the domains are similar enough. There still needs to be more research in Domain Adaptation to understand the boundaries of this method.
+
+    Inverting N/A
+    — The hierarchical dependencies between Modules can be rearranged.
+    — Layers in the network are not rearrangeable without catastrophic consequences.
+      The layers of a monolithic DL system are too tightly coupled to allow for this.
+
+    Excluding  N/A
+    — There is no mechanism to “forget” or to exclude functionality from a monolithic DL system.
+    — Existing Modules can be removed to build a usable solution.
+

@@ -1,0 +1,87 @@
+
+Assessment
+  HoldoutMethod
+  BiasVariance
+  CrossValidation
+  Bootstrap
+  Correlation
+
+Bias
+Skew
+
+CoVariance
+  Empirical
+  Shrunk
+  SparseInv
+  Robust
+
+Confidence
+  Interval
+    ErrorBounds
+    Confidence
+    Crediable
+    Probability
+  ModelEvaluation
+    ConfusionMatrix
+    F-Measure
+    ROCGraph
+    Ranking
+  Uncertainty
+    Catagories
+    Propagation
+  Applicablilty
+    Assumptions
+    Contraints
+
+InferentialStatistics
+  Estimation
+  HypothesisTesting
+  ConfidenceIntervals
+  TTests
+  ANOVA
+  Correlation
+  Regression
+  ChiSquared
+
+Sensitivity
+ Rate True.False.Postive.Negative
+ OperatingCharacteristic Total.Receiver.AreaUnderCurve
+
+Hypothesis
+  TTest
+  Topic
+  ChiSquared
+  Causation
+
+Distributions
+
+Feedback
+ Learning
+   ActiveLearning
+   Ensemble
+ Reason
+   Inductive
+   Transductive
+   Deductive
+ Optimality
+   Constraints
+   Sensitivity
+   Sparsity
+ Suitablity
+   Linearity
+   Constantability
+   Comprehensive
+   Separatrix
+Relevance
+ Improve
+   Construcual
+   Nutrients
+   Flow
+ Extent
+   Change
+   Evolve
+   Emerge
+Inference
+ Logical
+ Expert
+ Fuzzy
