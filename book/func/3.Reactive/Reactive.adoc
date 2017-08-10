@@ -1,0 +1,335 @@
+
+// include::../../../dir/inc/DefPractice.adoc[]
+
+:stem:
+:source-highlighter: highlight.js
+:author: Tom Flaherty
+:revnumber: 0.0
+:revdate:   November 9, 2016
+:doctype: book
+:toc: left
+:toclevels: 3
+:icons:
+:lang: en
+:language: javascript
+:icons: font
+:icon-set: fa
+:linkcss:
+:imagesdir:     ./img
+:iconsdir:      ../../../dir/ico
+:stylesdir:     ../../../dir/css
+:scriptsdir:    ../../../dir/js
+:pdf-stylesdir: ../../../dir/yml
+:pdf-style: default-theme.yml
+:stylesheet: axbook.css
+:dirs: true
+
+=  [.black]#Reactive: Programming vs.Systems#
+
+== [.black]#A Set of Design Principles#
+
+* One recent indicator of success is that "reactive" has become an overloaded term and is now being associated with several different things to different people—in good company with words like "streaming," "lightweight," and "real-time."
+
+* From the perspective of this article, reactive is a set of design principles, a way of thinking about systems architecture and design in a distributed environment where implementation techniques, tooling, and design patterns are components of a larger whole—a system.
+
+== [.black]#Reactive Systems#
+
+* A reactive system is an architectural style that allows multiple individual applications to coalesce as a single unit, reacting to its surroundings, while remaining aware of each other—this could manifest as being able to scale up/down, load balancing, and even taking some of these steps proactively.
+
+== [.black]#The Three Areas of Reactive#
+
+* It’s possible to write a single application in a reactive style (i.e. using reactive programming);
+
+* however, that’s merely one piece of the puzzle.
+
+* Though each of the above aspects may seem to qualify as "reactive," in and of themselves they do not make a system reactive.
+
+=== [.black]#Reactive Systems#
+=== [.black]#FRP#
+=== [.black]#Reactive Programming#
+
+== [.black]#FRP#
+
+* Functional reactive programming, commonly called FRP, is most frequently misunderstood. FRP was very precisely defined 20 years ago by Conal Elliott. The term has most recently been used incorrectly1 to describe technologies like Elm, Bacon.js, and Reactive Extensions (RxJava, Rx.NET, RxJS) amongst others. Most libraries claiming to support FRP are almost exclusively talking about reactive programming and it will therefore not be discussed further.
+
+== [.black]#Reactive Programming#
+
+* Reactive programming, not to be confused with functional reactive programming, is a subset of asynchronous programming and a paradigm where the availability of new information drives the logic forward rather than having control flow driven by a thread-of-execution.
+
+* It supports decomposing the problem into multiple discrete steps where each can be executed in an asynchronous and non-blocking fashion, and then be composed to produce a workflow—possibly unbounded in its inputs or outputs.
+
+== [.black]#Asynchronous Programming#
+
+* Asynchronous is defined by the Oxford Dictionary as “not existing or occurring at the same time,”
+
+* which in this context means that the processing of a message or event is happening at some arbitrary time possibly in the future.
+
+* This is a very important technique in reactive programming since it allows for non-blocking execution
+
+* where threads of execution competing for a shared resource don’t need to wait by blocking (preventing the thread of execution from performing other work until current work is done),
+
+* and can as such perform other useful work while the resource is occupied. Amdahl’s Law2 tells us that contention is the biggest enemy of scalability, and therefore a reactive program should rarely, if ever, have to block.
+
+== [.black]#Event vs. Message Driven#
+
+* Reactive programming is generally event-driven,
+
+* in contrast to reactive systems, which are message-driven
+
+* the distinction between event-driven and message-driven is clarified later in this article.
+
+== [.black]#Reactive Programming#
+
+* The application program interface (API) for reactive programming libraries are generally either:
+
+[horizontal]
+Callback-based:: where anonymous side-effecting callbacks are attached to event sources, and are being invoked when events pass through the dataflow chain.
+Declarative::    through functional composition, usually using well-established combinators like map, filter, fold etc.
+
+* Most libraries provide a mix of these two styles, often with the addition of stream-based operators like windowing, counts, triggers, etc.
+
+== [.black]#Dataflow#
+
+* It would be reasonable to claim that reactive programming is related to dataflow programming,
+
+* Since the emphasis is on the flow of data rather than the flow of control.
+
+* Examples of programming abstractions that support this programming technique are:
+
+[horizontal]
+Futures/Promises::   containers of a single value, many-read/single-write semantics where asynchronous transformations of the value can be added even if it is not yet available.
+Streams::            as in reactive streams: unbounded flows of data processing, enabling asynchronous, non-blocking, back-pressured transformation pipelines between a multitude of sources and destinations.
+Dataflow variables:: single assignment variables (memory-cells) which can depend on input, procedures and other cells, so that they are automatically updated on change. A practical example is spreadsheets—where the change of the value in a cell ripples through all dependent functions, producing new values downstream.
+
+== [.black]#ReactiveX#
+
+* Popular libraries supporting the reactive programming techniques on the JVM include, but are not limited to, Akka Streams, Ratpack, Reactor, RxJava, and Vert.x.
+
+* These libraries implement the reactive streams specification, which is a standard for interoperability between reactive programming libraries on the JVM, and according to its own description is “...an initiative to provide a standard for asynchronous stream processing with non-blocking back pressure.”
+
+== [.black]#Benefits#
+
+[horizontal]
+Utilization:: of computing resources on multicore and multi-CPU hardware
+Performance:: by reducing serialization points as per Amdahl’s Law and, by extension, Günther’s Universal Scalability Law3
+Maintainability:: A straightforward approach to dealing with asynchronous and non-blocking computation and I/O
+Coordination:: Removes the need for explicit coordination between active components
+Ease::  creation of components and composition of workflows
+Throttling:: Manages back-pressure thas is crucial to avoid over-utilization, or rather the unbounded consumption of resources
+
+
+== [.black]#Architecture vs Probramming#
+
+Architecture:: The process of designing reactive systems.
+
+Programming Paradigms:: reactive programming is jus one Paradigms,
+
+Not An End All:: With any tool, it is not intended for any and all use-cases.
+
+== [.black]#Event vs. Message Driven#
+
+Event Driven::
+  * Focuses on computation through ephemeral dataflow chains
+
+Message Driven::
+  * Focuses on resilience and elasticity through the communication, and coordination, of distributed systems—is message-driven4 (also referred to as messaging).
+  * long-lived addressable components
+  * asynchronous, with the sending and the reception decoupled from the sender and receiver respectively
+  * messages are inherently directed - push
+
+Main Differences ::
+ * Messages are inherently directed (push), events are not (pull).
+ * Messages have a clear (single) destination, while events are facts for others to observe.
+
+== [.black]#Conceptual Difference#
+
+Message::
+ * An item of data that is sent to a specific destination.
+ * Awaits the arrival of messages and react to them, otherwise lying dormant.
+ * Focusses on addressable recipients
+
+Event::
+  * A signal emitted by a component upon reaching a given state.
+  * In an event-driven system notification listeners are attached to the sources of events such that they are invoked when the event is emitted.
+  * This means that an event-driven system focuses on addressable event sources
+
+== [.black]#Distributed Environment#
+
+Messages:: Needed to communicate across the network and form the basis for communication in distributed systems,
+
+Events:: are emitted locally
+
+Messaging:: It is common to use messaging under the hood to bridge an event-driven system across the network by sending events inside messages.
+
+Relative Simplicity:: of the event-driven programming model in a distributed context and can work very well for specialized and well-scoped use cases
+
+Distributed Stream Processing:: Spark Streaming, Flink, Kafka, and Akka Streams over Gearpump
+
+Distributed Publish Subscribe:: Kafka and Kinesis.
+
+== [.black]#Trade Off#
+
+Gains:: Sbstraction and simplicity of the programming model
+
+Losses:: Control.
+
+Embrace Reality and Constraints:: Partial failures, failure detection, dropped/duplicated/reordered messages, eventual consistency, managing multiple concurrent realities, etc.—
+
+Avoid Leaky Abstraction:: Tackle reality head on instead of hiding it behind a leaky abstraction
+
+Don't Pretend:: That the network is not there. This has been done too many times in the past (e.g. EJB, RPC, CORBA, and XA).
+
+== [.black]#Semantics Applicability#
+
+Differences in Semantics and Applicability:: Have profound implications in the application design, including things like resilience, elasticity, mobility, location transparency, and management of the complexity of distributed systems, which will be explained further in this article.
+
+In a Reactive System:: Both events and messages will be present—as one is a great tool for communication (messages), and another is a great way of representing facts (events).
+
+== [.black]#The Challenge#
+
+interconnected:: The world is becoming increasingly interconnected.
+
+We are no longer building programs—end-to-end logic:: to calculate something for a single operator—as much as we are building systems.
+
+Systems are complex by definition:: each consisting of a multitude of components, who in and of themselves also can be systems—which mean software is increasingly dependent on other software to function properly.
+
+Onipresent:: The systems we create today are to be operated on computers small and large, few and many, near each other or half a world away.
+
+Expectations:: Users’ expectations have become harder and harder to meet as everyday human life is increasingly dependent on the availability of systems to function smoothly.
+
+Have to be responsive:: for it does not matter if something provides the correct response if the response is not available when it is needed.
+
+Acheived By:: Responsiveness  under failure (resilience) and under load (elasticity).
+
+Message Driven:: To make that happen, we make these systems message-driven, and we call them reactive systems.
+
+== [.black]#Systems and architecture#
+
+* Reactive systems—as defined by the Reactive Manifesto—is a set of architectural design principles for building modern systems that are well prepared to meet the increasing demands that applications face today.
+
+== [.black]#Message Passing#
+
+Definition:: The foundation for a reactive system is message-passing
+
+Boundary::  a temporal boundary between components that allows them to be decoupled
+
+Decoupled in Time:: this allows for concurrency
+
+Decoupled in Space:: llows for distribution and mobility.
+
+Isolation:: This decoupling is a requirement for full isolation between components
+
+Basis:: Forms the basis for both resilience and elasticity.
+
+
+== [.black]#Responsiveness#
+
+Dependable:: In order to deliver systems that users—and businesses—can depend on, they have to be responsive
+
+Available:: It does not matter if something provides the correct response if the response is not available when it is needed.
+
+Responsive Under Adversity:: In order to achieve this, we need to make sure that responsiveness can be maintained under failure (resilience) and under load (elasticity).
+
+Message Driven:: To make that happen, we make these systems message-driven, and we call them reactive systems.
+
+
+== [.black]#Resilience#
+
+Responsiveness under failure:: An inherent functional property of the system, something that needs to be designed for, and not something that can be added in retroactively.
+
+Beyond Fault Tolerance:: it’s not about graceful degradation—even though that is a very useful trait for systems—but about being able to fully recover from failure: to self-heal.
+
+Component Isolation:: Avoids failures spreading to neighbouring components—resulting in, often catastrophic, cascading failure scenarios.
+
+Key To Resilience:: So the key to building resilient, self-healing systems is to allow failures to be: contained, reified as messages, sent to other components (that act as supervisors), and managed from a safe context outside the failed component.
+
+Message-driven is the Enabler:: moving away from strongly coupled, brittle, deeply nested synchronous call chains that everyone learned to suffer through, or ignore.
+
+Decouple:: The management of failures from the call chain, freeing the client from the responsibility of handling the failures of the server.
+
+== [.black]#Elasticity#
+
+Responsiveness Under Load:: The throughput of a system scales up or down (as well as in or out) automatically to meet varying demand as resources are proportionally added or removed. It is the essential element needed to take advantage of the promises of cloud computing: allowing systems to be resource efficient, cost-efficient, environment-friendly and pay-per-use.
+
+Systems need to be Adaptive:: Allows intervention-less auto-scaling, replication of state and behavior, load-balancing of communication, failover, and upgrades, without rewriting or even reconfiguring the system.
+
+Location Transparency:: Enables adaptibility wuth the ability to scale the system in the same way, using the same programming abstractions, with the same semantics, across all dimensions of scale—from CPU cores to data centers.
+
+Everythis is Distributed:: This is true whether we are running our systems on a single node (with multiple independent CPUs communicating over the QPI link) or on a cluster of nodes (with independent machines communicating over the network).
+
+Vertical and Horizontal Same:: Embracing this fact means that there is no conceptual difference between scaling vertically on multicore or horizontally on the cluster. This decoupling in space [...], enabled through asynchronous message-passing, and decoupling of the runtime instances from their references is what we call Location Transparency.
+
+Communication Transparency:: So no matter where the recipient resides, we communicate with it in the same way. The only way that can be done semantically equivalent is via messaging
+
+== [.black]#Productivity#
+
+Isolation of Failures:: offer bulkheads between components, preventing failures to cascade, which limits the scope and severity of failures.
+
+Supervisor Iierarchies:: offer multiple levels of defenses paired with self-healing capabilities, which remove a lot of transient failures from ever incurring any operational cost to investigate.
+
+Message Passing with Location Transparency:: allow for components to be taken offline and replaced or rerouted without affecting the end-user experience, reducing the cost of disruptions, their relative urgency, and also the resources required to diagnose and rectify.
+
+Replication:: reduces the risk of data loss, and lessens the impact of failure on the availability of retrieval and storage of information.
+
+Elasticity:: allows for conservation of resources as usage fluctuates, allowing for minimizing operational costs when load is low, and minimizing the risk of outages or urgent investment into scalability as load increases.
+
+Cope Well:: under failure varying load and change over time—all while offering a low cost of ownership over time.
+
+== [.black]#Programming to Systems#
+
+* How does reactive programming relate to reactive systems?
+
+Reactive Programming:: A great technique for managing internal logic and dataflow transformation, locally within the components, as a way of optimizing code clarity, performance and resource efficiency. Reactive systems, being a set of architectural principles, puts the emphasis on distributed communication and gives us tools to tackle resilience and elasticity in distributed systems.
+
+Addressability:: One common problem with only leveraging reactive programming is that its tight coupling between computation stages in an event-driven callback-based or declarative program makes resilience harder to achieve as its transformation chains are often ephemeral and its stages—the callbacks or combinators—are anonymous, i.e. not addressable.
+
+Signaling:: This means that they usually handle success or failure directly without signaling it to the outside world.
+
+Escalationg:: This lack of addressability makes recovery of individual stages harder to achieve as it is typically unclear where exceptions should, or even could, be propagated.
+
+Tracing Failures:: As a result, failures are tied to ephemeral client requests instead of to the overall health of the component—if one of the stages in the dataflow chain fails, then the whole chain needs to be restarted, and the client notified.
+
+Self Healing:: This is in contrast to a message-driven reactive system which has the ability to self-heal, without necessitating notifying the client.
+
+Decouple In Time:: Another contrast to the reactive systems approach is that pure reactive programming allows decoupling in time,
+As mentioned, decoupling in time allows for concurrency,
+
+Decouple In Space:: but not space (unless leveraging message-passing to distribute the dataflow graph under the hood, across the network, as discussed previously).
+ but it is decoupling in space that allows for distribution, and mobility—allowing for not only static but also dynamic topologies—which is essential for elasticity.
+
+Location Transparency:: A lack of location transparency makes it hard to scale out a program purely based on reactive programming techniques adaptively in an elastic fashion and therefore requires layering additional tools, such as a message bus, data grid, or bespoke network protocols on top.
+
+Communication Abstraction:: This is where the message-driven programming of reactive systems shines, since it is a communication abstraction that maintains its programming model and semantics across all dimensions of scale, and therefore reduces system complexity and cognitive overhead.
+
+Callback Based:: A commonly cited problem of callback-based programming is that while writing such programs may be comparatively easy, it can have real consequences in the long run.
+
+Anonymous Callbacks:: For example, systems based on anonymous callbacks provide very little insight when you need to reason about them, maintain them, or most importantly figure out what, where, and why production outages and misbehavior occur.
+
+Addressable Components:: Libraries and platforms designed for reactive systems (such as the Akka project and the Erlang platform) have long learned this lesson and are relying on long-lived addressable components that are easier to reason about in the long run.
+
+Identifiable Components:: When failures occurs, the component is uniquely identifiable along with the message that caused the failure. With the concept of addressability at the core of the component model, monitoring solutions have a meaningful way to present data that is gathered—leveraging the identities that are propagated.
+
+Paradigm:: The choice of a good programming paradigm, one that enforces things like addressability and failure management, has proven to be invaluable in production, as it is designed with the harshness of reality in mind, to expect and embrace failure rather than the lost cause of trying to prevent it.
+
+Reactive Programming:: All in all, reactive programming is a very useful implementation technique, which can be used in a reactive architecture. Remember that it will only help manage one part of the story: dataflow management through asynchronous and nonblocking execution—usually only within a single node or service.
+
+Reactive System:: Once there are multiple nodes, there is a need to start thinking hard about things like data consistency, cross-node communication, coordination, versioning, orchestration, failure management, separation of concerns and responsibilities etc.—i.e. system architecture.
+
+Approach:: Therefore, to maximize the value of reactive programming, use it as one of the tools to construct a reactive system.
+
+Requires:: Building a reactive system requires more than abstracting away OS-specific resources and sprinkling asynchronous APIs and circuit breakers on top of an existing, legacy, software stack.
+
+Embrace:: It should be about embracing the fact that you are building a distributed system comprising multiple services—that all need to work together, providing a consistent and responsive experience, not just when things work as expected but also in the face of failure and under unpredictable load.
+
+== [.black]#Summary#
+
+Growth:: Enterprises and middleware vendors alike are beginning to embrace reactive, with 2016 witnessing a huge growth in corporate interest in adopting reactive.
+Goal:: In this article, we have described reactive systems as being the end goal—assuming the context of multicore, cloud and mobile architectures—for enterprises, with reactive programming serving as one of the important tools.
+
+Productivity:: Reactive programming offers productivity for developers—through performance and resource efficiency
+
+component level:: for internal logic and dataflow transformation.
+
+DevOps:: resilience and elasticity—at the system level, for building cloud native and other large-scale distributed systems.
+
+Eecommend:: combine the techniques of reactive programming within the design principles of reactive systems.

@@ -1,0 +1,9 @@
+
+include::../../../dir/inc/DefStudy.adoc[]
+
+''''
+<<<<
+==  [.black]#icon:circle[] Refine#
+=== [.black]#icon:circle[] Improve#
+=== [.black]#icon:circle[] Quality#
+=== [.black]#icon:circle[] Track#

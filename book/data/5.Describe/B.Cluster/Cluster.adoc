@@ -1,0 +1,60 @@
+
+include::../../../../dir/inc/DefStudy.adoc[]
+
+<<<<
+
+== [.black]#Cluster#
+''''
+
+image::describe/Cluster.png[alt="Cluster,align="center"]
+
+<<<<
+
+== [.black]#Centroid#
+
+In centroid-based clustering, clusters are represented by a central vector, which may not necessarily be a member of the data set. When the number of clusters is fixed to k, k-means clustering gives a formal definition as an optimization problem: find the k {\displaystyle k} k cluster centers and assign the objects to the nearest cluster center, such that the squared distances from the cluster are minimized.
+
+include::KMeans.adoc[]
+
+include::Fuzzy.adoc[]
+
+include::SOM.adoc[]
+
+<<<<
+
+== [.black]#Hierachial#
+
+Hierarchical clustering is a general family of clustering algorithms that build nested clusters by merging or splitting them successively.
+
+This hierarchy of clusters is represented as a tree (or dendrogram). The root of the tree is the unique cluster that gathers all the samples, the leaves being the clusters with only one sample.
+
+include::Algomerative.adoc[]
+
+include::Birch.adoc[]
+
+<<<<
+
+== [.black]#Distribution#
+
+The clustering model most closely related to statistics is based on distribution models. Clusters can then easily be defined as objects belonging most likely to the same distribution. A convenient property of this approach is that this closely resembles the way artificial data sets are generated: by sampling random objects from a distribution.
+
+While the theoretical foundation of these methods is excellent, they suffer from one key problem known as overfitting, unless constraints are put on the model complexity. A more complex model will usually be able to explain the data better, which makes choosing the appropriate model complexity inherently difficult.
+
+include::Spectral.adoc[]
+
+include::ExpectationMax.adoc[]
+
+<<<<
+
+== [.black]#Density#
+
+Defines clusters as connected dense regions in the data space.
+
+include::DBScan.adoc[]
+
+include::MeanShift.adoc[]
+
+include::Affinity.adoc[]
+
+
+

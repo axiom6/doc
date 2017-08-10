@@ -1,0 +1,118 @@
+
+include::../../../dir/inc/DefPractice.adoc[]
+
+== [.black]#The Principles Behind Each Column and Practice#
+
+=== [.black]#Reference?#
+
+* General
+. IT and business alignment
+. Maximum benefits at the lowest costs and risks
+. Business continuity
+. Compliance with standards and policies
+. Adoption of the best practices for the market
+* Information
+. Information treated as an asset
+. Shared information
+. Accessible information
+. Common terminology and data definitions
+. Information security
+* Application
+. Technological independence
+. Easy-to-use applications
+. Component reusability and simplicity
+. Adaptability and flexibility
+. Convergence with the enterprise architecture
+. Enterprise architecture also applies to external applications
+. Low-coupling interfaces
+. Adherence to functional domains
+* Technology
+. Changes based on requirements
+. Control of technical diversity and suppliers
+. Interoperability
+
+=== [.black]#Embrace#
+
+==== [.black]#Collaborate#
+
+* Activities have gravitated away from individuals and towards teams.
+
+[horizontal]
+Psychological Safety::
+* We instill a sense of confidence so that everyones' contributions are sought after and valued.
+* Everyone is comfortable being themselves.
+* Jobs and lifestyles are in harmonony.
+Mutual Respect::
+* We respect everyones diversity and are sensitve about their viewpoints.
+* We work as a team within our organization, across organizations and with our customers.
+
+==== [.black]#Acquire#
+
+==== [.black]#Expertise#
+
+==== [.black]#Trust#
+
+[horizontal]
+Interpersonal:: Our teams thrive on interpersonal trust.
+Committment::   We do not say it unless we mean it. We do what we say we will do, when we say we will do it.
+Partnership::   We firmly believe in being a trustworthy partner to everyone.
+
+=== [.black]#Innovate#
+
+Where Good Ideas Come From::
+
+[horizontal]
+Ecosystem::  Allows ideas to be diffused and be reconnected in novel ways.
+Connection:: Chance favors the connected mind with serendipitous discoveries
+Adjacent::   Possibilities emerge and become close waiting to be connected.
+Hunches::    Ideas evolve over time as slow hunches rather than sudden breakthroughs.
+Repurpose::  Technologies engineered for one purpose are extended to other purposes.
+Convergen::  Ideas converge in a shared physical or intellectual space.
+Learning::   Leverage change to adopt new strategies.
+
+Improvement:
+
+* We facilitate everyone to be involved in continuously improving our products, technology and delivery.
+* We create the space and allocate the resources for long term strategies.
+* We strive for excellence in everything we do..  
+
+==== [.black]#Product#
+
+==== [.black]#Tools#
+
+==== [.black]#Science#
+
+==== [.black]#Creativity#
+
+=== [.black]#Encourage#
+
+==== [.black]#Discover#
+
+Customer Focus:
+
+* We strive to discover ours customer needs to the best of our abilities.
+* We recognize our teams and customers are the reason for our existence.
+
+Vision:
+
+* We communicate our positive "Why" message to everyone expecially our customers.
+* Everything we do benefits everyone.
+* We govern ourselves with vision and passion. 
+
+Assumptions:
+
+[horizontal]
+List::       We list, track and challenges all our assumptions
+Pivot::      Our mistakes help us abandon our old assumptions
+
+Transparency:
+
+* We share information freely with everyone.
+* We are transparent with everything and everyone.
+* We have no hidden agendas.
+
+==== [.black]#Insight#
+
+==== [.black]#Understand#
+
+==== [.black]#Truth#

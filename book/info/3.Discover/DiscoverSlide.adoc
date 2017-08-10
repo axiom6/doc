@@ -1,0 +1,19 @@
+
+include::../../../dir/inc/DefPractice.adoc[]
+
+== [.black]#Discover#
+
+Propositions are evaluated where the best features are turned into Value Propositions for Product.
+
+These Products are built into Services by Technology with are further validated by Benefits
+
+image::Discover.svg[alt="Discover",align="center"]
+
+[horizontal]
+Vision::     The shared vision communicated to everyone.
+Community::  The people an enterprise aims to reach and serve.
+Channels::   Communication and product delivery.
+Assumption:: Strategic apriori statements to be verified by Benefit
+
+
+

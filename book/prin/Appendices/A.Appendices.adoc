@@ -1,0 +1,15 @@
+
+include::../../../dir/inc/DefPractice.adoc[]
+
+== [.black]#Appendix A Language Survey#
+
+    Fortran, Cobal, C and C++, C#, Objective-C
+    Algol, ADA, Pascal
+    APL, Erlang, ML,  F#, OZ,OCAML, Python
+
+== [.black]#Appendix B Principles#
+== [.black]#Appendix C Paradigms#
+== [.black]#Appendix D Languages#
+== [.black]#Appendix E Traceability#
+== [.black]#Glossary#
+== [.black]#Index#

@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <title>Learn Clojure</title>
+  <meta charset="utf-8">
+  <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+  <meta name="author" content="Tom Flaherty">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+  <link rel="stylesheet" href="../../../node_modules/reveal.js/css/reveal.css">
+  <link rel="stylesheet" href="../../../node_modules/reveal.js/lib/css/zenburn.css">  <!-- Code syntax highlighting -->
+  <link rel="stylesheet" href="../../../node_modules/reveal.js/css/theme/night.css" id="theme">
+  <link rel="stylesheet" href="../../../lib/css/base.css">
+
+  <script src="../../../lib/js/jquery-3.2.1.js"></script>
+  <script src="../../../node_modules/reveal.js/lib/js/head.min.js"></script>
+  <script src="../../../node_modules/reveal.js/js/reveal.js"></script>
+  <script src="../../../lib/js/RevealInit.js"></script>
+
+</head>
+
+<body>
+
+<div class="reveal">
+
+  <div class="slides">
+
+<section>
+  <h1>Learn Clojure</h1>
+  <a style="font-size:3em;" href="http://twitter.com/TheTomFlaherty">@TheTomFlaherty</a>
+</section>
+
+<section>
+  <h2>Abstract</h2>
+  <p>
+  Clojure Constructs
+  </p>
+</section>
+
+<section>
+  <h2>Outline</h2>
+  <ul>
+    <li>Basics</li>
+    <li>Types</li>
+  </ul>
+
+</section>
+
+
+<section>
+  <h4>Basics</h4>
+  <pre class="clojure"><code style="font-size:1em; min-height:24em">; The first call in a file should be ns, to set the namespace
+(ns learnclojure)
+
+; str will create a string out of all its arguments
+(str "Hello" " " "World") ; => "Hello World"
+
+; Math is straightforward
+(+ 1 1) ; => 2
+(- 2 1) ; => 1
+(* 1 2) ; => 2
+(/ 2 1) ; => 2
+
+; Equality is =
+(= 1 1) ; => true
+(= 2 1) ; => false
+
+; You need not for logic, too
+(not true) ; => false
+
+; Nesting forms works as you expect
+(+ 1 (- 3 2)) ; = 1 + (3 - 2) => 2</code></pre>
+</section>
+
+<section>
+  <h4>Types</h4>
+  <pre class="clojure"><code style="font-size:1em; min-height:24em">
+    ; Clojure uses Java's object types for booleans, strings and numbers.
+    ; Use `class` to inspect them.
+
+    (class 1) ; Integer literals are java.lang.Long by default
+    (class 1.); Float literals are java.lang.Double
+    (class ""); Strings always double-quoted, and are java.lang.String
+    (class false) ; Booleans are java.lang.Boolean
+    (class nil); The "null" value is called nil
+
+    ; If you want to create a literal list of data, use ' to stop it from
+    ; being evaluated
+    '(+ 1 2) ; => (+ 1 2)
+    ; (shorthand for (quote (+ 1 2)))
+
+    ; You can eval a quoted list
+    (eval '(+ 1 2)) ; => 3
+  </code></pre>
+</section>
+
+<section>
+  <h4>Collections and Sequences - Definition</h4>
+  <pre class="clojure"><code style="font-size:1em; min-height:24em">
+    ; Lists are linked-list data structures, while Vectors are array-backed.
+    ; Vectors and Lists are java classes too!
+    (class [1 2 3]); => clojure.lang.PersistentVector
+    (class '(1 2 3)); => clojure.lang.PersistentList
+
+    ; A list would be written as just (1 2 3), but we have to quote
+    ; it to stop the reader thinking it's a function.
+    ; Also, (list 1 2 3) is the same as '(1 2 3)
+
+    ; "Collections" are just groups of data
+    ; Both lists and vectors are collections:
+    (coll? '(1 2 3)) ; => true
+    (coll? [1 2 3]) ; => true
+
+    ; "Sequences" (seqs) are abstract descriptions of lists of data.
+    ; Only lists are seqs.
+    (seq? '(1 2 3)) ; => true
+    (seq?  [1 2 3]) ; => false
+
+  </code></pre>
+</section>
+
+
+<section>
+  <h4>Collections and Sequences - Range and Being Infinitly Lazy </h4>
+  <pre class="clojure"><code style="font-size:1em; min-height:24em">
+    ; A seq need only provide an entry when it is accessed.
+    ; So, seqs which can be lazy -- they can define infinite series:
+    (range 4) ; => (0 1 2 3)
+    (range) ; => (0 1 2 3 4 ...) (an infinite series)
+    (take 4 (range)) ;  (0 1 2 3)
+  </code></pre>
+</section>
+
+<section>
+  <h4>Collections and Sequences - Combining</h4>
+  <pre class="clojure"><code style="font-size:1em; min-height:24em">
+    ; Use cons to add an item to the beginning of a list or vector
+    (cons 4  [1 2 3]) ; => (4 1 2 3)
+    (cons 4 '(1 2 3)) ; => (4 1 2 3)
+
+    ; Conj will add an item to a collection in the most efficient way.
+    ; For lists, they insert at the beginning. For vectors, they insert at the end.
+    (conj  [1 2 3] 4) ; => [1 2 3 4]
+    (conj '(1 2 3) 4) ; => (4 1 2 3)
+
+    ; Use concat to add lists or vectors together
+    (concat [1 2] '(3 4)) ; => (1 2 3 4)
+  </code></pre>
+</section>
+
+
+<section>
+  <h2>References</h2>
+  <ul style="margin-left:0.6em; font-size:26px;">
+    <li><div class="width340">The Reactive Manifesto</div><a href="http://www.reactivemanifesto.org/">www.reactivemanifesto.org/</a></li>
+    <li><div class="width340">RxMarbles</div><a href="http://rxmarbles.com/">http://rxmarbles.com/</a></li>
+    <li><div class="width340">RxJS</div><a href="https://github.com/Reactive-Extensions/RxJS">https://github.com/Reactive-Extensions/RxJS</a></li>
+    <li><div class="width340">Leaflet.js</div><a href="http://leafletjs.com">leafletjs.com</a></li>
+    <li><div class="width340">Slide Deck for This Talk</div><a href="https://github.com/axiom6/Talks/blob/master/GIS/Leaflet/RxStreams.html">https://github.com/axiom6/Talks/</a></li>
+  </ul>
+</section>
+
+<section>
+  <h1 class="shadow">THE END</h1>
+  <ul style="margin-left:0.6em; font-size:30px;">
+    <li><div class="width340">PDF at Speaker Deck</div><a href="https://speakerdeck.com/axiom6">https://speakerdeck.com/axiom6</a></li>
+    <li><div class="width340">Slides Demos at GitHub</div><a href="https://github.com/axiom6/Talks">https://github.com/axiom6/Talks</a></li>
+  </ul>
+</section>
+
+
+  </div>
+</div>
+
+
+</body>
+</html>

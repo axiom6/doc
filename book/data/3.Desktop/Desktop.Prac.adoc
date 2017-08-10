@@ -1,0 +1,16 @@
+
+include::../../../dir/inc/DefPractice.adoc[]
+
+= [.black]#icon:desktop[] Desktop#
+
+image::desktop/Desktop.png[]
+
+// <<<<
+
+// == [.black]#icon:area-chart[] Visualize#
+
+// == [.black]#icon:search[] Explore#
+
+// == [.black]#icon:codepen[] Data Set#
+
+// == [.black]#icon:leanpub[] Notebook#

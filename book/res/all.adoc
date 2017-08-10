@@ -1,0 +1,11 @@
+
+:linkcss:
+include::../../dir/inc/DefRes.adoc[]
+
+include::intro.adoc[]
+<<<<
+include::w2000s.adoc[]
+<<<<
+include::w1990s.adoc[]
+<<<<
+include::w1980s.adoc[]

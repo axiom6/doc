@@ -1,0 +1,85 @@
+
+include::../../../dir/inc/DefPractice.adoc[]
+
+image::concepts/Analytic.Types.png[align="center"]
+
+=== [.black]#Transforming Analytics#
+Aggregation:: Techniques to summarize the data. These
+include basic statistics (e.g., mean, standard deviation),
+distribution fitting, and graphical plotting.
+Enrichment:: Techniques for adding additional information
+to the data, such as source information or other labels.
+Processing:: Techniques that address data cleaning,
+preparation, and separation. This group also includes
+common algorithm pre-processing activities such as
+transformations and feature extraction.
+
+=== [.black]#Learning Analytics#
+Regression:: Techniques for estimating relationships among
+variables, including understanding which variables are
+important in predicting future values.
+Clustering:: Techniques to segment the data into naturally
+similar groups.
+Classification:: Techniques to identify data element
+group membership.
+Recommendation:: Techniques to predict the rating or
+preference for a new entity, based on historic preference
+or behavior.
+
+=== [.black]#Predictive Analytics#
+Simulation:: Techniques to imitate the operation of a realworld
+process or system. These are useful for predicting
+behavior under new conditions.
+Optimization:: Operations Research techniques focused on
+selecting the best element from a set of available alternatives
+to maximize a utility function.
+
+== [.black]#Learning Approaches#
+
+image::concepts/Learning.png[align="center"]
+
+
+Supervised Learning::
+A model is trained using a labeled dataset that has a known
+class or category associated with each data element. The model relates
+features found in training instances with labels so that predictions
+can be made for unlabeled instances.
+
+Unsupervised Learning::
+Involvesno a-priori knowledge about the classes into which data can be
+placed. Unsupervised learning uses the features in the dataset to
+form groupings based on feature similarity.
+
+Semi-supervised learning::
+is a hybrid between these two approaches, using a small amount of
+labeled data in conjunction with a large amount of unlabeled data.
+This is done to improve learning accuracy in cases where only a
+
+Reinforcement Learning::
+Under this approach, an algorithm takes action in an environment and
+incrementally learns how to achieve goals based on the response to a
+function used to determine the quality of its results. Reinforcement
+learning is generally applicable to complex, real-world tasks that
+involve optimization, such as navigation or trading. Due to the
+publication of many promising results from Reinforcement Learning
+algorithms, the popularity of this technique
+
+Offline Training::
+ requires taking a pass over the entire
+training dataset. Improving the model requires making separate
+passes over the data. These models are static in that once trained, their
+predictions will not change until a new model is created through a
+subsequent training stage. Offline model performance is easier to
+evaluate due to this deterministic behavior. Deployment of the model
+into a production environment involves swapping out the old model
+for the new.
+
+Online Training::
+Dynamically evolve over time, meaning they only
+require a single deployment into a production setting. The fact that
+these models do not have the entire dataset available when being
+trained is a challenge. They must make assumptions about the data
+based on the examples observed; these assumptions may be suboptimal.
+The impact of sub-optimal predictions can be mitigated in
+cases where feedback on the model’s predictions is available. Online
+models can rapidly incorporate feedback to improve performance.

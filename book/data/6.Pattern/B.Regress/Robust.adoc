@@ -1,0 +1,12 @@
+
+include::../../../../dir/inc/DefStudy.adoc[]
+
+''''
+<<<<
+=== [.black]#Robust Regression#
+
+* One
+* Two
+
+// image::LogisticRegress.png[alt="LogisticRegress",align="center"]
+

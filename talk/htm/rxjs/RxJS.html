@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>ReactiveX with RxJS</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Reactive Streams with RxJS">
+  <meta name="author" content="Tom Flaherty">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <link rel="stylesheet" href="../../../node_modules/reveal.js/css/reveal.css">
+  <link rel="stylesheet" href="../../../node_modules/reveal.js/lib/css/zenburn.css">
+  <link rel="stylesheet" href="../../../node_modules/reveal.js/css/theme/night.css" id="theme">
+  <link rel="stylesheet" href="../../lib/css/talk.css">
+
+  <script src="../../lib/js/jquery-3.2.1.js"></script>
+  <script src="../../../node_modules/reveal.js/lib/js/head.min.js"></script>
+  <script src="../../../node_modules/reveal.js/js/reveal.js"></script>
+  <script src="../../lib/js/RevealInit.js"></script>
+
+</head>
+
+<body>
+
+<div class="reveal">
+
+<!-- Any section element inside of this container is displayed as a slide -->
+<div class="slides">
+
+<section id="RxJsTtitle">
+  <h1  style="font-size: 135px; color:rgb(183,23,140)"><img src="../../img/rxmarbles/Rx_Logo_S.png" style="border-width: 0; margin: 0;">  ReactiveX<br/>with RxJS</h1>
+    <a style="font-size: 3em;" href="http://twitter.com/TheTomFlaherty">@TheTomFlaherty</a>
+</section>
+
+
+  <section id="ReactiveManifesto">
+    <h2>The Reactive Manifesto</h2>
+    <a href="http://www.reactivemanifesto.org/">www.reactivemanifesto.org/</a>
+    <img src ="../../img/reactive/reactive-traits.svg" class="rx-svg">
+    <ul style="text-align:left; font-size:24px; list-style-type: none;">
+      <li><img src="../../img/reactive/responsive.svg" class="rx-icon">Responsive: The system responds in a timely manner if at all possible.</li>
+      <li><img src="../../img/reactive/elastic.svg"    class="rx-icon">Elastic: The system stays responsive under varying workload.</li>
+      <li><img src="../../img/reactive/resilient.svg"  class="rx-icon">Resilient: The system stays responsive in the face of failure.</li>
+      <li><img src="../../img/reactive/message.svg"    class="rx-icon">Message Driven: Asynchronous message containers.</li>
+    </ul>
+  </section>
+
+<section id="ReactiveX">
+  <h2>ReactiveX</h2>
+  <ul>
+    <li>Governs the Flow of "live" Data</li>
+    <li>Leverages Publish and Subscribe</li>
+    <li>Promotes Data Interaction</li>
+    <li>Decouples Components</li>
+    <li>Operates on many levels</li>
+    <li>
+      <ul>
+        <li>Apache Spark Streams for Data</li>
+        <li>RxJava and Akka for the Server</li>
+        <li>RxJS for UI in the Browser</li>
+      </ul>
+    </li>
+  </ul>
+</section>
+
+<section id="ReactiveXLanguages">
+  <h2>ReactiveX Languages</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Java:       <a href="https://github.com/ReactiveX/RxJava">RxJava</a></th>
+        <th>JavaScript: <a href="https://github.com/Reactive-Extensions/RxJS">RxJS</a></th>
+        <th>C#:         <a href="https://github.com/Reactive-Extensions/Rx.NET">Rx.NET</a></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Scala:      <a href="https://github.com/ReactiveX/RxScala">RxScala</a></td>
+        <td>Clojure:    <a href="https://github.com/ReactiveX/RxClojure">RxClojure</a></td>
+        <td>Ruby:       <a href="https://github.com/Reactive-Extensions/Rx.rb">Rx.rb</a></td>
+      </tr>
+      <tr>
+        <td>Python:     <a href="https://github.com/ReactiveX/RxPY">RxPY</a></td>
+        <td>Groovy:     <a href="https://github.com/ReactiveX/RxGroovy">RxGroovy</a></td>
+        <td>C++:        <a href="https://github.com/Reactive-Extensions/RxCpp">RxCpp</a></td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+  <section id="RxMarbles">
+    <h3>RxMarbles</h3>
+    <img src="../../img/rxmarbles/StaltzEventStream.png">
+  </section>
+
+<section id="RxMarblesScenario" style="padding: 0;">
+  <!--h3>What does a Reactive Stream Look Like?</h3-->
+  <img src="../../img/rxmarbles/StreamScenario.png">
+</section>
+
+<section id="TheReactiveXAPI">
+  <h3>The ReactiveX API</h3>
+  <a href="http://rxmarbles.com/">RxMarbles by André Staltz</a>
+</section>
+
+  <section id="NeedtoGoReactive">
+    <h2>RxJS The Need to Go Reactive</h2>
+    <a href="https://github.com/Reactive-Extensions/RxJS">https://github.com/Reactive-Extensions/RxJS</a>
+    <p style="text-align:left;">
+      Applications, especially on the web have changed over the years from being a simple static page, to DHTML with animations,
+      to the Ajax revolution. Each time, we're adding more complexity, more data, and asynchronous behavior to our applications.
+      How do we manage it all? How do we scale it? By moving towards "Reactive Architectures" which are event-driven, resilient
+      and responsive. With the Reactive Extensions, you have all the tools you need to help build these systems.
+    </p>
+  </section>
+
+<section id="RxJSforUI">
+  <h2>RxJS for UI in the Browser</h2>
+  <h4>A demo that uses RxJS for the following:</h4>
+  <ul>
+    <li>MVC (Model View Controller)</li>
+    <li>Spatial and Thematic Data Interaction</li>
+    <li>Responding to User Events</li>
+  </ul>
+</section>
+
+  <section id="AboutRxJS" style="width:1024px;">
+    <h2>About RxJS</h2>
+    <a href="https://github.com/Reactive-Extensions/RxJS">https://github.com/Reactive-Extensions/RxJS</a>
+    <p style="text-align:left; font-size:14pt;">
+      The Reactive Extensions for JavaScript (RxJS) is a set of libraries for composing asynchronous and event-based programs
+      using observable sequences and fluent query operators that many of you already know by Array#extras in JavaScript.
+      Using RxJS, developers represent asynchronous data streams with Observables, query asynchronous data streams using our
+      many operators, and parameterize the concurrency in the asynchronous data streams using Schedulers.
+
+      Simply put, RxJS = Observables + Operators + Schedulers.
+
+      Whether you are authoring a web-based application in JavaScript or a server-side application in Node.js,
+      you have to deal with asynchronous and event-based programming as a matter of course. Although some patterns
+      are emerging such as the Promise pattern, handling exceptions, cancellation, and synchronization is difficult and error-prone.
+
+      Using RxJS, you can represent multiple asynchronous data streams (that come from diverse sources, e.g., stock quote,
+      tweets, computer events, web service requests, etc.), and subscribe to the event stream using the Observer object.
+      The Observable notifies the subscribed Observer instance whenever an event occurs.
+
+      Because observable sequences are data streams, you can query them using standard query operators implemented by the Observable type.
+      Thus you can filter, project, aggregate, compose and perform time-based operations on multiple events easily by using these operators.
+      In addition, there are a number of other reactive stream specific operators that allow powerful queries to be written.
+      Cancellation, exceptions, and synchronization are also handled gracefully by using the methods on the Observable object.
+    </p>
+  </section>
+
+
+
+<section id="RxJsIs" style="width:1024px;">
+  <h2>About RxJS</h2>
+  <a href="https://github.com/Reactive-Extensions/RxJS">https://github.com/Reactive-Extensions/RxJS</a>
+  <p>
+
+
+    RxJS = Observables    + Operators + Schedulers
+           Representation + Query     + Concurrency
+
+  </p>
+</section>
+
+<section id="RxJsReferences">
+  <h2>References</h2>
+  <ul style="margin-left:0.6em; font-size:24px;">
+    <li><div class="width340">The Reactive Manifesto</div><a href="http://www.reactivemanifesto.org/">www.reactivemanifesto.org/</a></li>
+    <li><div class="width340">ReactiveX</div><a href="http://reactivex.io/"></a></li>
+    <li><div class="width340">RxMarbles</div><a href="http://rxmarbles.com/">http://rxmarbles.com/</a></li>
+    <li><div class="width340">RxJS</div><a href="https://github.com/Reactive-Extensions/RxJS">https://github.com/Reactive-Extensions/RxJS</a></li>
+    <li><div class="width340">PDF at Speaker Deck</div><a href="https://speakerdeck.com/axiom6">https://speakerdeck.com/axiom6/RxStreams</a></li>
+    <li><div class="width340">Demo Source at GitHub</div><a href="https://github.com/axiom6/Talks">https://github.com/axiom6/Talks/Reactive/RxStreams</a></li>  </ul>
+</section>
+
+<section id="RxJsTheEnd">
+  <h1>THE END</h1>
+</section>
+
+</div>
+</div>
+</body>
+</html>

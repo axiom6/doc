@@ -1,0 +1,6 @@
+
+include::../../../../dir/inc/DefStudy.adoc[]
+
+''''
+<<<<
+== [.black]#Semi Superised Learning#

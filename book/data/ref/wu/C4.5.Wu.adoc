@@ -1,0 +1,135 @@
+
+== C4.5 and beyond
+
+=== 1.1 Introduction
+Systems that construct classifiers are one of the commonly used tools in data mining. Such
+systems take as input a collection of cases, each belonging to one of a small number of
+classes and described by its values for a fixed set of attributes, and output a classifier that can
+accurately predict the class to which a new case belongs.
+
+These notes describe C4.5 [64], a descendant of CLS [41] and ID3 [62]. Like CLS and
+ID3, C4.5 generates classifiers expressed as decision trees, but it can also construct classifiers
+in more comprehensible ruleset form. We will outline the algorithms employed in
+C4.5, highlight some changes in its successor See5/C5.0, and conclude with a couple of open
+research issues.
+
+=== 1.2 Decision trees
+
+* Given a set S of cases, C4.5 first grows an initial tree using the divide-and-conquer algorithm
+as follows:
+  ** If all the cases in S belong to the same class or S is small, the tree is a leaf labeled with
+the most frequent class in S.
+  ** Otherwise, choose a test based on a single attribute with two or more outcomes. Make
+this test the root of the tree with one branch for each outcome of the test, partition S into
+corresponding subsets S1, S2, . . . according to the outcome for each case, and apply the
+same procedure recursively to each subset.
+
+
+There are usually many tests that could be chosen in this last step. C4.5 uses two heuristic
+criteria to rank possible tests: information gain, which minimizes the total entropy of the
+subsets {Si } (but is heavily biased towards tests with numerous outcomes), and the default
+gain ratio that divides information gain by the information provided by the test outcomes.
+
+Attributes can be either numeric or nominal and this determines the format of the test
+outcomes. For a numeric attribute A they are {A ≤ h, A > h} where the threshold h is found
+by sorting S on the values of A and choosing the split between successive values that maximizes
+the criterion above. An attribute A with discrete values has by default one outcome
+for each value, but an option allows the values to be grouped into two or more subsets with
+one outcome for each subset.
+
+The initial tree is then pruned to avoid overfitting. The pruning algorithm is based on a
+pessimistic estimate of the error rate associated with a set of N cases, E of which do not
+belong to the most frequent class. Instead of E/N, C4.5 determines the upper limit of the
+binomial probability when E events have been observed in N trials, using a user-specified
+confidence whose default value is 0.25.
+
+Pruning is carried out from the leaves to the root. The estimated error at a leaf with N
+cases and E errors is N times the pessimistic error rate as above. For a subtree, C4.5 adds
+the estimated errors of the branches and compares this to the estimated error if the subtree is
+replaced by a leaf; if the latter is no higher than the former, the subtree is pruned. Similarly,
+C4.5 checks the estimated error if the subtree is replaced by one of its branches and when
+this appears beneficial the tree is modified accordingly. The pruning process is completed in
+one pass through the tree.
+
+C4.5’s tree-construction algorithm differs in several respects from CART [9], for instance:
+
+* Tests in CART are always binary, but C4.5 allows two or more outcomes.
+* CART uses the Gini diversity index to rank tests, whereas C4.5 uses information-based
+criteria.
+* CART prunes trees using a cost-complexity model whose parameters are estimated by
+cross-validation; C4.5 uses a single-pass algorithm derived from binomial confidence
+limits.
+* This brief discussion has not mentioned what happens when some of a case’s values are
+unknown. CART looks for surrogate tests that approximate the outcomes when the tested
+attribute has an unknown value, but C4.5 apportions the case probabilistically among the
+outcomes.
+
+=== 1.3 Ruleset classifiers
+
+Complex decision trees can be difficult to understand, for instance because information about
+one class is usually distributed throughout the tree. C4.5 introduced an alternative formalism
+consisting of a list of rules of the form “if A and B and C and ... then class X”, where rules for
+each class are grouped together. A case is classified by finding the first rule whose conditions
+are satisfied by the case; if no rule is satisfied, the case is assigned to a default class.
+
+C4.5 rulesets are formed from the initial (unpruned) decision tree. Each path from the root
+of the tree to a leaf becomes a prototype rule whose conditions are the outcomes along the path
+andwhose class is the label of the leaf. This rule is then simplified by determining the effect of
+discarding each condition in turn. Dropping a condition may increase the number N of cases
+covered by the rule, and also the number E of cases that do not belong to the class nominated
+by the rule, and may lower the pessimistic error rate determined as above. A hill-climbing
+algorithm is used to drop conditions until the lowest pessimistic error rate is found.
+
+To complete the process, a subset of simplified rules is selected for each class in turn.
+These class subsets are ordered to minimize the error on the training cases and a default
+class is chosen. The final ruleset usually has far fewer rules than the number of leaves on the
+pruned decision tree.
+
+The principal disadvantage of C4.5’s rulesets is the amount of CPU time and memory that
+they require. In one experiment, samples ranging from 10,000 to 100,000 cases were drawn
+from a large dataset. For decision trees, moving from 10 to 100K cases increased CPU time
+on a PC from 1.4 to 61 s, a factor of 44. The time required for rulesets, however, increased
+from 32 to 9,715 s, a factor of 300.
+
+=== 1.4 See5/C5.0
+
+C4.5 was superseded in 1997 by a commercial system See5/C5.0 (or C5.0 for short). The
+changes encompass new capabilities as well as much-improved efficiency, and include:
+
+• A variant of boosting [24], which constructs an ensemble of classifiers that are then voted
+to give a final classification. Boosting often leads to a dramatic improvement in predictive
+accuracy.
+• New data types (e.g., dates), “not applicable” values, variable misclassification costs, and
+mechanisms to pre-filter attributes.
+• Unordered rulesets—when a case is classified, all applicable rules are found and voted.
+This improves both the interpretability of rulesets and their predictive accuracy.
+• Greatly improved scalability of both decision trees and (particularly) rulesets. Scalability
+is enhanced by multi-threading; C5.0 can take advantage of computers with multiple
+CPUs and/or cores.
+
+=== 1.5 Research issues
+
+We have frequently heard colleagues express the view that decision trees are a “solved problem.”
+
+We do not agree with this proposition and will close with a couple of open research
+problems.
+
+Stable trees. It is well known that the error rate of a tree on the cases fromwhich itwas constructed
+(the resubstitution error rate) is much lower than the error rate on unseen cases (the
+predictive error rate). For example, on a well-known letter recognition dataset with 20,000
+cases, the resubstitution error rate for C4.5 is 4%, but the error rate from a leave-one-out
+(20,000-fold) cross-validation is 11.7%. As this demonstrates, leaving out a single case from
+20,000 often affects the tree that is constructed!
+
+Suppose now that we could develop a non-trivial tree-construction algorithm that was
+hardly ever affected by omitting a single case. For such stable trees, the resubstitution error
+rate should approximate the leave-one-out cross-validated error rate, suggesting that the tree
+is of the “right” size.
+
+Decomposing complex trees. Ensemble classifiers, whether generated by boosting, bagging,
+weight randomization, or other techniques, usually offer improved predictive accuracy.
+Now, given a small number of decision trees, it is possible to generate a single (very complex)
+tree that is exactly equivalent to voting the original trees, but can we go the other way? That
+is, can a complex tree be broken down to a small collection of simple trees that, when voted
+together, give the same result as the complex tree? Such decomposition would be of great
+help in producing comprehensible decision trees.

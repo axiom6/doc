@@ -1,0 +1,13 @@
+include::../../../../dir/inc/DefStudy.adoc[]
+
+* Simplifies difficult maximum likelihood problems.
+* Generates strong statistics for interpretation.
+* Not scalable
+
+image::describe/GMM.png[500,500,alt="GausianMizture",align="center"]
+
+[cols="5*"]
+|====
+| *Strengths* | Strong Statistics  | Confidence Ellipsoids | Bayesian Criteria | x
+| *Use For*   | Density Estimation | Flat geometry | Assessment | Sample Assignment
+|====

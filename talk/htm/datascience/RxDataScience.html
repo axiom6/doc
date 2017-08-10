@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Reactive Principles in Data Science</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Reactive Principles in Data Science">
+  <meta name="author" content="Tom Flaherty">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <link href="../../../node_modules/font-awesome/css/font-awesome.css" rel="stylesheet">
+  <link href="../../../node_modules/reveal.js/css/reveal.css"          rel="stylesheet">
+  <link href="../../../node_modules/reveal.js/lib/css/zenburn.css"     rel="stylesheet">
+  <link href="../../../node_modules/reveal.js/css/theme/night.css"     rel="stylesheet" id="theme">
+  <link href="../../lib/css/talk.css"                                rel="stylesheet">
+
+  <script src="../../lib/js/jquery-3.2.1.js"></script>
+  <script src="../../../node_modules/reveal.js/lib/js/head.min.js"></script>
+  <script src="../../../node_modules/reveal.js/js/reveal.js"></script>
+  <script src="../../lib/js/util/Util.js"></script>
+  <script src="../../lib/js/RevealInit.js"></script>
+
+</head>
+
+<body>
+
+<div class="reveal">
+
+  <div class="slides">
+
+  <section id="RxDSTitle">
+
+    <section id="RxPrinciples">
+      <h1 style="font-size:2.5em;">Reactive Principles</h1>
+      <h1 style="font-size:2.5em;">in Data Science</h1>
+      <h1 style="font-size:2.0em;">A Whirlwind Tour</h1>
+      <a  style="font-size:2.0em;" href="http://twitter.com/TheTomFlaherty">@TheTomFlaherty</a>
+    </section>
+
+    <section id="RxDSAbstract" style="color:wheat;">
+      <h2>Abstract</h2>
+      <p style="text-align:left;">
+        The plethora of Data Science technologies and Big Data hype are making our heads hurt.
+       </p>
+      <p style="text-align:left;">
+        My mantra: Don't let brute force do your thinking for you.
+      </p>
+      <p style="text-align:left;">
+        Like everthing in this distributed Information Age, Data Science is changing to
+        meet new demands, with change motivating a new recognition of underlying principles.
+      </p>
+      <p style="text-align:left;">
+        So this lightning talk is then a whirlwind tour through these principles. We begin with Business
+        Transformation, REST and NoSQL Databases. We then peak into the future with Grid Gain and Apache
+        Spark and conclude with influence of the Reactive Manifesto.
+      </p>
+    </section>
+
+    <section id="RxDSOutline">
+      <h3>Outline</h3>
+        <ul>
+          <li>So Many Technologies</li>
+          <li>So Much Math</li>
+          <li>How Data is Transforming Business</li>
+          <li>A 100 fold increase in data volume under URIs</li>
+          <li>Join the party with REST URI's</li>
+          <li>Visual Guide to NoSQL Systems</li>
+          <li>Grid Gain</li>
+          <li>Apache Spark - Traditional</li>
+          <li>Apache Spark - Revealed</li>
+          <li>The Reactive Manifesto:</li>
+          <li style="text-indent:0.4em; list-style:none">- How to be Responsive, Elastic, Resilient and Message Driven</li>
+        </ul>
+    </section>
+
+  </section>
+
+  <section id="SoManyTechnologies">
+    <h2>So Many Technologies</h2>
+    <img src="../../img/bigdata/BigDataOpenSourceTools-800x450.jpg">
+  </section>
+
+    <section id="SoMuc Math">
+      <h2>So Much Math</h2>
+      <img src ="../../img/bigdata/Data-Science-Chalk-Board.jpg">
+    </section>
+
+    <section id="PhilipEvans">
+      <h2 style="font-size:1.8em;">How Data will Transform Business</h2>
+      <h4>by Philip Evans <a href="http://www.ted.com/talks/philip_evans_how_data_will_transform_business">TED talk on Nov. 2013</a></h4>
+      <ul style="font-size:24px;">
+        <li>Since the 1970s, business strategy has been dominated by two major theories:
+          <ol>
+            <li>Bruce Henderson's idea of increasing returns to scale and experience</li>
+            <li>Michael Porter's value chain driven by transaction cost reductions</li>
+          </ol>
+        </li>
+        <li>... a new force will rule business strategy in the future:
+          <ol start="3">
+            <li>The massive amount of data shared by competing groups</li>
+          </ol>
+        </li>
+        <li>The key driver is the 100 fold increase in data placed under URI's in the last 10 years</li>
+        <li>Even better: This increases the number of patterns by 10,000 = 100x100 fold</li>
+      </ul>
+    </section>
+
+    <section id="URIs100x">
+      <h3 style="font-size:1.4em;">A 100 fold increase in data volume under URIs</h3>
+      <h4>Is driving the growth of the ecosystem</h4>
+      <h4>The Big Data Market Forecast</h4>
+      <img src="../../img/bigdata/BigDataMarketForecast2013.png">
+    </section>
+
+    <section id="Rest">
+      <h4>Join the party with REST URI's for Data</h4>
+      <ul style="font-size:24px;">
+        <li>REST is the most profound step in becoming Reactively Message Driven</li>
+        <li>The Internet itself is the best means of integration with caching as a bonus</li>
+        <li>REST is used by all major players: Google Amazon .. Just look at your browser</li>
+        <li>Recommend JSON for the transaction "payload"</li>
+        <li>Rest URIs Are Easy To Read</li>
+        <li>http://company.com/data/database/table/id?query</li>
+        <li>Below database="sales" table="cars" id is the last URI parameter</li>
+        <li>?query name value pairs (model="VW") provide nice extensions</li>
+      </ul>
+      <table style="font-size:18px; color:beige; margin-top:0.75em;">
+        <thead>
+        <tr align="center"><th>Operation</th><th>Method</th><th>URI</th><th>Database Changes</th><th>Return</th></tr>
+        </thead>
+        <tbody>
+        <tr><td>Create</td><td>POST</td>  <td>.../sales/cars           </td><td>Row Created from JSON</td><td>ID new</td><tr>
+        <tr><td>Query</td><td>GET</td>    <td>.../sales/cars/1         </td><td>None</td>                 <td>JSON row  ID=1</td><tr>
+        <tr><td>Query</td><td>GET</td>    <td>.../sales/cars?model="VW"</td><td>None</td><td>JSON rows model="VW"</td><tr>
+        <tr><td>Query</td><td>GET</td>    <td>.../sales/cars           </td><td>None</td>                 <td>JSON for  all rows</td><tr>
+        <tr><td>Update</td><td>PUT</td>   <td>.../sales/cars/1         </td><td>Row Updated from JSON</td> <td>ID</td><tr>
+        <tr><td>Delete</td><td>DELETE</td><td>.../sales/cars/1         </td><td>Row Deleted</td>           <td>ID</td><tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="CapTheorum" style="background-color:black; padding:5px;">
+      <img src ="../../img/bigdata/CapTheorum.png" class="rx-img">
+    </section>
+
+    <section>
+      <section id="GridGain">
+        <h2>Grid Gain / Apache Ignite</h2>
+        <h3>A Telepathic In Memory Computing Fabric</h3>
+        <img src="../../img/bigdata/GridGainFabric-770x428.png">
+      </section>
+      <section id="">
+        <h3>Grid Gain / Apache Ignite and Spark</h3>
+        <ul>
+          <li>Both share similar goals but "technologies are different"</li>
+          <li>Spark was specially designed for data processing</li>
+          <li>Grid Gain is a more generic distributed computation fabric</li>
+          <li style="text-indent:0.25em; list-style:none">that lets you easily farm out arbitrary tasks to nodes</li>
+          <li>Grid Gain works on Android since it has a JVM "Dalvik"</li>
+          <li>A Grid Gain sensor array has untapped potential</li>
+        </ul>
+      </section>
+    </section>
+    <section id="ApacheSparkTrad">
+      <h2>Apache Spark</h2>
+      <h4>Traditional View</h4>
+      <img src="../../img/spark/spark-stack.png" class="rx-img">
+      <ul style="text-align:left; font-size:24px; list-style-type: none;">
+        <li><span class="width150">Core:      </span>Distributed task dispatching, scheduling, and basic I/O</li>
+        <li><span class="width150">GraphX:    </span>A distributed graph topology for RDDs based on Pregel for Page Rank</li>
+        <li><span class="width150">SQL:       </span>SchemaRDD a DSL feeding semi? structured data into RDDs</li>
+        <li><span class="width150">Streaming: </span>Ingests data in mini-batches for RDD transforms & streaming analytics</li>
+        <li><span class="width150">MLlib :    </span>Machine Learning Pipeline - Spark's original purpose</li>
+      </ul>
+    </section>
+
+    <section id="ApacheSparkAll"  style="margin:0; padding:0; background-color:rgb(49,28,39);">
+      <img src="../../img/spark/Spark.png" class="rx-img">
+      <ul id="icondesc" style="text-align:left; line-height:1.1; font-size:22px; list-style-type: none; color:wheat;">
+        <li><i class="fa fa-database fa-rotate-90"></i> <span class="width150pad">RDD:        </span>Resilient Distributed Datasets logically partitioned across servers</li>
+        <li><i class="fa fa-joomla"></i>                <span class="width150pad">GraphX:     </span>Distributed graph topology for RDDs based on Pregel (Page Rank)</li>
+        <li><i class="fa fa-th"></i>                    <span class="width150pad">DataFrames: </span>A distributed collection of data organized into named columns</li>
+        <li><i class="fa fa-database"></i>              <span class="width150pad">Databases:  </span>Local File System(Standalone) Cassandra MongoDB HDFS JDBC ...</li>
+        <li><i class="fa fa-sliders"></i>               <span class="width150pad">Streaming:  </span>Ingests data in mini-batches for RDD transforms and streaming</li>
+        <li><i class="fa fa-connectdevelop"></i>        <span class="width150pad">Machine:    </span>MLlib Machine Learning Pipeline</li>
+        <li><i class="fa fa-calculator"></i>            <span class="width150pad">Numerical:  </span>Breeze Epic Puck GPU(cuBlas-NVidia) and NetLib-Fortran</li>
+        <li><i class="fa fa-chevron-right"></i>         <span class="width150pad">Notebook:   </span>A Spark aware notebook in Typesafe's web framework Play</li>
+        <li><i class="fa fa-code"></i>                  <span class="width150pad">IPython:    </span>The Data Scientist's favorite notebook with PySpark</li>
+        <li><i class="fa fa-bell"></i>                  <span class="width150pad">SparkR:     </span>A light-weight frontend to use Apache Spark from R</li>
+        <li><i class="fa fa-star-o"></i>                <span class="width150pad">Spark Core: </span>Distributed task dispatching, scheduling, and basic I/O</li>
+        <li><i class="fa fa-area-chart"></i>            <span class="width150pad">Akka:       </span>Concurrent, distributed, resilient, message driven, actor based</li>
+        <li><i class="fa fa-server"></i>                <span class="width150pad">Cluster:    </span>Standalone, Mesos, Myriad and YARN</li>
+      </ul>
+    </section>
+
+
+    <section id="ReactiveManifesto">
+      <section id="Manifesto">
+        <h2>The Reactive Manifesto</h2>
+        <a href="http://www.reactivemanifesto.org/">www.reactivemanifesto.org/</a>
+        <img src ="../../img/reactive/reactive-traits.svg" class="rx-svg">
+        <ul style="text-align:left; font-size:24px; list-style-type: none;">
+          <li><img src="../../img/reactive/responsive.svg" class="rx-icon"><span class="width240">Responsive:    </span><span class="width150">In Memory </span>Always respond meaningfully in a timely manner</li>
+          <li><img src="../../img/reactive/elastic.svg"    class="rx-icon"><span class="width240">Elastic:       </span><span class="width150">Cluster   </span>Stay responsive under varying workload</li>
+          <li><img src="../../img/reactive/resilient.svg"  class="rx-icon"><span class="width240">Resilient:     </span><span class="width150">RDD       </span>Stay responsive in the face of failure</li>
+          <li><img src="../../img/reactive/message.svg"    class="rx-icon"><span class="width240">Message Driven:</span><span class="width150">Streaming </span>Wrap and stream messages asynchronously</li>
+        </ul>
+      </section>
+
+      <section id="Responsive">
+        <h2 class="rx-h2"><img src="../../img/reactive/responsive.svg" class="rx-h2-img"><span class="rx-h2-span">Responsive</span></h2>
+        <h4>Always respond meaningfully in a timely manner</h4>
+        <ul>
+          <li>"In Memory" improves performance by 1-2 orders of magnitude</li>
+          <li>Formulate meaningful response metrics for Data Science</li>
+          <li>Leveage statistics to shrink sample populations</li>
+          <li>Weigh benefits between real time and near time</li>
+          <li>Keep your common sense</li>
+          <li>Don't let brute force do your thinking for you</li>
+        </ul>
+      </section>
+
+      <section id="Elastic">
+        <h2 class="rx-h2"><img src="../../img/reactive/elastic.svg" class="rx-h2-img"><span class="rx-h2-span">Elastic</span></h2>
+        <h4>Stay responsive under varying workload</h4>
+        <ul>
+          <li>Elasticity is the key value proposition for cloud hosting</li>
+          <li>Leveage Spark's integration with Akka Mesos Myraid and YARN</li>
+          <li>Always have spare resources available to spin up for peak demand</li>
+          <li>Spend the extra money to replicate data</li>
+        </ul>
+      </section>
+
+      <section id="Resilient">
+        <h2 class="rx-h2"><img src="../../img/reactive/resilient.svg" class="rx-h2-img"><span class="rx-h2-span">Resilient</span></h2>
+        <h4>Stay responsive in the face of failure</h4>
+        <ul>
+          <li>Clustered servers and network links fail all the time</li>
+          <li>Spark Core monitors and responds to cluster failure</li>
+          <li>RDDs "Resilient" Distributed Datasets says it all</li>
+          <li>RDDs shard the data over a cluster</li>
+          <li>RDDs reconstitute shards lost due to node / link failures</li>
+          <li>RDDs in Spark can rerun their transforms to recreate lost data</li>
+        </ul>
+      </section>
+
+      <section id="MessageDriven">
+        <h2 class="rx-h2"><img src="../../img/reactive/message.svg" class="rx-h2-img"><span class="rx-h2-span">Message Driven</span></h2>
+        <h4>Wrap and stream messages asynchronously</h4>
+        <h4>Message Streams facilitate Data Science with these benefits</h4>
+        <table style="font-size:18pt; color:wheat;">
+          <thead >
+            <tr><th style="text-align:center;">Message Feature</th><th style="text-align:center;">Data Science Benefit</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Asynchronous</td><td>The system knows more about concurrency than humans</td></tr>
+            <tr><td>Error Delegation</td><td>Errors become first class citizens that are treated properly</td></tr>
+            <tr><td>Location Transparency</td><td>Processes are not locked into specific server configuations</td></tr>
+            <tr><td>Publish & Subscribe</td><td>Allows roles to be defined from a Data Science perspective</td></tr>
+            <tr><td>Component Isolation</td><td>Allows components to focus on their assigned tasks</td></tr>
+            <tr><td>Loose Coupling</td><td>Precise instead of accidental interactions</td></tr>
+            <tr><td>Back Pressure</td><td>Message streams can be throttled to relieve resources</td></tr>
+            <tr><td>Functional</td><td>A programing paradigm well suited for data processing</td></tr>
+          </tbody>
+        </table>
+      </section>
+    </section>
+
+    <section id="TwoColumn">
+      <h3>Two Column</h3>
+      <div style="position:relative;   left:0; top:0; width:100%; height:700px; font-size:24px;">
+        <div style="position:absolute; left:0; top:0; width: 50%; height:100%; ">
+        </div>
+        <div style="position:absolute; left:50%; top:0; width:50%;  height:100%; ">
+        </div>
+      </div>
+    </section>
+
+
+    <section id="RxDSReferences">
+      <h2>References</h2>
+      <ul style="margin-left:0.6em; font-size:26px;">
+        <li><div class="width340">Big Data Driving Business</div><a href="http://www.ted.com/talks/philip_evans_how_data_will_transform_business">http://bit.ly/194auY9</a></li>
+        <li><div class="width340">REST API Tutorial</div><a href="http://www.restapitutorial.com/resources.html">http://www.restapitutorial.com/resources.html</a></li>
+        <li><div class="width340">CAP Theorem</div><a href="http://en.wikipedia.org/wiki/CAP_theorem">http://en.wikipedia.org/wiki/CAP_theorem</a></li>
+        <li><div class="width340">Grid Gain</div><a href="http://www.gridgain.com/">http://www.gridgain.com/</a></li>
+        <li><div class="width340">Apache Spark</div><a href="https://spark.apache.org/">https://spark.apache.org/</a></li>
+        <li><div class="width340">The Reactive Manifesto</div><a href="http://www.reactivemanifesto.org/">www.reactivemanifesto.org/</a></li>
+        <li><div class="width340">These slides in PDF</div><a href="https://speakerdeck.com/axiom6">https://speakerdeck.com/axiom6</a></li>
+      </ul>
+    </section>
+
+    <section id="RxDSTheEnd">
+      <h1>THE END</h1>
+    </section>
+
+  </div>
+
+</div>
+
+
+</body>
+</html>

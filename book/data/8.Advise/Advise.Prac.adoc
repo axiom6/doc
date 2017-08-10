@@ -1,0 +1,33 @@
+
+include::../../../dir/inc/DefPractice.adoc[]
+
+= [.black]#icon:code-fork[] Advise#
+
+image::advise/Advise.png[align="center"]
+
+////
+<<<<
+==  [.black]#icon:book[] Reinforced Learning#
+
+==   [.black]#icon:object-group[] Optimize#
+===  [.black]#icon:object-group[]] Linear Programming#
+===  [.black]#icon:object-group[] Operations Research#
+===  [.black]#icon:object-group[] Approximate#
+===  [.black]#icon:object-group[] Objective#
+
+==   [.black]#icon:sitemap[] Simulate#
+===  [.black]#icon:sitemap[] Event#
+===  [.black]#icon:sitemap[] Self Organized#
+===  [.black]#icon:connectdevelop[] Phase Planes#
+
+==   [.black]#icon:bar-chart[] Feedback#
+===  [.black]#icon:bar-chart[] Learning#
+===  [.black]#icon:bar-chart[] Reason#
+===  [.black]#icon:bar-chart[] Optimiality#
+===  [.black]#icon:bar-chart[] Simulatability#
+
+== [.black]#icon:bar-chart[] Insight#
+
+== [.black]#icon:signal[] Augment#
+
+////

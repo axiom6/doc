@@ -1,0 +1,8 @@
+• Asynchronous, nonblocking communication:
+• Improved latency, throughput, and resource
+utilization.
+• Push rather than pull:
+• More flexible for supporting other services.
+• Minimal interface between modules:
+• Minimal coupling.
+• Messages state minimal facts.

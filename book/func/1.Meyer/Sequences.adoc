@@ -1,0 +1,19 @@
+
+include::../../../dir/inc/DefPractice.adoc[]
+
+== [.black]#Sequences#
+* Data bombards us in sequences
+* Avoid crossing Futures with Callbacks
+
+image::2.Sequences.png[alt="Sequences",align="center"]
+
+* With Observers instead of AsyncCallback<T>, the possible sequences of interaction between an asynchronous computation and its client are: (a) successful termination after n ≥ 0 values; (b) unsuccessful termination after i values; or (c) an infinite stream of values that never completes, as shown in figure 2.
+[horizontal]
+Successful::   Termination after n ≥ 0 values
+UnSuccessful:: x
+Infinity::     x
+
+[horizontal]
+Create::  x
+Compose:: x
+Consume:: x

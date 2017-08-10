@@ -1,0 +1,2 @@
+Asynchronous,non-­‐blocking. Factsas events are pushed.Loosely coupled,composable,distributed.Network problemsfirst-­‐class.Failures first-­‐class,isolated. Errors/recovery are justother events.Must respond,even when errorsoccur.reactivemanifesto.orgEvent-­‐DrivenScalable ResilientResponsiveTuesday, May 13, 14The bonus slides walk through the traits in more details.
+

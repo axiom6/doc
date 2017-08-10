@@ -1,0 +1,7 @@
+
+include::../../../dir/inc/DefPractice.adoc[]
+
+== [.black]#Concepts#
+
+image::concepts/Data.Prac.png[alt="Concepts",align="center",width=1000]
+

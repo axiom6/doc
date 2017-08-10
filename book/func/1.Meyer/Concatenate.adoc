@@ -1,0 +1,8 @@
+
+include::../../../dir/inc/DefPractice.adoc[]
+
+== [.black]#Concatenate#
+
+* The concatenation of all subsequent inflator-produced streams
+
+image::6.Concatenate.png[alt="Concatenate",align="center"]

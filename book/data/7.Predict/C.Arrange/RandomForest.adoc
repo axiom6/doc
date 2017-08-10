@@ -1,0 +1,40 @@
+
+include::../../../../dir/inc/DefStudy.adoc[]
+
+''''
+<<<<
+=== [.black]#Random Forest#
+include::RandomForest.Slide.adoc[]
+
+==== [.black]#How It Works#
+
+* Random Forest uses a bagging approach
+
+* To create a bunch of decision trees with random subset of the data.
+* A model is trained several times on random sample of the dataset to achieve
+  good prediction performance from the random forest algorithm.
+
+* In this ensemble learning method, the output of all the decision trees in the random forest, is combined to make the final prediction.
+
+* The final prediction of the random forest algorithm is derived by polling the results of each decision tree or just by going with a prediction that appears the most times in the decision trees.
+
+* For instance, in the above example - if 5 friends decide that you will like restaurant R but only 2 friends decide that you will not like the restaurant then the final prediction is that, you will like restaurant R as majority always wins.
+
+<<<<
+==== [.black]#Benefits#
+* Overfitting is less of an issue with Random Forests, unlike decision tree machine learning algorithms.
+* There is no need of pruning the random forest.
+* It maintains accuracy when there is missing data and is also resistant to outliers.
+* Simple to use as the basic random forest algorithm can be implemented with just a few lines of code.
+  ** They do not require any input preparation
+  ** They are capable of handling numerical, binary and categorical features, without scaling, transformation or modification.
+* Implicit feature selection as it gives estimates on what variables are important in the classification.
+
+==== [.black]#Drawbacks#
+
+* Algorithms are fast but not in all cases.
+
+==== [.black]#When To Use It#
+
+* Random Forest machine learning algorithms help data scientists save data preparation time
+

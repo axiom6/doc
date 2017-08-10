@@ -1,0 +1,62 @@
+OUR TOWN
+(Iris Dement)
+
+And you know the sun's settin' fast
+and just like they say nothing good ever lasts
+Well, go on now and kiss it goodbye but hold on to your lover
+'cause your heart's bound to die
+Go on now and say goodbye to our town, to our town
+Can't you see the sun's settin' down on our town, on our town
+goodnight
+
+Up the street beside that red neon light
+that's where I met my baby on one hot summer night
+He was the tender and I ordered a beer
+It's been forty years and I'm still sitting here
+
+But you know the sun's settin' fast
+and just like they say nothing good ever lasts
+Well, go on now and kiss it goodbye but hold on to your lover
+'cause your heart's bound to die
+Go on now and say goodbye to our town, to our town
+Can't you see the sun's settin' down on our town, on our town
+goodnight
+
+It's here I had my baby's and I had my first kiss
+I've walked down Main Street in the cold morning mist
+Over there is where I bought my first car
+it turned over once but then it never went far
+
+And I can see the sun settin' fast
+and just like they say nothing good ever lasts
+Well, go on now and kiss it goodbye but hold on to your lover
+'cause your heart's bound to die
+Go on now and say goodbye to our town, to our town
+Can't you see the sun's settin' down on our town, on our town
+goodnight
+
+I buried my Mama and I buried my Pa
+They sleep up the street beside that pretty brick wall
+I bring them flowers about every day
+but I just gotta cry when I think what they'd say
+
+If they could see how the sun's settin' fast
+and just like they say nothing good ever lasts
+Well, go on now and kiss it goodbye but hold on to your lover
+'cause your heart's bound to die
+Go on now and say goodbye to our town, to our town
+Can't you see the sun's settin' down on our town, on our town
+goodnight
+
+Now I sit on the porch and watch the lightning-bugs fly
+but I can't see too good, I got tears in my eyes
+I'm leaving tomorrow but I don't wanna go
+I love you my town, you'll always live in my soul
+
+But I can see the sun's settin' fast
+and just like they say nothing good ever lasts
+Well, go on I gotta kiss you goodbye but I'll hold to my lover
+'cause my heart's 'bout to die
+Go on now and say goodbye to my town, to my town
+Can't you see the sun's settin' down on my town, on my town
+Goodnight, goodnight

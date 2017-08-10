@@ -1,0 +1,23 @@
+Restriction methods::
+where we decide before-hand to limit the class
+of functions. Additivity is an example, where we assume that our
+model has the form ...
+The size of the model is limited by the number of basis functions Mj
+used for each component function fj .
+
+Selection methods::
+which adaptively scan the dictionary and include
+only those basis functions hm that contribute significantly to the fit of
+the model. Here the variable selection techniques discussed in Chapter
+3 are useful. The stagewise greedy approaches such as CART,
+MARS and boosting fall into this category as well.
+
+Regularization methods::
+where we use the entire dictionary but restrict
+the coefficients. Ridge regression is a simple example of a regularization
+approach, while the lasso is both a regularization and selection
+method. Here we discuss these and more sophisticated methods
+for regularization.
+
+Piecewise Models::
+....

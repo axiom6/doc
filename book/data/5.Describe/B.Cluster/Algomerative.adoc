@@ -1,0 +1,49 @@
+
+include::../../../../dir/inc/DefStudy.adoc[]
+
+''''
+<<<<
+
+=== [.black]#Algomerative#
+
+* The Agglomerative Clustering object performs a hierarchical clustering using a bottom up approach: each observation starts in its own cluster, and clusters are successively merged together. The linkage criteria determines the metric used for the merge strategy:
+* Agglomerative Clustering can also scale to large number of samples when it is used jointly with a connectivity matrix, but is computationally expensive when no connectivity constraints are added between samples: it considers at each step all the possible merges.
+Agglomerative Feature::
+   Groups together features that look very similar, thus decreasing the number of features. It is a dimensionality reduction tool, see Unsupervised dimensionality reduction.
+
+* Linkages
+  Ward:: Minimizes the sum of squared differences within all clusters. It is a variance-minimizing approach and in this sense is similar to the k-means objective function but tackled with an agglomerative hierarchical approach.
+image::describe/WardLinkage.png[alt="AveraWardLinkagegeLinkage",align="center"]
+  Average:: Average linkage minimizes the average of the distances between all observations of pairs of clusters.
+image::describe/AverageLinkage.png[alt="AverageLinkage",align="center"]
+  Complete:: Maximum or complete linkage minimizes the maximum distance between observations of pairs of clusters.
+image::describe/CompleteLinkage.png[alt="CompleteLinkage",align="center"]
+
+Agglomerative cluster has a “rich get richer” behavior that leads to uneven cluster sizes. In this regard, complete linkage is the worst strategy, and Ward gives the most regular sizes. However, the affinity (or distance used in clustering) cannot be varied with Ward, thus for non Euclidean metrics, average linkage is a good alternative.
+
+//==== [.black]#Mathematics#
+
+//asciimath:[x^2]
+
+
+==== [.black]#Adding ConnectivityConstraints#
+
+An interesting aspect of AgglomerativeClustering is that connectivity constraints can be added to this algorithm (only adjacent clusters can be merged together), through a connectivity matrix that defines for each sample the neighboring samples following a given structure of the data. For instance, in the swiss-roll example below, the connectivity constraints forbid the merging of points that are not adjacent on the swiss roll, and thus avoid forming clusters that extend across overlapping folds of the roll.
+unstructured structured
+
+image::describe/ConnectivityConstraints.png[alt="ConnectivityConstraints",align="center"]
+
+==== [.black]#Varing Metrics#
+
+* These constraint are useful to impose a certain local structure, but they also make the algorithm faster, especially when the number of the samples is high.
+
+* The connectivity constraints are imposed via an connectivity matrix: a scipy sparse matrix that has elements only at the intersection of a row and a column with indices of the dataset that should be connected. This matrix can be constructed from a-priori information: for instance, you may wish to cluster web pages by only merging pages with a link pointing from one to another. It can also be learned from the data,
+
+
+
+* Average and complete linkage can be used with a variety of distances (or affinities), in particular Euclidean distance (l2), Manhattan distance (or Cityblock, or l1), cosine distance, or any precomputed affinity matrix.
+
+ ** l1 distance is often good for sparse features, or sparse noise: ie many of the features are zero, as in text mining using occurences of rare words.
+ ** cosine distance is interesting because it is invariant to global scalings of the signal.
+
+* The guidelines for choosing a metric is to use one that maximizes the distance between samples in different classes, and minimizes that within each class.

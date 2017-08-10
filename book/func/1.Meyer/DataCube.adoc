@@ -1,0 +1,21 @@
+
+include::../../../dir/inc/DefPractice.adoc[]
+
+== [.black]#Data Cube#
+* Big Data is among the hottest buzzwords
+* Big Data is not just about Volume
+* It is about Volume, Velocity and Variety
+
+image::1.DataCube.png[alt="DataCube",align="center"]
+
+[horizontal]
+Volume::   From company database to the World Wide Web
+Velocity:: From a consumer query to streams of stock quotes
+Variety::  From SQL tuples to key-value graphs of videos
+
+////
+[horizontal]
+Volume::   Data ranges from a small number of items stored in the closed world of a conventional RDMS (relational database management system) to a large number of items spread out over a large cluster of machines or across the entire World Wide Web.
+Velocity:: Data ranges from the consumer synchronously pulling data from the source (negative velocity) to the source asynchronously pushing data to its clients (positive velocity), at different speeds, ranging from millisecond-latency push-based streams of stock quotes to reference data pulled by an application from a central repository once a month
+Variety::  Data ranges from SQL-style relational tuples with foreign-/primary-key relationships to coSQL-style objects or graphs with key-value pointers, or even binary data such as videos and music
+////

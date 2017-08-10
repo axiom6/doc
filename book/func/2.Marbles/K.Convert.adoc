@@ -1,0 +1,23 @@
+
+include::../../../dir/inc/DefPractice.adoc[]
+
+=== [.black]#Convert#
+
+* To:: convert an Observable into another object or data structure
+
+[horizontal]
+toArray::       x
+toBlocking::    x
+toBuffer::      x
+toFuture::      x
+toIndexedSeq::  x
+toIterable::    x
+toIterator::    x
+toList::        x
+toMap::         x
+toMultiMap::    x
+toSet::         x
+toStream::      x
+toTraversable:: x
+toVector::      x
+

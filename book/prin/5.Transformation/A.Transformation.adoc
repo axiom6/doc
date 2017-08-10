@@ -1,0 +1,40 @@
+
+include::../../../dir/inc/DefPractice.adoc[]
+
+==   [.black]#Transformation#
+
+===  [.black]#Representation#
+==== [.black]#Function Shaping#
+==== [.black]#Wrapping Unwrapping#
+==== [.black]#Semantic Consistency#
+==== [.black]#Emphemeral Mistakes#
+==== [.black]#Data Driven APIs#
+==== [.black]#Transformation Preferred#
+==== [.black]#Multiple Futures#
+
+===  [.black]#Pattern Matching#
+==== [.black]#Traversal#
+==== [.black]#Sequential#
+==== [.black]#Recursive#
+==== [.black]#Heuristics#
+
+===  [.black]#Higher Orders#
+==== [.black]#Closures#
+==== [.black]#Currying#
+==== [.black]#Partial Functions#
+==== [.black]#Laziness#
+
+===  [.black]#Monads#
+==== [.black]#Category Theory#
+==== [.black]#Shape Wrap and Roll#
+==== [.black]#Duality#
+==== [.black]#Unification#
+
+===  [.black]#ReactiveX#
+==== [.black]#Observer Patterh#
+==== [.black]#Create#
+==== [.black]#Combine#
+==== [.black]#Listen#
+
+===  [.black]#Summary#
+===  [.black]#References#

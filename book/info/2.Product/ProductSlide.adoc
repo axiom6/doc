@@ -1,0 +1,17 @@
+
+include::../../../dir/inc/DefPractice.adoc[]
+
+== [.black]#Product#
+
+Viable Propositions are promoted to Value Propositions by Discovery and their parts categorized into Entitlement, Portfolio and Intelligence.
+
+image::Product.svg[alt="Product",align="center"]
+
+[horizontal]
+Proposition:: The proposed ideas for new products.
+Entitlement:: The secure UI allocation of Resources* to teams by roles.
+Portfolio:: The entire bundle of products that a company will offer.
+Intelligence:: Data with business descriptions.
+
+
+

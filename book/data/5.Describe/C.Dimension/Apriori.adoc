@@ -1,0 +1,62 @@
+
+include::../../../../dir/inc/DefStudy.adoc[]
+
+''''
+<<<<
+
+=== [.black]#Apriori#
+include::Apriori.Slide.adoc[]
+
+==== [.black]#How It Works#
+
+* Association rule implies that if an item A occurs, then item B also occurs with a certain probability.
+
+* Most of the association rules generated are in the IF_THEN format.
+  ** For example, IF people buy an iPad THEN they also buy an iPad Case to protect it.
+  ** For the algorithm to derive such conclusions, it first observes the number of people who bought an iPad case while purchasing an iPad.
+  ** This way a ratio is derived like out of the 100 people who purchased an iPad, 85 people also purchased an iPad case.
+
+
+* If an item set occurs frequently then all the subsets of the item set, also occur frequently.
+* If an item set occurs infrequently then all the supersets of the item set have infrequent occurrence.
+
+==== [.black]#Benefits#
+
+* It is easy to implement and can be parallelized easily.
+* Apriori implementation makes use of large item set properties.
+////
+==== [.black]#Drawbacks#
+
+* One
+* Two
+
+==== [.black]#When To Use It#
+* One
+* Two
+
+==== [.black]#Getting Started#
+* One
+* Two
+
+==== [.black]#Proving Results#
+* One
+* Two
+////
+==== [.black]#Application#
+
+* Detecting Adverse Drug Reactions
+
+  ** Apriori algorithm is used for association analysis on healthcare data like-the drugs taken by patients, characteristics of each patient, adverse ill-effects patients experience, initial diagnosis, etc.
+  ** This analysis produces association rules that help identify the combination of patient characteristics and medications that lead to adverse side effects of the drugs.
+
+* Market Basket Analysis
+
+  ** Many e-commerce giants like Amazon use Apriori to draw data insights on which products are likely to be purchased together and which are most responsive to promotion.
+  ** For example, a retailer might use Apriori to predict that people who buy sugar and flour are likely to buy eggs to bake a cake.
+
+* Auto-Complete Applications#
+
+  ** Google auto-complete is another popular application of Apriori
+  ** When the user types a word, the search engine looks for other associated words that people usually type after a specific word.
+
+// image::describ/AprioriApps.jpg[alt="AprioriApps",align="center"]

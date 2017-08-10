@@ -1,0 +1,124 @@
+Three Step OPD Data Science Process
+
+Step 1. Organise Data.
+
+Organising data involves the physical storage and format of data and incorporated best practices in data management.
+
+Step 2. Package Data.
+
+Packaging data involves logically manipulating and joining the underlying raw data into a new representation and package.
+
+Step 3. Deliver Data.
+
+Delivering data involves ensuring that the message the data has is being accessed by those that need to hear it.
+
+Plus, at all steps have answers to these questions.
+
+What is being created?
+How will it be created?
+Who will be involved in creating it?
+Why is it to be created?
+
+When starting a data science project, it is helpful to ask the following questions:
+
+Why do this project?
+
+How do we create business value from the data?
+
+What are the questions that need to be asked?
+
+What are the answers that help us move from data to decisions?
+
+Can we shift insight into action?
+
+How do we tie information to business process?
+
+Who needs what information at what right time?
+
+How often should this information be updated, delivered, and shared?
+
+How do we test insights to action to control risks?
+
+The goal of  Data Analytics (big and small) is to get actionable insights resulting in smarter decisions and better business outcomes. How you architect business technologies and design data analytics processes to get valuable, actionable insights varies.
+
+It is critical to design and build a data warehouse / business intelligence (BI) architecture that provides a flexible, multi-faceted analytical ecosystem, optimized for efficient ingestion and analysis of large and diverse datasets.
+
+There are three types of data analysis:
+
+Predictive (forecasting)
+Descriptive (business intelligence and data mining)
+Prescriptive (optimization and simulation)
+
+Predictive Analytics
+
+Predictive analytics turns data into valuable, actionable information. Predictive analytics uses data to determine the probable future outcome of an event or a likelihood of a situation occurring.
+
+Predictive analytics encompasses a variety of statistical techniques from modeling, machine learning, data mining and game theory that analyze current and historical facts to make predictions about future events.
+
+In business, predictive models exploit patterns found in historical and transactional data to identify risks and opportunities. Models capture relationships among many factors to allow assessment of risk or potential associated with a particular set of conditions, guiding decision making for candidate transactions.
+
+Three basic cornerstones of predictive analytics are:
+
+Predictive modeling
+Decision Analysis and Optimization
+Transaction Profiling
+
+An example of using predictive analytics is optimizing customer relationship management systems. They can help enable an organization to analyze all customer data therefore exposing patterns that predict customer behavior.
+
+Another example is for an organization that offers multiple products, predictive analytics can help analyze customers’ spending, usage and other behavior, leading to efficient cross sales, or selling additional products to current customers. This directly leads to higher profitability per customer and stronger customer relationships.
+
+An organization must invest in a team of experts (data scientists) and create statistical algorithms for finding and accessing relevant data. The data analytics team works with business leaders to design a strategy for using predictive information.
+
+Descriptive Analytics
+
+Descriptive analytics looks at data and analyzes past events for insight as to how to approach the future. Descriptive analytics looks at past performance and understands that performance by mining historical data to look for the reasons behind past success or failure. Almost all management reporting such as sales, marketing, operations, and finance, uses this type of post-mortem analysis.
+
+Descriptive models quantify relationships in data in a way that is often used to classify customers or prospects into groups. Unlike predictive models that focus on predicting a single customer behavior (such as credit risk), descriptive models identify many different relationships between customers or products. Descriptive models do not rank-order customers by their likelihood of taking a particular action the way predictive models do.
+
+Descriptive models can be used, for example, to categorize customers by their product preferences and life stage. Descriptive modeling tools can be utilized to develop further models that can simulate large number of individualized agents and make predictions.
+
+For example, descriptive analytics examines historical electricity usage data to help plan power needs and allow electric companies to set optimal prices.
+
+Prescriptive Analytics
+
+Prescriptive analytics automatically synthesizes big data, mathematical sciences, business rules, and machine learning to make predictions and then suggests decision options to take advantage of the predictions.
+
+Prescriptive analytics goes beyond predicting future outcomes by also suggesting actions to benefit from the predictions and showing the decision maker the implications of each decision option. Prescriptive analytics not only anticipates what will happen and when it will happen, but also why it will happen.
+
+Further, prescriptive analytics can suggest decision options on how to take advantage of a future opportunity or mitigate a future risk and illustrate the implication of each decision option. In practice, prescriptive analytics can continually and automatically process new data to improve prediction accuracy and provide better decision options.
+
+Prescriptive analytics synergistically combines data, business rules, and mathematical models. The data inputs to prescriptive analytics may come from multiple sources, internal (inside the organization) and external (social media, et al.). The data may also be structured, which includes numerical and categorical data, as well as unstructured data, such as text, images, audio, and video data, including big data. Business rules define the business process and include constraints, preferences, policies, best practices, and boundaries. Mathematical models are techniques derived from mathematical sciences and related disciplines including applied statistics, machine learning, operations research, and natural language processing.
+
+For example, prescriptive analytics can benefit healthcare strategic planning by using analytics to leverage operational and usage data combined with data of external factors such as economic data, population demographic trends and population health trends, to more accurately plan for future capital investments such as new facilities and equipment utilization as well as understand the trade-offs between adding additional beds and expanding an existing facility versus building a new one.
+
+Another example is energy and utilities. Natural gas prices fluctuate dramatically depending upon supply, demand, econometrics, geo-politics, and weather conditions. Gas producers, transmission (pipeline) companies and utility firms have a keen interest in more accurately predicting gas prices so that they can lock in favorable terms while hedging downside risk. Prescriptive analytics can accurately predict prices by modeling internal and external variables simultaneously and also provide decision options and show the impact of each decision option.
+
+Intelligence amplification (IA) (also referred to as cognitive augmentation and machine augmented intelligence) r
+
+efers to the effective use of information technology in augmenting human intelligence.
+
+The idea was first proposed in the 1950s and 1960s by cybernetics and early computer pioneers.
+
+---------
+
+  IWikipedia describes a nice history http://bit.ly/2vQcui0
+
+--------
+
+UI - Inspirations
+Licklider - Englebart - PARC - Job
+
+Augment Data Science
+
+  Pipeline
+    Problem definition
+    Data collection
+    Data cleaning
+    Data coding (feature engineering)
+    Metric selection
+    Algorithm selection
+    Parameter optimization
+    Post-processing
+    Deployment
+    Online evaluation
+    Debug

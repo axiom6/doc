@@ -1,0 +1,113 @@
+
+include::../../../../dir/inc/DefStudy.adoc[]
+
+''''
+=== [.black]#Decision Tree#
+include::DecisionTree.Slide.adoc[]
+
+==== [.black]#In a decision tree#
+
+* The internal node represents a test on the attribute
+
+* Each branch of the tree represents the outcome of the test
+
+* Eac leaf node represents a particular class label i.e. the decision made after computing all of the attributes.
+
+* The classification rules are represented through the path from root to the leaf node.
+
+==== [.black]#Types of Decision Trees#
+
+image::predict/DecisionTreeChoice.jpg[alt="DecisionTreeChoice",align="center"]
+
+* Classification Trees- These are considered as the default kind of decision trees used to separate a dataset into different classes, based on the response variable. These are generally used when the response variable is categorical in nature.
+
+* Regression Trees-When the response or target variable is continuous or numerical, regression trees are used. These are generally used in predictive type of problems when compared to classification.
+
+==== [.black]#Variables#
+
+Decision trees can also be classified into two types, based on the type of target variable
+It is the target variable that helps decide what kind of decision tree would be required for a particular problem.
+
+* Continuous Variable Decision Trees
+* Binary Variable Decision Trees.
+
+==== [.black]#Why should you use Decision Trees#
+
+* These machine learning algorithms help make decisions under uncertainty and help you improve communication, as they present a visual representation of a decision situation.
+* Decision tree machine learning algorithms help a data scientist capture the idea that if a different decision was taken, then how the operational nature of a situation or model would have changed intensely.
+* Decision tree algorithms help make optimal decisions by allowing a data scientist to traverse through forward and backward calculation paths.
+
+==== [.black]#When to use Decision Trees#
+
+* Decision trees are robust to errors and if the training data contains errors- decision tree algorithms will be best suited to address such problems.
+* Decision trees are best suited for problems where instances are represented by attribute value pairs.
+* If the training data has missing value then decision trees can be used, as they can handle missing values nicely by looking at the data in other columns.
+* Decision trees are best suited when the target function has discrete output values.
+
+==== [.black]#Benefits#
+
+* Decision trees are very instinctual and can be explained to anyone with ease. People from a non-technical background, can also decipher the hypothesis drawn from a decision tree, as they are self-explanatory.
+* When using decision tree machine learning algorithms, data type is not a constraint as they can handle both categorical and numerical variables.
+* Decision tree machine learning algorithms do not require making any assumption on the linearity in the data and hence can be used in circumstances where the parameters are non-linearly related. These machine learning algorithms do not make any assumptions on the classifier structure and space distribution.
+* These algorithms are useful in data exploration. Decision trees implicitly perform feature selection which is very important in predictive analytics. When a decision tree is fit to a training dataset, the nodes at the top on which the decision tree is split, are considered as important variables within a given dataset and feature selection is completed by default.
+* Decision trees help save data preparation time, as they are not sensitive to missing values and outliers. Missing values will not stop you from splitting the data for building a decision tree. Outliers will also not affect the decision trees as data splitting happens based on some samples within the split range and not on exact absolute values.
+
+* Of all the well-known learning methods, decision trees come closest to
+meeting the requirements for serving as an off-the-shelf procedure for data
+mining.
+
+* They are relatively fast to construct and they produce interpretable models (if the trees are small).
+
+* they naturally incorporate mixtures of numeric and categorical predictor variables andmissing values.
+
+* They are invariant under (strictly monotone) transformations of the individual predictors.
+
+* As a result, scaling and/or more general transformations are not an issue, and they are immune to the effects of predictor outliers.
+
+* They perform internal feature selection as an integral part of the procedure.
+
+* They are thereby resistant, if not completely immune, to the inclusion of many irrelevant predictor variables.
+
+==== [.black]#Drawbacks#
+
+* inaccuracy
+* The more the number of decisions in a tree, less is the accuracy of any expected outcome.
+* They seldom provide predictive accuracy comparable to the best that can be achieved with the data at hand.
+* A gradient boosted model (GBM) is a generalization of tree boosting that attempts to mitigate these problems, so as to produce an accurate and
+  effective off-the-shelf procedure for data mining.
+* Boosting decision trees improves their accuracy often dramatically.
+* Some advantages of trees that are sacrificed by boosting are speed, interpretability, and, for AdaBoost, robustness against
+  overlapping class distributions and especially mislabeling of the training data.
+
+* A major drawback of decision tree machine learning algorithms, is that the outcomes may be based on expectations. When decisions are made in real-time, the payoffs and resulting outcomes might not be the same as expected or planned. There are chances that this could lead to unrealistic decision trees leading to bad decision making. Any irrational expectations could lead to major errors and flaws in decision tree analysis, as it is not always possible to plan for all eventualities that can arise from a decision.
+* Decision Trees do not fit well for continuous variables and result in instability and classification plateaus.
+* Decision trees are easy to use when compared to other decision making models but creating large decision trees that contain several branches is a complex and time consuming task.
+* Decision tree machine learning algorithms consider only one attribute at a time and might not be best suited for actual data in the decision space.
+* Large sized decision trees with multiple branches are not comprehensible and pose several presentation difficulties.
+
+////
+
+==== [.black]#When To Use It#
+* One
+* Two
+
+==== [.black]#Getting Started#
+* One
+* Two
+
+==== [.black]#Proving Results#
+* One
+* Two
+////
+
+==== [.black]#Applications#
+
+image::predict/DecisionTreeApps.jpg[alt="DecisionTreeApps",align="center"]
+
+* Decision trees are among the popular machine learning algorithms that find great use in finance for option pricing.
+* Remote sensing is an application area for pattern recognition based on decision trees.
+* Decision tree algorithms are used by banks to classify loan applicants by their probability of defaulting payments.
+* Gerber Products, a popular baby product company, used decision tree machine learning algorithm to decide whether they should continue using the plastic PVC (Poly Vinyl Chloride) in their products.
+* Rush University Medical Centre has developed a tool named Guardian that uses a decision tree machine learning algorithm to identify at-risk patients and disease trends.
+
+//image::predict/DecisionTreeExplained.jpg[alt="DecisionTreeExplained",align="center"]

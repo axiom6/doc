@@ -1,0 +1,22 @@
+
+include::../../../dir/inc/DefPractice.adoc[]
+
+= [.black]#3. Describe#
+
+image::describe/Describe.Tech.png[align="center"]
+<<<<
+
+
+''''
+
+//include::A.UnSupervised/UnSupervised.adoc[]
+
+include::B.Cluster/Cluster.adoc[]
+
+include::C.Dimension/Dimension.adoc[]
+
+//include::D.Metadata/Metadata.adoc[]
+
+//include::E.Report/Report.adoc[]
+
+//include::F.Investigate/Investigate.adoc[]

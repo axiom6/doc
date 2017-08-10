@@ -1,0 +1,57 @@
+
+
+ Goedel’s Theorem shows us that there are many claims in mathematics that
+ are true but whose truth we cannot know, at least not by mathematical proof
+ (perhaps God can simply tell us that the claim is true, in which case we
+ might have good reason to believe it, but we still wouldn’t know that it is true in the conventional mathematical sense of having a proof).
+
+ In mathematics, we consider ourselves as knowing the axioms of a given mathematical
+ theory—these are usually taken to be self-evident truths and they form a manageable
+ set in the sense that we know whether any claim is or isn’t an axiom. Besides the
+ axioms, we also consider ourselves as knowing the claims that follow via the rules
+ of logic from those axioms. The axioms and their logical consequences are the claims
+ that we can prove. Goedel’s Theorem states that there are always truths that are not
+ knowable in this sense.
+
+ Now one might say, well, if there are such truths, why don’t we just add them to our
+ axioms. If we keep doing this, maybe we can render all mathematical truths provable
+ in that way. But this strategy doesn’t work because Goedel’s Theorem shows that
+ every time we add a new axiom, there’s a new “Goedel Sentence” that is true but not
+ provable from the new axiom system.
+
+ The key to proving Goedel’s Theorem is constructing what has come to be called a
+ Goedel Sentence, which asserts (and the assertion is provably true!) that it is
+ not provable within the axiom system under consideration. The Goedel Sentence is
+ a self-referential statement, much like “This sentence is false.” By accurately
+ asserting of itself that it is not provable, it ends up being true but not provable.
+ This is a mindbender, but it works, and it shows that there will always be true
+ mathematical statements that we cannot prove. This is the upshot of Goedel’s Theorem.
+
+  Michael,
+
+      I am glad you raised the question of Mathematical Truth because
+I feel that Godel's Incompleteness Theorem provides the answer along
+with insights on the limits of Knowledge and the roles of Wisdom and
+Data Science.
+
+    I may not have the the fully articulated answer, but this should be
+a good start.
+
+     First read https://en.wikipedia.org/wiki/Kurt_G%C3%B6del
+
+     The key statement.
+
+     "Gödel made an immense impact upon scientific and philosophical thinking in the 20th century,
+a time when others such as Bertrand Russell,[3] A. N. Whitehead,[3] and David Hilbert
+were analyzing the use of logic and set theory to understand the foundations of mathematics
+pioneered by Georg Cantor."
+
+    David Hilbert - A Key Figure for Mathematical Truth and MetaMathematics is cool.
+
+   "Hilbert and his students contributed significantly to establishing rigor and developed important
+ tools used in modern mathematical physics. Hilbert is known as one of the founders of proof theory
+and mathematical logic, as well as for being among the first to distinguish between mathematics
+and metamathematics.[4]"
+
+
+  The basis for later theoretical computer science, in Alonzo Church and Alan Turing, also grew directly out of this 'debate'.

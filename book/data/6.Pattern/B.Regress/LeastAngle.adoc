@@ -1,0 +1,24 @@
+
+include::../../../../dir/inc/DefStudy.adoc[]
+
+''''
+<<<<
+=== [.black]#Least Angle#
+
+* Least angle regression (LAR) can be viewed as a kind of “democratic” version
+  of forward stepwise regression.
+
+image::distill/LAR.png[alt="LAR",align="center"]
+
+* LAR is intimately connected with the lasso, and in fact provides an extremely efficient algorithm for
+  computing the entire lasso path
+
+==== [.black]#How It Works#
+
+* Forward stepwise regression builds a model sequentially, adding one variable
+  at a time. At each step, it identifies the best variable to include in the
+  active set, and then updates the least squares fit to include all the active
+  variables.
+* Least angle regression uses a similar strategy, but only enters “as much”
+  of a predictor as it deserves.
+  fit.

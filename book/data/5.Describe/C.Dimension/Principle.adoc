@@ -1,0 +1,49 @@
+
+include::../../../../dir/inc/DefStudy.adoc[]
+
+''''
+<<<<
+
+=== [.black]#Principle Components#
+
+image:describe/PCA.png[PCA]
+
+////
+==== [.black]#Mathematics#
+
+asciimath:[x^2]
+
+==== [.black]#How It Works#
+* One
+* Two
+
+==== [.black]#Benefits#
+* One
+* Two
+
+==== [.black]#Drawbacks#
+* One
+* Two
+
+==== [.black]#When To Use It#
+* One
+* Two
+
+==== [.black]#Getting Started#
+* One
+* Two
+
+==== [.black]#Proving Results#
+* One
+* Two
+
+==== [.black]#Applications#
+* One
+* Two
+
+==== [.black]#Tools#
+[horizontal]
+Spark:: xxx
+Python:: xxx
+R:: xxx
+////

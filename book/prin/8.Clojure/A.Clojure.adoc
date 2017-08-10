@@ -1,0 +1,25 @@
+
+include::../../../dir/inc/DefPractice.adoc[]
+
+==  [.black]#A Tour of Clojure#
+===   [.black]#Lisp Revitalized#
+===   [.black]#JVM Influence#
+===   [.black]#Software Transactions#
+==  [.black]#Polymorphism#
+===   [.black]#Multi-Methods#
+===   [.black]#Macros#
+==  [.black]#Principles in Clojure#
+===   [.black]#Composition#
+===   [.black]#Orchestration#
+===   [.black]#Preservation#
+===   [.black]#Transformation#
+===   [.black]#Expression#
+==  [.black]#Ring and Composure#
+===   [.black]#HTTP Request Response#
+===   [.black]#JavaScript and Clojure#
+===   [.black]#HTML5 and CSS3#
+===   [.black]#Page Navigation#
+===   [.black]#Data Interchange#
+===   [.black]#Principles#
+==  [.black]#Summary#
+==  [.black]#References#

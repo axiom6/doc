@@ -1,0 +1,655 @@
+
+= [black]#Acquire#
+
+== [black]#Collect#
+  Plan
+    Vel Var Vol
+    Context
+    Connect
+  Sources
+    Raw
+    Structured
+    Spatial
+    Sensor
+  Manage
+    Original Data
+    Format Data
+    Describe Data
+    Use The Data
+
+== [black]#Refine#
+  Improve
+    Clean Source
+    Indicator
+    Crowd Source
+    Automate
+  Quality
+    Assurance
+    Control
+    Profile
+  Track
+    Defect
+    Usage
+    Audit
+
+== [black]#Schema#
+  Domain
+    Entitlement
+    Proposition
+    Portfolio
+    Intel
+  Document
+    Dictionary
+    Catalog
+  Model
+    Experimental
+    Conceptual
+    Logical
+    Physical
+  Deploy
+    Map Sources
+    RestUR Ls
+
+== [black]#Prepare#
+  Filter
+    Relational
+    Tag Outliers
+  Imputate
+    Random Sampling
+    Monte Carlo
+    Mean
+    Distributions
+  Transform
+    Deduplication
+    Normalization
+    Conversion
+    Fourier
+    Wavelet
+    Coordinate
+  Select
+    Sampling
+    Region
+
+= [black]#Describe#
+
+== [black]#Unsupervise#
+  Collect Data
+    Implicit Collect
+    Emotional Spaces
+    Density
+    Text Rank
+  Association Rule
+    -Apriori
+    -Frequent Itemset
+    -DictionaryLearning
+  Latent Variable
+    Expectation Max
+    Method Of Moments
+    -LatentDirichletAllocation
+  Blind Signal
+    Principal Comp
+    Non Neg Matrix
+    Hebbian Learning
+
+== [black]#Statistics#
+  Measures
+    Central Tendency
+    Dispersion
+    NOVA
+  Probability
+    Sample Space
+    Set Theory
+    Random Variables
+    Measure Theory
+  Uncertainty
+    Uncertain Risk
+    Fuzzy Sets
+    Fuzzy Measure
+  Distribution
+    Characteristics
+    Univariate
+    Multivariate
+
+== [black]#Dimension#
+  Principal
+    -IncrementalPCA
+    -RandomizedPCA
+    -KernelPCA
+    -SparsePCA
+    -MiniBatchSparsePCA
+    -ProbabilisticPCA
+    -ProjectedGradientNMF
+    -TruncatedSVD
+    Independent
+    Correspondence
+    Factor Analysis
+  Discriminant
+    Linear
+    Quadratic
+    -Regularized
+  Manifold
+    Isomap
+    Elastic Map
+    Locally Linear
+    Spectral Embedding
+    Hessian Eigen
+    Local Tangent
+    Multi Dimen
+    -Laplacian
+    -Eigenmap
+  -Cross Decomposition
+    -PLSRegression
+    -Canonical Correlation Analysis
+    -Partial Least Square SVD
+  -Multi-Dimensional Scaling
+     -Classical MDS
+     -Isotonic MDS
+     -Sammon Mapping
+
+== [black]#Metadata#
+  -Feature Selection#
+    -Genetic
+    -Ensemble
+    -Signal Noise
+    -Sum Squares
+    -Class separability
+    -Consistency-based
+    -Correlation-based
+    -Percentile
+  -Feature Extract
+    Annotate
+    Hash
+    Term Frequency
+    Wrappers
+    Sensitiviy
+    -DictVectorizer
+
+  -Search
+    -Grid
+    -Exhaustive
+    -Best first
+    -Simulated annealing
+    -Genetic algorithm
+    -Greedy forward selection
+    -Greedy backward elimination[8][9][10]
+    -Particle swarm optimization[11]
+    -Targeted projection pursuit
+    -Scatter Search[12]
+    -Variable Neighborhood Search[13][14]
+  Label
+    Propagate
+    Spreading
+  Anomaly
+    Outlier
+    Local Outlier
+    Model Based
+    Smoothing
+
+== [black]#Report#
+  Pivot
+    Drill Down
+    Roll Up
+  Relate
+    Combined Record
+    Detail Level
+
+== [black]#Profile#
+  Diagnostic
+    Monitor
+    Investigate
+  Summarize
+    Relational
+    Extraction
+    Abstraction
+
+= [black]#Distill#
+
+== [black]#Semi Super#
+  Train Data
+    Bias Variance
+    Generative
+    -Validation Curvef
+  Assumptions
+    Smoothness
+    Cluster
+    Manifold
+  Methods
+    Low Density
+    Graph Based
+    Heuristics
+    Redundancy
+  Functional
+    Output Stucture
+    Complexity
+    Noise
+    Non Linearity
+
+== [black]#Cluster#
+  KMeans
+  Centroid
+    Affinity
+    Apriori
+    FuzzyC Means
+  Hierarchial
+    Ward
+    BIRCH
+    Agglomerative
+    Canopy
+    Fractal
+  Distribution
+    Spectral
+    Gaussian Mixture
+    Gaussian Process
+    Correllation
+  Density
+    DBSCAN
+    Mean Shift
+    PTIKS
+  Misc
+    CLARANS, DENCLUE, Deterministic Annealing, X-Means, G-Means, Neural Gas, Growing Neural Gas, Sequential Information Bottleneck, Minimum Entropy Clustering
+
+== [black]#Regress#
+  Least Squares
+    Linear
+    Non Linear
+    Ridge
+    Lasso
+    -Multi Task
+  Model Select
+    Elastic Net
+    Least Angle
+    Orthogonal Match
+    Stepwise
+    -Metrics
+  Gausian Process
+    GP Regress
+    GP Classify
+    GP Kernel
+  -Support Vector
+  Distribution
+    Bayesian
+    Auto Relevance
+    Logistic
+    Isotomic
+    Robust Regress
+
+== [black]#Patterns#
+  Hypoth
+    TTest
+    Topic
+    Grid Search
+    -FTest
+    -ChiSquared
+    -Correllation
+  Cross Val
+    Leave
+     KFold
+    Measures
+    RidgeCV
+    LassoCV
+    -Bootstrap
+  -ConfusionMatrix
+  Co Var
+    Empirical
+    Shrunk
+    Sparse Inv
+    Robust
+    -Graph
+  -Model Validation
+    -Cross Validation
+    -Leave-One-Out
+    -Bootstrap
+    -Confusion Matrix
+    -AUC
+    -Fallout
+    -FDR
+    -F-Score
+    -Precision
+    -Recall
+    -Sensitivity
+    -Specificity
+    -MSE
+    -RMSE
+    -RSS
+    -Absolute Deviation
+    -Rand Index
+    -Adjusted Rand Index
+  -Model Evalution#
+    -scoring-parameter
+    -label-ranking-metrics
+    -multi label-ranking-metrics
+    -ranking-based average precision
+    -Compute Ranking loss
+    -Classification Metrics
+    -Regression metrics
+      -Explained variance
+      -Mean absolute error
+      |Mean squared error
+      -Median absolute erro
+    -Clustering Metrics
+      -Supervised
+      -Unsupervised
+      -Rand index
+      -Adjusted Mutual Information
+      -adjusted_rand_score
+      -Completeness metric
+      -homogeneity_completeness_v_measure
+      -Mutual Information
+      -Mutual Information Normalized
+      -Silhouette Coefficient
+      -V-measure
+    -Bi Cluster
+      -mutual_info_score
+      -consensus_score
+
+  -Metrics
+    -make_scorer
+    -get scorer
+    -Area Under the Curve
+    -average_precision_score
+    -brier_score_loss
+    -classification_report
+    -confusion matrix
+    -f1_score
+    -F Beta Score
+    -Hamming loss
+    -hinge loss
+    -Jaccard similarity
+    -Matthews correlation coefficient
+    -precision_recall
+    -precision_recall_fscore
+    -recall_score
+    -roc_auc_score
+    -Receiver operating characteristic
+    -Zero-one classification loss
+    -Brier
+    -Pairwise
+      -chi2_kernel
+      -distance_metrics
+      -euclidean_distances
+      -kernel_metrics
+      -linear_kernel
+      -manhattan_distances
+      -pairwise_distances
+      -polynomial_kernel
+      -rbf_kernel
+      -pairwise_distances_argmin
+      -pairwise_distances_argmin_min
+
+== [black]#Reveal#
+  Detect
+    Exceptions
+    Clusters
+    Trends
+
+== [black]#Recommend#
+  Context
+    Collab Filter
+    Content Based
+    Knowledge Based
+    Graph Based
+
+= [black]#Predict#
+
+== [black]#Supervise#
+  Review Data
+    Interface
+    Intelligence
+    Inference
+  Risk
+    Empirical
+    Structural
+    Noise
+    Non Linearity
+  Attribute
+    Represent
+    Dimensionality
+    Heterogeneity
+    Redundancy
+    Concept
+
+== [black]#Classify#
+  Naive Bayes
+    NB Gaussian
+    NB Multinomial
+    NB Bernoulli
+  Support Vector
+    SVM Multi Class
+    SVM Kernel
+    -SV Reqress
+    Density Estimate
+    Novelty Detect
+    Outlier Detect
+  Nearest Neighbor
+    NN Brute Force
+    NNKD Tree
+    NN Ball Tree
+    NN Nearest Centroid
+    NNLSH Forest
+    -BK-Tree, Cover Tree, KD-Tree, Locality-Sensitive Hashing
+  Stochastic
+    -SGD
+    -Sparse Data
+  -Regression
+    -Logistic
+    -SGD Classifier
+    -Ridge Classifier
+    -PassiveAggressiveClassifier
+    -MaximumEntropy
+
+== [black]#Arrange#
+  Decision Tree
+    CART
+    C4.5
+    Random Forests
+    -VotingClassifier
+  Multi
+    Multi Class
+    Multi Label
+    Multi Output
+  Ensemble
+    Bagging
+    Adaptive Boost
+    Gradient Boost
+  Neural
+    Perceptron
+    Back Prop
+    Deep  Boltzmann
+    Deep  Belief
+    Convolutional
+    Auto- Encoders
+    -Radial Basis
+
+== [black]#Confidence#
+  Interval
+    Error Bounds
+    Confidence
+    Crediable
+    Probability Success
+  Model Evaluation
+    Confusion Matrix
+    - Measure
+    OC Graph
+  Uncertainty
+    Catagories
+    Propagation
+  Applicablilty
+    Assumptions
+    Contraints
+
+== [black]#Percieve#
+  -Wavelet
+    -Discrete Wavelet Transform, Wavelet Shrinkage Haar Daubechies D4 Best Localized Wavelet, Coiflet, Symmlet
+
+== [black]#Forecast#
+  Markov
+   -Hidden Markov Model
+   -Conditional Random Field
+
+= [black]#Advise#
+
+== [black]#Reinforce#
+  Explore  Data
+    Epsilon Greedy
+    Boltzmann
+    Gaussian
+    State Dependent
+  Value Function
+     Learning
+    SARSA
+    FittedQ
+  Policy Gradient
+    Policy Reinforce
+    Natural  Actor
+  Black Box
+    Stochastic Hill
+    Swarm
+    Natural Evolution
+    Fitness Expect
+  -Natural Language Processing
+    -Sentence Splitter,
+    -Tokenizer,
+    -Bigram Statistical Test,
+    -Phrase Extractor,
+    -Keyword Extractor,
+    -Porter Stemmer, Lancaster Stemmer,
+    -POS Tagging,
+    -Relevance Ranking
+
+  === [black]#Interpolation#
+
+
+== [black]#Improve#
+  Approximate
+    Genetic
+    Anealing
+    Gradient
+  OR
+    Scheduling
+    Routing
+    Allocation
+  Objective
+    Constraint Logic
+    Linear Prog
+    Non Linear Prog
+    Integer Prog
+  -Interpolation#
+      -Linear, Bilinear, Cubic, Bicubic, Kriging, Laplace, Shepard, RBF
+
+== [black]#Simulate#
+  Event
+    Discrete
+    Markov
+    Monte Carlo
+  Self Organized
+    Org Maps
+    Swarm
+    Agent
+  Phase Planes
+    Dynamics
+    Activity
+    Differential
+  Linear Algebra
+    Decomposition LU, Cholesky QR, Eigen, Single Value
+    Band Matrix
+    Sparse Matric
+
+== [black]#Feedback#
+  Learning
+    Active Learning
+    Ensemble
+  Reason
+    Inductive
+    Transductive
+    Deductive
+  Optimality
+    Constraints
+    Sensitivity
+    Sparsity
+  Simulatability
+    Linearity
+    Constantability
+    Comprehensiveness
+    Separatrix
+
+== [black]#Insight#
+  Improve
+    Construcual
+    Nutrients
+    Flow
+  Recreate
+    Change
+    Evolve
+    Emerge
+
+== [black]#Augment#
+  Inference
+    Expert
+    Logical
+    Fuzzy
+
+= [black]#Desktop#
+
+== [black]#Visualize#
+  Plotly
+  D3
+  Leaflet
+  Math Box
+
+== [black]#Explore#
+  Data Access
+  Elastic Search
+  Pivot Table
+
+== [black]#Code#
+  Java Script
+  Python
+  Scala
+
+== [black]#Notebook#
+  IPython
+  Jupyter
+
+= [black]#Process#
+
+== [black]#Stream#
+  Kafka
+  Storm
+
+== [black]#Pipeline#
+  Spark
+    Data Frame
+    RDD
+  Skales
+
+== [black]#Store#
+  Cassandra
+  CouchDB
+  MongoDB
+  Relational
+
+== [black]#Deploy#
+  Akka
+  Mesos
+  NodeJS
+
+= [black]#Explain#
+
+== [black]#Teach#
+
+== [black]#Publish#
+
+== [black]#Warehouse#
+
+== [black]#Protect#
+  Encrypt
+
+= [black]#Decide#
+
+== [black]#Inquire#
+
+== [black]#Strategy#
+
+== [black]#Asset#
+
+== [black]#Legal#

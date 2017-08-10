@@ -1,0 +1,16 @@
+
+include::../../../../dir/inc/DefStudy.adoc[]
+
+''''
+<<<<
+
+== [.black]#Association Rules#
+include::Apriori.adoc[]
+
+== [.black]#Dimensionality#
+
+include::Principle.adoc[]
+
+include::Independent.adoc[]
+
+include::Discriminant.adoc[]

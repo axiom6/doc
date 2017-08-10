@@ -1,0 +1,72 @@
+.hljs {
+  background: #3F3F3F;
+  color: #DCDCDC;
+}
+.hljs-keyword,
+.hljs-tag,
+.hljs-class,
+.hljs-id,
+.hljs-request,
+.hljs-status,
+.hljs-attribute {
+  color: #E3CEAB;
+}
+.scala .hljs-variable {
+  color: #EFDCBC;
+}
+.scala .hljs-literal {
+  color: #EFEFAF;
+}
+.scala .hljs-title {
+  color: #FFF8E6;
+}
+.scala .hljs-function {
+  color: #efef8f;
+}
+.scala .hljs-type {
+  color: #FFF380;
+}
+.scala .hljs-number,
+.scala .hljs-date {
+  color: #8CD0D3;
+}
+.scala .hljs-chunk,
+.scala .hljs-subst {
+  color: #8F8F8F;
+}
+.scala .hljs-symbol,
+.scala .hljs-string {
+  color: #DCA3A3;
+}
+.hljs-deletion,
+.hljs-string,
+.hljs-preprocessor,
+.hljs-pragma,
+.hljs-array,
+.hljs-built_in,
+.hljs-aggregate,
+.hljs-javadoc,
+.hljs-class,
+.hljs-localvars,
+.hljs-attr_selector,
+.hljs-pseudo,
+.hljs-cbracket,
+.hljs-formula,
+.hljs-rules .hljs-value,
+.hljs-tag .hljs-value {
+  color: #CC9393;
+}
+.hljs-shebang,
+.hljs-addition,
+.hljs-comment,
+.hljs-annotation,
+.hljs-template_comment,
+.hljs-pi,
+.hljs-doctype {
+  color: #7F9F7F;
+}
+.coffeescript .javascript,
+.javascript .xml,
+.tex .hljs-formula {
+  opacity: 0.5;
+}

@@ -1,0 +1,7 @@
+
+
+[format="csv",cols="15",options="header"]
+|===================================================
+ Algorithm,Problem,Results,Explain,Accuracy,Training,Prediction,Tuning,Small Samples,Handle Irrelevance,Learns Feature Interactions,Membership Probabilities,Parametric,Scaling,Algorithm
+include::Compare.csv[]
+|===================================================

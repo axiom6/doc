@@ -1,0 +1,36 @@
+
+include::../../../dir/inc/DefPractice.adoc[]
+
+== [.black]#Principles#
+
+Definitions::
+  * A fundamental truth or proposition that serves as the foundation for a system of belief or behavior or for a chain of reasoning.
+  * A rule or belief governing one's morally correct behavior and attitudes.
+  * A general scientific theorem or law that has numerous special applications across a wide field.
+  * A natural law forming the basis for the construction or working of a machine.
+  * A fundamental source or basis of something.
+
+Synonyms::
+  truth, proposition, concept, idea, theory, assumption, fundamental, essential, ground rule
+   morals, morality, (code of) ethics, beliefs, ideals, standards
+   integrity, uprightness, righteousness, virtue, probity, (sense of) honor, decency, conscience, scruples
+
+== [.black]#Data Science Leaning Progression#
+
+[cols="15,15,70",options="header"]
+|====
+^| Practice   ^| Learning        ^| Characterized By
+ | *Describe* ^| Unsupervised     | No row classifiers. Vague columns
+ | *Distill*  ^| Semi-Supervised  | Leverage known to determine unknown row classifiers.
+ | *Predict*  ^| Supervised       | Utillize known row classifiers as a foundation for prediction.
+ | *Advise*   ^| Reinforce        | Determine and improved present descriptions and future predictions with simulations.
+|====
+
+== [.black]#Information, Knowledge Wisdom Progression#
+
+[horizontal]
+Discovery:: ...
+Understanding:: ...
+Truth:: ...
+
+== [.black]#Principles Provide Context#

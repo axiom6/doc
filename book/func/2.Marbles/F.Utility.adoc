@@ -1,0 +1,27 @@
+
+include::../../../dir/inc/DefPractice.adoc[]
+
+=== [.black]#Utility#
+
+* A toolbox of useful Operators for working with Observables
+
+[horizontal]
+Delay::         Shift the emissions from an Observable forward in time by a particular amount
+Do::            Register an action to take upon a variety of Observable lifecycle events
+Materialize::   Represent both the items emitted and the notifications sent as emitted items, or reverse this process
+
+image::materialize.c.png[alt="materialize",align="center"]
+
+Dematerialize:: Represent both the items emitted and the notifications sent as emitted items, or reverse this process
+
+image::dematerialize.c.png[alt="dematerialize",align="center"]
+
+ObserveOn::     Specify the scheduler on which an observer will observe this Observable
+Serialize::     Force an Observable to make serialized calls and to be well-behaved
+Subscribe::     Operate upon the emissions and notifications from an Observable
+SubscribeOn::   Specify the scheduler an Observable should use when it is subscribed to
+TimeInterval::  Convert an Observable that emits items into one that emits indications of the amount of time elapsed between those emissions
+Timeout::       Mirror the source Observable, but issue an error notification if a particular period of time elapses without any emitted items
+Timestamp::     Attach a timestamp to each item emitted by an Observable
+Using::         Create a disposable resource that has the same lifespan as the Observable
+

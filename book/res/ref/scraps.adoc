@@ -1,0 +1,50 @@
+
+
+==== [.black]#Presentations#
+
+* Getting to Know Scala for Data Science - Data Science Association 6/124/2015
+* Reactive Principles in Data Science - Data Science Association 2/28/2015
+* Polyglot Principles - The language principles that inspired Scala Clojure Groovy Ruby
+* Scala Math DSL- Denver Scala Users Group 6/11/2013
+* Math Box 3D Visualization - HTML5 Denver 5/13/2013
+* GIS with Leaflet - Denver JS 5/2/2013 and Den of Clojure (OpenBike) 6/20/2013
+* An Architectural Blueprint for a REST CMS in NetKernel - NetKernel Conference 4/14 2011
+* The Evolution of 4-Tier Architectures with REST - Northern Colorado Architects 12/15/2010
+* A Practical Road Map to Enterprise Architecture - Denver Open Source Users Group 10/5/10
+* Polyglot Panel & Scala Expert - Denver Java 4/14/10 CO Springs 11/25/10 Boulder 5/10/11
+* Principles of Programming Languages - 2/2/10 Scala Groovy Clojure Smalltalk Lisp & Ruby
+* Scala Paradigms Denver 8/5/08 8/4/09 Boulder 8/11/09 CO Springs 8/26/09
+
+* **Open Source 2013** [https://github.com/axiom6](https://github.com/axiom6) LeafletGIS, MathBox3D and ScalaMathDSL.
+* **DN2K 2013**  Wrote a complete Leaflet.js mobile map app synchronized to agriculture asset data in Backbone.
+* **Snugg Home 2012** Rewrote the contractor energy savings mobile app in CoffeeScript, Backbone, Bootstrap and REST.
+* **PSS 2012** Prototyped a Scala/Play/Akka REST server and set up the UI test suite in Jasmine and PhantomJS.
+* **PSS 2011** Refactored all of the CSS and JavaScript libraries for a medical supply site written in JSP.
+* **Part Miner 2011** Wrote all the HTML5, CSS JavaScript and integrated .NET for an electronics parts search portal.
+* **Venture Associates 2010** Created Axiom's first single page app with jQuery, AJAX and REST.
+
+
+[cols="50,50",frame="none",grid="none"]
+|====
+.3+^.^|[.myname]#Tom Flaherty#
+| 1900 Little Raven St., Suite 561, Denver CO 80202
+
+| Thomas.Edmund.Flaherty@gmail.com (720)-587-5017
+
+| Colorado School of Mines - BSc - Mathematics
+
+|====
+
+## Practices
+
+Tied to the
+road map to FEA for California in 2009 and to the Wisconsin Department of Transportation in 2013. In 2014 refined
+Axiom's Practice Road Map with the Business Model Canvas for learning with Collaborate, Product and Discovery. In
+2015 moved away from Agile processes to emphasize cultural Adaptation for Technology with Benefits. In 2015
+conducted workshops for the Wisconsin Department of Transportation.
+
+# NorTel
+
+Developed & taught the Design Patterns & OO courses for BNR’s switch developers at Bell Northern Research. The courses emphasized the
+GOF and POSA Design Pattern catalogs applied to DMS-100 switch architecture. Authored an OO handbook that
+described how to implement the best features of OO techniques. Saw an increase of productivity from my students.

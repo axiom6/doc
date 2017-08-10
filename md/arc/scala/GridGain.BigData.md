@@ -1,0 +1,1 @@
+gain Spoke to brett.weininger@adurant.com the organizer of Boulder / Denver Big Data http://bit.ly/1lFL1J3 & they interested in having Grid Gain present with June 25 open

@@ -1,0 +1,739 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <title>Apache Spark Streaming</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Apache Spark Streaming">
+  <meta name="author" content="Tom Flaherty">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <link href="../../node_modules/font-awesome/css/font-awesome.css" rel="stylesheet">
+  <link href="../../node_modules/reveal.js/css/reveal.css"          rel="stylesheet">
+  <link href="../../node_modules/reveal.js/lib/css/zenburn.css"     rel="stylesheet">
+  <link href="../../node_modules/reveal.js/css/theme/night.css"     rel="stylesheet" id="theme">
+  <link href="../../lib/css/talk.css"                               rel="stylesheet">
+
+  <script src="../../lib/js/jquery-3.2.1.js"></script>
+  <script src="../../node_modules/reveal.js/lib/js/head.min.js"></script>
+  <script src="../../node_modules/reveal.js/js/reveal.js"></script>
+  <script src="../../lib/js/RevealInit.js"></script>
+
+</head>
+
+<body>
+
+<div class="reveal" data-id="Talk">
+
+  <div class="slides">
+
+
+    <section data-id="BeginSpark">
+      <h1 style="font-size:1.5em;">A Data Science Methodology With Spark</h1>
+      <img src="../../img/spark/Spark.png" class="rx-img">
+      <div><a  style="font-size:1.0em;" href="http://twitter.com/TheTomFlaherty">@TheTomFlaherty</a></div>
+    </section>
+
+    <section data-id="Acquire" class="rx-slide-full">
+      <img src="../../img/ikw/Collaborate.png" class="rx-img-cel">
+      <div class="rx-box-out">
+        <h2>Acquire</h2>
+        <ul>
+          <li>R</li>
+          <li>D</li>
+          <li>M</li>
+        </ul>
+      </div>
+    </section>
+
+    <section data-id="Data_Mining">
+      <h2>Data Mining</h2>
+      <ul>
+        <li>Review abstract</li>
+        <li>Discuss installation</li>
+        <li>Mention parallized collections in Scala</li>
+        <li>Need to know Scala</li>
+        <li>Expand Key Components</li>
+        <li>Create a streaming template in Scala</li>
+        <li>Create a streaming template in Java</li>
+        <li>Create a bigger example</li>
+        <li>Update references</li>
+      </ul>
+    </section>
+
+    <section data-id="Refine">
+      <h2>Refine</h2>
+      <img src="../../img/spark/Spark.png" class="rx-img">
+      <div><a  style="font-size:1.0em;" href="http://twitter.com/TheTomFlaherty">@TheTomFlaherty</a></div>
+    </section>
+
+    <section style="color:wheat;" data-id="Schema">
+      <h2>Schema</h2>
+      <div style="text-align:left; font-size:22px;">
+
+        <p>Spark is hyped as the next "Big Thing" in "Big Data". Well all of it is true.</p>
+
+        <p>With in memory computing, resilient data sets, streaming, data frames, machine learning, rich numerical
+          algorithms, Akka and Scala backed by a large dedicated community of committers, Spark is defining the next
+          generation of "Big Data".</p>
+
+        <p>"Big Data" is forecast to become a 50 billion dollar industry with ensuing hype that all you need to do
+          is set up Spark, hire few analysts and throw a ton of data at it and divine business patterns will emerge.
+          Nothing could be farther from the truth.</p>
+
+        <p>Data Science - the revealing of knowledge from data, is an interdisciplinary approach that takes us through
+          a challenging but rewarding exploration of data. Brute force often circumvents this journey only to impart
+          risk and devalue knowledge. So don't let brute force do your thinking for you. "Big Data" is not "Smart Data"</p>
+
+        <p>So the purpose of this talk is to convey the good news that Spark in standalone mode is also a good platform
+          to seek out "Smart Data" with exploratory Data Science. Spark's best features: RDDs (Resilient Data Sets) and
+          streaming, manage data and apply algorithms in simple, consistent and scalable ways.</p>
+
+        <p>This talk illustrates Spark Streaming</p>
+
+      </div>
+    </section>
+
+    <section data-id="Store">
+      <h2>Store</h2>
+      <div style="position:relative;   left:0; top:0; width:100%; height:700px; font-size:22px;">
+        <div style="position:absolute; left:0; top:0; width: 40%; height:100%; ">
+          <ul>
+            <li>History</li>
+            <li>Spark Streaming Overview</li>
+            <li>Apache Spark - Traditional</li>
+            <li>Apache Spark - Revealed</li>
+            <li>Spark Components</li>
+            <li>The Key Components</li>
+            <li>Streamming - The Science</li>
+            <li>Why Spark Streaming</li>
+            <li>Existing Streaming Systems</li>
+            <li>Live Streaming and Batch</li>
+            <li>Fault-tolerant Stream Processing</li>
+            <li>Fault Tolerance in Spark</li>
+            <li>Spark Streaming Internal</li>
+            <li>Small Batch Jobs</li>
+            <li>Languages</li>
+          </ul>
+        </div>
+        <div style="position:absolute; left:40%; top:0; width:60%;  height:100%; ">
+          <ul>
+            <li>The DStream Programming Model</li>
+            <li>Illustrated Example 1 - Initialize an Input DStream<</li>
+            <li>Illustrated Example 2 - Get Hash Tags from Twitter</li>
+            <li>Illustrated Example 3 - Push Data to External Storage</li>
+            <li>Illustrated Example 4 - Do Whatever with foreach(...)</li>
+            <li>Illustrated Example 5 - Sliding Window</li>
+            <li>Example 6 - Arbitrary Stateful Computations</li>
+            <li>Example 7 - Combining Batch and Streaming</li>
+            <li>Example 8 - Databricks Keynote</li>
+            <li>DStreams + RDDs = Power</li>
+            <li>Advantage of a Unified Stack</li>
+            <li>Input Sources</li>
+            <li>Data Science Methodology</li>
+            <li>References</li>
+          </ul>
+       </div>
+      </div>
+    </section>
+
+    <section data-id="Explore" class="rx-slide-full">
+      <img src="../../img/ikw/Expertise.png" class="rx-img-cel">
+      <div class="rx-box-out">
+        <h2>Explore</h2>
+        <ul>
+          <li>R</li>
+          <li>D</li>
+          <li>M</li>
+        </ul>
+      </div>
+    </section>
+
+    <section style="background-color:rgb(49,28,39); font-size:24px;" data-id="Visualize">
+      <h2>Visualize</h2>
+      <img src="../../img/streaming/SparkStreaming.png" style="background-color:white;">
+      <ul>
+        <li>Spark Streaming is an extension of the core Spark API that enables:</li>
+        <li>scalable, high-throughput, fault-tolerant stream processing of live data streams</li>
+      </ul>
+    </section>
+
+    <section style="background-color:rgb(49,28,39); font-size:24px;" data-id="Search">
+      <h2>Search</h2>
+      <img src="../../img/streaming/streaming-flow.png" style="background-color:white;">
+      <ul>
+        <li>Internally, it works as follows.</li>
+        <li>Spark Streaming receives live input data streams and divides the data into batches</li>
+        <li>These batches are then processed by the Spark engine</li>
+        <li>To generate the final stream of batched results</li>
+      </ul>
+    </section>
+
+    <section data-id="Business_Intelligence">
+      <h2>Business Intelligence</h2>
+      <h4>Traditional View</h4>
+      <img src="../../img/spark/spark-stack.png" class="rx-img">
+      <ul style="text-align:left; font-size:24px; list-style-type: none;">
+        <li><span class="width150">Core:      </span>Distributed task dispatching, scheduling, and basic I/O through Akka</li>
+        <li><span class="width150">GraphX:    </span>A distributed graph topology for RDDs based on Pregel</li>
+        <li><span class="width150">SQL:       </span>DataFrames a SQL DSL for feeding structured data into RDDs</li>
+        <li><span class="width150">Streaming: </span>Ingests data in mini-batches for RDD transforms & streaming analytics</li>
+        <li><span class="width150">MLlib :    </span>Machine Learning Pipeline - Spark's original purpose</li>
+      </ul>
+    </section>
+
+    <section  style="margin:0; padding:0; background-color:rgb(49,28,39);" data-id="Solution_Space">
+      <h3>Solution Space</h3>
+      <img src="../../img/spark/SparkSlide.png" class="rx-img">
+    </section>
+
+    <section data-id="Discover" class="rx-slide-full">
+      <img src="../../img/ikw/Discover.png" class="rx-img-cel">
+      <div class="rx-box-out">
+        <h2>Discover</h2>
+        <ul>
+          <li>R</li>
+          <li>D</li>
+          <li>M</li>
+        </ul>
+      </div>
+    </section>
+
+    <section  style="margin:0; padding:0; background-color:rgb(49,28,39);" data-id="Classify">
+      <h3>Classify</h3>
+      <ul class="icondesc" style="text-align:left; line-height:1.1; font-size:26px; list-style-type: none; color:wheat;">
+        <li style="padding-top:12px;"><i class="fa fa-database fa-rotate-90"></i> <span class="width150pad">RDD:        </span>Resilient Distributed Datasets logically partitioned
+          <ul class="icondesc" style="text-align:left; line-height:1.1; font-size:24px; list-style-type: none; color:wheat;">
+            <li><i class="fa fa-joomla"></i>                <span class="width150pad">GraphX:     </span>Distributed graph topology for RDDs based on Pregel</li>
+            <li><i class="fa fa-toggle-right"></i>          <span class="width150pad">IndexedRDD:  </span>An efficient updatable key-value store for RDD</li>
+            <li><i class="fa fa-th"></i>                    <span class="width150pad">DataFrames: </span>A distributed collection of named columns with a SQL DSL</li>
+            <li><i class="fa fa-cubes fa-rotate-180"></i>   <span class="width150pad">Tachyon:  </span>Memory centric distributed storage system in C with no GC</li>
+            <li><i class="fa fa-database"></i>              <span class="width150pad">Databases:  </span>Local File in Standalone, Cassandra MongoDB HDFS JDBC ...</li>
+          </ul>
+        </li>
+        <li style="padding-top:12px;"><i class="fa fa-sliders"></i>               <span class="width150pad">Streaming:  </span>Ingests data in mini-batches for RDD transforms
+          <ul class="icondesc" style="text-align:left; line-height:1.1; font-size:24px; list-style-type: none; color:wheat;">
+            <li><i class="fa fa-connectdevelop"></i>        <span class="width150pad">Machine:    </span>MLlib Machine Learning Pipeline</li>
+            <li><i class="fa fa-calculator"></i>            <span class="width150pad">Numerical:  </span>Breeze Epic Puck GPU(cuBlas-NVidia) and NetLib-Fortran</li>
+          </ul>
+        </li>
+        <li style="padding-top:12px;"><i class="fa fa-leanpub"></i>         <span class="width150pad">Notebooks:   </span>Interactive multi-language Data Science notebooks
+          <ul class="icondesc" style="text-align:left; line-height:1.1; font-size:24px; list-style-type: none; color:wheat;">
+            <li><span style="font-size:20px">IP[y]</span>   <span class="width150">IPython:    </span>The Data Scientist's favorite notebook with PySpark</li>
+            <li><i class="fa fa-bell"></i>                  <span class="width150pad">SparkR:     </span>A light-weight frontend to use Apache Spark from R</li>
+            <li><img  src="../../img/spark/zeppelin.png" width="22" height="22" class="rx-img"> <span class="width150pad">Zeppelin:</span>A web-based notebook that enables interactive data analytics</li>
+          </ul>
+        </li>
+        <li style="padding-top:12px;"><i class="fa fa-star-o"></i>                <span class="width150pad">Spark Core: </span>Distributed task dispatching, scheduling, and basic I/O
+          <ul class="icondesc" style="text-align:left; line-height:1.1; font-size:24px; list-style-type: none; color:wheat;">
+            <li><i class="fa fa-area-chart"></i>            <span class="width150pad">Akka:       </span>Concurrent, distributed, resilient, message driven, actor based</li>
+            <li><i class="fa fa-server"></i>                <span class="width150pad">Cluster:    </span>Standalone, Mesos, Myriad and YARN</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <section  style="margin:0; padding:0; background-color:rgb(49,28,39);" data-id="Sample">
+      <h3>Sample</h3>
+      <ul class="icondesc" style="text-align:left; font-size:24px; list-style-type: none; color:wheat;">
+        <li><i class="fa fa-database fa-rotate-90"></i> <span class="width150pad">RDD:        </span>Resilient Distributed Datasets logically partitioned across servers</li>
+        <li><i class="fa fa-sliders"></i>               <span class="width150pad">Streaming:  </span>Ingests data in mini-batches for RDD transforms and streaming</li>
+      </ul>
+    </section>
+
+    <section  style="margin:0; padding:0; background-color:rgb(49,28,39);" data-id="Metadata">
+      <h3>Metadata</h3>
+      <ul class="icondesc" style="text-align:left; font-size:24px; list-style-type: none; color:wheat;">
+        <li><i class="fa fa-sliders"></i>               <span class="width150pad">Streaming:  </span>Ingests data in mini-batches for RDD transforms and streaming
+          <ul style="font-size:20px;">
+            <li>Streaming API</li>
+            <li>Scala</li>
+          </ul>
+        </li>
+        <li><i class="fa fa-connectdevelop"></i>        <span class="width150pad">Machine:    </span>MLlib Machine Learning Pipeline
+          <ul style="font-size:20px;">
+            <li>summary statistics, correlations, stratified sampling, hypothesis testing, random data</li>
+            <li>classification / regression: SVMs, logistic and linear regression, decision trees, naive Bayes</li>
+            <li>collaborative filtering: alternating least squares (ALS)</li>
+            <li>clustering: k-means</li>
+            <li>dimensionality reduction: singular value decomposition (SVD), principal components</li>
+            <li>feature extraction and transformation</li>
+            <li>optimization primitives: stochastic gradient descent, limited-memory BFGS (L-BFGS)</li>
+          </ul>
+        </li>
+        <li><i class="fa fa-calculator"></i>            <span class="width150pad">Numerical:  </span>Breeze Epic Puck GPU(cuBlas-NVidia) and NetLib-Fortran
+          <ul style="font-size:20px;">
+            <li>Breeze</li>
+            <li>GPU</li>
+            <li>NetLib</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <section data-id="Hypothesize">
+      <h2>Hypothesize</h2>
+      <img src="../../img/streaming/WhyStreaming.png">
+      <ul>
+        <li>Scales to hundreds of nodes</li>
+        <li>Achieves low latency</li>
+        <li>Efficiently recovers from failures</li>
+        <li>Integrates with batch and interactive processing</li>
+      </ul>
+    </section>
+
+    <section data-id="Process" class="rx-slide-full">
+      <img src="../../img/ikw/Adapt.png" class="rx-img-cel">
+      <div class="rx-box-out">
+        <h2>Process</h2>
+        <ul>
+          <li>R</li>
+          <li>D</li>
+          <li>M</li>
+        </ul>
+      </div>
+    </section>
+
+    <section style="background-color:rgb(49,28,39);" data-id="Plan">
+      <h3>Plan</h3>
+      <ul>
+        <li>Storm
+          <ul>
+            <li>Replays record if not processed by a node</li>
+            <li>Processes each record at least once</li>
+            <li>May update mutable state twice!</li>
+            <li>Mutable state can be lost due to failure!</li>
+          </ul>
+        </li>
+        <li>Trident – Use transactions to update state
+          <ul>
+            <li>Processes each record exactly once</li>
+            <li>Per-state transaction to external database is slow</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <section style="background-color:rgb(49,28,39);" data-id="Messaging">
+      <h2>Messaging</h2>
+      <ul>
+        <li>Many environments require processing same data in live streaming as well as batch post-processing</li>
+        <li>Existing frameworks cannot do both
+          <ul>
+            <li>Either, stream processing of 100s of MB/s with low latency</li>
+            <li>Or, batch processing of TBs of data with high latency</li>
+          </ul>
+        </li>
+        <li>Extremely painful to maintain two different stacks
+          <ul>
+            <li>Different programming models</li>
+            <li>Doubles implementation effort</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <section style="background-color:rgb(49,28,39);" data-id="Tasks">
+      <h2>Tasks</h2>
+      <div style="position:relative;   left:0; top:0; width:100%; height:700px; font-size:24px;">
+        <div style="position:absolute; left:0; top:0; width: 50%; height:100%; ">
+          <ul>
+            <li style="padding-top:18px;">Traditional processing model
+              <ul>
+                <li>Pipeline of nodes</li>
+                <li>Each node maintains mutable state</li>
+                <li>Each input record updates the state</li>
+              </ul>
+            </li>
+            <li style="padding-top:18px;">Mutable state is lost if node fails</li>
+            <li style="padding-top:18px;">Making stateful stream processing fault-tolerant is challenging!</li>
+          </ul>
+        </div>
+        <div style="position:absolute; left:50%; top:0; width:50%;  height:100%; ">
+          <img src="../../img/streaming/FaultNodes.png">
+        </div>
+      </div>
+    </section>
+
+   <section style="background-color:rgb(49,28,39);" data-id="Grid_Gain">
+     <h3>Grid Gain</h3>
+     <h6 style="font-size:24px;">Runs a streaming computation as a series of very small, deterministic batch jobs</h6>
+     <div style="position:relative;   left:0; top:0; width:100%; height:700px; font-size:24px;">
+       <div style="position:absolute; left:0; top:0; width: 50%; height:100%; ">
+         <ul>
+           <li>Chop up the live stream into batches of X seconds</li>
+           <li>Spark treats each batch of data as RDDs and processes them using RDD operations</li>
+           <li>Finally, the processed results of the RDD operations are returned in batches</li>
+         </ul>
+
+         <ul style="padding-top:36px;">
+           <li>Batch sizes as low as ½ sec, latency of about 1 sec</li>
+           <li>Potential for combining batch processing and streaming processing in the same system</li>
+         </ul>
+       </div>
+       <div style="position:absolute; left:50%; top:0; width:50%;  height:100%; ">
+         <img src="../../img/streaming/Streaming.png">
+       </div>
+     </div>
+   </section>
+
+    <section  style="margin:0; padding:0; background-color:rgb(49,28,39);" data-id="Spark">
+      <h3>Spark</h3>
+      <ul class="icondesc" style="text-align:left; line-height:1.1; font-size:26px; list-style-type: none; color:wheat;">
+        <li style="padding-top:12px;"><i class="fa fa-database fa-rotate-90"></i> <span class="width150pad">RDD:        </span>Resilient Distributed Datasets logically partitioned
+          <ul class="icondesc" style="text-align:left; line-height:1.1; font-size:24px; list-style-type: none; color:wheat;">
+            <li><i class="fa fa-joomla"></i>                <span class="width150pad">GraphX:     </span>Distributed graph topology for RDDs based on Pregel</li>
+            <li><i class="fa fa-toggle-right"></i>          <span class="width150pad">IndexedRDD:  </span>An efficient updatable key-value store for RDD</li>
+            <li><i class="fa fa-th"></i>                    <span class="width150pad">DataFrames: </span>A distributed collection of named columns with a SQL DSL</li>
+            <li><i class="fa fa-cubes fa-rotate-180"></i>   <span class="width150pad">Tachyon:  </span>Memory centric distributed storage system in C with no GC</li>
+            <li><i class="fa fa-database"></i>              <span class="width150pad">Databases:  </span>Local File in Standalone, Cassandra MongoDB HDFS JDBC ...</li>
+          </ul>
+        </li>
+        <li style="padding-top:12px;"><i class="fa fa-sliders"></i>               <span class="width150pad">Streaming:  </span>Ingests data in mini-batches for RDD transforms
+          <ul class="icondesc" style="text-align:left; line-height:1.1; font-size:24px; list-style-type: none; color:wheat;">
+            <li><i class="fa fa-connectdevelop"></i>        <span class="width150pad">Machine:    </span>MLlib Machine Learning Pipeline</li>
+            <li><i class="fa fa-calculator"></i>            <span class="width150pad">Numerical:  </span>Breeze Epic Puck GPU(cuBlas-NVidia) and NetLib-Fortran</li>
+          </ul>
+        </li>
+        <li style="padding-top:12px;"><i class="fa fa-leanpub"></i>         <span class="width150pad">Notebooks:   </span>Interactive multi-language Data Science notebooks
+          <ul class="icondesc" style="text-align:left; line-height:1.1; font-size:24px; list-style-type: none; color:wheat;">
+            <li><span style="font-size:20px">IP[y]</span>   <span class="width150">IPython:    </span>The Data Scientist's favorite notebook with PySpark</li>
+            <li><i class="fa fa-bell"></i>                  <span class="width150pad">SparkR:     </span>A light-weight frontend to use Apache Spark from R</li>
+            <li><img  src="../../img/spark/zeppelin.png" width="22" height="22" class="rx-img"> <span class="width150pad">Zeppelin:</span>A web-based notebook that enables interactive data analytics</li>
+          </ul>
+        </li>
+        <li style="padding-top:12px;"><i class="fa fa-star-o"></i>                <span class="width150pad">Spark Core: </span>Distributed task dispatching, scheduling, and basic I/O
+          <ul class="icondesc" style="text-align:left; line-height:1.1; font-size:24px; list-style-type: none; color:wheat;">
+            <li><i class="fa fa-area-chart"></i>            <span class="width150pad">Akka:       </span>Concurrent, distributed, resilient, message driven, actor based</li>
+            <li><i class="fa fa-server"></i>                <span class="width150pad">Cluster:    </span>Standalone, Mesos, Myriad and YARN</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <section style="background-color:rgb(49,28,39);" data-id="Notebook">
+      <h3>Notebook</h3>
+      <ul>
+        <li>Scala
+          <pre><code class="scala" style="font-size:1.0em; margin:0;">
+            val tweets   = TwitterUtils.createStream( ssc, None )
+            val hashTags = tweets.flatMap( status => getTags( status )
+            hashTags.foreachRDD( hasTagRDD => { ... } )
+          </code></pre>
+        </li>
+        <li>Java
+          <pre><code class="java" style="font-size:1.0em; margin:0;">
+            JavaDStream&lt;Status&gt;tweets   = ssc.twitterStream()
+            JavaDstream&lt;String&gt;hashTags = tweets.flatMap(new Function&lt...&gt; { ... } )
+            hashTags.saveAsHadoopFiles("hdfs://...")
+          </code></pre>
+        </li>
+        <li>Python
+          <pre><code class="python" style="font-size:1.0em; margin:0;">
+            ... soon
+          </code></pre>
+        </li>
+      </ul>
+    </section>
+
+
+   <section style="background-color:rgb(49,28,39);" data-id="Streaming">
+     <h3>Streaming</h3>
+     <ul>
+       <li>Discretized Stream (DStream)
+         <ul>
+           <li>Represents a stream of data</li>
+           <li>Implemented as a sequence of RDDs</li>
+         </ul>
+       </li>
+       <li>DStreams can be either…
+         <ul>
+           <li>Created from streaming input sources</li>
+           <li>Created by applying transformations on existing DStreams</li>
+         </ul>
+       </li>
+     </ul>
+  </section>
+
+  <section style="background-color:rgb(49,28,39);" data-id="RDD">
+    <h3>RDD</h3>
+  </section>
+
+  <section style="background-color:rgb(49,28,39);" data-id="Akka">
+    <h3>Akka</h3>
+  </section>
+
+  <section data-id="Benefit" class="rx-slide-full">
+    <img src="../../img/ikw/Benefit.png" class="rx-img-cel">
+    <div class="rx-box-out">
+      <h2>Benefit</h2>
+      <ul>
+        <li>R</li>
+        <li>D</li>
+        <li>M</li>
+      </ul>
+    </div>
+  </section>
+
+  <section style="background-color:rgb(49,28,39);" data-id="Pattern">
+    <h2>Pattern</h2>
+    <h4>Illustrated Example 2 - Get Hash Tags from Twitter</h4>
+    <pre><code class="scala" style="font-size:1.0em; margin:0;">
+      val scc      = new StreamingContext( sparkContext, Seconds(1) )
+      val tweets   = TwitterUtils.createStream( ssc, None )
+      val hashTags = tweets.flatMap( status => getTags( status )
+      //  hashTags are now a transformed DStream
+      //  Tranformations modify data in one DStream to create another DSTream
+      //  getTags( status ) is the function that is applied vie flatMap(...)
+      //  flatMap(...) will also flatten any tree structures into sequences
+    </code></pre>
+    <img src="../../img/streaming/HashTag2.png">
+  </section>
+
+    <section style="background-color:rgb(49,28,39);" data-id="Confirm">
+      <h2>Confirm</h2>
+      <h4>Illustrated Example 3 - Push Data to External Storage</h4>
+      <pre><code class="scala" style="font-size:1.0em; margin:0;">
+        val scc      = new StreamingContext( sparkContext, Seconds(1) )
+        val tweets   = TwitterUtils.createStream( ssc, None )
+        val hashTags = tweets.flatMap( status => getTags( status )
+        hashTags.saveAsHadoopFiles( "hdfs://..." )
+      </code></pre>
+      <img src="../../img/streaming/HadoopSave.png">
+    </section>
+
+    <section style="background-color:rgb(49,28,39);" data-id="Publish">
+      <h2>Publish</h2>
+      <h4>Illustrated Example 4 - Do Whatever with foreach(...)</h4>
+      <ul>
+        <li>Do whatever you want with the processed data:</li>
+        <li>Write to a database, update analytics, UI etc...</li>
+      </ul>
+      <pre><code class="scala" style="font-size:1.0em; margin:0;">
+        val scc      = new StreamingContext( sparkContext, Seconds(1) )
+        val tweets   = TwitterUtils.createStream( ssc, None )
+        val hashTags = tweets.flatMap( status => getTags( status )
+        hashTags.foreachRDD( hasTagRDD => { ... } )
+      </code></pre>
+      <img src="../../img/streaming/DoWhatEver.png">
+    </section>
+
+
+    <section style="background-color:rgb(49,28,39);" data-id="Review">
+      <h2>Review</h2>
+      <h4>Illustrated Example 5 - Sliding Window</h4>
+      <pre><code class="scala" style="font-size:1.0em; margin:0;">
+        val tweets    = TwitterUtils.createStream( ssc, None )
+        val hashTags  = tweets.flatMap( status => getTags( status )
+        val tagCounts = hasTags.window( Minutes(1), Seconds(5) ).countByValue()
+        //                         ^       ^             ^
+        // (sliding window operation) (window length) (sliding interval)
+      </code></pre>
+      <img src="../../img/streaming/SlidingWindow.png">
+    </section>
+
+
+    <section data-id="Change" class="rx-slide-full">
+      <img src="../../img/ikw/Change.png" class="rx-img-cel">
+      <div class="rx-box-out">
+        <h2>Change</h2>
+        <ul>
+          <li>R</li>
+          <li>D</li>
+          <li>M</li>
+        </ul>
+      </div>
+    </section>
+
+    <section style="background-color:rgb(49,28,39);" data-id="Test">
+      <h2>Test</h2>
+      <h4>Example 6 - Stateful Computations</h4>
+      <ul style="font-size:24px;">
+        <li>Specify a function to generate new state based on previous state and new data</li>
+        <li>Example: Maintain per-user mood as state, and update it with their tweets</li>
+      </ul>
+      <pre><code class="scala" style="font-size:1.0em; margin:0;">
+        def updateMood( newTweets, lastMood ) => newMood
+        val moods = tweetsByUser.updateStateByKey( updateMood, _ )
+      </code></pre>
+    </section>
+
+    <section style="background-color:rgb(49,28,39);" data-id="Config">
+      <h2>Config</h2>
+      <h4>Example 7 - Combining Batch and Streaming</h4>
+      <ul style="font-size:24px;">
+        <li>Inter-mix RDD and DStream operations!</li>
+        <li>Example: Join incoming tweets with a spam HDFS file to filter out bad tweets</li>
+      </ul>
+      <pre><code class="scala" style="font-size:1.0em; margin:0;">
+        tweets.transform( tweetsRDD => { tweetsRDD.join(spamFile).filter(...) } )
+      </code></pre>
+    </section>
+
+    <section data-id="Transition">
+      <h2>Transition</h2>
+      <h4 style="margin-bottom:0;">Example 8 - Databricks Keynote</h4>
+       <pre>
+           <code class="scala" style="font-size:0.75em; margin:0;">
+             val ssc         = new StreamingContext(sc,Seconds(5))
+             val sqlContext  = new SQLContext(sc)
+             val tweets      = TwitterUtils.createStream(ssc,auth)
+             val transformed = tweets.filter(isEnglish).window(Minutes(1))
+
+             // Tweet is a case class
+             transformed.foreachRDD { rdd => rdd.map(Tweet.apply(_)).registerAsTable(“tweets”) }</code></pre>
+         <pre class="sql"><code class="scala" style="font-size:0.75em; margin:0;">
+           SELECT text FROM tweets WHERE similarity(tweet) > 0.01
+           SELECT getClosestCountry(lat,long) FROM tweets</code></pre>
+    </section>
+
+   <section style="background-color:rgb(49,28,39);" data-id="Anticipate">
+     <h3>Anticipate</h3>
+     <ul>
+       <li>Combine live data streams with historical data
+         <ul>
+           <li>Generate historical data models with Spark, etc.</li>
+           <li>Use data models to process live data stream</li>
+         </ul>
+       </li>
+       <li>Combine streaming with MLlib, GraphX Algorithms
+         <ul>
+           <li>Offline learning, online prediction</li>
+           <li>Online learning and prediction</li>
+         </ul>
+       </li>
+       <li>Query streaming data using SQL
+         <ul>
+           <li>select * from table_from_streaming_data</li>
+         </ul>
+       </li>
+     </ul>
+   </section>
+
+    <section data-id="Cloud" class="rx-slide-full">
+      <img src="../../img/ikw/Facilitate.png" class="rx-img-cel">
+      <div class="rx-box-out">
+        <h2>Cloud</h2>
+        <ul>
+          <li>R</li>
+          <li>D</li>
+          <li>M</li>
+        </ul>
+      </div>
+    </section>
+
+    <section data-id="Support">
+      <h3>Support</h3>
+       <pre><code class="scala" style="font-size:0.75em; margin:0;; min-height:700px !important; max-height:700px !important;">
+         // Interactive Shell
+         $ ./spark-­‐shell
+         scala>val file= sc.hadoopFile(“smallLogs”)
+         scala>val filtered=file.filter(_.contains(“ERROR”))
+         scala>val mapped= filtered.map(...)
+
+         // Use same code in Spark for processing large logs
+         object ProcessProductionData {
+           def main( args:Array[String]) {
+             val sc       = new SparkContext(...)
+             val file     = sc.hadoopFile(“productionLogs”)
+             val filtered = file.filter(_.contains(“ERROR”))
+             val mapped   = filtered.map(...)
+         ... } }
+
+         // Use similar code in Spark Streaming for realtime processing
+         object ProcessLiveStream {
+           def main( args:Array[String]) {
+             val sc       = new StreamingContext(...)
+             val stream   = KafkaUtil.createStream(...)
+             val filtered = stream.filter(_.contains(“ERROR”))
+             val mapped   = filtered.map(...)
+         ... } }
+           </code></pre>
+      </section>
+
+    <section style="background-color:rgb(49,28,39);" data-id="Cluster">
+      <h3>Cluster</h3>
+      <ul>
+        <li>Out of the box, Spark provides
+          <ul>
+            <li>Kafka, Flume, Akka Actors, Raw TCP sockets, HDFS, etc.</li>
+          </ul>
+        </li>
+        <li>Very easy to write a custom receiver
+          <ul>
+            <li>Define what to when receiver is started and stopped</li>
+
+          </ul>
+        </li>
+        <li>Also, generate your own sequence of RDDs, etc. and push them in as a “stream”</li>
+      </ul>
+    </section>
+
+    <section style="background-color:rgb(49,28,39);" data-id="Warehouse">
+      <h4 style="margin:0;">Warehouse</h4>
+    </section>
+
+    <section style="background-color:rgb(49,28,39);" data-id="Security">
+      <h4 style="margin:0;">Security</h4>
+    </section>
+
+    <section data-id="Decision" class="rx-slide-full">
+      <img src="../../img/ikw/Govern.png" class="rx-img-cel">
+      <div class="rx-box-out">
+        <h2>Decision</h2>
+        <ul>
+          <li>R</li>
+          <li>D</li>
+          <li>M</li>
+        </ul>
+      </div>
+    </section>
+
+    <section style="background-color:rgb(49,28,39);" data-id="Query">
+      <h4 style="margin:0;">Query</h4>
+    </section>
+
+    <section style="background-color:rgb(49,28,39);" data-id="Resource">
+      <h4 style="margin:0;">Resource</h4>
+    </section>
+
+    <section style="background-color:rgb(49,28,39);" data-id="Comply">
+      <h4 style="margin:0;">Comply</h4>
+    </section>
+
+    <section style="background-color:rgb(49,28,39);" data-id="Maturity">
+      <h4 style="margin:0;">Maturity</h4>
+    </section>
+
+    <section data-id="ReferencesSpark">
+      <h2>References</h2>
+      <ul style="margin-left:0.6em; font-size:26px;">
+        <li><div class="width340">Big Data Driving Business</div><a href="http://www.ted.com/talks/philip_evans_how_data_will_transform_business">http://bit.ly/194auY9</a></li>
+        <li><div class="width340">REST API Tutorial</div><a href="http://www.restapitutorial.com/resources.html">http://www.restapitutorial.com/resources.html</a></li>
+        <li><div class="width340">CAP Theorem</div><a href="http://en.wikipedia.org/wiki/CAP_theorem">http://en.wikipedia.org/wiki/CAP_theorem</a></li>
+        <li><div class="width340">Hadoop</div><a href="http://hadoop.apache.org/">http://hadoop.apache.org/</a></li>
+        <li><div class="width340">Grid Gain</div><a href="http://www.gridgain.com/">http://www.gridgain.com/</a></li>
+        <li><div class="width340">Apache Ignite</div><a href="http://ignite.incubator.apache.org/">http://ignite.incubator.apache.org/</a></li>
+        <li><div class="width340">Denver In Memory Meetup</div><a href="http://www.meetup.com/Denver-In-Memory-Computing-Meetup/">http://bit.ly/1Mb7AQu</a></li>
+        <li><div class="width340">Functional Programming</div><a href="http://deanwampler.github.io/polyglotprogramming/papers/BetterProgrammingThroughFP.pdf">http://bit.ly/1vAX8wI</a></li>
+        <li><div class="width340">The Reactive Manifesto</div><a href="http://www.reactivemanifesto.org/">www.reactivemanifesto.org/</a></li>
+        <li><div class="width340">Apache Spark</div><a href="https://spark.apache.org/">https://spark.apache.org/</a></li>
+        <li><div class="width340">RxMarbles</div><a href="http://rxmarbles.com/">http://rxmarbles.com/</a></li>
+        <li><div class="width340">PDF at Speaker Deck</div><a href="https://speakerdeck.com/axiom6">https://speakerdeck.com/axiom6</a></li>
+      </ul>
+    </section>
+
+    <section data-id="TheEndSpark">
+      <h1>THE END</h1>
+    </section>
+
+  </div>
+
+</div>
+
+
+</body>
+</html>

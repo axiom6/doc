@@ -1,0 +1,106 @@
+Algorithms
+We implemented many useful standard and advanced algorithms in PyBrain, and in some cases created interfaces to existing libraries (e.g. LIBSVM). This list shows some of the methods you can use with PyBrain.
+Supervised Learning
+
+    Back-Propagation
+    R-Prop
+    Support-Vector-Machines (LIBSVM interface)
+    Evolino
+
+Unsupervised Learning
+
+    K-Means Clustering
+    PCA/pPCA
+    LSH for Hamming and Euclidean Spaces
+    Deep Belief Networks
+
+Reinforcement Learning
+Value-based
+
+    Q-Learning (with/without eligibility traces)
+    SARSA
+    Neural Fitted Q-iteration
+
+Policy Gradients
+
+    REINFORCE
+    Natural Actor-Critic
+
+Exploration Methods
+
+    Epsilon-Greedy Exploration (discrete)
+    Boltzmann Exploration (discrete)
+    Gaussian Exploration (continuous)
+    State-Dependent Exploration (continuous)
+
+Black-box Optimization
+
+    (Stochastic) Hill-climbing
+    Particle Swarm Optimization (PSO)
+    Evolution Strategies (ES)
+    Covariance Matrix Adaption ES (CMA-ES)
+    Natural Evolution Strategies (NES)
+    Fitness Expectation-Maximization (FEM)
+    Finite Difference Gradient Descent
+    Policy Gradients with Parameter Exploration (PGPE)
+    Simultaneous Perturbation Stochastic Approximation (SPSA)
+    Genetic Algorithms (GA)
+    Competitive Co-Evolution
+    (Inner/Inverse) Memetic Search
+    Multi-Objective Optimization NSGA-II
+
+Networks
+PyBrain has an emphasis on network architectures, which can be trained and manipulated with almost all of the algorithms offered by PyBrain. Here are some examples of available networks and network architectures:
+
+    Feed-forward networks, including Deep Belief Networks and Restricted Boltzmann Machines (RBM)
+    Recurrent networks (RNN), including Long Short-Term Memory (LSTM) architectures
+    Multi-Dimensional Recurrent Networks (MDRNN)
+    Self-Organizing Maps (Kohonen networks)
+    Reservoirs
+    Bidirectional networks
+    Custom-designed topologies
+
+Tools
+
+    Plotting / Visualization
+    netCDF support
+    XML read/write
+    Variety of different dataset classes
+
+Environments
+Environments in PyBrain are scenarios or test cases, in which an agent can be trained or an algorithm can be tested. Environments share a common interface, thus making it very easy to switch agents. PyBrain comes with a view predefined most basic environments:
+Toy Environments
+
+    ShipSteering
+    Mazes (MDP/POMDP)
+
+3D Environments
+These environments have additional dependencies (e.g. OpenGL, ODE) that require extra software. More documentation can be found in the respective environment folders.
+
+    In the FlexCube Environment, twelve synchronous, continuously controllable edges of a virtual cube provide a complex continuous action space which is rendered with OpenGL.
+    The ODE Environment contains the ODE physics engine and allows arbitrary objects to interact with themself and other objects in a pysically realistic way. The scene can be rendered with OpenGL to give the user a precise information about what is going on in the scenario.
+    Johnnie (a robot in the ODE environment)
+    PencilBalancer (another example in the ODE environment)
+
+Games
+
+    CaptureGame
+    Pente
+    Gomoku
+
+Benchmarks
+Function Environments
+
+    Unimodal
+    Multimodal
+    Multi-Objective
+
+Pole-Balancing
+
+    Single-Pole with different tasks
+    Double-Pole
+
+Wrappers for external benchmarks
+
+    Car-Racing
+    RLGlue

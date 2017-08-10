@@ -1,0 +1,23 @@
+
+include::../../../dir/inc/DefPractice.adoc[]
+
+==  [.black]#A Tour of JavaScript#
+===   [.black]#JavaScript Revitalized#
+===   [.black]#Influences#
+===   [.black]#Functional#
+==  [.black]#Dialects#
+===   [.black]#CoffeeScript#
+===   [.black]#EcmaScript#
+===   [.black]#TypeScript#
+==  [.black]#Principles in JavaScript#
+===   [.black]#Composition#
+===   [.black]#Orchestration#
+===   [.black]#Preservation#
+===   [.black]#Transformation#
+===   [.black]#Expression#
+==  [.black]#NodeJS#
+===   [.black]#Packages#
+===   [.black]#MEAN#
+===   [.black]#Electron#
+==  [.black]#Summary#
+==  [.black]#References#

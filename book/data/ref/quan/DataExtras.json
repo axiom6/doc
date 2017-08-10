@@ -1,0 +1,6 @@
+{
+"Multi":{                 "purpose":"None","ref":"TEF","icon":"fa-circle","tools":["SciKitLearn"],
+  "MultiClass":{          "purpose":"None","ref":"TEF","icon":"fa-bell"},
+  "MultiLabel":{          "purpose":"None","ref":"TEF","icon":"fa-bell"},
+  "MultiOutput":{         "purpose":"None","ref":"TEF","icon":"fa-bell"} }
+}

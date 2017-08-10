@@ -1,0 +1,14 @@
+
+include::../../../../dir/inc/DefStudy.adoc[]
+
+''''
+<<<<
+== [.black]#Classify#
+
+include::NaiveBayes.adoc[]
+
+include::SupportVector.adoc[]
+
+include::NearestNeighbor.adoc[]
+
+include::Classifiers.adoc[]

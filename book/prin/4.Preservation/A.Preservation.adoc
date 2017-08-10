@@ -1,0 +1,29 @@
+
+include::../../../dir/inc/DefPractice.adoc[]
+
+==   [.black]#Preservation#
+
+===  [.black]#Scope#
+==== [.black]#Lexical#
+==== [.black]#Libraries#
+==== [.black]#Packaging#
+
+===  [.black]#Build#
+===  [.black]#State#
+==== [.black]#Fallacies#
+==== [.black]#Continuations#
+
+===  [.black]#Test Harness#
+==== [.black]#Isolating Components#
+==== [.black]#Enabling Diagnostics#
+==== [.black]#Debugging#
+==== [.black]#Test Granularity#
+==== [.black]#Test Provisioning#
+
+===  [.black]#Defense In Depth#
+==== [.black]#Detecting Incidents#
+==== [.black]#Failing Fast#
+==== [.black]#Containment#
+
+===  [.black]#Summary#
+===  [.black]#References#

@@ -1,0 +1,11 @@
+
+include::../../../dir/inc/DefPractice.adoc[]
+
+== [.black]#Select Many#
+* The SelectMany operator is often used to wire together two data streams.
+* It takes a source stream  and an inflator function.
+* Thenfrom each element in the original source stream it generates a new nested stream of zero, one, or more elements.
+* It then merges all intermediate asynchronous data streams into a single output stream
+* This produces a new asynchronous result stream.
+
+image::5.SelectMany.png[alt="SelectMany",align="center"]

@@ -1,0 +1,20 @@
+
+include::../../../../dir/inc/DefStudy.adoc[]
+
+* The term neural network has evolved to encompass a large class of models
+  and learning methods.
+
+* Here we describe the most widely used “vanilla” neural
+  net, sometimes called the single hidden layer back-propagation network,
+  or single layer perceptron.
+
+image::predict/Perceptron.png[500,500,alt="Perceptron",align="center"]
+
+////
+[cols="5*"]
+|====
+| *Strengths* | x | x | x | x
+| *Use For*   | x | x | x | x
+|====
+////
+

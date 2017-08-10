@@ -1,0 +1,25 @@
+
+include::../../../dir/inc/DefPractice.adoc[]
+
+== [.black]#Picking Language#
+===  [.black]#Selecting Principles#
+===  [.black]#Tracing Principles#
+===  [.black]#DSL Enhancements#
+===  [.black]#Using Principles#
+== [.black]#Myths#
+===  [.black]#XML is a Language#
+===  [.black]#Encapsulating State#
+===  [.black]#Command and Control#
+===  [.black]#Single Paradigms#
+== [.black]#Human Nature#
+===  [.black]#They Don't Get It#
+===  [.black]#Open Source#
+===  [.black]#DSLs for Humans#
+== [.black]#Decision Criteria#
+===  [.black]#Discovering Principles#
+===  [.black]#Paradigms#
+==== [.black]#Blending#
+==== [.black]#Synthesis#
+==== [.black]#Convergence#
+===  [.black]#Arrival of the Fittest#
+== [.black]#Summary References#

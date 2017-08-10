@@ -1,0 +1,37 @@
+
+include::../../../dir/inc/DefPractice.adoc[]
+
+==   [.black]#Composition#
+
+===  [.black]#Classes#
+==== [.black]#Classification#
+==== [.black]#Don't Repeat Yourself#
+==== [.black]#Uniform Hierarchies#
+==== [.black]#Mixins#
+       
+===  [.black]#Typing#
+==== [.black]#Static#
+==== [.black]#Dynamic#
+==== [.black]#Specialized#
+==== [.black]#Inferred#
+==== [.black]#Generic#
+==== [.black]#Type Classes#
+       
+===  [.black]#Meta Programming#
+==== [.black]#Modifying Structure#
+==== [.black]#Interceding Behavior#
+==== [.black]#Macros at Compile Time#
+       
+===  [.black]#Construction#
+==== [.black]#Factories#
+==== [.black]#Builders#
+==== [.black]#Reflection#
+==== [.black]#Cloning with Prototypes#
+       
+===  [.black]#Dependency Injection#
+==== [.black]#Runtime Construction#
+==== [.black]#Interface Injection#
+       
+===  [.black]#Summary#
+
+===  [.black]#References#

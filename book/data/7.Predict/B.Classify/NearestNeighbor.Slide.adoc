@@ -1,0 +1,18 @@
+
+include::../../../../dir/inc/DefStudy.adoc[]
+
+* In pattern recognition, the k-Nearest Neighbors algorithm (or k-NN for short) is a non-parametric method
+
+* It can be used for classification and regression.[1]
+
+* In both cases, the input consists of the k closest training examples in the feature space.
+
+image::predict/Map1NN.png[alt="Map1NN",align="center"]
+
+////
+[cols="5*"]
+|====
+| *Strengths* | x | x | x | x
+| *Use For*   | x | x | x | x
+|====
+////

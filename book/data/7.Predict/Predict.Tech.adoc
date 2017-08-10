@@ -1,0 +1,19 @@
+
+include::../../../dir/inc/DefPractice.adoc[]
+
+= [.black]#5. Predict#
+
+image::predict/Predict.Tech.png[align="center"]
+<<<<
+
+include::A.Supervised/Supervised.adoc[]
+
+include::B.Classify/Classify.adoc[]
+
+include::C.Arrange/Arrange.adoc[]
+
+// include::D.Confidence/Confidence.adoc[]
+
+// include::E.Perceive/Perceive.adoc[]
+
+// include::F.Forecast/Forecast.adoc[]

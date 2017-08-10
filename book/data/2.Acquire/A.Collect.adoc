@@ -1,0 +1,11 @@
+
+include::../../../dir/inc/DefStudy.adoc[]
+
+''''
+<<<<
+==  [.black]#icon:arrow-circle-right[] Collect#
+''''
+
+=== [.black]#icon:circle[] Plan#
+=== [.black]#icon:circle[] Sources#
+=== [.black]#icon:circle[] Manage#

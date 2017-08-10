@@ -1,0 +1,14 @@
+
+include::../../../dir/inc/DefPractice.adoc[]
+
+include::ProductSlide.adoc[]
+
+<<<<
+
+include::Entitlement.adoc[]
+
+include::Proposition.adoc[]
+
+include::Intelligence.adoc[]
+
+include::Portfolio.adoc[]

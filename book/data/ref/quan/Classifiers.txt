@@ -1,0 +1,19 @@
+
+Statistical
+  Regression
+  NaiveBayes
+  Bayesian Networks
+
+Structural
+  Rule Based
+    Production Rules
+    Decision Trees
+  Distance Based
+    Functional
+      Linear
+      Spectral Wavelet
+    Nearest Neighbor
+      kNN
+      Learn Vector Quanization
+  Neural Networks
+    Multi Layer Perceptron

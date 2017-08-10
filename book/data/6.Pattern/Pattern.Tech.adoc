@@ -1,0 +1,19 @@
+
+include::../../../dir/inc/DefPractice.adoc[]
+
+= [.black]#4. Distill#
+
+image::distill/Distill.Tech.png[align="center"]
+<<<<
+
+//include::A.SemiSupervised/SemiSupervised.adoc[]
+
+include::B.Regress/Regress.adoc[]
+
+//include::C.Model/Model.adoc[]
+
+//include::D.Pattern/Pattern.adoc[]
+
+//include::E.Reveal/Reveal.adoc[]
+
+//include::F.Recommend/Recommend.adoc[]

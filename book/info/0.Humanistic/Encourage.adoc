@@ -1,0 +1,26 @@
+
+include::../../../dir/inc/DefPractice.adoc[]
+
+== [.black]#Encourage#
+
+=== [.black]#Start With Why#
+
+link::http://bit.ly/2iST2Oy[How Great Leaders Inspire Action by Simon Sinek]
+
+image::humanistic/GoldenCircle.png[alt="Info",align="center"]
+
+<<<
+=== [.black]#Encourage Practices#
+
+image::humanistic/Encourage.png[alt="Encourage",align="center"]
+
+<<<
+=== [.black]#What Makes Encourage Work#
+
+[horizontal]
+What:: We discover our vision communities
+How::  x
+Why::  W
+
+ 
+

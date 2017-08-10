@@ -1,0 +1,15 @@
+
+include::../../../../dir/inc/DefStudy.adoc[]
+
+* It would be difficult and practically impossible to classify a web page, a document, an email or any other lengthy text notes manually.
+* This is where Naïve Bayes Classifier machine learning algorithm comes to the rescue.
+
+image::predict/NaiveBayesGauss.png[500,500,alt="NaiveBayesGauss",align="center"]
+
+////
+[cols="5*"]
+|====
+| *Strengths* | x | x | x | x
+| *Use For*   | x | x | x | x
+|====
+////

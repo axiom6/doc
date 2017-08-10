@@ -1,0 +1,710 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Getting to Know Scala for Data Science</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Reactive Principles in Data Science">
+  <meta name="author" content="Tom Flaherty">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <link href="../../node_modules/font-awesome/css/font-awesome.css" rel="stylesheet">
+  <link href="../../node_modules/reveal.js/css/reveal.css"          rel="stylesheet">
+  <link href="../../node_modules/reveal.js/lib/css/zenburn.css"     rel="stylesheet">
+  <link href="../../node_modules/reveal.js/css/theme/night.css"     rel="stylesheet" id="theme">
+  <link href="../../lib/css/talk.css"                               rel="stylesheet">
+
+  <script src="../../lib/js/jquery-3.2.1.js"></script>
+  <script src="../../node_modules/reveal.js/lib/js/head.min.js"></script>
+  <script src="../../node_modules/reveal.js/js/reveal.js"></script>
+  <script src="../../lib/js/RevealInit.js"></script>
+
+
+</head>
+
+<body>
+
+<div class="reveal">
+
+<div class="slides"  style="color:wheat;">
+
+<section data-id="ScalaDBTitle" class="Title">
+  <h1 style="font-size:2.5em;">Getting to Know Scala</h1>
+  <h1 style="font-size:2.5em;">for Data Science</h1>
+  <a  style="font-size:2.0em;" href="http://twitter.com/TheTomFlaherty">@TheTomFlaherty</a>
+</section>
+
+<section data-id="Bio" class="Abstract">
+  <h2 style="text-align:left;">Bio:</h2>
+  <p>I have been a Chief Architect for 20 years, where he first become enamored by Scala in 2006.
+    Over the years I have written a symbolic math application in Scala at Glaxo in 2008 for molecular dynamics
+    and in 2010 I formed the Front Range Polyglot Panel and participated as its Scala expert.</p>
+  <!--h3 style="text-align:left;">The Real Bio:</h3>
+  <p>In the past I enjoyed living in the twilight zone between Data Science and programming where no one bothered me,
+    but recently I have realized that Data Science is engaging warp drive and I want to be Captain Kirk.</p-->
+</section>
+
+<section data-id="ScalaDBAbstract1" class="Abstract" style="color:wheat;">
+  <h2>Abstract</h2>
+  <ul>
+  <li class="FontSize36px">Scala has gained a lot of traction recently,</li>
+  <li class="FontSize36px">&nbsp;&nbsp;especially in Data Science with Apache Spark.</li>
+  <li class="FontSize36px">So what are Scala's success factors for Data Science?</li>
+  </ul>
+</section>
+<section data-id="ScalaDBAbstract2" class="Abstract">
+  <h3>So Let's First Ask Data What It Likes:</h3>
+  <table>
+    <tr><th>Data Likes</th><th>Scala Feature</th></tr>
+    <tr><td>Being a First Class Citizen</td><td>Primitives As Classes</td></tr>
+    <tr><td>To Assert its Identity</td><td>Strong Typing</td></tr>
+    <tr><td>To Stay Intact</td><td>Immutability</td></tr>
+    <tr><td>Resilient Packaging</td><td>Transparent Monads</td></tr>
+    <tr><td>Nice Interogations</td><td>Message Pattern Matching </td></tr>
+    <tr><td>To Share its Contents</td><td>Case Classes</td></tr>
+
+  </table>
+</section>
+
+<section data-id="ScalaDBAbstract2" class="Abstract">
+  <h3>Second Lets Look at What Scientists Like</h3>
+  <table class="FontSize28px">
+    <tr><th>Scientists Like</th><th>Scala Feature</th></tr>
+    <tr><td>To Alter Reality</td><td>Transformations in Streams</td></tr>
+    <tr><td>To Simulate Things All at Once</td><td>Concurrency</td></tr>
+    <tr><td>Tools At Their Finger Tips</td><td>Zeppelin Spark Workbook</td></tr>
+    <tr><td>A Language For Specific Tasks</td><td>Scala DSLs</td></tr>
+    <tr><td>To Let Data Drive Results</td><td>Transform Pattern Matching</td></tr>
+    <tr><td>A Simple Language For Everything</td><td>A Multi-Paradigm Language OUCH</td></tr>
+  </table>
+</section>
+
+<section data-id="Outline">
+  <h4>Outline</h4>
+  <div style="position:relative;   left:0; top:0; width:100%; height:700px; font-size:22px;">
+    <div style="position:absolute; left:0; top:0; width: 40%; height:100%; ">
+      <ul>
+        <li>Introduction
+          <ul>
+            <li>History</li>
+            <li>Class  Declarations</li>
+            <li>Functions</li>
+            <li>Propagating State Evenly</li>
+            <li>For Comprehensions</li>
+          </ul>
+        </li>
+        <li>Scala Classes and Types
+          <ul>
+            <li>Scala Class Hierarchy</li>
+            <li>Data as First Class Citizen</li>
+            <li>Asserting Identity with Types</li>
+            <li>Staying Intact - Immutability</li>
+          </ul>
+        </li>
+        <li>Monads
+          <ul>
+            <li>Monads for Resilient Packaging</li>
+            <li>What Is a Monad Anyway?</li>
+            <li>Understanding Monads</li>
+            <li>Monads in Data Science</li>
+          </ul>
+        </li>
+        <li>Pattern Matching and Case Classes
+          <ul>
+            <li>OO Encapsulation Sucks</li>
+            <li>Sharing Data with Case Classes</li>
+            <li>Pattern Matching</li>
+            <li>Message Interogation</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div style="position:absolute; left:40%; top:0; width:60%;  height:100%; ">
+      <ul>
+        <li>Apache Spark
+          <ul>
+            <li>Altering Reality with Data Transforms</li>
+            <li>Spark Streaming</li>
+            <li>RDD Resilient Distributed Data</li>
+            <li>Monads in Streaming</li>
+            <li>Streaming Code Constructs</li>
+            <li>Simulating Things All at Once</li>
+            <li>Spark Standalone</li>
+            <li>Tools at Your Finger Tips</li>
+          </ul>
+        </li>
+        <li>A Symbolic Math DSL
+          <ul>
+            <li>A Simple Language For Specific Tasks</li>
+
+            <li>Math Expression Class</li>
+            <li>Math Case Classes</li>
+            <li>Derivatives with Pattern Matching</li>
+            <li>Typesetting Math with Pattern Matching</li>
+          </ul>
+        </li>
+        <li>A Multi-Paradigm Language
+          <ul>
+            <li>Reactive Manifesto</li>
+            <li>Data Driven Results</li>
+            <li>Scala's Paradigms for Data Science</li>
+            <li>Scala's Code Constructs by Feature</li>
+          </ul>
+        </li>
+        <li>References</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section data-id="">
+  <h1>Introduction</h1>
+</section>
+
+<section data-id="">
+  <h2>History - Maritn Odersky</h2>
+  <ul style="font-size:18px;">
+    <li>1980s PhD Student with Nickolas Wirth work on  Modula-2 and Oberon</li>
+    <li>1900-95 Functional Programming</li>
+    <li>1995-98 Pizza Teamed with Philip Walder on Pizza</li>
+    <li>1998-99 GJ - Java Generics</li>
+    <li>2000-02 Funnel Combined functional and object-oriented programming</li>
+
+    <li>2001 Design began</li>
+    <li>2003 First internal use for "Functional and Logic Programming Course” at EPF</li>
+    <li>2004 First Release</li>
+    <li>2006 Scala 2.0</li>
+    <li>2007 Scala 2.3-2.7 </li>
+    <li>2007: Lift web framework launched.</li>
+    <li>2008: First Scala liftoff unconference (50 particants) – TwittergoespublicwithScala,hypestarts</li>
+    <li>2009: More Scala liftoffs.</li>
+    <li>2010-14: Scala Days
+      <ul>
+        <li>2010 EPFL 180 participants</li>
+        <li>2011 Stanford 280</li>
+        <li>2012 London 400</li>
+        <li>2013 New York 500 Scala Workshop Montellier</li>
+        <li>2014 Berlin 800      Scala Symposium Uppsala</li>
+      </ul>
+    </li>
+
+
+  </ul>
+</section>
+
+
+<section data-id="">
+  <h2>Class Declarations</h2>
+<pre class="scala"><code style="font-size:1em; min-height:24em;  min-width:44em; border:1px solid white;">
+  trait          Trait[T]{...}
+  abstract class Abs[T](      i:Int ) extends Trait[T]{...}
+  class          Concrete[T]( i:Int ) extends Abs[T]( i:Int) {...}
+  case class     Case[T](     i:Int ) extends Abs[T]( i:Int) {...}
+  class          Mixin[T](    i:Int ) extends Abs[T]( i:Int)
+    with Trait1[T] with Trait2[T] {...}
+  </code></pre>
+</section>
+
+
+
+<section data-id="">
+  <h2>Functions</h2>
+  <pre class="scala"><code style="font-size:1em; min-height:24em;  min-width:40em; border:1px solid white;">
+    // Functional declarations are strongly typed
+    func1:(Int,Int) => Int   // Two Int args. returns Int
+    func2:(String)  => Unit  // String  arg  and returns nothing
+  </code></pre>
+</section>
+
+<section data-id="">
+  <h2>Propagating State Evenly</h2>
+  <pre class="scala"><code style="font-size:1em; min-height:24em;  min-width:40em; border:1px solid white;">
+  </code></pre>
+</section>
+
+<section data-id="">
+  <h2>For Comprehensions</h2>
+  <pre class="scala"><code style="font-size:1em; min-height:24em;  min-width:40em; border:1px solid white;">
+  </code></pre>
+</section>
+
+<section data-id="">
+  <h3>Class Hierarchy</h3>
+  <img src="../../img/scala/classhierarchy.png" style="background:gray;">
+</section>
+
+<section data-id="">
+  <h2>Class Hierarchy</h2>
+<pre class="scala"><code style="font-size:1em; min-height:24em;  min-width:44em; border:1px solid white;">
+Any
+  AnyVal           // Scala's base class for Java primitives and Unit
+    Double Float Long Int Short Char Byte Boolean Unit
+  scala.Array      // compiles to Java arrays [] most of the time
+  AnyRef           // compiles to java.lang.Object
+    String         // compiles to java.lang.String
+    (all other Java Classes ...)
+    scala.ScalaObject
+      (all other Scala Classes ...)
+      scala.Seq    // base Class for all ordered collections
+
+      scala.List   // Immutable list for pattern matching
+      scala.Option // Yields to Some(value) or None
+    scala.Null     // is a subtype for all AnyRef classes
+                   // For Java compatibility. Better to use Option
+  scala.Nothing    // is a subtype of all Any classes. A true empty value
+
+  5.toString() is valid because 5 is an object
+</code></pre>
+</section>
+
+<section data-id="">
+  <h3>Traits - Thick and Thin</h3>
+  <ul style="font-size:24px;">
+    <li>Traits are similar to interfaces in Java
+      <ul>
+        <li>As with interfaces a Scala class can mix in any number of traits.</li>
+        <li>The mixin class can be assigned to or passed as any if its trait types.</li>
+        <li>Traits can not be constructed so traits do not have primary constructors.</li>
+        <li>Traits with purely abstract methods map directly to Java interfaces.</li>
+        <li>Unlike Java interfaces, Scala traits have concrete implementations of methods.</li>
+        </ul>
+    </li>
+    <li>The Thick and Thin Approach to Trait Design - Highest Reuse
+      <ul>
+        <li>First define a small number of abstract methods - the Thin part.</li>
+        <li>Then implement a large number of concrete methods - the Thick part.</li>
+        <li>All concrete members implemented in terms of the abstract members.</li>
+      </ul>
+    </li>
+  </ul>
+</section>
+
+<section data-id="">
+  <h2>Traits - Thick and Thin</h2>
+<pre class="scala"><code style="font-size:1em; min-height:24em;  min-width:44em; border:1px solid white;">
+trait Ordered[A] // Parameterized with type [A]
+{
+  // The Thin abstract part. Must implemented in base class
+  def compare( a:A ) : Int
+
+  // The Thick part. Concrete methods declared with operators.
+  // All based on the abstract method compare(a)
+  def <  ( a:A ) : Boolean = compare(a) < 0
+  def >  ( a:A ) : Boolean = compare(a) > 0
+  def <= ( a:A ) : Boolean = compare(a) <= 0
+  def >= ( a:A ) : Boolean = compare(a) >= 0
+}
+</code></pre>
+</section>
+
+<section data-id="">
+  <h2>Data as First Class Citizen</h2>
+  <pre class="scala"><code style="font-size:1em; min-height:24em;  min-width:40em; border:1px solid white;">
+  </code></pre>
+</section>
+
+<section data-id="">
+  <h2>Asserting Identity with Types</h2>
+  <pre class="scala"><code style="font-size:1em; min-height:24em;  min-width:40em; border:1px solid white;">
+  </code></pre>
+</section>
+
+<section data-id="">
+  <h2>Staying Intact - Immutability</h2>
+  <pre class="scala"><code style="font-size:1em; min-height:24em;  min-width:40em; border:1px solid white;">
+  </code></pre>
+</section>
+
+<section data-id="">
+  <h1>Monads</h1>
+</section>
+
+<section data-id="">
+  <h2>Monads for Resilient Packaging</h2>
+  <pre class="scala"><code style="font-size:1em; min-height:24em;  min-width:40em; border:1px solid white;">
+  </code></pre>
+</section>
+
+<section data-id="">
+  <h2>What Is a Monad Anyway?</h2>
+  <pre class="scala"><code style="font-size:1em; min-height:24em;  min-width:40em; border:1px solid white;">
+  </code></pre>
+</section>
+
+<section data-id="">
+  <h2>Understanding Monads</h2>
+</section>
+
+<section data-id="">
+  <h2>Monads in Data Science</h2>
+  <pre class="scala"><code style="font-size:1em; min-height:24em;  min-width:40em; border:1px solid white;">
+  </code></pre>
+</section>
+
+<section data-id="">
+  <h3>Pattern Matching and Case Classes</h3>
+  <pre class="scala"><code style="font-size:1em; min-height:24em;  min-width:40em; border:1px solid white;">
+  </code></pre>
+</section>
+
+<section data-id="">
+  <h3>OO Encapsulation Sucks</h3>
+  <ul>
+
+    <li>But the Fix is Easy</li>
+    <li>The Rest of OO Has Value</li>
+  </ul>
+
+</section>
+
+<section data-id="">
+  <h2>Sharing Data with Case Classes</h2>
+  <pre class="scala"><code style="font-size:1.2em; min-height:16em;  min-width:40em; border:1px solid white;">
+  // Scala expands the case class Add( u:Exp, v:Exp ) to:
+  class Add( val u:Exp, val v:Exp ) // Values immutable
+  {
+    def toString : String  = {..} // Class and field name
+    def equals   : Boolean = {..} // Fields compared structurally
+    def hashCode : Int     = {..} // hashCode from fields
+  }
+
+  // Scala creates a companion object with apply and unapply
+  object Add
+  {
+    def apply(   u:Exp, v:Exp ) : Add = new Add(u,v)
+    def unapply( u:Exp, v:Exp ) : Option[(Exp,Exp)] = Some(u,v)
+  }
+</code></pre>
+</section>
+
+<section data-id="">
+  <h2>Pattern Matching</h2>
+  <pre class="scala"><code style="font-size:1em; min-height:24em;  min-width:40em; border:1px solid white;">
+  </code></pre>
+</section>
+
+<section data-id="">
+  <h2>Message Interogation</h2>
+  <pre class="scala"><code style="font-size:1em; min-height:24em;  min-width:40em; border:1px solid white;">
+  </code></pre>
+</section>
+
+<section data-id="ApacheSparkTrad">
+  <h2>Apache Spark</h2>
+  <h4>Traditional View</h4>
+  <img src="../../img/spark/spark-stack.png" class="rx-img">
+  <ul style="text-align:left; font-size:24px; list-style-type: none;">
+    <li><span class="width150">Core:      </span>Distributed task dispatching, scheduling, and basic I/O</li>
+    <li><span class="width150">GraphX:    </span>A distributed graph topology for RDDs based on Pregel for Page Rank</li>
+    <li><span class="width150">SQL:       </span>SchemaRDD a DSL feeding semi? structured data into RDDs</li>
+    <li><span class="width150">Streaming: </span>Ingests data in mini-batches for RDD transforms & streaming analytics</li>
+    <li><span class="width150">MLlib :    </span>Machine Learning Pipeline - Spark's original purpose</li>
+  </ul>
+</section>
+
+<section data-id="ApacheSparkAll"  style="margin:0; padding:0; background-color:rgb(49,28,39);">
+  <img src="../../img/spark/Spark.png" class="rx-img">
+  <ul data-id="icondesc" style="text-align:left; line-height:1.1; font-size:22px; list-style-type: none; color:wheat;">
+    <li><i class="fa fa-database fa-rotate-90"></i> <span class="width150pad">RDD:        </span>Resilient Distributed Datasets logically partitioned across servers</li>
+    <li><i class="fa fa-joomla"></i>                <span class="width150pad">GraphX:     </span>Distributed graph topology for RDDs based on Pregel (Page Rank)</li>
+    <li><i class="fa fa-th"></i>                    <span class="width150pad">DataFrames: </span>A distributed collection of data organized into named columns</li>
+    <li><i class="fa fa-database"></i>              <span class="width150pad">Databases:  </span>Local File System(Standalone) Cassandra MongoDB HDFS JDBC ...</li>
+    <li><i class="fa fa-sliders"></i>               <span class="width150pad">Streaming:  </span>Ingests data in mini-batches for RDD transforms and streaming</li>
+    <li><i class="fa fa-connectdevelop"></i>        <span class="width150pad">Machine:    </span>MLlib Machine Learning Pipeline</li>
+    <li><i class="fa fa-calculator"></i>            <span class="width150pad">Numerical:  </span>Breeze Epic Puck GPU(cuBlas-NVidia) and NetLib-Fortran</li>
+    <li><i class="fa fa-chevron-right"></i>         <span class="width150pad">Notebook:   </span>A Spark aware notebook in Typesafe's web framework Play</li>
+    <li><i class="fa fa-code"></i>                  <span class="width150pad">IPython:    </span>The Data Scientist's favorite notebook with PySpark</li>
+    <li><i class="fa fa-bell"></i>                  <span class="width150pad">SparkR:     </span>A light-weight frontend to use Apache Spark from R</li>
+    <li><i class="fa fa-star-o"></i>                <span class="width150pad">Spark Core: </span>Distributed task dispatching, scheduling, and basic I/O</li>
+    <li><i class="fa fa-area-chart"></i>            <span class="width150pad">Akka:       </span>Concurrent, distributed, resilient, message driven, actor based</li>
+    <li><i class="fa fa-server"></i>                <span class="width150pad">Cluster:    </span>Standalone, Mesos, Myriad and YARN</li>
+  </ul>
+</section>
+
+<section data-id="">
+  <h3>Altering Reality with Data Transforms</h3>
+  <pre class="scala"><code style="font-size:1em; min-height:24em;  min-width:40em; border:1px solid white;">
+  </code></pre>
+</section>
+
+<section data-id="">
+  <h2>Spark Streaming</h2>
+  <pre class="scala"><code style="font-size:1em; min-height:24em;  min-width:40em; border:1px solid white;">
+  </code></pre>
+</section>
+
+<section data-id="">
+  <h2>RDD Resilient Distributed Data</h2>
+  <pre class="scala"><code style="font-size:1em; min-height:24em;  min-width:40em; border:1px solid white;">
+  </code></pre>
+</section>
+
+<section data-id="">
+  <h2>Monads in Streaming</h2>
+  <pre class="scala"><code style="font-size:1em; min-height:24em;  min-width:40em; border:1px solid white;">
+  </code></pre>
+</section>
+
+<section data-id="">
+  <h2>Streaming Code Constructs</h2>
+  <pre class="scala"><code style="font-size:1em; min-height:24em;  min-width:40em; border:1px solid white;">
+  </code></pre>
+</section>
+
+<section data-id="">
+  <h2>Simulating Things All at Once</h2>
+  <pre class="scala"><code style="font-size:1em; min-height:24em;  min-width:40em; border:1px solid white;">
+  </code></pre>
+</section>
+
+<section data-id="">
+  <h2>Spark Standalone</h2>
+  <pre class="scala"><code style="font-size:1em; min-height:24em;  min-width:40em; border:1px solid white;">
+  </code></pre>
+</section>
+
+<section data-id="">
+  <h2>Tools at Your Finger Tips</h2>
+</section>
+
+<section data-id="">
+  <h2>A Symbolic Math DSL</h2>
+</section>
+
+<section data-id="">
+  <h3>A Simple Language For Specific Tasks</h3>
+  <pre class="scala"><code style="font-size:1em; min-height:24em;  min-width:40em; border:1px solid white;">
+  </code></pre>
+</section>
+
+<section data-id="">
+  <h2>Math Expression Class</h2>
+  <pre class="scala"><code style="font-size:1em; min-height:23em;  min-width:43em; border:1px solid white;">
+    sealed abstract class Exp extends with Calculate with Differentiate
+    {
+    // Wrap i:Int and d:Double to Num(d) & String to Var(s)
+    implicit def int2Exp( i:Int    ) : Exp = Num(i.toDouble)
+    implicit def dbl2Exp( d:Double ) : Exp = Num(d)
+    implicit def str2Exp( s:String ) : Exp = Var(s)
+
+    // Infix operators from high to low using Scala precedence
+    def ~^ ( v:Exp ) : Exp = Pow(this,v) // ~^ high precedence
+    def /  ( v:Exp ) : Exp = Div(this,v)
+    def *  ( v:Exp ) : Exp = Mul(this,v)
+    def -  ( v:Exp ) : Exp = Sub(this,v)
+    def +  ( v:Exp ) : Exp = Add(this,v)
+
+    // Prefix operator for negation
+    def unary_- : Exp = Neg(this)
+    }
+  </code></pre>
+</section>
+
+<section data-id="">
+  <h2>Math Case Classes</h2>
+<pre class="scala"><code style="font-size:1.1em; min-height:11em;  min-width:40em; border:1px solid white;">
+  case class Num( n:double )     extends Exp // wrap double
+  case class Var( s:String )     extends Exp // wrap String
+  case class Par( u:Exp )        extends Exp // parentheses
+  case class Neg( u:Exp )        extends Exp // -u prefix
+  case class Pow( u:Exp, v:Exp ) extends Exp // u ^ v infix
+  case class Mul( u:Exp, v:Exp ) extends Exp // u * v infix
+  case class Div( u:Exp, v:Exp ) extends Exp // u / v infix
+  case class Add( u:Exp, v:Exp ) extends Exp // u + v infix
+  case class Sub( u:Exp, v:Exp ) extends Exp // u – v infix
+  case class Dif( u:Exp )        extends Exp // Differentiate
+</code></pre>
+</section>
+
+<section data-id="">
+  <h3>Derivatives with Pattern Matching</h3>
+  <pre class="scala"><code style="font-size:1em; min-height:23em; min-width:40em; border:1px solid white;">
+trait Differentiate
+{
+  this:Exp => // Makes Differentiate aware of Exp for Internal DSL
+
+  def d( e:Exp ) : Exp = e match
+  {
+    case Num(n)   => 0           // diff of constant zero
+    case Var(s)   => Dif(Var(s)) // "x" becomes dx
+    case Par(u)   => Par(d(u))
+    case Neg(u)   => -d(u)
+    case Pow(u,v) => v * u~^(v-1) * d(u)
+    case Mul(u,v) => v * d(u) + u * d(v)
+    case Div(u,v) => Par( v*d(u) - u*d(v) ) / v~^2
+    case Add(u,v) => d(u) + d(v)
+    case Sub(u,v) => d(u) - d(v)
+    case Dif(u)    =&gt; mathML( t, "mi", "d" ); u.mathML(t)
+  }
+}
+</code></pre>
+</section>
+
+<section data-id="">
+  <h3>Typesetting Math with Pattern Matching</h3>
+  <pre class="scala"><code style="font-size:.9em; min-height:26em;   min-width:40em; border:1px solid white; line-height:1.1em;">trait MathML
+{
+  self:Exp =&gt;
+
+  def mathML( t:Text ) { mathML(t,this) }
+
+  def mathML( t:Text, exp:Exp )
+  {
+    exp match
+    {
+      case Num(n)    => mathML( t, "mn", n.toString )
+      case Var(s)    => mathML( t, "mi", s ) // Syms.entity(t,s)
+      case Par(u)    => mathML( t, "mfence", u )
+      case Neg(u)    => mathML( t, "mo", "-" ); u.mathML(t)
+      case Pow(u,v)  => mathML( t, "msup",   u, v )
+      case Mul(u,v)  => mathML( t, "mrow",   u, "*", v )
+      case Div(u,v)  => mathML( t, "mfrac",  u, v )
+      case Add(u,v)  => mathML( t, "mrow",   u, "+", v )
+      case Sub(u,v)  => mathML( t, "mrow",   u, "-", v )
+      case Dif(u)    => Dif(d(u))   // 2rd dif
+    }
+  }
+}
+</code></pre>
+</section>
+
+<!--section id="AsciiMath">
+  <div style="color:tan;">Ascii Math</div>
+  <table style="font-size:20pt;">
+    <tbody>
+    <tr><th style="width:50em;">Text String</th><th>MathML</th></tr>
+    <tr><td>x^2+y_1+z_12^34</td><td>`x^2+y_1+z_12^34`</td></tr>
+    <tr><td>arcsin(x)</td><td>`sin^-1(x)`</td></tr>
+    <tr><td>d/dxf(x) = lim_(h-&gt;0)(f(x+h)-f(x))/h</td><td>`d/dxf(x) = lim_(h-&gt;0)(f(x+h)-f(x))/h`</td></tr>
+    <tr><td>f(x) = sum_(n=0)^oo (f^((n))(a))/(n!)(x-a)^n</td><td>`f(x) = sum_(n=0)^oo (f^((n))(a))/(n!)(x-a)^n`</td></tr>
+    <tr><td>int_0^1f(x)dx</td><td>`int_0^1f(x)dx`</td></tr>
+    <tr><td>[[a,b],[c,d]]</td><td>`[[a,b],[c,d]]`</td></tr>
+    </tbody>
+  </table>
+</section-->
+
+<section data-id="">
+  <h2>A Multi-Paradigm Language</h2>
+</section>
+
+<section data-id="ReactiveManifesto">
+  <h2>The Reactive Manifesto</h2>
+  <a href="http://www.reactivemanifesto.org/">www.reactivemanifesto.org/</a>
+  <img src ="../../img/reactive/reactive-traits.svg" class="rx-svg">
+  <ul style="text-align:left; font-size:24px; list-style-type: none;">
+      <li><img src="../../img/reactive/responsive.svg" class="rx-icon"><span class="width240">Responsive:    </span><span class="width150">In Memory </span>Always respond meaningfully in a timely manner</li>
+      <li><img src="../../img/reactive/elastic.svg"    class="rx-icon"><span class="width240">Elastic:       </span><span class="width150">Cluster   </span>Stay responsive under varying workload</li>
+      <li><img src="../../img/reactive/resilient.svg"  class="rx-icon"><span class="width240">Resilient:     </span><span class="width150">RDD       </span>Stay responsive in the face of failure</li>
+      <li><img src="../../img/reactive/message.svg"    class="rx-icon"><span class="width240">Message Driven:</span><span class="width150">Streaming </span>Wrap and stream messages asynchronously</li>
+  </ul>
+</section>
+
+<section data-id="Responsive">
+  <h2 class="rx-h2"><img src="../../img/reactive/responsive.svg" class="rx-h2-img"><span class="rx-h2-span">Responsive</span></h2>
+  <h4>Always respond meaningfully in a timely manner</h4>
+  <ul>
+      <li>"In Memory" improves performance by 1-2 orders of magnitude</li>
+      <li>Formulate meaningful response metrics for Data Science</li>
+      <li>Leveage statistics to shrink sample populations</li>
+      <li>Weigh benefits between real time and near time</li>
+      <li>Keep your common sense</li>
+      <li>Don't let brute force do your thinking for you</li>
+  </ul>
+</section>
+
+<section data-id="Elastic">
+    <h2 class="rx-h2"><img src="../../img/reactive/elastic.svg" class="rx-h2-img"><span class="rx-h2-span">Elastic</span></h2>
+    <h4>Stay responsive under varying workload</h4>
+    <ul>
+        <li>Elasticity is the key value proposition for cloud hosting</li>
+        <li>Leveage Spark's integration with Akka Mesos Myraid and YARN</li>
+        <li>Always have spare resources available to spin up for peak demand</li>
+        <li>Spend the extra money to replicate data</li>
+    </ul>
+</section>
+
+<section data-id="Resilient">
+    <h2 class="rx-h2"><img src="../../img/reactive/resilient.svg" class="rx-h2-img"><span class="rx-h2-span">Resilient</span></h2>
+    <h4>Stay responsive in the face of failure</h4>
+    <ul>
+        <li>Clustered servers and network links fail all the time</li>
+        <li>Spark Core monitors and responds to cluster failure</li>
+        <li>RDDs "Resilient" Distributed Datasets says it all</li>
+        <li>RDDs shard the data over a cluster</li>
+        <li>RDDs reconstitute shards lost due to node / link failures</li>
+        <li>RDDs in Spark can rerun their transforms to recreate lost data</li>
+    </ul>
+</section>
+
+<section data-id="MessageDriven">
+    <h2 class="rx-h2"><img src="../../img/reactive/message.svg" class="rx-h2-img"><span class="rx-h2-span">Message Driven</span></h2>
+    <h4>Wrap and stream messages asynchronously</h4>
+    <h4>Message Streams facilitate Data Science with these benefits</h4>
+    <table style="font-size:18pt; color:wheat;">
+        <thead >
+        <tr><th style="text-align:center;">Message Feature</th><th style="text-align:center;">Data Science Benefit</th></tr>
+        </thead>
+        <tbody>
+        <tr><td>Asynchronous</td><td>The system knows more about concurrency than humans</td></tr>
+        <tr><td>Error Delegation</td><td>Errors become first class citizens that are treated properly</td></tr>
+        <tr><td>Location Transparency</td><td>Processes are not locked into specific server configuations</td></tr>
+        <tr><td>Publish & Subscribe</td><td>Allows roles to be defined from a Data Science perspective</td></tr>
+        <tr><td>Component Isolation</td><td>Allows components to focus on their assigned tasks</td></tr>
+        <tr><td>Loose Coupling</td><td>Precise instead of accidental interactions</td></tr>
+        <tr><td>Back Pressure</td><td>Message streams can be throttled to relieve resources</td></tr>
+        <tr><td>Functional</td><td>A programing paradigm well suited for data processing</td></tr>
+        </tbody>
+    </table>
+</section>
+
+<section data-id="">
+  <h2>Data Driven Results</h2>
+</section>
+
+<section data-id="">
+  <h3>Scala's Paradigms for Data Science</h3>
+</section>
+
+<section data-id="ScalaConstructs" class="Abstract">
+  <h3>Scala Code Constructs by Feature</h3>
+  <table class="FontSize24px">
+    <tr><th>Scala Feature</th><th>Code Construct(s)</th></tr>
+    <tr><td>Primitives As Classes</td><td>Class Hierarchy</td></tr>
+    <tr><td>Strong Typing</td><td>Type Specification</td></tr>
+    <tr><td>Immutability</td><td>val</td></tr>
+    <tr><td>Transparent Monads</td><td>For Comprehension</td></tr>
+    <tr><td>Case Classes</td><td>unapply()</td></tr>
+    <tr><td>Pattern Matching in General</td><td>Taking a Derivative</td></tr>
+    <tr><td>Transformations in Streams</td><td>Spark Stream</td></tr>
+    <tr><td>Concurrency</td><td>Parallelized Collections</td></tr>
+    <tr><td>Zeppelin Spark Workbook</td><td>Command Line</td></tr>
+    <tr><td>Scala DSLs</td><td>Symbolic Math Classes</td></tr>
+    <tr><td>Pattern Matching for DSLs</td><td>Taking a Derivative</td></tr>
+    <tr><td>Multi-Paradigms OUCH</td><td>Single Paradigm Contexts</td></tr>
+  </table>
+</section>
+
+<section data-id="ScalaDBReferences">
+    <h2>References</h2>
+    <ul style="margin-left:0.6em; font-size:26px;">
+        <li><div class="width340">Big Data Driving Business</div><a href="http://www.ted.com/talks/philip_evans_how_data_will_transform_business">http://bit.ly/194auY9</a></li>
+        <li><div class="width340">REST API Tutorial</div><a href="http://www.restapitutorial.com/resources.html">http://www.restapitutorial.com/resources.html</a></li>
+        <li><div class="width340">CAP Theorem</div><a href="http://en.wikipedia.org/wiki/CAP_theorem">http://en.wikipedia.org/wiki/CAP_theorem</a></li>
+        <li><div class="width340">Grid Gain</div><a href="http://www.gridgain.com/">http://www.gridgain.com/</a></li>
+        <li><div class="width340">Apache Spark</div><a href="https://spark.apache.org/">https://spark.apache.org/</a></li>
+        <li><div class="width340">The Reactive Manifesto</div><a href="http://www.reactivemanifesto.org/">www.reactivemanifesto.org/</a></li>
+        <li><div class="width340">These slides in PDF</div><a href="https://speakerdeck.com/axiom6">https://speakerdeck.com/axiom6</a></li>
+    </ul>
+</section>
+
+<section data-id="ScalaDBTheEnd">
+    <h1>THE END</h1>
+</section>
+
+</div>
+</div>
+
+</body>
+</html>

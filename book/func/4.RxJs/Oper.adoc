@@ -1,0 +1,147 @@
+
+==  [.black]#Operators#
+
+=== [.black]#Creation Operators#
+
+    ajax
+    bindCallback
+    bindNodeCallback
+    create
+    defer
+    empty
+    from
+    fromEvent
+    fromEventPattern
+    fromPromise
+    generate
+    interval
+    never
+    of
+    repeat
+    repeatWhen
+    range
+    throw
+    timer
+
+=== [.black]#Transformation Operators#
+
+    buffer
+    bufferCount
+    bufferTime
+    bufferToggle
+    bufferWhen
+    concatMap
+    concatMapTo
+    exhaustMap
+    expand
+    groupBy
+    map
+    mapTo
+    mergeMap
+    mergeMapTo
+    mergeScan
+    pairwise
+    partition
+    pluck
+    scan
+    switchMap
+    switchMapTo
+    window
+    windowCount
+    windowTime
+    windowToggle
+    windowWhen
+
+=== [.black]#Filtering Operators#
+
+    debounce
+    debounceTime
+    distinct
+    distinctKey
+    distinctUntilChanged
+    distinctUntilKeyChanged
+    elementAt
+    filter
+    first
+    ignoreElements
+    audit
+    auditTime
+    last
+    sample
+    sampleTime
+    single
+    skip
+    skipUntil
+    skipWhile
+    take
+    takeLast
+    takeUntil
+    takeWhile
+    throttle
+    throttleTime
+
+=== [.black]#Combination Operators#
+
+    combineAll
+    combineLatest
+    concat
+    concatAll
+    exhaust
+    forkJoin
+    merge
+    mergeAll
+    race
+    startWith
+    switch
+    withLatestFrom
+    zip
+    zipAll
+
+=== [.black]#Multicasting Operators#
+
+    cache
+    multicast
+    publish
+    publishBehavior
+    publishLast
+    publishReplay
+    share
+
+=== [.black]#Error Handling Operators#
+
+    catch
+    retry
+    retryWhen
+
+=== [.black]#Utility Operators#
+
+    do
+    delay
+    delayWhen
+    dematerialize
+    finally
+    let
+    materialize
+    observeOn
+    subscribeOn
+    timeInterval
+    timestamp
+    timeout
+    timeoutWith
+    toArray
+    toPromise
+
+=== [.black]#Conditional and Boolean Operators#
+
+    defaultIfEmpty
+    every
+    find
+    findIndex
+    isEmpty
+
+=== [.black]#Mathematical and Aggregate Operators#
+
+    count
+    max
+    min
+    reduce

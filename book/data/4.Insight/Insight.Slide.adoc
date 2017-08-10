@@ -1,0 +1,16 @@
+
+include::../../../dir/inc/DefPractice.adoc[]
+
+== [.black]#Insight#
+
+image::insight/Insight.png[alt="Insight",align="center"]
+
+== [.black]#Insight.#
+
+Working together.
+
+[horizontal]
+Hypothesis:: x
+Statistics:: x
+Ontology::   x
+Choose::     x

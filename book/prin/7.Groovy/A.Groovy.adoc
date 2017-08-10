@@ -1,0 +1,29 @@
+
+include::../../../dir/inc/DefPractice.adoc[]
+
+==  [.black]#A Tour of Groovy#
+===   [.black]#Expressive Syntax#
+===   [.black]#Command line#
+===   [.black]#Parsing XML#
+==  [.black]#Meta Object Protocol#
+===   [.black]#Meta Class#
+===   [.black]#Expanding and Invoking#
+===   [.black]#Capabilities#
+==  [.black]#Multi-Paradigm#
+===   [.black]#Object Oriented#
+===   [.black]#Dynamic#
+===   [.black]#Closures#
+==  [.black]#Principles in Groovy#
+===   [.black]#Composition#
+===   [.black]#Orchestration#
+===   [.black]#Preservation#
+===   [.black]#Transformation#
+===   [.black]#Expression#
+==  [.black]#Grails and Ola's Pyramid#
+===   [.black]#Grails Architecture#
+===   [.black]#Ola's Pyramid Layers#
+===   [.black]#Plugins for Propagation#
+===   [.black]#REST with Grails#
+===   [.black]#Principles in Grails#
+==  [.black]#Summary#
+==  [.black]#References#

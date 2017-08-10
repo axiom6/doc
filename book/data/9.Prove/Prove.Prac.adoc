@@ -1,0 +1,18 @@
+
+include::../../../dir/inc/DefPractice.adoc[]
+
+= [.black]#icon:thumbs-up[] Prove#
+
+image::prove/Prove.png[]
+
+////
+<<<<
+== [.black]#icon:stethoscope[] Diagnose#
+
+== [.black]#icon:check-square[] Bench#
+
+== [.black]#icon:sitemap[] Repeat#
+
+== [.black]#icon:lock[] Protect#
+
+////

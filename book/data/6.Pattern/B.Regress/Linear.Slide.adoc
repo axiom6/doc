@@ -1,0 +1,13 @@
+
+include::../../../../dir/inc/DefStudy.adoc[]
+
+* Linear Regression shows the relationship between 2 variables
+* Illustrates the change in one variable impacts the other.
+
+image::distill/LinearRegress.png[alt="LinearRegress",align="center"]
+
+[cols="5*"]
+|====
+| *Strengths* | Simple | Interpretable | Min Tuning | Fast
+| *Use For*   | Estimations | Risk  | x  | x
+|====

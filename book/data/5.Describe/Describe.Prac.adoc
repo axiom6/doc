@@ -1,0 +1,34 @@
+
+include::../../../dir/inc/DefPractice.adoc[]
+
+= [.black]#icon:modx[] Describe#
+
+image::describe/Describe.png[align="center"]
+
+
+////
+<<<<
+==  [.black]#icon:book[] Unsupervised Learning#
+
+==   [.black]#icon:object-group[] Cluster#
+===  [.black]#icon:bullseye[] Centroid#
+==== [.black]#icon:bullseye[] KMeans#
+===  [.black]#icon:sitemap[] Hierarchial#
+===  [.black]#icon:bell[] Distribution#
+===  [.black]#icon:spinner[] Density#
+
+==   [.black]#icon:cubes[] Dimension#
+===  [.black]#icon:connectdevelop[] Association Rule#
+==== [.black]#icon:connectdevelop[] APriorii#
+===  [.black]#icon:circle[] Principal Components#
+===  [.black]#icon:bell-slash[] Discriminant#
+===  [.black]#icon:modx[] Manifold#
+
+
+== [.black]#icon:table[] Metadata#
+
+== [.black]#icon:table[] Report#
+
+== [.black]#icon:table[] Investigate#
+
+////

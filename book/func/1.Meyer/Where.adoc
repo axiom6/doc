@@ -1,0 +1,10 @@
+
+include::../../../dir/inc/DefPractice.adoc[]
+
+== [.black]#Where#
+* The Where operator takes a predicate and filters out all values
+  for which the predicate does not hold
+
+image::3.Where.png[alt="Where",align="center"]
+
+

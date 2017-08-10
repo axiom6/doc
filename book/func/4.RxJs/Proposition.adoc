@@ -1,0 +1,26 @@
+
+=== [.black]#Proposition#
+
+Asynchronous:: Can be very difficult to implement because existing programming
+patterns don’t scale to complex behavior
+
+Callbacks and Promises:: Can be used to deal with asynchronous code, but have many
+limitations when targeted against large streams generated from repeated button clicks
+or mouse movements.
+
+Reactive:: RxJS is a reactive solution that can more concisely and declaratively deal with large
+amounts of data separated over time.
+
+Propagation of Change:: RxJS requires seeing and understanding data in streams with
+propagation of change.
+
+Paradigm Shift:: RxJS elegantly combines both functional and reactive
+paradigms into a simple computing model that places observables (streams) at the forefront.
+
+Pipeline:: Streams are made up from a producer (observable), where data flows through a
+pipeline, arriving at a consumer (observer). This same programming model is used
+whether or not data is separated by time.
+
+Observables:: Are pure and side effect free, with a powerful arsenal of operators and
+transformations that will allow you compose your business logic with asynchronous operations
+elegantly.

@@ -1,0 +1,14 @@
+
+include::../../../dir/inc/DefPractice.adoc[]
+
+= [.black]#icon:cloud-download[] 2. Acquire#
+
+image::acquire/Acquire.Prac.png[]
+
+include::A.Collect.adoc[]
+
+include::B.Refine.adoc[]
+
+include::C.Schema.adoc[]
+
+include::D.Prepare.adoc[]

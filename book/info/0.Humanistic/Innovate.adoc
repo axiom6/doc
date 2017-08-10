@@ -1,0 +1,42 @@
+
+include::../../../dir/inc/DefPractice.adoc[]
+
+==  [.black]#Innovate#
+
+=== [.black]#Principles: "Where Good Ideas Come From"#
+
+link::https://medium.com/key-lessons-from-books/the-key-lessons-from-where-good-ideas-come-from-by-steven-johnson-1798e11becdb#.mkayh3sye[“Where Good Ideas Come From” by Steven Johnson]
+
+[horizontal]
+Premise::                Chance favors the connected mind.
+Adjacent&nbsp;Possible:: Possibilities emerge and become close waiting to connected.
+Slow&nbsp;Hunches::      Ideas evolve over time as slow hunches rather than sudden breakthroughs.
+Technologies::           Technologies engineered for one purpose are extended other purposes.
+Large&nbsp;Networks::    Allows ideas to be diffused and be reconnected in novel ways,
+Collaboration::          Discoveries have gravitated away from individuals and towards teams.
+Connections::            Random connections drive serendipitous discoveries
+Shared Space::           Ideas converge in a shared physical or intellectual space.
+Errors::                 Learning that forces us to adopt new strategies and to abandon our old assumptions.
+Repurposing::            New uses found current and old platforms.
+
+<<<
+=== [.black]#Practices#
+
+image::humanistic/Innovate.png[alt="Innovate",align="center"]
+
+<<<
+=== [.black]#What Makes Innovate Work#
+
+[horizontal]
+Premise::                Lots of connections as illustrated by the color coded rectangles.
+Adjacent&nbsp;Possible:: Interelated tiers represented by hexagons have adjacent sides with meaning.
+Slow&nbsp;Hunches::      Time and resources are alocated to evolve each practice.
+Platforms::              Each practice serves as a large extensible multi-tier platform.
+Large&nbsp;Networks::    Each tier is part of a large network.
+Collaboration::          The Product Entitlement tier captures messages from the Collaborate practice
+Connections::            Random collaborative connection are source
+Shared Space::           Each practice is functions as a share physical and intellectual space.
+Errors::                 When iterate with prototypes to recognize and learn from our errors.
+Repurposing::            Each practice is built on a core foundation for new purposes.
+
+

@@ -1,0 +1,60 @@
+
+include::../../../../dir/inc/DefStudy.adoc[]
+
+''''
+<<<<
+
+=== [.black]#Expectation Max#
+include::ExpectationMax.Slide.adoc[]
+
+//==== [.black]#Mathematics#
+
+//asciimath:[x^2]
+
+==== [.black]#How It Works#
+* The expectation-maximization (EM) algorithm for fits a Gaussian Mixture models. It
+  can also draw confidence ellipsoids for multivariate models, and compute the Bayesian Information Criterion to assess
+  the number of clusters in the data. A Gausian Mixture fit method is provided that learns a Gaussian Mixture Model from train
+  data. Given test data, it can assign to each sample the class of the Gaussian it mostly probably belong to using the
+  GMM.predict method.
+* The Gausie different options to constrain the covariance of the difference classes estimated: spherical,
+  diagonal, tied or full covariance.
+
+==== [.black]#Benefits#
+[horizontal]
+Speed:: It is the fastest algorithm for learning mixture models
+Agnostic:: This algorithm maximizes only the likelihood, it will not bias the means towards zero, or bias
+the cluster sizes to have specific structures that might or might not apply.
+
+==== [.black]#Drawbacks#
+[horizontal]
+Singularities:: when one has insufficiently many points per mixture, estimating the covariance matrices
+becomes difficult, and the algorithm is known to diverge and find solutions with infinite likelihood
+unless one regularizes the covariances artificially.
+Number of components:: this algorithm will always use all the components it has access to, needing heldout
+data or information theoretical criteria to decide how many components to use in the absence of
+external cues.
+
+////
+==== [.black]#When To Use It#
+* One
+* Two
+
+==== [.black]#Getting Started#
+* One
+* Two
+
+==== [.black]#Proving Results#
+* One
+* Two
+
+==== [.black]#Applications#
+* One
+* Two
+
+==== [.black]#Tools#
+[horizontal]
+Spark:: xxx
+Python:: xxx
+R:: xxx
+////

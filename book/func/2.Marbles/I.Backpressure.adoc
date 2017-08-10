@@ -1,0 +1,11 @@
+
+include::../../../dir/inc/DefPractice.adoc[]
+
+=== [.black]#Backpressure#
+
+* Backpressure operators:: strategies for coping with Observables that produce items more rapidly than their observers consume them
+
+[horizontal]
+onBackpressureBuffer:: x
+onBackpressureDrop::   x
+onBackpressureLatest:: x

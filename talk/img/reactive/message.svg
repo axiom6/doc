@@ -1,0 +1,6 @@
+<svg enable-background="new 0 0 260 260" viewBox="0 0 260 260" xmlns="http://www.w3.org/2000/svg"
+     class="svg-icon svg-icon-reactive-trait svg-icon-event-driven">
+  <circle r="130" cy="130" cx="130" fill="#fff"/><circle r="120" cy="130" cx="130" fill="#D2B48C"/>
+  <path d="M183 55l-113 85h53l-46 65 113-85h-53z"  fill="#fff"/>
+  <path d="M137 120h13l33-65zM123 140h-13l-33 65z" fill="#D2B48C"/>
+</svg>

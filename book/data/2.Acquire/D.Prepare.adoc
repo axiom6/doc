@@ -1,0 +1,10 @@
+
+include::../../../dir/inc/DefStudy.adoc[]
+
+''''
+<<<<
+==  [.black]#icon:circle[] Prepare#
+=== [.black]#icon:circle[] Filter#
+=== [.black]#icon:circle[] Imputate#
+=== [.black]#icon:circle[] Transform#
+=== [.black]#icon:circle[] Select#

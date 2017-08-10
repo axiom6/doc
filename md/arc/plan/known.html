@@ -1,0 +1,298 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<style>
+
+
+@media screen { .page-break{ display: none;  } }
+@media print  { .page-break{ display: block; page-break-after : always; } }
+
+@font-face { font-family: 'Helvetica'; src: local('Helvetica');  font-style: normal; font-weight: 400; }
+@font-face { font-family: 'Times';     src: local('Times');      font-style: normal; font-weight: 400; }
+
+
+h1, h2,h3,h4,h5,h6,p, blockquote {    margin: 0;    padding: 0; }
+body {
+    font-family: Helvetica, sans-serif;
+    font-size: 12px;     line-height: 14px;    color:black;    background-color: white;
+    margin: 10px 13px 10px 13px;
+}
+table {	margin: 10px 0 15px 10px;	border-collapse: collapse; font-size: 11px; }
+td,th {	border: 1px solid #ddd;	padding: 3px 10px;}
+th {	padding: 5px 10px;}
+
+a {    color: #0069d6;}
+a:hover {    color: #0050a3;    text-decoration: none;}
+a img { border: none;}
+
+
+h1,h2,h3,h4,h5,h6 { color:black; line-height: 18px; padding:2px;
+    font-family: Helvetica, sans-serif; }
+
+h1 { font-size: 18px; text-indent:0.0em; background:#999999; }
+h2 { font-size: 14px; text-indent:1.0em; background:#AAAAAA; }
+h3 { font-size: 12px; text-indent:1.5em; background:#BBBBBB; }
+h4 { font-size: 11px; text-indent:2.0em; background:#CCCCCC; }
+h5 { font-size: 10px; text-indent:2.5em; background:#DDDDDD; }
+h6 { font-size:  9px; text-indent:3.0em; background:#EEEEEE; }
+p  { font-size: 12px; margin-bottom: 4px; font-family: Times, serif }
+
+ul { padding-left:20px; font-size: 12px; }
+
+hr {    margin: 0 0 19px;    border: 0;    border-bottom: 1px solid #ccc;}
+blockquote {    padding: 13px 13px 21px 15px;    margin-bottom: 18px;
+    font-family:georgia,serif;    font-style: italic;}
+blockquote:before {    content:"\201C";    font-size:40px;    margin-left:-10px;
+    font-family:georgia,serif;    color:#eee;}
+blockquote p {     font-size: 14px;    font-weight: 300;    line-height: 18px;
+    margin-bottom: 0;    font-style: italic;}
+code, pre {
+    font-family: Monaco, Andale Mono, Courier New, monospace;}
+code {
+    background-color: #fee9cc;    color: rgba(0, 0, 0, 0.75);    padding: 1px 3px;
+    font-size: 12px;    -webkit-border-radius: 3px;    -moz-border-radius: 3px;    border-radius: 3px;}
+pre {     display: block;    padding: 14px;    margin: 0 0 18px;    line-height: 16px;    font-size: 11px;
+    border: 1px solid #d9d9d9;    white-space: pre-wrap;    word-wrap: break-word;}
+pre code {    background-color: #fff;    color:#737373;    font-size: 11px;    padding: 0;}
+sup {    font-size: 0.83em;    vertical-align: super;    line-height: 0;}
+* {	-webkit-print-color-adjust: exact;}
+
+@media screen and (min-width: 914px) {
+    body {        width: 854px;        margin:10px auto;    }
+}
+@media print {	body,code,pre code,h1,h2,h3,h4,h5,h6 {		color: black;	}
+	table, pre {		page-break-inside: avoid;	} }
+/*
+@font-face {
+    font-family: "FontAwesome";
+    src: url("../font/fontawesome-webfont.eot?v=3.0.1")        format("eot");
+    src: url("../font/fontawesome-webfont.eot?#iefix&v=3.0.1") format("embedded-opentype"),
+    url("../font/fontawesome-webfont.woff?v=3.0.1")       format("woff"),
+    url("../font/fontawesome-webfont.svg?#FontAwesome")   format("svg"),
+    url("f../ont/fontawesome-webfont.ttf?v=3.0.1")        format("truetype");
+    font-weight: normal;
+    font-style: normal; }
+*/
+</style>
+<title>Archer - Express</title>
+<script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax:{inlineMath:[['$$$','$$$']]}});</script><script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+<h1>Archer - Express</h1>
+
+<table>
+<thead>
+<tr>
+<th>   </th>
+<th>   </th>
+<th>   </th>
+<th>   </th>
+<th>   </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> Architect  </td>
+<td> Factories </td>
+<td> Lifecycles </td>
+<td> Patterns </td>
+<td> Stubs </td>
+</tr>
+<tr>
+<td> Gulp       </td>
+<td> NodeJS    </td>
+<td> Build      </td>
+<td> Reveal   </td>
+<td> Pub   </td>
+</tr>
+</tbody>
+</table>
+
+
+<h1>Quan - Reason</h1>
+
+<table>
+<thead>
+<tr>
+<th>   </th>
+<th>   </th>
+<th>   </th>
+<th>   </th>
+<th>   </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> UI         </td>
+<td> Module   </td>
+<td> Toc Menu </td>
+<td> View Pane </td>
+<td> Form Control </td>
+</tr>
+<tr>
+<td> Store      </td>
+<td> Forage   </td>
+<td> Firebase </td>
+<td> Rest      </td>
+<td> MongoDB      </td>
+</tr>
+<tr>
+<td> Libs       </td>
+<td> D3 / Viz </td>
+<td> Leaflet  </td>
+<td> MathBox   </td>
+<td> Visual       </td>
+</tr>
+<tr>
+<td> Components </td>
+<td> Table    </td>
+<td> Dnd      </td>
+<td> Diagram   </td>
+<td> Muse         </td>
+</tr>
+<tr>
+<td> Conduct    </td>
+<td> Direct   </td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+
+<h1>Transformer</h1>
+
+<table>
+<thead>
+<tr>
+<th>   </th>
+<th>   </th>
+<th>   </th>
+<th>   </th>
+<th>   </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> DSL     </td>
+<td> Exp       </td>
+<td> Parse   </td>
+<td> Patterns </td>
+<td> CAS </td>
+</tr>
+<tr>
+<td> Num     </td>
+<td> Nexp      </td>
+<td> Breeze  </td>
+<td> Cuda     </td>
+<td></td>
+</tr>
+<tr>
+<td> Play    </td>
+<td> Akka      </td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td> UI      </td>
+<td> Test      </td>
+<td> Clojure </td>
+<td> Incantor </td>
+<td></td>
+</tr>
+<tr>
+<td> Conduct </td>
+<td> Transform </td>
+<td> Ascii   </td>
+<td> Crunch   </td>
+<td> Matlab </td>
+</tr>
+</tbody>
+</table>
+
+
+<h1>Compose</h1>
+
+<table>
+<thead>
+<tr>
+<th>   </th>
+<th>   </th>
+<th>   </th>
+<th>   </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> Data     </td>
+<td> NodeJS  </td>
+<td> Tracker </td>
+<td> Schema   | MongoDB </td>
+</tr>
+<tr>
+<td> Big Data </td>
+<td> Spark   </td>
+<td> Shark   </td>
+<td> GridGain </td>
+</tr>
+<tr>
+<td> Conduct  </td>
+<td> Compose </td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+
+<h1>Muse</h1>
+
+<table>
+<thead>
+<tr>
+<th>       </th>
+<th> Embrace   </th>
+<th> Innovate   </th>
+<th> Encourage </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> Learn </td>
+<td> Collabate </td>
+<td> Expertise  </td>
+<td> Discover  </td>
+</tr>
+<tr>
+<td> Do    </td>
+<td> Adapt     </td>
+<td> Make       </td>
+<td> Benefit   </td>
+</tr>
+<tr>
+<td> Share </td>
+<td> Change    </td>
+<td> Facilitate </td>
+<td> Govern    </td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td> Orchestral </td>
+<td> Conduct </td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+</body>
+</html>

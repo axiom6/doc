@@ -1,0 +1,27 @@
+
+include::../../../dir/inc/DefPractice.adoc[]
+
+==  [.black]#My Story#
+
+=== [.black]#Calvert Hall#
+
+Growing up in Baltimore Maryland I was fortunate to attend Calvert Hall College High School from 1967 to 1971.
+We had the best class schedule were structured weekly with two lectures and two seminars.
+
+
+Calvert Hall College High School is a private Catholic college preparatory high school for boys, located in Baltimore, Maryland.
+Our mission is to foster Men of intellect, Men of faith, and Men of integrity in the Lasallian tradition.
+
+=== [.black]#Arapaho Community College#
+
+At Arapaho Community College I taught math in the Math Lab to students in a individual setting
+
+=== [.black]#Branch of Global Seismology#
+
+=== [.black]#Petroleum Information and the USGS#
+
+=== [.black]#Criterion#
+
+=== [.black]#The Williams Communications Planning Group#
+
+=== [.black]#Axiom Architectures#

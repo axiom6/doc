@@ -1,0 +1,62 @@
+include::../../../dir/inc/DefPractice.adoc[]
+
+==  [.black]#Do#
+
+=== [.black]#Main Points: x#
+
+[horizontal]
+Status::       x
+Feature::      x
+Component::    x
+Acceptance::   x
+Architecture:: x
+Engineering::  x
+Construction:: x
+Quantify::     x
+Risk::         x
+Pattern::      x
+Review::       x
+
+<<<
+=== [.black]#Practices#
+
+image::humanistic/Do.png[alt="Do",align="center"]
+
+<<<
+=== [.black]#What Makes Do Work#
+
+[horizontal]
+Status::       x
+Feature::      x
+Component::    x
+Acceptance::   x
+Architecture:: x
+Engineering::  x
+Construction:: x
+Quantify::     x
+Risk::         x
+Pattern::      x
+Review::       x
+
+=== [.black]#Summary#
+
+==== [.black]#Adapt#
+[horizontal]
+Status::       x
+Feature::      x
+Component::    x
+Acceptance::   x
+
+==== [.black]#Technology#
+[horizontal]
+Architecture:: x
+Engineering::  x
+Construction:: x
+
+==== [.black]#Benefit#
+[horizontal]
+Quantify::     x
+Risk::         x
+Pattern::      x
+Review::       x
+

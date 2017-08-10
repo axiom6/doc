@@ -1,0 +1,23 @@
+
+//:stem:
+//:source-highlighter: highlight.js
+:author: Tom Flaherty
+//:revnumber: 0.0
+//:revdate:   June 27, 2017
+:doctype: book
+:toc: left
+:toclevels: 3
+:icons:
+:lang: en
+:language: javascript
+:icons: font
+:icon-set: fa
+:imagesdir:     ./img
+:iconsdir:      ../../dir/ico
+:stylesdir:     ../../dir/css
+:scriptsdir:    ../../dir/js
+:pdf-stylesdir: ../../dir/yml
+:pdf-style: default-theme.yml
+:stylesheet: axbook.css
+:dirs: true
+// :pdf-fontssdir: ./dir/font

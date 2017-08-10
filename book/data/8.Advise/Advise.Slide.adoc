@@ -1,0 +1,18 @@
+
+include::../../../dir/inc/DefPractice.adoc[]
+
+== [.black]#Advise#
+
+image::advise/Advise.png[alt="Advise",align="center"]
+
+== [.black]#Advise.#
+
+Working together.
+
+[horizontal]
+Reinforce:: x
+Optimize::  x
+Simulate::  x
+Feedback::  x
+Foresight:: x
+Augment::   x

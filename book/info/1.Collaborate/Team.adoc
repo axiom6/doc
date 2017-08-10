@@ -1,0 +1,35 @@
+
+include::../../../dir/inc/DefStudy.adoc[]
+
+''''
+=== [.black]#Team#
+
+[horizontal]
+Diversity::  Make it define us: gender, ethnic, cultural, languages.
+Creativity:: Let’s take full advantage of our amazing creative tradition.
+Efficiency:: Transform a necessary trait into a competitive advantage.
+Knowledge::  Science, underestimated and underutilized in tech.
+Leadership:: Who understands talent & helps develop people’s potential.
+
+
+=== [.black]#Quotes#
+
+* “Collaboration has no hierarchy. The Sun collaborates with soil to bring flowers on the earth.” – Amit Ray
+
+* “If everyone is moving forward together, then success takes care of itself.” – Henry Ford
+
+* “If I have seen further, it is by standing on the shoulders of giants.” – Isaac Newton
+
+* “No one can whistle a symphony. It takes a whole orchestra to play it.” – H.E. Luccock
+
+* “No matter what accomplishments you make, somebody helped you.” – Althea Gibson
+
+* "The lightning spark of thought generated in the solitary mind awakens its likeness in another mind." – Thomas Carlyle
+
+* "Individual commitment to a group effort – that is what makes a team work, a company work, a society work, a civilisation work." – Vince Lombardi
+
+* "It takes two flints to make a fire." – Louisa May Alcott
+
+* “Many ideas grow better when transplanted into another mind than the one where they sprang up” – Oliver Wendell Holmes
+
+* “No matter how brilliant your mind or strategy, if you’re playing a solo game, you’ll always lose out to a team.” - Reid Hoffman

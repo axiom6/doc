@@ -1,0 +1,16 @@
+
+include::../../../../dir/inc/DefStudy.adoc[]
+
+* Boosting is one of the most powerful learning ideas introduced in the last twenty years.
+* It was originally designed for classification problems, but it can profitably be extended to regression as well.
+* The motivation for boosting was a procedure that combines the outputs of many “weak” classifiers to produce a powerful “committee.”
+
+image::predict/ADA.Boost.jpg[alt="ADA.Boost",align="center"]
+
+////
+[cols="5*"]
+|====
+| *Strengths* | x | x | x | x
+| *Use For*   | x | x | x | x
+|====
+////

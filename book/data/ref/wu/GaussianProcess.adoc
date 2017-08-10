@@ -1,0 +1,64 @@
+
+include::../../dir/inc/DefStudy.adoc[]
+
+=== [.black]#Topic#
+
+* One
+* Two
+
+image::distill/LogisticRegress.png[alt="LogisticRegress",align="center"]
+
+////
+==== [.black]#Mathematics#
+
+asciimath:[J = \sum _(j=1)^K \sum_(n \subset S_j) \abs{x_n-mu_j}^2]
+
+Where:
+[horizontal]
+x~n~:: Vector for nth data point.
+S~j~:: Data points.
+u~j~:: Geometric centroid for each S~j~.
+J:: Cluster
+K:: Number of clusters
+
+////
+
+==== [.black]#Advantages of Topic#
+
+* One
+* Two
+
+==== [.black]#Benefits#
+
+* One
+* Two
+
+==== [.black]#Drawbacks#
+
+* One
+* Two
+
+==== [.black]#Getting Started#
+
+* One
+* Two
+
+==== [.black]#Proving Results#
+
+* One
+* Two
+
+==== [.black]#Applications#
+
+* One
+* Two
+
+==== [.black]#Tools#
+[cols="4*", options="header"]
+|===
+^| Platform       ^| Package     ^| Class             ^| Link
+.2+.^|Apache Spark | ML           | Topic | link:Topic[Topic]
+                   | MLib         | Topic | link:Topic[Topic]
+| Python           | SciKitLearn  | Topic | link:Topic[Topic]
+|R                 | stats        | stats              | link:stats[stats]
+|===

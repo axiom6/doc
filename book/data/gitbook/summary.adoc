@@ -1,0 +1,54 @@
+= Summary
+
+* link:1.Concepts/Concepts.adoc[Concepts]
+
+* link:2.Acquire/Acquire.adoc[Acquire]
+  ** link:2.Acquire/A.Collect.adoc[Collect]
+  ** link:2.Acquire/B.Refine.adoc[Refine]
+  ** link:2.Acquire/C.Schema.adoc[Schema]
+  ** link:2.Acquire/D.Prepare.adoc[Prepare]
+  ** link:2.Acquire/E.Statistics.adoc[Statistics]
+
+* link:3.Describe/Describe.adoc[Describe]
+  ** link:3.Describe/A.UnSupervised/UnSupervised.adoc[UnSupervised Learning]
+  ** link:3.Describe/B.Cluster/KMeans.adoc[KMeans]
+  ** link:3.Describe/C.Dimension/Dimension.adoc[Dimension]
+     *** link:3.Describe/C.Dimension/Apriori.adoc[Apriori]
+     *** link:3.Describe/C.Dimension/Principle.adoc[Principle Components]
+     *** link:3.Describe/C.Dimension/Discriminant.adoc[Discriminant Analysis]
+  ** link:3.Describe/D.Metadata/Metadata.adoc[Metadata]
+  ** link:3.Describe/E.Report/Report.adoc[Report]
+  ** link:3.Describe/F.Profile/Profile.adoc[Profile]
+
+* link:4.Distill/Distill.adoc[Distill]
+  ** link:4.Distill/A.SemiSupervised/SemiSupervised.adoc[SemiSupervised Learning]
+  ** link:4.Distill/B.Regress/Regress.adoc[Linear Regression]
+     *** link:4.Distill/B.Regress/LinearRegress.adoc[Linear Regression]
+  ** link:4.Distill/C.Model/Model.adoc[Model]
+  ** link:4.Distill/D.Pattern/Pattern.adoc[Pattern]
+  ** link:4.Distill/E.Reveal/Reveal.adoc[Reveal]
+  ** link:4.Distill/F.Recommend/Recommend.adoc[Recommend]
+  
+* link:5.Predict/Predict.adoc[Predict]
+  ** link:5.Predict/A.Supervised/Supervised.adoc[Supervised Learning]
+  ** link:5.Predict/B.Classify/Classify.adoc[Classify]
+     *** link:5.Predict/B.Classify/NaiveBayes.adoc[Naive Bayes]
+     *** link:5.Predict/B.Classify/SupportVector.adoc[Support Vector]
+  ** link:5.Predict/C.Arrange/Arrange.adoc[Arrange]
+     *** link:5.Predict/C.Arrange/DecisionTree.adoc[Decision Tree]
+     *** link:5.Predict/C.Arrange/RandomForest.adoc[Random Forest]
+  ** link:5.Predict/D.Confidence/Confidence.adoc[Confidence]
+  ** link:5.Predict/E.Perceive/Perceive.adoc[Perceive]
+  ** link:5.Predict/F.Forecast/Forecast.adoc[Forecast]
+  
+* link:6.Advise/Advise.adoc[Advise]
+  ** link:6.Advise/A.Reinforce/Reinforce.adoc[Reinforce Learning]
+  ** link:6.Advise/B.Optimize/Optimize.adoc[Optimize]
+  ** link:6.Advise/C.Simulate/Simulate.adoc[Simulate]
+  ** link:6.Advise/D.Feedback/Feedback.adoc[Feedback]
+  ** link:6.Advise/E.Insight/Insight.adoc[Insight]
+  ** link:6.Advise/F.Augment/Augment.adoc[Augment]
+
+
+
+

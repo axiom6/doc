@@ -1,0 +1,25 @@
+
+include::../../../../dir/inc/DefStudy.adoc[]
+
+''''
+<<<<
+
+=== [.black]#MeanShift#
+
+* Discover blobs in a smooth density of samples. It is a centroid based algorithm, which works by updating candidates for centroids to be the mean of the points within a given region. These candidates are then filtered in a post-processing stage to eliminate near-duplicates to form the final set of centroids.
+
+* Given a candidate centroid x_i for iteration t, the candidate is updated according to the following equation:
+
+// latexmath:[ x_i^{t+1} = x_i^t + m(x_i^t) ]
+
+// * Where N(x_i) is the neighborhood of samples within a given distance around x_i and m is the mean shift vector that is computed for each centroid that points towards a region of the maximum increase in the density of points. This is computed using the following equation, effectively updating a centroid to be the mean of the samples within its neighborhood:
+
+// latexmath:[ m(x_i) = \frac{\sum_{x_j \in N(x_i)}K(x_j - x_i)x_j}{\sum_{x_j \in N(x_i)}K(x_j - x_i)} ]
+
+* The algorithm automatically sets the number of clusters, instead of relying on a parameter bandwidth, which dictates the size of the region to search through. This parameter can be set manually, but can be estimated using the provided estimate_bandwidth function, which is called if the bandwidth is not set.
+
+* The algorithm is not highly scalable, as it requires multiple nearest neighbor searches during the execution of the algorithm. The algorithm is guaranteed to converge, however the algorithm will stop iterating when the change in centroids is small.
+
+* Labelling a new sample is performed by finding the nearest centroid for a given sample.
+
+image::describe/MeanShift.png[alt="MeanShift",align="center"]

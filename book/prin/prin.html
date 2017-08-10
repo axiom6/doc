@@ -1,0 +1,1879 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Asciidoctor 1.5.5">
+<meta name="author" content="Tom Flaherty">
+<title>Principles of Programming Languages</title>
+<link rel="stylesheet" href="../../dir/css/axbook.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+</head>
+<body class="book toc2 toc-left">
+<div id="header">
+<h1>Principles of Programming Languages</h1>
+<div class="details">
+<span id="author" class="author">Tom Flaherty</span><br>
+<span id="revnumber">version 0.0,</span>
+<span id="revdate">November 9, 2016</span>
+</div>
+<div id="toc" class="toc2">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#__span_class_black_introduction_span"><span class="black">Introduction</span></a>
+<ul class="sectlevel2">
+<li><a href="#__span_class_black_organization_span"><span class="black">Organization</span></a></li>
+<li><a href="#__span_class_black_guilding_principles_span"><span class="black">Guilding Principles</span></a></li>
+<li><a href="#__span_class_black_selecting_a_language_span"><span class="black">Selecting a Language</span></a></li>
+</ul>
+</li>
+<li><a href="#__span_class_black_concepts_span"><span class="black">Concepts</span></a>
+<ul class="sectlevel2">
+<li><a href="#__span_class_black_paradigm_span"><span class="black">Paradigm</span></a>
+<ul class="sectlevel3">
+<li><a href="#__span_class_black_what_is_a_paradigm_span"><span class="black">What is a Paradigm?</span></a></li>
+<li><a href="#__span_class_black_paradigm_shifts_span"><span class="black">Paradigm shifts</span></a></li>
+<li><a href="#__span_class_black_multiple_paradigms_span"><span class="black">Multiple Paradigms</span></a></li>
+</ul>
+</li>
+<li><a href="#__span_class_black_principles_span"><span class="black">Principles</span></a>
+<ul class="sectlevel3">
+<li><a href="#__span_class_black_what_is_a_principle_span"><span class="black">What is a Principle?</span></a></li>
+<li><a href="#__span_class_black_evolution_of_principles_span"><span class="black">Evolution of Principles</span></a></li>
+<li><a href="#__span_class_black_core_concepts_span"><span class="black">Core Concepts</span></a></li>
+</ul>
+</li>
+<li><a href="#__span_class_black_languages_span"><span class="black">Languages</span></a>
+<ul class="sectlevel3">
+<li><a href="#__span_class_black_productivity_span"><span class="black">Productivity</span></a></li>
+<li><a href="#__span_class_black_intrinsic_span"><span class="black">Intrinsic</span></a></li>
+<li><a href="#__span_class_black_tracing_principles_span"><span class="black">Tracing Principles</span></a></li>
+</ul>
+</li>
+<li><a href="#__span_class_black_applications_span"><span class="black">Applications</span></a>
+<ul class="sectlevel3">
+<li><a href="#__span_class_black_what_is_illustrated_span"><span class="black">What is Illustrated</span></a></li>
+<li><a href="#__span_class_black_language_strength_span"><span class="black">Language Strength</span></a></li>
+<li><a href="#__span_class_black_polyglot_span"><span class="black">Polyglot</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#__span_class_black_composition_span"><span class="black">Composition</span></a>
+<ul class="sectlevel2">
+<li><a href="#__span_class_black_classes_span"><span class="black">Classes</span></a>
+<ul class="sectlevel3">
+<li><a href="#__span_class_black_classification_span"><span class="black">Classification</span></a></li>
+<li><a href="#__span_class_black_don_t_repeat_yourself_span"><span class="black">Don&#8217;t Repeat Yourself</span></a></li>
+<li><a href="#__span_class_black_uniform_hierarchies_span"><span class="black">Uniform Hierarchies</span></a></li>
+<li><a href="#__span_class_black_mixins_span"><span class="black">Mixins</span></a></li>
+</ul>
+</li>
+<li><a href="#__span_class_black_typing_span"><span class="black">Typing</span></a>
+<ul class="sectlevel3">
+<li><a href="#__span_class_black_static_span"><span class="black">Static</span></a></li>
+<li><a href="#__span_class_black_dynamic_span"><span class="black">Dynamic</span></a></li>
+<li><a href="#__span_class_black_specialized_span"><span class="black">Specialized</span></a></li>
+<li><a href="#__span_class_black_inferred_span"><span class="black">Inferred</span></a></li>
+<li><a href="#__span_class_black_generic_span"><span class="black">Generic</span></a></li>
+<li><a href="#__span_class_black_type_classes_span"><span class="black">Type classes</span></a></li>
+</ul>
+</li>
+<li><a href="#__span_class_black_meta_programming_span"><span class="black">Meta Programming</span></a>
+<ul class="sectlevel3">
+<li><a href="#__span_class_black_modifying_structure_span"><span class="black">Modifying Structure</span></a></li>
+<li><a href="#__span_class_black_interceding_behavior_span"><span class="black">Interceding Behavior</span></a></li>
+<li><a href="#__span_class_black_macros_at_compile_time_span"><span class="black">Macros at Compile Time</span></a></li>
+</ul>
+</li>
+<li><a href="#__span_class_black_construction_span"><span class="black">Construction</span></a>
+<ul class="sectlevel3">
+<li><a href="#__span_class_black_factories_span"><span class="black">Factories</span></a></li>
+<li><a href="#__span_class_black_builders_span"><span class="black">Builders</span></a></li>
+<li><a href="#__span_class_black_reflection_span"><span class="black">Reflection</span></a></li>
+<li><a href="#__span_class_black_cloning_with_prototypes_span"><span class="black">Cloning with Prototypes</span></a></li>
+</ul>
+</li>
+<li><a href="#__span_class_black_dependency_injection_span"><span class="black">Dependency Injection</span></a>
+<ul class="sectlevel3">
+<li><a href="#__span_class_black_runtime_construction_span"><span class="black">Runtime Construction</span></a></li>
+<li><a href="#__span_class_black_interface_injection_span"><span class="black">Interface Injection</span></a></li>
+</ul>
+</li>
+<li><a href="#__span_class_black_summary_span"><span class="black">Summary</span></a></li>
+<li><a href="#__span_class_black_references_span"><span class="black">References</span></a></li>
+</ul>
+</li>
+<li><a href="#__span_class_black_orchestration_span"><span class="black">Orchestration</span></a>
+<ul class="sectlevel2">
+<li><a href="#__span_class_black_polymorphic_span"><span class="black">Polymorphic</span></a>
+<ul class="sectlevel3">
+<li><a href="#__span_class_black_universal_span"><span class="black">Universal</span></a></li>
+<li><a href="#__span_class_black_ad_hoc_span"><span class="black">Ad Hoc</span></a></li>
+</ul>
+</li>
+<li><a href="#__span_class_black_behavior_span"><span class="black">Behavior</span></a>
+<ul class="sectlevel3">
+<li><a href="#__span_class_black_association_span"><span class="black">Association</span></a></li>
+<li><a href="#__span_class_black_scenarios_span"><span class="black">Scenarios</span></a></li>
+<li><a href="#__span_class_black_design_by_contract_span"><span class="black">Design by Contract</span></a></li>
+<li><a href="#__span_class_black_pre_and_post_conditions_span"><span class="black">Pre and Post Conditions</span></a></li>
+</ul>
+</li>
+<li><a href="#__span_class_black_distributed_span"><span class="black">Distributed</span></a>
+<ul class="sectlevel3">
+<li><a href="#__span_class_black_resource_span"><span class="black">Resource</span></a></li>
+<li><a href="#__span_class_black_rest_span"><span class="black">REST</span></a></li>
+<li><a href="#__span_class_black_the_tier_context_span"><span class="black">The Tier Context</span></a></li>
+<li><a href="#__span_class_black_messaging_span"><span class="black">Messaging</span></a></li>
+</ul>
+</li>
+<li><a href="#__span_class_black_parallelism_span"><span class="black">Parallelism</span></a>
+<ul class="sectlevel3">
+<li><a href="#__span_class_black_concurrency_span"><span class="black">Concurrency</span></a></li>
+<li><a href="#__span_class_black_functional_concurrency_span"><span class="black">Functional Concurrency</span></a></li>
+<li><a href="#__span_class_black_dependencies_span"><span class="black">Dependencies</span></a></li>
+</ul>
+</li>
+<li><a href="#__span_class_black_summary_span_2"><span class="black">Summary</span></a></li>
+<li><a href="#__span_class_black_references_span_2"><span class="black">References</span></a></li>
+</ul>
+</li>
+<li><a href="#__span_class_black_preservation_span"><span class="black">Preservation</span></a>
+<ul class="sectlevel2">
+<li><a href="#__span_class_black_scope_span"><span class="black">Scope</span></a>
+<ul class="sectlevel3">
+<li><a href="#__span_class_black_lexical_span"><span class="black">Lexical</span></a></li>
+<li><a href="#__span_class_black_libraries_span"><span class="black">Libraries</span></a></li>
+<li><a href="#__span_class_black_packaging_span"><span class="black">Packaging</span></a></li>
+</ul>
+</li>
+<li><a href="#__span_class_black_build_span"><span class="black">Build</span></a></li>
+<li><a href="#__span_class_black_state_span"><span class="black">State</span></a>
+<ul class="sectlevel3">
+<li><a href="#__span_class_black_fallacies_span"><span class="black">Fallacies</span></a></li>
+<li><a href="#__span_class_black_continuations_span"><span class="black">Continuations</span></a></li>
+</ul>
+</li>
+<li><a href="#__span_class_black_test_harness_span"><span class="black">Test Harness</span></a>
+<ul class="sectlevel3">
+<li><a href="#__span_class_black_isolating_components_span"><span class="black">Isolating Components</span></a></li>
+<li><a href="#__span_class_black_enabling_diagnostics_span"><span class="black">Enabling Diagnostics</span></a></li>
+<li><a href="#__span_class_black_debugging_span"><span class="black">Debugging</span></a></li>
+<li><a href="#__span_class_black_test_granularity_span"><span class="black">Test Granularity</span></a></li>
+<li><a href="#__span_class_black_test_provisioning_span"><span class="black">Test Provisioning</span></a></li>
+</ul>
+</li>
+<li><a href="#__span_class_black_defense_in_depth_span"><span class="black">Defense In Depth</span></a>
+<ul class="sectlevel3">
+<li><a href="#__span_class_black_detecting_incidents_span"><span class="black">Detecting Incidents</span></a></li>
+<li><a href="#__span_class_black_failing_fast_span"><span class="black">Failing Fast</span></a></li>
+<li><a href="#__span_class_black_containment_span"><span class="black">Containment</span></a></li>
+</ul>
+</li>
+<li><a href="#__span_class_black_summary_span_3"><span class="black">Summary</span></a></li>
+<li><a href="#__span_class_black_references_span_3"><span class="black">References</span></a></li>
+</ul>
+</li>
+<li><a href="#__span_class_black_transformation_span"><span class="black">Transformation</span></a>
+<ul class="sectlevel2">
+<li><a href="#__span_class_black_representation_span"><span class="black">Representation</span></a>
+<ul class="sectlevel3">
+<li><a href="#__span_class_black_function_shaping_span"><span class="black">Function Shaping</span></a></li>
+<li><a href="#__span_class_black_wrapping_unwrapping_span"><span class="black">Wrapping Unwrapping</span></a></li>
+<li><a href="#__span_class_black_semantic_consistency_span"><span class="black">Semantic Consistency</span></a></li>
+<li><a href="#__span_class_black_emphemeral_mistakes_span"><span class="black">Emphemeral Mistakes</span></a></li>
+<li><a href="#__span_class_black_data_driven_apis_span"><span class="black">Data Driven APIs</span></a></li>
+<li><a href="#__span_class_black_transformation_preferred_span"><span class="black">Transformation Preferred</span></a></li>
+<li><a href="#__span_class_black_multiple_futures_span"><span class="black">Multiple Futures</span></a></li>
+</ul>
+</li>
+<li><a href="#__span_class_black_pattern_matching_span"><span class="black">Pattern Matching</span></a>
+<ul class="sectlevel3">
+<li><a href="#__span_class_black_traversal_span"><span class="black">Traversal</span></a></li>
+<li><a href="#__span_class_black_sequential_span"><span class="black">Sequential</span></a></li>
+<li><a href="#__span_class_black_recursive_span"><span class="black">Recursive</span></a></li>
+<li><a href="#__span_class_black_heuristics_span"><span class="black">Heuristics</span></a></li>
+</ul>
+</li>
+<li><a href="#__span_class_black_higher_orders_span"><span class="black">Higher Orders</span></a>
+<ul class="sectlevel3">
+<li><a href="#__span_class_black_closures_span"><span class="black">Closures</span></a></li>
+<li><a href="#__span_class_black_currying_span"><span class="black">Currying</span></a></li>
+<li><a href="#__span_class_black_partial_functions_span"><span class="black">Partial Functions</span></a></li>
+<li><a href="#__span_class_black_laziness_span"><span class="black">Laziness</span></a></li>
+</ul>
+</li>
+<li><a href="#__span_class_black_monads_span"><span class="black">Monads</span></a>
+<ul class="sectlevel3">
+<li><a href="#__span_class_black_category_theory_span"><span class="black">Category Theory</span></a></li>
+<li><a href="#__span_class_black_shape_wrap_and_roll_span"><span class="black">Shape Wrap and Roll</span></a></li>
+<li><a href="#__span_class_black_duality_span"><span class="black">Duality</span></a></li>
+<li><a href="#__span_class_black_unification_span"><span class="black">Unification</span></a></li>
+</ul>
+</li>
+<li><a href="#__span_class_black_reactivex_span"><span class="black">ReactiveX</span></a>
+<ul class="sectlevel3">
+<li><a href="#__span_class_black_observer_patterh_span"><span class="black">Observer Patterh</span></a></li>
+<li><a href="#__span_class_black_create_span"><span class="black">Create</span></a></li>
+<li><a href="#__span_class_black_combine_span"><span class="black">Combine</span></a></li>
+<li><a href="#__span_class_black_listen_span"><span class="black">Listen</span></a></li>
+</ul>
+</li>
+<li><a href="#__span_class_black_summary_span_4"><span class="black">Summary</span></a></li>
+<li><a href="#__span_class_black_references_span_4"><span class="black">References</span></a></li>
+</ul>
+</li>
+<li><a href="#__span_class_black_expression_span"><span class="black">Expression</span></a>
+<ul class="sectlevel2">
+<li><a href="#__span_class_black_convention_span"><span class="black">Convention</span></a>
+<ul class="sectlevel3">
+<li><a href="#__span_class_black_regularity_span"><span class="black">Regularity</span></a></li>
+<li><a href="#__span_class_black_naming_conventions_span"><span class="black">Naming Conventions</span></a></li>
+</ul>
+</li>
+<li><a href="#__span_class_black_interpretation_span"><span class="black">Interpretation</span></a>
+<ul class="sectlevel3">
+<li><a href="#__span_class_black_evaluation_span"><span class="black">Evaluation</span></a></li>
+<li><a href="#__span_class_black_dsl_span"><span class="black">DSL</span></a></li>
+</ul>
+</li>
+<li><a href="#__span_class_black_continuity_span"><span class="black">Continuity</span></a>
+<ul class="sectlevel3">
+<li><a href="#__span_class_black_wholeness_span"><span class="black">Wholeness</span></a></li>
+<li><a href="#__span_class_black_transparency_span"><span class="black">Transparency</span></a></li>
+<li><a href="#__span_class_black_declarative_span"><span class="black">Declarative</span></a></li>
+<li><a href="#__span_class_black_impediance_mismatch_span"><span class="black">Impediance Mismatch</span></a></li>
+</ul>
+</li>
+<li><a href="#__span_class_black_adaptation_span"><span class="black">Adaptation</span></a>
+<ul class="sectlevel3">
+<li><a href="#__span_class_black_hot_spots_span"><span class="black">Hot Spots</span></a></li>
+<li><a href="#__span_class_black_indirection_span"><span class="black">Indirection</span></a></li>
+<li><a href="#__span_class_black_decoupling_span"><span class="black">Decoupling</span></a></li>
+<li><a href="#__span_class_black_refactoring_span"><span class="black">Refactoring</span></a></li>
+</ul>
+</li>
+<li><a href="#__span_class_black_comprehension_span"><span class="black">Comprehension</span></a>
+<ul class="sectlevel3">
+<li><a href="#__span_class_black_simplicity_span"><span class="black">Simplicity</span></a></li>
+<li><a href="#__span_class_black_communication_span"><span class="black">Communication</span></a></li>
+<li><a href="#__span_class_black_git_span"><span class="black">Git</span></a></li>
+<li><a href="#__span_class_black_code_documentation_span"><span class="black">Code Documentation</span></a></li>
+</ul>
+</li>
+<li><a href="#__span_class_black_reactivex_span_2"><span class="black">ReactiveX</span></a>
+<ul class="sectlevel3">
+<li><a href="#__span_class_black_better_code_bases_span"><span class="black">Better Code Bases</span></a></li>
+<li><a href="#__span_class_black_functional_span"><span class="black">Functional</span></a></li>
+<li><a href="#__span_class_black_reactive_operators_span"><span class="black">Reactive Operators</span></a></li>
+<li><a href="#__span_class_black_async_span"><span class="black">Async</span></a></li>
+<li><a href="#__span_class_black_concurrency_span_2"><span class="black">Concurrency</span></a></li>
+</ul>
+</li>
+<li><a href="#__span_class_black_summary_span_5"><span class="black">Summary</span></a></li>
+<li><a href="#__span_class_black_references_span_5"><span class="black">References</span></a></li>
+</ul>
+</li>
+<li><a href="#__span_class_black_a_tour_of_groovy_span"><span class="black">A tour of Groovy</span></a>
+<ul class="sectlevel2">
+<li><a href="#__span_class_black_expressive_syntax_span"><span class="black">Expressive Syntax</span></a></li>
+<li><a href="#__span_class_black_command_line_span"><span class="black">Command line</span></a></li>
+<li><a href="#__span_class_black_parsing_xml_span"><span class="black">Parsing XML</span></a></li>
+</ul>
+</li>
+<li><a href="#__span_class_black_meta_object_protocol_span"><span class="black">Meta Object Protocol</span></a>
+<ul class="sectlevel2">
+<li><a href="#__span_class_black_meta_class_span"><span class="black">Meta Class</span></a></li>
+<li><a href="#__span_class_black_expanding_and_invoking_span"><span class="black">Expanding and Invoking</span></a></li>
+<li><a href="#__span_class_black_capabilities_span"><span class="black">Capabilities</span></a></li>
+</ul>
+</li>
+<li><a href="#__span_class_black_multi_paradigm_span"><span class="black">Multi-paradigm</span></a>
+<ul class="sectlevel2">
+<li><a href="#__span_class_black_object_oriented_span"><span class="black">Object Oriented</span></a></li>
+<li><a href="#__span_class_black_dynamic_span_2"><span class="black">Dynamic</span></a></li>
+<li><a href="#__span_class_black_closures_span_2"><span class="black">Closures</span></a></li>
+</ul>
+</li>
+<li><a href="#__span_class_black_principles_in_groovy_span"><span class="black">Principles in Groovy</span></a>
+<ul class="sectlevel2">
+<li><a href="#__span_class_black_composition_span_2"><span class="black">Composition</span></a></li>
+<li><a href="#__span_class_black_orchestration_span_2"><span class="black">Orchestration</span></a></li>
+<li><a href="#__span_class_black_preservation_span_2"><span class="black">Preservation</span></a></li>
+<li><a href="#__span_class_black_transformation_span_2"><span class="black">Transformation</span></a></li>
+<li><a href="#__span_class_black_expression_span_2"><span class="black">Expression</span></a></li>
+</ul>
+</li>
+<li><a href="#__span_class_black_grails_and_ola_s_pyramid_span"><span class="black">Grails and Ola&#8217;s Pyramid</span></a>
+<ul class="sectlevel2">
+<li><a href="#__span_class_black_grails_architecture_span"><span class="black">Grails Architecture</span></a></li>
+<li><a href="#__span_class_black_ola_s_pyramid_layers_span"><span class="black">Ola&#8217;s Pyramid Layers</span></a></li>
+<li><a href="#__span_class_black_plugins_for_propagation_span"><span class="black">Plugins for Propagation</span></a></li>
+<li><a href="#__span_class_black_rest_with_grails_span"><span class="black">REST with Grails</span></a></li>
+<li><a href="#__span_class_black_principles_in_grails_span"><span class="black">Principles in Grails</span></a></li>
+</ul>
+</li>
+<li><a href="#__span_class_black_summary_span_6"><span class="black">Summary</span></a></li>
+<li><a href="#__span_class_black_references_span_6"><span class="black">References</span></a></li>
+<li><a href="#__span_class_black_a_tour_of_clojure_span"><span class="black">A Tour of Clojure</span></a>
+<ul class="sectlevel2">
+<li><a href="#__span_class_black_lisp_revitalized_span"><span class="black">Lisp Revitalized</span></a></li>
+<li><a href="#__span_class_black_jvm_influence_span"><span class="black">JVM Influence</span></a></li>
+<li><a href="#__span_class_black_software_transactions_span"><span class="black">Software Transactions</span></a></li>
+</ul>
+</li>
+<li><a href="#__span_class_black_polymorphism_span"><span class="black">Polymorphism</span></a>
+<ul class="sectlevel2">
+<li><a href="#__span_class_black_multi_methods_span"><span class="black">Multi-Methods</span></a></li>
+<li><a href="#__span_class_black_macros_span"><span class="black">Macros</span></a></li>
+</ul>
+</li>
+<li><a href="#__span_class_black_principles_in_clojure_span"><span class="black">Principles in Clojure</span></a>
+<ul class="sectlevel2">
+<li><a href="#__span_class_black_composition_span_3"><span class="black">Composition</span></a></li>
+<li><a href="#__span_class_black_orchestration_span_3"><span class="black">Orchestration</span></a></li>
+<li><a href="#__span_class_black_preservation_span_3"><span class="black">Preservation</span></a></li>
+<li><a href="#__span_class_black_transformation_span_3"><span class="black">Transformation</span></a></li>
+<li><a href="#__span_class_black_expression_span_3"><span class="black">Expression</span></a></li>
+</ul>
+</li>
+<li><a href="#__span_class_black_ring_and_composure_span"><span class="black">Ring and Composure</span></a>
+<ul class="sectlevel2">
+<li><a href="#__span_class_black_http_request_response_span"><span class="black">HTTP Request Response</span></a></li>
+<li><a href="#__span_class_black_javascript_and_clojure_span"><span class="black">JavaScript and Clojure</span></a></li>
+<li><a href="#__span_class_black_html5_and_css3_span"><span class="black">HTML5 and CSS3</span></a></li>
+<li><a href="#__span_class_black_page_navigation_span"><span class="black">Page Navigation</span></a></li>
+<li><a href="#__span_class_black_data_interchange_span"><span class="black">Data Interchange</span></a></li>
+<li><a href="#__span_class_black_principles_span_2"><span class="black">Principles</span></a></li>
+</ul>
+</li>
+<li><a href="#__span_class_black_summary_span_7"><span class="black">Summary</span></a></li>
+<li><a href="#__span_class_black_references_span_7"><span class="black">References</span></a></li>
+<li><a href="#__span_class_black_a_tour_of_javascript_span"><span class="black">A Tour of JavaScript</span></a>
+<ul class="sectlevel2">
+<li><a href="#__span_class_black_javascript_revitalized_span"><span class="black">JavaScript Revitalized</span></a></li>
+<li><a href="#__span_class_black_influences_span"><span class="black">Influences</span></a></li>
+<li><a href="#__span_class_black_functional_span_2"><span class="black">Functional</span></a></li>
+</ul>
+</li>
+<li><a href="#__span_class_black_dialects_span"><span class="black">Dialects</span></a>
+<ul class="sectlevel2">
+<li><a href="#__span_class_black_coffeescript_span"><span class="black">CoffeeScript</span></a></li>
+<li><a href="#__span_class_black_ecmascript_span"><span class="black">EcmaScript</span></a></li>
+<li><a href="#__span_class_black_typescript_span"><span class="black">TypeScript</span></a></li>
+</ul>
+</li>
+<li><a href="#__span_class_black_principles_in_javascript_span"><span class="black">Principles in JavaScript</span></a>
+<ul class="sectlevel2">
+<li><a href="#__span_class_black_composition_span_4"><span class="black">Composition</span></a></li>
+<li><a href="#__span_class_black_orchestration_span_4"><span class="black">Orchestration</span></a></li>
+<li><a href="#__span_class_black_preservation_span_4"><span class="black">Preservation</span></a></li>
+<li><a href="#__span_class_black_transformation_span_4"><span class="black">Transformation</span></a></li>
+<li><a href="#__span_class_black_expression_span_4"><span class="black">Expression</span></a></li>
+</ul>
+</li>
+<li><a href="#__span_class_black_nodejs_span"><span class="black">NodeJS</span></a>
+<ul class="sectlevel2">
+<li><a href="#__span_class_black_packages_span"><span class="black">Packages</span></a></li>
+<li><a href="#__span_class_black_mean_span"><span class="black">MEAN</span></a></li>
+<li><a href="#__span_class_black_electron_span"><span class="black">Electron</span></a></li>
+</ul>
+</li>
+<li><a href="#__span_class_black_summary_span_8"><span class="black">Summary</span></a></li>
+<li><a href="#__span_class_black_references_span_8"><span class="black">References</span></a></li>
+<li><a href="#__span_class_black_a_tour_of_scala_span"><span class="black">A Tour of Scala</span></a>
+<ul class="sectlevel2">
+<li><a href="#__span_class_black_compilation_hints_span"><span class="black">Compilation Hints</span></a></li>
+<li><a href="#__span_class_black_java_7_in_scala_span"><span class="black">Java 7 in Scala</span></a></li>
+</ul>
+</li>
+<li><a href="#__span_class_black_objected_oriented_scala_span"><span class="black">Objected Oriented Scala</span></a>
+<ul class="sectlevel2">
+<li><a href="#__span_class_black_uniform_class_hierarchy_span"><span class="black">Uniform Class Hierarchy</span></a></li>
+</ul>
+</li>
+<li><a href="#__span_class_black_typing_span_2"><span class="black">Typing</span></a>
+<ul class="sectlevel2">
+<li><a href="#__span_class_black_type_inference_span"><span class="black">Type Inference</span></a></li>
+<li><a href="#__span_class_black_type_classes_span_2"><span class="black">Type Classes</span></a></li>
+<li><a href="#__span_class_black_generics_span"><span class="black">Generics</span></a>
+<ul class="sectlevel3">
+<li><a href="#__span_class_black_types_to_the_next_level_span"><span class="black">Types to the Next Level</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#__span_class_black_traits_span"><span class="black">Traits</span></a>
+<ul class="sectlevel2">
+<li><a href="#__span_class_black_emergence_of_traits_span"><span class="black">Emergence of Traits</span></a>
+<ul class="sectlevel3">
+<li><a href="#__span_class_black_pi_calculus_span"><span class="black">PI Calculus</span></a></li>
+<li><a href="#__span_class_black_liskov_substitution_span"><span class="black">Liskov Substitution</span></a></li>
+</ul>
+</li>
+<li><a href="#__span_class_black_thick_and_thin_span"><span class="black">Thick and Thin</span></a></li>
+<li><a href="#__span_class_black_self_type_span"><span class="black">Self Type</span></a></li>
+<li><a href="#__span_class_black_interface_injection_span_2"><span class="black">Interface Injection</span></a></li>
+<li><a href="#__span_class_black_stackable_modifications_span"><span class="black">Stackable Modifications</span></a></li>
+</ul>
+</li>
+<li><a href="#__span_class_black_post_functional_scala_span"><span class="black">Post Functional Scala</span></a>
+<ul class="sectlevel2">
+<li><a href="#__span_class_black_for_comprehensions_span"><span class="black">For Comprehensions</span></a></li>
+<li><a href="#__span_class_black_monads_span_2"><span class="black">Monads</span></a>
+<ul class="sectlevel3">
+<li><a href="#__span_class_black_composability_span"><span class="black">Composability</span></a></li>
+<li><a href="#__span_class_black_shape_wrap_and_poll_span"><span class="black">Shape Wrap and Poll</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#__span_class_black_dsls_span"><span class="black">DSLs</span></a>
+<ul class="sectlevel2">
+<li><a href="#__span_class_black_operators_and_implicits_span"><span class="black">Operators and Implicits</span></a></li>
+<li><a href="#__span_class_black_parsing_combinators_span"><span class="black">Parsing Combinators</span></a></li>
+<li><a href="#__span_class_black_case_classes_span"><span class="black">Case Classes</span></a></li>
+<li><a href="#__span_class_black_pattern_matching_span_2"><span class="black">Pattern Matching</span></a></li>
+</ul>
+</li>
+<li><a href="#__span_class_black_principles_in_scala_span"><span class="black">Principles in Scala</span></a>
+<ul class="sectlevel2">
+<li><a href="#__span_class_black_composition_span_5"><span class="black">Composition</span></a></li>
+<li><a href="#__span_class_black_orchestration_span_5"><span class="black">Orchestration</span></a></li>
+<li><a href="#__span_class_black_preservation_span_5"><span class="black">Preservation</span></a></li>
+<li><a href="#__span_class_black_transformation_span_5"><span class="black">Transformation</span></a></li>
+<li><a href="#__span_class_black_expression_span_5"><span class="black">Expression</span></a></li>
+</ul>
+</li>
+<li><a href="#__span_class_black_akka_span"><span class="black">Akka</span></a>
+<ul class="sectlevel2">
+<li><a href="#__span_class_black_architecture_span"><span class="black">Architecture</span></a></li>
+<li><a href="#__span_class_black_concurrency_span_3"><span class="black">Concurrency</span></a></li>
+<li><a href="#__span_class_black_persistence_span"><span class="black">Persistence</span></a></li>
+<li><a href="#__span_class_black_apache_camel_span"><span class="black">Apache Camel</span></a></li>
+<li><a href="#__span_class_black_principles_span_3"><span class="black">Principles</span></a></li>
+</ul>
+</li>
+<li><a href="#__span_class_black_summary_span_9"><span class="black">Summary</span></a></li>
+<li><a href="#__span_class_black_references_span_9"><span class="black">References</span></a></li>
+<li><a href="#__span_class_black_representation_span_2"><span class="black">Representation</span></a>
+<ul class="sectlevel2">
+<li><a href="#__span_class_black_domain_knowledge_span"><span class="black">Domain Knowledge</span></a></li>
+<li><a href="#__span_class_black_transformation_span_6"><span class="black">Transformation</span></a></li>
+<li><a href="#__span_class_black_combination_span"><span class="black">Combination</span></a></li>
+</ul>
+</li>
+<li><a href="#__span_class_black_propagation_span"><span class="black">Propagation</span></a>
+<ul class="sectlevel2">
+<li><a href="#__span_class_black_apis_span"><span class="black">APIs</span></a></li>
+<li><a href="#__span_class_black_visitation_span"><span class="black">Visitation</span></a></li>
+<li><a href="#__span_class_black_pattern_matching_span_3"><span class="black">Pattern Matching</span></a></li>
+</ul>
+</li>
+<li><a href="#__span_class_black_external_dsls_span"><span class="black">External DSLs</span></a>
+<ul class="sectlevel2">
+<li><a href="#__span_class_black_parsing_options_span"><span class="black">Parsing options</span></a></li>
+<li><a href="#__span_class_black_combinatorial_parsers_span"><span class="black">Combinatorial Parsers</span></a></li>
+<li><a href="#__span_class_black_parsers_span"><span class="black">Parsers</span></a>
+<ul class="sectlevel3">
+<li><a href="#__span_class_black_groovy_span"><span class="black">Groovy</span></a></li>
+<li><a href="#__span_class_black_clojure_span"><span class="black">Clojure</span></a></li>
+<li><a href="#__span_class_black_scala_span"><span class="black">Scala</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#__span_class_black_internal_dsls_span"><span class="black">Internal DSLs</span></a>
+<ul class="sectlevel2">
+<li><a href="#__span_class_black_arranging_syntax_span"><span class="black">Arranging Syntax</span></a></li>
+<li><a href="#__span_class_black_overloading_operators_span"><span class="black">Overloading Operators</span></a></li>
+<li><a href="#__span_class_black_implicit_type_conversion_span"><span class="black">Implicit Type Conversion</span></a></li>
+<li><a href="#__span_class_black_favorite_language_span"><span class="black">Favorite Language</span></a></li>
+</ul>
+</li>
+<li><a href="#__span_class_black_summary_span_10"><span class="black">Summary</span></a></li>
+<li><a href="#__span_class_black_references_span_10"><span class="black">References</span></a></li>
+<li><a href="#__span_class_black_picking_language_span"><span class="black">Picking Language</span></a>
+<ul class="sectlevel2">
+<li><a href="#__span_class_black_selecting_principles_span"><span class="black">Selecting Principles</span></a></li>
+<li><a href="#__span_class_black_tracing_principles_span_2"><span class="black">Tracing Principles</span></a></li>
+<li><a href="#__span_class_black_dsl_enhancements_span"><span class="black">DSL Enhancements</span></a></li>
+<li><a href="#__span_class_black_using_principles_span"><span class="black">Using Principles</span></a></li>
+</ul>
+</li>
+<li><a href="#__span_class_black_myths_span"><span class="black">Myths</span></a>
+<ul class="sectlevel2">
+<li><a href="#__span_class_black_xml_is_a_language_span"><span class="black">XML is a Language</span></a></li>
+<li><a href="#__span_class_black_encapsulating_state_span"><span class="black">Encapsulating State</span></a></li>
+<li><a href="#__span_class_black_command_and_control_span"><span class="black">Command and Control</span></a></li>
+<li><a href="#__span_class_black_single_paradigms_span"><span class="black">Single Paradigms</span></a></li>
+</ul>
+</li>
+<li><a href="#__span_class_black_human_nature_span"><span class="black">Human Nature</span></a>
+<ul class="sectlevel2">
+<li><a href="#__span_class_black_they_don_t_get_it_span"><span class="black">They don&#8217;t Get It</span></a></li>
+<li><a href="#__span_class_black_open_source_span"><span class="black">Open Source</span></a></li>
+<li><a href="#__span_class_black_dsls_for_humans_span"><span class="black">DSLs for Humans</span></a></li>
+</ul>
+</li>
+<li><a href="#__span_class_black_decision_criteria_span"><span class="black">Decision Criteria</span></a>
+<ul class="sectlevel2">
+<li><a href="#__span_class_black_discovering_principles_span"><span class="black">Discovering principles</span></a></li>
+<li><a href="#__span_class_black_paradigms_span"><span class="black">Paradigms</span></a>
+<ul class="sectlevel3">
+<li><a href="#__span_class_black_blending_span"><span class="black">Blending</span></a></li>
+<li><a href="#__span_class_black_synthesis_span"><span class="black">Synthesis</span></a></li>
+<li><a href="#__span_class_black_convergence_span"><span class="black">Convergence</span></a></li>
+</ul>
+</li>
+<li><a href="#__span_class_black_arrival_of_the_fittest_span"><span class="black">Arrival of the Fittest</span></a></li>
+</ul>
+</li>
+<li><a href="#__span_class_black_summary_references_span"><span class="black">Summary References</span></a></li>
+<li><a href="#__span_class_black_appendix_a_language_survey_span"><span class="black">Appendix A Language Survey</span></a></li>
+<li><a href="#__span_class_black_appendix_b_principles_span"><span class="black">Appendix B Principles</span></a></li>
+<li><a href="#__span_class_black_appendix_c_paradigms_span"><span class="black">Appendix C Paradigms</span></a></li>
+<li><a href="#__span_class_black_appendix_d_languages_span"><span class="black">Appendix D Languages</span></a></li>
+<li><a href="#__span_class_black_appendix_e_traceability_span"><span class="black">Appendix E Traceability</span></a></li>
+<li><a href="#__span_class_black_glossary_span"><span class="black">Glossary</span></a></li>
+<li><a href="#__span_class_black_index_span"><span class="black">Index</span></a></li>
+</ul>
+</div>
+</div>
+<div id="content">
+<div class="sect1">
+<h2 id="__span_class_black_introduction_span"><span class="black">Introduction</span></h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="__span_class_black_organization_span"><span class="black">Organization</span></h3>
+
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_guilding_principles_span"><span class="black">Guilding Principles</span></h3>
+
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_selecting_a_language_span"><span class="black">Selecting a Language</span></h3>
+
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="__span_class_black_concepts_span"><span class="black">Concepts</span></h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="__span_class_black_paradigm_span"><span class="black">Paradigm</span></h3>
+<div class="sect3">
+<h4 id="__span_class_black_what_is_a_paradigm_span"><span class="black">What is a Paradigm?</span></h4>
+
+</div>
+<div class="sect3">
+<h4 id="__span_class_black_paradigm_shifts_span"><span class="black">Paradigm shifts</span></h4>
+
+</div>
+<div class="sect3">
+<h4 id="__span_class_black_multiple_paradigms_span"><span class="black">Multiple Paradigms</span></h4>
+
+</div>
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_principles_span"><span class="black">Principles</span></h3>
+<div class="sect3">
+<h4 id="__span_class_black_what_is_a_principle_span"><span class="black">What is a Principle?</span></h4>
+
+</div>
+<div class="sect3">
+<h4 id="__span_class_black_evolution_of_principles_span"><span class="black">Evolution of Principles</span></h4>
+
+</div>
+<div class="sect3">
+<h4 id="__span_class_black_core_concepts_span"><span class="black">Core Concepts</span></h4>
+
+</div>
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_languages_span"><span class="black">Languages</span></h3>
+<div class="sect3">
+<h4 id="__span_class_black_productivity_span"><span class="black">Productivity</span></h4>
+
+</div>
+<div class="sect3">
+<h4 id="__span_class_black_intrinsic_span"><span class="black">Intrinsic</span></h4>
+
+</div>
+<div class="sect3">
+<h4 id="__span_class_black_tracing_principles_span"><span class="black">Tracing Principles</span></h4>
+
+</div>
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_applications_span"><span class="black">Applications</span></h3>
+<div class="sect3">
+<h4 id="__span_class_black_what_is_illustrated_span"><span class="black">What is Illustrated</span></h4>
+
+</div>
+<div class="sect3">
+<h4 id="__span_class_black_language_strength_span"><span class="black">Language Strength</span></h4>
+
+</div>
+<div class="sect3">
+<h4 id="__span_class_black_polyglot_span"><span class="black">Polyglot</span></h4>
+
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="__span_class_black_composition_span"><span class="black">Composition</span></h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="__span_class_black_classes_span"><span class="black">Classes</span></h3>
+<div class="sect3">
+<h4 id="__span_class_black_classification_span"><span class="black">Classification</span></h4>
+
+</div>
+<div class="sect3">
+<h4 id="__span_class_black_don_t_repeat_yourself_span"><span class="black">Don&#8217;t Repeat Yourself</span></h4>
+
+</div>
+<div class="sect3">
+<h4 id="__span_class_black_uniform_hierarchies_span"><span class="black">Uniform Hierarchies</span></h4>
+
+</div>
+<div class="sect3">
+<h4 id="__span_class_black_mixins_span"><span class="black">Mixins</span></h4>
+
+</div>
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_typing_span"><span class="black">Typing</span></h3>
+<div class="sect3">
+<h4 id="__span_class_black_static_span"><span class="black">Static</span></h4>
+
+</div>
+<div class="sect3">
+<h4 id="__span_class_black_dynamic_span"><span class="black">Dynamic</span></h4>
+
+</div>
+<div class="sect3">
+<h4 id="__span_class_black_specialized_span"><span class="black">Specialized</span></h4>
+
+</div>
+<div class="sect3">
+<h4 id="__span_class_black_inferred_span"><span class="black">Inferred</span></h4>
+
+</div>
+<div class="sect3">
+<h4 id="__span_class_black_generic_span"><span class="black">Generic</span></h4>
+
+</div>
+<div class="sect3">
+<h4 id="__span_class_black_type_classes_span"><span class="black">Type classes</span></h4>
+
+</div>
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_meta_programming_span"><span class="black">Meta Programming</span></h3>
+<div class="sect3">
+<h4 id="__span_class_black_modifying_structure_span"><span class="black">Modifying Structure</span></h4>
+
+</div>
+<div class="sect3">
+<h4 id="__span_class_black_interceding_behavior_span"><span class="black">Interceding Behavior</span></h4>
+
+</div>
+<div class="sect3">
+<h4 id="__span_class_black_macros_at_compile_time_span"><span class="black">Macros at Compile Time</span></h4>
+
+</div>
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_construction_span"><span class="black">Construction</span></h3>
+<div class="sect3">
+<h4 id="__span_class_black_factories_span"><span class="black">Factories</span></h4>
+
+</div>
+<div class="sect3">
+<h4 id="__span_class_black_builders_span"><span class="black">Builders</span></h4>
+
+</div>
+<div class="sect3">
+<h4 id="__span_class_black_reflection_span"><span class="black">Reflection</span></h4>
+
+</div>
+<div class="sect3">
+<h4 id="__span_class_black_cloning_with_prototypes_span"><span class="black">Cloning with Prototypes</span></h4>
+
+</div>
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_dependency_injection_span"><span class="black">Dependency Injection</span></h3>
+<div class="sect3">
+<h4 id="__span_class_black_runtime_construction_span"><span class="black">Runtime Construction</span></h4>
+
+</div>
+<div class="sect3">
+<h4 id="__span_class_black_interface_injection_span"><span class="black">Interface Injection</span></h4>
+
+</div>
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_summary_span"><span class="black">Summary</span></h3>
+
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_references_span"><span class="black">References</span></h3>
+
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="__span_class_black_orchestration_span"><span class="black">Orchestration</span></h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="__span_class_black_polymorphic_span"><span class="black">Polymorphic</span></h3>
+<div class="sect3">
+<h4 id="__span_class_black_universal_span"><span class="black">Universal</span></h4>
+<div class="sect4">
+<h5 id="__span_class_black_parametric_span"><span class="black">Parametric</span></h5>
+
+</div>
+<div class="sect4">
+<h5 id="__span_class_black_inclusion_span"><span class="black">Inclusion</span></h5>
+
+</div>
+</div>
+<div class="sect3">
+<h4 id="__span_class_black_ad_hoc_span"><span class="black">Ad Hoc</span></h4>
+<div class="sect4">
+<h5 id="__span_class_black_overloading_span"><span class="black">Overloading</span></h5>
+
+</div>
+<div class="sect4">
+<h5 id="__span_class_black_coercion_span"><span class="black">Coercion</span></h5>
+
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_behavior_span"><span class="black">Behavior</span></h3>
+<div class="sect3">
+<h4 id="__span_class_black_association_span"><span class="black">Association</span></h4>
+
+</div>
+<div class="sect3">
+<h4 id="__span_class_black_scenarios_span"><span class="black">Scenarios</span></h4>
+<div class="sect4">
+<h5 id="__span_class_black_class_responsibility_collaborator_span"><span class="black">Class Responsibility Collaborator</span></h5>
+
+</div>
+</div>
+<div class="sect3">
+<h4 id="__span_class_black_design_by_contract_span"><span class="black">Design by Contract</span></h4>
+
+</div>
+<div class="sect3">
+<h4 id="__span_class_black_pre_and_post_conditions_span"><span class="black">Pre and Post Conditions</span></h4>
+
+</div>
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_distributed_span"><span class="black">Distributed</span></h3>
+<div class="sect3">
+<h4 id="__span_class_black_resource_span"><span class="black">Resource</span></h4>
+
+</div>
+<div class="sect3">
+<h4 id="__span_class_black_rest_span"><span class="black">REST</span></h4>
+
+</div>
+<div class="sect3">
+<h4 id="__span_class_black_the_tier_context_span"><span class="black">The Tier Context</span></h4>
+
+</div>
+<div class="sect3">
+<h4 id="__span_class_black_messaging_span"><span class="black">Messaging</span></h4>
+
+</div>
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_parallelism_span"><span class="black">Parallelism</span></h3>
+<div class="sect3">
+<h4 id="__span_class_black_concurrency_span"><span class="black">Concurrency</span></h4>
+
+</div>
+<div class="sect3">
+<h4 id="__span_class_black_functional_concurrency_span"><span class="black">Functional Concurrency</span></h4>
+
+</div>
+<div class="sect3">
+<h4 id="__span_class_black_dependencies_span"><span class="black">Dependencies</span></h4>
+
+</div>
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_summary_span_2"><span class="black">Summary</span></h3>
+
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_references_span_2"><span class="black">References</span></h3>
+
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="__span_class_black_preservation_span"><span class="black">Preservation</span></h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="__span_class_black_scope_span"><span class="black">Scope</span></h3>
+<div class="sect3">
+<h4 id="__span_class_black_lexical_span"><span class="black">Lexical</span></h4>
+
+</div>
+<div class="sect3">
+<h4 id="__span_class_black_libraries_span"><span class="black">Libraries</span></h4>
+
+</div>
+<div class="sect3">
+<h4 id="__span_class_black_packaging_span"><span class="black">Packaging</span></h4>
+
+</div>
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_build_span"><span class="black">Build</span></h3>
+
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_state_span"><span class="black">State</span></h3>
+<div class="sect3">
+<h4 id="__span_class_black_fallacies_span"><span class="black">Fallacies</span></h4>
+
+</div>
+<div class="sect3">
+<h4 id="__span_class_black_continuations_span"><span class="black">Continuations</span></h4>
+
+</div>
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_test_harness_span"><span class="black">Test Harness</span></h3>
+<div class="sect3">
+<h4 id="__span_class_black_isolating_components_span"><span class="black">Isolating Components</span></h4>
+
+</div>
+<div class="sect3">
+<h4 id="__span_class_black_enabling_diagnostics_span"><span class="black">Enabling Diagnostics</span></h4>
+
+</div>
+<div class="sect3">
+<h4 id="__span_class_black_debugging_span"><span class="black">Debugging</span></h4>
+
+</div>
+<div class="sect3">
+<h4 id="__span_class_black_test_granularity_span"><span class="black">Test Granularity</span></h4>
+
+</div>
+<div class="sect3">
+<h4 id="__span_class_black_test_provisioning_span"><span class="black">Test Provisioning</span></h4>
+
+</div>
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_defense_in_depth_span"><span class="black">Defense In Depth</span></h3>
+<div class="sect3">
+<h4 id="__span_class_black_detecting_incidents_span"><span class="black">Detecting Incidents</span></h4>
+
+</div>
+<div class="sect3">
+<h4 id="__span_class_black_failing_fast_span"><span class="black">Failing Fast</span></h4>
+
+</div>
+<div class="sect3">
+<h4 id="__span_class_black_containment_span"><span class="black">Containment</span></h4>
+
+</div>
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_summary_span_3"><span class="black">Summary</span></h3>
+
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_references_span_3"><span class="black">References</span></h3>
+
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="__span_class_black_transformation_span"><span class="black">Transformation</span></h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="__span_class_black_representation_span"><span class="black">Representation</span></h3>
+<div class="sect3">
+<h4 id="__span_class_black_function_shaping_span"><span class="black">Function Shaping</span></h4>
+
+</div>
+<div class="sect3">
+<h4 id="__span_class_black_wrapping_unwrapping_span"><span class="black">Wrapping Unwrapping</span></h4>
+
+</div>
+<div class="sect3">
+<h4 id="__span_class_black_semantic_consistency_span"><span class="black">Semantic Consistency</span></h4>
+
+</div>
+<div class="sect3">
+<h4 id="__span_class_black_emphemeral_mistakes_span"><span class="black">Emphemeral Mistakes</span></h4>
+
+</div>
+<div class="sect3">
+<h4 id="__span_class_black_data_driven_apis_span"><span class="black">Data Driven APIs</span></h4>
+
+</div>
+<div class="sect3">
+<h4 id="__span_class_black_transformation_preferred_span"><span class="black">Transformation Preferred</span></h4>
+
+</div>
+<div class="sect3">
+<h4 id="__span_class_black_multiple_futures_span"><span class="black">Multiple Futures</span></h4>
+
+</div>
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_pattern_matching_span"><span class="black">Pattern Matching</span></h3>
+<div class="sect3">
+<h4 id="__span_class_black_traversal_span"><span class="black">Traversal</span></h4>
+
+</div>
+<div class="sect3">
+<h4 id="__span_class_black_sequential_span"><span class="black">Sequential</span></h4>
+
+</div>
+<div class="sect3">
+<h4 id="__span_class_black_recursive_span"><span class="black">Recursive</span></h4>
+
+</div>
+<div class="sect3">
+<h4 id="__span_class_black_heuristics_span"><span class="black">Heuristics</span></h4>
+
+</div>
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_higher_orders_span"><span class="black">Higher Orders</span></h3>
+<div class="sect3">
+<h4 id="__span_class_black_closures_span"><span class="black">Closures</span></h4>
+
+</div>
+<div class="sect3">
+<h4 id="__span_class_black_currying_span"><span class="black">Currying</span></h4>
+
+</div>
+<div class="sect3">
+<h4 id="__span_class_black_partial_functions_span"><span class="black">Partial Functions</span></h4>
+
+</div>
+<div class="sect3">
+<h4 id="__span_class_black_laziness_span"><span class="black">Laziness</span></h4>
+
+</div>
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_monads_span"><span class="black">Monads</span></h3>
+<div class="sect3">
+<h4 id="__span_class_black_category_theory_span"><span class="black">Category Theory</span></h4>
+
+</div>
+<div class="sect3">
+<h4 id="__span_class_black_shape_wrap_and_roll_span"><span class="black">Shape Wrap and Roll</span></h4>
+
+</div>
+<div class="sect3">
+<h4 id="__span_class_black_duality_span"><span class="black">Duality</span></h4>
+
+</div>
+<div class="sect3">
+<h4 id="__span_class_black_unification_span"><span class="black">Unification</span></h4>
+
+</div>
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_reactivex_span"><span class="black">ReactiveX</span></h3>
+<div class="sect3">
+<h4 id="__span_class_black_observer_patterh_span"><span class="black">Observer Patterh</span></h4>
+
+</div>
+<div class="sect3">
+<h4 id="__span_class_black_create_span"><span class="black">Create</span></h4>
+
+</div>
+<div class="sect3">
+<h4 id="__span_class_black_combine_span"><span class="black">Combine</span></h4>
+
+</div>
+<div class="sect3">
+<h4 id="__span_class_black_listen_span"><span class="black">Listen</span></h4>
+
+</div>
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_summary_span_4"><span class="black">Summary</span></h3>
+
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_references_span_4"><span class="black">References</span></h3>
+
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="__span_class_black_expression_span"><span class="black">Expression</span></h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="__span_class_black_convention_span"><span class="black">Convention</span></h3>
+<div class="sect3">
+<h4 id="__span_class_black_regularity_span"><span class="black">Regularity</span></h4>
+
+</div>
+<div class="sect3">
+<h4 id="__span_class_black_naming_conventions_span"><span class="black">Naming Conventions</span></h4>
+
+</div>
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_interpretation_span"><span class="black">Interpretation</span></h3>
+<div class="sect3">
+<h4 id="__span_class_black_evaluation_span"><span class="black">Evaluation</span></h4>
+
+</div>
+<div class="sect3">
+<h4 id="__span_class_black_dsl_span"><span class="black">DSL</span></h4>
+
+</div>
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_continuity_span"><span class="black">Continuity</span></h3>
+<div class="sect3">
+<h4 id="__span_class_black_wholeness_span"><span class="black">Wholeness</span></h4>
+
+</div>
+<div class="sect3">
+<h4 id="__span_class_black_transparency_span"><span class="black">Transparency</span></h4>
+
+</div>
+<div class="sect3">
+<h4 id="__span_class_black_declarative_span"><span class="black">Declarative</span></h4>
+
+</div>
+<div class="sect3">
+<h4 id="__span_class_black_impediance_mismatch_span"><span class="black">Impediance Mismatch</span></h4>
+
+</div>
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_adaptation_span"><span class="black">Adaptation</span></h3>
+<div class="sect3">
+<h4 id="__span_class_black_hot_spots_span"><span class="black">Hot Spots</span></h4>
+
+</div>
+<div class="sect3">
+<h4 id="__span_class_black_indirection_span"><span class="black">Indirection</span></h4>
+
+</div>
+<div class="sect3">
+<h4 id="__span_class_black_decoupling_span"><span class="black">Decoupling</span></h4>
+
+</div>
+<div class="sect3">
+<h4 id="__span_class_black_refactoring_span"><span class="black">Refactoring</span></h4>
+
+</div>
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_comprehension_span"><span class="black">Comprehension</span></h3>
+<div class="sect3">
+<h4 id="__span_class_black_simplicity_span"><span class="black">Simplicity</span></h4>
+
+</div>
+<div class="sect3">
+<h4 id="__span_class_black_communication_span"><span class="black">Communication</span></h4>
+
+</div>
+<div class="sect3">
+<h4 id="__span_class_black_git_span"><span class="black">Git</span></h4>
+
+</div>
+<div class="sect3">
+<h4 id="__span_class_black_code_documentation_span"><span class="black">Code Documentation</span></h4>
+
+</div>
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_reactivex_span_2"><span class="black">ReactiveX</span></h3>
+<div class="sect3">
+<h4 id="__span_class_black_better_code_bases_span"><span class="black">Better Code Bases</span></h4>
+
+</div>
+<div class="sect3">
+<h4 id="__span_class_black_functional_span"><span class="black">Functional</span></h4>
+
+</div>
+<div class="sect3">
+<h4 id="__span_class_black_reactive_operators_span"><span class="black">Reactive Operators</span></h4>
+
+</div>
+<div class="sect3">
+<h4 id="__span_class_black_async_span"><span class="black">Async</span></h4>
+
+</div>
+<div class="sect3">
+<h4 id="__span_class_black_concurrency_span_2"><span class="black">Concurrency</span></h4>
+
+</div>
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_summary_span_5"><span class="black">Summary</span></h3>
+
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_references_span_5"><span class="black">References</span></h3>
+
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="__span_class_black_a_tour_of_groovy_span"><span class="black">A tour of Groovy</span></h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="__span_class_black_expressive_syntax_span"><span class="black">Expressive Syntax</span></h3>
+
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_command_line_span"><span class="black">Command line</span></h3>
+
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_parsing_xml_span"><span class="black">Parsing XML</span></h3>
+
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="__span_class_black_meta_object_protocol_span"><span class="black">Meta Object Protocol</span></h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="__span_class_black_meta_class_span"><span class="black">Meta Class</span></h3>
+
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_expanding_and_invoking_span"><span class="black">Expanding and Invoking</span></h3>
+
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_capabilities_span"><span class="black">Capabilities</span></h3>
+
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="__span_class_black_multi_paradigm_span"><span class="black">Multi-paradigm</span></h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="__span_class_black_object_oriented_span"><span class="black">Object Oriented</span></h3>
+
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_dynamic_span_2"><span class="black">Dynamic</span></h3>
+
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_closures_span_2"><span class="black">Closures</span></h3>
+
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="__span_class_black_principles_in_groovy_span"><span class="black">Principles in Groovy</span></h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="__span_class_black_composition_span_2"><span class="black">Composition</span></h3>
+
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_orchestration_span_2"><span class="black">Orchestration</span></h3>
+
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_preservation_span_2"><span class="black">Preservation</span></h3>
+
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_transformation_span_2"><span class="black">Transformation</span></h3>
+
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_expression_span_2"><span class="black">Expression</span></h3>
+
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="__span_class_black_grails_and_ola_s_pyramid_span"><span class="black">Grails and Ola&#8217;s Pyramid</span></h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="__span_class_black_grails_architecture_span"><span class="black">Grails Architecture</span></h3>
+
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_ola_s_pyramid_layers_span"><span class="black">Ola&#8217;s Pyramid Layers</span></h3>
+
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_plugins_for_propagation_span"><span class="black">Plugins for Propagation</span></h3>
+
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_rest_with_grails_span"><span class="black">REST with Grails</span></h3>
+
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_principles_in_grails_span"><span class="black">Principles in Grails</span></h3>
+
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="__span_class_black_summary_span_6"><span class="black">Summary</span></h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="__span_class_black_references_span_6"><span class="black">References</span></h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="__span_class_black_a_tour_of_clojure_span"><span class="black">A Tour of Clojure</span></h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="__span_class_black_lisp_revitalized_span"><span class="black">Lisp Revitalized</span></h3>
+
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_jvm_influence_span"><span class="black">JVM Influence</span></h3>
+
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_software_transactions_span"><span class="black">Software Transactions</span></h3>
+
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="__span_class_black_polymorphism_span"><span class="black">Polymorphism</span></h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="__span_class_black_multi_methods_span"><span class="black">Multi-Methods</span></h3>
+
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_macros_span"><span class="black">Macros</span></h3>
+
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="__span_class_black_principles_in_clojure_span"><span class="black">Principles in Clojure</span></h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="__span_class_black_composition_span_3"><span class="black">Composition</span></h3>
+
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_orchestration_span_3"><span class="black">Orchestration</span></h3>
+
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_preservation_span_3"><span class="black">Preservation</span></h3>
+
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_transformation_span_3"><span class="black">Transformation</span></h3>
+
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_expression_span_3"><span class="black">Expression</span></h3>
+
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="__span_class_black_ring_and_composure_span"><span class="black">Ring and Composure</span></h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="__span_class_black_http_request_response_span"><span class="black">HTTP Request Response</span></h3>
+
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_javascript_and_clojure_span"><span class="black">JavaScript and Clojure</span></h3>
+
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_html5_and_css3_span"><span class="black">HTML5 and CSS3</span></h3>
+
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_page_navigation_span"><span class="black">Page Navigation</span></h3>
+
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_data_interchange_span"><span class="black">Data Interchange</span></h3>
+
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_principles_span_2"><span class="black">Principles</span></h3>
+
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="__span_class_black_summary_span_7"><span class="black">Summary</span></h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="__span_class_black_references_span_7"><span class="black">References</span></h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="__span_class_black_a_tour_of_javascript_span"><span class="black">A Tour of JavaScript</span></h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="__span_class_black_javascript_revitalized_span"><span class="black">JavaScript Revitalized</span></h3>
+
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_influences_span"><span class="black">Influences</span></h3>
+
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_functional_span_2"><span class="black">Functional</span></h3>
+
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="__span_class_black_dialects_span"><span class="black">Dialects</span></h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="__span_class_black_coffeescript_span"><span class="black">CoffeeScript</span></h3>
+
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_ecmascript_span"><span class="black">EcmaScript</span></h3>
+
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_typescript_span"><span class="black">TypeScript</span></h3>
+
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="__span_class_black_principles_in_javascript_span"><span class="black">Principles in JavaScript</span></h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="__span_class_black_composition_span_4"><span class="black">Composition</span></h3>
+
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_orchestration_span_4"><span class="black">Orchestration</span></h3>
+
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_preservation_span_4"><span class="black">Preservation</span></h3>
+
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_transformation_span_4"><span class="black">Transformation</span></h3>
+
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_expression_span_4"><span class="black">Expression</span></h3>
+
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="__span_class_black_nodejs_span"><span class="black">NodeJS</span></h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="__span_class_black_packages_span"><span class="black">Packages</span></h3>
+
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_mean_span"><span class="black">MEAN</span></h3>
+
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_electron_span"><span class="black">Electron</span></h3>
+
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="__span_class_black_summary_span_8"><span class="black">Summary</span></h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="__span_class_black_references_span_8"><span class="black">References</span></h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="__span_class_black_a_tour_of_scala_span"><span class="black">A Tour of Scala</span></h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="__span_class_black_compilation_hints_span"><span class="black">Compilation Hints</span></h3>
+
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_java_7_in_scala_span"><span class="black">Java 7 in Scala</span></h3>
+
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="__span_class_black_objected_oriented_scala_span"><span class="black">Objected Oriented Scala</span></h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="__span_class_black_uniform_class_hierarchy_span"><span class="black">Uniform Class Hierarchy</span></h3>
+
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="__span_class_black_typing_span_2"><span class="black">Typing</span></h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="__span_class_black_type_inference_span"><span class="black">Type Inference</span></h3>
+
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_type_classes_span_2"><span class="black">Type Classes</span></h3>
+
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_generics_span"><span class="black">Generics</span></h3>
+<div class="sect3">
+<h4 id="__span_class_black_types_to_the_next_level_span"><span class="black">Types to the Next Level</span></h4>
+
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="__span_class_black_traits_span"><span class="black">Traits</span></h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="__span_class_black_emergence_of_traits_span"><span class="black">Emergence of Traits</span></h3>
+<div class="sect3">
+<h4 id="__span_class_black_pi_calculus_span"><span class="black">PI Calculus</span></h4>
+
+</div>
+<div class="sect3">
+<h4 id="__span_class_black_liskov_substitution_span"><span class="black">Liskov Substitution</span></h4>
+
+</div>
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_thick_and_thin_span"><span class="black">Thick and Thin</span></h3>
+
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_self_type_span"><span class="black">Self Type</span></h3>
+
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_interface_injection_span_2"><span class="black">Interface Injection</span></h3>
+
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_stackable_modifications_span"><span class="black">Stackable Modifications</span></h3>
+
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="__span_class_black_post_functional_scala_span"><span class="black">Post Functional Scala</span></h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="__span_class_black_for_comprehensions_span"><span class="black">For Comprehensions</span></h3>
+
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_monads_span_2"><span class="black">Monads</span></h3>
+<div class="sect3">
+<h4 id="__span_class_black_composability_span"><span class="black">Composability</span></h4>
+
+</div>
+<div class="sect3">
+<h4 id="__span_class_black_shape_wrap_and_poll_span"><span class="black">Shape Wrap and Poll</span></h4>
+
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="__span_class_black_dsls_span"><span class="black">DSLs</span></h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="__span_class_black_operators_and_implicits_span"><span class="black">Operators and Implicits</span></h3>
+
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_parsing_combinators_span"><span class="black">Parsing Combinators</span></h3>
+
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_case_classes_span"><span class="black">Case Classes</span></h3>
+
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_pattern_matching_span_2"><span class="black">Pattern Matching</span></h3>
+
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="__span_class_black_principles_in_scala_span"><span class="black">Principles in Scala</span></h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="__span_class_black_composition_span_5"><span class="black">Composition</span></h3>
+
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_orchestration_span_5"><span class="black">Orchestration</span></h3>
+
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_preservation_span_5"><span class="black">Preservation</span></h3>
+
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_transformation_span_5"><span class="black">Transformation</span></h3>
+
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_expression_span_5"><span class="black">Expression</span></h3>
+
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="__span_class_black_akka_span"><span class="black">Akka</span></h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="__span_class_black_architecture_span"><span class="black">Architecture</span></h3>
+
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_concurrency_span_3"><span class="black">Concurrency</span></h3>
+
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_persistence_span"><span class="black">Persistence</span></h3>
+
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_apache_camel_span"><span class="black">Apache Camel</span></h3>
+
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_principles_span_3"><span class="black">Principles</span></h3>
+
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="__span_class_black_summary_span_9"><span class="black">Summary</span></h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="__span_class_black_references_span_9"><span class="black">References</span></h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="__span_class_black_representation_span_2"><span class="black">Representation</span></h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="__span_class_black_domain_knowledge_span"><span class="black">Domain Knowledge</span></h3>
+
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_transformation_span_6"><span class="black">Transformation</span></h3>
+
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_combination_span"><span class="black">Combination</span></h3>
+
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="__span_class_black_propagation_span"><span class="black">Propagation</span></h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="__span_class_black_apis_span"><span class="black">APIs</span></h3>
+
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_visitation_span"><span class="black">Visitation</span></h3>
+
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_pattern_matching_span_3"><span class="black">Pattern Matching</span></h3>
+
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="__span_class_black_external_dsls_span"><span class="black">External DSLs</span></h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="__span_class_black_parsing_options_span"><span class="black">Parsing options</span></h3>
+
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_combinatorial_parsers_span"><span class="black">Combinatorial Parsers</span></h3>
+
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_parsers_span"><span class="black">Parsers</span></h3>
+<div class="sect3">
+<h4 id="__span_class_black_groovy_span"><span class="black">Groovy</span></h4>
+
+</div>
+<div class="sect3">
+<h4 id="__span_class_black_clojure_span"><span class="black">Clojure</span></h4>
+
+</div>
+<div class="sect3">
+<h4 id="__span_class_black_scala_span"><span class="black">Scala</span></h4>
+
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="__span_class_black_internal_dsls_span"><span class="black">Internal DSLs</span></h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="__span_class_black_arranging_syntax_span"><span class="black">Arranging Syntax</span></h3>
+
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_overloading_operators_span"><span class="black">Overloading Operators</span></h3>
+
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_implicit_type_conversion_span"><span class="black">Implicit Type Conversion</span></h3>
+
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_favorite_language_span"><span class="black">Favorite Language</span></h3>
+
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="__span_class_black_summary_span_10"><span class="black">Summary</span></h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="__span_class_black_references_span_10"><span class="black">References</span></h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="__span_class_black_picking_language_span"><span class="black">Picking Language</span></h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="__span_class_black_selecting_principles_span"><span class="black">Selecting Principles</span></h3>
+
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_tracing_principles_span_2"><span class="black">Tracing Principles</span></h3>
+
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_dsl_enhancements_span"><span class="black">DSL Enhancements</span></h3>
+
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_using_principles_span"><span class="black">Using Principles</span></h3>
+
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="__span_class_black_myths_span"><span class="black">Myths</span></h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="__span_class_black_xml_is_a_language_span"><span class="black">XML is a Language</span></h3>
+
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_encapsulating_state_span"><span class="black">Encapsulating State</span></h3>
+
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_command_and_control_span"><span class="black">Command and Control</span></h3>
+
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_single_paradigms_span"><span class="black">Single Paradigms</span></h3>
+
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="__span_class_black_human_nature_span"><span class="black">Human Nature</span></h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="__span_class_black_they_don_t_get_it_span"><span class="black">They don&#8217;t Get It</span></h3>
+
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_open_source_span"><span class="black">Open Source</span></h3>
+
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_dsls_for_humans_span"><span class="black">DSLs for Humans</span></h3>
+
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="__span_class_black_decision_criteria_span"><span class="black">Decision Criteria</span></h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="__span_class_black_discovering_principles_span"><span class="black">Discovering principles</span></h3>
+
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_paradigms_span"><span class="black">Paradigms</span></h3>
+<div class="sect3">
+<h4 id="__span_class_black_blending_span"><span class="black">Blending</span></h4>
+
+</div>
+<div class="sect3">
+<h4 id="__span_class_black_synthesis_span"><span class="black">Synthesis</span></h4>
+
+</div>
+<div class="sect3">
+<h4 id="__span_class_black_convergence_span"><span class="black">Convergence</span></h4>
+
+</div>
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_arrival_of_the_fittest_span"><span class="black">Arrival of the Fittest</span></h3>
+
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="__span_class_black_summary_references_span"><span class="black">Summary References</span></h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="__span_class_black_appendix_a_language_survey_span"><span class="black">Appendix A Language Survey</span></h2>
+<div class="sectionbody">
+<div class="literalblock">
+<div class="content">
+<pre>Fortran, Cobal, C and C++, C#, Objective-C
+Algol, ADA, Pascal
+APL, Erlang, ML,  F#, OZ,OCAML, Python</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="__span_class_black_appendix_b_principles_span"><span class="black">Appendix B Principles</span></h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="__span_class_black_appendix_c_paradigms_span"><span class="black">Appendix C Paradigms</span></h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="__span_class_black_appendix_d_languages_span"><span class="black">Appendix D Languages</span></h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="__span_class_black_appendix_e_traceability_span"><span class="black">Appendix E Traceability</span></h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="__span_class_black_glossary_span"><span class="black">Glossary</span></h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="__span_class_black_index_span"><span class="black">Index</span></h2>
+<div class="sectionbody">
+
+</div>
+</div>
+</div>
+<div id="footer">
+<div id="footer-text">
+Version 0.0<br>
+Last updated 2016-12-01 19:30:49 MST
+</div>
+</div>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/styles/github.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/highlight.min.js"></script>
+<script>hljs.initHighlighting()</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  messageStyle: "none",
+  tex2jax: {
+    inlineMath: [["\\(", "\\)"]],
+    displayMath: [["\\[", "\\]"]],
+    ignoreClass: "nostem|nolatexmath"
+  },
+  asciimath2jax: {
+    delimiters: [["\\$", "\\$"]],
+    ignoreClass: "nostem|noasciimath"
+  },
+  TeX: { equationNumbers: { autoNumber: "none" } }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.6.0/MathJax.js?config=TeX-MML-AM_HTMLorMML"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+
+include::../../../dir/inc/DefPractice.adoc[]
+
+== [.black]#Switch#
+
+* The Switch operator takes a nested asynchronous data stream
+
+* It htne produces the elements of the most recent inner asynchronous data stream
+  that has been received up to that point.
+
+* This produces a new non-nested asynchronous data stream.
+
+* It allows later streams to override earlier streams
+
+* Always yielding the "latest possible results," rather like a scrolling news feed.
+
+image::7.Switch.png[alt="Switch",align="center"]

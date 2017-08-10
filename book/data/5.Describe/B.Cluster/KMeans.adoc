@@ -1,0 +1,61 @@
+
+include::../../../../dir/inc/DefStudy.adoc[]
+
+''''
+<<<<
+
+=== [.black]#K Means#
+include::KMeans.Slide.adoc[]
+
+==== [.black]#How It Works#
+* The algorithm operates on a given data set through pre-defined number of clusters, k.
+* The output of K Means algorithm is k clusters
+
+////
+==== [.black]#Mathematics#
+
+asciimath:[J = \sum _(j=1)^K \sum_(n \subset S_j) \abs{x_n-mu_j}^2]
+
+Where:
+
+[horizontal]
+x~n~:: Vector for nth data point.
+S~j~:: Data points.
+u~j~:: Geometric centroid for each S~j~.
+J::    Cluster
+K::    Number of clusters
+////
+
+////
+==== [.black]#Search Results.#
+* The search term “Jaguar” on Wikipedia will return all pages containing the word Jaguar 
+  which can refer to Jaguar as a Car, Jaguar as Mac OS version and Jaguar as an Animal. 
+* K Means clustering algorithm can be applied to group the webpages that talk about 
+  similar concepts. 
+* So, the algorithm will group all web pages that talk about Jaguar as an Animal into one cluster
+* Jaguar as a Car into another cluster and so on.
+////
+==== [.black]#Benefits#
+
+* In case of globular clusters, K-Means produces tighter clusters than hierarchical clustering.
+* Given a smaller value of K, K-Means clustering computes faster than hierarchical clustering for large number of variables.
+
+==== [.black]#Drawbacks#
+
+* Difficult to specify K value.
+* Does not work well with global cluster.
+* Different initial partitions can result in different final clusters.
+* It does not work well with clusters of varying size and density.
+
+==== [.black]#Applications#
+
+* K Means Clustering algorithm is used by most of the search engines like Yahoo, Google
+* To cluster web pages by similarity and identify the ‘relevance rate’ of search results.
+* This helps search engines reduce the computational time for the users.
+////
+==== [.black]#Tools#
+[horizontal]
+Spark:: xxx
+Python:: xxx
+R:: xxx
+////

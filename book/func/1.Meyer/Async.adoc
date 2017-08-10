@@ -1,0 +1,10 @@
+
+include::../../../dir/inc/DefPractice.adoc[]
+
+== [.black]#Async#
+
+* The effect of the Switch operator is that every time another asynchronous call is made to Completions in response to a change in the input, the result is switched to receive the output of this latest call, as shown in figure 8, and the results from all previous calls that are still outstanding are ignored.
+
+* This is not just a performance optimization. Without using Switch, there would be multiple outstanding requests to the Completion service, and since the stream is asynchronous, results could come back in arbitrary order, possibly updating the UI with results of older requests.
+
+image::8.Async.png[alt="Async",align="center"]

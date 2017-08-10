@@ -1,0 +1,24 @@
+
+
+include::../../../../dir/inc/DefStudy.adoc[]
+
+''''
+<<<<
+=== [.black]#Ensemble Methods#
+
+* Ensembles are a divide-and-conquer approach used to cleanly delineate classifier bounderies.
+
+image::predict/Ensemble.png[alt="LinearRegress",align="center"]
+
+* The main principle behind ensemble methods is that a group of “weak learners” can come together to form a “strong learner”.
+* The figure below (taken from here) provides an example.
+
+image::predict/EnsembleMeas.png[alt="EnsembleMeas",align="center"]
+
+* Each classifier, individually, is a “weak learner,” while all the classifiers taken together are a “strong learner”.
+
+// include::Bagging.adoc[]
+
+include::AdaptiveBoost.adoc[]
+
+// include::GradientBoost.adoc[]

@@ -1,0 +1,135 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <title>Reactive Manifesto</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Reactive Manifesto">
+  <meta name="author" content="Tom Flaherty">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  
+  <link href="../../node_modules/font-awesome/css/font-awesome.css" rel="stylesheet">
+  <link href="../../node_modules/reveal.js/css/reveal.css"          rel="stylesheet">
+  <link href="../../node_modules/reveal.js/lib/css/zenburn.css"     rel="stylesheet">
+  <link href="../../node_modules/reveal.js/css/theme/night.css"     rel="stylesheet" id="theme">
+  <link href="../../lib/css/talk.css"                               rel="stylesheet">
+
+  <script src="../../lib/js/jquery-3.2.1.js"></script>
+  <script src="../../node_modules/reveal.js/lib/js/head.min.js"></script>
+  <script src="../../node_modules/reveal.js/js/reveal.js"></script>
+  <script src="../../lib/js/RevealInit.js"></script>
+
+</head>
+
+<body>
+
+<div class="reveal">
+
+  <div class="slides">
+
+
+<section>
+  <section>
+    <h2>The Reactive Manifesto</h2>
+    <a href="http://www.reactivemanifesto.org/">www.reactivemanifesto.org/</a>
+    <img src ="../../img/reactive/reactive-traits.svg" class="rx-svg">
+    <ul style="text-align:left; font-size:24px; list-style-type: none;">
+      <li><img src="../../img/reactive/responsive.svg" class="rx-icon"><span class="width240">Responsive:    </span><span class="width150">In Memory </span>Always respond meaningfully in a timely manner</li>
+      <li><img src="../../img/reactive/elastic.svg"    class="rx-icon"><span class="width240">Elastic:       </span><span class="width150">Cluster   </span>Stay responsive under varying workload</li>
+      <li><img src="../../img/reactive/resilient.svg"  class="rx-icon"><span class="width240">Resilient:     </span><span class="width150">RDD       </span>Stay responsive in the face of failure</li>
+      <li><img src="../../img/reactive/message.svg"    class="rx-icon"><span class="width240">Message Driven:</span><span class="width150">Streaming </span>Wrap and stream messages asynchronously</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2 class="rx-h2"><img src="../../img/reactive/responsive.svg" class="rx-h2-img"><span class="rx-h2-span">Responsive</span></h2>
+    <h4>Always respond meaningfully in a timely manner</h4>
+    <ul>
+      <li>"In Memory" improves performance by 1-2 orders of magnitude</li>
+      <li>Formulate meaningful response metrics for Data Science</li>
+      <li>Leveage statistics to shrink sample populations</li>
+      <li>Weigh benefits between real time and near time</li>
+      <li>Keep your common sense</li>
+      <li>Don't let brute force do your thinking for you</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2 class="rx-h2"><img src="../../img/reactive/elastic.svg" class="rx-h2-img"><span class="rx-h2-span">Elastic</span></h2>
+    <h4>Stay responsive under varying workload</h4>
+    <ul>
+      <li>Elasticity is the key value proposition for cloud hosting</li>
+      <li>Leveage Spark's integration with Akka Mesos Myraid and YARN</li>
+      <li>Always have spare resources available to spin up for peak demand</li>
+      <li>Spend the extra money to replicate data</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2 class="rx-h2"><img src="../../img/reactive/resilient.svg" class="rx-h2-img"><span class="rx-h2-span">Resilient</span></h2>
+    <h4>Stay responsive in the face of failure</h4>
+    <ul>
+      <li>Clustered servers and network links fail all the time</li>
+      <li>Spark Core monitors and responds to cluster failure</li>
+      <li>RDDs "Resilient" Distributed Datasets says it all</li>
+      <li>RDDs shard the data over a cluster</li>
+      <li>RDDs reconstitute shards lost due to node / link failures</li>
+      <li>RDDs in Spark can rerun their transforms to recreate lost data</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2 class="rx-h2"><img src="../../img/reactive/message.svg" class="rx-h2-img"><span class="rx-h2-span">Message Driven</span></h2>
+    <h4>Wrap and stream messages asynchronously</h4>
+    <h4>Message Streams facilitate Data Science with these benefits</h4>
+    <table style="font-size:18pt; color:wheat;">
+      <thead >
+      <tr><th style="text-align:center;">Message Feature</th><th style="text-align:center;">Data Science Benefit</th></tr>
+      </thead>
+      <tbody>
+      <tr><td>Asynchronous</td><td>The system knows more about concurrency than humans</td></tr>
+      <tr><td>Error Delegation</td><td>Errors become first class citizens that are treated properly</td></tr>
+      <tr><td>Location Transparency</td><td>Processes are not locked into specific server configuations</td></tr>
+      <tr><td>Publish & Subscribe</td><td>Allows roles to be defined from a Data Science perspective</td></tr>
+      <tr><td>Component Isolation</td><td>Allows components to focus on their assigned tasks</td></tr>
+      <tr><td>Loose Coupling</td><td>Precise instead of accidental interactions</td></tr>
+      <tr><td>Back Pressure</td><td>Message streams can be throttled to relieve resources</td></tr>
+      <tr><td>Functional</td><td>A programing paradigm well suited for data processing</td></tr>
+      </tbody>
+    </table>
+  </section>
+</section>
+
+    <section>
+      <h2>References</h2>
+      <ul style="margin-left:0.6em; font-size:26px;">
+        <li><div class="width340">Big Data Driving Business</div><a href="http://www.ted.com/talks/philip_evans_how_data_will_transform_business">http://bit.ly/194auY9</a></li>
+        <li><div class="width340">REST API Tutorial</div><a href="http://www.restapitutorial.com/resources.html">http://www.restapitutorial.com/resources.html</a></li>
+        <li><div class="width340">CAP Theorem</div><a href="http://en.wikipedia.org/wiki/CAP_theorem">http://en.wikipedia.org/wiki/CAP_theorem</a></li>
+        <li><div class="width340">Hadoop</div><a href="http://hadoop.apache.org/">http://hadoop.apache.org/</a></li>
+        <li><div class="width340">Grid Gain</div><a href="http://www.gridgain.com/">http://www.gridgain.com/</a></li>
+        <li><div class="width340">Apache Ignite</div><a href="http://ignite.incubator.apache.org/">http://ignite.incubator.apache.org/</a></li>
+        <li><div class="width340">Denver In Memory Meetup</div><a href="http://www.meetup.com/Denver-In-Memory-Computing-Meetup/">http://bit.ly/1Mb7AQu</a></li>
+        <li><div class="width340">Functional Programming</div><a href="http://deanwampler.github.io/polyglotprogramming/papers/BetterProgrammingThroughFP.pdf">http://bit.ly/1vAX8wI</a></li>
+        <li><div class="width340">The Reactive Manifesto</div><a href="http://www.reactivemanifesto.org/">www.reactivemanifesto.org/</a></li>
+        <li><div class="width340">Apache Spark</div><a href="https://spark.apache.org/">https://spark.apache.org/</a></li>
+        <li><div class="width340">RxMarbles</div><a href="http://rxmarbles.com/">http://rxmarbles.com/</a></li>
+        <li><div class="width340">PDF at Speaker Deck</div><a href="https://speakerdeck.com/axiom6">https://speakerdeck.com/axiom6</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h1>THE END</h1>
+    </section>
+
+  </div>
+
+</div>
+
+
+</body>
+</html>

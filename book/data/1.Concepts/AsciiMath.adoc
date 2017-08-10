@@ -1,0 +1,11 @@
+:linkcss:
+:stylesheet: ../axbook.css
+:stem:
+
+asciimath:[x^2]
+
+asciimath:[sum_(i=1)^n i^3=((n(n+1))/2)^2]
+
+asciimath:[J = \sum _(j=1)^K \sum_(n \subset S_j) \abs{x_n-mu_j}^2]
+
+latexmath:[J = \sum _{j=1}^K\sum _{n \subset S_j } \left | x_n - \mu_j \right | ^2 ]

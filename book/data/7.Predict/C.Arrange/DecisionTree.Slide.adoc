@@ -1,0 +1,15 @@
+
+include::../../../../dir/inc/DefStudy.adoc[]
+
+// * One
+// * Two
+
+image::predict/DecisionTreeWeather.jpg[alt="DecisionTreeWeather",align="center"]
+
+////
+[cols="5*"]
+|====
+| *Strengths* | x | x | x | x
+| *Use For*   | x | x | x | x
+|====
+////

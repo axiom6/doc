@@ -1,0 +1,64 @@
+
+---- Apple ID
+
+Ikw2Free##
+
+-------- AxiomArch ----
+
+ax2bandw
+
+
+------ IntelliJ License 15 ------
+
+Thomas Flaherty
+
+9HR9PGLHRQ-eyJsaWNlbnNlSWQiOiI5SFI5UEdMSFJRIiwibGljZW5zZWVOYW1lIjoiVGhvbWFzIEZsYWhlcnR5IiwiYXNzaWduZWVOYW1lIjoiIiwiYXNzaWduZWVFbWFpbCI6IiIsImxpY2Vuc2VSZXN0cmljdGlvbiI6IiIsImNoZWNrQ29uY3VycmVudFVzZSI6ZmFsc2UsInByb2R1Y3RzIjpbeyJjb2RlIjoiSUkiLCJmYWxsYmFja0RhdGUiOiIyMDE2LTAyLTA5IiwicGFpZFVwVG8iOiIyMDE2LTAyLTA5In1dLCJoYXNoIjoiMjEwOTY3OS8wIiwiZ3JhY2VQZXJpb2REYXlzIjo3LCJhdXRvUHJvbG9uZ2F0ZWQiOmZhbHNlfQ==-jApDKlyPT5OP0KBgo+j/RxLBzgneoI8TKoD2WCR6zqhcLwjeu/mzKupFtoRX4AhelDN0fAbP6XbTM/vMHE1mclsHWshBBtII7HnYpSrY/JYjXkTP6bfH5VoFksF6W+EcWVinn0GHkdM0Dsd3jrPI7mNdzJbEDxeRWfNw0M49iAvJPhAyfxbOGcjwWLIOQT3B21Z/WE65bf9i9pdhhwNZ4K8W/LJTwN7VVdP2W2Hp+gp7+5ZWqEw38XOye7MxvO1vs1AIDFbqagmbSjPYWjSHURzahrG1g0JPWxna/jpe4o6qAfZNWAOIFTNMRDinbKReb63nna6CmAWvJFTybLUfKg==-MIIEPjCCAiagAwIBAgIBBTANBgkqhkiG9w0BAQsFADAYMRYwFAYDVQQDDA1KZXRQcm9maWxlIENBMB4XDTE1MTEwMjA4MjE0OFoXDTE4MTEwMTA4MjE0OFowETEPMA0GA1UEAwwGcHJvZDN5MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxcQkq+zdxlR2mmRYBPzGbUNdMN6OaXiXzxIWtMEkrJMO/5oUfQJbLLuMSMK0QHFmaI37WShyxZcfRCidwXjot4zmNBKnlyHodDij/78TmVqFl8nOeD5+07B8VEaIu7c3E1N+e1doC6wht4I4+IEmtsPAdoaj5WCQVQbrI8KeT8M9VcBIWX7fD0fhexfg3ZRt0xqwMcXGNp3DdJHiO0rCdU+Itv7EmtnSVq9jBG1usMSFvMowR25mju2JcPFp1+I4ZI+FqgR8gyG8oiNDyNEoAbsR3lOpI7grUYSvkB/xVy/VoklPCK2h0f0GJxFjnye8NT1PAywoyl7RmiAVRE/EKwIDAQABo4GZMIGWMAkGA1UdEwQCMAAwHQYDVR0OBBYEFGEpG9oZGcfLMGNBkY7SgHiMGgTcMEgGA1UdIwRBMD+AFKOetkhnQhI2Qb1t4Lm0oFKLl/GzoRykGjAYMRYwFAYDVQQDDA1KZXRQcm9maWxlIENBggkA0myxg7KDeeEwEwYDVR0lBAwwCgYIKwYBBQUHAwEwCwYDVR0PBAQDAgWgMA0GCSqGSIb3DQEBCwUAA4ICAQC9WZuYgQedSuOc5TOUSrRigMw4/+wuC5EtZBfvdl4HT/8vzMW/oUlIP4YCvA0XKyBaCJ2iX+ZCDKoPfiYXiaSiH+HxAPV6J79vvouxKrWg2XV6ShFtPLP+0gPdGq3x9R3+kJbmAm8w+FOdlWqAfJrLvpzMGNeDU14YGXiZ9bVzmIQbwrBA+c/F4tlK/DV07dsNExihqFoibnqDiVNTGombaU2dDup2gwKdL81ua8EIcGNExHe82kjF4zwfadHk3bQVvbfdAwxcDy4xBjs3L4raPLU3yenSzr/OEur1+jfOxnQSmEcMXKXgrAQ9U55gwjcOFKrgOxEdek/Sk1VfOjvS+nuM4eyEruFMfaZHzoQiuw4IqgGc45ohFH0UUyjYcuFxxDSU9lMCv8qdHKm+wnPRb0l9l5vXsCBDuhAGYD6ss+Ga+aDY6f/qXZuUCEUOH3QUNbbCUlviSz6+GiRnt1kA9N2Qachl+2yBfaqUqr8h7Z2gsx5LcIf5kYNsqJ0GavXTVyWh7PYiKX4bs354ZQLUwwa/cG++2+wNWP+HtBhVxMRNTdVhSm38AknZlD+PTAsWGu9GyLmhti2EnVwGybSD2Dxmhxk3IPCkhKAK+pl0eWYGZWG3tJ9mZ7SowcXLWDFAk0lRJnKGFMTggrWjV8GYpw5bq23VmIqqDLgkNzuoog==
+
+2LWXT-2OUBL-AD3OB-72Z0C-4H96Y
+
+------ IntelliJ License 14 ------
+
+Murali Srinivasa
+70072-06022015
+00000IA"lzNudU95NjoaGMuE8S"Fyh
+"n36DoEa2q2BCLH1S5n3YbCH0iZltb
+3gA!2PTm"sal2YXPNTlP0F7ZJKluu3
+
+Tom Flaherty
+
+70072-10022014
+000017k9xq8up"o3HrTShA"ilpCJ8B
+xmdSvtJ2oKME2MFVz!zDGX0rTPu"8o
+MU25WpugV39klCU9BrkZOijs84SEBL
+
+Google+ Photes
+https://plus.google.com/u/0/photos/112501989687916931373/albums/6090612602642392913
+
+3575 Xanthia Street
+Denver, CO 80238
+
+Go to Quebec and 35th Ave.
+Head east on 35th Ave.
+In over a 1/2 mile you will cross Central Park Blvd
+Then after 3 blocks turn left (north) on to Xantha Street
+In 2 blocks you will come to Pat's house  #3573 on the north west corner 
+  A good landmark is a big wall on the right
+  
+--------
+
+MTCN 1599362660
+
+
+
+Receiver:
+
+nadia el falih
+
+Mobile #: 212-637842802
+Email: NADIASABIR8172@YAHOO.COM
+
+MyWU # 130 660 613
+Pin 6313
+tef@eazy.net
+Athena66#
+chip lynncrest tiger

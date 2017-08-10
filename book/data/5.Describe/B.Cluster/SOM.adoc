@@ -1,0 +1,51 @@
+
+include::../../../../dir/inc/DefStudy.adoc[]
+
+''''
+<<<<
+
+=== [.black]#Self Organizing Map#
+
+A self-organizing map (SOM) consists of components called nodes or neurons. Associated with each node are a weight vector of the same dimension as the input data vectors, and a position in the map space. The usual arrangement of nodes is a two-dimensional regular spacing in a hexagonal or rectangular grid. The self-organizing map describes a mapping from a higher-dimensional input space to a lower-dimensional map space. The procedure for placing a vector from data space onto the map is to find the node with the closest (smallest distance metric) weight vector to the data space vector.
+
+image::describe/SOM.png[alt="SOM",align="center"]
+
+// ==== [.black]#Mathematics#
+
+
+==== [.black]#Benefits#
+
+* Probably the best thing about SOMs that they are very easy to understand. It’s very simple, if they are close together and there is grey connecting them, then they are similar. If there is a black ravine between them, then they are different. Unlike Multidimensional Scaling or N-land, people can quickly pick up on how to use them in an effective manner.
+
+* Another great thing is that they work very well. As I have shown you they classify data well and then are easily evaluate for their own quality so you can actually calculated how good a map is and how strong the similarities between objects are.
+
+==== [.black]#Drawbacks#
+
+* One major problem with SOMs is getting the right data. Unfortunately you need a value for each dimension of each member of samples in order to generate a map. Sometimes this simply is not possible and often it is very difficult to acquire all of this data so this is a limiting feature to the use of SOMs often referred to as missing data.
+
+* Another problem is that every SOM is different and finds different similarites among the sample vectors. SOMs organize sample data so that in the final product, the samples are usually surrounded by simliar samples, however similar samples are not always near each other. If you have a lot of shades of purple, not always will you get one big group with all the purples in that cluster, sometimes the clusters will get split and there will be two groups of purple. Using colors we could tell that those two groups in reality are similar and that they just got split, but with most data, those two clusters will look totally unrelated. So a lot of maps need to be constructed in order to get one final good map.
+
+* The final major problem with SOMs is that they are very computationally expensive which is a major drawback since as the dimensions of the data increases, dimension reduction visualization techniques become more important, but unfortunately then time to compute them also increases. For calcuating that black and white similarity map, the more neighbors you use to calculate the distance the better similarity map you will get, but the number of distances the algorithm needs to compute increases exponentially.
+
+==== [.black]#Steps#
+
+* Initialize the Weights
+* Get Best Matching Unit
+* Scale Neighbors
+* Specify Learn Function
+
+==== [.black]#Determining the Quality#
+
+* There is a very simple method for displaying where similarities lie and where they do not.
+  In order to compute this we go through all the weights and determine how similar the neighbors are.
+  This is done by calculating the distance that the weight vectors make between the each weight and each of its neighbors.
+  With an average of these distances a color is then assigned to that location.
+
+* If the average distance were high, then the surrounding weights are very different and a dark color is assigned to the location of the weight.
+  If the average distance is low, a lighter color is assigned. So in areas of the center of the blobs
+  the colors are the same, so it should be white since all the neighbors are the same color.
+  In areas between blobs where there are similarities it should be not white, but a light grey.
+  Areas where the blobs are physically close to each other, but are not similar at all there
+  should be black.
+
+

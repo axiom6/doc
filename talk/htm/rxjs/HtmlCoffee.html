@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Generating HTML with CoffeeScript</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Generating HTML with CoffeeScript">
+  <meta name="author" content="Tom Flaherty">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <link rel="stylesheet" href="../../../node_modules/reveal.js/css/reveal.css">
+  <link rel="stylesheet" href="../../../node_modules/reveal.js/lib/css/zenburn.css">
+  <link rel="stylesheet" href="../../../node_modules/reveal.js/css/theme/night.css" id="theme">
+  <link rel="stylesheet" href="../../lib/css/talk.css">
+
+  <script src="../../../node_modules/jquery/dist/jquery.js"></script>
+  <script src="../../../node_modules/reveal.js/lib/js/head.min.js"></script>
+  <script src="../../../node_modules/reveal.js/js/reveal.js"></script>
+  <script src="../../lib/js/RevealInit.js"></script>
+
+</head>
+
+<body>
+
+<div class="reveal">
+
+  <div class="slides">
+
+    <section id="GenHtmlTitle">
+      <h1 style="font-size:2.5em;">Generating HTML</h1>
+      <h1 style="font-size:2.5em;">with CoffeeScript</h1>
+      <h1 style="font-size:2.0em;"><a href="http://www.meetup.com/HTML5-Denver-Users-Group/">HTML5 Denver</a></h1>
+      <a  style="font-size:2.0em;"    href="http://twitter.com/TheTomFlaherty">@TheTomFlaherty</a>
+    </section>
+
+    <section id="WhatYouNeed">
+      <h4>To generate HTML all you need is</h4>
+      <table>
+        <thead><tr><th></th><th>CoffeeScript</th><th>ECMAScript 6</th></tr></thead>
+        <tbody>
+          <tr><td>String Interpolation</td><td>#{}</td><td>${}</td></tr>
+          <tr><td>A Special String Delimiter</td><td>"""</td><td>` (backtick)</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="RecusivelyGenerate">
+      <h4 style="margin:0;">Recusively Generate HTML</h4>
+      <pre class="coffeescript" style="margin:0;">
+  <code style="font-size:1em; min-height:25em;">  recurse:( elems, html, level ) ->
+    for elem in elems
+      html += @begTag(  elem, level )
+      html  = @recurse( elem.children, html, level+1 ) if elem.children?
+      html += @endTag(  elem, level )
+    html
+
+  begTag:( elem, level ) ->
+    switch elem.tag
+      when '!DOCTYPE'
+        """&lt;!DOCTYPE html&gt"""
+      when 'comment'
+        """#{@indent(level)}<!--#{elem.text}-->"""
+      else
+        """#{@indent(level)}&lt;#{elem.tag}#{@atts(elem.atts)}&gt;#{@text(elem.text)}"""
+
+  endTag:( elem, level ) ->
+    html = ""
+    if @hasEndTag( elem.tag )
+      html += @indent(level)  if elem.children? and elem.children.length > 0
+      html += """&lt;/#{elem.tag}&gt;"""
+    html</code></pre>
+    </section>
+
+    <section id="KeyLinesofCodeinCoffeeScript">
+      <h4>Key Lines of Code in CoffeeScript</h4>
+      <pre class="coffeescript"><code style="font-size:1.1em;">
+
+# Begin Tag
+ """#{@indent(level)}&lt;#{elem.tag}#{@atts(elem.atts)}&gt;#{@text(elem.text)}"""
+
+# End Tag
+ html += @indent(level)  if elem.children? and elem.children.length &gt; 0
+ html += """&lt;/#{elem.tag}&gt;"""
+      </code></pre>
+    </section>
+    <section id="KeyLinesofCodeinJavaScript">
+      <h4>Key Lines of Code in JavaScript</h4>
+       <pre class="javascript"><code style="font-size:1.1em;">
+ // Begin Tag
+ html += this.indent(level) + "<" + elem.tag + this.atts(elem.atts) + ">"
+       + this.text(elem.text);
+
+// End Tag
+if( (elem.children != null) && elem.children.length > 0 ) {
+  html += this.indent(level); }
+html += "&lt;/" + elem.tag + "&gt;";
+      </code></pre>
+    </section>
+
+    <section id="SupportingMethods">
+      <h4>Supporting Methods</h4>
+      <pre class="coffeescript">
+  <code style="font-size:1em; min-height:16em;">
+
+  text:( str ) ->
+    if str? then str else ""
+
+  atts:( attribs ) ->
+    return "" if not attribs?
+    html = ""
+    for key, val of attribs
+      html += """ #{key}="#{val}#{'"'}"""
+    html
+
+  indent:(n) ->
+    str = "\n"
+    for i in [0...n]
+      str += "  "     # Indent 2 spaces
+    str
+  </code></pre>
+    </section>
+
+    <section id="GenHtmlReferences">
+      <h2>References</h2>
+      <ul style="margin-left:0.6em; font-size:26px;">
+        <li><div class="width340">Big Data Driving Business</div><a href="http://www.ted.com/talks/philip_evans_how_data_will_transform_business">http://bit.ly/194auY9</a></li>
+        <li><div class="width340">REST API Tutorial</div><a href="http://www.restapitutorial.com/resources.html">http://www.restapitutorial.com/resources.html</a></li>
+      </ul>
+    </section>
+
+    <section id="GenHtmlTheEnd">
+      <h1>THE END</h1>
+    </section>
+
+  </div>
+
+</div>
+
+
+</body>
+</html>

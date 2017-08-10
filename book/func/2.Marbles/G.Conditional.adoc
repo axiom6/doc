@@ -1,0 +1,22 @@
+
+include::../../../dir/inc/DefPractice.adoc[]
+
+=== [.black]#Conditional and Boolean#
+
+* Operators that evaluate one or more Observables or items emitted by Observables
+
+[horizontal]
+All::            Determine whether all items emitted by an Observable meet some criteria
+Amb::            Given two or more source Observables, emit all of the items from only the first of these Observables to emit an item
+Contains::       Determine whether an Observable emits a particular item or not
+DefaultIfEmpty:: Emit items from the source Observable, or a default item if the source Observable emits nothing
+SequenceEqual::  Determine whether two Observables emit the same sequence of items
+SkipUntil::      Discard items emitted by an Observable until a second Observable emits an item
+SkipWhile::      Discard items emitted by an Observable until a specified condition becomes false
+TakeUntil::      Discard items emitted by an Observable after a second Observable emits an item or terminates
+
+image::takeUntilTime.png[alt="takeUntilTime",align="center"]
+
+TakeWhile::      Discard items emitted by an Observable after a specified condition becomes false
+
+

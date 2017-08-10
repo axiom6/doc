@@ -1,0 +1,67 @@
+
+include::../../../../dir/inc/DefStudy.adoc[]
+
+''''
+<<<<
+=== [.black]#Support Vector Machine#
+include::SupportVector.Slide.adoc[]
+
+==== [.black]#How It Works#
+* Optimization over greedienss.
+* It works by classifying the data into different classes by finding a line (hyperplane) which separates the training data set into classes.
+  ** As there are many such linear hyperplanes, SVM algorithm tries to maximize the distance between the various classes that are involved and this is referred as margin maximization. 
+  ** If the line that maximizes the distance between the classes is identified, the probability to generalize well to unseen data is increased.
+
+==== [.black]#SVM’s are classified into two categories:#
+
+* Linear SVM’s – In linear SVM’s the training data i.e. classifiers are separated by a hyperplane.
+* Non-Linear SVM’s- In non-linear SVM’s it is not possible to separate the training data using a hyperplane. 
+  ** For example, the training data for Face detection consists of group of images that are faces and another group of images that are not faces (in other words all other images in the world except faces). 
+  ** Under such conditions, the training data is too complex that it is impossible to find a representation for every feature vector. Separating the set of faces linearly from the set of non-face is a complex task.
+
+==== [.black]#Benefits#
+[horizontal]
+Performance:: SVM offers best classification performance (accuracy) on the training data.
+Efficieny:: SVM renders more efficiency for correct classification of the future data.
+Assuptions:: The best thing about SVM is that it does not make any strong assumptions on data.
+No Overfit:: It does not over-fit the data.
+Dimensional:: Effective in high dimensional spaces. Still effective in cases where number of dimensions is greater than the number of samples.
+Subset:: Uses a subset of training points in the decision function (called support vectors), so it is also memory efficient.
+Versatile:: different Kernel functions can be specified for the decision function. Common kernels are provided,
+   but it is also possible to specify custom kernels.
+
+==== [.black]#Drawbacks#
+[horizontal]
+Labeling:: Requires full labeling of input data
+Membership:: Uncalibrated class membership probabilities
+Two-class:: Only directly applicable for two-class tasks.
+Interpretation:: Parameters of a solved model are difficult to interpret.
+
+////
+==== [.black]#When To Use It#
+* One
+* Two
+
+==== [.black]#Getting Started#
+* One
+* Two
+
+==== [.black]#Proving Results#
+* One
+* Two
+////
+
+==== [.black]#Applications#
+* Text and Hypertext Categoricalization
+* Image Classification
+* SVM is commonly used for stock market forecasting by various financial institutions. 
+  ** For instance, it can be used to compare the relative performance of the stocks when compared to performance of other stocks in the same sector. 
+  ** The relative comparison of stocks helps manage investment making decisions based on the classifications made by the SVM learning algorithm.
+
+////
+==== [.black]#Tools#
+[horizontal]
+Spark:: xxx
+Python:: xxx
+R:: xxx
+////

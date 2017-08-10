@@ -1,0 +1,33 @@
+
+include::../../../dir/inc/DefPractice.adoc[]
+
+= [.black]#icon:bar-chart[] Predict#
+
+image::predict/Predict.png[align="center"]
+
+////
+<<<<
+==  [.black]#icon:book[] Supervised Learning#
+
+==   [.black]#icon:object-group[] Classify#
+===  [.black]#icon:object-group[]] Naive Bayes#
+===  [.black]#icon:object-group[] Support Vector#
+===  [.black]#icon:object-group[] Nearest Neighbor#
+===  [.black]#icon:object-group[] Classifiers#
+
+==   [.black]#icon:sitemap[] Arrange#
+===  [.black]#icon:sitemap[] Desision Tree#
+===  [.black]#icon:sitemap[] Ensemble#
+===  [.black]#icon:connectdevelop[] Neural Nets#
+
+==   [.black]#icon:bar-chart[] Confidence#
+===  [.black]#icon:bar-chart[] Interval#
+===  [.black]#icon:bar-chart[] Model Evaluation#
+===  [.black]#icon:bar-chart[] Uncertainty#
+===  [.black]#icon:bar-chart[] Applicability#
+
+== [.black]#icon:bar-chart[] Historical#
+
+== [.black]#icon:signal[] Forecast#
+
+////

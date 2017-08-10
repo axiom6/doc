@@ -1,0 +1,19 @@
+RDDs shard the data over a cluster, like a virtualized, distributed collection (analogous to HDFS). They support intelligent caching, which
+means no naive flushes of massive datasets to disk. This feature alone allows Spark jobs to run 10-100x faster than comparable MapReduce
+jobs! The “resilient” part means they will reconstitute shards lost due to process/server crashes.
+
+      <section>
+        <h2 class="rx-h2"><img src="../../Create/img/reactive/resilient.svg" class="rx-h2-img"><span class="rx-h2-span">Resilient</span></h2>
+        <h4>Stay responsive in the face of failure</h4>
+        <ul>
+          <li>Nodes and Links fail all the time</li>
+          <li>Learn all about your vulnerablities to failure</li>
+          <li>Fail Fast - The coverup is always worse than the crime</li>
+          <li>Real time attempts to fix failures damage response</li>
+          <li>Throw a "circuit breaker" when a critical resource is compromised</li>
+          <li>Don't throw exceptions "hand grenades" that damage response</li>
+          <li>Leverage the "On Error" message in Reactive Streams</li>
+          <li>Failing gracefully is a art form</li>
+          <li>RDDs in Spark can rerun their transforms to recreate lost data</li>
+        </ul>
+      </section>

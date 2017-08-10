@@ -1,0 +1,16 @@
+
+include::../../../dir/inc/DefPractice.adoc[]
+
+== [.black]#Acquire#
+
+image::acquire/Acquire.png[alt="Concepts",align="center"]
+
+== [.black]#Acquire.#
+
+Working together.
+
+[horizontal]
+Collect:: x
+Refine::  x
+Schema::  x
+Prepare:: x

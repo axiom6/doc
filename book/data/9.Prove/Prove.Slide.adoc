@@ -1,0 +1,16 @@
+
+include::../../../dir/inc/DefPractice.adoc[]
+
+== [.black]#Prove#
+
+image::prove/Prove.png[alt="Prove",align="center"]
+
+== [.black]#Prove.#
+
+Working together.
+
+[horizontal]
+Diagnose::  x
+Benchmark:: x
+Reproduce:: x
+Protect::   x

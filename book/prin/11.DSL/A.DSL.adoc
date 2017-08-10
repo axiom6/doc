@@ -1,0 +1,25 @@
+
+include::../../../dir/inc/DefPractice.adoc[]
+
+== [.black]#Representation#
+===  [.black]#Domain Knowledge#
+===  [.black]#Transformation#
+===  [.black]#Combination#
+== [.black]#Propagation#
+===  [.black]#APIs#
+===  [.black]#Visitation#
+===  [.black]#Pattern Matching#
+== [.black]#External DSLs#
+===  [.black]#Parsing options#
+===  [.black]#Combinatorial Parsers#
+===  [.black]#Parsers#
+==== [.black]#Groovy#
+==== [.black]#Clojure#
+==== [.black]#Scala#
+== [.black]#Internal DSLs#
+===  [.black]#Arranging Syntax#
+===  [.black]#Overloading Operators#
+===  [.black]#Implicit Type Conversion#
+===  [.black]#Favorite Language#
+== [.black]#Summary#
+== [.black]#References#

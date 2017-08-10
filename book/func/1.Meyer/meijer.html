@@ -1,0 +1,125 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Data Cube</title><meta name="generator" content="Asciidoctor 1.5.5 (Bespoke.js converter)"><meta name="mobile-web-app-capable" content="yes"><link rel="stylesheet" href="build/build.css"></head><body><article class="deck"><section id="__span_class_black_data_cube_span"><h2><span class="black">Data Cube</span></h2><ul><li><span class="primary">Big Data is among the hottest buzzwords</span></li><li><span class="primary">Big Data is not just about Volume</span></li><li><span class="primary">It is about Volume, Velocity and Variety</span></li></ul>
+<figure class="image"><img src="../img/1.DataCube.png" alt="DataCube"></figure>
+<div class="hdlist">
+<table>
+<tr>
+<td class="hdlist1">
+Volume
+</td>
+<td class="hdlist2">
+<p>From company database to the World Wide Web</p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+Velocity
+</td>
+<td class="hdlist2">
+<p>From a consumer query to streams of stock quotes</p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+Variety
+</td>
+<td class="hdlist2">
+<p>From SQL tuples to key-value graphs of videos</p>
+</td>
+</tr>
+</table>
+</div></section>
+<section id="__span_class_black_sequences_span"><h2><span class="black">Sequences</span></h2><ul><li><span class="primary">Data bombards us in sequences</span></li><li><span class="primary">Avoid crossing Futures with Callbacks</span></li></ul>
+<figure class="image"><img src="../img/2.Sequences.png" alt="Sequences"></figure>
+<ul><li><span class="primary">With Observers instead of AsyncCallback&lt;T&gt;, the possible sequences of interaction between an asynchronous computation and its client are: (a) successful termination after n ≥ 0 values; (b) unsuccessful termination after i values; or (c) an infinite stream of values that never completes, as shown in figure 2.</span><div class="hdlist">
+<table>
+<tr>
+<td class="hdlist1">
+Successful
+</td>
+<td class="hdlist2">
+<p>Termination after n ≥ 0 values</p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+UnSuccessful
+</td>
+<td class="hdlist2">
+<p>x</p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+Infinity
+</td>
+<td class="hdlist2">
+<p>x</p>
+</td>
+</tr>
+</table>
+</div></li></ul>
+<div class="hdlist">
+<table>
+<tr>
+<td class="hdlist1">
+Create
+</td>
+<td class="hdlist2">
+<p>x</p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+Compose
+</td>
+<td class="hdlist2">
+<p>x</p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+Consume
+</td>
+<td class="hdlist2">
+<p>x</p>
+</td>
+</tr>
+</table>
+</div></section>
+<section id="__span_class_black_where_span"><h2><span class="black">Where</span></h2><ul><li><span class="primary">The Where operator takes a predicate and filters out all values
+for which the predicate does not hold</span></li></ul>
+<figure class="image"><img src="../img/3.Where.png" alt="Where"></figure></section>
+<section id="__span_class_black_select_span"><h2><span class="black">Select</span></h2><ul><li><span class="primary">The Select operator takes a transformation function
+to transform each value in the input data stream.</span></li><li><span class="primary">This produces a new asynchronous result stream.</span></li></ul>
+<figure class="image"><img src="../img/4.Select.png" alt="Select"></figure></section>
+<section id="__span_class_black_select_many_span"><h2><span class="black">Select Many</span></h2><ul><li><span class="primary">The SelectMany operator is often used to wire together two data streams.</span></li><li><span class="primary">It takes a source stream  and an inflator function.</span></li><li><span class="primary">Thenfrom each element in the original source stream it generates a new nested stream of zero, one, or more elements.</span></li><li><span class="primary">It then merges all intermediate asynchronous data streams into a single output stream</span></li><li><span class="primary">This produces a new asynchronous result stream.</span></li></ul>
+<figure class="image"><img src="../img/5.SelectMany.png" alt="SelectMany"></figure></section>
+<section id="__span_class_black_concatenate_span"><h2><span class="black">Concatenate</span></h2><ul><li><span class="primary">The concatenation of all subsequent inflator-produced streams</span></li></ul>
+<figure class="image"><img src="../img/6.Concatenate.png" alt="Concatenate"></figure></section>
+<section id="__span_class_black_switch_span"><h2><span class="black">Switch</span></h2><ul><li><span class="primary">The Switch operator takes a nested asynchronous data stream</span></li><li><span class="primary">It htne produces the elements of the most recent inner asynchronous data stream
+that has been received up to that point.</span></li><li><span class="primary">This produces a new non-nested asynchronous data stream.</span></li><li><span class="primary">It allows later streams to override earlier streams</span></li><li><span class="primary">Always yielding the "latest possible results," rather like a scrolling news feed.</span></li></ul>
+<figure class="image"><img src="../img/7.Switch.png" alt="Switch"></figure></section>
+<section id="__span_class_black_async_span"><h2><span class="black">Async</span></h2><ul><li><span class="primary">The effect of the Switch operator is that every time another asynchronous call is made to Completions in response to a change in the input, the result is switched to receive the output of this latest call, as shown in figure 8, and the results from all previous calls that are still outstanding are ignored.</span></li><li><span class="primary">This is not just a performance optimization. Without using Switch, there would be multiple outstanding requests to the Completion service, and since the stream is asynchronous, results could come back in arbitrary order, possibly updating the UI with results of older requests.</span></li></ul>
+<figure class="image"><img src="../img/8.Async.png" alt="Async"></figure></section>
+<section id="__span_class_black_throttle_span"><h2><span class="black">Throttle</span></h2><ul><li><span class="primary">The throttle operator samples an asynchronous data stream by ignoring values
+that are followed by another value before the specified delay</span></li><li><span class="primary">The throttle operator drops events that come in at too high a rate</span></li><li><span class="primary">however, one can easily define other operators that aggregate events in (tumbling) windows or sample the input stream at certain intervals.</span></li></ul>
+<figure class="image"><img src="../img/9.Throttle.png" alt="Throttle"></figure>
+<script src="../../../talk/lib/bespoke/spoke.js"></script>
+<script src="../../../talk/lib/bespoke/bespoke.js"></script>
+<script src="../../../talk/lib/bespoke/bespoke-keys.js"></script>
+<script src="../../../talk/lib/bespoke/bespoke-mouse.1.1.js"></script>
+<script src="../../../talk/lib/bespoke/bespoke-classes.js"></script>
+<script src="../../../talk/lib/bespoke/bespoke-touch.js"></script>
+<script src="../../../talk/lib/bespoke/bespoke-hash.js"></script>
+<script src="build/spoke.js"></script></section></article><script src="build/build.js"></script><script type="text/x-mathjax-config">MathJax.Hub.Config({
+  messageStyle: "none",
+  tex2jax: {
+    inlineMath: [["\\(", "\\)"]],
+    displayMath: [["\\[", "\\]"]],
+    ignoreClass: "nostem|nolatexmath"
+  },
+  asciimath2jax: {
+    delimiters: [["\\$", "\\$"]],
+    ignoreClass: "nostem|noasciimath"
+  }
+})</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.6.0/MathJax.js?config=TeX-MML-AM_HTMLorMML"></script></body></html>

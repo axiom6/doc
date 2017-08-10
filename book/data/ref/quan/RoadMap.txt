@@ -1,0 +1,211 @@
+1.Fundamentals
+Matrice-
+Linear Algebra -
+Hash Functions-
+Binary Tree-
+O(n).
+Relational Algebra-
+DB Basics.
+Joins-
+  Inner Outer Cross Theta
+CAP Theorum-
+Tabular Data-
+Data Frames-
+Data Series.
+Sharding.
+OLAP -
+Multidimension Data Model=
+ETL.
+Reporting.
+BI-
+Analytics.
+JSON.
+XML.
+NoSQL-
+Reges.
+Vendor Landscape.
+Environment Setup.
+
+2. Statistics
+Pick a Dataset=
+(UCI Repo),
+Descriptive Statistics-
+  Mean Median StdDev Variance
+Explorary Data Analysis,
+Histograms-
+Percentiles & Outliers-
+Probability Theory-
+Bayes Theorum-
+Random Variables-
+CDF Cumul Dist Fn
+Continous Distributions-
+  Normal Poisson Gaussian
+Skewness-
+ANOVA-
+PDF Prob Den Fn-
+Central Limit Theorum.
+Monte Carlo Method-
+Hypothesis Testing-
+p-Value.
+Chi Test-
+Estimation-
+MLE.
+Kernel Density Estimate'
+Regression-
+Covariance-
+Correlation-
+Pearson Coeff,
+Causation-
+Euclidean Distance.
+
+3. Progamming
+Python
+Spreadsheet
+Expressions
+Variables
+Vectors
+Matrices
+Arrays
+Factors
+Lists
+Data Frames
+  Manipulate
+CSV
+Raw Data
+Data Subsets
+Functions
+Installs
+
+4. Machine Learning
+Numberical Variance
+Categorical Variance
+Learning-
+  UnSupervised-
+  Semi-Super-
+  Supervised-
+  Reinforce-
+Concepts.
+  Inputs.
+  Attributes.
+Data-
+  Training-
+  Test-
+Classifier-
+Predict-
+Lift-
+Overfitting-
+Bias-
+Variance-
+Tree & Classification-
+Classification-
+Classification Rate.
+Decision Trees-
+Boosting-
+Naive Bayes Classification-
+K-Nearest Neighbor-
+Regression-
+  Linear-
+  Logistic-
+Ranking-
+Neural Networks-
+  Perceptron-
+Clustering-
+  Heirachial-
+  K-Means-
+Sentiment Analysis-
+Collaborative Filtering-
+
+5. Text Mining NLP
+Corpus.
+Named Entity Recognition.
+Text Analysis
+UIMA
+Term Document Matrix-.
+Term Frequency & Weight-
+Support Vector Machines-
+Association Rules-
+Market Based Analysis.
+Feature Extraction-
+Classify Text-
+Vocabulary Mapping-
+Tagging-
+
+6. Visualization
+Data Exporation-
+Uni Bi Multivariat Vis-
+Historgram-
+Pie.
+Tree Map
+Scatter Plot.
+Line Charts.
+Spatial Charts.
+Survey Plot.
+Time Line.
+Desision Tree.
+
+
+7. Big Data - obsolete
+Map Reduce
+Components
+HDFS
+Data Replication
+Setup
+Name & Data Nodes
+
+8. Data Ingestion
+Summary of Data Formates
+Data Discovery?
+Date Source & Acquisition-
+Data Integration-
+Data Fusion.
+Transformation-
+Enrichment-
+Data Survey-
+Data Volumn-
+ETL.
+
+9. Data Munging
+Dimensionality
+  Numberousity
+  Reduction
+Normalizations-
+Data Scrubbing-
+Missing Values-
+Unbiased Estimates.
+Binning Sparse Values.
+Feature Extraction-
+Denoising-
+Sampling-
+  Straified-
+Principle Components-
+
+10. Tools
+Tabular
+  Spreadsheet
+  Pivot
+Search
+  Elastic Search
+Language
+  Python
+  JavaScript
+  Scala
+Steaming
+  Kafka
+Pipeline
+  Spark
+  GridGain
+Visual
+  D3
+  Plotly
+Database
+  Postgres
+  MongoDB
+  Casandra
+
+
+
+
+
+
+
+

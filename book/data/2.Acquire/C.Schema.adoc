@@ -1,0 +1,10 @@
+
+include::../../../dir/inc/DefStudy.adoc[]
+
+''''
+<<<<
+==  [.black]#icon:circle[] Schema#
+=== [.black]#icon:circle[] Domain#
+=== [.black]#icon:circle[] Document#
+=== [.black]#icon:circle[] Model#
+=== [.black]#icon:circle[] Deploy#

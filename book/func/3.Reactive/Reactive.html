@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Asciidoctor 1.5.5">
+<meta name="author" content="Tom Flaherty">
+<title>Reactive: Programming vs.Systems</title>
+<link rel="stylesheet" href="../../../dir/css/axbook.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+</head>
+<body class="book toc2 toc-left">
+<div id="header">
+<h1><span class="black">Reactive: Programming vs.Systems</span></h1>
+<div class="details">
+<span id="author" class="author">Tom Flaherty</span><br>
+<span id="revnumber">version 0.0,</span>
+<span id="revdate">November 9, 2016</span>
+</div>
+<div id="toc" class="toc2">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#__span_class_black_a_set_of_design_principles_span"><span class="black">A Set of Design Principles</span></a></li>
+<li><a href="#__span_class_black_reactive_systems_span"><span class="black">Reactive Systems</span></a></li>
+<li><a href="#__span_class_black_the_three_areas_of_reactive_span"><span class="black">The Three Areas of Reactive</span></a>
+<ul class="sectlevel2">
+<li><a href="#__span_class_black_reactive_systems_span_2"><span class="black">Reactive Systems</span></a></li>
+<li><a href="#__span_class_black_frp_span"><span class="black">FRP</span></a></li>
+<li><a href="#__span_class_black_reactive_programming_span"><span class="black">Reactive Programming</span></a></li>
+</ul>
+</li>
+<li><a href="#__span_class_black_frp_span_2"><span class="black">FRP</span></a></li>
+<li><a href="#__span_class_black_reactive_programming_span_2"><span class="black">Reactive Programming</span></a></li>
+<li><a href="#__span_class_black_asynchronous_programming_span"><span class="black">Asynchronous Programming</span></a></li>
+<li><a href="#__span_class_black_event_vs_message_driven_span"><span class="black">Event vs. Message Driven</span></a></li>
+<li><a href="#__span_class_black_reactive_programming_span_3"><span class="black">Reactive Programming</span></a></li>
+<li><a href="#__span_class_black_dataflow_span"><span class="black">Dataflow</span></a></li>
+<li><a href="#__span_class_black_reactivex_span"><span class="black">ReactiveX</span></a></li>
+<li><a href="#__span_class_black_benefits_span"><span class="black">Benefits</span></a></li>
+<li><a href="#__span_class_black_architecture_vs_probramming_span"><span class="black">Architecture vs Probramming</span></a></li>
+<li><a href="#__span_class_black_event_vs_message_driven_span_2"><span class="black">Event vs. Message Driven</span></a></li>
+<li><a href="#__span_class_black_conceptual_difference_span"><span class="black">Conceptual Difference</span></a></li>
+<li><a href="#__span_class_black_distributed_environment_span"><span class="black">Distributed Environment</span></a></li>
+<li><a href="#__span_class_black_trade_off_span"><span class="black">Trade Off</span></a></li>
+<li><a href="#__span_class_black_semantics_applicability_span"><span class="black">Semantics Applicability</span></a></li>
+<li><a href="#__span_class_black_the_challenge_span"><span class="black">The Challenge</span></a></li>
+<li><a href="#__span_class_black_systems_and_architecture_span"><span class="black">Systems and architecture</span></a></li>
+<li><a href="#__span_class_black_message_passing_span"><span class="black">Message Passing</span></a></li>
+<li><a href="#__span_class_black_responsiveness_span"><span class="black">Responsiveness</span></a></li>
+<li><a href="#__span_class_black_resilience_span"><span class="black">Resilience</span></a></li>
+<li><a href="#__span_class_black_elasticity_span"><span class="black">Elasticity</span></a></li>
+<li><a href="#__span_class_black_productivity_span"><span class="black">Productivity</span></a></li>
+<li><a href="#__span_class_black_programming_to_systems_span"><span class="black">Programming to Systems</span></a></li>
+<li><a href="#__span_class_black_summary_span"><span class="black">Summary</span></a></li>
+</ul>
+</div>
+</div>
+<div id="content">
+<div class="sect1">
+<h2 id="__span_class_black_a_set_of_design_principles_span"><span class="black">A Set of Design Principles</span></h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>One recent indicator of success is that "reactive" has become an overloaded term and is now being associated with several different things to different people—in good company with words like "streaming," "lightweight," and "real-time."</p>
+</li>
+<li>
+<p>From the perspective of this article, reactive is a set of design principles, a way of thinking about systems architecture and design in a distributed environment where implementation techniques, tooling, and design patterns are components of a larger whole—a system.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="__span_class_black_reactive_systems_span"><span class="black">Reactive Systems</span></h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>A reactive system is an architectural style that allows multiple individual applications to coalesce as a single unit, reacting to its surroundings, while remaining aware of each other—this could manifest as being able to scale up/down, load balancing, and even taking some of these steps proactively.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="__span_class_black_the_three_areas_of_reactive_span"><span class="black">The Three Areas of Reactive</span></h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>It’s possible to write a single application in a reactive style (i.e. using reactive programming);</p>
+</li>
+<li>
+<p>however, that’s merely one piece of the puzzle.</p>
+</li>
+<li>
+<p>Though each of the above aspects may seem to qualify as "reactive," in and of themselves they do not make a system reactive.</p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_reactive_systems_span_2"><span class="black">Reactive Systems</span></h3>
+
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_frp_span"><span class="black">FRP</span></h3>
+
+</div>
+<div class="sect2">
+<h3 id="__span_class_black_reactive_programming_span"><span class="black">Reactive Programming</span></h3>
+
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="__span_class_black_frp_span_2"><span class="black">FRP</span></h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Functional reactive programming, commonly called FRP, is most frequently misunderstood. FRP was very precisely defined 20 years ago by Conal Elliott. The term has most recently been used incorrectly1 to describe technologies like Elm, Bacon.js, and Reactive Extensions (RxJava, Rx.NET, RxJS) amongst others. Most libraries claiming to support FRP are almost exclusively talking about reactive programming and it will therefore not be discussed further.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="__span_class_black_reactive_programming_span_2"><span class="black">Reactive Programming</span></h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Reactive programming, not to be confused with functional reactive programming, is a subset of asynchronous programming and a paradigm where the availability of new information drives the logic forward rather than having control flow driven by a thread-of-execution.</p>
+</li>
+<li>
+<p>It supports decomposing the problem into multiple discrete steps where each can be executed in an asynchronous and non-blocking fashion, and then be composed to produce a workflow—possibly unbounded in its inputs or outputs.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="__span_class_black_asynchronous_programming_span"><span class="black">Asynchronous Programming</span></h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Asynchronous is defined by the Oxford Dictionary as “not existing or occurring at the same time,”</p>
+</li>
+<li>
+<p>which in this context means that the processing of a message or event is happening at some arbitrary time possibly in the future.</p>
+</li>
+<li>
+<p>This is a very important technique in reactive programming since it allows for non-blocking execution</p>
+</li>
+<li>
+<p>where threads of execution competing for a shared resource don’t need to wait by blocking (preventing the thread of execution from performing other work until current work is done),</p>
+</li>
+<li>
+<p>and can as such perform other useful work while the resource is occupied. Amdahl’s Law2 tells us that contention is the biggest enemy of scalability, and therefore a reactive program should rarely, if ever, have to block.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="__span_class_black_event_vs_message_driven_span"><span class="black">Event vs. Message Driven</span></h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Reactive programming is generally event-driven,</p>
+</li>
+<li>
+<p>in contrast to reactive systems, which are message-driven</p>
+</li>
+<li>
+<p>the distinction between event-driven and message-driven is clarified later in this article.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="__span_class_black_reactive_programming_span_3"><span class="black">Reactive Programming</span></h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>The application program interface (API) for reactive programming libraries are generally either:</p>
+</li>
+</ul>
+</div>
+<div class="hdlist">
+<table>
+<tr>
+<td class="hdlist1">
+Callback-based
+</td>
+<td class="hdlist2">
+<p>where anonymous side-effecting callbacks are attached to event sources, and are being invoked when events pass through the dataflow chain.</p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+Declarative
+</td>
+<td class="hdlist2">
+<p>through functional composition, usually using well-established combinators like map, filter, fold etc.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Most libraries provide a mix of these two styles, often with the addition of stream-based operators like windowing, counts, triggers, etc.</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="__span_class_black_dataflow_span"><span class="black">Dataflow</span></h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>It would be reasonable to claim that reactive programming is related to dataflow programming,</p>
+</li>
+<li>
+<p>Since the emphasis is on the flow of data rather than the flow of control.</p>
+</li>
+<li>
+<p>Examples of programming abstractions that support this programming technique are:</p>
+</li>
+</ul>
+</div>
+<div class="hdlist">
+<table>
+<tr>
+<td class="hdlist1">
+Futures/Promises
+</td>
+<td class="hdlist2">
+<p>containers of a single value, many-read/single-write semantics where asynchronous transformations of the value can be added even if it is not yet available.</p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+Streams
+</td>
+<td class="hdlist2">
+<p>as in reactive streams: unbounded flows of data processing, enabling asynchronous, non-blocking, back-pressured transformation pipelines between a multitude of sources and destinations.</p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+Dataflow variables
+</td>
+<td class="hdlist2">
+<p>single assignment variables (memory-cells) which can depend on input, procedures and other cells, so that they are automatically updated on change. A practical example is spreadsheets—where the change of the value in a cell ripples through all dependent functions, producing new values downstream.</p>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="__span_class_black_reactivex_span"><span class="black">ReactiveX</span></h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Popular libraries supporting the reactive programming techniques on the JVM include, but are not limited to, Akka Streams, Ratpack, Reactor, RxJava, and Vert.x.</p>
+</li>
+<li>
+<p>These libraries implement the reactive streams specification, which is a standard for interoperability between reactive programming libraries on the JVM, and according to its own description is “&#8230;&#8203;an initiative to provide a standard for asynchronous stream processing with non-blocking back pressure.”</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="__span_class_black_benefits_span"><span class="black">Benefits</span></h2>
+<div class="sectionbody">
+<div class="hdlist">
+<table>
+<tr>
+<td class="hdlist1">
+Utilization
+</td>
+<td class="hdlist2">
+<p>of computing resources on multicore and multi-CPU hardware</p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+Performance
+</td>
+<td class="hdlist2">
+<p>by reducing serialization points as per Amdahl’s Law and, by extension, Günther’s Universal Scalability Law3</p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+Maintainability
+</td>
+<td class="hdlist2">
+<p>A straightforward approach to dealing with asynchronous and non-blocking computation and I/O</p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+Coordination
+</td>
+<td class="hdlist2">
+<p>Removes the need for explicit coordination between active components</p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+Ease
+</td>
+<td class="hdlist2">
+<p>creation of components and composition of workflows</p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+Throttling
+</td>
+<td class="hdlist2">
+<p>Manages back-pressure thas is crucial to avoid over-utilization, or rather the unbounded consumption of resources</p>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="__span_class_black_architecture_vs_probramming_span"><span class="black">Architecture vs Probramming</span></h2>
+<div class="sectionbody">
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Architecture</dt>
+<dd>
+<p>The process of designing reactive systems.</p>
+</dd>
+<dt class="hdlist1">Programming Paradigms</dt>
+<dd>
+<p>reactive programming is jus one Paradigms,</p>
+</dd>
+<dt class="hdlist1">Not An End All</dt>
+<dd>
+<p>With any tool, it is not intended for any and all use-cases.</p>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="__span_class_black_event_vs_message_driven_span_2"><span class="black">Event vs. Message Driven</span></h2>
+<div class="sectionbody">
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Event Driven</dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p>Focuses on computation through ephemeral dataflow chains</p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1">Message Driven</dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p>Focuses on resilience and elasticity through the communication, and coordination, of distributed systems—is message-driven4 (also referred to as messaging).</p>
+</li>
+<li>
+<p>long-lived addressable components</p>
+</li>
+<li>
+<p>asynchronous, with the sending and the reception decoupled from the sender and receiver respectively</p>
+</li>
+<li>
+<p>messages are inherently directed - push</p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1">Main Differences </dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p>Messages are inherently directed (push), events are not (pull).</p>
+</li>
+<li>
+<p>Messages have a clear (single) destination, while events are facts for others to observe.</p>
+</li>
+</ul>
+</div>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="__span_class_black_conceptual_difference_span"><span class="black">Conceptual Difference</span></h2>
+<div class="sectionbody">
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Message</dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p>An item of data that is sent to a specific destination.</p>
+</li>
+<li>
+<p>Awaits the arrival of messages and react to them, otherwise lying dormant.</p>
+</li>
+<li>
+<p>Focusses on addressable recipients</p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1">Event</dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p>A signal emitted by a component upon reaching a given state.</p>
+</li>
+<li>
+<p>In an event-driven system notification listeners are attached to the sources of events such that they are invoked when the event is emitted.</p>
+</li>
+<li>
+<p>This means that an event-driven system focuses on addressable event sources</p>
+</li>
+</ul>
+</div>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="__span_class_black_distributed_environment_span"><span class="black">Distributed Environment</span></h2>
+<div class="sectionbody">
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Messages</dt>
+<dd>
+<p>Needed to communicate across the network and form the basis for communication in distributed systems,</p>
+</dd>
+<dt class="hdlist1">Events</dt>
+<dd>
+<p>are emitted locally</p>
+</dd>
+<dt class="hdlist1">Messaging</dt>
+<dd>
+<p>It is common to use messaging under the hood to bridge an event-driven system across the network by sending events inside messages.</p>
+</dd>
+<dt class="hdlist1">Relative Simplicity</dt>
+<dd>
+<p>of the event-driven programming model in a distributed context and can work very well for specialized and well-scoped use cases</p>
+</dd>
+<dt class="hdlist1">Distributed Stream Processing</dt>
+<dd>
+<p>Spark Streaming, Flink, Kafka, and Akka Streams over Gearpump</p>
+</dd>
+<dt class="hdlist1">Distributed Publish Subscribe</dt>
+<dd>
+<p>Kafka and Kinesis.</p>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="__span_class_black_trade_off_span"><span class="black">Trade Off</span></h2>
+<div class="sectionbody">
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Gains</dt>
+<dd>
+<p>Sbstraction and simplicity of the programming model</p>
+</dd>
+<dt class="hdlist1">Losses</dt>
+<dd>
+<p>Control.</p>
+</dd>
+<dt class="hdlist1">Embrace Reality and Constraints</dt>
+<dd>
+<p>Partial failures, failure detection, dropped/duplicated/reordered messages, eventual consistency, managing multiple concurrent realities, etc.—</p>
+</dd>
+<dt class="hdlist1">Avoid Leaky Abstraction</dt>
+<dd>
+<p>Tackle reality head on instead of hiding it behind a leaky abstraction</p>
+</dd>
+<dt class="hdlist1">Don&#8217;t Pretend</dt>
+<dd>
+<p>That the network is not there. This has been done too many times in the past (e.g. EJB, RPC, CORBA, and XA).</p>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="__span_class_black_semantics_applicability_span"><span class="black">Semantics Applicability</span></h2>
+<div class="sectionbody">
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Differences in Semantics and Applicability</dt>
+<dd>
+<p>Have profound implications in the application design, including things like resilience, elasticity, mobility, location transparency, and management of the complexity of distributed systems, which will be explained further in this article.</p>
+</dd>
+<dt class="hdlist1">In a Reactive System</dt>
+<dd>
+<p>Both events and messages will be present—as one is a great tool for communication (messages), and another is a great way of representing facts (events).</p>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="__span_class_black_the_challenge_span"><span class="black">The Challenge</span></h2>
+<div class="sectionbody">
+<div class="dlist">
+<dl>
+<dt class="hdlist1">interconnected</dt>
+<dd>
+<p>The world is becoming increasingly interconnected.</p>
+</dd>
+<dt class="hdlist1">We are no longer building programs—end-to-end logic</dt>
+<dd>
+<p>to calculate something for a single operator—as much as we are building systems.</p>
+</dd>
+<dt class="hdlist1">Systems are complex by definition</dt>
+<dd>
+<p>each consisting of a multitude of components, who in and of themselves also can be systems—which mean software is increasingly dependent on other software to function properly.</p>
+</dd>
+<dt class="hdlist1">Onipresent</dt>
+<dd>
+<p>The systems we create today are to be operated on computers small and large, few and many, near each other or half a world away.</p>
+</dd>
+<dt class="hdlist1">Expectations</dt>
+<dd>
+<p>Users’ expectations have become harder and harder to meet as everyday human life is increasingly dependent on the availability of systems to function smoothly.</p>
+</dd>
+<dt class="hdlist1">Have to be responsive</dt>
+<dd>
+<p>for it does not matter if something provides the correct response if the response is not available when it is needed.</p>
+</dd>
+<dt class="hdlist1">Acheived By</dt>
+<dd>
+<p>Responsiveness  under failure (resilience) and under load (elasticity).</p>
+</dd>
+<dt class="hdlist1">Message Driven</dt>
+<dd>
+<p>To make that happen, we make these systems message-driven, and we call them reactive systems.</p>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="__span_class_black_systems_and_architecture_span"><span class="black">Systems and architecture</span></h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Reactive systems—as defined by the Reactive Manifesto—is a set of architectural design principles for building modern systems that are well prepared to meet the increasing demands that applications face today.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="__span_class_black_message_passing_span"><span class="black">Message Passing</span></h2>
+<div class="sectionbody">
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Definition</dt>
+<dd>
+<p>The foundation for a reactive system is message-passing</p>
+</dd>
+<dt class="hdlist1">Boundary</dt>
+<dd>
+<p>a temporal boundary between components that allows them to be decoupled</p>
+</dd>
+<dt class="hdlist1">Decoupled in Time</dt>
+<dd>
+<p>this allows for concurrency</p>
+</dd>
+<dt class="hdlist1">Decoupled in Space</dt>
+<dd>
+<p>llows for distribution and mobility.</p>
+</dd>
+<dt class="hdlist1">Isolation</dt>
+<dd>
+<p>This decoupling is a requirement for full isolation between components</p>
+</dd>
+<dt class="hdlist1">Basis</dt>
+<dd>
+<p>Forms the basis for both resilience and elasticity.</p>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="__span_class_black_responsiveness_span"><span class="black">Responsiveness</span></h2>
+<div class="sectionbody">
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Dependable</dt>
+<dd>
+<p>In order to deliver systems that users—and businesses—can depend on, they have to be responsive</p>
+</dd>
+<dt class="hdlist1">Available</dt>
+<dd>
+<p>It does not matter if something provides the correct response if the response is not available when it is needed.</p>
+</dd>
+<dt class="hdlist1">Responsive Under Adversity</dt>
+<dd>
+<p>In order to achieve this, we need to make sure that responsiveness can be maintained under failure (resilience) and under load (elasticity).</p>
+</dd>
+<dt class="hdlist1">Message Driven</dt>
+<dd>
+<p>To make that happen, we make these systems message-driven, and we call them reactive systems.</p>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="__span_class_black_resilience_span"><span class="black">Resilience</span></h2>
+<div class="sectionbody">
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Responsiveness under failure</dt>
+<dd>
+<p>An inherent functional property of the system, something that needs to be designed for, and not something that can be added in retroactively.</p>
+</dd>
+<dt class="hdlist1">Beyond Fault Tolerance</dt>
+<dd>
+<p>it’s not about graceful degradation—even though that is a very useful trait for systems—but about being able to fully recover from failure: to self-heal.</p>
+</dd>
+<dt class="hdlist1">Component Isolation</dt>
+<dd>
+<p>Avoids failures spreading to neighbouring components—resulting in, often catastrophic, cascading failure scenarios.</p>
+</dd>
+<dt class="hdlist1">Key To Resilience</dt>
+<dd>
+<p>So the key to building resilient, self-healing systems is to allow failures to be: contained, reified as messages, sent to other components (that act as supervisors), and managed from a safe context outside the failed component.</p>
+</dd>
+<dt class="hdlist1">Message-driven is the Enabler</dt>
+<dd>
+<p>moving away from strongly coupled, brittle, deeply nested synchronous call chains that everyone learned to suffer through, or ignore.</p>
+</dd>
+<dt class="hdlist1">Decouple</dt>
+<dd>
+<p>The management of failures from the call chain, freeing the client from the responsibility of handling the failures of the server.</p>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="__span_class_black_elasticity_span"><span class="black">Elasticity</span></h2>
+<div class="sectionbody">
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Responsiveness Under Load</dt>
+<dd>
+<p>The throughput of a system scales up or down (as well as in or out) automatically to meet varying demand as resources are proportionally added or removed. It is the essential element needed to take advantage of the promises of cloud computing: allowing systems to be resource efficient, cost-efficient, environment-friendly and pay-per-use.</p>
+</dd>
+<dt class="hdlist1">Systems need to be Adaptive</dt>
+<dd>
+<p>Allows intervention-less auto-scaling, replication of state and behavior, load-balancing of communication, failover, and upgrades, without rewriting or even reconfiguring the system.</p>
+</dd>
+<dt class="hdlist1">Location Transparency</dt>
+<dd>
+<p>Enables adaptibility wuth the ability to scale the system in the same way, using the same programming abstractions, with the same semantics, across all dimensions of scale—from CPU cores to data centers.</p>
+</dd>
+<dt class="hdlist1">Everythis is Distributed</dt>
+<dd>
+<p>This is true whether we are running our systems on a single node (with multiple independent CPUs communicating over the QPI link) or on a cluster of nodes (with independent machines communicating over the network).</p>
+</dd>
+<dt class="hdlist1">Vertical and Horizontal Same</dt>
+<dd>
+<p>Embracing this fact means that there is no conceptual difference between scaling vertically on multicore or horizontally on the cluster. This decoupling in space [&#8230;&#8203;], enabled through asynchronous message-passing, and decoupling of the runtime instances from their references is what we call Location Transparency.</p>
+</dd>
+<dt class="hdlist1">Communication Transparency</dt>
+<dd>
+<p>So no matter where the recipient resides, we communicate with it in the same way. The only way that can be done semantically equivalent is via messaging</p>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="__span_class_black_productivity_span"><span class="black">Productivity</span></h2>
+<div class="sectionbody">
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Isolation of Failures</dt>
+<dd>
+<p>offer bulkheads between components, preventing failures to cascade, which limits the scope and severity of failures.</p>
+</dd>
+<dt class="hdlist1">Supervisor Iierarchies</dt>
+<dd>
+<p>offer multiple levels of defenses paired with self-healing capabilities, which remove a lot of transient failures from ever incurring any operational cost to investigate.</p>
+</dd>
+<dt class="hdlist1">Message Passing with Location Transparency</dt>
+<dd>
+<p>allow for components to be taken offline and replaced or rerouted without affecting the end-user experience, reducing the cost of disruptions, their relative urgency, and also the resources required to diagnose and rectify.</p>
+</dd>
+<dt class="hdlist1">Replication</dt>
+<dd>
+<p>reduces the risk of data loss, and lessens the impact of failure on the availability of retrieval and storage of information.</p>
+</dd>
+<dt class="hdlist1">Elasticity</dt>
+<dd>
+<p>allows for conservation of resources as usage fluctuates, allowing for minimizing operational costs when load is low, and minimizing the risk of outages or urgent investment into scalability as load increases.</p>
+</dd>
+<dt class="hdlist1">Cope Well</dt>
+<dd>
+<p>under failure varying load and change over time—all while offering a low cost of ownership over time.</p>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="__span_class_black_programming_to_systems_span"><span class="black">Programming to Systems</span></h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>How does reactive programming relate to reactive systems?</p>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Reactive Programming</dt>
+<dd>
+<p>A great technique for managing internal logic and dataflow transformation, locally within the components, as a way of optimizing code clarity, performance and resource efficiency. Reactive systems, being a set of architectural principles, puts the emphasis on distributed communication and gives us tools to tackle resilience and elasticity in distributed systems.</p>
+</dd>
+<dt class="hdlist1">Addressability</dt>
+<dd>
+<p>One common problem with only leveraging reactive programming is that its tight coupling between computation stages in an event-driven callback-based or declarative program makes resilience harder to achieve as its transformation chains are often ephemeral and its stages—the callbacks or combinators—are anonymous, i.e. not addressable.</p>
+</dd>
+<dt class="hdlist1">Signaling</dt>
+<dd>
+<p>This means that they usually handle success or failure directly without signaling it to the outside world.</p>
+</dd>
+<dt class="hdlist1">Escalationg</dt>
+<dd>
+<p>This lack of addressability makes recovery of individual stages harder to achieve as it is typically unclear where exceptions should, or even could, be propagated.</p>
+</dd>
+<dt class="hdlist1">Tracing Failures</dt>
+<dd>
+<p>As a result, failures are tied to ephemeral client requests instead of to the overall health of the component—if one of the stages in the dataflow chain fails, then the whole chain needs to be restarted, and the client notified.</p>
+</dd>
+<dt class="hdlist1">Self Healing</dt>
+<dd>
+<p>This is in contrast to a message-driven reactive system which has the ability to self-heal, without necessitating notifying the client.</p>
+</dd>
+<dt class="hdlist1">Decouple In Time</dt>
+<dd>
+<p>Another contrast to the reactive systems approach is that pure reactive programming allows decoupling in time,
+As mentioned, decoupling in time allows for concurrency,</p>
+</dd>
+<dt class="hdlist1">Decouple In Space</dt>
+<dd>
+<p>but not space (unless leveraging message-passing to distribute the dataflow graph under the hood, across the network, as discussed previously).
+but it is decoupling in space that allows for distribution, and mobility—allowing for not only static but also dynamic topologies—which is essential for elasticity.</p>
+</dd>
+<dt class="hdlist1">Location Transparency</dt>
+<dd>
+<p>A lack of location transparency makes it hard to scale out a program purely based on reactive programming techniques adaptively in an elastic fashion and therefore requires layering additional tools, such as a message bus, data grid, or bespoke network protocols on top.</p>
+</dd>
+<dt class="hdlist1">Communication Abstraction</dt>
+<dd>
+<p>This is where the message-driven programming of reactive systems shines, since it is a communication abstraction that maintains its programming model and semantics across all dimensions of scale, and therefore reduces system complexity and cognitive overhead.</p>
+</dd>
+<dt class="hdlist1">Callback Based</dt>
+<dd>
+<p>A commonly cited problem of callback-based programming is that while writing such programs may be comparatively easy, it can have real consequences in the long run.</p>
+</dd>
+<dt class="hdlist1">Anonymous Callbacks</dt>
+<dd>
+<p>For example, systems based on anonymous callbacks provide very little insight when you need to reason about them, maintain them, or most importantly figure out what, where, and why production outages and misbehavior occur.</p>
+</dd>
+<dt class="hdlist1">Addressable Components</dt>
+<dd>
+<p>Libraries and platforms designed for reactive systems (such as the Akka project and the Erlang platform) have long learned this lesson and are relying on long-lived addressable components that are easier to reason about in the long run.</p>
+</dd>
+<dt class="hdlist1">Identifiable Components</dt>
+<dd>
+<p>When failures occurs, the component is uniquely identifiable along with the message that caused the failure. With the concept of addressability at the core of the component model, monitoring solutions have a meaningful way to present data that is gathered—leveraging the identities that are propagated.</p>
+</dd>
+<dt class="hdlist1">Paradigm</dt>
+<dd>
+<p>The choice of a good programming paradigm, one that enforces things like addressability and failure management, has proven to be invaluable in production, as it is designed with the harshness of reality in mind, to expect and embrace failure rather than the lost cause of trying to prevent it.</p>
+</dd>
+<dt class="hdlist1">Reactive Programming</dt>
+<dd>
+<p>All in all, reactive programming is a very useful implementation technique, which can be used in a reactive architecture. Remember that it will only help manage one part of the story: dataflow management through asynchronous and nonblocking execution—usually only within a single node or service.</p>
+</dd>
+<dt class="hdlist1">Reactive System</dt>
+<dd>
+<p>Once there are multiple nodes, there is a need to start thinking hard about things like data consistency, cross-node communication, coordination, versioning, orchestration, failure management, separation of concerns and responsibilities etc.—i.e. system architecture.</p>
+</dd>
+<dt class="hdlist1">Approach</dt>
+<dd>
+<p>Therefore, to maximize the value of reactive programming, use it as one of the tools to construct a reactive system.</p>
+</dd>
+<dt class="hdlist1">Requires</dt>
+<dd>
+<p>Building a reactive system requires more than abstracting away OS-specific resources and sprinkling asynchronous APIs and circuit breakers on top of an existing, legacy, software stack.</p>
+</dd>
+<dt class="hdlist1">Embrace</dt>
+<dd>
+<p>It should be about embracing the fact that you are building a distributed system comprising multiple services—that all need to work together, providing a consistent and responsive experience, not just when things work as expected but also in the face of failure and under unpredictable load.</p>
+</dd>
+</dl>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="__span_class_black_summary_span"><span class="black">Summary</span></h2>
+<div class="sectionbody">
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Growth</dt>
+<dd>
+<p>Enterprises and middleware vendors alike are beginning to embrace reactive, with 2016 witnessing a huge growth in corporate interest in adopting reactive.</p>
+</dd>
+<dt class="hdlist1">Goal</dt>
+<dd>
+<p>In this article, we have described reactive systems as being the end goal—assuming the context of multicore, cloud and mobile architectures—for enterprises, with reactive programming serving as one of the important tools.</p>
+</dd>
+<dt class="hdlist1">Productivity</dt>
+<dd>
+<p>Reactive programming offers productivity for developers—through performance and resource efficiency</p>
+</dd>
+<dt class="hdlist1">component level</dt>
+<dd>
+<p>for internal logic and dataflow transformation.</p>
+</dd>
+<dt class="hdlist1">DevOps</dt>
+<dd>
+<p>resilience and elasticity—at the system level, for building cloud native and other large-scale distributed systems.</p>
+</dd>
+<dt class="hdlist1">Eecommend</dt>
+<dd>
+<p>combine the techniques of reactive programming within the design principles of reactive systems.</p>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+</div>
+<div id="footer">
+<div id="footer-text">
+Version 0.0<br>
+Last updated 2016-12-03 18:51:34 MST
+</div>
+</div>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/styles/github.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/highlight.min.js"></script>
+<script>hljs.initHighlighting()</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  messageStyle: "none",
+  tex2jax: {
+    inlineMath: [["\\(", "\\)"]],
+    displayMath: [["\\[", "\\]"]],
+    ignoreClass: "nostem|nolatexmath"
+  },
+  asciimath2jax: {
+    delimiters: [["\\$", "\\$"]],
+    ignoreClass: "nostem|noasciimath"
+  },
+  TeX: { equationNumbers: { autoNumber: "none" } }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.6.0/MathJax.js?config=TeX-MML-AM_HTMLorMML"></script>
+</body>
+</html>

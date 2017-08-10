@@ -1,0 +1,151 @@
+/**
+ * This stylesheet is used to print reveal.js
+ * presentations to PDF.
+ *
+ * https://github.com/hakimel/reveal.js#pdf-export
+ */
+
+* {
+    -webkit-print-color-adjust: exact;
+}
+
+body {
+    margin: 0 auto !important;
+    border: 0;
+    padding: 0;
+    float: none !important;
+    overflow: visible;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+}
+
+
+
+h1, h2, h3, h4, h5, h6 {
+    text-shadow: 0 0 0 #000 !important;
+}
+
+
+
+ul, ol, div, p {
+    visibility: visible;
+    position: static;
+    width: auto;
+    height: auto;
+    display: block;
+    overflow: visible;
+    margin: auto;
+}
+
+.bespoke-parent section {
+    position: static;
+
+
+    left: auto;
+    top:  auto;
+
+    overflow: visible;
+
+    -webkit-perspective: none;
+    -moz-perspective: none;
+    //-ms-perspective: none;
+    perspective: none;
+
+    -webkit-perspective-origin: 50% 50%; /* there isn't a none/auto value but 50-50 is the default */
+    -moz-perspective-origin: 50% 50%;
+    //-ms-perspective-origin: 50% 50%;
+    perspective-origin: 50% 50%;
+}
+/*
+.bespoke-parent {
+    width: 11.0in !important;
+    height: 8.5in !important;
+}
+*/
+.bespoke-parent section .stack {
+    margin: 0 !important;
+    padding: 0 !important;
+    page-break-after: avoid !important;
+    height: auto !important;
+    //min-height: auto !important;
+}
+
+ .bespoke-slide {
+    page-break-after: always !important;
+
+     position: relative !important; left:0 !important; top:10% !important;
+     //width:  10.90in !important;
+     //height:  7.75in !important;
+     width:  11in   !important;
+     height:  7.75in !important;
+     //width:  100%   !important;
+     //height: 100% !important;
+     overflow: hidden !important;
+
+    visibility: visible !important;
+
+    margin:  0 !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+    min-height: 1px;
+     border: none;
+    border-radius: 0;
+
+    opacity: 1 !important;
+
+    -webkit-transform-style: flat !important;
+    //-moz-transform-style: flat !important;
+    //-ms-transform-style: flat !important;
+    transform-style: flat !important;
+
+    -webkit-transform: none !important;
+    -moz-transform: none !important;
+    -ms-transform: none !important;
+    transform: none !important;
+}
+
+.bespoke-slide pre code {
+    overflow: hidden !important;
+    font-family: Courier, 'Courier New', monospace !important;
+}
+
+
+
+.bespoke-slide img {
+    box-shadow: none;
+}
+
+.bespoke-slide .roll {
+    overflow: visible;
+    line-height: 1em;
+}
+
+/* Slide backgrounds are placed inside of their slide when exporting to PDF */
+.bespoke-parent section .slide-background {
+    display: block !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+/* All elements should be above the slide-background */
+.bespoke-slide section>* {
+    position: relative;
+    z-index: 1;
+}
+
+
+
+/* Display slide numbers when 'slideNumber' is enabled */
+.bespoke-slide .slide-number-pdf {
+    display: block;
+    position: absolute;
+    font-size: 14px;
+}
+

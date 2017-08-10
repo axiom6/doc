@@ -1,0 +1,65 @@
+
+include::../../../dir/inc/DefPractice.adoc[]
+
+== [.black]#Introduction To Humanistic Practices#
+
+=== [.black]#A Humanistic Approach#
+
+* We embrace, innovate and encourage cultural fit.
+* We refine what we learn do and share.
+
+<<<
+=== [.black]#Introducing a Humanistic Ontology#
+
+image::humanistic/Info.Prac.png[alt="Info",align="center"]
+
+<<<
+=== [.black]#Three Columns#
+[horizontal]
+Embrace::   A tactical approach for human colaboration and adapting to change.
+Innovate::  An innovative product definition, technology and delivery lifecycle.
+Encourage:: A shared strategic vision for discovery, benefits  governed by principles.
+
+
+=== [.black]#Three Rows#
+[horizontal]
+Learn:: The means for defining the business with the model canvas.
+Do::    Technological adaptatiion and construction influenced by benefits.
+Share:: Continuous change and delivery overseen by governance.
+
+=== [.black]#Nine Practices#
+
+Practices emerge at the intersections of columns and rows.
+
+[horizontal]
+Collaborate:: Team building with creative interaction.
+Product::     Transforming ideas into an attractive portfolio.
+Discovery::   Finding and communicating our vision to clients.
+Adapt::       Fine tuning our work.
+Technology::  Innovative engineering and construction.
+Benefit::     Realizing the best architecture that propels our discoveries.
+Change::      Continuous evolution.
+Deliver::     Sharing our work with our communities.
+Govern::      Facilitating and improving the entire company.
+
+=== [.black]#What's Next#
+
+////
+These working concepts are expressed in the following practices where
+moving across the columns promotes cultural fit and moving down the rows
+provides perspectives for successive refinements.
+////
+
+The rest of this chapter discusses the inspiration and columns and rows
+in more detail while the subsequent chapters address each of these nine practices.
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,14 @@
+
+include::../../../dir/inc/DefPractice.adoc[]
+
+== [.black]#Throttle#
+
+* The throttle operator samples an asynchronous data stream by ignoring values
+  that are followed by another value before the specified delay
+
+* The throttle operator drops events that come in at too high a rate
+
+* however, one can easily define other operators that aggregate events in (tumbling) windows or sample the input stream at certain intervals.
+
+image::9.Throttle.png[alt="Throttle",align="center"]
+

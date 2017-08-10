@@ -1,0 +1,18 @@
+
+include::../../../dir/inc/DefPractice.adoc[]
+
+== [.black]#Distill#
+
+image::pattern/Pattern.png[alt="Distill",align="center"]
+
+== [.black]#Distill.#
+
+Working together.
+
+[horizontal]
+Semi Super:: x
+Regress::    x
+Model::      x
+Patterns::   x
+Reveal::     x
+Recommend::  x

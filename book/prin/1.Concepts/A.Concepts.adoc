@@ -1,0 +1,24 @@
+
+include::../../../dir/inc/DefPractice.adoc[]
+
+==   [.black]#Concepts#
+
+===  [.black]#Paradigm#
+==== [.black]#What is a Paradigm?#
+==== [.black]#Paradigm shifts#
+==== [.black]#Multiple Paradigms#
+    
+===  [.black]#Principles#
+==== [.black]#What is a Principle?#
+==== [.black]#Evolution of Principles#
+==== [.black]#Core Concepts#
+
+===  [.black]#Languages#
+==== [.black]#Productivity#
+==== [.black]#Intrinsic#
+==== [.black]#Tracing Principles#
+
+===  [.black]#Applications#
+==== [.black]#What is Illustrated#
+==== [.black]#Language Strength#
+==== [.black]#Polyglot#

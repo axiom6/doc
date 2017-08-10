@@ -1,0 +1,22 @@
+
+include::../../../dir/inc/DefPractice.adoc[]
+
+=== [.black]#Combine#
+
+* Operators that work with multiple source Observables to create a single Observable
+
+[horizontal]
+And/Then/When:: Combine sets of items emitted by two or more Observables by means of Pattern and Plan intermediaries
+CombineLatest:: When an item is emitted by either of two Observables, combine the latest item emitted by each Observable via a specified function and emit items based on the results of this function
+Join::          Combine items emitted by two Observables whenever an item from one Observable is emitted during a time window defined according to an item emitted by the other Observable
+Merge::         Combine multiple Observables into one by merging their emissions
+
+image::merge.png[alt="merge",align="center"]
+
+StartWith::     Emit a specified sequence of items before beginning to emit the items from the source Observable
+Switch::        Convert an Observable that emits Observables into a single Observable that emits the items emitted by the most-recently-emitted of those Observables
+
+image::switch.c.png[alt="Switch",align="center"]
+
+Zip::           Combine the emissions of multiple Observables together via a specified function and emit single items for each combination based on the results of this function
+

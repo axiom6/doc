@@ -1,0 +1,19 @@
+
+include::../../../dir/inc/DefPractice.adoc[]
+
+=== [.black]#Mathematical and Aggregate#
+
+* Operators that operate on the entire sequence of items emitted by an Observable
+
+[horizontal]
+Average:: Calculates the average of numbers emitted by an Observable and emits this average
+Concat::  Emit the emissions from two or more Observables without interleaving them
+
+image::concatMap.png[alt="concatMap",align="center"]
+
+Count::   Count the number of items emitted by the source Observable and emit only this value
+Max::     Determine, and emit, the maximum-valued item emitted by an Observable
+Min::     Determine, and emit, the minimum-valued item emitted by an Observable
+Reduce::  Apply a function to each item emitted by an Observable, sequentially, and emit the final value
+Sum::     Calculate the sum of numbers emitted by an Observable and emit this sum
+

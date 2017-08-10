@@ -1,0 +1,508 @@
+
+= [black]#Acquire#
+
+== [black]#Collect#
+  Plan
+    Vel Var Vol
+    Context
+    Connect
+  Sources
+    Raw
+    Structured
+    Spatial
+    Sensor
+  Manage
+    Original Data
+    Format Data
+    Describe Data
+    Use The Data
+
+== [black]#Refine#
+  Enrich
+    Clean Source
+    Indicator
+    Crowd Source
+    Automate
+  Quality
+    Assurance
+    Control
+    Profile
+  Track
+    Defect
+    Usage
+    Audit
+
+== [black]#Schema#
+  Domain
+    Entitlement
+    Proposition
+    Portfolio
+    Intel
+  Document
+    Dictionary
+    Catalog
+  Model
+    Experimental
+    Conceptual
+    Logical
+    Physical
+  Deploy
+    Map Sources
+    RestUR Ls
+
+== [black]#Prepare#
+  Filter
+    Relational
+    Tag Outliers
+  Imputate
+    Random Sampling
+    Monte Carlo
+    Mean
+    Distributions
+  Transform
+    Deduplication
+    Normalization
+    Conversion
+    Fourier
+    Wavelet
+    Coordinate
+  Select
+    Sampling
+    Region
+
+= [black]#Describe#
+
+== [black]#Unsupervise#
+  Collect Data
+    Implicit Collect
+    Emotional Spaces
+    Density
+    Text Rank
+  Association Rule
+    Apriori
+    Frequent Itemset
+    DictionaryLearning
+  Latent Variable
+    Expectation Max
+    Method Of Moments
+    Dirichlet
+  Blind Signal
+    Non Neg Matrix
+    Hebbian Learning
+  Natural Language
+
+== [black]#Statistics#
+  Measures
+    Central Tendency
+    Dispersion
+    NOVA
+  Probability
+    Sample Space
+    Set Theory
+    Random Variables
+    Measure Theory
+  Uncertainty
+    Uncertain Risk
+    Fuzzy Sets
+    Fuzzy Measure
+  Distribution
+    Characteristics
+    Univariate
+    Multivariate
+
+== [black]#Dimension#
+  Principal
+    Independent
+    Correspondence
+    Factor Analysis
+  Feature Extract
+    Hashing
+    Term Frequency
+  Discriminant
+    Linear
+    Quadratic
+    Regularized
+    Cross
+  Manifold
+    Isomap
+    Elastic Map
+    Local
+    Spectral Embedding
+    Hessian Eigen
+    Multi Dimen Scaling
+
+== [black]#Metadata#
+  Feature Selection
+    Genetic
+    Ensemble
+    Signal Noise
+    Sum Squares
+  Search
+    Grid
+    Exhaustive
+    Best first
+    Simulated annealing
+  Label
+    Propagate
+    Spreading
+  Anomaly
+    Outlier
+    Local Outlier
+    Model Based
+    Smoothing
+
+== [black]#Report#
+  Pivot
+    Drill Down
+    Roll Up
+  Relate
+    Combined Record
+    Detail Level
+
+== [black]#Profile#
+  Diagnostic
+    Monitor
+    Investigate
+  Summarize
+    Relational
+    Extraction
+    Abstraction
+
+= [black]#Distill#
+
+== [black]#Semi Super#
+  Train Data
+    Bias Variance
+    Generative
+    -Validation Curvef
+  Assumptions
+    Smoothness
+    Cluster
+    Manifold
+  Methods
+    Low Density
+    Graph Based
+    Heuristics
+    Redundancy
+  Functional
+    Output Stucture
+    Complexity
+    Noise
+    Non Linearity
+
+== [black]#Cluster#
+  KMeans
+  Centroid
+    Affinity
+    Apriori
+    FuzzyC Means
+  Hierarchial
+    Ward
+    BIRCH
+    Agglomerative
+    Canopy
+    Fractal
+  Distribution
+    Spectral
+    Gaussian Mixture
+    Gaussian Process
+    Correllation
+  Density
+    DBSCAN
+    Mean Shift
+    PTIKS
+
+== [black]#Regress#
+  Least Squares
+    Linear
+    Non Linear
+    Ridge
+    Lasso
+  Model Select
+    Elastic Net
+    Least Angle
+    Orthogonal Match
+    Stepwise
+  Gausian Process
+    GP Regress
+    GP Classify
+    GP Kernel
+  Distribution
+    Bayesian
+    Auto Relevance
+    Logistic
+    Isotomic
+    Robust Regress
+
+== [black]#Patterns#
+  Hypothesis
+    TTest
+    Topic
+    ChiSquared
+    Correllation
+  Validation
+    Cross Validation
+    Model Validation
+    Confusion Matrix
+    Leave
+    Bootstrap
+  CoVariance
+    Empirical
+    Shrunk
+    Sparse Inv
+    Robust
+
+== [black]#Reveal#
+  Detect
+    Exceptions
+    Clusters
+    Trends
+  Caluculate
+    Interpolate
+    Extrapalate
+
+== [black]#Recommend#
+  Context
+    Collab Filter
+    Content Based
+    Knowledge Based
+    Graph Based
+
+= [black]#Predict#
+
+== [black]#Supervise#
+  Review Data
+    Interface
+    Intelligence
+    Inference
+  Risk
+    Empirical
+    Structural
+    Noise
+    Non Linearity
+  Attribute
+    Represent
+    Dimensionality
+    Heterogeneity
+    Redundancy
+    Concept
+
+== [black]#Classify#
+  Naive Bayes
+    NB Gaussian
+    NB Multinomial
+    NB Bernoulli
+  Support Vector
+    SVM Multi Class
+    SVM Kernel
+    Density Estimate
+    Novelty Detect
+    Outlier Detect
+  Nearest Neighbor
+    NN Brute Force
+    NNKD Tree
+    NN Ball Tree
+    NN Nearest Centroid
+    NNLSH Forest
+  Stochastic
+    Sparse Data
+
+== [black]#Arrange#
+  Decision Tree
+    CART
+    C4.5
+    Random Forests
+  Multi
+    Multi Class
+    Multi Label
+    Multi Output
+  Ensemble
+    Bagging
+    Adaptive Boost
+    Gradient Boost
+  Neural
+    Perceptron
+    Back Prop
+    Deep  Boltzmann
+    Deep  Belief
+    Convolutional
+    Auto Encoders
+
+
+== [black]#Confidence#
+  Interval
+    Error Bounds
+    Confidence
+    Crediable
+    Probability Success
+  Model Evaluation
+    Confusion Matrix
+    - Measure
+    OC Graph
+  Uncertainty
+    Catagories
+    Propagation
+  Applicablilty
+    Assumptions
+    Contraints
+
+== [black]#Percieve#
+  -Wavelet
+
+== [black]#Forecast#
+  Markov
+   Hidden Markov
+
+= [black]#Advise#
+
+== [black]#Reinforce#
+  Explore  Data
+    Epsilon Greedy
+    Boltzmann
+    Gaussian
+    State Dependent
+  Value Function
+     Learning
+    SARSA
+    FittedQ
+  Policy Gradient
+    Policy Reinforce
+    Natural  Actor
+  Black Box
+    Stochastic Hill
+    Swarm
+    Natural Evolution
+    Fitness Expect
+
+== [black]#Optimize#
+  Approximate
+    Genetic
+    Anealing
+    Gradient
+  OR
+    Scheduling
+    Routing
+    Allocation
+  Objective
+    Constraint Logic
+    Linear Prog
+    Non Linear Prog
+    Integer Prog
+
+== [black]#Simulate#
+  Event
+    Discrete
+    Markov
+    Monte Carlo
+  Self Organized
+    Org Maps
+    Swarm
+    Agent
+  Phase Planes
+    Dynamics
+    Activity
+    Differential
+  Linear Algebra
+    Decomposition LU, Cholesky QR, Eigen, Single Value
+    Band Matrix
+    Sparse Matrix
+
+== [black]#Feedback#
+  Learning
+    Active Learning
+    Ensemble
+  Reason
+    Inductive
+    Transductive
+    Deductive
+  Optimality
+    Constraints
+    Sensitivity
+    Sparsity
+  Simulatability
+    Linearity
+    Constantability
+    Comprehensiveness
+    Separatrix
+
+== [black]#Insight#
+  Improve
+    Construcual
+    Nutrients
+    Flow
+  Recreate
+    Change
+    Evolve
+    Emerge
+
+== [black]#Augment#
+  Inference
+    Expert
+    Logical
+    Fuzzy
+
+= [black]#Desktop#
+
+== [black]#Visualize#
+  Plotly
+  D3
+  Leaflet
+  Math Box
+
+== [black]#Explore#
+  Data Access
+  Elastic Search
+  Pivot Table
+
+== [black]#Code#
+  Java Script
+  Python
+  Scala
+
+== [black]#Notebook#
+  IPython
+  Jupyter
+
+= [black]#Process#
+
+== [black]#Stream#
+  Kafka
+  Storm
+
+== [black]#Pipeline#
+  Spark
+    Data Frame
+    RDD
+  Skales
+
+== [black]#Store#
+  Cassandra
+  CouchDB
+  MongoDB
+  Relational
+
+== [black]#Deploy#
+  Akka
+  Mesos
+  NodeJS
+
+= [black]#Explain#
+
+== [black]#Teach#
+
+== [black]#Publish#
+
+== [black]#Warehouse#
+
+== [black]#Protect#
+  Encrypt
+
+= [black]#Decide#
+
+== [black]#Inquire#
+
+== [black]#Strategy#
+
+== [black]#Asset#
+
+== [black]#Legal#

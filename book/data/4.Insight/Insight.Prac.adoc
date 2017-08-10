@@ -1,0 +1,16 @@
+
+include::../../../dir/inc/DefPractice.adoc[]
+
+= [.black]#icon:lightbulb-o[] Insight#
+
+image::insight/Insight.png[]
+
+// <<<
+
+// == [.black]#icon:question-circle[] Hypothesis#
+
+// == [.black]#icon:search[] Statistics#
+
+// == [.black]#icon:tripadvisor[] Ontology#
+
+// == [.black]#icon:code-fork[] Notebook#

@@ -1,0 +1,74 @@
+
+
+=== [black]#Classification#
+
+    Support Vector Machines,  AdaBoost, Gradient Boosting,  Logistic Regression, Neural Networks, RBF Networks, Maximum Entropy Classifier, Naïve Bayesian, Fisher / Linear / Quadratic / Regularized Discriminant Analysis
+
+=== [black]#Organize#
+
+  Decision Trees, Random Forest,
+
+=== [black]#Regression#
+
+    Support Vector Regression, Gaussian Process, Regression Trees, Gradient Boosting, Random Forest, RBF Networks, Linear Regression, LASSO, Ridge Regression
+
+=== [black]#Feature Selection#
+
+    Genetic Algorithm based Feature Selection, Ensemble Learning based Feature Selection, Signal Noise ratio, Sum Squares ratio
+
+=== [black]#Dimension Reduction#
+
+    PCA, Kernel PCA, Probabilistic PCA, Generalized Hebbian Algorithm, Random Project
+
+=== [black]#Model Validation#
+
+    Cross Validation, Leave-One-Out Validation, Bootstrap, Confusion Matrix, AUC, Fallout, FDR, F-Score, Precision, Recall, Sensitivity, Specificity, MSE, RMSE, RSS, Absolute Deviation, Rand Index, Adjusted Rand Index
+
+=== [black]#Clustering#
+
+    BIRCH, CLARANS, DBScan, DENCLUE, Deterministic Annealing, K-Means, X-Means, G-Means, Neural Gas, Growing Neural Gas, Hierarchical Clustering, Sequential Information Bottleneck, Self-Organizing Maps, Spectral Clustering, Minimum Entropy Clustering
+
+=== [black]#Association Rules#
+
+    Frequent Itemset Mining, Association Rule Mining
+
+=== [black]#Manifold learning#
+
+ IsoMap, LLE, Laplacian Eigenmap
+
+=== [black]#Multi-Dimensional Scaling#
+
+ Classical MDS, Isotonic MDS, Sammon Mapping
+
+=== [black]#Nearest Neighbor Search#
+
+ BK-Tree, Cover Tree, KD-Tree, Locality-Sensitive Hashing
+
+=== [black]#Sequence Learning#
+
+ Hidden Markov Model, Conditional Random Field
+
+=== [black]#Natural Language Processing#
+
+ Sentence Splitter, Tokenizer, Bigram Statistical Test, Phrase Extractor, Keyword Extractor, Porter Stemmer, Lancaster Stemmer, POS Tagging, Relevance Ranking
+
+=== [black]#Interpolation#
+
+    Linear, Bilinear, Cubic, Bicubic, Kriging, Laplace, Shepard, RBF
+
+=== [black]#Wavelet#
+
+ Discrete Wavelet Transform, Wavelet Shrinkage Haar Daubechies D4 Best Localized Wavelet, Coiflet, Symmlet
+
+=== [black]#Natural Language Processing#
+
+Understanding human language, and the intent behind our words.
+
+ Tokenizers, stemming, phrase detection, part-of-speech tagging, keyword extraction, named entity recognition, sentiment analysis, relevance ranking, taxomony.
+
+
+=== [black]#Mathematics and Statistics#
+
+Hidden gems in Smile.
+
+Special functions, linear algebra including LU decomposition, Cholesk decomposition, QR decomposition, eigen value decomposition, singular value decomposition, band matrix, and sparse matrix, hypothesis tests including t-test, F-test, chi-square test, correlation test (Pearson, Spearman, and Kendall), and Kolmogorov-Smirnov test, a variety of distributions and random number generators, interpolation, sorting, wavelet, plot, etc.

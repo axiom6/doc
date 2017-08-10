@@ -1,0 +1,41 @@
+
+include::../../../dir/inc/DefPractice.adoc[]
+
+==   [.black]#Expression#
+
+===  [.black]#Convention#
+==== [.black]#Regularity#
+==== [.black]#Naming Conventions#
+
+===  [.black]#Interpretation#
+==== [.black]#Evaluation#
+==== [.black]#DSL#
+
+===  [.black]#Continuity#
+==== [.black]#Wholeness#
+==== [.black]#Transparency#
+==== [.black]#Declarative#
+==== [.black]#Impediance Mismatch#
+
+===  [.black]#Adaptation#
+==== [.black]#Hot Spots#
+==== [.black]#Indirection#
+==== [.black]#Decoupling#
+==== [.black]#Refactoring#
+
+===  [.black]#Comprehension#
+==== [.black]#Simplicity#
+==== [.black]#Communication#
+==== [.black]#Git#
+==== [.black]#Code Documentation#
+
+===  [.black]#ReactiveX#
+==== [.black]#Better Code Bases#
+==== [.black]#Functional#
+==== [.black]#Reactive Operators#
+==== [.black]#Async#
+==== [.black]#Concurrency#
+
+===  [.black]#Summary#
+
+===  [.black]#References#

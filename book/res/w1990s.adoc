@@ -1,0 +1,47 @@
+
+==== [.black]#XCare Med Unite Portal# [.black .right]#Quovadx&#160;&#160;&#160;&#160;&#160;&#160;2000-2001#
+
+My team built MedUnite's HIPAA XML transactions portal for Aetna, Cigna, Anthem, Wellpoint and PacificCare.
+Created Topic Maps in Ontopia that traversed medical documents with semantic relationships. Designed an
+integration tier for Vitria. Upgraded the solution architect methodology that passed a SAS-70 audit.
+
+==== [.black]#E-Commerce# [.black .right]#DMR&#160;&#160;&#160;&#160;&#160;&#160;&#160;1999-2000#
+
+Created a reference 4-Tier architecture for DMR's e-commerce practices and proposals. Formed strategic partnerships with Web
+Logic, Vitria and Cygent to reinforce 4-Tier integration within J2EE. Initiated projects for a team 20 Java developers for
+4-Tier sites at American Express and ICG. Captured the knowledge of DMR's Benefit Realization experts into
+Strategic, Governance and CMM practices. Combined DMR's benefits and 4-Tier for a complete methodology.
+
+==== [.black]#Chief Architect# [.black .right]#Williams Communications&#160;&#160;&#160;&#160;1996-1999#
+
+As Chief Architect for the Planning Group I transformed the company's (SPEC) methodology into an enterprise architecture (Zachman).
+Cross referenced all of WCG's organizations, business processes, connectivity and data models.
+Created an enterprise data model and warehouse that included: marketing, sales, order, fulfillment, customer care
+and finance.
+Mapped the marketing data model into a Java Swing GUI and integrated it with Brio for the first BI / OLAP application.
+Led the first CRM integration (Neon) that established the planning group’s credibility.
+
+Incorporated Design Patterns into a distributed 3-Tier platform, conducted seminars and authored the
+teams OO methodology.. Key components included a fax-broadcast dispatcher, job monitoring, Internet and
+persistence. These components reduced development time by 1/3 in months for each platform: fax 9, invoice 6,
+audio 4 and video 3. Rewrote the video application in Java/Swing.
+
+==== [.black]#Telephony#  [.black .right]#Nortel&#160;&#160;&#160;&#160;&#160;&#160;&#160;1992-1996#
+
+Developed & taught the Design Patterns & OO courses for BNR’s switch developers at Bell Northern Research. The courses emphasized the
+GOF and POSA Design Pattern catalogs applied to DMS-100 switch architecture. Authored an OO handbook on how
+to implement the best features of OO.
+
+Collaborated with NorTel’s Object Center to define a methodology that merged OMT with OBA/CRC in 93. Within
+NorTel's BPR effort CODB (Central Order Database), led the Site Tracker and Loader Smalltalk/C++ projects for
+viewing and loading and switch configurations.
+
+OO Designer for Fiber Vision that monitored DMS-100 Switches via a centralized network operations center.
+Classified 2100 DMS-100 log reports. Built OO databases and Smalltalk/C++ apps for the DMS-100 switch and
+SS7 network topology.
+
+==== [.black]#Scientific Research# [.black .right]#Glaxo&#160;&#160;&#160;&#160;&#160;1990-1992#
+
+Reengineered the experimental processes for Glaxo’s pharmaceutical research division. Developed C++/Lisp
+libraries for symbolic math, relational tables and trace curve fit models. Built a visualization package in PV-Wave.
+Added a curve fit to Excel to create the scientific spreadsheet adopted by over 300 scientists.

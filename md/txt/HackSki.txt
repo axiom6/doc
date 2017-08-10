@@ -1,0 +1,91 @@
+
+
+Date:  December 1st, 2015
+Place: Global – Virtual
+Contestant Requirements: Free and open to all.
+Prizes (USD)
+
+1st Prize $10,000
+
+Additional prizes to be determined.
+
+Summary:  The Data Science Association and Big Data in Denver (a LinkedIn Group) are holding a global virtual Machine Learning Contest.
+The goal is to demonstrate how data science and data engineering can improve our decisions and the quality of life to the public.
+
+Contestants will compete to create the best mobile phone app and/or website to be made free to the public to make best
+possible ski venue and route/time decision to get to the ski slopes.  Any variety of data sources and data science
+techniques may be used.  A panel of judges shall award prizes for the best solutions. Contestant data sources and
+techniques shall be published on the website for others to review and learn at the conclusion of the contest.
+
+ontestants may compete alone or with others yet only one prize will be awarded per registered contestant.
+Contestants must register with their real name and provide proof of identity to be eligible to receive a prize.
+Proof shall consist of a government issued birth certificate and government issued passport with picture.
+Contestants must produce a workable and reliable mobile app providing key (near) real-time weather, snow and traffic
+information for the Colorado public to make the best possible ski venue and route/time decision to get to the Colorado ski slopes.
+The mobile app must be workable and reliable on all versions of the following mobile operating systems:
+
+    Apple iOS
+    Android
+    BlackBerry OS
+
+The mobile app must provide users with the following key (near) real-time data in an easy-to-understand user-interface:
+
+    Weather data for Colorado mountains within 45 minutes
+    Snow conditions at all Colorado ski resorts within 45 minutes
+    Snow conditions in Colorado mountains within 45 minutes
+    Traffic information for major Colorado highways, ski access roads and mountain passes within 45 minutes
+
+Contestants may use any and all compute tools, code, techniques and methods to produce the best app (must be disclosed at contest conclusion).
+Contestants are responsible for providing own compute power, code, tools and techniques.
+Contestants may use any and all data sources (must be disclosed at contest conclusion).
+Contestants must provide the final mobile app to the panel of judges on or before Friday November 20, 2015.
+First place winner of the Machine Learning Contest will receive USD $10,000.
+Additional prizes will be determined by the Machine Learning Contest organizers.
+Contestants agree to follow all laws.
+Contestants agree to transfer any and all mobile app ownership rights to contest organizers.
+Contestant must receive the award personally and not via a third party and must provide proof of identity
+(government issued birth certificate and government issued passport).
+Contestants must provide a working telephone number and be available, either in-person at Level 3 Communications
+in Colorado or via provided telephone number answered in-person to receive an award during the contest award ceremony
+on December 5, 2015 from 4:00pm to 7:00pm Mountain Standard Time.
+
+---------------------------------
+
+Contestants may use any data sources they choose to create the best solution (must be disclosed at conclusion).
+
+Traffic Patterns
+
+    Colorado Traffic Data Explorer
+    Colorado Road Condition Data
+    Colorado Dept. of Transportation Traffic Data
+
+Select the Business Center option at the top of the page, and scroll down to Statistics, Maps & Data.  After the new page opens, select the Traffic Data tab.
+
+There are three search options on the right side of the Map:
+
+·         Search by City/County
+
+·         Search by Highway Segment
+
+·         Search by Traffic Station
+
+Since you’re looking for Daily traffic counts by Route, I would select Search by Highway Segment, and use theCDOT Route Number drop down box.
+
+Under the map there are four options available Stations, AADT, Future Traffic and ESAL. The information you need is most likely under the Stations Tab.
+
+Highlight the Station you want data from, and go to the bottom of the page. There are three data options available Daily, Monthly Summaries and Annual.
+
+Weather
+
+    Colorado – State Data – National Weather Service
+    Colorado Climate Center – Data Access
+    Colorado Weather History
+
+Snow Conditions
+
+    Colorado Snow Forecasts
+    Colorado SnowPack Data
+    Variety of Data Sets
+    National Snow Data
+    Average Annual Snowfall in Colorado
+

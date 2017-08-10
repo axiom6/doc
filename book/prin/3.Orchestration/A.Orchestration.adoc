@@ -1,0 +1,34 @@
+
+include::../../../dir/inc/DefPractice.adoc[]
+
+==   [.black]#Orchestration#
+
+===   [.black]#Polymorphic#
+====  [.black]#Universal#
+===== [.black]#Parametric#
+===== [.black]#Inclusion#
+====  [.black]#Ad Hoc#
+===== [.black]#Overloading#
+===== [.black]#Coercion#
+
+===   [.black]#Behavior#
+====  [.black]#Association#
+====  [.black]#Scenarios#
+===== [.black]#Class Responsibility Collaborator#
+====  [.black]#Design by Contract#
+====  [.black]#Pre and Post Conditions#
+
+===   [.black]#Distributed#
+====  [.black]#Resource#
+====  [.black]#REST#
+====  [.black]#The Tier Context#
+====  [.black]#Messaging#
+
+===   [.black]#Parallelism#
+====  [.black]#Concurrency#
+====  [.black]#Functional Concurrency#
+====  [.black]#Dependencies#
+
+===  [.black]#Summary#
+
+===  [.black]#References#

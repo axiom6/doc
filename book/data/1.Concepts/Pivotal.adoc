@@ -1,0 +1,27 @@
+
+
+include::../../../dir/inc/DefPractice.adoc[]
+
+rom Descriptive Data to Predictive Action
+
+Identify the Opportunity
+Analytic Capability Review
+
+Inspect and assess your organization’s existing and intended capability for big data analytics and predictive modeling. This thorough evaluation goes beyond your technology stack and capacity to encompass your broader business organization, skills, objectives and obstacles.
+Data Opportunity Identification
+
+Discover data-driven business opportunities, triangulating off your data "ground truth" and business objectives to identify predictive use cases, impactful smart applications, and other data value streams.
+Unlock Its Dynamics
+Data Exploration
+
+Explore all available data for quality, completeness and applicability to targeted usage scenarios
+Feature Engineering
+
+Identify existing data features supportive of your targeted use case and modeling approaches, and engineer new data features as necessary. Incorporate additional data sources to strengthen the emerging analytic approach.
+Apply Data's Predictive Power
+Predictive Model Development
+
+Iteratively evolve and refine an analytic model, employing designated training-vs-testing data to quantitatively measure the model’s predictive performance against your targeted use case.
+Smart Apps
+
+Embed predictive power in business logic and applications to deepen engagement and drive desired outcomes. Cycle outcome data back into the predictive model to refine its accuracy and further strengthen Smart App performance.

@@ -1,0 +1,27 @@
+include::../../../dir/inc/DefPractice.adoc[]
+
+== [.black]#Principles#
+
+Customer Focused::
+* We recognize our customers are the reason for our existence.
+* We serve customer needs to the best of our abilities. 
+
+People Centric::
+* We acknowledge staff value by training our employees and recognizing their work attitude, approach and work products in meaningful ways.
+* We recognize that people make work happen. 
+
+Mutual Respect::
+* We respect people and their viewpoints. We work as a team within our organization, across organizations and with our customers.
+
+Trustworthiness::
+* We do not say it unless we mean it. We do what we say we will do, when we say we will do it.
+* We firmly believe in being a trustworthy partner for everyone who uses our services; this is a hallmark of our culture.
+
+Transparency::
+* We share information freely with everyone.
+* We are transparent with everything and everyone. We have no hidden agendas.
+
+Excellence::
+* We expect everyone to be involved in continuously improving our products, service quality and delivery costs.
+* We strive for excellence in everything we do for ourselves and our customers.  
+ 

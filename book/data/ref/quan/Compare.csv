@@ -1,0 +1,8 @@
+KNN,Either,Yes,Yes,Lower,Fast,Depends on n,Minimal,No,No,No,Yes,No,Yes,KNN
+Linear regression,Regression,Yes,Yes,Lower,Fast,Fast,None (excluding regularization),Yes,No,No,N/A,Yes,No (unless regularized),Linear regression
+Logistic regression,Classification,Somewhat,Somewhat,Lower,Fast,Fast,None (excluding regularization),Yes,No,No,Yes,Yes,No (unless regularized),Logistic regression
+Naive Bayes,Classification,Somewhat,Somewhat,Lower,Fast (excluding feature extraction),Fast,Some for feature extraction,Yes,Yes,No,No,Yes,No,Naive Bayes
+Decision trees,Either,Somewhat,Somewhat,Lower,Fast,Fast,Some,No,No,Yes,Possibly,No,No,Decision trees
+Random Forests,Either,A little,No,Higher,Slow,Moderate,Some,No,Yes (unless noise ratio is very high),Yes,Possibly,No,No,Random Forests
+AdaBoost,Either,A little,No,Higher,Slow,Fast,Some,No,Yes,Yes,Possibly,No,No,AdaBoost
+Neural networks,Either,No,No,Higher,Slow,Fast,Lots,No,Yes,Yes,Possibly,No,Yes,Neural networks

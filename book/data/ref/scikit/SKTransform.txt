@@ -1,0 +1,65 @@
+
+
+    4.1. Pipeline and FeatureUnion: combining estimators
+        4.1.1. Pipeline: chaining estimators
+            4.1.1.1. Usage
+            4.1.1.2. Notes
+        4.1.2. FeatureUnion: composite feature spaces
+            4.1.2.1. Usage
+    4.2. Feature extraction
+        4.2.1. Loading features from dicts
+        4.2.2. Feature hashing
+            4.2.2.1. Implementation details
+        4.2.3. Text feature extraction
+            4.2.3.1. The Bag of Words representation
+            4.2.3.2. Sparsity
+            4.2.3.3. Common Vectorizer usage
+            4.2.3.4. Tf–idf term weighting
+            4.2.3.5. Decoding text files
+            4.2.3.6. Applications and examples
+            4.2.3.7. Limitations of the Bag of Words representation
+            4.2.3.8. Vectorizing a large text corpus with the hashing trick
+            4.2.3.9. Performing out-of-core scaling with HashingVectorizer
+            4.2.3.10. Customizing the vectorizer classes
+        4.2.4. Image feature extraction
+            4.2.4.1. Patch extraction
+            4.2.4.2. Connectivity graph of an image
+    4.3. Preprocessing data
+        4.3.1. Standardization, or mean removal and variance scaling
+            4.3.1.1. Scaling features to a range
+            4.3.1.2. Scaling sparse data
+            4.3.1.3. Scaling data with outliers
+            4.3.1.4. Centering kernel matrices
+        4.3.2. Normalization
+        4.3.3. Binarization
+            4.3.3.1. Feature binarization
+        4.3.4. Encoding categorical features
+        4.3.5. Imputation of missing values
+        4.3.6. Generating polynomial features
+        4.3.7. Custom transformers
+    4.4. Unsupervised dimensionality reduction
+        4.4.1. PCA: principal component analysis
+        4.4.2. Random projections
+        4.4.3. Feature agglomeration
+    4.5. Random Projection
+        4.5.1. The Johnson-Lindenstrauss lemma
+        4.5.2. Gaussian random projection
+        4.5.3. Sparse random projection
+    4.6. Kernel Approximation
+        4.6.1. Nystroem Method for Kernel Approximation
+        4.6.2. Radial Basis Function Kernel
+        4.6.3. Additive Chi Squared Kernel
+        4.6.4. Skewed Chi Squared Kernel
+        4.6.5. Mathematical Details
+    4.7. Pairwise metrics, Affinities and Kernels
+        4.7.1. Cosine similarity
+        4.7.2. Linear kernel
+        4.7.3. Polynomial kernel
+        4.7.4. Sigmoid kernel
+        4.7.5. RBF kernel
+        4.7.6. Laplacian kernel
+        4.7.7. Chi-squared kernel
+    4.8. Transforming the prediction target (y)
+        4.8.1. Label binarization
+        4.8.2. Label encoding
+

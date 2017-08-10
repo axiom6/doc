@@ -1,0 +1,15 @@
+
+include::../../../dir/inc/DefPractice.adoc[]
+
+== [.black]#Change#
+
+Initially conducts Tests to ascertain deployment readiness, mitigated by Transition and backed by repeatable automation to insure successful delivery to production.
+
+image::Change.svg[alt="Change",align="center"]
+
+[horizontal]
+Test:: Quality, defect and risk measures at many levels and types.
+Provides:: feedback to technology and confirms readiness.
+Transition:: Addresses new and updated deployments and disruptions.
+Automate:: Repeatable scripts for production configurations.
+

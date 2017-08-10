@@ -1,0 +1,24 @@
+
+include::../../../../dir/inc/DefStudy.adoc[]
+
+''''
+<<<<
+== [.black]#Supervised Learning#
+
+image::predict/SupervisedParadign.png[alt="Supervised",align="center"]
+
+=== [.black]#Comparison#
+
+[cols="6*",options="header"]
+|====
+^| Characteristic    ^| Neural ^| SVM   ^| Trees ^| MARS ^| k-NN
+| Natural            ^| Poor   ^| Poor  ^| Good  ^| Good ^| Poor
+| Missing Values     ^| Poor   ^| Poor  ^| Good  ^| Good ^| Good
+| Outliers           ^| Poor   ^| Poor  ^| Good  ^| Poor ^| Good
+| Monotone           ^| Poor   ^| Poor  ^| Good  ^| Poor ^| Poor
+| Scalability        ^| Poor   ^| Poor  ^| Good  ^| Good ^| Poor
+| Irrelevant Inputs  ^| Poor   ^| Poor  ^| Good  ^| Good ^| Poor
+| Linear Features    ^| Good   ^| Good  ^| Poor  ^| Poor ^| Fair
+| Interpretability   ^| Poor   ^| Poor  ^| Fair  ^| Good ^| Poor
+| Predictive         ^| Good   ^| Good  ^| Poor  ^| Fair ^| Good
+|====

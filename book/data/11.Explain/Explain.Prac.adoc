@@ -1,0 +1,19 @@
+
+include::../../../dir/inc/DefPractice.adoc[]
+
+= [.black]#icon:slideshare[] Explain#
+
+image::explain/Explain.png[]
+
+
+////
+<<<<
+== [.black]#icon:money[] Assets#
+
+== [.black]#icon:code-fork[] Decision#
+
+== [.black]#icon:leanpub[] Publish#
+
+== [.black]#icon:university[] Teach#
+
+////

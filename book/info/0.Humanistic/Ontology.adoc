@@ -1,0 +1,16 @@
+
+include::../../../dir/inc/DefPractice.adoc[]
+
+== [.black]#Ontology#
+
+=== [.black]#Thirty Six Studies#
+
+image::humanistic/Info.Studies.png[alt="Info",align="center"]
+
+<<<
+=== [.black]#Twelve Connections between Nine Practices#
+
+ The six horizontal connections convey culture     across columns.
+ The six vertical   connections flow   refinements down   rows.
+
+image::humanistic/Info.Graph.png[alt="Info",align="center"]

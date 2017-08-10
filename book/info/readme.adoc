@@ -1,0 +1,9 @@
+
+include::../../dir/inc/DefBook.adoc[]
+
+= [.black .text-center]#Humanistic Practices#
+
+A humanistic methodology with a light weight ontology comprising nine practices
+that Embrace, Innovate and Encourage the processes of Learning, Doing and Sharing.
+
+

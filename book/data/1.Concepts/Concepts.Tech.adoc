@@ -1,0 +1,55 @@
+
+include::../../../dir/inc/DefPractice.adoc[]
+
+= [.black]#1. Concepts#
+
+== [.black]#Definitions#
+
+Machine Learning::
+  Constructs algorithms that can learn from data.
+
+Statistical Learning::
+  A branch of applied statistics that emerged in response to machine learning.
+  It emphasizes statistical models and assessment of uncertainty.
+
+Data Science::
+  The extraction of knowledge from data that leverages ideas from mathematics statistics machine learning computer science engineering...
+
+Contrast::
+  All of these displines are very similar with different emphases.
+
+
+=== [.black .text-center]#Training Fitting Predictions#
+
+Traditional Statistics::
+
+* Domain experts work for 10 years to learn good features
+* Then they bring the statistician a small clean dataset
+
+Todays Approach::
+
+* We start with a large dataset with many features.
+* Then use a machine learning algorithm to find the good ones.
+* A huge change.
+
+<<<<
+
+== [.black]#Core Data Science Practices#
+
+[cols="15,15,15,15,15,25",options="header"]
+|====
+^| Practice   ^| Learning        ^| Algorithm      ^| Technique     ^| Results    |
+ | *Acquire*  ^| Collect         ^| Refine         ^| Prepare       ^| Schema     |
+ | *Describe* ^| Unsupervised    ^| Cluster        ^| Dimension     ^| Metadata   |
+ | *Distill*  ^| Semi-Supervised ^| Regression     ^| Model         ^| Patterns   |
+ | *Predict*  ^| Supervised      ^| Classification ^| Desision Tree ^| Confidence |
+ | *Advise*   ^| Reinforce       ^| Optimize       ^| Simulate      ^| Feedback   |
+|====
+
+image::concepts/DDPA.png[align="center"]
+
+<<<<
+
+== [.black]#A Complete Set of Data Science Practices#
+
+image::concepts/Data.Prac.png[align="center"]

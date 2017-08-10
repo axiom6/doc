@@ -1,0 +1,188 @@
+=== Top 12 Techniques
+
+ 1. Naïve Bayes
+ 2. K Means
+ 3. Support Vector Machine
+ 4. Apriori
+ 5. Linear Regression
+ 6. Logistic Regression
+ 7. Neural Nets
+ 8. Random Forests
+ 9. Decision Trees
+10. K Nearest Neighbor
+11. Expectation Maximization
+12. Adaptive Boost
+
+=== Top 12 Techniques
+
+
+ 2. K Means
+11. Expectation Maximization
+ 4. Apriori
+ 5. Linear Regression
+ 6. Logistic Regression
+ 1. Naïve Bayes
+ 3. Support Vector
+10. K Nearest Neighbor
+ 9. Decision Trees
+12. Adaptive Boost
+ 8. Random Forests
+ 7. Neural Nets
+
+=== Candidates
+
+  ** Kernel Density Estimation and Non-parametric Bayes Classifier
+  ** Kernel Principal Components Analysis
+  ** Neighbors (Nearest, Farthest, Range, k, Classification)
+  ** Non-Negative Matrix Factorization
+  ** Dimensionality Reduction
+  ** Fast Singular Value Decomposition
+  ** Bootstapped SVM
+  ** Gaussian Processes
+  ** Logit Boost
+  ** Model Tree
+  ** Ridge Regression
+  ** Regression: multiple regression
+  ** Attribute importance: MDL
+  ** Anomaly detection: one-class SVM
+  ** Clustering: orthogonal partitioning
+  ** Feature extraction: NNMF
+
+=== Possible
+
+  ** Matrix Factorization  Non-Negative 
+  ** Elastic Nets
+  ** LDA
+  ** PLS
+  ** Page Rank
+
+=== One
+
+* "If you torture the data long enough, it will confess to anything." – Hal Varian, Computer
+  * Mediated Transactions
+  * Learning = Representation + Evaluation + Optimization
+  
+* It’s Generalization that counts
+  * The fundamental goal of machine learning is to generalize beyond the examples in the training set
+* Data alone is not enough
+  * Induction not deduction - Every learner should embody some knowledge
+    or assumptions beyond the data it is given in order to generalize beyond it
+* Machine Learning is not magic – one cannot get something from nothing
+  * In order to infer, one needs the knobs & the dials
+  * One also needs a rich expressive dataset
+
+=== Two
+
+* Over fitting has many faces
+  * Bias – Model not strong enough. So the learner has the tendency to learn the
+    same wrong things
+  * Variance – Learning too much from one dataset; model will fall apart (ie much
+    less accurate) on a different dataset
+  * Sampling Bias
+
+Intuition Fails in high Dimensions –Bellman
+  * Blessing of non-conformity & lower effective dimension; many applications
+    have examples not uniformly spread but concentrated near a lower dimensional
+    manifold eg. Space of digits is much smaller then the space of images
+
+* Theoretical Guarantees are not What they seem
+  * One of the major developments o f recent decades has been the realization that
+    we can have guarantees on the results of induction, particularly if we are
+    willing to settle for probabilistic guarantees.
+
+* Feature engineering is the Key
+
+=== Three
+
+* More Data Beats a Cleverer Algorithm
+  * Or conversely select algorithms that improve with data
+  * Don’t optimize prematurely without getting more data
+* Learn many models, not Just One
+  * Ensembles ! – Change the hypothesis space
+  * Netflix prize
+  * E.g. Bagging, Boosting, Stacking
+* Simplicity Does not necessarily imply Accuracy
+* Representable Does not imply Learnable
+  * Just because a function can be represented does not mean
+    it can be learned
+* Correlation Does not imply Causation
+
+=== Four
+
+* The simplest hypothesis that fits the data is also the most plausable
+  * Occam’s Razor
+  * Don’t go for a 4 layer Neural Network unless
+    you have that complex data
+  * But that doesn’t also mean that one should
+    choose the simplest hypothesis
+  * Match the impedance of the domain, data & the
+    algorithms
+* Think of over fitting as memorizing as opposed to learning.
+* Data leakage has many forms
+* Sometimes the Absence of Something is Everything
+* [Corollary] Absence of Evidence is not the Evidence of Absence
+
+
+* Simple Model
+  * High Error line that cannot be compensated with more data
+  * Gets to a lower error rate with less data points
+* Complex Model
+  * Lower Error Line
+  * But needs more data points to reach decent error
+
+  
+=== Five
+
+| The World | Unknowns | Knowns |
+| - | - | - |
+| Knowns | Other know, you don't | What we do |
+| Unknowns | Fact, outcomes or scenarios we have not encountered nor considered | Potential facts outcomes we are aware of, but not with certainty |
+| Unknowns | Black swans, outliers, long tails of probality distributions | Stocahastic processes. Probablities |
+| Unknowns | Lack of experience imagination| |
+
+* Known Knowns
+  * There are things we know that we know
+* Known Unknowns
+  * That is to say, there are things that we
+    now know we don't know
+* But there are also Unknown Unknowns
+  * There are things we do not know we
+    don't know
+
+=== Eight
+
+* Iteratively Explore Data
+* Get you head around data with a Pivot Table
+* Don;t over complicate
+* If people give you data, you don't need to use all of it
+* Look at pictures
+* History of your submissions
+* Don;t be afraid to submit simple solutions
+
+=== Nine
+
+1. Common Sense (some features make more sense then others)
+2. Carefully read these forums to get a peak at other peoples’ mindset
+3. Visualizations
+4. Train a classifier (e.g. logistic regression) and look at the feature weights
+5. Train a decision tree and visualize it
+6. Cluster the data and look at what clusters you get out
+7. Just look at the raw data
+8. Train a simple classifier, see what mistakes it makes
+9. Write a classifier using handwritten rules
+A. Pick a fancy method that you want to apply (Deep Learning/Nnet)
+
+=== Ten
+
+1. Don’t over-fit
+2. All predictors are not needed
+3. All data rows are not needed, either
+4. Tuning the algorithms will give different results
+5. Reduce the dataset (Average, select transition data,…)
+6. Test set & training set can differ
+7. Iteratively explore & get your head around data
+8. Don’t be afraid to submit simple solutions
+9. Keep a tab & history your submissions
+    
+
+    

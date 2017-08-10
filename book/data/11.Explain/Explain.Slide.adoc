@@ -1,0 +1,16 @@
+
+include::../../../dir/inc/DefPractice.adoc[]
+
+== [.black]#Explain#
+
+image::explain/Explain.png[alt="Explain",align="center"]
+
+== [.black]#Explain.#
+
+Working together.
+
+[horizontal]
+Asset::    x
+Desision:: x
+Publlish:: x
+Teach::    x

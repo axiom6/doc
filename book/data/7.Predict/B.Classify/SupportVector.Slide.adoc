@@ -1,0 +1,15 @@
+
+include::../../../../dir/inc/DefStudy.adoc[]
+
+* Support Vector Machine is a supervised machine learning algorithm for classification or regression problems
+  ** Where the dataset teaches SVM about the classes so that SVM can classify any new data.
+
+image::predict/SVM.png[alt="SVM",align="center"]
+
+////
+[cols="5*"]
+|====
+| *Strengths* | x | x | x | x
+| *Use For*   | x | x | x | x
+|====
+////

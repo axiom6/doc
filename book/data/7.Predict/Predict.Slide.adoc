@@ -1,0 +1,18 @@
+
+include::../../../dir/inc/DefPractice.adoc[]
+
+== [.black]#Predict#
+
+image::predict/Predict.png[alt="Predict",align="center"]
+
+== [.black]#Predict.#
+
+Working together.
+
+[horizontal]
+Supervise::  x
+Classify::   x
+Arrange::    x
+Confidence:: x
+Percieve::   x
+Forecast::   x

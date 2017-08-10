@@ -1,0 +1,52 @@
+
+include::../../../../dir/inc/DefStudy.adoc[]
+
+'''
+=== [.black]#Classifiers#
+
+// * One
+// * Two
+
+image::predict/ClassifierComparison.png[alt="ClassifierComparison",align="center"]
+
+////
+
+==== [.black]#Mathematics#
+
+asciimath:[x^2]
+
+==== [.black]#How It Works#
+* One
+* Two
+
+==== [.black]#Benefits#
+* One
+* Two
+
+==== [.black]#Drawbacks#
+* One
+* Two
+
+==== [.black]#When To Use It#
+* One
+* Two
+
+==== [.black]#Getting Started#
+* One
+* Two
+
+==== [.black]#Proving Results#
+* One
+* Two
+
+==== [.black]#Applications#
+* One
+* Two
+
+==== [.black]#Tools#
+[horizontal]
+Spark:: xxx
+Python:: xxx
+R:: xxx
+
+////

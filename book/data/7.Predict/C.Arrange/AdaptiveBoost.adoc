@@ -1,0 +1,45 @@
+
+include::../../../../dir/inc/DefStudy.adoc[]
+
+''''
+<<<<
+=== [.black]#Adaptive Boost#
+include::AdaptiveBoost.Slide.adoc[]
+
+==== [.black]#How It Works#
+* From this perspective boosting bears a resemblance to bagging and other committee-based approaches.
+* However we shall see that the connection is at best superficial and that boosting is fundamentally different.
+* Problems in machine learning often suffer from the curse of dimensionality — each sample may consist of a huge number of potential features.
+* Unlike neural networks and SVMs, Adaptive Boosting selects only those features known to improve the predictive power of the model, reducing dimensionality and potentially improving execution time as irrelevant features do not need to be computed.
+* Boosting is a form of linear regression in which the features of each sample x  are the outputs of some weak learner.
+* Specifically, in the case where all weak learners are known a priori, Adaptive Boosting corresponds to a single iteration of the backfitting algorithm in which the smoothing splines are the minimizers of the cost function.
+
+==== [.black]#Benefits#
+* Very simple to implement 
+* Feature selection on very large sets of features
+* Fairly good generalization
+
+==== [.black]#Drawbacks#
+* Suboptimal solution due to greedy learning 
+* Can overfit in presence of noise
+
+////
+==== [.black]#Getting Started#
+* One
+* Two
+
+==== [.black]#Proving Results#
+* One
+* Two
+
+==== [.black]#Applications#
+* One
+* Two
+
+==== [.black]#Tools#
+[horizontal]
+Spark:: xxx
+Python:: xxx
+R:: xxx
+
+////

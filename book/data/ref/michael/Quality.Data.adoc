@@ -1,0 +1,65 @@
+
+
+ the standard of something as measured against other things of a similar kind;
+  the degree of excellence of something.
+
+    Degree of excellence exhibited by the data in relation to the portrayal of the actual scenario.
+    The state of completeness, validity, consistency, timeliness and accuracy that makes data appropriate for a specific use.[5]
+    The totality of features and characteristics of data that bears on its ability to satisfy a given purpose; the sum of the degrees of excellence for factors related to data.[6]
+    The processes and technologies involved in ensuring the conformance of data values to business requirements and acceptance criteria.[7]
+    Complete, standards based, consistent, accurate and time stamped.[8]
+
+
+
+
+How many times have
+
+
+
+
+ you heard managers and colleagues complain about the quality of the data in a particular report, system or database? People often describe poor quality data as unreliable or not trustworthy. Defining exactly what high or low quality data is, why it is a certain quality level and how to manage and improve it is often a trickier task.
+
+Within the Data Quality Management community there is a generally held view that the quality of a dataset is dependent on whether it meets defined requirements. Managers often define these requirements as outcomes such as higher sales, lower costs or less defects. Whilst this is important however it doesn’t help practitioners at the coalface to codify rules and other tests designed to measure the quality of a dataset.  For this a more specific definition of requirements such as completeness or uniqueness levels is required. An example requirement statement for example could be “All clients should have a name and address populated in our CRM system”.
+
+Measuring Data Quality
+
+Data Quality dimensions are often used by practitioners to generically group different types of tests that typically span different project requirements. Whilst there is some disagreement on the number of dimensions and the terms used for these many practitioners use definitions such as the below:
+
+    Completeness – requires that a particular column, element or class of data is populated and does not feature null values or values in place of nulls (e.g. N/As).
+
+    Consistency – something that tests whether one fact is consistent with another e.g. gender and title in a CRM database.
+
+    Uniqueness – are all the entities or attributes within a dataset unique?
+
+    Integrity – are all the relationships populated for a particular entity – for example its parent or child entities?
+
+    Conformity – does the data conform to the right conventions and standards.  For example a value may be correct but follow the wrong format or recognised standard.
+    Accuracy – the hardest dimension to test for as this often requires some kind of manual checking by a Subject Matter Expert (SME).
+
+Dimensions are often used not only as a checklist to check that the best mix of rules have been implemented to test the quality of a dataset, they are also often used for aggregating data quality scores for tracking trends and MIS. Many more complex measurement methods also exist which help to translate individual pass/fail results into more business friendly cost, risk and revenue calculations.
+
+Improving Data Quality
+
+A different set of skills and tools are often used for improving data quality after it has been measured. A good Data Quality Analyst tends to exhibit a mix of skills typically found in Data Analysts, Data Scientists and Business Analysts amongst others. At a strategic level a good understanding of corporate culture, architecture, technology and other factors is often important.  However a number of essential technical skills are also required when dealing with the data itself. These include parsing, standardising, record linkage/matching, data scrubbing/cleansing, data profiling and data auditing/monitoring. These skills are often extensively used when conducting projects such as data migrations where data quality improvements need to be achieved in tight timescales.
+
+Parsing
+
+Parsing is the process of analysing data and determining if a string of data conforms to one or few main patterns. Parsing is fairly easy to automate if a dataset has a recognisable or predictable format.
+
+Standardising
+
+When the main formats are recognised and parsing is complete the next step is to standardise the dataset. This is done by correcting the data in a pre-defined way that is consistent and clear throughout the whole dataset.
+
+Record linkage/matching
+
+Record linkage or matching describes a process of identifying and linking duplicate records that refer to the same real world entity, but may not be completely identical in the datasets. For instance having the same product entered as “Leather chair - black” and “Chair, Blk. – Leather”.
+
+Data scrubbing/cleansing
+
+Describes the process of amending or removing data that is incorrect, incomplete, improperly formatted and or duplicated. Typically a software tool uses rules and algorithms to amend specific types of mistakes saving the data quality professional a significant amount of time.
+
+Data profiling, auditing and monitoring
+
+Data profiling is the process of analysing and gathering information about the data. This information can be used for specific data quality metrics and help determine if the metadata accurately describes the source data. Data profiling is one of the main tools used for data auditing, it helps assessing the fit of data for a specific purpose, which then in turn ties in with long term data monitoring that helps prevent serious issues.
+
+Hopefully the above article gives a flavour of some of the skills and techniques involved in Data Quality Management.

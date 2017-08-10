@@ -1,0 +1,20 @@
+
+#logo .icon { position:relative; left:20px; top:10px; right:0; height:100px;
+  background:transparent url(axiom-logo.png) no-repeat left center; }
+
+#corp .name { position:absolute; left:10px; top:5px; width:250px; height:65px;
+  background:transparent url(axiom-name.png) no-repeat left center; }
+/*
+.tocs .sect .show  { background: transparent url(show.png)  top   left   no-repeat; }
+.tocs .sect .hide  { background: transparent url(hide.png)  top   left   no-repeat; }
+.tocs .sect .high  { background: transparent url(arrow.gif) right center no-repeat; }
+.side .sect .show  { background: transparent url(show.png)  top   left   no-repeat; }
+.side .sect .hide  { background: transparent url(hide.png)  top   left   no-repeat; }
+*/
+/*
+.tocs .sect .show  { background:#E2C49C url(show.png) top left  no-repeat; }
+.tocs .sect .hide  { background:#E2C49C url(hide.png) top left  no-repeat; }
+.tocs .sect .high  { background:black   url(arrow.gif) no-repeat right center; }
+.side .sect .show  { background:#E2C49C url(show.png) top left  no-repeat; }
+.side .sect .hide  { background:#E2C49C url(hide.png) top left  no-repeat; }
+*/

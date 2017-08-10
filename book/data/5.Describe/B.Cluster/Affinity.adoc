@@ -1,0 +1,31 @@
+
+include::../../../../dir/inc/DefStudy.adoc[]
+
+''''
+<<<<
+
+=== [.black]#Affinity#
+
+* Creates clusters by sending messages between pairs of samples until convergence.
+
+* A dataset is then described using a small number of exemplars, which are identified as those most representative of other samples.
+
+* The messages sent between pairs represent the suitability for one sample to be the exemplar of the other, which is updated in response to the values from other pairs.
+
+* This updating happens iteratively until convergence, at which point the final exemplars are chosen, and hence the final clustering is given.
+
+image::describe/Affinity.png[alt="Affinity",align="center"]
+
+==== [.black]#Benefits#
+==== [.black]#Drawbacks#
+
+* he main drawback of Affinity Propagation is its complexity.
+* The algorithm has a time complexity of the order O(N^2 T),
+* Further, the memory complexity is of the order O(N^2) if a dense similarity matrix is used, but reducible if a sparse similarity matrix is used.
+* This makes Affinity Propagation most appropriate for small to medium sized datasets.
+* A study comparing affinity propagation and Markov clustering on protein interaction graph partitioning found Markov clustering to work better for that problem
+
+==== [.black]#Applications#
+
+* Better for certain computer vision and computational biology tasks, e.g. clustering of pictures of human faces and identifying regulated transcripts, than k-means,[1] even when k-means was allowed many random restarts and initialized using PCA.[2]
+

@@ -1,0 +1,39 @@
+{
+  "name": "doc",
+  "version": "0.0.0",
+  "description": "Books and Talks",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron main.js"
+  },
+  "dependencies": {
+    "reveal.js":   ">=3.5.0",
+    "bespoke":     ">=1.1.0",
+    "font-awesome":">=4.7.0",
+    "jquery":      ">=3.2.1"
+  },
+  "dependendenciesArc": {
+  },
+  "author": "Tom Flaherty",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/axiom6/doc/issues"
+  },
+  "preferGlobal": true,
+  "devDependencies": {
+    "jasmine":           ">=2.4.1"
+  },
+  "devDependenciesGlobal": {
+    "coffee-script":     ">=1.10.x",
+    "less":              ">=2.7.x",
+    "webpack"   :        ">=1.13.1"
+  },
+  "engines": {
+    "node": ">=4.4.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/axiom6/doc.git"
+  }
+
+}

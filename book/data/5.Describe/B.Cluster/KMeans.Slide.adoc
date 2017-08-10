@@ -1,0 +1,13 @@
+
+include::../../../../dir/inc/DefStudy.adoc[]
+
+* A popular unsupervised non deterministic algorithm for cluster analysis.
+* Centroid based that works like a nearest neighbor Voroni diagram.
+
+image::describe/KMeansNN.png[400,alt="KMeansNN",align="left"]
+
+[cols="5*"]
+|====
+| *Strengths* | Tight clusters | Scalable | General purpose | Fast
+| *Use When* | Known Number | Small Number | Even Size | Flat geometry
+|====

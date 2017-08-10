@@ -1,0 +1,19 @@
+
+//:linkcss:
+:data-uri:
+include::../../dir/inc/DefBook.adoc[]
+
+[preface]
+= Data Science Techniques
+
+include::1.Concepts/Concepts.Tech.adoc[leveloffset=+1]
+
+include::2.Acquire/Acquire.Tech.adoc[leveloffset=+1]
+
+include::5.Describe/Describe.Tech.adoc[leveloffset=+1]
+
+include::6.Distill/Distill.Tech.adoc[leveloffset=+1]
+
+include::7.Predict/Predict.Tech.adoc[leveloffset=+1]
+
+include::8.Advise/Advise.Tech.adoc[leveloffset=+1]

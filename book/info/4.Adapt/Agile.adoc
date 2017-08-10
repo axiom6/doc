@@ -1,0 +1,16 @@
+
+include::../../../dir/inc/DefStudy.adoc[]
+
+''''
+==== [.black]#What is Wrong with Agile#
+
+[horizontal]
+Process::        Has become Process over People the violates the Agile Manfesto
+Tools::          Requires and consequently overly imprints process
+Consultants::    Too inclined to advocate silver bullets
+Estimates::      Requires unavailible past history and proven assumptions.
+Sprints::        Treadmilla that box people in.
+User Stories::   Just feature lists that fail to communicate
+Product Owners:: Pressured to focus on produce delivery at the expense of everything eles.
+Stand Ups::      You should not attend a meeting that you want to leave
+JIRA::

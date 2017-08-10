@@ -1,0 +1,45 @@
+
+include::../../../dir/inc/DefPractice.adoc[]
+
+= [.black]#icon:list[] Concepts#
+
+== [.black]#icon:book[] Definitions#
+
+Machine Learning::
+  Constructs algorithms that can learn from data.
+
+Statistical Learning::
+  A branch of applied statistics that emerged in response to machine learning.
+  It emphasizes statistical models and assessment of uncertainty.
+
+Data Science::
+  The extraction of knowledge from data that leverages ideas from mathematics statistics machine learning computer science engineering...
+
+<<<<
+
+
+== [.black]#icon:book[] Data Science Practices#
+
+image::concepts/Data.Icon.png[align="center"]
+
+<<<<
+
+== [.black]#icon:book[] Practice Descriptions#
+
+[horizontal]
+Acquire::  The collection, refinement, schema and preparation of data.
+Desktop::  Tools for visualization, exploration, data access and notebooks.
+Insight::  Theorize, basic statistics, ontology for choicing the right analysis.
+Describe:: Oversight with reports, profiles, clustering, dimensions and metadata.
+Pattern::  Discovers underlying influences with regression and model generation
+Predict::  Classifies and structures relationships to determine future probelistic outcomes.
+Advise::   Promotes decisions using optimization, simulation, reinforement and feedback.
+Prove::    Diagnostics, benchmarks and protects data for integrity and reproduction.
+Process::  Streams, transforms and archives data with deployed systems.
+Explain::  Measures assets and articulates decisions with teaching and publishing.
+
+<<<<
+
+== [.black]#icon:book[] Practices In Too Much Detail#
+
+image::concepts/Data.Prac.png[align="center"]

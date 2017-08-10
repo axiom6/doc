@@ -1,0 +1,19 @@
+
+include::../../../dir/inc/DefPractice.adoc[]
+
+= [.black]#icon:sliders[] Process#
+
+image::process/Process.png[]
+
+
+////
+<<<<
+== [.black]#icon:arrow-circle-right[] Stream#
+
+== [.black]#icon:sliders[] Pipeline#
+
+== [.black]#icon:database[] Warehouse#
+
+== [.black]#icon:cloud[] Deploy#
+
+////

@@ -1,0 +1,6 @@
+# Overview and categorization of supervised learning techniques.## Linear model* Perceptron, Multi-layer perceptron(MLP)* Support vector machine (SVM) (free on-line, LIBSVM)* Support vector regression (SVR) (LIBSVM)* Linear regressor, Rigid regression* Logistic regression (LIBLINEAR)
+## Non-parametric model* K-nearest neighbors* Kernel density estimation* Kernel regression ,Local regression
+## Non-metric model* Classification and regression tree (CART), decision tree
+## Parametric model* Naïve Bayes* Gaussian discriminant analysis (GDA) (free on-line)* Hidden Markov models (HMM)* Probabilistic graphical models
+## Mixed method* Bagging (bootstrap + aggregation)* Adaboost* Random forest (code is available in Matlab2010)
+# The category and important techniques for unsupervised learning.## Clustering* K-means clustering* Spectral clustering## Density Estimation* Gaussian mixture model (GMM)* Graphical models## Dimensionality reduction* Principal component analysis (PCA)* Factor analysis

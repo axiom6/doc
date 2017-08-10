@@ -1,0 +1,118 @@
+
+
+=== K-Means
+
+The k-means algorithm is a simple iterative method to partition a given dataset into a userspecified
+number of clusters, k. This algorithm has been discovered by several researchers
+across different disciplines, most notably Lloyd (1957, 1982) [53], Forgey (1965), Friedman
+and Rubin (1967), and McQueen (1967). A detailed history of k-means alongwith descriptions
+of several variations are given in [43]. Gray and Neuhoff [34] provide a nice historical
+background for k-means placed in the larger context of hill-climbing algorithms.
+
+The algorithm operates on a set of d-dimensional vectors, D = {xi | i = 1, . . . , N}, where
+xi ∈ d denotes the ith data point. The algorithm is initialized by picking k points in d as
+the initial k cluster representatives or “centroids”. Techniques for selecting these initial seeds
+include sampling at random from the dataset, setting them as the solution of clustering a
+small subset of the data or perturbing the global mean of the data k times. Then the algorithm
+iterates between two steps till convergence:
+
+* Step 1: Data Assignment. Each data point is assigned to its closest centroid, with ties
+broken arbitrarily. This results in a partitioning of the data.
+* Step 2: Relocation of “means”. Each cluster representative is relocated to the center
+(mean) of all data points assigned to it. If the data points come with a probability measure
+(weights), then the relocation is to the expectations (weighted mean) of the data partitions.
+* The algorithm convergeswhen the assignments (and hence the cj values) no longer change. The algorithm execution is visually depicted in Fig. 1. Note that each iteration needs N × k
+comparisons, which determines the time complexity of one iteration. The number of iterations
+required for convergence varies and may depend on N, but as a first cut, this algorithm
+can be considered linear in the dataset size.
+
+One issue to resolve is how to quantify “closest” in the assignment step. The default
+measure of closeness is the Euclidean distance, in which case one can readily show that the
+non-negative cost function,
+
+
+will decrease whenever there is a change in the assignment or the relocation steps, and hence
+convergence is guaranteed in a finite number of iterations. The greedy-descent nature of
+k-means on a non-convex cost also implies that the convergence is only to a local optimum,
+and indeed the algorithm is typically quite sensitive to the initial centroid locations. Figure 2 1
+illustrates how a poorer result is obtained for the same dataset as in Fig. 1 for a different
+choice of the three initial centroids. The local minima problem can be countered to some
+1 Figures 1 and 2 are taken from the slides for the book, Introduction to Data Mining, Tan, Kumar, Steinbach,
+2006.
+123
+Top 10 algorithms in data mining 7
+Fig. 1 Changes in cluster representative locations (indicated by ‘+’ signs) and data assignments (indicated
+by color) during an execution of the k-means algorithm
+123
+8 X. Wu et al.
+Fig. 2 Effect of an inferior initialization on the k-means results
+extent by running the algorithm multiple times with different initial centroids, or by doing
+limited local search about the converged solution.
+2.2 Limitations
+In addition to being sensitive to initialization, the k-means algorithm suffers from several
+other problems. First, observe that k-means is a limiting case of fitting data by a mixture of
+k Gaussians with identical, isotropic covariance matrices ( = σ2I), when the soft assignments
+of data points to mixture components are hardened to allocate each data point solely
+to the most likely component. So, it will falter whenever the data is not well described by
+reasonably separated spherical balls, for example, if there are non-covex shaped clusters in
+the data. This problem may be alleviated by rescaling the data to “whiten” it before clustering,
+or by using a different distance measure that ismore appropriate for the dataset. For example,
+information-theoretic clustering uses theKL-divergence to measure the distance between two
+data points representing two discrete probability distributions. It has been recently shown that
+if one measures distance by selecting any member of a very large class of divergences called
+Bregman divergences during the assignment step and makes no other changes, the essential
+properties of k-means, including guaranteed convergence, linear separation boundaries and
+scalability, are retained [3]. This result makes k-means effective for a much larger class of
+datasets so long as an appropriate divergence is used.
+123
+Top 10 algorithms in data mining 9
+k-means can be paired with another algorithm to describe non-convex clusters. One
+first clusters the data into a large number of groups using k-means. These groups are then
+agglomerated into larger clusters using single link hierarchical clustering, which can detect
+complex shapes. This approach also makes the solution less sensitive to initialization, and
+since the hierarchical method provides results at multiple resolutions, one does not need to
+pre-specify k either.
+The cost of the optimal solution decreases with increasing k till it hits zero when the
+number of clusters equals the number of distinct data-points. This makes it more difficult
+to (a) directly compare solutions with different numbers of clusters and (b) to find the optimum
+value of k. If the desired k is not known in advance, one will typically run k-means
+with different values of k, and then use a suitable criterion to select one of the results. For
+example, SAS uses the cube-clustering-criterion, while X-means adds a complexity term
+(which increases with k) to the original cost function (Eq. 1) and then identifies the k which
+minimizes this adjusted cost. Alternatively, one can progressively increase the number of
+clusters, in conjunction with a suitable stopping criterion. Bisecting k-means [73] achieves
+this by first putting all the data into a single cluster, and then recursively splitting the least
+compact cluster into two using 2-means. The celebrated LBG algorithm [34] used for vector
+quantization doubles the number of clusters till a suitable code-book size is obtained. Both
+these approaches thus alleviate the need to know k beforehand.
+The algorithm is also sensitive to the presence of outliers, since “mean” is not a robust
+statistic. A preprocessing step to remove outliers can be helpful. Post-processing the results,
+for example to eliminate small clusters, or to merge close clusters into a large cluster, is also
+desirable. Ball and Hall’s ISODATA algorithm from 1967 effectively used both pre- and
+post-processing on k-means.
+2.3 Generalizations and connections
+As mentioned earlier, k-means is closely related to fitting a mixture of k isotropicGaussians
+to the data. Moreover, the generalization of the distance measure to all Bregman divergences
+is related to fitting the data with a mixture of k components from the exponential family of
+distributions. Another broad generalization is to view the “means” as probabilistic models
+instead of points in Rd . Here, in the assignment step, each data point is assigned to the most
+likely model to have generated it. In the “relocation” step, the model parameters are updated
+to best fit the assigned datasets. Such model-based k-means allow one to cater to more
+complex data, e.g. sequences described by Hidden Markov models.
+One can also “kernelize” k-means [19]. Though boundaries between clusters are still
+linear in the implicit high-dimensional space, they can become non-linear when projected
+back to the original space, thus allowing kernel k-means to deal with more complex clusters.
+Dhillon et al. [19] have shown a close connection between kernel k-means and spectral
+clustering. The K-medoid algorithm is similar to k-means except that the centroids have to
+belong to the data set being clustered. Fuzzy c-means is also similar, except that it computes
+fuzzy membership functions for each clusters rather than a hard one.
+Despite its drawbacks, k-means remains the most widely used partitional clustering
+algorithm in practice. The algorithm is simple, easily understandable and reasonably scalable,
+and can be easily modified to deal with streaming data. To deal with very large datasets,
+substantial effort has also gone into further speeding up k-means, most notably by using
+kd-trees or exploiting the triangular inequality to avoid comparing each data point with all
+the centroids during the assignment step. Continual improvements and generalizations of the
+123
+10 X. Wu et al.
+basic algorithm have ensured its continued relevance and gradually increased its effectiveness
+as well.

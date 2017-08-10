@@ -1,0 +1,14 @@
+
+include::../../../../dir/inc/DefStudy.adoc[]
+
+''''
+<<<<
+== [.black]#Arrange#
+
+include::DecisionTree.adoc[]
+
+include::RandomForest.adoc[]
+
+include::Ensemble.adoc[]
+
+include::NeuralNets.adoc[]

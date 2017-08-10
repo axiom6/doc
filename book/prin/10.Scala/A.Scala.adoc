@@ -1,0 +1,45 @@
+
+include::../../../dir/inc/DefPractice.adoc[]
+
+== [.black]#A Tour of Scala#
+===  [.black]#Compilation Hints#
+===  [.black]#Java 7 in Scala#
+== [.black]#Objected Oriented Scala#
+===  [.black]#Uniform Class Hierarchy#
+== [.black]#Typing#
+===  [.black]#Type Inference#
+===  [.black]#Type Classes#
+===  [.black]#Generics#
+==== [.black]#Types to the Next Level#
+== [.black]#Traits#
+===  [.black]#Emergence of Traits#
+==== [.black]#PI Calculus#
+==== [.black]#Liskov Substitution#
+===  [.black]#Thick and Thin#
+===  [.black]#Self Type#
+===  [.black]#Interface Injection#
+===  [.black]#Stackable Modifications#
+== [.black]#Post Functional Scala#
+===  [.black]#For Comprehensions#
+===  [.black]#Monads#
+====  [.black]#Composability#
+====  [.black]#Shape Wrap and Poll#
+== [.black]#DSLs#
+===  [.black]#Operators and Implicits#
+===  [.black]#Parsing Combinators#
+===  [.black]#Case Classes#
+===  [.black]#Pattern Matching#
+== [.black]#Principles in Scala#
+===  [.black]#Composition#
+===  [.black]#Orchestration#
+===  [.black]#Preservation#
+===  [.black]#Transformation#
+===  [.black]#Expression#
+== [.black]#Akka#
+===  [.black]#Architecture#
+===  [.black]#Concurrency#
+===  [.black]#Persistence#
+===  [.black]#Apache Camel#
+===  [.black]#Principles#
+== [.black]#Summary#
+== [.black]#References#

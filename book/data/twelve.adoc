@@ -1,0 +1,40 @@
+
+include::../../dir/inc/DefSlides.adoc[]
+
+== [.black]#KMeans#
+include::5.Describe/B.Cluster/KMeans.Slide.adoc[]
+
+== [.black]#Expectation Maximumization EM#
+include::5.Describe/B.Cluster/ExpectationMax.Slide.adoc[]
+
+== [.black]#Apriori#
+include::5.Describe/C.Dimension/Apriori.Slide.adoc[]
+
+== [.black]#Linear Regression#
+include::6.Distill/B.Regress/Linear.Slide.adoc[]
+
+== [.black]#Logistic Regression#
+include::6.Distill/B.Regress/Logistic.Slide.adoc[]
+
+== [.black]#Naive Bayes#
+include::7.Predict/B.Classify/NaiveBayes.Slide.adoc[]
+
+== [.black]#Support Vector Machine#
+include::7.Predict/B.Classify/SupportVector.Slide.adoc[]
+
+== [.black]#k-NN NearestNeighbor#
+include::7.Predict/B.Classify/NearestNeighbor.Slide.adoc[]
+
+== [.black]#Decision Tree#
+include::7.Predict/C.Arrange/DecisionTree.Slide.adoc[]
+
+== [.black]#Adaptive Boost#
+include::7.Predict/C.Arrange/AdaptiveBoost.Slide.adoc[]
+
+== [.black]#Random Forest#
+include::7.Predict/C.Arrange/RandomForest.Slide.adoc[]
+
+== [.black]#Neural Nets#
+include::7.Predict/C.Arrange/NeuralNets.Slide.adoc[]
+
+include::../../dir/build/scripts.html[]

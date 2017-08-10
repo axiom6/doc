@@ -1,0 +1,16 @@
+
+include::../../../../dir/inc/DefStudy.adoc[]
+
+* The random forest takes Desision Trees to the next level by combining trees with the notion of an ensemble.
+
+* Thus, in ensemble terms, the trees are weak learners and the random forest is a strong learner.
+
+image::predict/RandomForest.png[500,500,alt="RandomForest",align="center"]
+
+////
+[cols="5*"]
+|====
+| *Strengths* | x | x | x | x
+| *Use For*   | x | x | x | x
+|====
+////

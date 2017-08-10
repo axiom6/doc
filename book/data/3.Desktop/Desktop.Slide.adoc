@@ -1,0 +1,16 @@
+
+include::../../../dir/inc/DefPractice.adoc[]
+
+== [.black]#Desktop#
+
+image::desktop/Desktop.png[alt="Desktop",align="center"]
+
+== [.black]#Desktop.#
+
+Working together.
+
+[horizontal]
+x:: x
+x:: x
+x:: x
+x:: x

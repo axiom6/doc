@@ -1,0 +1,35 @@
+
+include::../../../dir/inc/DefPractice.adoc[]
+
+== [.black]#Embrace#
+
+=== [.black]#MPrinciples from Psychological Safety from Google#
+
+link::www.nytimes.com/.../what-google-learned-from-its-quest-to-build-the-perfect-team.html[Psychological Safety at Google]
+
+[horizontal]
+Confidence:: Our teams instill confidence into each member.
+Trust::      A climate characterized by interpersonal trust.
+Safety::     The team will not embarrass, reject or punish someone for speaking up.
+Respect::    People are comfortable being themselves.
+Energy::     Our teams generate energy.
+Dependable:: Teams impart momentum to create a culture of dependability.
+
+<<<
+=== [.black]#Practices#
+
+image::humanistic/Embrace.png[alt="Embrace",align="center"]
+
+<<<
+=== [.black]#What Makes Embrace Work#
+
+[horizontal]
+Confidence:: Our teams instill confidence into each member.
+Trust::      A climate characterized by interpersonal trust.
+Safety::     The team will not embarrass, reject or punish someone for speaking up.
+Respect::    People are comfortable being themselves.
+Energy::     Our teams generate energy.
+Dependable:: Teams impart momentum to create a culture of dependability.
+
+
+

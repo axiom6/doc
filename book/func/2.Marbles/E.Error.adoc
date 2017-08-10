@@ -1,0 +1,11 @@
+
+include::../../../dir/inc/DefPractice.adoc[]
+
+=== [.black]#Error#
+
+* Operators that help to recover from error notifications from an Observable
+
+[horizontal]
+Catch:: Recover from an onError notification by continuing the sequence without error
+Retry:: If a source Observable sends an onError notification, resubscribe to it in the hopes that it will complete without error
+

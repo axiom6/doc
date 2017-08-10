@@ -1,0 +1,15 @@
+
+include::../../../../dir/inc/DefStudy.adoc[]
+
+* Measures the relationship between the categorical dependent variable
+  and one or more independent variables by estimating probabilities using a logistic function
+* Requires lots of data typically 20 data points per predictor.
+
+image::distill/LogisticRegress.png[alt="LogisticRegress",align="center"]
+
+[cols="5*"]
+|====
+| *Strengths*  | Non Linear     | Distribution      | Independence | x
+| *Weaknesses* | Identification | Discrete Outcomes | Independence | Over Confidence
+| *Use For*    | Categories     | Variance          | x            | x
+|====

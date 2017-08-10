@@ -1,0 +1,53 @@
+
+    Classification: logistic regression, naive Bayes,...
+    Regression: generalized linear regression, isotonic regression,...
+    Decision trees, random forests, and gradient-boosted trees
+    Recommendation: alternating least squares (ALS)
+    Clustering: K-means, Gaussian mixtures (GMMs),...
+    Topic modeling: latent Dirichlet allocation (LDA)
+    Feature transformations: standardization, normalization, hashing,...
+    Model evaluation and hyper-parameter tuning
+    ML Pipeline construction
+    ML persistence: saving and loading models and Pipelines
+    Survival analysis: accelerated failure time model
+    Frequent itemset and sequential pattern mining: FP-growth, association rules, PrefixSpan
+    Distributed linear algebra: singular value decomposition (SVD), principal component analysis (PCA),...
+    Statistics: summary statistics, hypothesis testing,...
+
+
+    Data types
+    Basic statistics
+        summary statistics
+        correlations
+        stratified sampling
+        hypothesis testing
+        streaming significance testing
+        random data generation
+    Classification and regression
+        linear models (SVMs, logistic regression, linear regression)
+        naive Bayes
+        decision trees
+        ensembles of trees (Random Forests and Gradient-Boosted Trees)
+        isotonic regression
+    Collaborative filtering
+        alternating least squares (ALS)
+    Clustering
+        k-means
+        Gaussian mixture
+        power iteration clustering (PIC)
+        latent Dirichlet allocation (LDA)
+        bisecting k-means
+        streaming k-means
+    Dimensionality reduction
+        singular value decomposition (SVD)
+        principal component analysis (PCA)
+    Feature extraction and transformation
+    Frequent pattern mining
+        FP-growth
+        association rules
+        PrefixSpan
+    Evaluation metrics
+    PMML model export
+    Optimization (developer)
+        stochastic gradient descent
+        limited-memory BFGS (L-BFGS)

@@ -1,0 +1,15 @@
+“Collaborative filtering” approaches use the “wisdom of the crowds” to find users (or items) that are similar to a given user (or item), based on the behaviour of many other users. This drives recommendations such as “people who viewed this product also viewed...” commonly seen on ecommerce sites. The assumption underlying collaborative filtering is that people who display similar behaviour have similar preferences for items (for example, movies). Thus, when recommending movies to a user, we can find other users that are similar to the user, and find the movies they have watched or rated. We can then recommend these movies to the user.
+
+“Content-based” models use the content attributes of items (such as categories, tags, descriptions and other data) to generate recommendations. Content-based models generally don’t take into account the overall behaviour of other users.
+
+“Model-based” methods try to directly model the preference of users for items (for example, modelling the expected rating of a user for a movie given the set of ratings given by all users to various movies). Model-based approaches often incorporate some form of collaborative filtering, and may also include content-based methods.
+
+Collaborative filtering (and model-based approaches that use it) often perform very well in practice.
+
+However, one downside is that these models require quite a bit of data in order to work well. These methods also don’t handle the “cold start problem” well – this is when a new user or item appears, for which our model has no historical data, and so cannot recommend to that user (or recommend that item) until some preference data has been collected. Finally, collaborative filtering is often fairly expensive in terms of computation (particularly when the number of users and items is very large).
+
+Content-based methods are somewhat less “personalized” than collaborative filtering models, and often have been shown to not perform as well. However, they can handle the cold-start problem since they don’t require preference data for new items.
+
+Model-based approaches often try to blend the power and performance of collaborative filtering with the flexibility and adaptability of content-based filtering. Recent techniques such as deep learning for content-based feature extraction, factorization machines, tensor factorization and other hybrid models have achieved strong performance (at least on benchmark datasets!).
+
+In practice, the choice of approach and model used will depend on the domain, the data (and volume of data) available, as well as time, costs and other constraints. Often a blend of multiple approaches (or a more structured combination such as a model ensemble) is used in a real-world system. As with any machine learning system, it is important to test and evaluate the performance of different approaches both offline and on live data, and monitor and adjust accordingly.

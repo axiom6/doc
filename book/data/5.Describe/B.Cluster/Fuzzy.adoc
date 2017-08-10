@@ -1,0 +1,51 @@
+
+include::../../../../dir/inc/DefStudy.adoc[]
+
+''''
+<<<<
+
+=== [.black]#Fuzzy C-Means#
+
+* A case where each data point has fuzzy membership in more than one cluster
+* Attempts to partition data points into a collection of c fuzzy clusters with respect to some given criterion
+
+
+////
+==== [.black]#Mathematics#
+
+asciimath:[C = \sum _(i=1)^n \sum_(j=1)^c w_(ij)^m \abs(x_n-mu_j)^2]
+
+asciimath:[w_(ij) = 1 / ( \sum _(k=1)^c ( abs( x_i - c_j ) / abs( x_i - c_k ) )^(2/(m-1))]
+
+
+Where:
+[horizontal]
+C:: Clusters
+n:: Number of data points
+c:: Number of clusters
+x~n~:: Vector for nth data point.
+u~j~:: Geometric centroid for cluster.
+w~ij~:: [0,1] Tells the degree to which x~i~ belongs to cluster c~j~
+////
+
+==== [.black]#Benefits#
+
+* Gives best result for overlapped data set and comparatively better then k-means algorithm.
+* Unlike k-means where data point must exclusively belong to one cluster center here data point is assigned
+   membership to each cluster center as a result of which data point may belong to more then one cluster center.
+
+==== [.black]#Drawbacks#
+
+* Apriori specification of the number of clusters.
+* With lower value of  β we get the better result but at the expense of  more number of iteration.
+* Euclidean distance measures can unequally weight underlying factors
+
+////
+==== [.black]#Getting Started#
+
+==== [.black]#Proving Results#
+
+==== [.black]#Applications#
+
+==== [.black]#Tools#
+////

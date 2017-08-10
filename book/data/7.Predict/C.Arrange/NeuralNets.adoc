@@ -1,0 +1,49 @@
+
+include::../../../../dir/inc/DefStudy.adoc[]
+
+''''
+<<<
+=== [.black]#Neural Nets#
+include::NeuralNets.Slide.adoc[]
+
+<<<<
+==== [.black]#How It Works#
+* There has been a great deal of hype surrounding
+  neural networks, making them seem magical and mysterious. As we make
+  clear in this section, they are just nonlinear statistical models, much like
+  the projection pursuit regression model discussed above.
+
+* A neural network is a two-stage regression or classification model, typically
+  represented by a network diagram as in Figure 11.2. This network
+  applies both to regression or classification. For regression, typically K = 1
+  and there is only one output unit Y1 at the top. However, these networks
+  can handle multiple quantitative responses in a seamless fashion, so we will
+  deal with the general case.
+
+////
+==== [.black]#Benefits#
+* One
+* Two
+
+==== [.black]#Drawbacks#
+* One
+* Two
+
+==== [.black]#Getting Started#
+* One
+* Two
+
+==== [.black]#Proving Results#
+* One
+* Two
+
+==== [.black]#Applications#
+* One
+* Two
+
+==== [.black]#Tools#
+[horizontal]
+Spark:: xxx
+Python:: xxx
+R:: xxx
+////

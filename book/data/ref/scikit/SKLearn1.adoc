@@ -1,0 +1,409 @@
+
+
+= [black]#Describe#
+
+== [black]#Dimensional#
+* PCA
+** IncrementalPCA
+** RandomizedPCA
+** KernelPCA
+** SparsePCA
+** MiniBatchSparsePCA
+* FactorAnalysis
+* ProjectedGradientNMF
+* FastICA
+* TruncatedSVD
+* NMF
+* SparseCoder
+* DictionaryLearning
+** Online
+* LatentDirichletAllocation
+* sparse_encode
+* DummyClassifier
+
+=== [black]#Cross Decomposition#
+* PLSRegression
+* Canonical Correlation Analysis
+* Partial Least Square SVD
+
+
+=== [black]#Discriminant Analysis#
+* LinearDiscriminantAnalysis
+* QuadraticDiscriminantAnalysis
+
+=== [black]#Manifold#
+* LocallyLinearEmbedding
+* Isomap
+* Multi Dimensional Scaling
+* SpectralEmbedding
+* |t-distributed Stochastic Neighbor Embedding
+* Locally Linear Embedding
+* spectral_embedding
+
+= [black]#Distill#
+
+== [black]#Regress#
+* SGDRegressor
+* Elastic Net
+** ElasticNetLasso
+** ElasticNetCV
+* Ridge
+** RidgeSVR
+** CV
+** Classifier
+** Classifier CV
+* SVR
+** EnsembleRegressors
+* Linear
+* Logistic
+* Bayesion
+* Lasso
+** LassoCV
+** LassoLars
+** LassoLarsIC
+* MultiTask
+** Lasso
+** LassoCV
+* Least Angle
+** CV
+** Path
+** Stabiliy path
+* ARDRegression
+* BayesianRidge
+* OrthogonalMatchingPursuit
+** CV
+* Perceptron
+* RandomizedLasso
+* RANSACRegressor
+* SGDClassifier
+* SGDRegressor
+* TheilSenRegressor
+* KernelRidge
+
+=== [black]#Isotonic#
+* IsotonicRegression
+* check_increasing
+
+== [black]#Pattern#
+
+=== [black]#Hypothesis#
+
+=== [black]#Cross Validation#
+* KFold
+* LabelKFold
+* LabelShuffleSplit
+* LeaveOneLabelOut
+* LeaveOneLabelOut
+* LeaveOneOut
+* LeavePLabelOut
+* LeavePOut
+* PredefinedSplit
+* ShuffleSplit
+* StratifiedShuffleSplit
+
+== [black]#Covariance#
+* EmpiricalCovariance
+* EllipticEnvelope
+* GraphLasso
+* GraphLassoCV
+* LedoitWolf
+* MinCovDet
+* OracleApproxShrink
+* ShrunkCovariance
+
+== [black]#Cluster#
+
+=== [black]#Centroid#
+* KMeans / MiniBatch
+* AffinityPropagation
+
+=== [black]#Hierachial#
+* Ward
+* Birch
+* Agglomerative / Feature
+
+=== [black]#Distribtion#
+* Spectral / BI
+* Gausian Mixture / VBGMM
+* Gausian Process
+
+=== [black]#Density#
+* DBSCAN
+* MeanShift
+
+
+
+= [black]#Predict#
+
+== [black]#Classify#
+
+=== [black]#Support Vector Machines#
+* Linear Support Vector Classification
+* C-Support Vector Classification
+* Nu-Support Vector Classification
+* Linear Support Vector Regression
+* Nu Support Vector Regression
+* Unsupervised Outlier Detection
+* fit
+* decision_function
+* predict
+* Predict probabilities
+* cross_validation
+
+=== [black]#Nearest Neighbors#
+* **KNeighborsClassifier**
+* NearestNeighbors
+* RadiusNeighborsClassifier
+* KNeighborsRegressor
+* KNeighborsRegressor
+* RadiusNeighborsRegressor
+* NearestCentroid
+* BallTree
+* KDTree
+* LSHForest
+* DistanceMetric
+* KernelDensity
+* kneighbors_graph
+* radius_neighbors_graph
+
+=== [black]#Naive Bayes#
+* GaussianNB
+* MultinomialNB
+* BernoulliNB
+
+=== [black]#Multi Class#
+* one-vs-one
+* one-vs-the-rest
+* one-vs-all
+* error correcting output codes
+
+=== [black]#By Regression#
+* SGD Classifier
+* Ridge Classifier
+* PassiveAggressiveClassifier
+
+=== [black]#Kernel#
+* Fourier Transform
+* AdditiveChi2Sampler
+* Nystroem
+* RBFSampler
+* Kernel Ridge Regression
+
+== [black]#Tree#
+
+=== [black]#Ensemble#
+* Dummy
+* AdaBoost
+* Bagging
+* Bagging
+* ExtraTrees
+* GradientBoosting
+* RandomForest
+* RandomTreesEmbedding
+* VotingClassifier
+* partial_dependence
+
+== [black]#Strategy#
+== [black]#NeuralNets#
+
+= [black]#Prove#
+
+== [black]#Validate#
+== [black]#Techniques#
+== [black]#Reproduce#
+== [black]#Pitfalls#
+
+= [black]#Explain#
+
+== [black]#Teach#
+== [black]#Publish#
+== [black]#Warehouse#
+== [black]#Protect#
+
+= [black]#Advise#
+
+== [black]#Reason#
+== [black]#Optimize#
+== [black]#Decision#
+== [black]#Simulate#
+
+
+
+
+
+
+
+
+
+
+
+
+
+== [black]#Feature#
+
+=== [black]#Extraction#
+* DictVectorizer
+* FeatureHasher
+==== [black]#Image#
+* img_to_graph
+* grid_to_graph
+* extract_patches_2d
+* reconstruct_from_patches_2d
+* PatchExtractor
+
+=== [black]#Selector#
+* GenericUnivariateSelect
+* SelectPercentile
+* SelectKBest
+* SelectFpr
+* SelectFdr
+* SelectFromModel
+* SelectFwe
+* RFE
+* RFECV
+* VarianceThreshold
+* chi2
+* f_classif
+* f_regression
+
+== [black]#Grid Search#
+* GridSearchCV
+* ParameterGrid
+* ParameterSampler
+* ParameterSampler
+
+== [black]#Discriminant Analysis#
+* LinearDiscriminantAnalysis
+* QuadraticDiscriminantAnalysis
+
+== [black]#Learning curve#
+* Validation curve
+
+== [black]#Model Evalution#
+* scoring-parameter
+* label-ranking-metrics
+* multi label-ranking-metrics
+* ranking-based average precision
+* Compute Ranking loss
+* Classification Metrics
+* Regression metrics
+** Explained variance
+** Mean absolute error
+** |Mean squared error
+** Median absolute erro
+* Clustering Metrics
+** Supervised
+** Unsupervised
+** Rand index
+** Adjusted Mutual Information
+** adjusted_rand_score
+** Completeness metric
+** homogeneity_completeness_v_measure
+** Mutual Information
+** Mutual Information Normalized
+** Silhouette Coefficient
+** V-measure
+* Bi Cluster
+** mutual_info_score
+** consensus_score
+
+== [black]#Model Selection#
+
+== [black]#Metrics#
+* make_scorer
+* get scorer
+* Area Under the Curve
+* average_precision_score
+* brier_score_loss
+* classification_report
+* confusion matrix
+* f1_score
+* F Beta Score
+* Hamming loss
+* hinge loss
+* Jaccard similarity
+* Matthews correlation coefficient
+* precision_recall
+* precision_recall_fscore
+* recall_score
+* roc_auc_score
+* Receiver operating characteristic
+* Zero-one classification loss
+* Brier
+* Pairwise
+** chi2_kernel
+** distance_metrics
+** euclidean_distances
+** kernel_metrics
+** linear_kernel
+** manhattan_distances
+** pairwise_distances
+** polynomial_kernel
+** rbf_kernel
+** pairwise_distances_argmin
+** pairwise_distances_argmin_min
+**
+
+== [black]#Gaussian Mixture#
+* GMM
+* DPGMM
+* VBGMM
+
+== [black]#Neural Net#
+* Bernoulli Restricted Boltzmann Machine
+
+== [black]#Probability#
+* CalibratedClassifierCV
+* calibration_curve
+
+== [black]#Pipeline#
+* FeatureUnion
+* make_pipeline
+* make_union
+
+== [black]#Preprocessing#
+* scaling, centering, normalization, binarization and imputation
+* KernelCenterer
+* normalization
+* Binarizer
+* LabelBinarizer
+* LabelEncoder
+* MultiLabelBinarizer
+* Imputer
+* FunctionTransformer
+* MaxAbsScaler
+* MinMaxScaler
+* Normalizer
+* OneHotEncoder
+* PolynomialFeatures
+* StandardScaler
+* RobustScaler
+* StandardScaler
+* add_dummy_feature
+
+== [black]#Random Projection#
+* GaussianRandomProjection
+* SparseRandomProjection
+
+== [black]#Semi Supervised#
+* LabelPropagation
+* LabelSpreading
+
+== [black]#Desision Tree#
+* DecisionTreeClassifier
+* DecisionTreeRegressor
+* ExtraTreeClassifier
+* ExtraTreeRegressor
+
+== [black]#Utils#
+* check_random_state
+* check_estimator=
+* resample
+* shuffle
+
+== [black]#Base classes for all estimators##
+* BaseEstimator
+* ClassifierMixin
+* ClusterMixin
+* RegressorMixin
+* TransformerMixin

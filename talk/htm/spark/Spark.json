@@ -1,0 +1,469 @@
+[
+{ "tag":"!doctype" },
+{ "tag":"html", "atts": { "lang":"en" },"children": [
+  { "tag":"head","children": [
+    { "tag":"title", "text":"Apache Spark Streaming" },
+    { "tag":"meta", "atts": { "charset":"utf-8" } },
+    { "tag":"meta", "atts": { "name":"description", "content":"Apache Spark Streaming" } },
+    { "tag":"meta", "atts": { "name":"author", "content":"Tom Flaherty" } },
+    { "tag":"meta", "atts": { "name":"apple-mobile-web-app-capable", "content":"yes" } },
+    { "tag":"meta", "atts": { "name":"apple-mobile-web-app-status-bar-style", "content":"black-translucent" } },
+    { "tag":"meta", "atts": { "name":"viewport", "content":"width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" } },
+    { "tag":"link", "atts": { "href":"../../lib/node_modules/font-awesome/css/font-awesome.css", "rel":"stylesheet" } },
+    { "tag":"link", "atts": { "href":"../../lib/node_modules/reveal.js/css/reveal.css", "rel":"stylesheet" } },
+    { "tag":"link", "atts": { "href":"../../lib/node_modules/reveal.js/lib/css/zenburn.css", "rel":"stylesheet" } },
+    { "tag":"link", "atts": { "href":"../../lib/node_modules/reveal.js/css/theme/night.css", "rel":"stylesheet", "id":"theme" } },
+    { "tag":"link", "atts": { "href":"../../css/slides/talk.css", "rel":"stylesheet" } },
+    { "tag":"script", "atts": { "src":"../../lib/node_modules/jquery/dist/jquery.js" } },
+    { "tag":"script", "atts": { "src":"../../lib/node_modules/reveal.js/lib/js/head.min.js" } },
+    { "tag":"script", "atts": { "src":"../../lib/node_modules/reveal.js/js/reveal.js" } },
+    { "tag":"script", "atts": { "src":"../../src/mod/Util.js" } },
+    { "tag":"script", "atts": { "src":"../../src/doc/RevealInit.js" } } ] },
+  { "tag":"body","children": [
+    { "tag":"div", "atts": { "class":"reveal", "id":"Talk" },"children": [
+      { "tag":"div", "atts": { "class":"slides" },"children": [
+        { "tag":"section", "atts": { "id":"ToDo" },"children": [
+          { "tag":"h2", "text":"To Do" },
+          { "tag":"ul","children": [
+            { "tag":"li", "text":"Review abstract" },
+            { "tag":"li", "text":"Discuss installation" },
+            { "tag":"li", "text":"Mention parallized collections in Scala" },
+            { "tag":"li", "text":"Need to know Scala" },
+            { "tag":"li", "text":"Expand Key Components" },
+            { "tag":"li", "text":"Create a streaming template in Scala" },
+            { "tag":"li", "text":"Create a streaming template in Java" },
+            { "tag":"li", "text":"Create a bigger example" },
+            { "tag":"li", "text":"Update references" } ] } ] },
+        { "tag":"section", "atts": { "id":"Begin" },"children": [
+          { "tag":"h1", "atts": { "style":"font-size:1.5em;" }, "text":"Apache Spark Streaming" },
+          { "tag":"img", "atts": { "src":"../../img/spark/Spark.png", "class":"rx-img" } },
+          { "tag":"div","children": [
+            { "tag":"a", "atts": { "style":"font-size:1.0em;", "href":"http://twitter.com/TheTomFlaherty" }, "text":"@TheTomFlaherty" } ] } ] },
+        { "tag":"section", "atts": { "style":"color:wheat;", "id":"Abstract" },"children": [
+          { "tag":"h2", "text":"Abstract" },
+          { "tag":"div", "atts": { "style":"text-align:left; font-size:22px;" },"children": [
+            { "tag":"p", "text":"Spark is hyped as the next Big Thing in Big Data. Well all of it is true." },
+            { "tag":"p", "text":"With in memory computing, resilient data sets, streaming, data frames, machine learning, rich numerical algorithms, Akka and Scala backed by a large dedicated community of committers, Spark is defining the nextgeneration of Big Data." },
+            { "tag":"p", "text":"Big Data is forecast to become a 50 billion dollar industry with ensuing hype that all you need to dois set up Spark, hire few analysts and throw a ton of data at it and divine business patterns will emerge.Nothing could be farther from the truth." },
+            { "tag":"p", "text":"Data Science - the revealing of knowledge from data, is an interdisciplinary approach that takes us through a challenging but rewarding exploration of data. Brute force often circumvents this journey only to impart risk and devalue knowledge. So dont let brute force do your thinking for you. Big Data is not Smart Data" },
+            { "tag":"p", "text":"So the purpose of this talk is to convey the good news that Spark in standalone mode is also a good platform to seek out Smart Data with exploratory Data Science. Sparks best features: RDDs (Resilient Data Sets) and streaming, manage data and apply algorithms in simple, consistent and scalable ways." },
+            { "tag":"p", "text":"This talk illustrates Spark Streaming" } ] } ] },
+        { "tag":"section", "atts": { "id":"Outline" },"children": [
+          { "tag":"h3", "text":"Outline" },
+          { "tag":"div", "atts": { "style":"position:relative;   left:0; top:0; width:100%; height:700px; font-size:22px;" },"children": [
+            { "tag":"div", "atts": { "style":"position:absolute; left:0; top:0; width: 40%; height:100%; " },"children": [
+              { "tag":"ul","children": [
+                { "tag":"li", "text":"History" },
+                { "tag":"li", "text":"Spark Streaming Overview" },
+                { "tag":"li", "text":"Apache Spark - Traditional" },
+                { "tag":"li", "text":"Apache Spark - Revealed" },
+                { "tag":"li", "text":"Spark Components" },
+                { "tag":"li", "text":"The Key Components" },
+                { "tag":"li", "text":"Streamming - The Science" },
+                { "tag":"li", "text":"Why Spark Streaming" },
+                { "tag":"li", "text":"Existing Streaming Systems" },
+                { "tag":"li", "text":"Live Streaming and Batch" },
+                { "tag":"li", "text":"Fault-tolerant Stream Processing" },
+                { "tag":"li", "text":"Fault Tolerance in Spark" },
+                { "tag":"li", "text":"Spark Streaming Internal" },
+                { "tag":"li", "text":"Small Batch Jobs" },
+                { "tag":"li", "text":"Languages" } ] } ] },
+            { "tag":"div", "atts": { "style":"position:absolute; left:40%; top:0; width:60%;  height:100%; " },"children": [
+              { "tag":"ul","children": [
+                { "tag":"li", "text":"The DStream Programming Model" },
+                { "tag":"li", "text":"Illustrated Example 1 - Initialize an Input DStream" },
+                { "tag":"li", "text":"Illustrated Example 2 - Get Hash Tags from Twitter" },
+                { "tag":"li", "text":"Illustrated Example 3 - Push Data to External Storage" },
+                { "tag":"li", "text":"Illustrated Example 4 - Do Whatever with foreach(...)" },
+                { "tag":"li", "text":"Illustrated Example 5 - Sliding Window" },
+                { "tag":"li", "text":"Example 6 - Arbitrary Stateful Computations" },
+                { "tag":"li", "text":"Example 7 - Combining Batch and Streaming" },
+                { "tag":"li", "text":"Example 8 - Databricks Keynote" },
+                { "tag":"li", "text":"DStreams + RDDs = Power" },
+                { "tag":"li", "text":"Advantage of a Unified Stack" },
+                { "tag":"li", "text":"Input Sources" },
+                { "tag":"li", "text":"Data Science Methodology" },
+                { "tag":"li", "text":"References" } ] } ] } ] } ] },
+        { "tag":"section", "atts": { "style":"margin:0; padding:0;", "id":"History" },"children": [
+          { "tag":"img", "atts": { "src":"../../img/spark/spark-history.jpg" } } ] },
+        { "tag":"section", "atts": { "style":"background-color:rgb(49,28,39); font-size:24px;", "id":"Overview" },"children": [
+          { "tag":"h2", "text":"Spark Streaming Overview" },
+          { "tag":"img", "atts": { "src":"../../img/streaming/SparkStreaming.png", "style":"background-color:white;" } },
+          { "tag":"ul","children": [
+            { "tag":"li", "text":"Spark Streaming is an extension of the core Spark API that enables:" },
+            { "tag":"li", "text":"scalable, high-throughput, fault-tolerant stream processing of live data streams" } ] } ] },
+        { "tag":"section", "atts": { "style":"background-color:rgb(49,28,39); font-size:24px;", "id":"Internally" },"children": [
+          { "tag":"h2", "text":"Spark Streaming Internally" },
+          { "tag":"img", "atts": { "src":"../../img/streaming/streaming-flow.png", "style":"background-color:white;" } },
+          { "tag":"ul","children": [
+            { "tag":"li", "text":"Internally, it works as follows." },
+            { "tag":"li", "text":"Spark Streaming receives live input data streams and divides the data into batches" },
+            { "tag":"li", "text":"These batches are then processed by the Spark engine" },
+            { "tag":"li", "text":"To generate the final stream of batched results" } ] } ] },
+        { "tag":"section", "atts": { "id":"Traditional" },"children": [
+          { "tag":"h2", "text":"Apache Spark" },
+          { "tag":"h4", "text":"Traditional View" },
+          { "tag":"img", "atts": { "src":"../../img/spark/spark-stack.png", "class":"rx-img" } },
+          { "tag":"ul", "atts": { "style":"text-align:left; font-size:24px; list-style-type: none;" },"children": [
+            { "tag":"li", "text":"Distributed task dispatching, scheduling, and basic I/O through Akka","children": [
+              { "tag":"span", "atts": { "class":"width150" }, "text":"Core:      " } ] },
+            { "tag":"li", "text":"A distributed graph topology for RDDs based on Pregel","children": [
+              { "tag":"span", "atts": { "class":"width150" }, "text":"GraphX:    " } ] },
+            { "tag":"li", "text":"DataFrames a SQL DSL for feeding structured data into RDDs","children": [
+              { "tag":"span", "atts": { "class":"width150" }, "text":"SQL:       " } ] },
+            { "tag":"li", "text":"Ingests data in mini-batches for RDD transforms & streaming analytics","children": [
+              { "tag":"span", "atts": { "class":"width150" }, "text":"Streaming: " } ] },
+            { "tag":"li", "text":"Machine Learning Pipeline - Spark's original purpose","children": [
+              { "tag":"span", "atts": { "class":"width150" }, "text":"MLlib :    " } ] } ] } ] },
+        { "tag":"section", "atts": { "style":"margin:0; padding:0; background-color:rgb(49,28,39);", "id":"Revealed" },"children": [
+          { "tag":"h3", "text":"Apache Spark - Revealed" },
+          { "tag":"img", "atts": { "src":"../../img/spark/SparkSlide.png", "class":"rx-img" } } ] },
+        { "tag":"section", "atts": { "style":"margin:0; padding:0; background-color:rgb(49,28,39);", "id":"Components" },"children": [
+          { "tag":"h3", "text":"Spark Components" },
+          { "tag":"ul", "atts": { "class":"icondesc", "style":"text-align:left; line-height:1.1; font-size:26px; list-style-type: none; color:wheat;" },"children": [
+            { "tag":"li", "atts": { "style":"padding-top:12px;" }, "text":"Resilient Distributed Datasets logically partitioned","children": [
+              { "tag":"i", "atts": { "class":"fa fa-database fa-rotate-90" } },
+              { "tag":"span", "atts": { "class":"width150pad" }, "text":"RDD:        " },
+              { "tag":"ul", "atts": { "class":"icondesc", "style":"text-align:left; line-height:1.1; font-size:24px; list-style-type: none; color:wheat;" },"children": [
+                { "tag":"li", "text":"Distributed graph topology for RDDs based on Pregel","children": [
+                  { "tag":"i", "atts": { "class":"fa fa-joomla" } },
+                  { "tag":"span", "atts": { "class":"width150pad" }, "text":"GraphX:     " } ] },
+                { "tag":"li", "text":"An efficient updatable key-value store for RDD","children": [
+                  { "tag":"i", "atts": { "class":"fa fa-toggle-right" } },
+                  { "tag":"span", "atts": { "class":"width150pad" }, "text":"IndexedRDD:  " } ] },
+                { "tag":"li", "text":"A distributed collection of named columns with a SQL DSL","children": [
+                  { "tag":"i", "atts": { "class":"fa fa-th" } },
+                  { "tag":"span", "atts": { "class":"width150pad" }, "text":"DataFrames: " } ] },
+                { "tag":"li", "text":"Memory centric distributed storage system in C with no GC","children": [
+                  { "tag":"i", "atts": { "class":"fa fa-cubes fa-rotate-180" } },
+                  { "tag":"span", "atts": { "class":"width150pad" }, "text":"Tachyon:  " } ] },
+                { "tag":"li", "text":"Local File in Standalone, Cassandra MongoDB HDFS JDBC ...","children": [
+                  { "tag":"i", "atts": { "class":"fa fa-database" } },
+                  { "tag":"span", "atts": { "class":"width150pad" }, "text":"Databases:  " } ] } ] } ] },
+            { "tag":"li", "atts": { "style":"padding-top:12px;" }, "text":"Ingests data in mini-batches for RDD transforms","children": [
+              { "tag":"i", "atts": { "class":"fa fa-sliders" } },
+              { "tag":"span", "atts": { "class":"width150pad" }, "text":"Streaming:  " },
+              { "tag":"ul", "atts": { "class":"icondesc", "style":"text-align:left; line-height:1.1; font-size:24px; list-style-type: none; color:wheat;" },"children": [
+                { "tag":"li", "text":"MLlib Machine Learning Pipeline","children": [
+                  { "tag":"i", "atts": { "class":"fa fa-connectdevelop" } },
+                  { "tag":"span", "atts": { "class":"width150pad" }, "text":"Machine:    " } ] },
+                { "tag":"li", "text":"Breeze Epic Puck GPU(cuBlas-NVidia) and NetLib-Fortran","children": [
+                  { "tag":"i", "atts": { "class":"fa fa-calculator" } },
+                  { "tag":"span", "atts": { "class":"width150pad" }, "text":"Numerical:  " } ] } ] } ] },
+            { "tag":"li", "atts": { "style":"padding-top:12px;" }, "text":"Interactive multi-language Data Science notebooks","children": [
+              { "tag":"i", "atts": { "class":"fa fa-leanpub" } },
+              { "tag":"span", "atts": { "class":"width150pad" }, "text":"Notebooks:   " },
+              { "tag":"ul", "atts": { "class":"icondesc", "style":"text-align:left; line-height:1.1; font-size:24px; list-style-type: none; color:wheat;" },"children": [
+                { "tag":"li", "text":"The Data Scientist's favorite notebook with PySpark","children": [
+                  { "tag":"span", "atts": { "style":"font-size:20px" }, "text":"IP[y]" },
+                  { "tag":"span", "atts": { "class":"width150" }, "text":"IPython:    " } ] },
+                { "tag":"li", "text":"A light-weight frontend to use Apache Spark from R","children": [
+                  { "tag":"i", "atts": { "class":"fa fa-bell" } },
+                  { "tag":"span", "atts": { "class":"width150pad" }, "text":"SparkR:     " } ] },
+                { "tag":"li", "text":"A web-based notebook that enables interactive data analytics","children": [
+                  { "tag":"img", "atts": { "src":"../../img/spark/zeppelin.png", "width":"22", "height":"22", "class":"rx-img" } },
+                  { "tag":"span", "atts": { "class":"width150pad" }, "text":"Zeppelin:" } ] } ] } ] },
+            { "tag":"li", "atts": { "style":"padding-top:12px;" }, "text":"Distributed task dispatching, scheduling, and basic I/O","children": [
+              { "tag":"i", "atts": { "class":"fa fa-star-o" } },
+              { "tag":"span", "atts": { "class":"width150pad" }, "text":"Spark Core: " },
+              { "tag":"ul", "atts": { "class":"icondesc", "style":"text-align:left; line-height:1.1; font-size:24px; list-style-type: none; color:wheat;" },"children": [
+                { "tag":"li", "text":"Concurrent, distributed, resilient, message driven, actor based","children": [
+                  { "tag":"i", "atts": { "class":"fa fa-area-chart" } },
+                  { "tag":"span", "atts": { "class":"width150pad" }, "text":"Akka:       " } ] },
+                { "tag":"li", "text":"Standalone, Mesos, Myriad and YARN","children": [
+                  { "tag":"i", "atts": { "class":"fa fa-server" } },
+                  { "tag":"span", "atts": { "class":"width150pad" }, "text":"Cluster:    " } ] } ] } ] } ] } ] },
+        { "tag":"section", "atts": { "style":"margin:0; padding:0; background-color:rgb(49,28,39);", "id":"KeyComponents" },"children": [
+          { "tag":"h3", "text":"The Key Components" },
+          { "tag":"ul", "atts": { "class":"icondesc", "style":"text-align:left; font-size:24px; list-style-type: none; color:wheat;" },"children": [
+            { "tag":"li", "text":"Resilient Distributed Datasets logically partitioned across servers","children": [
+              { "tag":"i", "atts": { "class":"fa fa-database fa-rotate-90" } },
+              { "tag":"span", "atts": { "class":"width150pad" }, "text":"RDD:        " } ] },
+            { "tag":"li", "text":"Ingests data in mini-batches for RDD transforms and streaming","children": [
+              { "tag":"i", "atts": { "class":"fa fa-sliders" } },
+              { "tag":"span", "atts": { "class":"width150pad" }, "text":"Streaming:  " } ] } ] } ] },
+        { "tag":"section", "atts": { "style":"margin:0; padding:0; background-color:rgb(49,28,39);", "id":"StreamingScience" },"children": [
+          { "tag":"h3", "text":"Streaming - The Science" },
+          { "tag":"ul", "atts": { "class":"icondesc", "style":"text-align:left; font-size:24px; list-style-type: none; color:wheat;" },"children": [
+            { "tag":"li", "text":"Ingests data in mini-batches for RDD transforms and streaming","children": [
+              { "tag":"i", "atts": { "class":"fa fa-sliders" } },
+              { "tag":"span", "atts": { "class":"width150pad" }, "text":"Streaming:  " },
+              { "tag":"ul", "atts": { "style":"font-size:20px;" },"children": [
+                { "tag":"li", "text":"Streaming API" },
+                { "tag":"li", "text":"Scala" } ] } ] },
+            { "tag":"li", "text":"MLlib Machine Learning Pipeline","children": [
+              { "tag":"i", "atts": { "class":"fa fa-connectdevelop" } },
+              { "tag":"span", "atts": { "class":"width150pad" }, "text":"Machine:    " },
+              { "tag":"ul", "atts": { "style":"font-size:20px;" },"children": [
+                { "tag":"li", "text":"summary statistics, correlations, stratified sampling, hypothesis testing, random data" },
+                { "tag":"li", "text":"classification / regression: SVMs, logistic and linear regression, decision trees, naive Bayes" },
+                { "tag":"li", "text":"collaborative filtering: alternating least squares (ALS)" },
+                { "tag":"li", "text":"clustering: k-means" },
+                { "tag":"li", "text":"dimensionality reduction: singular value decomposition (SVD), principal components" },
+                { "tag":"li", "text":"feature extraction and transformation" },
+                { "tag":"li", "text":"optimization primitives: stochastic gradient descent, limited-memory BFGS (L-BFGS)" } ] } ] },
+            { "tag":"li", "text":"Breeze Epic Puck GPU(cuBlas-NVidia) and NetLib-Fortran","children": [
+              { "tag":"i", "atts": { "class":"fa fa-calculator" } },
+              { "tag":"span", "atts": { "class":"width150pad" }, "text":"Numerical:  " },
+              { "tag":"ul", "atts": { "style":"font-size:20px;" },"children": [
+                { "tag":"li", "text":"Breeze" },
+                { "tag":"li", "text":"GPU" },
+                { "tag":"li", "text":"NetLib" } ] } ] } ] } ] },
+        { "tag":"section", "atts": { "id":"Why" },"children": [
+          { "tag":"h3", "text":"Why Spark Streaming" },
+          { "tag":"img", "atts": { "src":"../../img/streaming/WhyStreaming.png" } },
+          { "tag":"ul","children": [
+            { "tag":"li", "text":"Scales to hundreds of nodes" },
+            { "tag":"li", "text":"Achieves low latency" },
+            { "tag":"li", "text":"Efficiently recovers from failures" },
+            { "tag":"li", "text":"Integrates with batch and interactive processing" } ] } ] },
+        { "tag":"section", "atts": { "style":"background-color:rgb(49,28,39);", "id":"Existing" },"children": [
+          { "tag":"h3", "text":"Existing Streaming Systems" },
+          { "tag":"ul","children": [
+            { "tag":"li", "text":"Storm","children": [
+              { "tag":"ul","children": [
+                { "tag":"li", "text":"Replays record if not processed by a node" },
+                { "tag":"li", "text":"Processes each record at least once" },
+                { "tag":"li", "text":"May update mutable state twice!" },
+                { "tag":"li", "text":"Mutable state can be lost due to failure!" } ] } ] },
+            { "tag":"li", "text":"Trident – Use transactions to update state","children": [
+              { "tag":"ul","children": [
+                { "tag":"li", "text":"Processes each record exactly once" },
+                { "tag":"li", "text":"Per-state transaction to external database is slow" } ] } ] } ] } ] },
+        { "tag":"section", "atts": { "style":"background-color:rgb(49,28,39);", "id":"LiveStreamBatch" },"children": [
+          { "tag":"h3", "text":"Live Streaming and Batch" },
+          { "tag":"ul","children": [
+            { "tag":"li", "text":"Many environments require processing same data in live streaming as well as batch post-processing" },
+            { "tag":"li", "text":"Existing frameworks cannot do both","children": [
+              { "tag":"ul","children": [
+                { "tag":"li", "text":"Either, stream processing of 100s of MB/s with low latency" },
+                { "tag":"li", "text":"Or, batch processing of TBs of data with high latency" } ] } ] },
+            { "tag":"li", "text":"Extremely painful to maintain two different stacks","children": [
+              { "tag":"ul","children": [
+                { "tag":"li", "text":"Different programming models" },
+                { "tag":"li", "text":"Doubles implementation effort" } ] } ] } ] } ] },
+        { "tag":"section", "atts": { "style":"background-color:rgb(49,28,39);", "id":"FaultStream" },"children": [
+          { "tag":"h3", "text":"Fault-tolerant Stream Processing" },
+          { "tag":"div", "atts": { "style":"position:relative;   left:0; top:0; width:100%; height:700px; font-size:24px;" },"children": [
+            { "tag":"div", "atts": { "style":"position:absolute; left:0; top:0; width: 50%; height:100%; " },"children": [
+              { "tag":"ul","children": [
+                { "tag":"li", "atts": { "style":"padding-top:18px;" }, "text":"Traditional processing model","children": [
+                  { "tag":"ul","children": [
+                    { "tag":"li", "text":"Pipeline of nodes" },
+                    { "tag":"li", "text":"Each node maintains mutable state" },
+                    { "tag":"li", "text":"Each input record updates the state" } ] } ] },
+                { "tag":"li", "atts": { "style":"padding-top:18px;" }, "text":"Mutable state is lost if node fails" },
+                { "tag":"li", "atts": { "style":"padding-top:18px;" }, "text":"Making stateful stream processing fault-tolerant is challenging!" } ] } ] },
+            { "tag":"div", "atts": { "style":"position:absolute; left:50%; top:0; width:50%;  height:100%; " },"children": [
+              { "tag":"img", "atts": { "src":"../../img/streaming/FaultNodes.png" } } ] } ] } ] },
+        { "tag":"section", "atts": { "style":"background-color:rgb(49,28,39);", "id":"FaultSpark" },"children": [
+          { "tag":"h3", "text":"Fault Tolerance in Spark" },
+          { "tag":"div", "atts": { "style":"position:relative;   left:0; top:0; width:100%; height:700px; font-size:28px;" },"children": [
+            { "tag":"div", "atts": { "style":"position:absolute; left:0; top:0; width: 50%; height:100%; " },"children": [
+              { "tag":"ul","children": [
+                { "tag":"li", "atts": { "style":"padding-top:14px;" }, "text":"Batches of input data are replicated in memory for fault-tolerance" },
+                { "tag":"li", "atts": { "style":"padding-top:14px;" }, "text":"Data lost due to worker failure, can be recomputed from replicated input data" },
+                { "tag":"li", "atts": { "style":"padding-top:14px;" }, "text":"All transformations are fault tolerant with exactly-once transformations" },
+                { "tag":"li", "atts": { "style":"padding-top:14px;" }, "text":"Fault tolerant does not imply 100% fault bulletproof" } ] } ] },
+            { "tag":"div", "atts": { "style":"position:absolute; left:50%; top:0; width:50%;  height:100%; " },"children": [
+              { "tag":"img", "atts": { "src":"../../img/streaming/FaultTolerant.png" } } ] } ] } ] },
+        { "tag":"section", "atts": { "style":"background-color:rgb(49,28,39);", "id":"SmallBatchJobs" },"children": [
+          { "tag":"h3", "text":"Small Batch Jobs" },
+          { "tag":"h6", "atts": { "style":"font-size:24px;" }, "text":"Runs a streaming computation as a series of very small, deterministic batch jobs" },
+          { "tag":"div", "atts": { "style":"position:relative;   left:0; top:0; width:100%; height:700px; font-size:24px;" },"children": [
+            { "tag":"div", "atts": { "style":"position:absolute; left:0; top:0; width: 50%; height:100%; " },"children": [
+              { "tag":"ul","children": [
+                { "tag":"li", "text":"Chop up the live stream into batches of X seconds" },
+                { "tag":"li", "text":"Spark treats each batch of data as RDDs and processes them using RDD operations" },
+                { "tag":"li", "text":"Finally, the processed results of the RDD operations are returned in batches" } ] },
+              { "tag":"ul", "atts": { "style":"padding-top:36px;" },"children": [
+                { "tag":"li", "text":"Batch sizes as low as ½ sec, latency of about 1 sec" },
+                { "tag":"li", "text":"Potential for combining batch processing and streaming processing in the same system" } ] } ] },
+            { "tag":"div", "atts": { "style":"position:absolute; left:50%; top:0; width:50%;  height:100%; " },"children": [
+              { "tag":"img", "atts": { "src":"../../img/streaming/Streaming.png" } } ] } ] } ] },
+        { "tag":"section", "atts": { "style":"background-color:rgb(49,28,39);", "id":"Languages" },"children": [
+          { "tag":"h3", "text":"Languages" },
+          { "tag":"ul","children": [
+            { "tag":"li", "text":"Scala","children": [
+              { "tag":"pre", "atts": { "class":"scala" },"children": [
+                { "tag":"code", "atts": { "style":"font-size:1.0em; margin:0;" },"children": [
+                  { "tag":"line", "text":"val tweets   = TwitterUtils.createStream( ssc, None )" },
+                  { "tag":"line", "text":"val hashTags = tweets.flatMap( status = getTags( status )" },
+                  { "tag":"line", "text":"hashTags.foreachRDD( hasTagRDD =  )"  } ] } ] } ] },
+            { "tag":"li", "text":"Java","children": [
+              { "tag":"pre", "atts": { "class":"java" },"children": [
+                { "tag":"code", "atts": { "style":"font-size:1.0em; margin:0;" },"children": [
+                  { "tag":"line", "text":"JavaDStream&lt;Status&gt;tweets   = ssc.twitterStream()" },
+                  { "tag":"line", "text":"JavaDstream&lt;String&gt;hashTags = tweets.flatMap(new Function&lt...&gt; { ... } )" },
+                  { "tag":"line", "text":"hashTags.saveAsHadoopFiles(hdfs://...)" } ] } ] } ] },
+            { "tag":"li", "text":"Python","children": [
+              { "tag":"pre", "atts": { "class":"python" },"children": [
+                { "tag":"code", "atts": { "style":"font-size:1.0em; margin:0;" }, "text":"... soon" } ] } ] } ] } ] },
+        { "tag":"section", "atts": { "style":"background-color:rgb(49,28,39);", "id":"DStream" },"children": [
+          { "tag":"h3", "text":"The DStream Programming Model" },
+          { "tag":"ul","children": [
+            { "tag":"li", "text":"Discretized Stream (DStream)","children": [
+              { "tag":"ul","children": [
+                { "tag":"li", "text":"Represents a stream of data" },
+                { "tag":"li", "text":"Implemented as a sequence of RDDs" } ] } ] },
+            { "tag":"li", "text":"DStreams can be either…","children": [
+              { "tag":"ul","children": [
+                { "tag":"li", "text":"Created from streaming input sources" },
+                { "tag":"li", "text":"Created by applying transformations on existing DStreams" } ] } ] } ] } ] },
+        { "tag":"section", "atts": { "style":"background-color:rgb(49,28,39);", "id":"InputDStream" },"children": [
+          { "tag":"h4", "text":"Illustrated Example 1 - Initialize an Input DStream" },
+          { "tag":"pre", "atts": { "class":"scala" },"children": [
+            { "tag":"code", "atts": { "style":"font-size:1.0em; margin:0;" },"children": [
+              { "tag":"line", "text":"val scc    = new StreamingContext( sparkContext, Seconds(1) )" },
+              { "tag":"line", "text":"val tweets = TwitterUtils.createStream( ssc, auth )" },
+              { "tag":"line", "text":"//  tweets are an Input DStream" } ] } ] },
+          { "tag":"img", "atts": { "src":"../../img/streaming/HashTag1.png" } } ] },
+        { "tag":"section", "atts": { "style":"background-color:rgb(49,28,39);", "id":"GetHashTags" },"children": [
+          { "tag":"h4", "text":"Illustrated Example 2 - Get Hash Tags from Twitter" },
+          { "tag":"pre", "atts": { "class":"scala" },"children": [
+            { "tag":"code", "atts": { "style":"font-size:1.0em; margin:0;" },"children": [
+              { "tag":"line", "text":"val scc      = new StreamingContext( sparkContext, Seconds(1) )" },
+              { "tag":"line", "text":"val tweets   = TwitterUtils.createStream( ssc, None )" },
+              { "tag":"line", "text":"val hashTags = tweets.flatMap( status = getTags( status )" },
+              { "tag":"line", "text":"//  hashTags are now a transformed DStream" },
+              { "tag":"line", "text":"//  Tranformations modify data in one DStream to create another DSTream" },
+              { "tag":"line", "text":"//  getTags( status ) is the function that is applied vie flatMap(...)" },
+              { "tag":"line", "text":"//  flatMap(...) will also flatten any tree structures into sequences" } ] } ] },
+          { "tag":"img", "atts": { "src":"../../img/streaming/HashTag2.png" } } ] },
+
+        { "tag":"section", "atts": { "style":"background-color:rgb(49,28,39);", "id":"Storage" },"children": [
+          { "tag":"h4", "text":"Illustrated Example 3 - Push Data to External Storage" },
+          { "tag":"pre", "atts": { "class":"scala" },"children": [
+            { "tag":"code", "atts": { "style":"font-size:1.0em; margin:0;" }, "children": [
+              { "tag":"line", "text":"val scc      = new StreamingContext( sparkContext, Seconds(1) )" },
+              { "tag":"line", "text":"val tweets   = TwitterUtils.createStream( ssc, None )" },
+              { "tag":"line", "text":"val hashTags = tweets.flatMap( status = getTags( status )" },
+              { "tag":"line", "text":"hashTags.saveAsHadoopFiles( hdfs:... )" } ] } ] },
+          { "tag":"img", "atts": { "src":"../../img/streaming/HadoopSave.png" } } ] },
+
+        { "tag":"section", "atts": { "style":"background-color:rgb(49,28,39);", "id":"foreach" },"children": [
+          { "tag":"h4", "text":"Illustrated Example 4 - Do Whatever with foreach(...)" },
+          { "tag":"ul","children": [
+            { "tag":"li", "text":"Do whatever you want with the processed data:" },
+            { "tag":"li", "text":"Write to a database, update analytics, UI etc..." } ] },
+          { "tag":"pre", "atts": { "class":"scala" },"children": [
+            { "tag":"code", "atts": { "style":"font-size:1.0em; margin:0;" },"children": [
+              { "tag":"line", "text":"val scc      = new StreamingContext( sparkContext, Seconds(1) )" },
+              { "tag":"line", "text":"val tweets   = TwitterUtils.createStream( ssc, None )" },
+              { "tag":"line", "text":"val hashTags = tweets.flatMap( status = getTags( status )" },
+              { "tag":"line", "text":"hashTags.foreachRDD( hasTagRDD = { ... } )" } ] } ] },
+          { "tag":"img", "atts": { "src":"../../img/streaming/DoWhatEver.png" } } ] },
+
+        { "tag":"section", "atts": { "style":"background-color:rgb(49,28,39);", "id":"SlidingWindow" },"children": [
+          { "tag":"h4", "text":"Illustrated Example 5 - Sliding Window" },
+          { "tag":"pre", "atts": { "class":"scala" },"children": [
+            { "tag":"code", "atts": { "style":"font-size:1.0em; margin:0;" }, "children": [
+              { "tag":"line", "text":"val tweets    = TwitterUtils.createStream( ssc, None )" },
+              { "tag":"line", "text":"val hashTags  = tweets.flatMap( status = getTags( status )" },
+              { "tag":"line", "text":"val tagCounts = hasTags.window( Minutes(1), Seconds(5) ).countByValue()" },
+              { "tag":"line", "text":"//                         ^       ^             ^" },
+              { "tag":"line", "text":"// (sliding window operation) (window length) (sliding interval)" } ] } ] },
+          { "tag":"img", "atts": { "src":"../../img/streaming/SlidingWindow.png" } } ] },
+
+        { "tag":"section", "atts": { "style":"background-color:rgb(49,28,39);", "id":"Stateful" },"children": [
+          { "tag":"h4", "text":"Example 6 - Stateful Computations" },
+          { "tag":"ul", "atts": { "style":"font-size:24px;" },"children": [
+            { "tag":"li", "text":"Specify a function to generate new state based on previous state and new data" },
+            { "tag":"li", "text":"Example: Maintain per-user mood as state, and update it with their tweets" } ] },
+          { "tag":"pre", "atts": { "class":"scala" },"children": [
+            { "tag":"code", "atts": { "style":"font-size:1.0em; margin:0;" },"children": [
+              { "tag":"line", "text":"def updateMood( newTweets, lastMood ) = newMood" },
+              { "tag":"line", "text":"val moods = tweetsByUser.updateStateByKey( updateMood, _ )" } ] } ] } ] },
+        { "tag":"section", "atts": { "style":"background-color:rgb(49,28,39);", "id":"Combining" },"children": [
+          { "tag":"h4", "text":"Example 7 - Combining Batch and Streaming" },
+          { "tag":"ul", "atts": { "style":"font-size:24px;" },"children": [
+            { "tag":"li", "text":"Inter-mix RDD and DStream operations!" },
+            { "tag":"li", "text":"Example: Join incoming tweets with a spam HDFS file to filter out bad tweets" } ] },
+          { "tag":"pre", "atts": { "class":"scala" },"children": [
+            { "tag":"code", "atts": { "style":"font-size:1.0em; margin:0;" },"children": [
+              { "tag":"line", "text":"tweets.transform( tweetsRDD = { tweetsRDD.join(spamFile).filter(...) } )" } ] } ] } ] },
+        { "tag":"section", "atts": { "id":"Keynote" },"children": [
+          { "tag":"h4", "atts": { "style":"margin-bottom:0;" }, "text":"Example 8 - Databricks Keynote" },
+          { "tag":"pre", "atts": { "class":"scala" },"children": [
+            { "tag":"code", "atts": { "style":"font-size:0.75em; margin:0;" }, "children": [
+              { "tag":"line", "text":"val ssc         = new StreamingContext(sc,Seconds(5))" },
+              { "tag":"line", "text":"val sqlContext  = new SQLContext(sc)" },
+              { "tag":"line", "text":"val tweets      = TwitterUtils.createStream(ssc,auth)" },
+              { "tag":"line", "text":"val transformed = tweets.filter(isEnglish).window(Minutes(1))" },
+              { "tag":"line", "text":"" },
+              { "tag":"line", "text":"// Tweet is a case class" },
+              { "tag":"line", "text":"transformed.foreachRDD { rdd = rdd.map(Tweet.apply(_)).registerAsTable(“tweets”) }" } ] } ] },
+          { "tag":"pre", "atts": { "class":"sql" },"children": [
+            { "tag":"code", "atts": { "style":"font-size:0.75em; margin:0;" }, "children": [
+              { "tag":"line", "text":"SELECT text FROM tweets WHERE similarity(tweet)  0.01" },
+              { "tag":"line", "text":"SELECT getClosestCountry(lat,long) FROM tweets" }  ] } ] } ] },
+        { "tag":"section", "atts": { "style":"background-color:rgb(49,28,39);", "id":"DStreamsRDDs" },"children": [
+          { "tag":"h3", "text":"DStreams + RDDs = Power" },
+          { "tag":"ul","children": [
+            { "tag":"li", "text":"Combine live data streams with historical data","children": [
+              { "tag":"ul","children": [
+                { "tag":"li", "text":"Generate historical data models with Spark, etc." },
+                { "tag":"li", "text":"Use data models to process live data stream" } ] } ] },
+            { "tag":"li", "text":"Combine streaming with MLlib, GraphX Algorithms","children": [
+              { "tag":"ul","children": [
+                { "tag":"li", "text":"Offline learning, online prediction" },
+                { "tag":"li", "text":"Online learning and prediction" } ] } ] },
+            { "tag":"li", "text":"Query streaming data using SQL","children": [
+              { "tag":"ul","children": [
+                { "tag":"li", "text":"select * from table_from_streaming_data" } ] } ] } ] } ] },
+
+        { "tag":"section", "atts": { "style":"background-color:rgb(49,28,39);", "id":"InputSources" } ,"children": [
+          { "tag":"h3", "text":"Input Sources" },
+          { "tag":"ul","children": [
+            { "tag":"li", "text":"Out of the box, Spark provides","children": [
+              { "tag":"ul","children": [
+                { "tag":"li", "text":"Kafka, Flume, Akka Actors, Raw TCP sockets, HDFS, etc." } ] } ] },
+            { "tag":"li", "text":"Very easy to write a custom receiver","children": [
+              { "tag":"ul","children": [
+                { "tag":"li", "text":"Define what to when receiver is started and stopped" } ] } ] },
+            { "tag":"li", "text":"Also, generate your own sequence of RDDs, etc. and push them in as a “stream”" } ] } ] },
+        { "tag":"section", "atts": { "style":"background-color:rgb(49,28,39);", "id":"Methodology" },"children": [
+          { "tag":"h4", "atts": { "style":"margin:0;" }, "text":"Data Science Methodology" },
+          { "tag":"img", "atts": { "src":"../../img/datascience/SparkQuan.png", "class":"rx-img" } } ] },
+        { "tag":"section", "atts": { "id":"References" },"children": [
+          { "tag":"h2", "text":"References" },
+          { "tag":"ul", "atts": { "style":"margin-left:0.6em; font-size:26px;" },"children": [
+            { "tag":"li","children": [
+              { "tag":"div", "atts": { "class":"width340" }, "text":"Big Data Driving Business" },
+              { "tag":"a", "atts": { "href":"http://www.ted.com/talks/philip_evans_how_data_will_transform_business" }, "text":"http://bit.ly/194auY9" } ] },
+            { "tag":"li","children": [
+              { "tag":"div", "atts": { "class":"width340" }, "text":"REST API Tutorial" },
+              { "tag":"a", "atts": { "href":"http://www.restapitutorial.com/resources.html" }, "text":"http://www.restapitutorial.com/resources.html" } ] },
+            { "tag":"li","children": [
+              { "tag":"div", "atts": { "class":"width340" }, "text":"CAP Theorem" },
+              { "tag":"a", "atts": { "href":"http://en.wikipedia.org/wiki/CAP_theorem" }, "text":"http://en.wikipedia.org/wiki/CAP_theorem" } ] },
+            { "tag":"li","children": [
+              { "tag":"div", "atts": { "class":"width340" }, "text":"Hadoop" },
+              { "tag":"a", "atts": { "href":"http://hadoop.apache.org/" }, "text":"http://hadoop.apache.org/" } ] },
+            { "tag":"li","children": [
+              { "tag":"div", "atts": { "class":"width340" }, "text":"Grid Gain" },
+              { "tag":"a", "atts": { "href":"http://www.gridgain.com/" }, "text":"http://www.gridgain.com/" } ] },
+            { "tag":"li","children": [
+              { "tag":"div", "atts": { "class":"width340" }, "text":"Apache Ignite" },
+              { "tag":"a", "atts": { "href":"http://ignite.incubator.apache.org/" }, "text":"http://ignite.incubator.apache.org/" } ] },
+            { "tag":"li","children": [
+              { "tag":"div", "atts": { "class":"width340" }, "text":"Denver In Memory Meetup" },
+              { "tag":"a", "atts": { "href":"http://www.meetup.com/Denver-In-Memory-Computing-Meetup/" }, "text":"http://bit.ly/1Mb7AQu" } ] },
+            { "tag":"li","children": [
+              { "tag":"div", "atts": { "class":"width340" }, "text":"Functional Programming" },
+              { "tag":"a", "atts": { "href":"http://deanwampler.github.io/polyglotprogramming/papers/BetterProgrammingThroughFP.pdf" }, "text":"http://bit.ly/1vAX8wI" } ] },
+            { "tag":"li","children": [
+              { "tag":"div", "atts": { "class":"width340" }, "text":"The Reactive Manifesto" },
+              { "tag":"a", "atts": { "href":"http://www.reactivemanifesto.org/" }, "text":"www.reactivemanifesto.org/" } ] },
+            { "tag":"li","children": [
+              { "tag":"div", "atts": { "class":"width340" }, "text":"Apache Spark" },
+              { "tag":"a", "atts": { "href":"https://spark.apache.org/" }, "text":"https://spark.apache.org/" } ] },
+            { "tag":"li","children": [
+              { "tag":"div", "atts": { "class":"width340" }, "text":"RxMarbles" },
+              { "tag":"a", "atts": { "href":"http://rxmarbles.com/" }, "text":"http://rxmarbles.com/" } ] },
+            { "tag":"li","children": [
+              { "tag":"div", "atts": { "class":"width340" }, "text":"PDF at Speaker Deck" },
+              { "tag":"a", "atts": { "href":"https://speakerdeck.com/axiom6" }, "text":"https://speakerdeck.com/axiom6" } ] } ] } ] },
+        { "tag":"section", "atts": { "id":"THEEND" },"children": [
+          { "tag":"h1", "text":"THE END" } ] }
+  ] } ] } ] } ] } ]

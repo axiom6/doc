@@ -1,0 +1,65 @@
+
+include::../../../../dir/inc/DefStudy.adoc[]
+
+''''
+<<<<
+=== [.black]#Naïve Bayes#
+include::NaiveBayes.Slide.adoc[]
+
+==== [.black]#Classifier#
+* A classifier is a function that allocates a population’s element value from one of the available categories.
+* For instance, Spam Filtering is a popular application of Naïve Bayes algorithm.
+* Spam filter here, is a classifier that assigns a label “Spam” or “Not Spam” to all the emails.
+
+===== [.black]#How it Works#
+
+===== [.black]#Grouped by Similarities#
+* Naïve Bayes Classifier is amongst the most popular learning method grouped by similarities
+* It works on the popular Bayes Theorem of Probability
+  ** to build machine learning models particularly for disease prediction and document classification. It is a simple classification of words based on Bayes Probability Theorem for subjective analysis of content.
+
+==== [.black]#Benefits#
+
+* Naïve Bayes Classifier algorithm performs well when the input variables are categorical.
+* A Naïve Bayes classifier converges faster, requiring relatively little training data than other discriminative models like logistic regression
+  ** when the Naïve Bayes conditional independence assumption holds.
+* it is easier to predict class of the test data set.
+  ** A good bet for multi class predictions as well.
+  ** Though it requires conditional independence assumption,
+* Good performance in various application domains.
+
+////
+==== [.black]#Drawbacks#
+* One
+* Two
+////
+
+==== [.black]#When to Use It#
+* If you have a moderate or large training data set.
+* If the instances have several attributes.
+* Attributes which describe the instances should be conditionally independent.
+
+////
+==== [.black]#Getting Started#
+* One
+* Two
+
+==== [.black]#Proving Results#
+* One
+* Two
+////
+
+==== [.black]#Applications#
+[horizontal]
+Sentiment Analysis:: It is used at Facebook to analyse status updates expressing positive or negative emotions.
+Document Categorization:: Google uses document classification to index documents and find relevancy scores i.e. the PageRank. PageRank mechanism considers the pages marked as important in the databases that were parsed and classified using a document classification technique.
+News Articles:: Technology, Entertainment, Sports, Politics, etc.
+Email Spam Filtering:: Google Mail uses Naïve Bayes algorithm to classify your emails as Spam or Not Spam
+
+////
+==== [.black]#Tools#
+[horizontal]
+Spark:: xxx
+Python:: xxx
+R:: xxx
+////

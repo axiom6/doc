@@ -1,0 +1,52 @@
+
+== [.black]#Tom Flaherty#
+
+1900 Little Raven St., Suite 561, Denver CO 80202 +
+Thomas.Edmund.Flaherty@gmail.com (720)-587-5017   +
+Colorado School of Mines - BSc - Mathematics
+
+=== [.black]#Architect, Designer and Mentor for 27 Years#
+
+My current interests revolve around humanistic and data science practices, polyglot languages supported by
+UI, cloud and data innovations. I have recently written PDF mini books and slide decks in each of these
+areas with AsciiDoctor.
+
+Over the years I have worked with groups to simplify core technologies to focus on their strengths.
+So web UIs are dedicated to the user experience,
+services project business expertise,
+databases model semantics,
+the cloud based on the Reative Manifesto transparently links platforms
+and data science realizes benefits.
+I have found the most productive technologies to be:
+languages: (Scala, CoffeeScript,Math DSLs),
+visualization (D3,Plotly,MathBox,Leaflet),
+cloud platforms: (Akka,Apache Spark,NodeJS).
+
+
+27 years of experience in each the three disciplines of Technology, Languages and Practices:
+
+[cols="15,15,5,15,5,15,5,20,5",options="header"]
+|====
+^| *Discipline* ^| Experience   | Y  ^| Experience     | Y ^| Experience  | Y  ^| Experience      | Y
+ | *Technology*  | Spark / GIS  | 2,3 | UI             | 7  | Akka/J2EE   | 2,5 | Data Modeling   | 8
+ | *Languages*   | Scala        | 9   | CoffeeScript   | 7  | Java        | 6   | C++             | 5
+ | *Practices*   | Data Science | 6   | Math / Visual  | 7  | Practices   | 8   | Design Patterns | 6
+|====
+
+==== [.black]#Presentations#
+
+* Humanistic   Practices (Book and Presentation) - Refresh Denver 1/11/2017
+* Data Science Practices (Book and Presentation) - Data Science Association 9/7/2016
+* Getting to Know Scala for Data Science - Data Science Association 6/24/2015
+* Reactive Principles in Data Science - Data Science Association 2/28/2015
+* Scala Math DSL- Denver Scala Users Group 6/11/2013
+* Math Box 3D Visualization - HTML5 Denver 5/13/2013
+* GIS with Leaflet - Denver JS 5/2/2013 and Den of Clojure (OpenBike) 6/20/2013
+* An Architectural Blueprint for a REST CMS in NetKernel - NetKernel Conference 4/14 2011
+* The Evolution of 4-Tier Architectures with REST - Northern Colorado Architects 12/15/2010
+* A Practical Road Map to Enterprise Architecture - Denver Open Source Users Group 10/5/10
+* Polyglot Panel & Scala Expert - Denver Java 4/14/10 CO Springs 11/25/10 Boulder 5/10/11
+* Polyglot Principles (Book) - The principles that inspired Scala Clojure Groovy Ruby 2010
+* Principles of Programming Languages - 2/2/10 Scala Groovy Clojure Smalltalk Lisp & Ruby
+* Scala Paradigms Denver 8/5/08 8/4/09 Boulder 8/11/09 CO Springs 8/26/09
+

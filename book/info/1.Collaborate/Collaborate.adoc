@@ -1,0 +1,14 @@
+
+include::../../../dir/inc/DefPractice.adoc[]
+
+include::CollaborateSlide.adoc[]
+
+<<<<
+
+include::Activity.adoc[]
+
+include::Partner.adoc[]
+
+include::Team.adoc[]
+
+include::Kanban.adoc[]

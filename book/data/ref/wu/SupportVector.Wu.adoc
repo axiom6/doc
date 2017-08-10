@@ -1,0 +1,130 @@
+
+== 3 Support vector machines
+In today’s machine learning applications, support vector machines (SVM) [83] are considered
+amust try—it offers one of themost robust and accurate methods among all well-known
+algorithms. It has a sound theoretical foundation, requires only a dozen examples for training,
+and is insensitive to the number of dimensions. In addition, efficient methods for training
+SVM are also being developed at a fast pace.
+
+In a two-class learning task, the aim of SVM is to find the best classification function
+to distinguish between members of the two classes in the training data. The metric for the
+concept of the “best” classification function can be realized geometrically. For a linearly separable
+dataset, a linear classification function corresponds to a separating hyperplane f (x)
+that passes through the middle of the two classes, separating the two. Once this function is
+determined, new data instance xn can be classified by simply testing the sign of the function
+f (xn); xn belongs to the positive class if f (xn) > 0.
+
+Because there are many such linear hyperplanes, what SVM additionally guarantee is that
+the best such function is found by maximizing the margin between the two classes. Intuitively,
+the margin is defined as the amount of space, or separation between the two classes
+as defined by the hyperplane. Geometrically, the margin corresponds to the shortest distance
+between the closest data points to a point on the hyperplane. Having this geometric definition
+allows us to explore how to maximize the margin, so that even though there are an infinite
+number of hyperplanes, only a few qualify as the solution to SVM.
+The reason why SVM insists on finding the maximum margin hyperplanes is that it offers
+the best generalization ability. It allows not only the best classification performance (e.g.,
+accuracy) on the training data, but also leaves much room for the correct classification of the
+future data. To ensure that the maximum margin hyperplanes are actually found, an SVM
+classifier attempts to maximize the following function with respect to w and b:
+
+
+where t is the number of training examples, and αi , i = 1, . . . , t, are non-negative numbers
+such that the derivatives of L P with respect to αi are zero. αi are the Lagrange multipliers
+and L P is called the Lagrangian. In this equation, the vectors w and constant b define the
+hyperplane.
+
+There are several important questions and related extensions on the above basic formulation
+of support vector machines. We list these questions and extensions below.
+
+1. Can we understand the meaning of the SVM through a solid theoretical foundation?
+2. Can we extend the SVM formulation to handle cases where we allow errors to exist,
+when even the best hyperplane must admit some errors on the training data?
+3. Can we extend the SVM formulation so that it works in situations where the training
+data are not linearly separable?
+4. Can we extend the SVM formulation so that the task is to predict numerical values or
+to rank the instances in the likelihood of being a positive class member, rather than
+classification?
+
+5. Canwe scale up the algorithm for finding themaximum margin hyperplanes to thousands
+and millions of instances?
+
+Question 1::
+Can we understand the meaning of the SVM through a solid theoretical foundation?
+Several important theoretical results exist to answer this question.
+A learning machine, such as the SVM, can be modeled as a function class based on some
+parameters α. Different function classes can have different capacity in learning, which is
+represented by a parameter h known as the VC dimension [83]. The VC dimension measures
+the maximum number of training examples where the function class can still be used to learn
+perfectly, by obtaining zero error rates on the training data, for any assignment of class labels
+on these points. It can be proven that the actual error on the future data is bounded by a sum
+of two terms. The first term is the training error, and the second term if proportional to the
+square root of the VC dimension h. Thus, if we can minimize h, we can minimize the future
+error, as long as we also minimize the training error. In fact, the above maximum margin
+function learned by SVM learning algorithms is one such function. Thus, theoretically, the
+SVM algorithm is well founded.
+
+Question 2::
+Can we extend the SVM formulation to handle cases where we allow errors to
+exist, when even the best hyperplane must admit some errors on the training data?
+To answer this question, imagine that there are a few points of the opposite classes that
+cross the middle. These points represent the training error that existing even for themaximum
+margin hyperplanes. The “soft margin” idea is aimed at extending the SVM algorithm [83]
+so that the hyperplane allows a few of such noisy data to exist. In particular, introduce a slack
+variable ξi to account for the amount of a violation of classification by the function f (xi );
+ξi has a direct geometric explanation through the distance from a mistakenly classified data
+instance to the hyperplane f (x). Then, the total cost introduced by the slack variables can
+be used to revise the original objective minimization function.
+
+Question 3::
+Can we extend the SVM formulation so that it works in situations where the
+training data are not linearly separable?
+The answer to this question depends on an observation on the objective function where
+the only appearances of  xi is in the form of a dot product. Thus, if we extend the dot product
+ xi ·  xj through a functional mapping (  xi) of each  xi to a different spaceHof larger and even
+possibly infinite dimensions, then the equations still hold. In each equation, where we had
+the dot product  xi ·  xj, we now have the dot product of the transformed vectors (  xi) ·(  xj),
+which is called a kernel function.
+The kernel function can be used to define a variety of nonlinear relationship between its
+inputs. For example, besides linear kernel functions, you can define quadratic or exponential
+kernel functions.Much study in recent years have gone into the study of different kernels for
+SVM classification [70] and for many other statistical tests. We can also extend the above
+descriptions of the SVMclassifiers from binary classifiers to problems that involve more than
+two classes. This can be done by repeatedly using one of the classes as a positive class, and
+the rest as the negative classes (thus, this method is known as the one-against-all method).
+
+Question 4::
+ Can we extend the SVM formulation so that the task is to learn to approximate
+data using a linear function, or to rank the instances in the likelihood of being a positive class
+member, rather a classification?
+
+SVM can be easily extended to perform numerical calculations. Here we discuss two such
+extensions. The first is to extend SVM to perform regression analysis, where the goal is to
+produce a linear function that can approximate that target function. Careful consideration
+goes into the choice of the error models; in support vector regression, or SVR, the error is
+defined to be zero when the difference between actual and predicted values are within a epsilon
+amount. Otherwise, the epsilon insensitive error will grow linearly. The support vectors
+can then be learned through the minimization of the Lagrangian. An advantage of support
+vector regression is reported to be its insensitivity to outliers.
+Another extension is to learn to rank elements rather than producing a classification for
+individual elements [39]. Ranking can be reduced to comparing pairs of instances and producing
+a +1 estimate if the pair is in the correct ranking order, and −1 otherwise. Thus, a
+way to reduce this task to SVM learning is to construct new instances for each pair of ranked
+instance in the training data, and to learn a hyperplane on this new training data.
+This method can be applied tomany areas where ranking is important, such as in document
+ranking in information retrieval areas.
+
+Question 5::
+Can we scale up the algorithm for finding the maximum margin hyperplanes to
+thousands and millions of instances?
+One of the initial drawbacks of SVMis its computational inefficiency. However, this problem
+is being solved with great success. One approach is to break a large optimization problem
+into a series of smaller problems, where each problem only involves a couple of carefully
+chosen variables so that the optimization can be done efficiently. The process iterates until
+all the decomposed optimization problems are solved successfully. A more recent approach
+is to consider the problem of learning an SVM as that of finding an approximate minimum
+enclosing ball of a set of instances.
+These instances, whenmapped to an N-dimensional space, represent a core set that can be
+used to construct an approximation to the minimum enclosing ball. Solving theSVMlearning
+problem on these core sets can produce a good approximation solution in very fast speed.
+For example, the core-vector machine [81] thus produced can learn an SVM for millions of
+data in seconds.

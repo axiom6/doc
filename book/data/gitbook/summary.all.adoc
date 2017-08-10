@@ -1,0 +1,44 @@
+= Summary
+
+1. link:1.Concepts/A.Concepts.adoc[Concepts - Getting to the Heart of Data Science]
+2. Aquire
+   A. link:2.Acquire/A.Collect.adoc[Collect]
+   B. link:2.Acquire/B.Refine.adoc[Refine]
+   C. link:2.Acquire/C.Schema.adoc[Schema]
+   D. link:2.Acquire/D.Prepare.adoc[Prepare]
+3. Describe
+   A. link:3.Describe/A.UnSupervise.adoc[UnSupervise]
+      * link:3.Distill/Apriori.adoc[Apriori]
+   B. link:3.Describe/B.Statistics.adoc[Statistics]
+   C. link:3.Describe/C.Dimension.adoc[Dimension]
+   D. link:3.Describe/D.Metadata.adoc[Metadata]
+   E. link:3.Describe/E.Report.adoc[Report]
+   F. link:3.Describe/F.Profile.adoc[Profile]
+4. Distill
+   A. link:3.Distill/A.SemiSupervised.adoc[Semi-Supervised]
+   B. Cluster
+      * link:3.Distill/KMeans.adoc[KMeans]
+   C. Regress
+      * link:3.Distill/Linear.adoc[Linear Regression]
+      * link:3.Distill/Logistic.adoc[Logistic Regression]
+   D. link:3.Distill/D.Pattern.adoc[Pattern]
+   E. link:3.Distill/E.Reveal.adoc[Reveal]
+   F. link:3.Distill/F.Recommend.adoc[Recommend]
+4. Predict
+   A. link:3.Predict/A.Supervised.adoc[Supervised]
+   B. Classify
+      * link:3.Predict/NaiveBayes.adoc[Naive Bayes]
+      * link:3.Predict/SupportVector.adoc[Support Vector]
+   C. Resolve
+      * link:3.Predict/DecisionTree.adoc[Decision Tree]
+      * link:3.Predict/RandomForest.adoc[Random Forest]
+   D. link:3.Predict/D.Confidence.adoc[Confidence]
+   E. link:3.Predict/E.Perceive.adoc[Perceive]
+   F. link:3.Predict/F.Forecast.adoc[Forecast]
+5. Advise
+   A. link:3.Advise/A.Reinforce.adoc[Reinforce]
+   B. link:3.Advise/B.Improve.adoc[Improve]
+   C. link:3.Advise/C.Simulate.adoc[Simulate]
+   D. link:3.Advise/D.Feedback.adoc[Feedback]
+   E. link:3.Advise/E.Insight.adoc[Insight]
+   F. link:3.Advise/F.Augment.adoc[Augment]

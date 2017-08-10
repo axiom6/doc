@@ -1,0 +1,13 @@
+
+include::../../../../dir/inc/DefStudy.adoc[]
+
+* Apriori is an unsupervised machine learning algorithm that generates association rules
+from data by examining lot of properties.
+
+image::describe/Apriori.png[alt="Apriori",align="center"]
+
+[cols="5*"]
+|====
+| *Strengths* | Implementation | Parallization | Lots of Properties | x
+| *Use For*   | Associations   | Interactions  | Grouped Purchases  | Auto Complete
+|====

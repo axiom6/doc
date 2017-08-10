@@ -1,0 +1,21 @@
+
+include::../../../dir/inc/DefPractice.adoc[]
+
+''''
+<<<<
+= [.black]#6. Advise#
+
+image::advise/Advise.Tech.png[align="center"]
+<<<<
+
+include::A.Reinforce/Reinforce.adoc[]
+
+include::B.Optimize/Optimize.adoc[]
+
+include::C.Simulate/Simulate.adoc[]
+
+include::D.Feedback/Feedback.adoc[]
+
+include::E.Insight/Insight.adoc[]
+
+include::F.Augment/Augment.adoc[]

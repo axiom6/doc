@@ -1,0 +1,35 @@
+
+include::../../../dir/inc/DefPractice.adoc[]
+
+=== [.black]#Filter#
+
+* Operators that selectively emit items from a source Observable.
+
+[horizontal]
+Debounce::  Only emit an item from an Observable if a particular timespan has passed without it emitting another item
+
+image::debounce.png[alt="debounce",align="center"]
+
+Distinct::  Suppress duplicate items emitted by an Observable
+
+image::distinct.png[alt="distinct",align="center"]
+
+ElementAt:: Emit only item n emitted by an Observable
+Filter::    Emit only those items from an Observable that pass a predicate test
+
+image::filter.png[alt="filter",align="center"]
+
+First::     Emit only the first item, or the first item that meets a condition, from an Observable
+Ignore::    Do not emit any items from an Observable but mirror its termination notification
+Last::      Emit only the last item emitted by an Observable
+Sample::    Emit the most recent item emitted by an Observable within periodic time intervals
+
+image::sample.png[alt="sample",align="center"]
+
+Skip::      Suppress the first n items emitted by an Observable
+SkipLast::  Suppress the last n items emitted by an Observable
+Take::      Emit only the first n items emitted by an Observable
+TakeLast::  Emit only the last n items emitted by an Observable
+
+image::takeUntilTime.png[alt="takeUntilTime",align="center"]
+

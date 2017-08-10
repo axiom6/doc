@@ -1,0 +1,19 @@
+
+include::../../../dir/inc/DefPractice.adoc[]
+
+=== [.black]#What Does Not Work#
+
+The twentieth century saw the fullfillment of the industrial age and the birth of the
+information age. However managerial practices are still mired in the industrial practices
+of control and process with vague incentives that people don't relate to.
+
+Managerial control maintained by process is driven by a lack of confidence rather than a passion for
+team contribution, product innvation and discovery. The higher asperations of interaction, creativity and
+understanding are pushed aside by project milestones, rigid requirements and unexamined assumptions.
+
+There are no:
+
+* Magic silver bullet processes.
+* Procedures that drive high functioning teams.
+* Project milestones that produce accomplishments.
+* Performance measures that motivate.

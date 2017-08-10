@@ -1,0 +1,16 @@
+
+include::../../../dir/inc/DefPractice.adoc[]
+
+=== [.black]#Connect#
+
+* Specialty Observables that have more precisely-controlled subscription dynamics
+
+[horizontal]
+Connect::  Instruct a connectable Observable to begin emitting items to its subscribers
+Publish::  Convert an ordinary Observable into a connectable Observable
+RefCount:: Make a Connectable Observable behave like an ordinary Observable
+Replay::   Ensure that all observers see the same sequence of emitted items, even if they subscribe after the Observable has begun emitting items
+
+image::replay.c.png[alt="replay",align="center"]
+
+

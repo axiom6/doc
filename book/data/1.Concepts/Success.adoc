@@ -1,0 +1,61 @@
+
+
+include::../../../dir/inc/DefPractice.adoc[]
+
+= Solving Business Problems with Data Science
+Posted by Francine Bennett on Nov 06, 2016
+
+Data science is fast becoming a critical skill for developers and managers across industries, and it looks like a lot of fun as well. But it’s pretty complicated - there are a lot of engineering and analytical options to navigate, and it’s hard to know if you’re doing it right or where the bear traps lie. In this series we explore ways in to making sense of data science - understanding where it’s needed and where it’s not, and how to make it an asset for you, from people who’ve been there and done it.
+
+This InfoQ article is part of the series "Getting A Handle On Data Science" . You can subscribe to receive notifications via RSS.
+
+
+* Key takeaways
+
+    Data science is a catch-all term for a set of interdisciplinary techniques which put data to work to extract useful insights, predictions, or knowledge.
+    One of the biggest determinants of success for a data science project is choosing and defining a good problem to work on.
+    There are a lot of good open source data science libraries now, mostly written in Python, Java, or C++.
+    The business context will drive the threshold which any predictive model needs to meet in order to actually solve the problem.
+    Cross-validation is a good sanity check and assurance that you have indeed used a sensible model and nothing bad is going to happen when you go to production
+
+Enterprises are increasingly realising that many of their most pressing business problems could be tackled with the application of a little data science. Where a few years ago you might have threatened to replace someone with a very small shell script, you now could replace some more people with a very small predictive model.
+
+If you’re reading InfoQ, you may well be a senior software developer or architect, who is used to handling data but perhaps does not do so much data science at the moment. I want to convince you that data science is an area well worth exploring, both for its interesting technical challenges and because it enables you to have a significant impact on the organisations you work in.
+
+Data science is a catch-all term for a set of interdisciplinary techniques which put data to work to extract useful insights, predictions, or knowledge - calling on elements of statistics, programming, data mining, and machine learning. It shows up in a large variety of areas, some that are literally rocket science while others are much more prosaic. Data science is behind consumer internet magic like Amazon’s book recommendations or LinkedIn’s People You May Know. It’s behind new things like self-driving cars, which use these techniques to learn how to drive safely. And it’s behind day to day practical applications like a supermarket loyalty scheme, such as Tesco’s Clubcard, figuring out which vouchers to send you.
+
+The theory behind most of these applications has been around for decades. However, it’s only in the last ten years, with the advent of cheap cloud servers by the hour, ubiquitous data collection, distributed storage and processing, and battle-tested machine learning libraries, that applying data science in an everyday business has been a good practical choice. It’s an exciting time to solve old business problems using new data science.
+
+However, business problems are often vaguely defined, complicated, and have success conditions and dependencies which mean that only certain types of model or levels of precision (fraction of positive predictions which are indeed correct) and recall (fraction of the true positives which are found by the model) will solve them. This article walks through some of the most common challenges and best angles of attack for the technical person trying to make that application of data the best it can be.
+Problem selection
+
+* One of the biggest determinants of success is choosing and defining a good problem to work on. So what does “good” mean in this area? It means:
+
+    A solution would have enough impact to justify the effort.
+    Relevant data is available in a usable format - flat files or csvs are usually good, proprietary formats or complex structures make more work.
+    There is plenty of data to work with - as Peter Norvig famously said of Google, “We don’t have better algorithms. We just have more data”.
+    Expert colleagues from “the business” are willing and interested to engage with the data science process - it will cut out a lot of dead ends if you have experienced business colleagues on hand who can help you pick out the most useful data sources, tell you where the bodies are buried in the data, and construct good features to feed into your algorithm.
+
+* A guide to the basics
+
+* Data science is a catch-all term, but there are some specific groupings of techniques:
+
+    Artificial intelligence is the broadest term. It refers to the many attempts over the past 60 years to replicate aspects of human intelligence using computers. This can include all kinds of learning and reasoning systems, using many different types of approaches.
+    Machine learning is a subset of artificial intelligence, and makes up the majority of the data scientist’s toolkit. It is the set of techniques of using algorithms against a dataset, in order to find patterns and make predictions, and includes many different methods.
+    Deep learning is the branch of machine learning which makes use of deep graph approaches (for example, neural networks). Deep learning methods are much more “brain like” in their structure than most machine learning approaches - meaning that they are very powerful, but also computationally very intensive, and can be hard to explain the results of. They have recently become much more popular, because new libraries and more powerful cheap hardware make them much more affordable and available to apply.
+
+* Choosing your tools
+
+There are numerous good open source data science libraries now, mostly written in Python, Java, or C++. Over the last year there has in particular been a boom in interesting deep learning tools, particularly Google’s TensorFlow, for sophisticated and very large scale machine learning such as image recognition, and some very impressive results in the field of AI. Tempting as these cool toys are, for most applications the smart initial choice will be to pick a much simpler model, for example using scikit-learn (a popular Python library which includes tools for the most common data mining and data analysis tasks) and modelling techniques like simple logistic regression - YAGNI applies double in the world of data science. It’s a lot easier to understand and debug simple models, and in general having more data and better feature selection will be a far bigger advantage to you than picking a more sophisticated library, which has a high chance of getting you lost in the weeds when you need to tune the model. Cross Validated is the equivalent of StackOverflow for data science, and is very helpful for finding good code snippets.
+Success conditions
+
+The business context will drive the threshold which any predictive model needs to meet in order to actually solve the problem. The key areas you’ll need to look at are:
+
+Precision and recall: Any predictive model has measures of both precision and recall. A very important first step is to understand what levels of precision and recall are required in order for a model to solve the problem. For example, you may be modelling which customers of your business are considering switching to a different supplier. If you only have resources to act on a small number of the riskiest customers, you need to have high precision, so that you can be confident you don’t waste any resources on trying to retain customers who aren’t really thinking of switching. However, if there’s some cheap action you can take to retain customers, you probably want to prioritise high recall - so you catch everyone who might leave.
+
+Output validation: You’ll need to validate any predictive model against one or many “holdbacks” of data, to check that it’s continuing to work over time and avoid probably the nastiest pitfall of data science in business - overfitting. If you work with one set of data to build a model, it’s always a risk that you have built a perfect model to describe your existing data, and as soon as you introduce something new the model will stop working - you can avoid that by doing cross-validation of the model using data that you’ve kept back from the model-building process for that purpose - again, these kinds of functions are well supported within libraries like scikit-learn. ross-validation is a good sanity check and assurance that you have indeed used a sensible model and nothing bad is going to happen when you go to production - it’s as close as you are likely to get to a formal testing regime.
+
+Performance: Models will need to run using a realistic amount of machine time and resources to solve the problem. Some model types scale to larger data in a much more performant way than others. For example, we recently investigated shifting from straightforward Latent Dirichlet Allocation (LDA) to using the new and very good lda2vec library for topic detection in text - which definitely gave us better outputs but increased the running time from minutes to multi-day execution. In general, more sophisticated learning models like neural nets and deep learning techniques will give more accurate outputs, but require a lot more resources to train and run than simpler models, and the slowdown might outweigh the advantage of having better outputs (although you might be able to claw back some run time for example by reducing the number of training iterations, or removing low-value features from the data pre-modelling). It’s also worth considering that a “learning” model like a neural net is very hard to explain and defend to business people who might want to know how the system works, in comparison to something simple like a decision tree.
+About the author
+
+* Francine Bennett is the CEO and cofounder of Mastodon C. Mastodon C are agile big data specialists, who offer the open source Hadoop and Cassandra-powered technology and the technical and analytical skills which help large organisations to realise the potential of their data. She is a recognised expert in the application of analytics and ‘data science’ techniques. She has been an invited speaker to the Royal Society and is an adviser to the Cabinet Office on the better use of data. She has a first class degree in Maths & Philosophy, and was previously an analytics lead at Google. She is also a trustee of DataKind UK.

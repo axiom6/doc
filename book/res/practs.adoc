@@ -1,0 +1,49 @@
+
+==== [.black]#Humanistic Practices#
+
+Since 1990 Axiom's 9 core practices have evolved from an innovative technology focus
+to faclitating a collaborative culture that encourages productivity and creativity over process. A key enabler
+is the hands on experience deriving benefits with each practice at Axiom, NREL, California, XCare,
+DMR, Williams, NorTel and Glaxo. See: link:https://speakerdeck.com/axiom6/humanistic-practices[Humanistic Practices]
+
+[width=50%,cols="10,15,15,15",options="header"]
+|====
+^|         ^| Embrace     ^| Innovate   ^| Encourage
+ | *Learn* ^| Collaborate ^| Product    ^| Discovery
+ | *Do*    ^| Adapt       ^| Technology ^| Benefits
+ | *Share* ^| Change      ^| Production ^| Govern
+|====
+
+[cols="15,85",frame="none",grid="none"]
+|====
+| Collaborate | Team building with psychological safety for creative interaction
+| Product     | Transforming propositions into an attractive portfolio
+| Discovery   | Finding and sharing our vision within our company and to our clients
+| Adapt       | Fine tuning our work to respond to new features and components
+| Technology  | Innovative architecture, engineering and construction
+| Benefit     | Realizing the benefits that propel our discoveries
+| Change      | Continuous delivery and evolution
+| Production  | Sharing our work with our communities on the cloud
+| Govern      | Facilitating and improving the maturity of the entire company
+|====
+
+==== [.black]#Data Science Practices and NREL# [.black .right]#&#160;&#160;&#160;&#160;&#160;&#160;2014-2016#
+
+Defined a set of 10 data science practices at NREL. These practices provide a uniform approach to data science
+by defining the context for clustering, dimensionality reduction, regression, model selection,
+naive bayes, support vector machine and decision tree techniques. See: link:https://speakerdeck.com/axiom6/data-science-techniques[Data Science Practices]
+
+[cols="15,85",frame="none",grid="none"]
+|====
+| Acquire  | The collection, refinement, schema model and preparation of data
+| Desktop  | Tools for visualization, exploration, data access and notebooks
+| Insight  | Hypothesis, statistics, ontology and the choices for analysis
+| Describe | Insight with reports, profiles, clustering, dimensions and metadata
+| Distill  | Discovers behavior patterns with regression and model generation
+| Predict  | Classifies and projects patterns to determine future probelistic outcomes
+| Advise   | Improves decisions with optimization and simulation
+| Prove    | Diagnostics, algorithmic benchmarks and data archival for integrity and reproduction
+| Process  | Streams, transforms and archives data with deplyed systems on the cloud
+| Explain  | Measures assets and articulates decisions with teaching and publishing
+|====
+

@@ -1,0 +1,36 @@
+
+include::../../../../dir/inc/DefStudy.adoc[]
+
+''''
+<<<<
+=== [.black]#Linear Regression#
+
+include::Linear.Slide.adoc[]
+
+==== [.black]#How It Works#
+
+* The algorithm shows the impact on the dependent variable on changing the independent variable.
+
+* The independent variables are referred as explanatory variables, as they explain the factors the impact the dependent variable.
+
+* Dependent variable is often referred to as the factor of interest or predictor.
+
+==== [.black]#Benefits#
+
+* It is one of the most interpretable machine learning algorithms, making it easy to explain to others.
+* It is easy of use as it requires minimal tuning.
+* It is the mostly widely used machine learning technique that runs fast.
+
+==== [.black]#Applications#
+
+* Estimating Sales based on the trends
+  ** If a company observes steady increase in sales every month - a linear regression analysis of the monthly sales data helps the company forecast sales in upcoming months.
+
+* Risk Assessment
+  ** Assess riska involved in insurance or financial domain.
+  ** A health insurance company can do a linear regression on the number of
+     claims per customer against age.
+  ** This analysis helps insurance companies find, that older customers tend to
+      make more insurance claims.
+  ** Such analysis results play a vital role in important business decisions and are made to account for risk.
+

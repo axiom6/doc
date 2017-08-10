@@ -1,0 +1,32 @@
+
+include::../../../../dir/inc/DefStudy.adoc[]
+
+<<<<
+== [.black]#Regress#
+
+include::Linear.adoc[]
+
+include::Logistic.adoc[]
+
+// include::Ridge.adoc[]
+
+// include::Lasso.adoc[]
+
+// include::ElasticNet.adoc[]
+
+// include::Stepwise.adoc[]
+
+include::LeastAngle.adoc[]
+
+// include::OrthogonalMatch.adoc[]
+
+include::GaussianProcesses.adoc[]
+
+// include::AutoRelevance.adoc[]
+
+// include::Isotomic.adoc[]
+
+// include::Robust.adoc[]
+
+
+

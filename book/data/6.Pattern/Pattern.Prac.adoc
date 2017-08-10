@@ -1,0 +1,29 @@
+
+include::../../../dir/inc/DefPractice.adoc[]
+
+= [.black]#icon:line-chart[] Pattern#
+
+image::pattern/Pattern.png[align="center"]
+
+////
+<<<<
+==  [.black]#icon:book[] Semi Supervised#
+
+==   [.black]#icon:line-chart[] Regression#
+===  [.black]#icon:line-chart[] Linear#
+===  [.black]#icon:line-chart[] Regularized#
+===  [.black]#icon:line-chart[] Probabilistic#
+===  [.black]#icon:line-chart[] Other#
+
+==   [.black]#icon:line-chart[] Model#
+===  [.black]#icon:thumbs-up[] Representation#
+===  [.black]#icon:thumbs-up[] Assessment#
+===  [.black]#icon:code-fork[] Selection#
+===  [.black]#icon:code-fork[] Inference#
+
+== [.black]#icon:modx[] Patterns#
+
+== [.black]#icon:bar-chart[] Reveal#
+
+== [.black]#icon:thumbs-up[] Recommend#
+////

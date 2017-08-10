@@ -1,0 +1,9 @@
+Functional Reactive Programming
+• Datatypes of values over time: Support timevarying
+values as first class.
+• Derived expressions update automatically:
+• Deterministic, fine-grained, and concurrent.
+x = mouse.x
+y = mouse.y
+a = area(x,y)
+It’s a dataflow system.

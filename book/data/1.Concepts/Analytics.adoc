@@ -1,0 +1,33 @@
+
+
+= Analytics
+
+== [.black]#Describe#
+
+Descriptive analytics or data mining are at the bottom of the big data value chain, but they can be valuable for uncovering patterns that offer insight. A simple example of descriptive analytics would be assessing credit risk; using past financial performance to predict a customer’s likely financial performance. Descriptive analytics can be useful in the sales cycle, for example, to categorize customers by their likely product preferences and sales cycle.
+
+== [.black]#Pattern#
+
+Diagnostic analytics are used for discovery or to determine why something happened. For example, for a social media marketing campaign, you can use descriptive analytics to assess the number of posts, mentions, followers, fans, page views, reviews, pins, etc. There can be thousands of online mentions that can be distilled into a single view to see what worked in your past campaigns and what didn’t.
+
+
+== [.black]#Predict#
+
+Predictive analytics use big data to identify past patterns to predict the future. For example, some companies are using predictive analytics for sales lead scoring. Some companies have gone one step further use predictive analytics for the entire sales process, analyzing lead source, number of communications, types of communications, social media, documents, CRM data, etc. Properly tuned predictive analytics can be used to support sales, marketing, or for other types of complex forecasts.
+
+BREAKING DOWN 'Predictive Analytics'
+
+There are several types of predictive analytics methods available. Predictive models look at past data to determine the likelihood of certain future outcomes, while descriptive models look at past data to determine how a group may respond to a set of variables.
+
+Read more: Predictive Analytics Definition | Investopedia http://www.investopedia.com/terms/p/predictive-analytics.asp#ixzz4l2XzUbY4
+Follow us: Investopedia on Facebook
+
+The use of statistics and modeling to determine future performance based on current and historical data. Predictive analytics look at patterns in data to determine if those patterns are likely to emerge again, which allows businesses and investors to adjust where they use their resources in order to take advantage of possible future events.
+
+Read more: Predictive Analytics Definition | Investopedia http://www.investopedia.com/terms/p/predictive-analytics.asp#ixzz4l2WKG3Hb
+Follow us: Investopedia on Facebook
+
+== [.black]#Advise#
+
+Prescriptive analytics is really valuable, but largely not used. According to Gartner, 13 percent of organizations are using predictive but only 3 percent are using prescriptive analytics. Where big data analytics in general sheds light on a subject, prescriptive analytics gives you a laser-like focus to answer specific questions. For example, in the health care industry, you can better manage the patient population by using prescriptive analytics to measure the number of patients who are clinically obese, then add filters for factors like diabetes and LDL cholesterol levels to determine where to focus treatment. The same prescriptive model can be applied to almost any industry target group or problem.
+

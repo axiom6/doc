@@ -1,0 +1,41 @@
+
+//:linkcss:
+:data-uri:
+include::../../dir/inc/DefBook.adoc[]
+
+[preface]
+= Data Science Practices
+
+include::1.Concepts/Concepts.Prac.adoc[leveloffset=+1]
+
+include::2.Acquire/Acquire.Prac.adoc[leveloffset=+1]
+
+include::3.Desktop/Desktop.Prac.adoc[leveloffset=+1]
+
+include::4.Insight/Insight.Prac.adoc[leveloffset=+1]
+
+== [.black]#icon:book[] The Four Analytical Data Science Practices#
+
+image::concepts/PracticeTypes.svg[align="center"]
+
+[horizontal]
+Describe:: What happened and why?
+Pattern::  What influences made it happen?
+Predict::  What is likely to happen?
+Advise::   What is the best course of action?
+
+<<<<
+
+include::5.Describe/Describe.Prac.adoc[leveloffset=+1]
+
+include::6.Pattern/Pattern.Prac.adoc[leveloffset=+1]
+
+include::7.Predict/Predict.Prac.adoc[leveloffset=+1]
+
+include::8.Advise/Advise.Prac.adoc[leveloffset=+1]
+
+include::9.Prove/Prove.Prac.adoc[leveloffset=+1]
+
+include::10.Process/Process.Prac.adoc[leveloffset=+1]
+
+include::11.Explain/Explain.Prac.adoc[leveloffset=+1]

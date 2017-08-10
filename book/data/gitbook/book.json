@@ -1,0 +1,25 @@
+{
+  "root": "./",
+  "title": "Data Science",
+  "description": "Data Science",
+  "author": "Tom Flaherty",
+  "isbn": "",
+  "language": "en",
+  "direction": "ltr",
+  "gitbook": ">= 3.1.1",
+  "structure": {
+    "readme":   "readme.adoc",
+    "summary":  "summary.adoc",
+    "glossary": "glossary.adoc"
+  },
+
+  "pdf": {
+    "pageNumbers": true,
+    "fontSize": 12,
+    "fontFamily": "Arial",
+    "paperSize": "a4",
+    "margin.bottom": 56,
+    "margin.right": 62,
+    "margin.left": 62
+  }
+}

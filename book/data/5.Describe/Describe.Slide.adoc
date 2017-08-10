@@ -1,0 +1,18 @@
+
+include::../../../dir/inc/DefPractice.adoc[]
+
+== [.black]#Describe#
+
+image::describe/Describe.png[alt="Describe",align="center"]
+
+== [.black]#Describe#
+
+Working together.
+
+[horizontal]
+Unsupervise:: x
+Cluster::     x
+Dimension::   x
+Metadata::    x
+Investigate:: x
+Report::      x

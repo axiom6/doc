@@ -1,0 +1,32 @@
+
+- Identify the goal of the KDD process from the customer’s perspective.
+- Understand application domains involved and the knowledge that's required
+- Select a target data set or subset of data samples on which discovery is be performed.
+- Cleanse and preprocess data by deciding strategies to handle missing fields and alter the data as per the requirements.
+- Simplify the data sets by removing unwanted variables. Then, analyze useful features that can be used to represent the data, depending on the goal or task.
+- Match KDD goals with data mining methods to suggest hidden patterns.
+- Choose data mining algorithms to discover hidden patterns. This process includes deciding which models and parameters might be appropriate for the overall KDD process.
+- Search for patterns of interest in a particular representational form, which include classification rules or trees, regression and clustering.
+- Interpret essential knowledge from the mined patterns.
+- Use the knowledge and incorporate it into another system for further action.
+- Document it and make reports for interested parties.
+
+###
+
+- Data cleaning to remove noise and inconsistent data.
+- Data integration, where multiple data sources may be combined.
+- Data selection, where data relevant to the analysis task are retrieved from the database.
+-Data transformation, where data are transformed and consolidated into forms appropriate for mining by preforming summary or aggregation operations.
+- Data mining, which is an essential process where intelligent methods are applied to extract data patterns.
+- Pattern evaluation to identify the truly interesting patterns representing knowledge based on interesting measures.
+- Knowledge presentation, where visualization and knowledge representation techniques are used to present mined knowledge to users.
+
+###
+
+
+    Step 1: Selection (data into target data)
+    Step 2: Preprocessing (target data into processed data)
+    Step 3: Transformation (processed data into transformed data)
+    Step 4: Data Mining (transformed data into patterns)
+    Step 5: Interpretation and/or Evaluation patterns into knowledge)
+
