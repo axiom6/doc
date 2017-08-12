@@ -12,14 +12,14 @@
     "Pipeline":{"dir":"south","icon":"fa-briefcase",   "hsv":[ 90,90,90]}
   },
   "Insight":{"hsv":[0,20,90],"column":"Encourage","row":"Learn","plane":"Augment","icon":"fa-tripadvisor","cells":[25,12,1,12],
-    "Intuition":{"dir":"west", "icon":"fa-empire", "hsv":[60,90,90]},
-    "Theorize": {"dir":"north","icon":"fa-leanpub","hsv":[90,90,90]},
-    "Ontology": {"dir":"east", "icon":"fa-heart",  "hsv":[15,90,90]},
-    "Choose":   {"dir":"south","icon":"fa-heart",  "hsv":[60,90,90]}
+    "Intuition":  {"dir":"west", "icon":"fa-empire", "hsv":[60,90,90]},
+    "Theorize":   {"dir":"north","icon":"fa-leanpub","hsv":[90,90,90]},
+    "Uncertainty":{"dir":"east", "icon":"fa-heart",  "hsv":[15,90,90]},
+    "Choose":     {"dir":"south","icon":"fa-heart",  "hsv":[60,90,90]}
   },
   "Guide":{"hsv":[195,90,70],"column":"Embrace","row":"Do","plane":"Augment","icon":"fa-magic","cells":[1,12,13,12],
+    "Momentum":    {"dir":"north","icon":"fa-star",   "hsv":[90,90,90]},
     "Acquire":  {"dir":"west", "icon":"fa-sitemap","hsv":[93,57,80]},
-    "Track":    {"dir":"north","icon":"fa-star",   "hsv":[90,90,90]},
     "Direct":   {"dir":"east", "icon":"fa-cube",   "hsv":[45,90,90]},
     "Complete": {"dir":"south","icon":"fa-cube",   "hsv":[45,90,90]}
   },

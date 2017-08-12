@@ -26,6 +26,7 @@ Domain
         MultiDimensional
     Deploy
       MapSources
+      DataSets
       RestURLs
   Pipeline
 Insight
