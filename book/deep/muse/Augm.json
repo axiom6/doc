@@ -3,31 +3,31 @@
     "Scenario":{"dir":"west", "icon":"fa-envelope-square","hsv":[ 93,57,80] },
     "Ethics":  {"dir":"north","icon":"fa-link",           "hsv":[195,90,90] },
     "Group":   {"dir":"east", "icon":"fa-users",          "hsv":[195,90,90] },
-    "Scope":   {"dir":"south","icon":"fa-tasks",          "hsv":[ 90,90,90] }
+    "Purpose":   {"dir":"south","icon":"fa-tasks",          "hsv":[ 90,90,90] }
   },
   "Domain":{"hsv":[45,90,90],"column":"Innovate","row":"Learn","plane":"Augment","icon":"fa-flask","cells":[13,12,1,12],
     "Tools":    {"dir":"west", "icon":"fa-child",       "hsv":[195,90,90]},
-    "Proposal": {"dir":"north","icon":"fa-lightbulb-o", "hsv":[ 75,90,90]},
-    "Acquire":  {"dir":"east", "icon":"fa-dropbox",     "hsv":[ 30,90,90]},
-    "Associate":{"dir":"south","icon":"fa-briefcase",   "hsv":[ 90,90,90]}
+    "Inquiry": {"dir":"north","icon":"fa-lightbulb-o", "hsv":[ 75,90,90]},
+    "Schema":  {"dir":"east", "icon":"fa-dropbox",     "hsv":[ 30,90,90]},
+    "Pipeline":{"dir":"south","icon":"fa-briefcase",   "hsv":[ 90,90,90]}
   },
   "Insight":{"hsv":[0,20,90],"column":"Encourage","row":"Learn","plane":"Augment","icon":"fa-tripadvisor","cells":[25,12,1,12],
-    "Theorize":{"dir":"west", "icon":"fa-empire", "hsv":[60,90,90]},
-    "Purpose": {"dir":"north","icon":"fa-leanpub","hsv":[90,90,90]},
-    "Ontology":{"dir":"east", "icon":"fa-heart",  "hsv":[15,90,90]},
-    "Choose":  {"dir":"south","icon":"fa-heart",  "hsv":[60,90,90]}
+    "Intuition":{"dir":"west", "icon":"fa-empire", "hsv":[60,90,90]},
+    "Theorize": {"dir":"north","icon":"fa-leanpub","hsv":[90,90,90]},
+    "Ontology": {"dir":"east", "icon":"fa-heart",  "hsv":[15,90,90]},
+    "Choose":   {"dir":"south","icon":"fa-heart",  "hsv":[60,90,90]}
   },
   "Guide":{"hsv":[195,90,70],"column":"Embrace","row":"Do","plane":"Augment","icon":"fa-magic","cells":[1,12,13,12],
-    "Inquiry":  {"dir":"west", "icon":"fa-sitemap","hsv":[93,57,80]},
-    "Feedback": {"dir":"north","icon":"fa-star",   "hsv":[90,90,90]},
-    "Heuristic":{"dir":"east", "icon":"fa-cube",   "hsv":[45,90,90]},
+    "Acquire":  {"dir":"west", "icon":"fa-sitemap","hsv":[93,57,80]},
+    "Track":    {"dir":"north","icon":"fa-star",   "hsv":[90,90,90]},
+    "Direct":   {"dir":"east", "icon":"fa-cube",   "hsv":[45,90,90]},
     "Complete": {"dir":"south","icon":"fa-cube",   "hsv":[45,90,90]}
   },
   "Machine":{"hsv":[45,90,90],"column":"Innovate","row":"Do","plane":"Augment","icon":"fa-gears","cells":[13,12,13,12],
-    "Interface":{"dir":"west","icon":"fa-desktop","hsv":[195,90,90]},
+    "Feedback":{"dir":"west","icon":"fa-desktop","hsv":[195,90,90]},
     "Technique":{"dir":"north","icon":"fa-bars","hsv":[90,90,90]},
     "Cultivate":{"dir":"east","icon":"fa-database","hsv":[15,90,90]},
-    "Compile":  {"dir":"south","icon":"fa-cloud","hsv":[60,90,90]}
+    "Summarize":{"dir":"south","icon":"fa-cloud","hsv":[60,90,90]}
   },
   "Advise":{"hsv":[0,20,90],"column":"Encourage","row":"Do","plane":"Augment","icon":"fa-object-group","cells":[25,12,13,12],
     "Finding":    {"dir":"west", "icon":"fa-share-alt",     "hsv":[45,90,90] },
@@ -36,21 +36,21 @@
     "Context":    {"dir":"south","icon":"fa-connectdevelop","hsv":[60,90,90] }
   },
   "Prove":{"hsv":[195,90,70],"column":"Embrace","row":"Share","plane":"Augment","icon":"fa-road","cells":[1,12,25,12],
-    "Diagnose":   {"dir":"west","icon":"fa-stethoscope","hsv":[93,57,80]},
-    "Conclude":   {"dir":"north","icon":"fa-balance-scale","hsv":[90,90,90]},
+    "Evaluate":   {"dir":"west","icon":"fa-stethoscope","hsv":[93,57,80]},
+    "Diagnose":   {"dir":"north","icon":"fa-balance-scale","hsv":[90,90,90]},
     "Reproduce":  {"dir":"east","icon":"fa-circle","hsv":[45,90,90]},
     "Protect":    {"dir":"south","icon":"fa-circle","hsv":[60,90,90]}
   },
-  "Process":{"hsv":[45,90,90],"column":"Innovate","row":"Share","plane":"Augment","icon":"fa-graduation-cap","cells":[13,12,25,12],
-    "Stream":  {"dir":"west", "icon":"fa-life-ring","hsv":[195,90,90]},
-    "Pipeline":{"dir":"north","icon":"fa-star",     "hsv":[90,90,90] },
-    "Harvest": {"dir":"east", "icon":"fa-cubes",    "hsv":[15,90,90] },
-    "Platform":{"dir":"south","icon":"fa-cloud",    "hsv":[0,90,90]  }
+  "Interpret":{"hsv":[45,90,90],"column":"Innovate","row":"Share","plane":"Augment","icon":"fa-graduation-cap","cells":[13,12,25,12],
+    "Signal":  {"dir":"west", "icon":"fa-life-ring","hsv":[195,90,90]},
+    "Process": {"dir":"north","icon":"fa-star",     "hsv":[90,90,90] },
+    "Enrich":  {"dir":"east", "icon":"fa-cubes",    "hsv":[15,90,90] },
+    "Conclude":{"dir":"south","icon":"fa-cloud",    "hsv":[0,90,90]  }
   },
   "Explain":{"hsv":[0,20,90],"column":"Encourage","row":"Share","plane":"Augment","icon":"fa-user-plus","cells":[25,12,25,12],
-    "Intuition":{"dir":"west" ,"icon":"fa-graduation-cap","hsv":[195,90,90] },
-    "Decision": {"dir":"north","icon":"fa-codiepie","hsv":[90,90,90] },
-    "Conduct": {"dir":"east", "icon":"fa-legal",  "hsv":[15,90,90] },
+    "Harvest":  {"dir":"west" ,"icon":"fa-graduation-cap","hsv":[195,90,90] },
+    "Situation":{"dir":"north","icon":"fa-codiepie","hsv":[90,90,90] },
+    "Decision": {"dir":"east", "icon":"fa-legal",  "hsv":[15,90,90] },
     "Publish":  {"dir":"south","icon":"fa-child",   "hsv":[60,90,90] }
   }
 }

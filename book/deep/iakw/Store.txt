@@ -19,7 +19,7 @@ Acquire
       DescribeData
       UseTheData
   Refine
-    Enrich
+    Clean
       CleanSource
       Indicator
       CrowdSource
@@ -45,8 +45,7 @@ Acquire
       Catalog
       Formats
     Model
-      Experimental
-        CAP
+      Contextual
       Conceptual
       Logical
         RelationalAlgebra
@@ -61,7 +60,6 @@ Acquire
       Relational
       TagOutliers
       Smoothing
-
     Select
       Sampling
       Stratified

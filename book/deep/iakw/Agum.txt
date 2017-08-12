@@ -2,24 +2,47 @@ Engage
   Scenario
   Ethics
   Group
-  Scope
+  Purpose
 Domain
   Tools
-  Proposal
-  Acquire
-  Associate
+  Inquiry
+  Schema
+    Document
+      Dictionary
+      Catalog
+      Formats
+    Ontology
+      Semantics
+      OWL
+      JSON-LD
+      SPARQL
+    Model
+      Contextual
+      Conceptual
+      Logical
+        RelationalAlgebra
+        NoSQL
+      Physical
+        MultiDimensional
+    Deploy
+      MapSources
+      RestURLs
+  Pipeline
 Insight
+  Intuition
   Theorize
     Principles
     Proposition
     Bias
     Signifcance
-  Purpose
-  Ontology
-    Semantics
-    OWL
-    JSON-LD
-    SPARQL
+  Uncertainty
+    Observation
+    Sample
+    Historic
+    Execution
+    Duration
+    Action
+    Evaluation
   Choose
     DataSet
     Samples
@@ -27,15 +50,20 @@ Insight
     Alogrithms
     Learning
 Guide
-  Inquiry
-  Feedback
-  Heuristic
+  Acquire
+    Collect
+    Refine
+    Stream
+    Prepare
+  Track
+  Direct
+    Heuristic
   Complete
 Machine
-  Interface
+  Feedback
   Technique
   Cultivate
-  Compile
+  Summarize
 Advise
   Finding
   Rationale
@@ -46,13 +74,13 @@ Prove
   Conclude
   Reproduce
   Protect
-Process
-  Stream
-  Pipeline
-  Harvest
-  Platform
+Interpret
+  Signal
+  Process
+  Enrich
+  Conclude
 Explain
-  Intuition
+  Harvest
+  Situation
   Decision
-  Conduct
   Publish
