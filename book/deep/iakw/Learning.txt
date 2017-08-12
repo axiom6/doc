@@ -1,10 +1,4 @@
 
-
-     The activity of explaining some complex topic. (Generate)
-     The disassembly of a complex topic into simple terms. (Analogies perhaps?) (Decompose)
-     The reconstruction of the topic looking seeking any inconsistencies. (Compose and Validate)
-     The iterative nature of the method. (Iterate and Refine)
-
 Unsupervised
   CollectData
     ImplicitCollect
@@ -20,6 +14,7 @@ Unsupervised
     ExpectationMax
     MethodOfMoments
     Dirichlet
+
 SemiSupervised
   TrainData
     Transducive
@@ -35,11 +30,7 @@ SemiSupervised
     Propagate
     Spreading
     TestData
-  DeepLearning
-    BackPropagation
-    Convolutional
-    Deep Boltzmann
-    Deep Belief
+
 Supervise
   ReviewData
     Interface
@@ -56,6 +47,7 @@ Supervise
     Heterogeneity
     Redundancy
     Concept
+
 Reinforce
   Explore Data
     EpsilonGreedy
@@ -72,7 +64,7 @@ Reinforce
     NaturalEvolution
     FitnessExpect
 
-RepresentativeIG
+Representative
   GreedyLayerWise
     Unsupervised
     Pretraining
@@ -100,9 +92,12 @@ RepresentativeIG
     Ranking
     LocallySensitiveHashing
     Metric
-  RuleBasedL
+  RuleBased
     LearningClassifiers
     AssociationRuleL
     ArtificialImmune
-  SparseDictionaryL
+  Other
+    Ensemble
+    Active
+    SparseDictionary
   LearningClassifiers

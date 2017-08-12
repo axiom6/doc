@@ -34,27 +34,7 @@ Acquire
       Usage
       Audit
     Integrate
-  Schema
-    Domain
-      Entitlement
-      Proposition
-      Portfolio
-      Intelligence
-    Document
-      Dictionary
-      Catalog
-      Formats
-    Model
-      Contextual
-      Conceptual
-      Logical
-        RelationalAlgebra
-        NoSQL
-      Physical
-        MultiDimensional
-    Deploy
-      MapSources
-      RestURLs
+  Stream
   Prepare
     Filter
       Relational
@@ -64,40 +44,45 @@ Acquire
       Sampling
       Stratified
       Region
+Schema
+  Document
+    Dictionary
+    Catalog
+    Formats
+  Ontology
+    Semantics
+    OWL
+    JSON-LD
+    SPARQL
+  Model
+    Contextual
+    Conceptual
+    Logical
+      RelationalAlgebra
+      NoSQL
+    Physical
+      MultiDimensional
+  Deploy
+    MapSources
+    DataSets
+    RestURLs
+
 Culivate
-  Stream
-  RegularizeIG
-    Concerns
-      Generalization
-      Underfitting
-      Overfitting,
-      Bias
-      Variance
-    ParameterNormPenalties
-    Constrained Optimization
-    Under-Constrained
-    Noise Robustness
-    Semi-Supervised Learning
-    Multi-Task Learning
-    Early Stopping
-    Parameter Tying and Parameter Sharing
-    Sparse Representations
-    Bagging and Other Ensemble Methods
-    Dropout
-    Adversarial Training
-    Tangent Distance, Tangent Prop, and Manifold Tangent Classifier
-    Estimators
   Imputate
-    Random
+    RandomSampling
     MonteCarlo
     MarkovChain
     Mean
     Distributions
   Transform
     Deduplication
+    Normalization
     Conversion
     Fourier
     Wavelet
     Coordinate
   Metadata
+  SolutionSpace
+
+Enrich
 

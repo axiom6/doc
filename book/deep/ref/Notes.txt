@@ -1,0 +1,5 @@
+
+     The activity of explaining some complex topic. (Generate)
+     The disassembly of a complex topic into simple terms. (Analogies perhaps?) (Decompose)
+     The reconstruction of the topic looking seeking any inconsistencies. (Compose and Validate)
+     The iterative nature of the method. (Iterate and Refine)

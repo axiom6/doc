@@ -1,20 +1,34 @@
 Math
   LinearAlgerbra
+    Scalars
     Vectors
+      Specialized
     Matrices
       Identity
       Inverse
+      Multiply
+      LinearDependence
+      LinearSpan
+      Specialized
     Eigen
-      SingleValueDecopositionIG
-       MoorePenrosePseudoinverseIG
-       TraceOperatorIG
-       DeterminantIG
+      SingleValueDecoposition
+      MoorePenrosePseudoinverse
+      TraceOperator
+      Determinant
+    MarkovChains
+      EigenMeasures
     Multivariate
+      PrincipalComponents
+    Tensors
   Symbolic
     Graph
 Statistics
   Measures
     Basic
+      Mean
+      Median
+      Mode
+      StandardDeviation
     CentralTendency
     Dispersion
     Variance
@@ -24,12 +38,11 @@ Statistics
   DescriptiveStatistics
     StatisticalResearchMethods
     SamplePopulation
-    MeanMedianModeStandardDeviation.
-    interquartile range
+    InterquartileRange
     ZScore
     NormalizingObservations
 Probability
-  ConceptsIG
+  Concepts
     RandomVariables
     ContiniousVariables
     Expection
@@ -38,7 +51,7 @@ Probability
   SampleSpace
     SetTheory
     DensityFunction
-  ConditionalIG
+  Conditional
     BayesRule
     ChainRule
     Independence
@@ -52,16 +65,30 @@ Probability
       Percentiles
     Multivariate
       BaseballCard
-  UncertaintyBK
+    CommonFunctions
+      UsefulProperties
+  Uncertainty
     UncertainRisk
     FuzzySets
     FuzzyMeasure
-MachingLearningConceptsIG
-  CapacityOverfittingUnderfitting
-  HyperparametersValidationSets
-  EstimatorsBiasVariance
+
+MachingLearningConcepts
+  LearningAlgorithms
+  Concerns
+    Capacity
+    Overfitting
+    Underfitting
+  Hyperparameters
+  ValidationSets
+  Estimators
+    Bias
+    Variance
   MaximumLikelihoodEstimation
   BayesianStatistics
   StochasticGradientDescent
   Filter
-  StructuredModelsIG
+  Building
+    Algorithm
+  Challenges
+    Motivating
+    DeepLearning

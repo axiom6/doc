@@ -1,4 +1,13 @@
 
+
+DeepApplications
+  Large Scale Deep Learning
+  Computer Vision
+  Speech Recognition
+  Natural Language Processing
+  Other
+
+
 Report
   Profile
     Baseline

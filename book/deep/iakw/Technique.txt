@@ -134,8 +134,9 @@ Classify
   Classifiers
     Multi-Class
     Multi-Label
+  Neural
 
-Structure
+Tree
   DecisionTree
     CART
     C4.5
@@ -146,12 +147,12 @@ Structure
     GradientBoost
     Lifting
     Multiclass
+    Learning
   Markov
     HiddenMarkov
 
 Optimize
   OperationsResearch
-    LinearAlgebra
     Scheduling
     Routing
     Allocation
@@ -172,63 +173,31 @@ Genetic
   DifferentialEvolution
   NoveltyMetaphor
 
-Swarn
+Swarm
   Boids
   AntColony
   ArificalBee
   CukooSearcg
   ParticalSwarm
 
-Logic
-  FuzzyLogic
-
 Simulate
-  Event
-    Discrete
-    Markov
-    MonteCarlo
-    AgentBased
-  SelfOrganized
-    OrgMaps
-    Swarm
-    Agent
-  PhasePlanes
-    SystemDynamics
-    Activity
-    Differential
+  DiscreteEvent
+  Markov
+  MonteCarlo
+  AgentBased
+SelfOrganized
+  OrgMaps
+  Swarm
+  Agent
+PhasePlanes
+  SystemDynamics
+  ActivityBased
+  Differential
+
+Fuzzy
 
 Neural
   Cost Function
   Perceptron
   Backpropagation
 
-DeepLearningIG
-  Feedforward
-  Regularization
-  Optimization
-  Convolution
-  Sequence
-  Research
-    Linear Factor
-    Autoencoders
-    Representation
-    Probabilistic
-    MonteCarlo
-    Partition
-    Inference
-    Generative
-      BoltzmannMachines
-        Restricted
-        DeepBeliefNetworks
-        Deep
-        RealValuedData
-        Convolutional
-        Other
-      BackPropagation
-      DeepBeliefNetworks
-      DirectedGenerativeNets
-      Autoencoders
-        DrawinSamples
-      GenerativeStochasticNetworks
-      OtherGeneratioSchemes
-      Evaluating Generative Models
