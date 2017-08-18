@@ -5,7 +5,7 @@ include::../../../dir/inc/DefPractice.adoc[]
 
 All the software components integrated by tiers that fulfill the business Concepts from above. Architect, engineer, prototype and construct Activities are Traced* by Adapt and guided by the reference Architecture Patterns and Reviews in Benefit.
 
-image::Technology.svg[alt="Technology",align="center"]
+image::pnh2/Technology.png[alt="Technology",align="center"]
 
 [horizontal]
 UI:: Applications (mobile) that access services on the Platform.

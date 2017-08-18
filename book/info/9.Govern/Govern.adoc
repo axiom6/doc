@@ -4,15 +4,10 @@ include::../../../dir/inc/DefPractice.adoc[]
 include::GovernSlide.adoc[]
 <<<<
 
-++++
-include::Govern.html[]
-++++
-<<<<
+include::Maturity.adoc[]
 
 include::Asset.adoc[]
 
-include::Maturity.adoc[]
-
 include::Comply.adoc[]
 
-include::Listen.adoc[]
+include::Consider.adoc[]

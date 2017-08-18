@@ -4,11 +4,6 @@ include::../../../dir/inc/DefPractice.adoc[]
 include::TechnologySlide.adoc[]
 <<<<
 
-++++
-include::Technology.html[]
-++++
-<<<<
-
 include::UI.adoc[]
 
 include::Service.adoc[]

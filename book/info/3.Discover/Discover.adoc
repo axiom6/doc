@@ -4,15 +4,10 @@ include::../../../dir/inc/DefPractice.adoc[]
 include::DiscoverSlide.adoc[]
 <<<<
 
-++++
-include::Discover.html[]
-++++
-<<<<
-
 include::Vision.adoc[]
 
 include::Community.adoc[]
 
-include::Channel.adoc[]
+include::Discern.adoc[]
 
-include::Assumption.adoc[]
+include::Assume.adoc[]

@@ -5,6 +5,11 @@ include::../../../dir/inc/DefStudy.adoc[]
 === [.black]#Team#
 
 [horizontal]
+Project::   Fashions products for client
+Expert::    Reinforces in house and open source technology
+Partner::   Coordinate with open source, technology, business and supllier partners
+
+[horizontal]
 Diversity::  Make it define us: gender, ethnic, cultural, languages.
 Creativity:: Let’s take full advantage of our amazing creative tradition.
 Efficiency:: Transform a necessary trait into a competitive advantage.

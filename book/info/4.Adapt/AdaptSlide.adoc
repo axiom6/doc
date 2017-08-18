@@ -5,7 +5,7 @@ include::../../../dir/inc/DefPractice.adoc[]
 
 The fine tuning of doing. Concepts are broken down into Features that are all Traced and linked to Technology Components and Acceptance criteria for completion. Collaborative Team members pull Component activities from the Kanban queue with full creative freedom for completion. Supercedes Agile
 
-image::Adapt.svg[alt="Adapt",align="center"]
+image::pnh2/Adapt.png[alt="Adapt",align="center"]
 
 [horizontal]
 Feature:: Outline of conceputalized value propostions transformed

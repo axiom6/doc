@@ -1,0 +1,52 @@
+Define Your Company Culture Before It Defines You
+
+    Published on August 14, 2017Featured in: Company Culture, Entrepreneurship, Technology
+
+337
+
+15
+
+    76
+
+Kristi Knaack Riordan
+Kristi Knaack Riordan
+Chief Operating Officer at The Flatiron School
+
+Company “culture” is something we hear a lot about lately. It’s often described as the foundation of a business, neatly summarized by a list of high-minded words on a website or an office wall, or maybe even a single sentence. That list of words never includes “cheat” or “harass” and that culture defining sentence is never “alienate your colleagues who are different”, yet we read with depressing frequency about companies whose culture produced exactly those behaviors. And it is important to note that those episodes are features of a culture - not bugs.  Plainly, a company’s culture is not just a list of words or a slogan, but rather the established norm of day-to-day behavior exhibited throughout an organization. As we've seen through recent events at companies ranging from Uber to Wells Fargo and Volkswagen – and even “don’t be evil” Google - actual employee behavior can stray very far from aspirational values if culture is not properly established, nurtured and used as the core operating system of an organization.
+
+As COO at Flatiron School (we teach accelerated computer programming), I've been fortunate to be surrounded by faculty, staff and students who care deeply about what culture means and how it manifests, particularly in the tech industry. Culture has always been important to us and increasingly so as we've seen some of our colleagues in Silicon Valley struggle with these issues.
+
+So how does company culture become so disconnected from the values a company espouses? Culture is a powerful thing – and when left to evolve on its own, it can go dangerously off course. To really be effective, culture should be crafted with care, becoming the blueprint that guides everything a company does. Culture should serve as the north star for actions of every individual, much like an operating system provides a construct for everything a computer does. The tricky part is how to get to that construct. We feel a particular obligation toward our culture at Flatiron School as we send students out into the tech industry. Here are some things that we are doing to develop, and continuously improve, our cultural blueprint:
+1. Define the building blocks of your culture.
+
+As much as a list of words will not, by itself, establish a culture, you need to start somewhere, and identifying your mission and core values is an obvious place to start. There are several building blocks that work together to create culture within an organization. First, a company’s Mission serves as the foundation from which everything else flows – this is your true north and purpose (for Flatiron: To Enable the Pursuit of a Better Life Through Education). Second, Values should reflect a short list of first principles that guide day-to-day judgment in the organization (for Flatiron: Make No Little Plans, Work Together, Pursue Mastery, Be Scrappy, Radiate Positivity). Third, specific Behaviors help people see how to bring these Values to life (for Flatiron: Be Scrappy means – get things done, be resourceful, embrace change, thrive in moments of ambiguity). Fourth, traditions within the company create regular reinforcement of the Values & Behaviors so they aren’t simply relegated to a written handbook in a desk drawer but instead become second nature within the day to day actions of the organization. In other words, the desired culture is manifested and integrated through daily norms. (for Flatiron: includes things like a variety of structured and unstructured social activities, Individual Value Award Winners and regular forums for Q&A among all hands and smaller meetings).
+2. Build awareness of the building blocks of your culture.
+
+Once the critical building blocks of culture are established, the organization needs to go into product marketing mode. Awareness of the values and behaviors that the organization aspires to must be built over time. Common means to do this are publishing the values and behaviors on websites, physical office walls, stickers and SWAG. But it’s important to look to other areas such as value and behavioral assessments directly in the hiring process, integration into active slack channels (we created a Slackbot to regularly reinforce our values - see above) and year-end performance reviews where we self and peer-assess against our value behaviors. The key is to look for regular and routine opportunities to build awareness of cultural building blocks.
+3. Ensure role models exemplify your culture on a day-to-day basis
+
+It is critical that values and behaviors are embodied and exhibited by leadership and managers. Their actions will speak much louder than anything written on a website, wall or handbook.  While leadership and managers must be your culture carriers, each organization will have other natural culture carriers throughout. Find ways that you can empower these individuals to help spread, reinforce or build your culture as needed. Put them in charge of a task force or special project and acknowledge their unique contributions to your culture.
+
+It’s important to note that leaders or managers who do NOT embody your culture will eventually reset what your culture is. If the cultural conflicts are strong enough, they will lead to a virus within your organization and begin to spread new normative behaviors. Companies are highly vulnerable to these types of shifts, so choose your leaders and managers with care and take swift action once you identify a problem.
+4. Connect employees to your culture and company
+
+Culture only exists insofar as people feel connected - to the mission and their future role in it; to the company and their contributions to it; and of course, connected to each other. Consider how you are helping to bridge each of these important connections:
+
+    Employee to Employee (create inclusive social activities within and across teams to build trusted relationships)
+    Employee to Manager (expect much of a manager)
+    Employee to Company (establish clear goals that bridge the individual to the team and company. update on progress to goal.)
+    Employee to Future (create opportunities for leadership to share strategy. empower managers to have quarterly 1:1 growth conversations with their team).
+    Employee to Mission (share personal success stories of your stakeholders. never lose sight of your north star).
+
+5. Recognize those who embody both the core & aspirational elements of your culture
+
+There is nothing like holding up individuals who embody the very cultural values and behaviors you aspire to have throughout your organization. Find ways to recognize these important culture carriers through regular shoutouts in team meetings, a personal thank you from leadership, special value awards, or values-based annual performance reviews.
+6. Integrate & evolve your culture on a routine basis
+
+Culture requires integration through multiple layers of traditions that serve to establish normative behaviors. The cadence of these traditions should be varied (weekly, monthly, quarterly and annual activities) and the sphere of influence should be broad (person > person: person > team; person > department; person > company). With growth or change, culture must be refactored - bugs must be identified and fixed early; new features must be introduced; other areas must be simplified. Culture bugs aren’t about technology, they are about people and must be handled with care. Small bugs not attended to become system-crashing problems over time. To keep a finger on your cultural pulse, conduct regular employee NPS (eNPS) surveys to understand where you are getting it right and where you need to invest more resources. A healthy culture requires an iterative approach to refactoring and building something worthy of any aspirational mission.
+
+------------------------------------------------------------------
+
+In short, whether planned meticulously, or left to develop organically, culture will happen. Don't leave something as crucial as culture to a vague “feeling” or stop short at a list of “aspirational values”. Give your culture a blueprint that will harness the power it holds to help you achieve your mission in a manner you can be proud of.
+
+

@@ -4,14 +4,9 @@ include::../../../dir/inc/DefPractice.adoc[]
 include::BenefitSlide.adoc[]
 <<<<
 
-++++
-include::Benefit.html[]
-++++
-<<<<
+include::Quantify.adoc[]
 
 include::Patterns.adoc[]
-
-include::Quantify.adoc[]
 
 include::Risk.adoc[]
 

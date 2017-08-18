@@ -9,7 +9,7 @@ Enables executive decision making for Resources, Maturity and Compliance by inco
 * Technical reviews from Benefit.
 *  Asset status from Warehouse.
 
-image::Govern.svg[alt="Govern",align="center"]
+image::pnh2/Govern.png[alt="Govern",align="center"]
 
 [horizontal]
 Asset:: Approves the allocation of personnel, finances and assets.

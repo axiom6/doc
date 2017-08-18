@@ -13,8 +13,9 @@
   },
   "Understand":{"hsv":[0,20,90],"column":"Encourage","row":"Learn","plane":"Knowledge","icon":"fa-tripadvisor","cells":[25,12,1,12],
     "Sympathy":  {"dir":"west", "icon":"fa-heart",  "hsv":[60,90,90]},
-    "Meaning":   {"dir":"north","icon":"fa-leanpub","hsv":[90,90,90]},
-    "Concept":   {"dir":"east", "icon":"fa-heart",  "hsv":[15,90,90]},
+    "Meaning":   {"dir":"north","icon":"fa-leanpub","hsv":[90,90,90],
+      "Concept":   {"icon":"fa-heart"} },
+    "Revelation":{"dir":"east", "icon":"fa-heart",  "hsv":[15,90,90]},
     "Comprehend":{"dir":"south","icon":"fa-empire", "hsv":[60,90,90]}
   },
   "Orchestrate":{"hsv":[195,90,70],"column":"Embrace","row":"Do","plane":"Knowledge","icon":"fa-magic","cells":[1,12,13,12],

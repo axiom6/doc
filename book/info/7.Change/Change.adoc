@@ -4,15 +4,10 @@ include::../../../dir/inc/DefPractice.adoc[]
 include::ChangeSlide.adoc[]
 <<<<
 
-++++
-include::Change.html[
-++++
-<<<<
+include::Test.adoc[]
 
 include::Transition.adoc[]
 
-include::Test.adoc[]
+include::Deploy.adoc[]
 
-include::System.adoc[]
-
-include::Config.adoc[]
+include::Maintain.adoc[]

@@ -5,7 +5,7 @@ include::../../../dir/inc/DefPractice.adoc[]
 
 === [.black]#Thirty Six Studies#
 
-image::humanistic/Info.Studies.png[alt="Info",align="center"]
+image::png2/Information.png[alt="Info",align="center"]
 
 <<<
 === [.black]#Twelve Connections between Nine Practices#
@@ -13,4 +13,4 @@ image::humanistic/Info.Studies.png[alt="Info",align="center"]
  The six horizontal connections convey culture     across columns.
  The six vertical   connections flow   refinements down   rows.
 
-image::humanistic/Info.Graph.png[alt="Info",align="center"]
+image::pnh2/Information.png[alt="Info",align="center"]

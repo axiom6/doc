@@ -5,7 +5,7 @@ include::../../../dir/inc/DefPractice.adoc[]
 
 Quantifies the assumptions from Discovery with Data Science interpretations. Establishes a reference Architecture with design Patterns that guides Technology and provides a foundation for Review.
 
-image::Benefit.svg[alt="Benefit",align="center"]
+image::pnh2/Benefit.png[alt="Benefit",align="center"]
 
 [horizontal]
 Quantify:: Descriptive, Diagnostic, Model and Predictive interpretations.

@@ -1,0 +1,411 @@
+
+Introduction
+  What Machine Learning is About
+    Classification
+    Regression
+  Structure and a Road Map of the Book 
+  
+Probability and Stochastic Processes
+  Introduction 
+  Probability and Random Variables 
+    Probability
+    Discrete Random Variables
+    Continuous Random Variables 
+    Mean and Variance 
+    Transformation of Random Variables 
+  Examples of Distributions 
+    Discrete Variables
+    Continuous Variables 
+  Stochastic Processes 
+    First and Second Order Statistics 
+    Stationarity and Ergodicity 
+    Power Spectral Density
+    Autoregressive Models 
+  Information Theory 
+    Discrete Random Variables
+    Continuous Random Variables 
+  Stochastic Convergence 
+    
+Learning in Parametric Modeling: Basic Concepts and Directions
+  Introduction 
+  Parameter Estimation: The Deterministic Point of View 
+  Linear Regression
+  Classification
+  Biased Versus Unbiased Estimation 
+    Biased or Unbiased Estimation? 
+  The Cramér-Rao Lower Bound 
+  Sufficient Statistic
+  Regularization
+  The Bias-Variance Dilemma 
+    Mean-Square Error Estimation
+    Bias-Variance Tradeoff 
+  Maximum Likelihood Method 
+    Linear Regression: The Nonwhite Gaussian Noise Case 
+  Bayesian Inference
+    The Maximum a Posteriori Probability Estimation Method 
+  Curse of Dimensionality
+  Validation 
+  Expected and Empirical Loss Functions
+  Nonparametric Modeling and Estimation 
+
+Mean-Square Error Linear Estimation
+  Introduction 
+  Mean-Square Error Linear Estimation: The Normal Equations 
+    The Cost Function Surface 
+  A Geometric Viewpoint: Orthogonality Condition
+  Extension to Complex-Valued Variables 
+    Widely Linear Complex-Valued Estimation
+    Optimizing with Respect to Complex-Valued Variables:Wirtinger Calculus
+  Linear Filtering 
+  MSE Linear Filtering: A Frequency Domain Point of View
+  Some Typical Applications 
+    Interference Cancellation
+    System Identification 
+    Deconvolution: Channel Equalization 
+  Algorithmic Aspects: The Levinson and the Lattice-Ladder Algorithms 
+    The Lattice-Ladder Scheme 
+  Mean-Square Error Estimation of Linear Models 
+    The Gauss-Markov Theorem
+    Constrained Linear Estimation: The Beamforming Case 
+  Time-Varying Statistics: Kalman Filtering 
+
+Stochastic Gradient Descent: The LMS Algorithm and its Family
+  Introduction 
+  The Steepest Descent Method
+  Application to theMean-Square Error Cost Function 
+    The Complex-Valued Case 
+  Stochastic Approximation 
+  The Least-Mean-Squares Adaptive Algorithm
+    Convergence and Steady-State Performance of the LMS in Stationary Environments
+    Cumulative Loss Bounds 
+  The Affine Projection Algorithm
+    The Normalized LMS 
+  The Complex-Valued Case 
+  Relatives of the LMS 
+  Simulation Examples 
+  Adaptive Decision Feedback Equalization 
+  The Linearly Constrained LMS 
+  Tracking Performance of the LMS in Nonstationary Environments
+  Distributed Learning: The Distributed LMS 
+    Cooperation Strategies
+    The Diffusion LMS 
+    Convergence and Steady-State Performance:Some Highlights
+    Consensus-Based Distributed Schemes 
+  A Case Study: Target Localization 
+  Some Concluding Remarks: ConsensusMatrix 
+
+The Least-Squares Family
+  Introduction 
+  Least-Squares Linear Regression: A Geometric Perspective 
+  Statistical Properties of the LS Estimator
+  Orthogonalizing the Column Space of X: The SVDMethod
+  Ridge Regression 
+  The Recursive Least-Squares Algorithm 
+  Newton’s Iterative Minimization Method 
+    RLS and Newton’sMethod
+  Steady-State Performance of the RLS 
+  Complex-Valued Data: TheWidely Linear RLS 
+  Computational Aspects of the LS Solution 
+  The Coordinate and Cyclic Coordinate Descent Methods 
+  Simulation Examples 
+  Total-Least-Squares
+
+Classification: A Tour of the Classics
+  Introduction 
+  Bayesian Classification 
+    Average Risk 
+  Decision (Hyper)Surfaces 
+    The Gaussian Distribution Case
+  The Naive Bayes Classifier 
+  The Nearest Neighbor Rule 
+  Logistic Regression 
+  Fisher’s Linear Discriminant 
+  Classification Trees 
+  Combining Classifiers 
+  The Boosting Approach 
+  Boosting Trees 
+  A Case Study: Protein Folding Prediction 
+
+Parameter Learning: A Convex Analytic Path
+  Introduction 
+  Convex Sets and Functions 
+    Convex Sets 
+    Convex Functions 
+  Projections onto Convex Sets 
+    Properties of Projections 
+  Fundamental Theorem of Projections onto Convex Sets 
+  A Parallel Version of POCS 
+  From Convex Sets to Parameter Estimation and Machine Learning 
+    Regression
+    Classification
+  InfiniteMany Closed Convex Sets: The Online Learning Case 
+    Convergence of APSM 
+  Constrained Learning
+  The Distributed APSM 
+  Optimizing Nonsmooth Convex Cost Functions 
+    Subgradients and Subdifferentials 
+    Minimizing Nonsmooth Continuous Convex Loss Functions:The Batch Learning Case
+    Online Learning for Convex Optimization 
+  Regret Analysis 
+  Online Learning and Big Data Applications: A Discussion 
+  Proximal Operators 
+    Properties of the Proximal Operator 
+    ProximalMinimization 
+  Proximal Splitting Methods for Optimization 
+
+Sparsity-Aware Learning: Concepts and Theoretical Foundations
+  Introduction 
+  Searching for a Norm
+  The Least Absolute Shrinkage and Selection Operator (LASSO) 
+  Sparse Signal Representation 
+  In Search of the Sparsest Solution 
+  Uniqueness of the  Minimizer 
+    Mutual Coherence 
+  Equivalence of  and  Minimizers: Sufficiency Conditions 
+    Condition Implied by the Mutual Coherence Number 
+    The Restricted Isometry Property (RIP) 
+  Robust Sparse Signal Recovery from Noisy Measurements 
+  Compressed Sensing: The Glory of Randomness 
+    Dimensionality Reduction and Stable Embeddings 
+    Sub-Nyquist Sampling: Analog-to-Information Conversion 
+  A Case Study: Image De-Noising
+
+Sparsity-Aware Learning: Algorithms and Applications
+  Introduction 
+  Sparsity-Promoting Algorithms 
+    Greedy Algorithms 
+    Iterative Shrinkage/Thresholding (IST) Algorithms 
+    Which Algorithm?: Some Practical Hints 
+    Variations on the Sparsity-Aware Theme 
+    Online Sparsity-Promoting Algorithms
+    LASSO: Asymptotic Performance 
+    The Adaptive Norm-Weighted LASSO
+    Adaptive CoSaMP (AdCoSaMP) Algorithm
+    Sparse Adaptive Projection Subgradient Method (SpAPSM) 
+    Learning Sparse AnalysisModels 
+    Compressed Sensing for Sparse Signal Representation
+   in Coherent Dictionaries
+    Cosparsity 
+    A Case Study: Time-Frequency Analysis 
+    Appendix to Chapter : Some Hints from the Theory of Frames 
+
+Learning in Reproducing Kernel Hilbert Spaces
+  Introduction
+  Generalized Linear Models
+  Volterra,Wiener, and Hammerstein Models
+  Cover’s Theorem: Capacity of a Space in Linear Dichotomies
+  Reproducing Kernel Hilbert Spaces
+    Some Properties and Theoretical Highlights
+    Examples of Kernel Functions
+  Representer Theorem
+    Semiparametric Representer Theorem
+    Nonparametric Modeling: A Discussion
+  Kernel Ridge Regression
+  Support Vector Regression
+    The Linear -Insensitive Optimal Regression
+    Kernel Ridge Regression Revisited
+  Optimal Margin Classification: Support Vector Machines
+  Linearly Separable Classes: Maximum Margin Classifiers
+  Nonseparable Classes
+    Performance of SVMs and Applications 
+    Choice of Hyperparameters 
+  Computational Considerations
+    Multiclass Generalizations 
+  Online Learning in RKHS
+    The Kernel LMS (KLMS) 
+  The Naive Online Rreg Minimization Algorithm (NORMA)
+  The Kernel APSMAlgorithm
+  Multiple Kernel Learning
+  Nonparametric Sparsity-Aware Learning: Additive Models
+    A Case Study: Authorship Identification 
+
+Bayesian Learning: Inference and the EM Algorithm
+  Introduction
+  Regression: A Bayesian Perspective
+  The Maximum Likelihood Estimator
+  The MAP Estimator
+  The Bayesian Approach
+  The Evidence Function and Occam’s Razor Rule
+  Exponential Family of Probability Distributions
+  The Exponential Family and the Maximum Entropy Method
+  Latent Variables and the EMAlgorithm
+  The Expectation-Maximization Algorithm
+  The EM Algorithm: A Lower Bound Maximization View
+  Linear Regression and the EM Algorithm
+  Gaussian MixtureModels
+  Gaussian MixtureModeling and Clustering
+  Combining Learning Models: A Probabilistic Point of View
+  Mixing Linear Regression Models
+  Mixing Logistic Regression Models
+ Problems
+  Appendix to Chapter
+  PDFs with Exponent of Quadratic Form
+  The Conditional from the Joint Gaussian Pdf
+  The Marginal from the Joint Gaussian Pdf
+  The Posterior from Gaussian Prior and Conditional Pdfs
+
+Bayesian Learning: Approximate Inference and Nonparametric Models
+  Introduction
+  Variational Approximation in Bayesian Learning
+  The Case of the Exponential Family of Probability Distributions
+  A Variational Bayesian Approach to Linear Regression
+  A Variational Bayesian Approach to Gaussian MixtureModeling
+  When Bayesian Inference Meets Sparsity
+  Sparse Bayesian Learning (SBL)
+  The Spike and Slab Method
+  The Relevance Vector Machine Framework
+  Adopting the Logistic Regression Model for Classification
+  Convex Duality and Variational Bounds
+  Sparsity-Aware Regression: A Variational Bound Bayesian Path
+  Sparsity-Aware Learning: Some Concluding Remarks
+  Expectation Propagation
+  Nonparametric Bayesian Modeling
+  The Chinese Restaurant Process
+  Inference
+  Dirichlet Processes
+  The Stick-Breaking Construction of a DP
+  Gaussian Processes
+  Covariance Functions and Kernels
+  Regression
+  Classification
+  A Case Study: Hyperspectral Image Unmixing
+  Hierarchical Bayesian Modeling
+  Experimental Results
+   Problems 
+
+ Monte Carlo Methods
+    Introduction 
+    Monte Carlo Methods: The Main Concept 
+    Random number generation 
+    Random Sampling Based on Function Transformation 
+    Rejection Sampling 
+    Importance Sampling 
+    Monte Carlo Methods and the EM Algorithm
+    Markov Chain Monte Carlo Methods
+    Ergodic Markov Chains 
+    TheMetropolisMethod 
+    Convergence Issues 
+    Gibbs Sampling 
+    In Search of More Efficient Methods: A Discussion 
+    A Case Study: Change-Point Detection 
+   Problems 
+   References
+
+ Probabilistic Graphical Models: Part I
+    Introduction 
+    The Need for Graphical Models 
+    Bayesian Networks and the Markov Condition 
+    Graphs: Basic Definitions 
+    Some Hints on Causality 
+    D-Separation 
+    Sigmoidal Bayesian Networks 
+    Linear Gaussian Models 
+    Multiple-Cause Networks 
+    I-Maps, Soundness, Faithfulness, and Completeness 
+    Undirected GraphicalModels 
+    Independencies and I-Maps in Markov
+   Random Fields 
+    The Ising Model and Its Variants 
+    Conditional Random Fields (CRFs) 
+    Factor Graphs 
+    Graphical Models for Error-Correcting Codes 
+    Moralization of Directed Graphs
+    Exact Inference Methods: Message-Passing Algorithms 
+    Exact Inference in Chains 
+    Exact Inference in Trees 
+    The Sum-Product Algorithm 
+    The Max-Product and Max-Sum Algorithms 
+   Problems 
+   References
+
+ Probabilistic Graphical Models: Part II
+    Introduction 
+    Triangulated Graphs and Junction Trees
+    Constructing a Join Tree
+    Message-Passing in Junction Trees 
+    Approximate Inference Methods
+    Variational Methods: Local Approximation 
+    Block Methods for Variational Approximation 
+    Loopy Belief Propagation 
+    Dynamic Graphical Models 
+    Hidden MarkovModels 
+    Inference 
+    Learning the Parameters in an HMM
+    Discriminative Learning 
+    Beyond HMMs: A Discussion 
+    Factorial Hidden Markov Models 
+    Time-Varying Dynamic Bayesian Networks 
+    Learning GraphicalModels 
+    Parameter Estimation 
+    Learning the Structure 
+
+ Particle Filtering
+    Introduction 
+    Sequential Importance Sampling
+    Importance Sampling Revisited 
+    Resampling
+    Sequential Sampling 
+    Kalman and Particle Filtering 
+    Kalman Filtering: A Bayesian Point of View
+    Particle Filtering 
+    Degeneracy
+    Generic Particle Filtering 
+    Auxiliary Particle Filtering 
+
+ Neural Networks and Deep Learning
+    Introduction 
+    The Perceptron 
+    The Kernel Perceptron Algorithm 
+    Feed-Forward Multilayer Neural Networks 
+    The Backpropagation Algorithm
+    The Gradient Descent Scheme 
+    Beyond the Gradient Descent Rationale 
+    Selecting a Cost Function 
+    Pruning the Network
+    Universal Approximation Property of Feed-Forward Neural Networks
+    Neural Networks: A Bayesian Flavor 
+    Learning Deep Networks 
+    The Need for Deep Architectures 
+    Training Deep Networks 
+    Training Restricted Boltzmann Machines 
+    Training Deep Feed-Forward Networks 
+    Deep Belief Networks 
+    Variations on the Deep Learning Theme 
+    Gaussian Units 
+    Stacked Autoencoders 
+    The Conditional RBM
+    Case Study: A Deep Network for Optical Character
+   Recognition 
+    Case Study: A Deep Autoencoder 
+    Example: Generating Data via a DBN
+
+ Dimensionality Reduction
+    Introduction 
+    Intrinsic Dimensionality 
+    Principle Component Analysis 
+    Canonical Correlation Analysis 
+    Relatives of CCA 
+    Independent Component Analysis 
+    ICA and Gaussianity
+    ICA and Higher Order Cumulants 
+    Non-Gaussianity and Independent
+   Components 
+    ICA Based onMutual Information
+    Alternative Paths to ICA
+    Dictionary Learning: The k-SVD Algorithm
+    Nonnegative Matrix Factorization 
+    Learning Low-Dimensional Models: A Probabilistic
+   Perspective 
+    Factor Analysis 
+    Probabilistic PCA
+    Mixture of Factors Analyzers: A Bayesian View
+   to Compressed Sensing 
+    Nonlinear Dimensionality Reduction 
+    Kernel PCA 
+    Graph-Based Methods 
+   Low-Rank Matrix Factorization: A Sparse Modeling Path 
+    Matrix Completion
+     Robust PCA 
+     Applications of Matrix Completion and ROBUST PCA 
+   A Case Study: fMRI Data Analysis 
+

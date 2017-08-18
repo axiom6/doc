@@ -9,6 +9,6 @@ include::Entitlement.adoc[]
 
 include::Proposition.adoc[]
 
-include::Intelligence.adoc[]
+include::Info.adoc[]
 
 include::Portfolio.adoc[]

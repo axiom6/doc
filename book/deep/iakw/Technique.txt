@@ -151,19 +151,20 @@ Tree
   Markov
     HiddenMarkov
 
-Optimize
-  OperationsResearch
-    Scheduling
-    Routing
-    Allocation
-  Approximate
-    SimulatedAnealing
-    GradientSearch
-  Objective
-    ConstraintLogic
-    LinearProg
-    NonLinearProg
-    IntegerProg
+OperationsResearch
+  Scheduling
+  Routing
+  Allocation
+
+Approximate
+  SimulatedAnealing
+  GradientSearch
+
+Objective
+  ConstraintLogic
+  LinearProg
+  NonLinearProg
+  IntegerProg
 
 Genetic
   GeneticAP
@@ -185,14 +186,23 @@ Simulate
   Markov
   MonteCarlo
   AgentBased
+
 SelfOrganized
   OrgMaps
   Swarm
   Agent
+
 PhasePlanes
   SystemDynamics
   ActivityBased
   Differential
+
+IntergalTransforms
+  Fourier
+  Hilbert
+  Wavelet
+
+PowerLaws
 
 Fuzzy
 

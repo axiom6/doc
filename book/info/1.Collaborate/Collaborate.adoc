@@ -5,9 +5,9 @@ include::CollaborateSlide.adoc[]
 
 <<<<
 
-include::Activity.adoc[]
+include::Charter.adoc[]
 
-include::Partner.adoc[]
+include::Request.adoc[]
 
 include::Team.adoc[]
 

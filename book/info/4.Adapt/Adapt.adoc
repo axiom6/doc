@@ -4,10 +4,6 @@ include::../../../dir/inc/DefPractice.adoc[]
 include::AdaptSlide.adoc[]
 <<<<
 
-++++
-include::Adapt.html[]
-++++
-<<<<
 
 include::Status.adoc[]
 

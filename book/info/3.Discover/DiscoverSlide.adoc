@@ -7,7 +7,7 @@ Propositions are evaluated where the best features are turned into Value Proposi
 
 These Products are built into Services by Technology with are further validated by Benefits
 
-image::Discover.svg[alt="Discover",align="center"]
+image::pnh2/Discover.png[alt="Discover",align="center"]
 
 [horizontal]
 Vision::     The shared vision communicated to everyone.

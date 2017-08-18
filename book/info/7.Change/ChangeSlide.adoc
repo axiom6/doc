@@ -5,7 +5,7 @@ include::../../../dir/inc/DefPractice.adoc[]
 
 Initially conducts Tests to ascertain deployment readiness, mitigated by Transition and backed by repeatable automation to insure successful delivery to production.
 
-image::Change.svg[alt="Change",align="center"]
+image::pnh2/Change.png[alt="Change",align="center"]
 
 [horizontal]
 Test:: Quality, defect and risk measures at many levels and types.
