@@ -11,7 +11,7 @@ include::../../../dir/inc/DefPractice.adoc[]
 <<<
 === [.black]#Introducing a Humanistic Ontology#
 
-image::humanistic/Info.Prac.png[alt="Info",align="center"]
+image::onto/InfoCenter.png[alt="Info",align="center"]
 
 <<<
 === [.black]#Three Columns#

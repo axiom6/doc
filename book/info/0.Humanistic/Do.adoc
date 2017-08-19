@@ -20,7 +20,7 @@ Review::       x
 <<<
 === [.black]#Practices#
 
-image::humanistic/Do.png[alt="Do",align="center"]
+image::onto/Do.png[alt="Do",align="center"]
 
 <<<
 === [.black]#What Makes Do Work#

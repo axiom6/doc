@@ -21,7 +21,7 @@ Comply::     x
 <<<
 === [.black]#Practices#
 
-image::humanistic/Share.png[alt="Share",align="center"]
+image::onto/Share.png[alt="Share",align="center"]
 
 <<<
 === [.black]#What Makes Share Work#

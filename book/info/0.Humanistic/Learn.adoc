@@ -20,7 +20,7 @@ Revenue::                     Represents the cash a company generates from each 
 <<<
 === [.black]#Practices#
 
-image::humanistic/Learn.png[alt="Learn",align="center"]
+image::onto/Learn.png[alt="Learn",align="center"]
 
 <<<
 === [.black]#What Makes Learn Work#

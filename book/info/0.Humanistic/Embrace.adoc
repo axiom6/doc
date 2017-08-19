@@ -18,7 +18,7 @@ Dependable:: Teams impart momentum to create a culture of dependability.
 <<<
 === [.black]#Practices#
 
-image::humanistic/Embrace.png[alt="Embrace",align="center"]
+image::onto/Embrace.png[alt="Embrace",align="center"]
 
 <<<
 === [.black]#What Makes Embrace Work#

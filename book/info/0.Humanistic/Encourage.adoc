@@ -12,7 +12,7 @@ image::humanistic/GoldenCircle.png[alt="Info",align="center"]
 <<<
 === [.black]#Encourage Practices#
 
-image::humanistic/Encourage.png[alt="Encourage",align="center"]
+image::onto/Encourage.png[alt="Encourage",align="center"]
 
 <<<
 === [.black]#What Makes Encourage Work#

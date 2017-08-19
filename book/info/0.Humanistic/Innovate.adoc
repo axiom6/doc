@@ -22,7 +22,7 @@ Repurposing::            New uses found current and old platforms.
 <<<
 === [.black]#Practices#
 
-image::humanistic/Innovate.png[alt="Innovate",align="center"]
+image::onto/Innovate.png[alt="Innovate",align="center"]
 
 <<<
 === [.black]#What Makes Innovate Work#
