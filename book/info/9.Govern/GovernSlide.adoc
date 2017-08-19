@@ -3,17 +3,17 @@ include::../../../dir/inc/DefPractice.adoc[]
 
 == [.black]#Govern#
 
-Enables executive decision making for Resources, Maturity and Compliance by incorporating:
+Enables careful Consideration for Maturity, Assets and Comply by incorporating:
 
 * Timely business data from Discovery.
 * Technical reviews from Benefit.
-*  Asset status from Warehouse.
+* Asset status from Warehouse.
 
 image::pnh2/Govern.png[alt="Govern",align="center"]
 
 [horizontal]
-Asset:: Approves the allocation of personnel, finances and assets.
 Maturity:: Identifies opportunities and resources for improvement.
-Comply:: Distributes required reports and issues for legal audits.
-Listen:: xxx
+Asset::    Manages the allocation of personnel, finances and assets.
+Comply::   Provides required reports and issues for legal audits.
+Consider:: A thought out rational decision making process.
 

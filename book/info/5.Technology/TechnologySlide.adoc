@@ -3,13 +3,15 @@ include::../../../dir/inc/DefPractice.adoc[]
 
 == [.black]#Technology#
 
-All the software components integrated by tiers that fulfill the business Concepts from above. Architect, engineer, prototype and construct Activities are Traced* by Adapt and guided by the reference Architecture Patterns and Reviews in Benefit.
+All the software components integrated by tiers that implement products.
+Architect, Engineer, and Construct Activities are tracked in Adapt
+and guided by the reference Architecture Patterns and Reviews in Benefit.
 
 image::pnh2/Technology.png[alt="Technology",align="center"]
 
 [horizontal]
-UI:: Applications (mobile) that access services on the Platform.
-Service:: Integrated functionality for applications and peer requests.
+UI::       Applications (mobile) that access services on the Cloud.
+Service::  Integrated functionality for applications with REST interfaces.
 Database:: Persistent storage for business entities and cloud infrastructure.
-Cloud:: A Responsive, resilient, elastic, message driven service runtime.
+Cloud::    A Responsive, resilient, elastic, message driven service runtime.
 

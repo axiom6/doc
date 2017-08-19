@@ -1,0 +1,8 @@
+
+include::../../../dir/inc/DefStudy.adoc[]
+
+''''
+=== [.black]#Document#
+
+
+* A written, drawn and presented representation of thought

@@ -1,3 +1,8 @@
+
+
+With Bannon gone, Donald's Nazis won't have someone close to send his Jewish son in law Jared Kushner and Donald's grandchildren to the gas chamber soon as promised in Charlottesville.
+
+
 http://bit.ly/2aqRshK Hilary Who I Am
 
 http://bit.ly/2a4Y7RT  Trump Facist

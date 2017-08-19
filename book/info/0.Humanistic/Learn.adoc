@@ -7,15 +7,15 @@ include::../../../dir/inc/DefPractice.adoc[]
 image::humanistic/bmcanvas.jpg[alt="BusinessModelCanvas",align="center"]
 
 [horizontal]
-Key&nbsp;Activites::          The most important things a company must do to make its business model work
-Key&nbsp;Partners::           The network of suppliers and partners that make the business model work
-Key&nbsp;Resources::          The most important assets required to make a business model work
-Value&nbsp;Proposition::      The bundle of products and services that create value for a specific Customer Segment
-Customer&nbsp;Relationships:: The types of relationships a company establishes with specific Customer Segments
-Customers::                   The different groups of people or organizations an enterprise aims to reach and serve
-Channels::                    How acompany communicates with and reaches itsCustomer Segments to deliver a Value Proposition
-Costs::                       Describes all costs incurred to operate a business model
-Revenue::                     Represents the cash a company generates from each Customer Segment
+Key Activites::          The most important things a company must do to make its business model work
+Key Partners::           The network of suppliers and partners that make the business model work
+Key Resources::          The most important assets required to make a business model work
+Value Proposition::      The bundle of products and services that create value for a specific Customer Segment
+Customer Relationships:: The types of relationships a company establishes with specific Customer Segments
+Customers::              The different groups of people or organizations an enterprise aims to reach and serve
+Channels::               How acompany communicates with and reaches itsCustomer Segments to deliver a Value Proposition
+Costs::                  Describes all costs incurred to operate a business model
+Revenue::                Represents the cash a company generates from each Customer Segment
 
 <<<
 === [.black]#Practices#

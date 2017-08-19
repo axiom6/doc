@@ -8,8 +8,8 @@ Delivers product via a Secured cloud Network with complete Support and a Warehou
 image::pnh2/Deliver.png[alt="Production",align="center"]
 
 [horizontal]
-Support:: Customer care, help desk, privileges, document and educate.
-Network:: Switches, routers, computers provision in secure zones.
+Support::   Customer care, help desk, privileges, document and educate.
+Network::   Switches, routers, computers provisiond in secure zones.
 Warehouse:: Extended data for assets, Data Science and Govern queries.
-Security:: Defense in depth, weapon removal. pull proxies and inert data.
+Security::  Defense in depth, response, pull proxies and encrypted data.
 

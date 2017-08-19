@@ -8,8 +8,8 @@ Initially conducts Tests to ascertain deployment readiness, mitigated by Transit
 image::pnh2/Change.png[alt="Change",align="center"]
 
 [horizontal]
-Test:: Quality, defect and risk measures at many levels and types.
-Provides:: feedback to technology and confirms readiness.
+Test::       Quality, defect and risk measures at many levels and types.
 Transition:: Addresses new and updated deployments and disruptions.
-Automate:: Repeatable scripts for production configurations.
+Deploy::     Continously noves new component to Deliver.
+Maintain::   Insures that Deliver is running smoothly.
 

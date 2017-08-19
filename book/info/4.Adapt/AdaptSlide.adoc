@@ -8,9 +8,8 @@ The fine tuning of doing. Concepts are broken down into Features that are all Tr
 image::pnh2/Adapt.png[alt="Adapt",align="center"]
 
 [horizontal]
-Feature:: Outline of conceputalized value propostions transformed
-into concrete business requirements aligned to technology.
-Status:: Accomplishments, Concerns, Plans and Issues.
-Component:: Technology Traced by: UI, Service, Database & Cloud tiers
-Acceptance:: Completion criteria for Components linked back to Features
+Status::     Accomplishments, Concerns, Plans and Issues.
+Feature::    Outline of concrete business requirements aligned to technology.
+Component::  Technology Traced by: UI, Service, Database & Cloud tiers
+Acceptance:: Completion criteria for Components traced back to Features
 

@@ -12,8 +12,8 @@ image::pnh2/Discover.png[alt="Discover",align="center"]
 [horizontal]
 Vision::     The shared vision communicated to everyone.
 Community::  The people an enterprise aims to reach and serve.
-Channels::   Communication and product delivery.
-Assumption:: Strategic apriori statements to be verified by Benefit
+Discern::    Steps taken address needs.
+Assumption:: The apriori statements to be verified by Benefit
 
 
 
