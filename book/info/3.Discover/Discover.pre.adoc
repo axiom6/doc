@@ -13,7 +13,8 @@ image::pnh2/Discover.png[alt="Discover",align="center"]
 Vision::     The shared vision communicated to everyone.
 Community::  The people an enterprise aims to reach and serve.
 Discern::    Steps taken address needs.
-Assumption:: The apriori statements to be verified by Benefit
+Assumption:: The apriori statements to be verified by Benefit.
 
+<<<
 
 

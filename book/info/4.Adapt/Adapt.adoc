@@ -1,9 +1,7 @@
 
 include::../../../dir/inc/DefPractice.adoc[]
 
-include::AdaptSlide.adoc[]
-<<<<
-
+include::Adapt.pre.adoc[]
 
 include::Status.adoc[]
 
@@ -13,4 +11,5 @@ include::Component.adoc[]
 
 include::Acceptance.adoc[]
 
+<<<
 

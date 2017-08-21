@@ -13,4 +13,6 @@ Request::  A proactive attitude to respond to and process requests.
 Team::     Everyone is assigned to a Project and their Expert group(s).
 Kanban::   A queue for pulling activities when members are ready.
 
+<<<
+
 

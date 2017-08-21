@@ -15,3 +15,4 @@ Service::  Integrated functionality for applications with REST interfaces.
 Database:: Persistent storage for business entities and cloud infrastructure.
 Cloud::    A Responsive, resilient, elastic, message driven service runtime.
 
+<<<

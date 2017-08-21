@@ -13,3 +13,4 @@ Patterns::    A reference architecture of design patterns for each component.
 Risk::        Mitigates uncertainty for Teams, Product and Discoveries
 Review::      The oversight of business and technical options and guidelines.
 
+<<<

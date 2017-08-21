@@ -17,3 +17,4 @@ Asset::    Manages the allocation of personnel, finances and assets.
 Comply::   Provides required reports and issues for legal audits.
 Consider:: A thought out rational decision making process.
 
+<<<

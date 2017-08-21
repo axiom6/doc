@@ -1,9 +1,7 @@
 
 include::../../../dir/inc/DefPractice.adoc[]
 
-include::CollaborateSlide.adoc[]
-
-<<<<
+include::Collaborate.pre.adoc[]
 
 include::Charter.adoc[]
 
@@ -12,3 +10,5 @@ include::Request.adoc[]
 include::Team.adoc[]
 
 include::Kanban.adoc[]
+
+<<<

@@ -1,8 +1,7 @@
 
 include::../../../dir/inc/DefPractice.adoc[]
 
-include::GovernSlide.adoc[]
-<<<<
+include::Govern.pre.adoc[]
 
 include::Maturity.adoc[]
 
@@ -11,3 +10,5 @@ include::Asset.adoc[]
 include::Comply.adoc[]
 
 include::Consider.adoc[]
+
+<<<

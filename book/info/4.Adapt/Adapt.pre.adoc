@@ -10,6 +10,7 @@ image::pnh2/Adapt.png[alt="Adapt",align="center"]
 [horizontal]
 Status::     Accomplishments, Concerns, Plans and Issues.
 Feature::    Outline of concrete business requirements aligned to technology.
-Component::  Technology Traced by: UI, Service, Database & Cloud tiers
-Acceptance:: Completion criteria for Components traced back to Features
+Component::  Technology Traced by: UI, Service, Database & Cloud tiers.
+Acceptance:: Completion criteria for Components traced back to Features.
 
+<<<
