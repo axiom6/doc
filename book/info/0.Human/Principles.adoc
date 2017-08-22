@@ -3,37 +3,9 @@ include::../../../dir/inc/DefPractice.adoc[]
 
 == [.black]#The Principles Behind Each Column and Practice#
 
-=== [.black]#Reference?#
 
-* General
-. IT and business alignment
-. Maximum benefits at the lowest costs and risks
-. Business continuity
-. Compliance with standards and policies
-. Adoption of the best practices for the market
-* Information
-. Information treated as an asset
-. Shared information
-. Accessible information
-. Common terminology and data definitions
-. Information security
-* Application
-. Technological independence
-. Easy-to-use applications
-. Component reusability and simplicity
-. Adaptability and flexibility
-. Convergence with the enterprise architecture
-. Enterprise architecture also applies to external applications
-. Low-coupling interfaces
-. Adherence to functional domains
-* Technology
-. Changes based on requirements
-. Control of technical diversity and suppliers
-. Interoperability
 
 === [.black]#Embrace#
-
-==== [.black]#Collaborate#
 
 * Activities have gravitated away from individuals and towards teams.
 
@@ -46,11 +18,6 @@ Mutual Respect::
 * We respect everyones diversity and are sensitve about their viewpoints.
 * We work as a team within our organization, across organizations and with our customers.
 
-==== [.black]#Acquire#
-
-==== [.black]#Expertise#
-
-==== [.black]#Trust#
 
 [horizontal]
 Interpersonal:: Our teams thrive on interpersonal trust.
@@ -76,17 +43,8 @@ Improvement:
 * We create the space and allocate the resources for long term strategies.
 * We strive for excellence in everything we do..  
 
-==== [.black]#Product#
-
-==== [.black]#Tools#
-
-==== [.black]#Science#
-
-==== [.black]#Creativity#
 
 === [.black]#Encourage#
-
-==== [.black]#Discover#
 
 Customer Focus:
 
@@ -111,8 +69,4 @@ Transparency:
 * We are transparent with everything and everyone.
 * We have no hidden agendas.
 
-==== [.black]#Insight#
 
-==== [.black]#Understand#
-
-==== [.black]#Truth#

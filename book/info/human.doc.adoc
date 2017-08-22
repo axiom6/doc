@@ -8,7 +8,7 @@ include::../../dir/inc/DefBook.adoc[]
 
 // include::NotWorking.adoc[]
 
-= [.black]#Humaniatic Concepts#
+= [.black]#Humanistic Concepts#
 
 include::0.Human/Introduction.adoc[]
 
@@ -26,7 +26,6 @@ include::0.Human/Do.adoc[]
 
 include::0.Human/Share.adoc[]
 
-include::0.Human/Ontology.adoc[]
 
 
 

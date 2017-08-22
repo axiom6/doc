@@ -25,26 +25,37 @@ Out of Bounds::
 Great leaps beyond the adjacent possible are rare and doomed to be short-term failures. The environment is simply not ready for them yet.
 
 Multiples::
-The predominance of multiples in innovation highlights how the adjacent possible is constrained by existing parts and knowledge.
-A multiple occurs when several people independently make the same discovery almost simultaneously.
+The predominance of multiples in innovation highlights how the adjacent possible is
+constrained by existing parts and knowledge.
+A multiple occurs when several people independently make the same discovery almost
+simultaneously.
 
 === [.black]#Slow Hunches#
 
 Evolve Over Time::
-World-changing ideas generally evolve over time as slow hunches rather than sudden breakthroughs.
+World-changing ideas generally evolve over time as slow hunches rather than sudden
+breakthroughs.
 
 Even With Darwin::
-According to Darwin, the theory of natural selection simply popped into his head when he was contemplating Malthus’ writings on population growth.
-But Darwin’s notebooks reveal that far before this so-called epiphany, he had already described a very nearly complete theory of natural selection.
+According to Darwin, the theory of natural selection simply popped into his head
+when he was contemplating Malthus’ writings on population growth.
+But Darwin’s notebooks reveal that far before this so-called epiphany, he had
+already described a very nearly complete theory of natural selection.
 This slow hunch only matured into a fully-formed theory over time.
 
 And Even With Tim Berners-Lee::
-As a child, Tim Berners-Lee read a Victorian-era how-to book and was fascinated by the “portal of information” he had found.
-Well over a decade later, working as a consultant at the Swiss CERN laboratory and partially inspired by the book, he tinkered with a side-project which allow him to store and connect chunks of information, like nodes in a network.
-Another decade later, CERN officially authorized him to work on the project, which finally matured into a network where documents on different computers could be connected through hypertext links.
-After decades of Berners-Lee’s slow hunch maturing and developing, the World Wide Web was born.
+As a child, Tim Berners-Lee read a Victorian-era how-to book and was fascinated
+by the “portal of information” he had found.
+Well over a decade later, working as a consultant at the Swiss CERN laboratory
+and partially inspired by the book, he tinkered with a side-project which allow
+him to store and connect chunks of information, like nodes in a network.
+Another decade later, CERN officially authorized him to work on the project,
+which finally matured into a network where documents on different computers could
+be connected through hypertext links.
+After decades of Berners-Lee’s slow hunch maturing and developing,
+the World Wide Web was born.
 
-=== [.black]#Platforms are like springboards for innovations#
+=== [.black]#Platforms are Like Springboards for Innovations#
 
 Keystone Species::
 Ecologists use the term keystone species to describe organisms which are disproportionately important to the welfare of the ecosystem.
@@ -75,28 +86,39 @@ Where Connection is Valued::
 “Ideas rise in crowds, as Poincaré said.
 They rise in liquid networks, where connection is valued more than protection.”
 
-=== [.black]#Innovation and evolution thrive in large networks#
+=== [.black]#Innovation and Evolution Thrive in Large Networks#
 
 Carbon - The Promiscous Element::
-The basis of all life on earth (and likely any extraterrestrial life out there) is carbon,
-because it is fundamentally good at connecting with other atoms, and can thus construct complex chains of molecules.
-These connections allow new structures like proteins to emerge. Without carbon, the earth would have likely remained a dead soup of chemicals.
+The basis of all life on earth (and likely any extraterrestrial life out there) is
+carbon, because it is fundamentally good at connecting with other atoms, and can
+thus construct complex chains of molecules.
+These connections allow new structures like proteins to emerge. Without carbon,
+the earth would have likely remained a dead soup of chemicals.
 
-Connections also facilitate ideas::
+Connections also Facilitate Ideas::
 When humans first began to organize themselves into settlements,
-towns and cities, they became members of networks, which exposed them to new ideas and allowed them to spread their own discoveries.
+towns and cities, they became members of networks, which exposed them to new
+ideas and allowed them to spread their own discoveries.
 Before this happened, a novel idea by one person could well die with her,
 since she had no network to spread it to. Great ideas rise in crowds.
 
-scientific breakthroughs::
-To better understand the roots of scientific breakthroughs, in the 1990s psychologists decided to record everything that went on in four molecular biology laboratories. One imagines that in a field like molecular biology, great discoveries are made by peering through a microscope.
-Strikingly, it turned out the most important ideas arose during regular lab meetings, where the scientists informally discussed their work.
+Scientific Breakthroughs::
+To better understand the roots of scientific breakthroughs, in the 1990s
+psychologists decided to record everything that went on in four molecular biology laboratories. One imagines that in a field like molecular biology, great discoveries are made by peering through a microscope.
+Strikingly, it turned out the most important ideas arose during regular
+lab meetings, where the scientists informally discussed their work.
 
 Creative Individuals::
-Other studies have shown that the most creative individuals have broad social networks that extend outside their own organization, and hence get new ideas from many different contexts.
+Other studies have shown that the most creative individuals have broad social
+networks that extend outside their own organization, and hence get new ideas
+from many different contexts.
 
 Cities::
-Cities facilitate such large networks which allow ideas to be diffused and combined in novel ways. This is one of the reasons why cities are disproportionately more creative than smaller towns. Today though the greatest such creative network is not a city at all, but the World Wide Web, creating, connecting and diffusing ideas more effectively than any network before it.
+Cities facilitate such large networks which allow ideas to be diffused and
+combined in novel ways. This is one of the reasons why cities are disproportionately
+more creative than smaller towns. Today though the greatest such creative network
+is not a city at all, but the World Wide Web, creating, connecting and diffusing
+ideas more effectively than any network before it.
 
 === [.black]#Collaboration is at least as important a driver of innovation as competition#
 
@@ -119,26 +141,30 @@ have gone unrewarded by the markets. The World Wide Web, the theory of relativit
 computers, x-rays, pacemakers and penicillin are but a few examples where the inventor
 has not profited.
 
-How to increase innovation in general::
+How to Increase Innovation in General::
 Certainly market-spurred innovation has been far more effective than innovation achieved
 in command economies like the Soviet Union, but that still does not mean it is the
 optimal way forward. Yes, inventors may well deserve to be rewarded, but the real
 question should be how to increase innovation in general.
 
-Collaborative sharing knowledge::
+Collaborative Sharing Knowledge::
 In the Origin of Species, Darwin himself placed equal emphasis on the wonder of complex
 collaboration between species as on the natural selection that comes from competition
 for resources. Similarly open networks of connections among innovations can be just
 as generative as vigorous competition. Free markets have greatly spurred innovation,
 but so has the collaborative, open way of sharing knowledge in networks.
 
-=== [.black]#Lucky connections between ideas drive innovation#
+=== [.black]#Lucky Connections between Ideas Drive Innovation#
 
-carbon::
-The ability of carbon to connect with other atoms was vital for the evolution of life, but a second, randomizing, force was also necessary: water.
+Carbon::
+The ability of carbon to connect with other atoms was vital for the evolution of life,
+but a second, randomizing, force was also necessary: water.
 
 Water::
-Water moves and churns, dissolving and eroding everything in its path, thus fostering new kinds of connections between atoms in the primordial soup. Just as importantly, the strong hydrogen bonds of water molecules helped maintain those new connections.
+Water moves and churns, dissolving and eroding everything in its path, thus
+fostering new kinds of connections between atoms in the primordial soup.
+Just as importantly, the strong hydrogen bonds of water molecules helped
+maintain those new connections.
 
 liquid networks::
 This mix of turbulence and stability is why liquid networks are optimal both for the
@@ -152,9 +178,10 @@ where ideas connect seemingly at random.
 In fact, neuroscientists have confirmed that “sleeping on a problem”
 greatly helps solve it.
 Centuries ago, the German chemist Kekulé dreamt of a mythological serpent devouring
-its own tail, and subsequently realized how carbon atoms in a ring formed the molecule benzene.
+its own tail, and subsequently realized how carbon atoms in a ring formed
+the molecule benzene.
 
-chaos and creativity::
+Chaos and Creativity::
 But it seems chaos and creativity are linked even on a neurological level.
 Ideas are in fact manifestations of a complex network of neurons firing in the brain,
 and new ideas are only possible when new connections are formed.
@@ -165,15 +192,18 @@ The period of time spent in either state differs from brain to brain.
 Somewhat counter-intuitively, studies have shown that the longer the spells of
 chaos a person’s brain tends to experience, the smarter the person usually is.
 
-=== [.black]#Serendipitous discoveries can be facilitated by a shared intellectual or physical space#
+=== [.black]#Serendipitous Discoveries#
+
+Serendipitous discoveries can be facilitated by a shared intellectual or physical space.
 
 Converged Space::
-When ideas converge in a shared physical or intellectual space, through for example people from different disciplines meeting,
-creative collisions happen. Consider the modernist cultural innovations of the 1920s.
-Many of them were largely a result of artists, poets and writers meeting at the same
-Parisian cafés. Shared interactions allow ideas to diffuse, circulate and be combined randomly with others.
+When ideas converge in a shared physical or intellectual space, through for example people
+from different disciplines meeting, creative collisions happen. Consider the modernist
+cultural innovations of the 1920s. Many of them were largely a result of artists, poets
+and writers meeting at the same Parisian cafés. Shared interactions allow ideas to
+diffuse, circulate and be combined randomly with others.
 
-simultaneously introducing ideas::
+Simultaneously Introducing Ideas::
 On an individual level, facilitating such serendipitous connections is simply a matter of
 simultaneously introducing ideas from different disciplines into your consciousness.
 Innovators like Benjamin Franklin and Charles Darwin favored working on multiple projects
@@ -181,7 +211,7 @@ simultaneously, in a kind of slow multitasking mode. One project would take cent
 for days at a time, but linger at the back of the mind afterwards too, so connections
 between projects could be drawn.
 
-cross-referencing::
+Cross-Referencing::
 The philosopher John Locke understood the importance of cross-referencing
 as early on as 1652, when he began developing an elaborate system for indexing the
 content of his commonplace book, essentially a scrapbook of interesting thoughts and
@@ -195,13 +225,23 @@ The greatest such network in existence is, of course, the World Wide Web,
 where a wealth of ideas is not only available, but hyper-linked for easy connections
 between several disciplines.
 
-    “Some studies suggest as much as 95 percent of medical technology donated to developing countries breaks within the first five years of use.”
 
-=== [.black]#Great innovations emerge from environments that are partly contaminated by error#
+“Some studies suggest as much as 95 percent of medical technology donated to developing
+countries breaks within the first five years of use.”
+
+=== [.black]#Great Innovations and Error#
+
+Great innovations emerge from environments that are partly contaminated by error.
 
 Error is present in both the evolution of life and the innovation of great ideas, and it is not always a bad thing.
 
-Consider natural reproduction: genes are passed on from parent to offspring, providing “building instructions” for how the offspring should develop. Without occasional mutations, meaning random errors in those instructions, evolution would have long ago come to a virtual standstill. The elephant’s tusks or peacock’s feathers would have never emerged if only perfect copies of existing genes would have propagated. Mutations endow creatures with new traits. While most of them fail fantastically, these errors also produce a few winners, thus driving evolution.
+Consider natural reproduction: genes are passed on from parent to offspring, providing
+“building instructions” for how the offspring should develop. Without occasional
+mutations, meaning random errors in those instructions, evolution would have long
+ago come to a virtual standstill. The elephant’s tusks or peacock’s feathers would
+have never emerged if only perfect copies of existing genes would have propagated.
+Mutations endow creatures with new traits. While most of them fail fantastically,
+these errors also produce a few winners, thus driving evolution.
 
 Similarly, Alexander Fleming only discovered penicillin because of an error: he mistakenly allowed a bacteria sample to be contaminated by mold and began to wonder what had killed the bacteria. In fact, major new scientific theories often begin as pesky little errors in the data which keep demonstrating that something in the dominant theory is wrong.
 

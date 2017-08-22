@@ -3,7 +3,7 @@ include::../../../dir/inc/DefPractice.adoc[]
 
 == [.black]#Embrace#
 
-=== [.black]#MPrinciples from Psychological Safety from Google#
+=== [.black]#Psychological Safety#
 
 link::www.nytimes.com/.../what-google-learned-from-its-quest-to-build-the-perfect-team.html[Psychological Safety at Google]
 

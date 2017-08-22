@@ -1,0 +1,33 @@
+
+include::../../../dir/inc/DefPractice.adoc[]
+
+=== [.black]#Wisconsin#
+
+==== [.black]#General#
+. IT and business alignment
+. Maximum benefits at the lowest costs and risks
+. Business continuity
+. Compliance with standards and policies
+. Adoption of the best practices for the market
+
+==== [.black]#Information#
+. Information treated as an asset
+. Shared information
+. Accessible information
+. Common terminology and data definitions
+. Information security
+
+==== [.black]#Application#
+. Technological independence
+. Easy-to-use applications
+. Component reusability and simplicity
+. Adaptability and flexibility
+. Convergence with the enterprise architecture
+. Enterprise architecture also applies to external applications
+. Low-coupling interfaces
+. Adherence to functional domains
+
+==== [.black]#Technology#
+. Changes based on requirements
+. Control of technical diversity and suppliers
+. Interoperability

@@ -20,7 +20,6 @@ Embrace::   A tactical approach for human colaboration and adapting to change.
 Innovate::  An innovative product definition, technology and delivery lifecycle.
 Encourage:: A shared strategic vision for discovery, benefits  governed by principles.
 
-
 === [.black]#Three Rows#
 [horizontal]
 Learn:: The means for defining the business with the model canvas.
@@ -42,6 +41,23 @@ Change::      Continuous evolution.
 Deliver::     Sharing our work with our communities.
 Govern::      Facilitating and improving the entire company.
 
+<<<
+
+=== [.black]#Thirty Six Studies#
+
+image::png2/Information.png[alt="Info",align="center"]
+
+<<<
+
+=== [.black]#Twelve Connections between Nine Practices#
+
+* The six horizontal connections convey culture across columns.
+* The six vertical connections flow successive refinements down   rows.
+
+image::pnh2/Information.png[alt="Info",align="center"]
+
+<<<
+
 === [.black]#What's Next#
 
 ////
@@ -50,8 +66,10 @@ moving across the columns promotes cultural fit and moving down the rows
 provides perspectives for successive refinements.
 ////
 
-The rest of this chapter discusses the inspiration and columns and rows
-in more detail while the subsequent chapters address each of these nine practices.
+* The rest of this docu,ment discusses the inspiration and columns and rows
+in more detail
+
+* The subsequent document addresses each of the nine practices.
 
 
 
