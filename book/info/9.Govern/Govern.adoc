@@ -2,7 +2,7 @@
 include::../../../dir/inc/DefPractice.adoc[]
 
 == [.black]#Govern#
-include::Govern.pre.adoc[]
+include::Preview.adoc[]
 <<<
 include::Maturity.adoc[]
 include::Asset.adoc[]

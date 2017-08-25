@@ -2,7 +2,7 @@
 include::../../../dir/inc/DefPractice.adoc[]
 
 == [.black]#Deliver#
-include::Deliver.pre.adoc[]
+include::Preview.adoc[]
 <<<
 include::Support.adoc[]
 include::Network.adoc[]

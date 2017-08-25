@@ -1,0 +1,25 @@
+
+//include::../../../dir/inc/DefPractice.adoc[]
+
+:data-uri:
+include::../../dir/inc/DefBook.adoc[]
+
+= [.black]#Humanistic Concepts#
+
+include::0.Human/Introduction.adoc[]
+
+include::A.Embrace/Embrace.adoc[]
+
+include::B.Innovate/Innovate.adoc[]
+
+include::C.Encourage/Encourage.adoc[]
+
+include::D.Perspectives/Learn.adoc[]
+
+include::D.Perspectives/Do.adoc[]
+
+include::D.Perspectives/Share.adoc[]
+
+
+
+

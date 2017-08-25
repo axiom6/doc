@@ -4,15 +4,15 @@ include::../../../dir/inc/DefPractice.adoc[]
 == [.black]#Principles#
 
 === [.black]#Embrace#
-include::Embrace.Prin.adoc[]
+include::../A.Embrace/Principles.adoc[]
 <<<
 
 === [.black]#Innovate#
-include::Innovate.Prin.adoc[]
+include::../B.Innovate/Principles.adoc[]
 <<<
 
 === [.black]#Encourage#
-include::Innovate.Prin.adoc[]
+include::../C.Encourage/Principles.adoc[]
 <<<
 
 

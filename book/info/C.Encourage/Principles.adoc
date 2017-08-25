@@ -19,5 +19,6 @@ Genuine:: Our connections are genuine.
 
 ==== [.black]#Assume#
 [horizontal]
-Track:  We list, track and challenge all our assumptions.
-Errors: Our mistakes help us abandon our old assumptions.
+Track::  We list, track and challenge all our assumptions.
+Errors:: Our mistakes help us abandon our old assumptions.
+

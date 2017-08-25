@@ -1,0 +1,120 @@
+
+
+
+
+Patterns and Influences
+It’s Not Always a Eureka Moment
+By Bill Gates
+| September 29, 2011
+
+I picked up Steven Johnson’s book, Where Good Ideas Come From:
+The Natural History of Innovation, with a little bit of skepticism.
+Lots of books have been written about innovation—what it is, the most
+innovative companies, how you measure it.
+The subject can seem a little faddish, but Johnson’s book is quite good
+at giving examples of how you create environments that can encourage good ideas.
+
+Especially for people in business or education, it’s a worthwhile book.
+It talks about the institutional structures that facilitate good ideas—how
+you get lots of people thinking about cutting edge problems,
+how you put people together in a space where different skill sets and
+influences can come together, how you make the right kinds of materials
+available but don’t force a conclusion.
+
+Some books about innovation revolve around the idea that a small number
+of amazingly smart individuals have had Eureka moments, leading to
+extraordinary breakthroughs that changed the course of civilization.
+
+But Johnson challenges this view, which I liked: “We have a natural
+tendency to romanticize breakthrough innovations, imagining momentous
+ideas transcending their surroundings…But ideas are works of bricolage…
+We take the ideas we’ve inherited or that we’ve stumbled across, and we
+jigger them together into some new shape.”
+
+The decision to start Microsoft, for example, wasn’t based on a momentous
+flash of insight. It was based on incremental developments in a nascent
+personal computing industry, the fact that Paul Allen and I had access to
+mainframe computers at the high school we attended, and our hunch about
+what people could do with computers in the future.
+
+At the foundation, our work in global health, development, and education
+builds on the great ideas that others have developed over the years in a
+wide range of fields—global health, international development, agriculture,
+engineering, scientific research, and public policy.
+
+Johnson focuses on the elements of our cultural environment that foster
+an atmosphere of innovation, and the recurring patterns that often are at
+play in bringing great ideas to fruition. He believes that urban environments
+and technology are potent fertilizers of discovery and invention, and that
+the connections between people and their ideas are the underlying seed
+beds of innovation.
+
+The author identifies a number of conditions, or patterns, that enable innovation. One is the “adjacent possible,” a theory first articulated by American scientist Stuart Kauffman. It’s the idea that what is achievable today is defined by the various combinations of events and activities that have occurred prior.
+
+For example, in the 1870s, a French doctor, Stephane Tarnier, saw incubators
+for chicken hatchlings at the Paris Zoo and hired the zoo’s poultry-raiser
+to build incubator boxes for premature newborns at his hospital.
+Other hospitals at the time were using devices to keep babies warm,
+but Tarnier was the first to conduct research showing how incubators
+significantly reduced the infant mortality rate, leading to their widespread
+use in Paris and beyond.
+
+Earlier in the 19th century, a British inventor, Charles Babbage, tinkered
+with two ideas—a Difference Engine to calculate polynomial functions,
+and an Analytical Engine, which would have been the world’s first programmable
+computer. Neither machine was built at the time, but many of the ideas
+underlying the Difference Engine took hold fairly quickly, leading to the
+mass production of mechanical calculators. Although the Analytical Engine was
+a brilliant idea that included many of the key concepts in today’s computers,
+it was, Johnson suggests, beyond the adjacent possible of the day.
+Babbage’s design would have required a huge number of mechanical gears and
+switches, which probably would have made the machine too slow to operate
+effectively. It took another 100 years for researchers to independently
+rediscover Babbage’s ideas and apply them using newer technology—vacuum
+tubes and eventually integrated circuits.
+
+A more recent example of the adjacent possible, Johnson says, is YouTube.
+If it had been launched 10 years earlier, it would have failed because most
+people connecting to the Internet were still on slow dial-up connections
+that could not have handled video sharing. But by the time YouTube launched,
+many more people had high-speed Internet connections.
+
+Johnson also talks about the importance of “liquid networks” that are
+flexible enough to facilitate dynamic connections between good ideas,
+but structured enough to support and hold them.
+I’m familiar with one of the examples he cites,
+Building 99 on the Microsoft campus which houses Microsoft Research.
+To optimize collaboration and creativity, Building 99 was designed so
+rooms could be easily reconfigured to provide flexible work and meeting spaces.
+Lots of the walls are covered with whiteboards that allow scientists to gather
+informally to sketch out ideas whenever inspiration hits. This may not seem revolutionary, but it’s amazing what happens when you open up work spaces in this way versus traditional office cubicles.
+
+A third pattern that Johnson explores is “the slow hunch.”
+It took Joseph Priestley, an 18th century scientist, 20 years to conclude
+that plants create oxygen. (Priestly first had an inkling when, as a child,
+the spiders he trapped in glass jars died.) The core pieces of Charles Darwin’s
+theory of natural selection were articulated in his notebooks more than a year
+before he seemed to fully grasp their significance and published them.
+I’ve seen this many times at Microsoft and at the foundation.
+People start with an idea and over time it evolves and becomes clearer.
+
+Serendipity (or what Johnson calls “happy accidents”) accounts for other
+ breakthroughs. He includes dreams, contemplative walks, long showers,
+ and carving out time to read a variety of books and papers that might
+ lead to “serendipitous collisions” of ideas.
+ He mentions the Think Week breaks I’ve taken for many years,
+ where I immerse myself in books and papers that people send me.
+ We expanded who participates in Think Week a few years ago at Microsoft
+ to include the top 50 engineering thinkers. It has definitely led to an
+ exciting exchange of ideas and inspirations that would not otherwise have
+ occurred.
+
+I don’t have space here to cover the other patterns that Johnson talks
+about, but you can read about them in his book. You can also watch a
+video of Johnson discussing them at a 2010 TED speech.
+
+All of us have great ideas from time to time. The challenge is how to put
+more of them into action to help solve the world’s biggest problems.
+Writers like Johnson remind us that good ideas are most often the result
+of people building on other’s ideas—either individually or together—and
+having a fertile environment in which they can prosper.

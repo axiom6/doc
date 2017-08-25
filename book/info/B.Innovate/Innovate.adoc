@@ -4,7 +4,7 @@ include::../../../dir/inc/DefPractice.adoc[]
 ==  [.black]#Innovate#
 
 === [.black]#Principles#
-include::Innovate.Prin.adoc[]
+include::Principles.adoc[]
 <<<
 
 === [.black]#Product#
