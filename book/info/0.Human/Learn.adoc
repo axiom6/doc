@@ -2,7 +2,7 @@ include::../../../dir/inc/DefPractice.adoc[]
 
 ==  [.black]#Learn#
 
-=== [.black]#Main Points: The Business Model Canvas#
+=== [.black]#The Business Model Canvas#
 
 image::humanistic/bmcanvas.jpg[alt="BusinessModelCanvas",align="center"]
 

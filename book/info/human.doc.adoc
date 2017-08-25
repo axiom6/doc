@@ -4,15 +4,9 @@
 :data-uri:
 include::../../dir/inc/DefBook.adoc[]
 
-// include::MyStory.adoc[]
-
-// include::NotWorking.adoc[]
-
 = [.black]#Humanistic Concepts#
 
 include::0.Human/Introduction.adoc[]
-
-include::0.Human/Principles.adoc[]
 
 include::0.Human/Embrace.adoc[]
 

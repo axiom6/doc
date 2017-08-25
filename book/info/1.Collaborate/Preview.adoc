@@ -1,18 +1,12 @@
 
 include::../../../dir/inc/DefPractice.adoc[]
 
-== [.black]#Collaborate#
-
 Working together to create propositions, transform them into services, build the technology and put it into production.
 
-image::pnh2/Collaborate.png[alt="Collaborate",align="center"]
+image::graph/Collaborate.png[alt="Collaborate",align="center"]
 
 [horizontal]
-Charter::  A statement about the how teams see themselves.
+Charter::  A statement about the purpose and how teams see themselves.
 Request::  A proactive attitude to respond to and process requests.
 Team::     Everyone is assigned to a Project and their Expert group(s).
 Kanban::   A queue for pulling activities when members are ready.
-
-<<<
-
-

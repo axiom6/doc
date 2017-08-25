@@ -4,23 +4,40 @@ include::../../dir/inc/DefSlides.adoc[]
 
 = [.black]#Information Practices#
 
-include::1.Collaborate/Collaborate.pre.adoc[]
+== [.black]#Collaborate#
+include::1.Collaborate/Preview.adoc[]
+<<<
 
-include::2.Product/Product.pre.adoc[]
+== [.black]#Product#
+include::2.Product/Preview.adoc[]
+<<<
 
-include::3.Discover/Discover.pre.adoc[]
+== [.black]#Discover#
+include::3.Discover/Preview.adoc[]
+<<<
 
-include::4.Adapt/Adapt.pre.adoc[]
+== [.black]#Adapt#
+include::4.Adapt/Preview.adoc[]
+<<<
 
-include::5.Technology/Technology.pre.adoc[]
+== [.black]#Technology#
+include::5.Technology/Preview.adoc[]
+<<<
 
-include::6.Benefit/Benefit.pre.adoc[]
+== [.black]#Benefit#
+include::6.Benefit/Preview.adoc[]
+<<<
 
-include::7.Change/Change.pre.adoc[]
+== [.black]#Change#
+include::7.Change/Preview.adoc[]
+<<<
 
-include::8.Deliver/Deliver.pre.adoc[]
+== [.black]#Deliver#
+include::8.Deliver/Preview.adoc[]
+<<<
 
-include::9.Govern/Govern.pre.adoc[]
+== [.black]#Govern#
+include::9.Govern/Preview.adoc[]
 
 //ifdef::basebackend-html[]
 //include::../../dir/build/scripts.html[]

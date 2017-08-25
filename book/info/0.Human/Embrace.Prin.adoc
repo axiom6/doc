@@ -1,0 +1,22 @@
+
+include::../../../dir/inc/DefPractice.adoc[]
+
+==== [.black]#Psychological Safety#
+[horizontal]
+Confidence::   Our teams instill confidence into each member.
+Contribution:: Everyone's individual contributions are sought after and valued.
+Identity::     Everyone is comfortable being themselves.
+Harmonony::    Jobs and lifestyles are kept in balance.
+Safety::       We will not embarrass, reject or punish someone for speaking up.
+
+==== [.black]#Mutual Respect#
+[horizontal]
+Diversity::  We recognize everyone's diversity and approach.
+Individual:: We include in everyone's individual viewpoints.
+Together::   Together we make work happen.
+
+==== [.black]#Trust#
+[horizontal]
+Interpersonal:: Our teams thrive on interpersonal trust.
+Commitment::    We do not say it unless we mean it. We say we will do .
+Partner::       We are a trustworthy partner to everyone.

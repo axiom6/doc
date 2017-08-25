@@ -6,7 +6,7 @@ include::../../../dir/inc/DefPractice.adoc[]
 === [.black]#A Humanistic Approach#
 
 * We embrace, innovate and encourage cultural fit.
-* We refine what we learn do and share.
+* We successively refine what we learn, do and share.
 
 <<<
 === [.black]#Introducing a Humanistic Ontology#
@@ -22,39 +22,43 @@ Encourage:: A shared strategic vision for discovery, benefits  governed by princ
 
 === [.black]#Three Rows#
 [horizontal]
-Learn:: The means for defining the business with the model canvas.
-Do::    Technological adaptatiion and construction influenced by benefits.
+Learn:: A collaborative means for conceiving products and discovering thier connection to customers.
+Do::    Technological adaptatiion and construction influenced by it benefits.
 Share:: Continuous change and delivery overseen by governance.
 
+<<<
 === [.black]#Nine Practices#
 
-Practices emerge at the intersections of columns and rows.
+Practices emerge at the intersections of columns and rows
+Practices focus the principles of its column and row.
 
 [horizontal]
-Collaborate:: Team building with creative interaction.
-Product::     Transforming ideas into an attractive portfolio.
-Discovery::   Finding and communicating our vision to clients.
-Adapt::       Fine tuning our work.
-Technology::  Innovative engineering and construction.
-Benefit::     Realizing the best architecture that propels our discoveries.
-Change::      Continuous evolution.
-Deliver::     Sharing our work with our communities.
-Govern::      Facilitating and improving the entire company.
+Collaborate:: A charter driven proactive multi-faceted team response to requests with Kanban.
+Product::     Entitling our teams to transform propositions into an attractive well documented portfolio.
+Discovery::   Finding and connecting our vision to our community with valid assumptions.
+Adapt::       Fine tuning our work by insuring that our components provide acceptable features.
+Technology::  Integated engineering and construction for UIs, services and databases on the cloud.
+Benefit::     A pattern driven reviewed architecture that mitigates risk by quantitfying our discoveries.
+Change::      Transitioning, testing and deploying continuous change into evolutionary architecture.
+Deliver::     Supporting, securing and monitoring our cloud network for our communities.
+Govern::      Improving maturity by careful consideration of assets with compliance.
 
 <<<
 
 === [.black]#Thirty Six Studies#
 
-image::png2/Information.png[alt="Info",align="center"]
+image::study/Information.png[alt="Info",align="center"]
 
 <<<
 
 === [.black]#Twelve Connections between Nine Practices#
 
 * The six horizontal connections convey culture across columns.
-* The six vertical connections flow successive refinements down   rows.
+* The six vertical connections flow successive refinements down rows.
+  ** The innovative flows from Product to Technology to Deliver are further
+     broken out into a group of three.
 
-image::pnh2/Information.png[alt="Info",align="center"]
+image::graph/Information.png[alt="Info",align="center"]
 
 <<<
 
@@ -66,10 +70,10 @@ moving across the columns promotes cultural fit and moving down the rows
 provides perspectives for successive refinements.
 ////
 
-* The rest of this docu,ment discusses the inspiration and columns and rows
-in more detail
+* The rest of this document discusses the inspiration and principles behind
+  each column and row.
 
-* The subsequent document addresses each of the nine practices.
+* The subsequent document descrives each of the nine practices.
 
 
 

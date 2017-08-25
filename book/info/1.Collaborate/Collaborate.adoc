@@ -1,8 +1,10 @@
 
 include::../../../dir/inc/DefPractice.adoc[]
 
-include::Collaborate.pre.adoc[]
+== [.black]#Collaborate#
 
+include::Preview.adoc[]
+<<<
 include::Charter.adoc[]
 
 include::Request.adoc[]
@@ -10,5 +12,4 @@ include::Request.adoc[]
 include::Team.adoc[]
 
 include::Kanban.adoc[]
-
 <<<

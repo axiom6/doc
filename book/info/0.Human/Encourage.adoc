@@ -3,24 +3,39 @@ include::../../../dir/inc/DefPractice.adoc[]
 
 == [.black]#Encourage#
 
-=== [.black]#Start With Why#
+=== [.black]#Principles#
+include::Encourage.Prin.adoc[]
+<<<
 
-link::http://bit.ly/2iST2Oy[How Great Leaders Inspire Action by Simon Sinek]
+=== [.black]#Discover#
+include::../3.Discover/Preview.adoc[]
+<<<
 
+=== [.black]#"Start With Why"* by Simon Sinek#
 image::humanistic/GoldenCircle.png[alt="Info",align="center"]
-
 <<<
-=== [.black]#Encourage Practices#
 
-image::onto/Encourage.png[alt="Encourage",align="center"]
-
-<<<
 === [.black]#What Makes Encourage Work#
 
+==== [.black]#Vision#
 [horizontal]
-What:: We discover our vision communities
-How::  x
-Why::  W
+Why::     We constantly ask Why with out Product practice.
+Benefit:: We list and assess all out Assumption with the Benefit practice.
+Govern::  We govern ourselves with vision and passion. 
 
- 
+==== [.black]#Community#
+[horizontal]
+Serve::    We learn everything about our Community to serve their needs.
+Priority:: Our teams and customers are our Vision.
 
+==== [.black]#Connect#
+[horizontal]
+Strive::  We strive to discover and connect to out community.
+Genuine:: With constantly examine our Connections.
+
+==== [.black]#Assumptions#
+[horizontal]
+Track:  We interchallenge all our assumptions.
+Errors: Our mistakes help us abandon our old assumptions.
+
+//link::http://bit.ly/2iST2Oy[How Great Leaders Inspire Action by Simon Sinek]

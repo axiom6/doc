@@ -1,0 +1,11 @@
+
+
+==== [.black]#Psychological Safety#
+[cols="15,85",frame=none,grid=none]
+|====
+| Confidence   | Our teams instill confidence into each member.
+| Contribution | Everyone's individual contributions are sought after and valued.
+| Identity     | Everyone is comfortable being themselves.
+| Balance      | Jobs and lifestyles are in harmonony.
+| Safety       | The team will not embarrass, reject or punish someone for speaking up.
+|====

@@ -1,14 +1,11 @@
 
 include::../../../dir/inc/DefPractice.adoc[]
 
+== [.black]#Benefit#
 include::Benefit.pre.adoc[]
-
+<<<
 include::Quantify.adoc[]
-
 include::Patterns.adoc[]
-
 include::Risk.adoc[]
-
 include::Review.adoc[]
-
 <<<

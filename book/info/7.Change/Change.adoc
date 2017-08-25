@@ -1,14 +1,11 @@
 
 include::../../../dir/inc/DefPractice.adoc[]
 
+== [.black]#Change#
 include::Change.pre.adoc[]
-
+<<<
 include::Test.adoc[]
-
 include::Transition.adoc[]
-
 include::Deploy.adoc[]
-
 include::Maintain.adoc[]
-
 <<<
