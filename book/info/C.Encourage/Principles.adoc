@@ -4,12 +4,11 @@ include::../../../dir/inc/DefPractice.adoc[]
 ==== [.black]#Vision#
 [horizontal]
 Why::     We communicate our positive "Why" message to our community.
-Benefit:: Everything we do benefits everyone.
-Govern::  We govern ourselves with vision and passion. 
+Govern::  We govern by our vision and passion. 
 
 ==== [.black]#Community#
 [horizontal]
-Serve:: We serve community needs to the best of our abilities.
+Benefit::  We benefit everyone with a minimum of Risk.
 Priority:: We recognize our teams and customers are the reason for our existence.
 
 ==== [.black]#Connect#

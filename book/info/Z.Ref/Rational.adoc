@@ -1,0 +1,279 @@
+
+Nassim Nicholas Taleb
+Aug 21
+How to be Rational about Rationality
+
+[One of the more technical (and optional) chapters, at the end of Skin of the Game]
+
+Rory Sutherland claims that the real function for swimming pools is allowing the
+middle class to sit around in bathing suits without looking ridiculous.
+Same with New York restaurants: you think their mission is to feed people,
+but that’s not what they do. They are in the business of selling you overpriced
+liquor or Great Tuscan wines by the glass, yet get you into the door by serving
+you your low-carb (or low-something) dishes at breakeven cost.
+(This business model, of course, fails to work in Saudi Arabia).
+
+So when we look at religion and, to some extent ancestral superstitions,
+we should consider what purpose they serve, rather than focusing on the notion of “belief”,
+epistemic belief in its strict scientific definition. In science, belief is literal belief;
+it is right or wrong, never metaphorical. In real life, belief is an instrument to do
+things, not the end product. This is similar to vision: the purpose of your eyes is to
+orient you in the best possible way, and get you out of trouble when needed, or help you
+find a prey at distance. Your eyes are not sensors aimed at getting the electromagnetic
+spectrum of reality. Their job description is not to produce the most accurate scientific
+representation of reality; rather the most useful one for survival.
+
+* Ocular Deception
+
+Our perceptional apparatus makes mistakes –distortions — in order to lead to more precise
+actions on our parts: ocular deception, it turns out, is a necessary thing.
+Greek and Roman architects misrepresent the columns of the temples, by tilting them
+inward, in order to give us the impression that the columns are straight.
+As Vitruvius explains, the aim is to “counteract the visual deception by an change of
+proportions”[i]. A distortion is meant to bring about an enhancement of your aesthetic
+experience. The floor of the Parthenon is curved in reality so we can see it straight.
+The columns are in truth unevenly spaced, so we can see them lined up like a marching
+Russian division in a parade.
+
+Should one go lodge a complain with the Greek Tourism Office claiming that the columns
+are not vertical and someone is taking advantage of our visual weaknesses?
+Temple of Bacchus, Baalbeck, Lebanon
+
+* Ergodicity First
+
+The same applies to distortions of beliefs. Is this visual deceit any different from
+leading someone to believe in Santa Claus, if it enhances his or her holiday aesthetic
+experience? No, unless the person engages in actions that ends up harming him or her.
+
+In that sense harboring superstitions is not irrational by any metric: nobody has managed
+to reinvent a metric for rationality based on process. Actions that harm you are observable.
+
+I have shown that, unless one has an overblown and (as with Greek columns), a very
+unrealistic representation of some tail risks, one cannot survive –all it takes is a
+single event for the irreversible exit from among us. Is selective paranoia “irrational”
+if those individuals and populations who don’t have it end up dying or extinct, respectively?
+
+A statements that will orient us for the rest of the book
+
+* Survival comes first, truth, understanding, and science later
+
+In other words, you do not need science to survive (we’ve done it for several hundred
+million years) , but you need to survive to do science. As your grandmother would have
+said, better safe than sorry. This precedence is well understood by traders and people
+in the real world, as per Warren Buffet expression “to make money you must first survive”
+–skin in the game again; those of us who take risks have their priorities firmer than
+vague textbook notions such as “truth”. More technically,
+this brings us again to the ergodic property
+(I keep my promise to explain it in detail, but we are not ready yet): for the world
+to be “ergodic”, there needs to be no absorbing barrier, no substantial irreversibilities.
+
+And what do we mean by “survival”? Survival of whom? Of you? Your family? Your tribe?
+Humanity? We will get into the details later but note for now that I have a finite shelf
+life; my survival is not as important as that of things that do not have a limited
+life expectancy, such as mankind or planet earth. Hence the more “systemic”,
+the more important such a survival becomes.
+An illustration of the Bias-Variance tradeoff. Assume two people (sober) shooting at a
+target in, say, Texas. The top shooter has a bias, a systematic “error”, but on
+balance gets closer to target than the bottom shooter who has no systematic bias
+but a high variance. Typically, you cannot reduce one without increasing the other.
+When fragile, the strategy at the top is the best: maintain a distance from ruin,
+that is, hitting a point in the periphery should it be dangerous.
+This schema explains why if you want to minimize the probability of the plane crashing,
+you may make mistakes with impunity provided you lower your dispersion.
+
+***
+
+Three rigorous thinkers will orient my thinking on the matter: the cognitive scientist
+and polymath Herb Simon, pioneer of Artificial Intelligence, and the derived school
+of thought led by Gerd Gigerenzer, on one hand, and the mathematician, logician and
+decision theorist Ken Binmore who spent his life formulating the logical foundations
+of rationality.
+From Simon to Gigerenzer
+
+Simon formulated the notion now known as bounded rationality: we cannot possibly
+measure and assess everything as if we were a computer; we therefore produce, under
+evolutionary pressures, some shortcuts and distortions. Our knowledge of the world is
+fundamentally incomplete, so we need to avoid getting in unanticipated trouble.
+Even if our knowledge of the world were complete, it would still be computationally
+near-impossible to produce precise, unbiased understanding of reality.
+A fertile research program on ecological rationality came out of it,
+mostly organized and led by Gerd Gigerenzer, mapping how many things we do that appear,
+on the surface, illogical have deeper reasons.
+Ken Binmore
+
+As to Ken Binmore, he showed that the concept casually dubbed “rational” is ill-defined,
+in fact so ill-defined that much of the uses of the term are just gibberish.
+There is nothing particularly irrational in beliefs per se (given that they can be
+shortcuts and instrumental to something else): to him everything lies in the notion of
+“revealed preferences”, which we explain next.
+
+Binmore also saw that criticism of the “rational” man as posited by economic theory is
+often a strawman argument distorting the theory in order to bring it down. He recounts
+that economic theory, as posited in the original texts, is not as strict in its
+definition of “utility”, that is, the satisfaction a consumer and a decision-maker
+derive from a certain outcome. Satisfaction does not necessarily have to be monetary.
+There is nothing irrational, according to economic theory, in giving your money to a
+stranger, if that’s what makes you tick. And don’t try to invoke Adam Smith: he was a
+philosopher not an accountant; he never equated human interests and aims to narrow
+accounting book entries.
+
+* Revelation of Preferences
+
+Next let us develop the following three points:
+
+* Judging people on their beliefs is not scientific
+
+* There is no such thing as “rationality” of a belief, there is rationality of action
+
+* The rationality of an action can only be judged by evolutionary considerations
+
+The axiom of revelation of preferences states the following: you will not have an idea
+about what people really think, what predicts people’s actions, merely by asking them –they themselves don’t know. What matters, in the end, is what they pay for goods, not what they say they “think” about them, or what are the reasons they give you or themselves for that. (Think about it: revelation of preferences is skin in the game). Even psychologists get it; in their experiments, their procedures require that actual dollars be spent for the test to be “scientific”. The subjects are given a monetary amount, and they watch how he or she formulates choices by spending them. However, a large share of psychologists fughedabout the point when they start bloviating about rationality. They revert to judging beliefs rather than action.
+
+For beliefs are … cheap talk. A foundational principle of decision theory (and one that
+is at the basis of neoclassical economics, rational choice, and similar disciplines) is
+that what goes on in the head of people isn’t the business of science. First, what they
+think may not be measurable enough to lend itself to some scientific investigation.
+Second, it is not testable. Finally, there may be some type of a translation mechanism
+too hard for us to understand, with distortions at the level of the process that are
+actually necessary for think to work.
+
+Actually, by a mechanism (more technically called the bias-variance tradeoff),
+you often get better results making some type of “errors”, as when you aim slightly
+away from the target when shooting. I have shown in Antifragile that making some
+types of errors is the most rational thing to do, as, when the errors are of little
+costs, it leads to gains and discoveries.
+
+This is why I have been against the State dictating to us what we “should” be doing:
+only evolution knows if the “wrong” thing is really wrong, provided there is skin in
+the game for that.
+
+he classical “large world vs small world” problem. Science is currently too incomplete
+to provide all answers –and says it itself. We have been so much under assault by vendors using “science” to sell products that many people, in their mind, confuse science and scientism. Science is mainly rigor.
+
+What is Religion About ?
+
+It is therefore my opinion that religion is here to enforce tail risk management
+across generations, as its binary and unconditional rules are easy to teach and enforce.
+We have survived in spite of tail risks; our survival cannot be that random.
+
+Recall that skin in the game means that you do not pay attention to what people say,
+only to what they do, and how much of their neck they are putting on the line. Let
+survival work its wonders.
+
+Superstitions can be vectors for risk management rules. We have as potent information
+that people that have them have survived; to repeat never discount anything that allows
+you to survive. For instance Jared Diamond discusses the “constructive paranoia” of
+residents of Papua New Guinea, whose superstitions prevent them from sleeping under
+dead trees. [1] Whether it is superstition or something else, some deep scientific
+understanding of probability that is stopping you, it doesn’t matter, so long as you
+don’t sleep under dead trees. And if you dream of making people use probability in
+order to make decisions, I have some news: close to ninety percent of psychologists
+dealing with decision-making (which includes such regulators as Cass Sunstein) have
+no clue about probability, and try to disrupt our organic paranoid mechanism.
+
+Further, I find it incoherent to criticize someone’s superstitions if these are meant
+to bring some benefits, yet not do so with the optical illusions in Greek temples.
+
+The notion of “rational” bandied about by all manner of promoters of scientism isn’t
+defined well enough to be used for beliefs. To repeat, we do not have enough grounds
+to discuss “irrational beliefs”. We do with irrational actions.
+
+Now what people say may have a purpose –it is not just what they think it means.
+Let us extend the idea outside of buying and selling to the risk domain: opinions
+in are cheap unless people take risks for them.
+
+Extending such logic, we can show that much of what we call “belief” is some kind of
+background furniture for the human mind, more metaphorical than real.
+It may work as therapy.
+
+“Tawk” and Cheap “Tawk”
+
+The first principle we make:
+
+There is a difference between beliefs that are decorative and a different sort of
+beliefs, those that map to action.
+
+There is no difference between them in words, except that the true difference
+reveals itself in risk taking, having something at stake, something one could
+lose in case one is wrong.
+
+And the lesson, by rephrasing the principle:
+
+How much you truly “believe” in something can only be manifested through what you
+are willing to risk for it.
+
+But this merits continuation. The fact that there is this decorative component to belief,
+life, these strange rules followed outside the Gemelli clinics of the world merits a discussion. What are these for? Can we truly understand their function? Are we confused about their function? Do we mistake their rationality? Can we use them instead to define rationality?
+What Does Lindy Say?
+
+Let us see what Lindy has to say about “rationality”. While the notions of “reason” and
+“reasonable” were present in ancient thought, mostly embedded in the notion of precaution, or sophrosyne, this modern idea of “rationality” and “rational decision-making” was born in the aftermath of Max Weber, with the works of psychologists, philosophasters, and psychosophasters. The classical sophrosyne is precaution, self-control, and temperance, all in one. It was replaced with something a bit different. “Rationality” was forged in a post-enlightenment period[2], at the time when we thought that understanding the world was at the next corner. It assumes no randomness, or a simplified the random structure of our world. Also of course no interactions with the world.
+
+The only definition of rationality that I found that is practically, empirically, and
+mathematically rigorous is that of survival –and indeed, unlike the modern theories by psychosophasters, it maps to the classics. Anything that hinders one’s survival at an individual, collective, tribal, or general level is deemed irrational.
+
+Hence the precautionary principle and sound risk understanding.
+
+It may be “irrational” for people to have two sinks in their kitchen, one for meat
+and the other for dairy, but as we saw, it led to the survival of the
+Jewish community as Kashrut laws forced them to eat and bind together.
+
+It is also rational to see things differently from the “way they are”, for improved
+performance.
+
+It is also difficult to map beliefs to reality. A decorative or instrumental belief,
+say believing in Santa Claus or the potential anger of Baal can be rational if it leads to an increased survival.
+
+The Nondecorative in the Decorative
+
+Now what we called decorative is not necessarily superfluous, often to the contrary.
+They may just have another function we do not know much about –and we can consult for
+that the grandmaster statistician, time, in a very technical tool called the survival
+function, known by both old people and very complex statistics –but we will resort here
+to the old people version.
+
+The fact to consider is not that these beliefs have survived a long time
+–the Catholic church is an administration that is close to twenty-four centuries
+old (it is largely the continuation of the Roman Republic). The fact is not that .
+It is that people who have religion –a certain religion — have survived.
+
+Another principle:
+
+When you consider beliefs do not assess them in how they compete with other beliefs,
+but consider the survival of the populations that have them.
+
+Consider a competitor to the Pope’s religion, Judaism. Jews have close to five
+hundred different dietary interdicts. They may seem irrational to an observer who sees
+purpose in things and defines rationality in terms of what he can explain. Actually they will most certainly seem so. The Jewish Kashrut prescribes keeping four sets of dishes, two sinks, the avoidance of mixing meat with dairy products or merely letting the two be in contact with each other, in addition to interdicts on some animals: shrimp, pork, etc. The good stuff.
+
+These laws might have had an ex ante purpose. One can blame insalubrious behavior of
+pigs, exacerbated by the heat in the Levant (though heat in the Levant was not markedly
+different from that in pig-eating areas further West). Or perhaps an ecological reason: kids compete with humans in eating the same vegetables while cows eat what we don’t eat.
+
+But it remains that whatever the purpose, the Kashrut survived approximately three
+millennia not because of its “rationality” but because the populations that followed
+it survived. It most certainly brought cohesion: people who eat together hang together.
+Simply it aided those that survived because it is a convex heuristic. Such group cohesion might be also responsible for trust in commercial transactions with remote members of the community.
+
+This allows us to summarize
+
+Rationality is not what has conscious verbalistic explanatory factors; it is only what
+aids survival, avoids ruin.
+
+Rationality is risk management, period.
+
+[1] “Consider: If you’re a New Guinean living in the forest, and if you adopt the bad
+habit of sleeping under dead trees whose odds of falling on you that particular night
+are only 1 in 1,000, you’ll be dead within a few years. In fact, my wife was nearly
+killed by a falling tree last year, and I’ve survived numerous nearly fatal situations
+in New Guinea.”
+
+[2]
+
+[i] Vitruvius, Ten Books on Architecture Book III, Chapter 1, v. 4, 1 A.D.
+
+    PhilosophyRationalityReligionChrisEconomics
+
+
+
