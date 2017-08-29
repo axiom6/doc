@@ -1,0 +1,150 @@
+
+Strategy
+
+    Trending Tech Insider Finance Politics Strategy Life Sports Video All
+
+9 details you might have missed on the 'Game of Thrones' season finale
+15 apps for your iPhone that are better than the ones Apple made
+Every 'Game of Thrones' romantic relationship, ranked from worst to best
+The 12 biggest questions we have after the 'Game of Thrones' season 7...
+One of the fathers of modern computing used this 6-step process to solve any problem
+
+    Rob Goodman and Jimmy Soni, Contributors
+
+    Jul. 28, 2017, 10:50 AM 42,599
+
+    facebook
+    linkedin
+    twitter
+    email
+    print
+
+claude shannon You don't know Claude Shannon, pictured, but you should. Keystone/Getty Images
+
+"Genius is rarely able to give an account of its own processes," the philosopher George Henry Lewes once observed.
+
+It's true — and not a surprise. Even when it comes to the most basic everyday tasks — making a pot of coffee, parallel parking, or folding the laundry — it's one thing to do them; it's something else entirely to shut off the force of habit and explain, step-by-step, how you are doing them.
+
+And if this is the case for some of the simplest human activities, it's far more true for the most complex ones — writing symphonies and novels, developing new technologies, inventing new scientific paradigms. Geniuses are rarely the best teachers, the best critics, or the best explainers. So it's rare to come across a genius's account of "how genius works."
+
+But such accounts do exist, and we were lucky enough to unearth one near the end of our research into the life of Claude Shannon (1916-2001), the intellectual architect of the information age.
+You don't know him, but you should.
+
+Some may not know the name Claude Shannon, but he is as consequential a figure as exists in modern computing and information technology. At 21, Shannon wrote an astonishing master's thesis showing how binary switches in computers could perform all of the functions of logic; that insight became, wrote Walter Isaacson, "the basic concept underlying all digital computers."
+
+That's not all. At 32, Shannon published "The Mathematical Theory of Communication," which has been called "the Magna Carta of the Information Age." It invented the concept of the "bit," showed how information could be quantified, and demonstrated how electronic messages could be both radically compressed and sent between any two points with perfect accuracy.
+
+Shannon's 1948 information theory is the reason we can load web pages and send emails — and he thought it up decades before the digital world came to pass. As a colleague said later, "How he got that insight, how he even thought such a thing, I don't know."
+So, how did he do it?
+
+That question — How did he do it? — always hovered at the edges of Shannon's life. An introverted Midwesterner, shy from childhood through adulthood, Shannon had the kind of impenetrable intellect common to geniuses. He kept his own counsel, and he wasn't given to waxing philosophical on the creative process or the nature of genius.
+
+Except one time.
+
+In a cache of unpublished papers deep in an online archive, we found Shannon's attempt at an answer. It's the typed text of a March 20th, 1952, lecture to his colleagues at Bell Labs on the topic of "Creative Thinking." And it turned out to represent a tantalizingly rare window into the mind of a scientific genius — a step-by-step breakdown of Shannon's method for formulating and solving problems.
+
+claude shannon script We found the unpublished transcript of a speech by Shannon that offered new insight into his thought process. Jimmy Soni and Rob Goodman
+
+Shannon was speaking to an audience of engineers, but we've found his problem-solving methods remarkably flexible across a whole range of fields and refreshingly accessible to all of us non-geniuses, too. Because what Shannon describes isn't the glittering end product of his mental efforts, it's the process he takes to get there, one that doesn't require an excess of IQ points to use.
+
+=== [.black]#Step 1: Simplify. Simplify. Simplify#
+
+Step one, Shannon said, you should approach a problem — any problem — by simplifying: "Almost every problem that you come across is befuddled with all kinds of extraneous data of one sort or another; and if you can bring this problem down into the main issues, you can see more clearly what you're trying to do."
+
+Shannon's information theory, for instance, began with a colossal simplification: It treated every source of information, from a TV broadcast to a gene, as fundamentally the same. All of the information that they send can be measured in the same unit — the bit — and they can all be studied as instances of the same basic process of encoding, transmitting, and decoding. Stripping away everything inessential was just what helped Shannon get to the essence of information.
+
+No matter the problem, Shannon said, "cut it down to size." Shannon admitted that this process could file a problem down to almost nothing, but that was precisely the point: "You may have simplified it to a point that it doesn't even resemble the problem that you started with; but very often if you can solve this simple problem, you can add refinements to the solution of this until you get back to the solution of the one you started with."
+
+Bob Gallager, a Shannon graduate student who went on to become a leading information theorist himself, saw this process of radical simplification in action. He describes coming to Shannon's office one day with a new research idea full of "bells and whistles." For Shannon, though, bells and whistles were just a distraction and he proceeded to take the problem apart piece by piece. As Gallager said:
+
+"He looked at it, sort of puzzled, and said, 'Well, do you really need this assumption?' And I said, well, I suppose we could look at the problem without that assumption. And we went on for a while. And then he said, again, 'Do you need this other assumption?'… And he kept doing this, about five or six times. ... At a certain point, I was getting upset, because I saw this neat research problem of mine had become almost trivial. But at a certain point, with all these pieces stripped out, we both saw how to solve it. And then we gradually put all these little assumptions back in and then, suddenly, we saw the solution to the whole problem. And that was just the way he worked."
+
+It's a useful lesson, even for those of us not grappling with high-level mathematics. Steve Jobs, for instance, turned simplification into a multibillion-dollar strategy for computers and devices. Jobs became a kind of student of the simple, and he drew his inspiration for Apple products from others who had managed to excise the unnecessary: the architects Frank Lloyd Wright and Joseph Eichler, for instance, and the designers of the Zen gardens around Kyoto.
+
+Even as early as 1977, Apple had adopted a motto that Shannon would have approved of: "Simplicity is the ultimate sophistication." And Jobs also came to understand that such simplicity wasn't an accident. In his words, "it takes a lot of hard work to make something simple, to truly understand the underlying challenges and come up with elegant solutions."
+
+Both Shannon and Jobs made simplicity their aim. And the staying power of their respective products reveals that it is a target worth aiming for.
+
+=== [.black]#Step 2: Fill your 'mental matrix' with solutions to similar problems.#
+
+Failing this difficult work of simplification, you might attempt another step: Encircle your problem with existing answers to similar questions, and then deduce what it is that the answers have in common. Drawing P's and S's on the blackboard to stand for problems and solutions, Shannon observed that if you're a true expert, "your mental matrix will be filled with P's and S's," a vocabulary of questions already answered.
+
+a mind at play book coverSimon & Schuster
+
+Shannon gives a nod here to the value of experience and years of study and practice. But for him, the value of such practice is that it allows for a kind of ingenious incrementalism. As Shannon put it, "it seems to be much easier to make two small jumps than the one big jump in any kind of mental thinking." The refusal to make "the one big jump" was a secret of Shannon's success in his early and most productive years, up through the publication of "The Mathematical Theory of Communication."
+
+At each stage, he found bridges between fields that had no prior connection. For his PhD dissertation, he applied algebra to the science of genetics and produced publishable work within a year, despite having no background as a biologist or geneticist. His years of work on symbolic logic and electrical engineering provided him with a wealth of portable concepts that shed new light on the field.
+
+It might seem obvious that we can find answers to questions in our field hiding in adjacent fields, but how many of us actually take the time to deeply engage the ideas in another domain? It's uncomfortable to be a novice, to be airdropped into unexplored intellectual terrain. But that kind of exercise, as Shannon himself demonstrated, can help everyone from mathematicians to tech entrepreneurs break through creative blocks.
+
+One way to do this: Read widely. Remember: Shannon's P's-and-S's strategy worked because he had a very full "mental matrix." He was omnivorous in his information intake, and he didn't just read papers in mathematics and engineering, but also devoured poetry and philosophy and even music. His example ought to inspire us to do the same: to gather and store information and insights that may not have direct relevance to our work, but that can provide useful solutions by analogy.
+
+In other words: Evernote junkies, rejoice!
+
+=== [.black]#Step 3: Approach the problem from many different angles.#
+
+Next, Shannon pointed to the value of looking at problems upside-down. "Change the words. Change the viewpoint. ... Break loose from certain mental blocks which are holding you in certain ways of looking at a problem."
+
+Shannon's information theory offered just such a reorientation of an old problem. In this case, it was the problem of communicating accurately at great distances. Nearly a century of conventional wisdom held that the solution required, in essence, talking louder — sending signals with more power. Shannon, on the other hand, demonstrated that the most reliable solution really lay in talking smarter — developing digital codes to protect messages from error. The engineering professor James Massey called this insight "Copernican": In other words, it took an old way of seeing the world and turned it on its head.
+
+The value of turning that problem upside down was just why it was so essential to avoid "ruts of mental thinking," the tendency to become trapped by all the work you or your field has already put in. There's a reason why, as Shannon put, "someone who is quite green to a problem" will sometimes be the one to solve it: They are unconstrained by the biases that build up over time.
+
+How to work this into your work? Fresh angles can come in different forms. Michael Lewis, the best-selling author of such books as "Moneyball" and "The Blind Side," once described an editing process that involved looking at his almost-finished text on his phone, on printed paper, and on the computer screen. Each time, he would discover different issues and errors. While it's amusing to think of a famous author correcting paragraphs with his thumbs, what Lewis is doing is precisely what Shannon would have suggested: looking at the "problem" of his written work in a way he hadn't before.
+
+Change the angle and you might find the answer.
+
+=== [.black]#Step 4: Break a big problem down into small pieces.#
+
+Shannon argued that one of the most powerful ways of changing your viewpoint on a problem is through "structural analysis" — that is, through breaking an overwhelming problem into small pieces.
+
+claude shannon Shannon couldn't help approaching things differently from everyone else. Jimmy Soni & Rob Goodman
+
+That's particularly true for mathematicians. "Many proofs in mathematics have been actually found by extremely roundabout processes," Shannon pointed out. "A man starts to prove this theorem and he finds that he wanders all over the map. He starts off and proves a good many results which don't seem to be leading anywhere and then eventually ends up by the back door on the solution of the given problem."
+
+That insight isn't only true for mathematics, of course. As Shannon points out, his machine and design work benefitted from the same approach. "If you can design a way of doing something which is obviously clumsy and cumbersome; uses too much equipment; but after you've got something you can hang on to, you can start cutting out components and seeing some parts were really superfluous," he said.
+
+Endurance athletes know this Shannon trick well. The Olympic runner Kara Goucher talked about the first time she had to run a marathon — a significantly longer distance (26.2 miles) than her usual 10,000 meter race distance (6.2 miles). When the pain hit, she had to remind herself to go a chunk at a time, to "survive to each mile marker, knowing I could get another mile out of myself."
+
+Nothing saps the spirit like thinking about how many miles are left or how complex a problem is. Instead, great runners and great problem-solvers think of these challenges as a series of small, bite-sized steps. Don't get stuck looking at the whole problem. Find the constituent pieces and tackle those instead.
+
+=== [.black]#Step 5: Solve the problem 'backwards.'#
+
+Problems that can't be solved by analysis might still be "solved" backwards. If you can't use your premises to prove your conclusion, just imagine that the conclusion is already true and see what happens. Try proving the premises instead.
+
+This style of "retrograde analysis" or "backwards induction" has a wide range of applications, in everything from game theory to medicine. In a TED talk, chess Grandmaster Maurice Ashley explained how he often uses that method to plan his strategy backwards from the endgame he has in mind. "When you're dead, I already knew 10 moves ago, because I knew where you were going," he said.
+
+We've found that this style of "backwards" problem-solving can be useful even in a field like writing, which doesn't have the same level of clarity about winners and losers or right and wrong. In fact, for one draft of this piece, we decided to rewrite from the bottom up, beginning with the conclusion and working our way back to the introduction. And in our Shannon biography, polishing the introduction was one of the very last things we did before sending the draft off to the publisher. It's a clarifying process: When we know where readers are going, we can do a better job of getting them there.
+
+=== [.black]#Step 6: If you've solved the problem, extend that solution out as far as it will go.#
+
+Finally, once you've found your solution, take time to see how far it will stretch. The logic that holds true on the smallest levels often, it turns out, holds true on the largest. As Shannon put it, "The typical mathematical theory is developed … to prove a very isolated, special result, [a] particular theorem. Someone always will come along and start generalizing it."
+
+So why not do it yourself? Again, that's the case in the specialized world of math, but it's equally true in any field that depends on "scaling up" solutions to smaller problems. It's a well-worn example, but just consider how effectively Amazon generalized the lessons it learned selling books, until they applied to virtually any product under the sun. "The Everything Store" was an act of radical generalization — taking something that had worked in a small product category and extending it as far as it would go.
+Where does genius come from?
+
+Above all, Shannon said in his speech, the defining mark of a genius is not that he or she is an encyclopedia of answers — it is a quality of "motivation … some kind of desire to find out the answer, the desire to find out what makes things tick." That fundamental drive was indispensable: "If you don't have that, you may have all the training and intelligence in the world, [but] you don't have the questions and you won't just find the answers."
+
+claude shannon You don't have to be a genius like Shannon to use his method. Jimmy Soni and Rob Goodman
+
+Shannon was choosing his words carefully when he said that you have to "have the questions." The greatest reward of genius may be the satisfaction that comes with resolving intellectual puzzles. "If I've been trying to prove a mathematical theorem for a week or so and I finally get the solution, I get a big bang out of it," Shannon said.
+
+Where does that fundamental drive to find the questions come from? Shannon's most evocative formulation of that elusive quality put it like this: It was "a slight irritation when things don't look quite right," or a "constructive dissatisfaction."
+
+This isn't the picture of genius we're accustomed to, but that's why it's so compelling. Shannon's account of genius was a refreshingly unsentimental one. A genius is simply someone who is usefully irritated.
+
+Shannon left his colleagues with a final, particularly challenging thought: "I think that good research workers apply these things unconsciously; that is, they do these things automatically." As valuable and as rare as it is to find a bona fide genius spelling out the operations of his genius, putting your modes of problem-solving into words isn't enough. They have to become second nature — you have to live inside of them. Shannon's real genius lay not in explaining how his own mind worked, but in his capacity for simplifying, taking apart, and inverting problems automatically.
+
+At the end of his lecture, Shannon invited his colleagues up to the front of the auditorium to examine a new gadget he'd been tinkering on. The text of his lecture leaves us in the dark on identity of this particular gadget, whether it was a prototype of his maze-solving mouse, his rock-paper-scissors machine, or some other contraption. Shannon was always tinkering on something — thinking not just about things, as one engineer put it, but through things.
+
+Yet even though he excelled in the world of mathematics and engineering, the beauty of Shannon's lecture is that its insights apply just as well outside of that world. Few of us have Shannon's mental gifts, or even his quality of "constructive dissatisfaction." But the fact that he considered his strategies worth sharing at all suggests that you don't have to be a genius to reap their benefits.
+You can find Shannon's full speech below.
+
+Claude Shannon Creative Thinking by richfeloni on Scribd
+
+Jimmy Soni is an author, editor, speechwriter, and partner at the creative advisory Brass Check. Rob Goodman is a doctoral candidate at Columbia University and a former congressional speechwriter. They are the coauthors of " the coauthor of "A Mind at Play: How Claude Shannon Invented the Information Age" and "Rome's Last Citizen: The Life and Legacy of Cato, Mortal Enemy of Caesar."
+SEE ALSO: I spent 3 years training fighter pilots at the real Top Gun — and it taught me a lesson all elite organizations understand
+NOW WATCH: Einstein's unique way of thinking contributed to his genius — here's how
+More: Claude Shannon A Mind At Play
+
+
+

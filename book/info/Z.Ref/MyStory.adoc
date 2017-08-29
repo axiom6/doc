@@ -1,12 +1,41 @@
 
 include::../../../dir/inc/DefPractice.adoc[]
 
-==  [.black]#My Story#
+===  [.black]#Growing Up#
+
+* I am not sure how all this happened but it did
+
+I grew up in a beautiful house enveloped in an oak forest where I built
+a log cabin or treehouse. My mother took me and my brothers and sister
+to the library twice a week. Each of us had our own train
+and chemistry sets. I could walk outside and play football and
+baseball with my neighborhood friends. I could walk three blocks to
+our neighborhood pool club to swim all summer. My Boy Scout Troop
+would take us camping every month. My father was a talented
+aerospace engineer who brilliantly shared the joy of his work, or that my
+mother was a hard working caretaker who made life easy for us all. I
+had to honor of going to the best high school Calvert Hall from 1967 to 1971
+and was wonderfully stimulated by the 60's. I would take the bus downtown
+to the Peabody Institue to learned to play the piano, then afterwoods head
+over to Mount Vernon Park to experience Baltimore Summer of Love. My friends
+and I formed a garage band, that transformed into an English band (Diffusers)
+and then morphed into a psychelic band (Windy Hollows). Math was
+easy for me in class so that Calvert Hall gave me a desk in the study hall
+to tutor other students. Mmy high school physchology teacher showed
+me Maslow's what Self Actuallization meant. Brother Henry staged a
+happening in our High School auditorium.
+
+Who knows, but what I do know that the world is a multifaceted place full
+of wonder and I now fully appreciate my wonderful parents, teachers and
+neighbors who worked hard to let it all happen.
+
 
 === [.black]#Calvert Hall#
 
-Growing up in Baltimore Maryland I was fortunate to attend Calvert Hall College High School from 1967 to 1971.
-We had the best class schedule were structured weekly with two lectures and two seminars.
+Growing up in Baltimore Maryland I was fortunate to attend Calvert Hall College
+High School from 1967 to 1971.
+We had the best class schedule were structured weekly with two lectures and two
+seminars.
 
 
 Calvert Hall College High School is a private Catholic college preparatory high school for boys, located in Baltimore, Maryland.

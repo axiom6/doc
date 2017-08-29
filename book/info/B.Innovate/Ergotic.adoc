@@ -1,0 +1,7 @@
+
+"involving or relating to the probability that any state will recur,
+especially having zero probability that any state will never recur."
+Therefore, "an ergodic stochastic process simply means that averages
+calculated from past observations cannot be persistently different
+from the time average of future outcomes." For Samuelson the ergodic
+hypothesis was essential for a scientific economics.
