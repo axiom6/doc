@@ -5,8 +5,55 @@ include::../../../dir/inc/DefPractice.adoc[]
 
 === [.black]#A Humanistic Approach#
 
-* We embrace, innovate and encourage cultural fit.
-* We successively refine what we learn, do and share.
+"The Collaboration, Innovation & Encouragement from Open Source communities is
+the 21st century enlightenment that everyone is entitled too."
+
+When I Tweeted this on August 29, 2017 I finally realized what
+Humanistic Practices is all about.
+
+* "Everyone is entitled too Collaborate in a safe environment to make their contributions."
+
+* "Everyone has the capacity to Innovate. It is what makes us human."
+
+* "As we travel on our journey we need to accept and provide Encouragement for Enlightenment."
+
+At first this may appear to be religious text, but this philosophy is what inspires the Open Source
+community at GitHub.
+
+=== [.black]#GitHub - The largest open source community in the world#
+
+As of March 17, 2017 there are 27 million people with 57 open source reposities on GitHub.
+Join one or start your own.
+
+Shape the future of software::
+Your contributions help make technology better for everyone, developers and non-developers alike.
+
+Grow your skills and help others::
+Whatever your skill level, working on open source software is a great way to learn new things.
+
+Work with the best in the field::
+Amazing developers use GitHub. Contribute code to projects that change how software is built.
+
+=== [.black]#What Can we Learn from Millions of People#
+
+We learn that great things have happened, are happening and will continue to happen.
+
+* Your Collaborative contribution is valued and sought after.
+* You can learn and share new Innovative skills.
+* The best people are out their to Encourage and be Encouraged.
+
+But most important their are millions of people who are experiencing this 21st Century Enlightenment.
+
+=== [.black]#So What is 21st Century Enlightenment#
+
+==== [.black]#TED Talks#
+
+==== [.black]#The TED Radio Hour on Open Source#
+
+=== [.black]#The Humanistic Approach#
+
+* We Embrace, Innovate and Encourage cultural fit.
+* We successively refine what we Learn, Do and Share.
 
 <<<
 === [.black]#Introducing a Humanistic Ontology#
