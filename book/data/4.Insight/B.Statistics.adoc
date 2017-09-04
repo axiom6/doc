@@ -5,3 +5,5 @@ include::../../../dir/inc/DefStudy.adoc[]
 ''''
 <<<<
 == [.black]#Statistics#
+
+You need tail events for the revelation of elementary properties. - Taleb

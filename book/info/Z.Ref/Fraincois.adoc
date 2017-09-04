@@ -1,0 +1,15 @@
+
+François Chollet‏Verified account @fchollet 1h1 hour ago
+
+The mind is an engine for producing behavior. Intelligence cannot be understood outside of its sensorimotor context.
+4 replies 12 retweets 41 likes
+
+François Chollet‏Verified account @fchollet 57m57 minutes ago
+
+Generating behavior is the underlying principle that has guided the evolution of biological brains over a billion years. Yet...
+1 reply 2 retweets 15 likes
+
+François Chollet‏Verified account @fchollet 56m56 minutes ago
+
+...only a small fraction of the field of AI is dedicated to understanding behavior generation.
+Maybe we should stick with the name ML

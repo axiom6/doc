@@ -1,0 +1,39 @@
+
+All of these Design Thinking techniques are distributed cognition techniques that:
+
+* Move memory out of your head into the world, freeing up processing power.
+
+* Allow you to see connections and relationships you can’t easily visualize in your head.
+
+* Create a shared understanding for teams. Now your team can be part of that distributed world you think with.
+
+Problem Areas:
+
+Context analysis::
+Interviews, empathy, contextual inquiry, listening sessions, diary studies as all tools for
+getting a fresh understanding of the context in which one will be designing. And there are way more.
+
+Sensemaking::
+When you have too many ideas, too much information, how do you find insights?
+Well, there are always Post-its. See Needfinding for Disruptive Innovation.
+
+Idea generation::
+Mature designers know that even if your first idea is brilliant, you’ll never know unless
+you come up with 20 more. Sprints and Charettes are techniques for finding and
+refining potential solutions.
+
+Product definition:: Conceptual models, sitemaps, flowcharts, wireflows, use cases,
+user stories… so many ways to ask engineers to “build this.”
+
+Idea Validation::
+Part of thinking with the world is working with the world of users.
+From participatory design to usability testing, effective designers
+find ways to evaluate the quality of their thinking with the people
+who really pay the bills: customers
+
+“Design makes ideas tangible so that they can be understood and evaluated before committing them to reality.”
+
+Design work is two kinds of world modeling work:
+
+    Modeling the world as it is.
+    Modeling the world as it could be.
