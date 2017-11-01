@@ -1,0 +1,11 @@
+include::../../../dir/inc/DefPractice.adoc[]
+
+Working together.
+
+image::Machine.png[alt="Machine",align="center"]
+
+[horizontal]
+North::  North.
+West::   West.
+East::   East.
+South::  South.

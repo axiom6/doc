@@ -1,0 +1,5 @@
+include::../../../dir/inc/DefPractice.adoc[]
+
+== [.black]#Guide#
+
+include::Preview.adoc[]

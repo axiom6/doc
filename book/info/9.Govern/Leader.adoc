@@ -1,0 +1,64 @@
+
+
+link:https://medium.com/@rands/leadership-comes-from-everywhere-61c2e555f8e7[Leadership Comes from Everywhere]
+
+For years I’ve been working on structuring an interview for assessing leadership. How do you figure out if someone has leadership skills in an hour-long interview? The answer is: you don’t. You need multiple humans not only asking a diverse set of questions but also listening to answers and pivoting to follow-up questions as they see fit.
+
+The coordination comes from an agreed upon model for what constitutes good leadership. Let’s start with the three structural facets:
+
+Do they have vision? Can they explain an ambitious and seemingly unattainable goal?
+
+Are they strategic? Can they explain the steps necessary to achieve that vision?
+
+Finally, are they tactical? Can they decompose a strategy into a series of logical actions that will achieve each step?
+
+I have sets of questions that vet each of these facets. I’ve also written supporting material explaining how each leader is different. There are incredibly strong leaders who have an inhuman tactical ability but are average at strategy. There are credible leaders who thrive on building vision, but are awful at strategy and even worse at tactics.
+
+I patted myself on the back when I wrote down the triangle of vision to strategy to tactics. So clean… so elegant.. and so woefully incomplete.
+
+A Complete Leadership Model
+
+Judgment is the ability to make considered decisions or come to sensible conclusions. Vision, strategy, and tactics are all informed by judgment. Wherever your leadership strengths exist, it is your judgment that determines whether your decisions are considered, or your conclusions are sensible.
+
+Your judgment exists as a machine built from the total of learnings extracted from your life’s experiences. These experiences gave you knowledge, understanding, and wisdom. As you pass through your day, you are incessantly presented with situations large and small that make an ask of your judgment. A hypothetical example:
+
+“An employee told me that this was confidential information, but sharing this information with one other trustworthy person will likely give me additional insight and allow me to help them better.”
+
+Judgment calls regarding confidentiality and truth are two huge factors in this scenario. There are versions of the scenario where it is against the law as a manager to fail to alert other parties to this situation. Do you know what they are? Maybe you do, maybe you don’t, but at the end of this situation, your judgment will be tested, and with the test, it will become more informed and therefore more refined.
+
+It’s comforting as an engineer to think of judgment as this objective function. The words that define judgment — considered and sensible — imply the predictable comfort of logic, but that is not always the case because I’m still missing the final most important component of this leadership model: values.
+
+What is Important in Life
+
+Your values are your principles or standards of behavior. Like judgment, you’ve built your values throughout your life. You started by internalizing the rules and values of those who raised you. You continued to evolve these values with each struggle, failure, and victory.
+
+Your values are what you believe is important in life; I can’t think of an essential aspect that defines you as a leader. Your values define why you chose that particular vision, and they define how you are willing to achieve it.
+
+While everything I have written so far applies to your manager, everything I’ve written also applies to you. Whether you choose the title or not, you’re a leader. You have a vision of where you want to be, you build strategy and employ tactics to achieve that future place. Along the way, you constantly employ judgment defined by your values to follow a path that is acceptable to you.
+
+Full of Rage
+
+I’ve spent my career considering the craft of leadership for my team and my company. While I write books and create Slack teams focused on the craft of leadership, I’ve done the bare minimum to understand the leadership that shapes the United States of America.
+
+As I’ve sat in disbelief glued to social media, I’ve been thinking about the constituent parts of leadership. You can not suggest that the current administration doesn’t have vision. You can not say there is not a complex strategy in play and daily incessant tactics designed to achieve that vision. You can be full of rage like me, but you can’t argue that there isn’t leadership.
+
+We can, however, judge the quality of that leadership not by the results of its policies, but the values its judgment demonstrates. A leader who gleefully and blatantly lies is a fundamentally flawed leader. This defective core value (which is one of many) infects the entirety of the leadership model. How is possible to understand or believe any part of vision, strategy, or tactics when truth is suspect? What is considered or sensible when the facts are optional?
+
+Are you tired of freaking out about this? Good. Me too. It’s time to lead.
+
+Leadership Comes From Everywhere
+
+I’ve sat on the sidelines for most my life as the political landscape has evolved and it is my great shame that it has taken this long for me to act. Now I am full of equal parts rage and fear, and while these emotions get me moving, they do not help define vision nor strategy. Fear and rage provide high energy, but poorly considered tactics.
+
+However, I can’t ignore the tremendous gaping vacuum that represents my strategic thinking and limits my ability to define a compelling vision beyond the obvious, so I’m starting at the bottom with sensible and considered tactics.
+
+Each day for as long as it takes, I am doing one thing to move forward. Three days ago, I set-up a recurring donation to the ACLU, two days ago I created the #mobilize channel on the Leadership slack to bring together humans interested in coordinated action, yesterday I learned everything I could regarding executive orders, and today I wrote this piece to frame my rage.
+
+A little bit forward, every day. Over time — as it always does — my tactical progress will reveal strategic insight and with time that strategy will reveal a vision. I’m starting late, I don’t know where I’m going, but I trust my judgment, and I’m clear about what I value. More importantly, when I want to see how my strategy and vision are developing, I can check it. I can compare it to the principles and values of this country because…
+
+We wrote it down.
+
+The Death Spiral is a cascading failure. Often it is hard break because the Vision, Strategy and all the other good stuff have been co-opted by milestones that are really fake accomplishments.  So I first replace milestones with Kanban that lets each person delegate their own workload by pulling it from a To Do queue. However the real enabler is to take pressure off the team so they can go back to being themselves where by paraphrasing this article they can: 
+Change your mind.
+Augment your weaknesses with diversity.
+Choose and run with delegated work

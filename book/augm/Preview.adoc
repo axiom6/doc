@@ -1,0 +1,46 @@
+
+:linkcss:
+include::../../dir/inc/DefSlides.adoc[]
+
+= [.black]#Augment#
+
+== [.black]#Engage#
+include::1.Engage/Preview.adoc[]
+<<<
+
+== [.black]#Domain#
+include::2.Domain/Preview.adoc[]
+<<<
+
+== [.black]#Insight#
+include::3.Insight/Preview.adoc[]
+<<<
+
+== [.black]#Guide#
+include::4.Guide/Preview.adoc[]
+<<<
+
+== [.black]#Machine Learning#
+include::5.Machine/Preview.adoc[]
+<<<
+
+== [.black]#Interpret#
+include::6.Interpret/Preview.adoc[]
+<<<
+
+== [.black]#Prove#
+include::7.Prove/Preview.adoc[]
+<<<
+
+== [.black]#Explain#
+include::8.Explain/Preview.adoc[]
+<<<
+
+== [.black]#Advise#
+include::9.Advise/Preview.adoc[]
+
+//ifdef::basebackend-html[]
+//include::../../dir/build/scripts.html[]
+//endif:[]
+
+

@@ -1,0 +1,11 @@
+
+include::../../dir/inc/DefBook.adoc[]
+
+= [.black .text-center]#Augment#
+
+A humanistic methodology with a light weight ontology comprising nine practices
+that Embrace, Innovate and Encourage the processes of Learning, Doing and Sharing.
+
+With Machine Learning at its core Augment ....
+
+

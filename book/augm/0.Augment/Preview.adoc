@@ -1,0 +1,16 @@
+include::../../../dir/inc/DefPractice.adoc[]
+
+Working together.
+
+image::Augment.png[alt="Augment",align="center"]
+
+[horizontal]
+Engage::    North.
+Domain::    West.
+Insight::   East.
+Guide::     North.
+Machine::   West.
+Interpret:: East.
+Prove::     North.
+Explain::   West.
+Adivise::   East.
