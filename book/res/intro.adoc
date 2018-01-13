@@ -5,32 +5,31 @@
 Thomas.Edmund.Flaherty@gmail.com (720)-587-5017   +
 Colorado School of Mines - BSc - Mathematics
 
-=== [.black]#Architect, Designer and Mentor for 27 Years#
+=== [.black]#Architect, Designer, Teacher and Mentor for 27 Years#
 
-My current interests revolve around humanistic and data science practices, polyglot languages supported by
-UI, cloud and data innovations. I have recently written PDF mini books and slide decks in each of these
-areas with AsciiDoctor.
+My current interests revolve around humanistic practices, teaching and polyglot languages.
+I also enjoy constantly learning about UI, cloud and data innovations.
+I have recently written two mini books about Humanistic and Data Science Practices.
 
 Over the years I have worked with groups to simplify core technologies to focus on their strengths.
-So web UIs are dedicated to the user experience,
-services project business expertise,
-databases model semantics,
-the cloud based on the Reative Manifesto transparently links platforms
-and data science realizes benefits.
+So web UIs are dedicated to the user experience, services reflect business expertise,
+databases model semantics, the cloud transparently links platforms and data science realizes benefits.
 I have found the most productive technologies to be:
-languages: (Scala, CoffeeScript,Math DSLs),
-visualization (D3,Plotly,MathBox,Leaflet),
+languages: (Scala, CoffeeScript, Math DSLs),
+visualization (D3, Plotly, MathBox, Leaflet),
 cloud platforms: (Akka,Apache Spark,NodeJS).
 
+My best experiences have always revolved around teaching and mentoring that began in 1974 when I was a
+founding member of the Math Lab at Arapahoe Community College.
 
 27 years of experience in each the three disciplines of Technology, Languages and Practices:
 
 [cols="15,15,5,15,5,15,5,20,5",options="header"]
 |====
-^| *Discipline* ^| Experience   | Y  ^| Experience     | Y ^| Experience  | Y  ^| Experience      | Y
- | *Technology*  | Spark / GIS  | 2,3 | UI             | 7  | Akka/J2EE   | 2,5 | Data Modeling   | 8
- | *Languages*   | Scala        | 9   | CoffeeScript   | 7  | Java        | 6   | C++             | 5
- | *Practices*   | Data Science | 6   | Math / Visual  | 7  | Practices   | 8   | Design Patterns | 6
+^| *Discipline* ^| Experience  | Y  ^| Experience    | Y ^| Experience   | Y  ^| Experience    | Y
+ | *Technology*  | Spark / GIS | 2,3 | UI            | 7  | Akka/J2EE    | 2,5 | Data Modeling | 8
+ | *Languages*   | Scala       | 9   | CoffeeScript  | 7  | Java         | 6   | C++           | 5
+ | *Practices*   | Humanistic  | 8   | Math / Visual | 7  | Data Science | 6   | Teaching      | 6
 |====
 
 ==== [.black]#Presentations#

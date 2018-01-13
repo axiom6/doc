@@ -1,41 +1,43 @@
 
-==== [.black]#UI/UX Applications# [.black .right]#Axiom &#160;&#160;&#160;&#160;&#160;&#160;&#160;2010-2015#
+==== [.black]#UI/UX Applications# [.black .right]#at Axiom &#160;&#160;&#160;&#160;&#160;&#160;&#160;2010-2015#
 
-Created UI/UX apps with refined JavaScript library managment, page navigation with REST / JSON interfaces.
-The web technology stack included: CoffeeScript, Electron, RxJS, jQuery, Backboone, Visualization( D3, Leaflet, Mathbox, CSS3( Less,
-Bootstrap ), Test( Jasmine, PhantomJS ) and PhoneGap for mobile. In 2014 I brought in RxJS to replace MVC with notification
-driven publish and subscribe. Built REST servers in Akka and NodeJS. Leverage NodeJS with CommonJS for developement.
+Created UI/UX apps with refined JavaScript library management, page navigation with REST / JSON interfaces.
+The web technology stack included: CoffeeScript, Electron, RxJS, Vue.js, jQuery, Backbone, Visualization
+( D3, Leaflet, Math Box ), CSS3( Less, Sass ), Test( Jasmine, PhantomJS ) and Phone Gap for mobile.
+In 2014 I brought in RxJS to replace MVC with notification driven publish and subscribe.
+Built REST servers in Akka and NodeJS. Leveraged NodeJS with CommonJS for development.
 
 [cols="15,7,78",frame="none",grid="none"]
 |====
- | Exit Now      | 2015 | Won the GoCode Denver Competition on April 19 with mobile app for I-70
- | Visualization | 2014 | Data Science browser app in PivotTable, D3, MathBox and Plotly
+ | Exit Now      | 2015 | Won the GoCode Denver Competition on April 19 with a mobile app for I-70
+ | Visualization | 2014 | Data Science browser app in PivotTable, D3, Math Box and Plotly
  | DN2K          | 2013 | GIS in Leaflet with crop layers and symbols for farm management
  | Snugg Home    | 2012 | Contractor mobile app for capturing energy savings specs in homes
- | PSS           | 2011 | Upgraded JavaScript and CSS UI practices for ordering medical suppllies
+ | PSS           | 2011 | Upgraded JavaScript and CSS UI practices for ordering medical supplies
  | Part Miner    | 2010 | Create all web pages in HTML for an electronic part search portal
 |====
 
-==== [.black]#Enterprise# [.black .right]#State of California&#160;&#160;&#160;&#160;&#160;&#160;&#160;2009#
+==== [.black]#Enterprise Architecture# [.black .right]#at State of California&#160;&#160;&#160;&#160;&#160;&#160;&#160;2009#
 
 In 2008 my partners secured a contract with California's Health and Human services. We converted asset
 data to the Federal Enterprise Architecture (FEA) reference models (BRM SCRM, DRM, TCM, PRM). We then mapped
-the FEA repository to Axiom’s Practice Road Map, that made FEA accessible to all 13 health departments. To focus
-on capital budgeting we replaced the PRM score cards with CPIC and added a quantitive platform in Pentaho BI that
-our clients used to anticipate budget cuts.
+the FEA repository to Humanistic Practices that we taught seminars about. WE made the FEA accessible to all
+13 health departments.
+To focus on capital budgeting we replaced the PRM score cards with CPIC that our clients used to
+justify health service budget allocations.
 
-==== [.black]#Symbolic Math# [.black .right]#Glaxo&#160;&#160;&#160;&#160;&#160;&#160;&#160;2007-2008#
+==== [.black]#Symbolic Math# [.black .right]#at Glaxo&#160;&#160;&#160;&#160;&#160;&#160;&#160;2007-2008#
 
 To learn Scala I recreated my symbolic math Lisp libraries into a Scala Math DSL (Domain Specific Language).
-Math equations were writen in AsciiMath and parsed into Scala case classes for pattern matching transformions.
-Tranformations included differentiation, some integraion, simplification, evaluation and MathML for typset
-equations in browsers. Showed the Scala Math DSL to Glaxo and was awarded a contract for integrating symbolic math
-into Glaxo's molecular modeling research.
+Math equations were writen in AsciiMath and parsed into Scala case classes for pattern matching and
+transformations that included differentiation, integration, simplification, evaluation and MathML for typeset
+equations in browsers. Showed the Scala Math DSL to Glaxo and was awarded a contract for integrating symbolic
+math into Glaxo's molecular modeling research.
 
-==== [.black]#4-Tier B2B# [.black .right]#Axiom &#160;&#160;&#160;&#160;&#160;&#160;&#160;2001-2006#
+==== [.black]#4-Tier B2B# [.black .right]#at Axiom &#160;&#160;&#160;&#160;&#160;&#160;&#160;2001-2006#
 
 From 1996-2001 my teams and I had become proficient in J2EE with XML transactions.
-So we leveraged our experience to build fully integrated portals. Started Axiom Architectures LLC in 2001
+So we leveraged our experience to build fully XML integrated portals. Started Axiom Architectures LLC in 2001
 
 [cols="15,7,78",frame="none",grid="none"]
 |====
@@ -43,8 +45,8 @@ So we leveraged our experience to build fully integrated portals. Started Axiom 
  | Level3      | 2005 | Java Swing GUI and mentored developers for provisioning Level 3's VPN
  | EchoStar    | 2004 | Build security in Web Logic for Pay per View services
  | IBIS        | 2003 | Built a local search engine with business to consumer semantics
- | Avert       | 2002 | Created a comblete web front end in JSP for HR background checks
- | Next Step   | 2002 | Advised on web design and tracked user interest in product catalogues
+ | Avert       | 2002 | Created a front end UI and performed load testing in JMeter for HR
+ | Next Step   | 2002 | Advised on web design and tracked user interest in Flash product catalogues
  | Digiterra   | 2001 | Integrated AT&T, Time Warner, DirectTV, Sprint, Comcast with Circuit City
- | Fuel Base   | 2001 | Built a 4-Tier B2B portal in J2EE with Vitria
+ | Fuel Base   | 2001 | Prototyped a 4-Tier B2B portal in J2EE with Vitria to secure funding
 |====

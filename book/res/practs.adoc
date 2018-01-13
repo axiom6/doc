@@ -1,10 +1,12 @@
 
-==== [.black]#Humanistic Practices#
+==== [.black]#Humanistic Practices 2017#
 
-Since 1990 Axiom's 9 core practices have evolved from an innovative technology focus
-to faclitating a collaborative culture that encourages productivity and creativity over process. A key enabler
-is the hands on experience deriving benefits with each practice at Axiom, NREL, California, XCare,
-DMR, Williams, NorTel and Glaxo. See: link:https://speakerdeck.com/axiom6/humanistic-practices[Humanistic Practices]
+Since 1990 I have refined my methodology to 9 core practices have evolved from an innovative technology
+focus to embracing a collaborative culture that encourages creativity over process. In the past these
+practices incorporated Enterprise Architecture, Agile and Design Patterns. Over the course of my career
+a key enabler has been the hands on experience and teaching on how to derive benefits with each practice at
+University of North Texas, California, XCare, DMR, Williams, NorTel and Glaxo.
+See: link:https://speakerdeck.com/axiom6/humanistic-practices[Humanistic Practices]
 
 [width=50%,cols="10,15,15,15",options="header"]
 |====
@@ -17,33 +19,43 @@ DMR, Williams, NorTel and Glaxo. See: link:https://speakerdeck.com/axiom6/humani
 [cols="15,85",frame="none",grid="none"]
 |====
 | Collaborate | Team building with psychological safety for creative interaction
-| Product     | Transforming propositions into an attractive portfolio
+| Product     | Transforming value propositions into an attractive portfolio
 | Discovery   | Finding and sharing our vision within our company and to our clients
-| Adapt       | Fine tuning our work to respond to new features and components
-| Technology  | Innovative architecture, engineering and construction
+| Adapt       | Tracing features, components and acceptance to fine tune our efforts
+| Technology  | Innovative 4 tier architecture, engineering and construction
 | Benefit     | Realizing the benefits that propel our discoveries
-| Change      | Continuous delivery and evolution
-| Production  | Sharing our work with our communities on the cloud
-| Govern      | Facilitating and improving the maturity of the entire company
+| Change      | Continuous delivery leading to evolutionary architecture
+| Production  | Sharing our work with our client communities on the cloud
+| Govern      | Inspiring resources to improve the maturity of our communities
 |====
 
-==== [.black]#Data Science Practices and NREL# [.black .right]#&#160;&#160;&#160;&#160;&#160;&#160;2014-2016#
+==== [.black]#Data Science Practices# [.black .right]#&#160;&#160;&#160;&#160;&#160;&#160;2016#
 
-Defined a set of 10 data science practices at NREL. These practices provide a uniform approach to data science
-by defining the context for clustering, dimensionality reduction, regression, model selection,
-naive bayes, support vector machine and decision tree techniques. See: link:https://speakerdeck.com/axiom6/data-science-techniques[Data Science Practices]
+[width=50%,cols="10,15,15,15",options="header"]
+|====
+^|         ^| Embrace ^| Innovate ^| Encourage
+ | *Learn* ^| Acquire ^| Domain   ^| Insight
+ | *Do*    ^| Machine ^| Model    ^| Interpret
+ | *Share* ^| Prove   ^| Explain  ^| Advise
+|====
+
+The 9 data science practices are a work in progress that I defined and briefly taught to the
+IT group at the University of North Texas.
+These practices provide a humanistic context to Augment the human experience.
+Learning begins with Acquire, Domain Modeling and Insight that
+the provide context for Machine Learning, Math Modeling and Interpretation. Shared results
+are Proved and Explained to Advise our communities.
+See: link:https://speakerdeck.com/axiom6/data-science-techniques[Data Science Practices]
 
 [cols="15,85",frame="none",grid="none"]
 |====
-| Acquire  | The collection, refinement, schema model and preparation of data
-| Desktop  | Tools for visualization, exploration, data access and notebooks
-| Insight  | Hypothesis, statistics, ontology and the choices for analysis
-| Describe | Insight with reports, profiles, clustering, dimensions and metadata
-| Distill  | Discovers behavior patterns with regression and model generation
-| Predict  | Classifies and projects patterns to determine future probelistic outcomes
-| Advise   | Improves decisions with optimization and simulation
-| Prove    | Diagnostics, algorithmic benchmarks and data archival for integrity and reproduction
-| Process  | Streams, transforms and archives data with deplyed systems on the cloud
-| Explain  | Measures assets and articulates decisions with teaching and publishing
+| Acquire   | The collection, refinement and preparation of data as a shared resource
+| Domain    | Tools, inquiries, schema and that form a working paradigm
+| Insight   | Insight with intuition, theories, assessing uncertainty and choices
+| Machine   | Guiding the training of machine learning techniques with feedback
+| Model     | Cultivating statistical significant patterns based on math models
+| Interpret | Measuring signal and assessing uncertainty to simulate future outcomes
+| Prove     | Diagnosing and evaluating algorithms to protect and recreate results
+| Explain   | Enriching the rationale and context behind findings
+| Advise    | Harvesting interpretations, explanations and ethics to publish viable decisions
 |====
-
