@@ -1,11 +1,12 @@
 
-==== [.black]#Humanistic Practices 2017#
+==== [.black]#Humanistic Practices 2016-2017#
 
 Since 1990 I have refined my methodology to 9 core practices have evolved from an innovative technology
 focus to embracing a collaborative culture that encourages creativity over process. In the past these
 practices incorporated Enterprise Architecture, Agile and Design Patterns. Over the course of my career
 a key enabler has been the hands on experience and teaching on how to derive benefits with each practice at
-University of North Texas, California, XCare, DMR, Williams, NorTel and Glaxo.
+University of North Texas, Wisconsin, California, XCare, DMR, Williams, NorTel and Glaxo. I current working to
+extend Humanistic Practices to Data Science, Knowledge and Wisdom.
 See: link:https://speakerdeck.com/axiom6/humanistic-practices[Humanistic Practices]
 
 [width=50%,cols="10,15,15,15",options="header"]
@@ -29,33 +30,4 @@ See: link:https://speakerdeck.com/axiom6/humanistic-practices[Humanistic Practic
 | Govern      | Inspiring resources to improve the maturity of our communities
 |====
 
-==== [.black]#Data Science Practices# [.black .right]#&#160;&#160;&#160;&#160;&#160;&#160;2016#
 
-[width=50%,cols="10,15,15,15",options="header"]
-|====
-^|         ^| Embrace ^| Innovate ^| Encourage
- | *Learn* ^| Acquire ^| Domain   ^| Insight
- | *Do*    ^| Machine ^| Model    ^| Interpret
- | *Share* ^| Prove   ^| Explain  ^| Advise
-|====
-
-The 9 data science practices are a work in progress that I defined and briefly taught to the
-IT group at the University of North Texas.
-These practices provide a humanistic context to Augment the human experience.
-Learning begins with Acquire, Domain Modeling and Insight that
-the provide context for Machine Learning, Math Modeling and Interpretation. Shared results
-are Proved and Explained to Advise our communities.
-See: link:https://speakerdeck.com/axiom6/data-science-techniques[Data Science Practices]
-
-[cols="15,85",frame="none",grid="none"]
-|====
-| Acquire   | The collection, refinement and preparation of data as a shared resource
-| Domain    | Tools, inquiries, schema and that form a working paradigm
-| Insight   | Insight with intuition, theories, assessing uncertainty and choices
-| Machine   | Guiding the training of machine learning techniques with feedback
-| Model     | Cultivating statistical significant patterns based on math models
-| Interpret | Measuring signal and assessing uncertainty to simulate future outcomes
-| Prove     | Diagnosing and evaluating algorithms to protect and recreate results
-| Explain   | Enriching the rationale and context behind findings
-| Advise    | Harvesting interpretations, explanations and ethics to publish viable decisions
-|====
