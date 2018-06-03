@@ -1,0 +1,15 @@
+include::../../../dir/inc/DefPractice.adoc[]
+
+== [.black]#Principles#
+
+=== [.black]#Embrace#
+include::Embrace.adoc[]
+<<<
+
+=== [.black]#Innovate#
+include::Innovate.adoc[]
+<<<
+
+=== [.black]#Encourage#
+include::Encourage.adoc[]
+<<<

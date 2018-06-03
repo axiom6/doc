@@ -1,0 +1,49 @@
+
+include::../../../dir/inc/DefPractice.adoc[]
+
+==== [.black]#Psychological Safety#
+[horizontal]
+Confidence::   Our teams instill confidence into each member.
+Contribution:: Everyone's individual contributions are sought after and valued.
+Identity::     Everyone is comfortable being themselves.
+Harmonony::    Jobs and lifestyles are kept in balance.
+Safety::       We will not embarrass, reject or punish someone for speaking up.
+
+==== [.black]#Mutual Respect#
+[horizontal]
+Diversity::  We recognize everyone's diversity and approach.
+Individual:: We include in everyone's individual viewpoints.
+Together::   Together we make work happen.
+
+==== [.black]#Trust#
+[horizontal]
+Interpersonal:: Our teams thrive on interpersonal trust.
+Commitment::    We do not say it unless we mean it. We say we will do .
+Partner::       We are a trustworthy partner to everyone.
+
+=== [.black]#Collaborate#
+Working together to create propositions, transform them into services, build the technology and put it into production.
+
+image::graph/Collaborate.png[alt="Collaborate",align="center"]
+
+[horizontal]
+Charter::  A statement about the purpose and how teams see themselves.
+Request::  A proactive attitude to respond to and process requests.
+Team::     Everyone is assigned to a Project and their Expert group(s).
+Kanban::   A queue for pulling activities when members are ready.
+
+=== [.black]#What Makes Embrace Work#
+
+==== [.black]#Psychological Safety#
+Confidence in ones expertise and ones Identity are cultivated within an Expert Team.
+Everyone is comfortable with their core Expertise and Product Contributions which are
+kept in Safely in Harmony by direct representation.
+
+==== [.black]#Mutual Respect#
+Our teams are Diverse like our Products that Include everyone's viewpoints.
+We make work Together and Individually on Products
+
+==== [.black]#Trust#
+Our Charter communicates who we are to us and our community.
+We Commit to the work in our Kanban queue.
+By responding to request daily we maintain the trust of out community and Partners.

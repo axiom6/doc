@@ -1,0 +1,67 @@
+
+include::../../../dir/inc/DefPractice.adoc[]
+
+==== [.black]#Vision#
+[horizontal]
+Why::     We communicate our positive "Why" message to our community.
+Govern::  We govern by our vision and passion. 
+
+==== [.black]#Community#
+[horizontal]
+Benefit::  We benefit everyone with a minimum of Risk.
+Priority:: We recognize our teams and customers are the reason for our existence.
+
+==== [.black]#Connect#
+[horizontal]
+Strive::  We strive to discover and connect to out community.
+Genuine:: Our connections are genuine.
+
+==== [.black]#Assume#
+[horizontal]
+Track::  We list, track and challenge all our assumptions.
+Errors:: Our mistakes help us abandon our old assumptions.
+
+=== [.black]#Discover#
+
+We formulate a shared vision about ourselves and our Community.
+We then continuously assess Product Propositions to see what
+Connection they may have for out Community. We carefully list
+our Assume for deeper assessment in Benefit.
+
+image::graph/Discover.png[alt="Discover",align="center"]
+
+[horizontal]
+Vision::     Our shared vision the we communicate to everyone.
+Community::  Our colleagues and customers that we serve.
+Connect::    The meaningful ways we reach out to our community.
+Assume::     The working concepts that need to be assessed by Benefit.
+
+
+=== [.black]#"Start With Why"* by Simon Sinek#
+image::humanistic/GoldenCircle.png[alt="Info",align="center"]
+<<<
+
+=== [.black]#What Makes Encourage Work#
+
+==== [.black]#Vision#
+[horizontal]
+Why::     We constantly ask Why with out Product practice.
+Benefit:: We list and assess all out Assumption with the Benefit practice.
+Govern::  We govern ourselves with vision and passion. 
+
+==== [.black]#Community#
+[horizontal]
+Serve::    We learn everything about our Community to serve their needs.
+Priority:: Our teams and customers are our Vision.
+
+==== [.black]#Connect#
+[horizontal]
+Strive::  We strive to discover and connect to out community.
+Genuine:: With constantly examine our Connections.
+
+==== [.black]#Assumptions#
+[horizontal]
+Track::  We interchallenge all our assumptions.
+Errors:: Our mistakes help us abandon our old assumptions.
+
+//link::http://bit.ly/2iST2Oy[How Great Leaders Inspire Action by Simon Sinek]
