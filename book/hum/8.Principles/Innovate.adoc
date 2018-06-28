@@ -2,6 +2,9 @@
 include::../../../dir/inc/DefPractice.adoc[]
 
 ==== [.black]#We Appreciate "Where Good Ideas Come From*"#
+We create the space for lots of adjacent connections that allow ideas to flow,
+interact, evolve, extent, converge and learn in novel ways.
+
 [horizontal]
 Connection:: Chance favors the connected mind with serendipitous discoveries.
 Ecosystem::  Allows ideas to be diffused and be reconnected in novel ways.
@@ -13,53 +16,23 @@ Learning::   Leverage change to adopt new strategies.
 Space::      We create the space and entitle everyone for "Good Ideas" to emerge.
 
 ==== [.black]#Improvement#
+We strive for excellence by continuously refining our perspectives.
+transparency.
+
 [horizontal]
 Refinement:: Improvement takes place at multiple levels.
 Continuous:: Everyone is involved in continuously improvment.
 Excellence:: We strive for excellence in everything we do. 
 
 ==== [.black]#Transparency#
+We share information transparently with no hidden agendas.
+
 [horizontal]
 Share::      We document and share information freely with everyone.
 Transparent: We are transparent with everything and everyone.
 Agenda::     We have no hidden agendas. 
 
-=== [.black]#Product#
-Viable Propositions are promoted to Value Propositions by Discovery and their parts categorized into Entitlement, Portfolio and Intelligence.
 
-image::graph/Product.png[alt="Product",align="center"]
-
-[horizontal]
-Proposition:: The proposed ideas for new products.
-Entitlement:: The secure allocation of resources by roles.
-Portfolio::   The entire bundle of current and future products that a company offers.
-Document::    A collected written, drawn and presented representation of thought.
-
-=== [.black]#What Makes Innovate Work#
-
-==== [.black]#Where Our Good Ideas Come From#
-
-[horizontal]
-Connection:: Lots of connections as illustrated by the color coded rectangles.
-Ecosystem::  The connections alow ideas to flow and interactive in novel ways.
-Adjacent::   Interelated tiers represented by hexagons have adjacent sides with meaning.
-Hunches::    Everyone is Entitled to evolve their hunches.
-Extend::     Special purpose tiers are extended to other purposes.
-Convergent:: Propositions converge into the Product Portfolio and Services.
-Learning::   We Embrace Change to Adapt to, Discover and Govern new strategies.
-Space::      Our Practices provide a comprehensize space for "Good Ideas" to Emerge.
-
-==== [.black]#Improvement#
-[horizontal]
-Refinement:: Our Products are successively refined by our Learn, Do and Share perspectives
-Continuous:: We continously track, Adapt and Deliver new Technology.
-Excellence:: We strive for excellence in everything we do. 
-
-==== [.black]#Transparency#
-[horizontal]
-Share::      We Document, store and Warehouse all of our Information.
-Transparent: Our Information is always available at Learn, Do and Share perspectives.
-Agenda::     Our tactical Adaptations, Changes and strategic Vision are open.
 
 
 

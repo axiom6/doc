@@ -1,0 +1,26 @@
+
+include::../../../dir/inc/DefPractice.adoc[]
+
+=== [.black]#Product#
+Viable Propositions are promoted to Value Propositions by Discovery and their parts categorized into Entitlement, Portfolio and Intelligence.
+
+image::graph/Product.png[alt="Product",align="center"]
+
+[horizontal]
+Proposition:: The proposed ideas for new products.
+Entitlement:: The secure allocation of resources by roles.
+Portfolio::   The entire bundle of current and future products that a company offers.
+Document::    A collected written, drawn and presented representation of thought.
+
+=== [.black]How We make Innovate Work#
+
+[horizontal]
+Connection:: Lots of connections as illustrated by the color coded rectangles.
+Ecosystem::  The connections alow ideas to flow and interactive in novel ways.
+Adjacent::   Interelated tiers represented by hexagons have adjacent sides with meaning.
+Hunches::    Everyone is Entitled to evolve their hunches.
+Extend::     Special purpose tiers are extended to other purposes.
+Convergent:: Propositions converge into the Product Portfolio and Services.
+Learning::   We Embrace Change to Adapt to, Discover and Govern new strategies.
+Space::      Our Practices provide a comprehensize space for "Good Ideas" to Emerge.
+
