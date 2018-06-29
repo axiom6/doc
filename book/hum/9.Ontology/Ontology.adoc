@@ -1,6 +1,6 @@
 include::../../../dir/inc/DefPractice.adoc[]
 
-== [.black]#Introduction To Humanistic Practices#
+== [.black]#Practices#
 
 === [.black]#A Humanistic Approach#
 

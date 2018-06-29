@@ -5,24 +5,27 @@ include::../../../dir/inc/DefPractice.adoc[]
 We conceive and communicate our vision to govern with passion.
 
 [horizontal]
-Conceive::We formulate a global vision for out community
-Why::     We communicate our positive "Why" message to our community.
-Govern::  We govern by our vision and passion. 
+Conceive:: We formulate a global vision for out community
+Why::      We communicate our positive "Why" message to our community.
+Govern::   We govern by our vision and passion. 
 
 ==== [.black]#Community#
-Our commununity is our reason for being.
+Our community is our reason for being.
+
 [horizontal]
 Benefit::  We benefit everyone with a minimum of Risk.
 Priority:: We recognize our teams and customers are the reason for our existence.
 
 ==== [.black]#Connect#
 We discover to genuinely connect to our community.
+
 [horizontal]
 Strive::  We strive to discover and connect to out community.
 Genuine:: Our connections are genuine.
 
 ==== [.black]#Assume#
 We list and constantly improve our assumptions.
+
 [horizontal]
 Track::  We list, track and challenge all our assumptions.
 Errors:: Our mistakes help us abandon our old assumptions.

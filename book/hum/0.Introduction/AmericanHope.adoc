@@ -4,30 +4,38 @@ include::../../../dir/inc/DefPractice.adoc[]
 That the American system worked so well astonished European visitors..
 
 The French social and political theorist Alexis de Tocqueville says the vitality
-of American associational live, along with the decentralized nature of the federal
-system, at the keys to of the new democracy.
+of American associational life, along with the decentralized nature of the federal
+system, are the keys to the new democracy.
 
 It was more remarkable that such a system should arisen in colonies populated by religious
 refugees from a country that had abandoned its republican experiment in 1660.
 
 As Tocqueville noted;
 
-"whilst the hierarchy of rank [had] despotically classes the inhabitants of the mother country,
-the American had presented the novel spectacle of a community homogeneous in all its parts".
+____
+"whilst the hierarchy of rank had despotically classed the inhabitants of the mother country,
+ the American had presented the novel spectacle of a community homogeneous in all its parts".
+____
 
 It was this peculiarly egalitarian character of colonial society that had made possible
 the uniquely dense network of civic associations which, Tocqueville agreed were the key
 to the success of the American experiment. The country he described in Book II,
-chapters 5 and 6, if his Democracy in America was, ite might be said the first networked
-polity. "In no country in the world declared Tocqueville, "has the principle of association
-been more successfully used of applied to a greater multitude of objects that in America",
+chapters 5 and 6, in his Democracy in America was, it might be said the first networked
+polity.
 
+____
+"In no country in the world has the principle of association been more successfully
+used or applied to a greater multitude of objects that in America".
+____
+
+____
 "Besides the permanent associations which are established by law under the name of of townships,
 cities and counties, a vast number of of others are formed and maintained by the agency of private
 individuals. the citizen of the United States is taught form infancy to rely upon his own
 exertions in order to resist the evils and the difficulties of life; he looks upon the
 the social authority with an eye of mistrust and anxiety, and he claim its assistance only when
 he is unable to to without it...
+____
 
 In the United States associations are established to promote the public safety, commerce,
 industry, morality and religion. There is no end which the human will despairs of attaining
@@ -37,6 +45,7 @@ Tocqueville saw America's political associations as an indispensable counterweig
 tyranny that was inherent in modern democracy - if only the tyranny of the majority. However the
 greatest strength of the American system, he argued, lay on in its non-political associations:
 
+____
 Americans of all ages, all conditions, all minds constantly unite. Not only do they have
 commercial and industrial association in which all take part, but they also have a thousand
 other kinds: religious, moral, grave, futile, very general and very particular, immense and
@@ -44,6 +53,7 @@ very small; Americans use association to give fetes, to found seminaries, to bui
 to raise churches, to distribute books, to send missionaries to the antipodes; in this manner
 they create hospitals, prisons, schools. Finally if is a question of bringing to light a truth
 or developing a sentiment with the support of a great example, they associate."
+____
 
 The contrast with political and social structures of the his native France fascinated
 Tocqueville. Why has the the revolution there located as it was in one of the crucial hubs
