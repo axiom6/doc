@@ -1,7 +1,7 @@
 
 include::../../../dir/inc/DefPractice.adoc[]
 
-=== [.black]#Discover#
+== [.black]#Discover#
 
 We formulate a shared vision about ourselves and our Community.
 We then continuously assess Product Propositions to see what

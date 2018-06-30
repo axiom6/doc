@@ -16,9 +16,13 @@
    b. Flow
    c. Conduit
 
-5. Practices
+5. Information
 
-6. Transformation
+6. Knowledge
+
+7. Wisdom
+
+8. Traversal
    a. Augmentation
    b. Transcendental
 

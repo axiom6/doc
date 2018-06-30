@@ -1,0 +1,17 @@
+
+include::../../../dir/inc/DefPractice.adoc[]
+
+== [.black]#Technology#
+
+All the software components integrated by tiers that implement products.
+Architect, Engineer, and Construct Activities are tracked in Adapt
+and guided by the reference Architecture Patterns and Reviews in Benefit.
+
+image::graph/Technology.png[alt="Technology",align="center"]
+
+[horizontal]
+UI::       Applications (mobile) that access services on the Cloud.
+Service::  Integrated functionality for applications with REST interfaces.
+Database:: Persistent storage for business entities and cloud infrastructure.
+Cloud::    A Responsive, resilient, elastic, message driven service runtime.
+

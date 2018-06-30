@@ -1,7 +1,7 @@
 
 include::../../../dir/inc/DefPractice.adoc[]
 
-=== [.black]#Collaborate#
+== [.black]#Collaborate#
 Working together to create propositions, transform them into services, build the technology and put it into production.
 
 image::graph/Collaborate.png[alt="Collaborate",align="center"]

@@ -1,3 +1,4 @@
+
 include::../../../dir/inc/DefPractice.adoc[]
 
 == [.black]#Practices#
@@ -23,7 +24,7 @@ community at GitHub.
 
 === [.black]#GitHub - The largest open source community in the world#
 
-As of March 17, 2017 there are 27 million people with 57 open source reposities on GitHub.
+As of March 17, 2017 there are 27 million people with 57 open source repositories on GitHub.
 Join one or start your own.
 
 Shape the future of software::
@@ -123,7 +124,7 @@ provides perspectives for successive refinements.
 * The rest of this document discusses the inspiration and principles behind
   each column and row.
 
-* The subsequent document descrives each of the nine practices.
+* The subsequent document describes each of the nine practices.
 
 
 

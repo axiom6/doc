@@ -1,0 +1,42 @@
+include::../../../dir/inc/DefPractice.adoc[]
+
+==  [.black]#Share#
+
+=== [.black]#Main Points: x#
+
+[horizontal]
+Test::       x
+Systen::     x
+Config::     x
+Transition:: x
+Support::    x
+Network::    x
+Warehouse::  x
+Security::   x
+Maturity::   x
+Listen::     x
+Asset::      x
+Comply::     x
+
+<<<
+=== [.black]#Practices#
+
+image::onto/Share.png[alt="Share",align="center"]
+
+<<<
+=== [.black]#What Makes Share Work#
+
+[horizontal]
+Test::       x
+Systen::     x
+Config::     x
+Transition:: x
+Support::    x
+Network::    x
+Warehouse::  x
+Security::   x
+Maturity::   x
+Listen::     x
+Asset::      x
+Comply::     x
+
