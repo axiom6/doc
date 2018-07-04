@@ -1,0 +1,9 @@
+
+include::../../../dir/inc/DefPractice.adoc[]
+
+=== [.black]#The Birth of Humanism#
+The Renaissance is a period in European history, covering the span between the 14th and 17th centuries.
+It is an extension of the Middle Ages, and is bridged by the Age of Enlightenment to modern history.
+
+<<<
+

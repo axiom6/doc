@@ -1,0 +1,14 @@
+
+include::../../../dir/inc/DefPractice.adoc[]
+
+=== [.black]#The Scientific Revolution#
+
+The Scientific Revolution of the sixteenth and seventeenth centuries changed the way educated people looked at
+the world. It evolved from the Renaissance’s stress on the importance of individuals to understand the world
+around them, and was the key factor that moved Europe from a worldview that was primarily religious to one
+that was primarily secular. Although a more secular society was likely not their goal, Luther’s and Calvin’s
+attacks against the authority of the pope provided a powerful example of how to challenge traditional authority.
+Their questioning attitudes produced an environment that encouraged the inquiry necessary for science to flourish.
+
+<<<
+

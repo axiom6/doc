@@ -1,0 +1,32 @@
+
+include::../../../dir/inc/DefPractice.adoc[]
+
+=== [.black]#The Information Age#
+
+The Information Age (also known as the Computer Age, Digital Age, or New Media Age) is
+a 21st century period in human history characterized by the rapid shift from
+traditional industry that the Industrial Revolution brought through industrialization,
+to an economy based on information technology. The onset of the Information Age is
+associated with the Digital Revolution, just as the Industrial Revolution marked the
+onset of the Industrial Age. The definition of what digital means (or what
+information means) continues to change over time as new technologies, user devices,
+methods of interaction with other humans and devices enter the domain of research,
+development and market launch.
+
+During the Information Age, the phenomenon is that the digital industry creates an
+informed society surrounded by a high-tech global economy that spans over its
+influence on how the manufacturing throughout and the service sector operate in an
+efficient and convenient way. In a commercialized society, the information industry is
+able to allow individuals to explore their personalized needs, therefore simplifying
+the procedure of making decisions for transactions and significantly lowering costs
+for both the producers and buyers. This is accepted overwhelmingly by participants
+throughout the entire economic activities for efficacy purposes, and new economic
+incentives would then be indigenously encouraged, such as the knowledge economy.
+
+The Information Age formed by capitalizing on computer microminiaturization advances.
+This evolution of technology in daily life and social organization has led to the fact
+that the modernization of information and communication processes have become the
+driving force of social evolution.
+
+<<<
+

@@ -1,0 +1,15 @@
+
+include::../../../dir/inc/DefPractice.adoc[]
+
+=== [.black]#The Scottish Enlightenment#
+
+The Scottish Enlightenment was the period in 18th and early 19th century Scotland characterised by an outpouring of intellectual and scientific accomplishments. By the eighteenth century, Scotland had a network of parish schools in the Lowlands and four universities. The Enlightenment culture was based on close readings of new books, and intense discussions took place daily at such intellectual gathering places in Edinburgh as The Select Society and, later, The Poker Club as well as within Scotland's ancient universities (St Andrews, Glasgow, Edinburgh and Aberdeen).[1][2]
+
+Sharing the humanist and rationalist outlook of the European Enlightenment of the same time period, the thinkers of the Scottish Enlightenment asserted the importance of human reason combined with a rejection of any authority that could not be justified by reason. In Scotland, the Enlightenment was characterised by a thoroughgoing empiricism and practicality where the chief values were improvement, virtue, and practical benefit for the individual and society as a whole.
+
+Among the fields that rapidly advanced were philosophy, political economy, engineering, architecture, medicine, geology, archaeology, law, agriculture, chemistry and sociology. Among the Scottish thinkers and scientists of the period were Francis Hutcheson, David Hume, Adam Smith, Dugald Stewart, Thomas Reid, Robert Burns, Adam Ferguson, John Playfair, Joseph Black and James Hutton.
+
+The Scottish Enlightenment had effects far beyond Scotland, not only because of the esteem in which Scottish achievements were held outside Scotland, but also because its ideas and attitudes were carried all over Europe and across the Atlantic world as part of the Scottish diaspora, and by European and American students who studied in Scotland.
+
+<<<
+

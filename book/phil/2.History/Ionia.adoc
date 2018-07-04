@@ -1,0 +1,15 @@
+
+include::../../../dir/inc/DefPractice.adoc[]
+
+=== [.black]#Advances in Greek Thought#
+
+In the 6th century BC in archaic Greece, Ionia was home to a set of advances in scientific
+thought, explanations on nature, and discovering the natural and rational causes behind
+observable phenomena. This movement began on the Ionian coast of western Anatolia by small
+numbers of forward-thinking Greeks  from cities such as Miletus, Samos, and Halicarnassus.
+They saw the world as something ordered and intelligible, its history following an explicable
+course and its different parts arranged in a comprehensible system. Most historians agree
+that Thales, one of the Seven Sages of Greece, started this movement by predicting a solar
+eclipse that actually occurred, though some believe this feat to be false.
+
+<<<

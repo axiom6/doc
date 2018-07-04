@@ -1,0 +1,24 @@
+
+:data-uri:
+include::../../dir/inc/DefBook.adoc[]
+
+[preface]
+
+= [.black]#Humanistic Fulfillment#
+
+== [.black]#Introduction#
+include::1.Introduction/Introduction.adoc[]
+
+== [.black]#Humanistic Science#
+include::2.History/Ionia.adoc[]
+include::2.History/Renaissance.adoc[]
+include::2.History/Science.adoc[]
+
+== [.black]#The Enlightenment#
+include::3.Enlightenment/Scottish.adoc[]
+include::3.Enlightenment/American.adoc[]
+
+== [.black]#Fullfilling Our Destiny#
+include::4.Ages/Information.adoc[]
+include::4.Ages/Knowledge.adoc[]
+include::4.Ages/Wisdom.adoc[]

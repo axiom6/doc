@@ -1,0 +1,35 @@
+
+include::../../../dir/inc/DefPractice.adoc[]
+
+=== [.black]#The American Enlightenment#
+
+The American Enlightenment was a period of intellectual ferment in the thirteen
+American colonies in the 17th to 18th century, which led to the American Revolution,
+and the creation of the American Republic. The American Enlightenment was influenced
+by the 17th-century European Enlightenment and its own native American philosophy.
+It applied scientific reasoning to politics, science, and religion.
+It promoted religious tolerance. And, it restored literature, arts, and music as
+important disciplines worthy of study in colleges. "New-model" American style
+colleges were founded such as King's College New York (now Columbia University),
+and the College of Philadelphia (now Penn). Yale College and the College of
+William & Mary were reformed. A non-denominational moral philosophy replaced
+theology in many college curricula. Even Puritan colleges such as the College of
+New Jersey (now Princeton University) and Harvard University reformed their curricula
+to include natural philosophy (science), modern astronomy, and mathematics.
+
+Among the foremost representatives of the American Enlightenment were presidents of
+colleges, including Puritan religious leaders Jonathan Edwards, Thomas Clap, and
+Ezra Stiles, and Anglican moral philosophers Samuel Johnson and William Smith.
+The leading political thinkers were John Adams, James Madison, Thomas Paine,
+George Mason, James Wilson, Ethan Allen, and Alexander Hamilton, and polymaths
+Benjamin Franklin and Thomas Jefferson. Leading scientists included Benjamin Franklin
+for his work on electricity, William Smith for his organization and observations of
+the Transit of Venus, Jared Eliot for his work in metallurgy and agriculture, the
+astronomer David Rittenhouse in astronomy, math, and instruments, Benjamin Rush in
+medical science, Charles Willson Peale in natural history, and Cadwallader Colden for
+his work in botany and town sanitation. Colden's daughter, Jane Colden, was the first
+female botanist working in America. Count Rumford was a leading scientist, especially
+in the field of heat.
+
+<<<
+

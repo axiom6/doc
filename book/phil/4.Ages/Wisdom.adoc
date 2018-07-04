@@ -1,0 +1,13 @@
+
+include::../../../dir/inc/DefPractice.adoc[]
+
+=== [.black]#The Wisdom Age#
+
+Wisdom or sapience is the ability to think and act using knowledge, experience,
+understanding, common sense, and insight, especially in a mature or utilitarian
+manner.[1] There appears to be consensus that wisdom is associated with attributes
+such as compassion, experiential self-knowledge, non-attachment and virtues such as
+ethics and benevolence.
+
+<<<
+
