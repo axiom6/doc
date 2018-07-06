@@ -1,0 +1,15 @@
+
+include::../../../dir/inc/DefPractice.adoc[]
+
+=== [.black]#Questions#
+
+How did the Greeks change the course of history?
+
+How did the Renaisance define our modern view of the world?
+
+What is science? How does it thrive? How can all humans benefit?
+
+Why the Scottish Enlightenment signifcant? What can we apply today?
+
+How did we lose site of the Enlightenment?
+<<<

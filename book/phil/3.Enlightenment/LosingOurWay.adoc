@@ -1,0 +1,10 @@
+
+include::../../../dir/inc/DefPractice.adoc[]
+
+=== [.black]#Losing Our Way#
+
+Just as the Enlightenment reached its peak, its positive influence began
+to decline beginning with the French Revolution and then continuing with the
+the Napoleonic wars, the British Empire, the American Civil War,
+The First and Second Industrial Ages, World Wars I and II, to the recent
+loss of potential of the Information Age due to smart phone addiction.

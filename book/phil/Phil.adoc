@@ -17,6 +17,7 @@ include::2.History/Science.adoc[]
 == [.black]#The Enlightenment#
 include::3.Enlightenment/Scottish.adoc[]
 include::3.Enlightenment/American.adoc[]
+include::3.Enlightenment/LosingOurWay.adoc[]
 
 == [.black]#Fullfilling Our Destiny#
 include::4.Ages/Information.adoc[]
