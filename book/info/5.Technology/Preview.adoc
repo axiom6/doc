@@ -7,7 +7,7 @@ All the software components integrated by tiers that implement products.
 Architect, Engineer, and Construct Activities are tracked in Adapt
 and guided by the reference Architecture Patterns and Reviews in Benefit.
 
-image::graph/Technology.png[alt="Technology",align="center"]
+//// image::graph/Technology.png[alt="Technology",align="center"]
 
 [horizontal]
 UI::       Applications (mobile) that access services on the Cloud.

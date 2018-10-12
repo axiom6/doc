@@ -1,0 +1,97 @@
+
+
+
+Key Takeaways
+
+    Like security, tech ethics is about trying to prevent our systems from hurting users or anyone else.
+    Unlike security, there are few ethics resources, best practises or specialists to refer to yet because practical tech ethics is a new concept.
+    We need to build a basic level of familiarity and confidence in ethical questions in the tech industry, just like we all need to be basically familiar with security.
+    As with questions of security, we are allowed to consider the ethical rights and wrongs of our code, to say what we think, and to act. In fact, it’s correct that we do so.
+    Developers could be a last bastion of defence against unethical code in production.
+
+
+For the Open Security Summit in London in June, I was asked to deliver their first workshop on security and ethics.
+Is there an expert in the house?
+
+Security is not my area of expertise, but it is a well-established discipline. I can refer to its excellent resources and well documented best practices and if that isn’t enough, I can ask specialists to help me.
+
+I’m not an expert in ethics either, but aid is more difficult to find. There are few resources, best practices, or specialists for me to refer to because practical tech ethics is a new concept. There are no ethical rockstars yet who are uniquely qualified to tell us what to do. Perhaps that’s not a bad thing.
+
+
+
+Related Sponsor
+
+
+
+
+
+NGINX Plus is the complete application delivery platform for the modern web. Start your 30 day free trial.
+
+We’re just going to have to learn it together. We are all allowed to consider the rights and wrongs of our code, to say what we think, and to act. In fact, I believe we should do so.
+What are ethics?
+
+I’d define tech ethics as trying our best to prevent our code from hurting users or anyone else. That’s a deceptively wide description. We could be talking about boring stuff like losing all their data (faulty backups) or newer things like subjecting them to arbitrary decisions (algorithmic fairness). Tech ethics is about avoidance of harm in all forms from the mundane to the futuristic.
+
+Technology can be an amazing force for good. I love our industry of intelligent, thoughtful engineers. But, we’re suddenly realising there are lots of ways our output could damage folk, which we need to be careful about. Energy use, pollution, exclusion, fake news, manipulation, physical danger, propaganda, mental health - there’s a huge list of areas where we could make things worse for some parts of society.
+
+Tech is growing fast at a global scale. If we screw things up we potentially affect billions of individuals. That’s so intimidating it makes me feel like I can’t possibly have any impact on it - tech-driven culture is a juggernaut for someone else, more important than me, to worry about. But products are just software. Someone has to design them, write them, deploy them and operate them. That’s one of us intelligent and thoughtful engineers. Could we be a last bastion of defence or is it someone else’s problem?
+What does ethics have to do with security anyway?
+
+I defined tech ethics as protecting users from harm where we can. Similarly, the main aim of security is to try to protect users from people who want to hurt or rob them through our systems. This seems to imply security is an aspect of ethics. It’s not all of ethics (there are other ways that folk can be harmed by code that doesn’t require third parties and code exploits) but a subset. So, perhaps there are ways we can learn about better tech ethics by looking at what works well in security.
+I hate to Kant at you
+
+If security is a potential resource for thinking about ethics in tech, are there others? Well, in the eighteenth century Europe was crazy about theories of morality and ethics, or “moral sentiment” as Adam Smith described it. A lot of smart philosophers like Smith himself, Immanuel Kant, Jeremy Bentham and others spent ages devising incontrovertible (effectively programmable) rules that they reckoned the rest of us could follow to tell right from wrong. The two very different rule sets we hear the most about nowadays are Kant’s three Maxims and Bentham’s Utilitarianism. At the time, Utilitarianism was roundly decried as being unnatural, heartless and somewhat dystopian (and not without good reason). But it has turned out to be the most easily programmable.
+Utilitarianism
+
+Utilitarianism defines actions as right if statistically they do more good than harm. It treats an action as positive entirely based on its results, not its intentions. To us software engineers; to government statistics departments; and to newspaper headlines, that sounds pretty good. And it’s programmable! All we need is a target and some way to measure it. Marvellous! We’ve defined ethics and got home in time for tea.
+
+Think that’s fine? You would have had your butt kicked by Jeremy Bentham’s fellow moral thinkers. The trouble with utilitarianism is it happily accepts some pretty unpleasant edge conditions. The usual Black Mirror-style thought experiment (admittedly one not used in the 18th century) is to imagine you kindly drop by to visit a friend in hospital. On walking through the door, their new Benthamometer detects your healthy heart, lungs, liver and kidneys could save the lives of 5 sick people inside and your low social media friend count suggests few folk would miss you. Statistically, sacrificing you to save those 5 more popular patients is not only OK, it is morally imperative!
+
+It is the extreme edge cases of a utilitarian or statistical approach that are often the cause of algorithmic unfairness. If the target KPIs are met, then by definition the algorithm must be good, even if a few people do suffer a bit. No omelettes without some broken eggs!
+
+If you think this would never happen in reality, we only need to look at the use of algorithmically generated drone kill lists by the US government in the Yemen. Journalist and human rights lawyer Cori Crider has revealed that thousands of apparently innocent people have been killed by America’s utilitarian approach to acceptable civilian casualties in a country they are supposed to be helping. In the UK we’ve recently seen some extraordinarily inhumane actions: lifelong British citizens being forcibly deported by their own government in order to meet arbitrary targets; and homeless folk being sent to prison in order to deliver tidier streets. Admittedly these UK cases were not fully automated, but if they had been the results might have been even worse.
+Kant
+
+So what about Immanuel Kant? He had a more stringent approach to ethical behaviour, which included 3 elements that conflicted with Bentham’s Utilitarianism. The first was the notion that human beings are ends not means. Kant thought no human should ever be sacrificed or harmed in order to pursue an end, no matter how valuable that end appeared. He’s also famous for his quick check to tell if you are acting unethically or not, called his Maxim of Universality, which I’ll paraphrase as “Does it Scale?” The idea is that you ask yourself whether an action you want to take would still work, or make sense, if everyone did it? If it wouldn’t, then you are putting your own benefit before that of others and that would be wrong. Just to throw in the final Kantian principle, you should never lie to another person, even if you think it is in their best interest, because that is to deprive them of their right to informed, rational choice.
+
+Kant’s approach would rule out the hospital thought experiment (you couldn’t be sacrificed to save others) and the US drone strikes (innocents can’t be killed). It would rule out pollution (it doesn’t scale) and Facebook and their fake news revenue stream and Google’s new Duplex human emulator (no lying please).
+
+You Kant Believe It
+
+Kant sounds great! Sign me up! Unfortunately there’s a reason we’ve all gone a bit utilitarian. Kant certainly rules out a lot of bad behaviour, but he’d also ban almost everything else too (cars cause civilian deaths, using electricity at the moment doesn’t scale and we have no feasible plan for addressing that, and don’t even contemplate a white lie).
+
+Utilitarianism does actually work. It has delivered much of the progress of the last 200 years. We just never worried too much about the edge cases. Occasionally, they’d be picked up by the press and we’d decide, or be forced, to fix them. The question is, can we continue to ignore non-mainline errors and rely on The Guardian, Reprieve or even sometimes the Daily Mail, to be our observability and alerting tools?
+
+If we choose to go for a “compassionate utilitarianism” and try to mitigate these edge-case ethical issues, then we have two things to address
+
+    Getting the mainline right so that, on average, we do no harm to our users.
+    Spotting, handling and resolving the non-mainline cases of harm compassionately (with special cases if necessary).
+
+Like security or industrial safety this is inevitably retrospective, which is unfortunate (something bad has to happen before we learn from it). However, if we can share what we learn we can at least minimize the further damage. I suspect this is the best way to go and it relies on observation, monitoring, reporting and learning, which is not solely provided by major newspapers.
+What do we do in security?
+
+In the field of security, best practice is deliberately to take a utilitarian approach. It is very hard to completely secure a high value system. For all you know, your spouse is a sleeper agent playing the long game (I’ve seen “The Americans”). Instead, most security experts concentrate on fixing the relatively simple issues most likely to cause security breaches and accept that a sufficiently determined bad actor will probably be able to break in eventually. In that event, the aim is to identify that a breach has occurred and take some post hoc action - at minimum informing affected users that their data has been compromised.
+
+This isn’t a terrible approach and it isn’t completely utilitarian. Good security still anticipates and handles the edge cases (a breach happens) and attempts to mitigate them somehow, rather than just accepting the occasional failure is fine as long at the mainline is OK. We might consider this as the compassionate utilitarianism we described above - there’s a touch of Kant in there in that we prioritise keeping the victim informed.
+What can we learn for ethics?
+
+In the 2018 Stack Overflow Developers’ Survey they asked whether developers felt ultimately responsible for unethical usage of their own code. 80% said no. They presumably left it in the hands of boards, shareholders and Product Owners.
+
+Would you work for a company who left security in the hands of shareholders who had little idea what it was? I hope not; that would be rather unprofessional. In most cases there are multiple cultural firewalls involved in making an application secure. Boards and shareholders hopefully agree but tech professionals have the last say on security because they understand the product, the landscape and the options. Security teams are the last bastion of defence against a business making an insecure move.
+
+Why not tech ethics too? What’s different there? Do we expect boards to understand the test data limitations of machine learning any better than they understand encryption strategies? If so, we’re being naive.
+
+ML experts will have to defend users from bad decisions. Developers will have to protect users from harm from potentially addictive or exploitative algorithms they create. Ops and devops folk will have to protect users from harm from the cumulative impact of inefficient, dirty energy use in data centres.
+
+If not us techies then who? We’re the ones writing the code, we are far more directly responsible for any resulting harm than a security professional who is trying to protect their users from harm by other people.  Developers may not feel ultimately responsible for their code, but the US courts don’t agree. Last year, a Volkswagen engineer went to prison in the US for nearly 4 years for writing unethical code. So it’s not just user safety at risk if developers don’t own ethics. It’s our own liberty too.
+
+I believe we need to build a basic level of familiarity and confidence in ethical questions in the tech industry, just like we all need to be basically familiar with security. We need those excellent resources, well documented best practices and some specialist experts.I ran the Coed:Ethics conference in London this July to try to get us started on this; charities like DataKindUK and think tanks like Doteveryone are working to develop guidelines and processes; and tech firms like Container Solutions are starting to trial those processes and provide feedback. The conference will be filmed and available for free on InfoQ and the resources we are building are in Github.
+
+It’s time for us all to get active thinking about ethics in our own areas. We don’t have to be experts to take part. As Disraeli said “History is made by those who show up”.
+About the author
+
+Anne Currie has been in the tech industry for over 20 years working on everything from Microsoft Back Office Servers in the 90's to international online lingerie in the 00's to cutting edge devops and the impact of orchestrated containers in the 10's. Anne has co-founded tech startups in the productivity, retail and devops spaces. She currently works in London for Container Solutions.
+This content is in the Architecture & Design topic
+Unfollow Topic
+Related Topics:
+

@@ -1,0 +1,22 @@
+include::../../../dir/inc/DefPractice.adoc[]
+
+=== [.black]#The Invisible Hand#
+
+==== [.black]#Adam Smiths References#
+
+*In The History of Astronomy (written before 1758) Smith first speaks of the invisible hand,
+to which ignorants refer to explain natural phenomena otherwise unexplainable:*
+
+_"Fire burns, and water refreshes; heavy bodies descend, and lighter substances fly upwards, by the necessity of their own nature; nor was the invisible hand of Jupiter ever apprehended to be employed in those matters."_
+
+*The second appearance of the invisible hand in Smith occurs in The Theory of Moral Sentiments
+(1759) in Part IV, Chapter 1, where he describes a selfish landlord as being led by an
+invisible hand to distribute his harvest to those who work for him:*
+
+_"The proud and unfeeling landlord views his extensive fields, and without a thought for the wants of his brethren, in imagination consumes himself the whole harvest ... [Yet] the capacity of his stomach bears no proportion to the immensity of his desires ... the rest he will be obliged to distribute among those, who prepare, in the nicest manner, that little which he himself makes use of, among those who fit up the palace in which this little is to be consumed, among those who provide and keep in order all the different baubles and trinkets which are employed in the economy of greatness; all of whom thus derive from his luxury and caprice, that share of the necessaries of life, which they would in vain have expected from his humanity or his justice...The rich...are led by an invisible hand to make nearly the same distribution of the necessaries of life, which would have been made, had the earth been divided into equal portions among all its inhabitants, and thus without intending it, without knowing it, advance the interest of the society..."_
+
+*Adam Smith uses the metaphor for a third time in Book IV, Chapter II, paragraph IX of The Wealth of Nations.*
+
+_"But the annual revenue of every society is always precisely equal to the exchangeable value of the whole annual produce of its industry, or rather is precisely the same thing with that exchangeable value. As every individual, therefore, endeavours as much as he can both to employ his capital in the support of domestic industry, and so to direct that industry that its produce may be of the greatest value, every individual necessarily labours to render the annual revenue of the society as great as he can. He generally, indeed, neither intends to promote the public interest, nor knows how much he is promoting it. By preferring the support of domestic to that of foreign industry, he intends only his own security; and by directing that industry in such a manner as its produce may be of the greatest value, he intends only his own gain, and he is in this, as in many other cases, led by an invisible hand to promote an end which was no part of his intention. Nor is it always the worse for the society that it was not part of it. By pursuing his own interest he frequently promotes that of the society more effectually than when he really intends to promote it. I have never known much good done by those who affected to trade for the public good. It is an affectation, indeed, not very common among merchants, and very few words need be employed in dissuading them from it."_
+
+<<<

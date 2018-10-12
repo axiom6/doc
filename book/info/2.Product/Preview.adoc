@@ -3,7 +3,7 @@ include::../../../dir/inc/DefPractice.adoc[]
 
 Viable Propositions are promoted to Value Propositions by Discovery and their parts categorized into Entitlement, Portfolio and Intelligence.
 
-image::graph/Product.png[alt="Product",align="center"]
+//// image::graph/Product.png[alt="Product",align="center"]
 
 [horizontal]
 Proposition:: The proposed ideas for new products.

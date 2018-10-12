@@ -28,5 +28,45 @@ This evolution of technology in daily life and social organization has led to th
 that the modernization of information and communication processes have become the
 driving force of social evolution.
 
+
+==== [.black]#Decentrialize#
+
+===== [.black]#Adam Smith#
+
+===== [.black]#Tim Berners Lee#
+
+The idea is simple: re-decentralize the Web. Working with a small team of
+developers, he spends most of his time now on Solid, a platform designed
+to give individuals, rather than corporations, control of their own data.
+“There are people working in the lab trying to imagine how the Web could
+be different. How society on the Web could look different. What could
+happen if we give people privacy and we give people control of their data,”
+Berners-Lee told me. “We are building a whole eco-system.”
+
+For now, the Solid technology is still new and not ready for the masses.
+But the vision, if it works, could radically change the existing power
+dynamics of the Web. The system aims to give users a platform by which
+they can control access to the data and content they generate on the Web.
+This way, users can choose how that data gets used rather than, say,
+Facebook and Google doing with it as they please. Solid’s code and
+technology is open to all—anyone with access to the Internet can come
+into its chat room and start coding. “One person turns up every few days.
+Some of them have heard about the promise of Solid, and they are driven to
+turn the world upside down,” he says. Part of the draw is working with
+an icon. For a computer scientist, coding with Berners-Lee is like playing
+guitar with Keith Richards. But more than just working with the inventor
+of the Web, these coders come because they want to join the cause.
+These are digital idealists, subversives, revolutionaries, and anyone else
+who wants to fight the centralization of the Web. For his part, working on
+Solid brings Berners-Lee back to the Web’s early days: “It’s under the radar,
+but working on it in a way puts back some of the optimism and excitement that
+the ‘fake news’ takes out
+
+==== [.black]#Spontaneous Interaction#
+
+==== [.black]#Information as Wealth#
+
+
+
 <<<
 

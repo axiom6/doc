@@ -1,0 +1,36 @@
+
+include::../../../dir/inc/DefPractice.adoc[]
+
+=== [.black]#Preface#
+
+  Humanities
+    Arts
+    History
+    Languages
+    Literature
+    Philosophy
+    Theology
+
+  Social
+    Anthropology
+    Economics
+    Geography
+    Political
+    Psychology
+    Sociology
+
+  Natural
+    Mathematics
+    Physics
+    Chemistry
+    Astronomy
+    Geology
+    Biology
+
+  Applied
+    Computer
+    Data Science
+    Statistics
+    Engineering
+    Medicine
+    Law

@@ -7,7 +7,7 @@ Enables careful Consideration for Maturity, Assets and Comply by incorporating:
 * Technical reviews from Benefit.
 * Asset status from Warehouse.
 
-image::graph/Govern.png[alt="Govern",align="center"]
+//// image::graph/Govern.png[alt="Govern",align="center"]
 
 [horizontal]
 Maturity:: Identifies opportunities and resources for improvement.

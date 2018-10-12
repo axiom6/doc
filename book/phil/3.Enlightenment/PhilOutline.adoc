@@ -1,0 +1,214 @@
+6.1. Adam Smith - 1723-1790
+6.1.1. The Wealth of Nations: The Division of Labor
+
+6.1.1.1. Specialization of job function leads to massive gains in efficiency.
+
+6.1.1.2. Coordination and cooperation between specialists is done out of self-interest.
+
+6.1.1.3. We get what we need from others out of their self-interest, not their charity.
+6.1.2. The Theory of Moral Sentiment
+
+6.1.2.1. Offers an explanation and basis for the cooperation and coordination that are required for the division of labor described in Wealth of Nations.
+
+6.1.2.2. Why?
+
+6.1.2.2.1. We want the approval of others
+
+6.1.2.2.2. The reactions of others to us and our behaviors is important to us.
+
+6.1.2.2.3. We generally seek to behave as if there were an impartial spectator observing our behaviors. Would they approve of them?
+
+6.1.2.2.4. Our conscience is a product of these factors.
+
+6.1.2.3. Obeying the law
+
+6.1.2.3.1. We do so because of the utility of doing so. In general, we derive benefit when we do so.
+6.1.3. He was aware of the dangers and problems that could arise from too much specialization of labor and the social isolation that could result.
+6.1.4. He worried about the moral impact on someone who shifted from a village-centric social context to that of a large city and the anonymity that could result.
+6.1.5. Smith is also concerned about class and wealth disparity and that impacts that would have on society.
+6.3. David Hume - 1711-1766
+6.3.1. Epistemology
+
+6.3.1.1. Ideas are copies of our sense impressions
+
+6.3.1.2. Three relations among ideas
+
+6.3.1.2.1. Resemblance
+
+6.3.1.2.2. Spatio-temporal
+
+6.3.1.2.3. Cause-effect
+
+6.3.1.3. Reason alone cannot justify our belief in experience
+
+6.3.1.4. Belief in our experiences as representing the external world accurately is based on our instinct or custom, and cannot be proven with reason.
+6.3.2. Morality
+
+6.3.2.1. Scientific theory of morality
+
+6.3.2.2. Moral judgment cannot be based on rational deliberation, because simpletons and infants are also capable of making more judgments.
+
+6.3.2.3. There is no evidence that indicates that the most intellectually capable members of our species are the most moral.
+
+6.3.2.4. Therefore, our sense of morality is based in part on our biology and in part by our social context.
+
+6.3.2.5. What makes a moral rule a universal more rule?
+
+6.3.2.5.1. Primarily, its utility
+
+6.3.2.5.2. All government and political institutions have their basis in utility to society.
+
+6.3.2.6. We have a natural appreciation for virtuous behavior, and are thus naturally moral at least in part.
+
+6.3.2.7. You cannot deterministically go from an "is" to an "ought"
+6.3.3. Religion
+
+6.3.3.1. Basing religious belief on inference from experience has four flaws
+
+6.3.3.1.1. It means that religion is probable at best, because all ideas are derived from experience, not reason.
+
+6.3.3.1.2. In all scientific inquiries, negative evidence counts more than positive evidence. So we would require positive evidence with zero negative evidence in order to justify our belief in god through experience.
+
+6.3.3.2. Effects do not prove a cause.
+
+6.3.3.3. In the end, Hume is dismissive of both religion in general and in the ability to base religious belief on experience.
+
+--------
+
+6.2. Rousseau - 1712-1778
+6.2.1. Critiqued the progress of modern society
+
+6.2.1.1. Moral decadence always accompanies cultural progress
+
+6.2.1.2. American Indians in their simplistic life compare favorably to Europeans in their levels of happiness and virtue.
+6.2.2. Claimed that enlightenment beliefs led to eventual collapse of civilizations
+6.2.3. Called for a return to nature
+6.2.4. Social Contract
+
+6.2.4.1. All power is given to the state
+
+6.2.4.2. Your happiness is calculated as your share of the overall societal happiness
+
+
+
+
+    SuperSummary
+    View All Titles
+    Other Resources
+    Support
+
+The Wealth of Nations
+Adam Smith The Wealth of Nations
+
+    Plot overview and analysis written by an experienced literary critic.
+    Full study guide for this title currently under development.
+    To be notified when we launch a full study guide, please contact us.
+
+
+-----------------
+
+
+Summary
+Book 1: Of the Causes of Improvement in the Productive Powers of Labor
+
+This book develops basic definitions for such broad concepts as "price" and "stock." Smith
+first describes the division of labor—the trend of increasing specialization among workers
+in any industry—which he regards as a primary driving force of economic growth. He attempts
+to clarify the role of money in an economic system, arguing that money does not represent
+a nation's real wealth but instead serves as a way of storing and exchanging such wealth.
+He takes a three-pronged approach to the analysis of prices, which he breaks down into wages
+ (paid to the worker), profit (paid to the investor), and rent (paid to landowners).
+ The price paid for any good, he claims, must be split up among these three. Anything not
+ used to pay workers or pay the rent must be a profit to the seller. Smith then embarks on a
+  detailed analysis of each of these three components, identifying factors that cause them
+  to rise and fall relative to one another. Finally, he offers a long discussion of the
+  price of silver, with the broad aim of showing that silver prices do not simply decline
+  over time as more of the metal is mined.
+Book 2: Of the Nature, Accumulation, and Employment of Stock
+
+Smith provides a theoretical framework for thinking about "stock," meaning any assets that
+might be used in a profit-making enterprise. By dividing stock into capital and revenue, he
+argues that societies thrive when a large proportion of their stock is invested as capital,
+rather than spent on economically unproductive activities. He offers a more detailed
+treatment of money than in Book 1, reiterating his view that money is, essentially, not as
+special as people seem to think: like any other commodity, it can be "bought" by any person
+(or nation) with something of value to trade for it. In the book's last chapter, Smith
+describes three concentric types of commerce, which he terms the home trade, the foreign
+trade of consumption, and the carrying trade. Commerce carried on domestically (the home
+trade) is, he suggests, the most beneficial to the home country, while that carried on
+abroad (the carrying trade) does the least for domestic industry.
+Book 3: Of the Different Progress of Opulence in Different Nations
+
+This book, the shortest of the five, takes the form of an economic history lesson. Smith
+first proposes a "natural" model, according to which agriculture is the original and
+predominant economic activity, followed by manufacturing, and then by trade. This pattern,
+Smith says, was disrupted in medieval England, where various legal and social forces
+combined to give towns an economic advantage over the countryside. Oppressive landlords,
+for example, slammed the brakes on economic progress in their rural domains, while
+town-dwellers were granted considerable freedom to manage their own affairs. Consequently,
+urban economic growth outpaced rural growth for centuries, but eventually a surplus spilled
+over into the country in the form of investments by wealthy citizens. Thus, in a roundabout
+way, the development of towns contributed to the cultivation of the countryside.
+Book 4: Of Systems of Political Economy
+
+Although allegedly an overview of different politico-economic systems, this book is almost
+entirely preoccupied with mercantilism, the system of thought and policy that dictated Great
+Britain's trade relationships in Smith's time. According to the mercantile system, a
+country's wealth was determined primarily by its reserves of precious metals, and it was
+therefore important to encourage trades that brought currency back to the home country.
+Smith spends eight chapters critiquing both the assumptions of mercantilism and the policies
+it has promoted, including those that encourage exportation (e.g., bounties and drawbacks)
+and those that restrain importation of various goods (e.g., bans and tariffs). British
+colonial policy, something Smith views as almost entirely dictated by mercantile interests,
+gets a lengthy chapter of its own. The last chapter surveys an alternative system—called the
+agricultural system by Smith—popular among French intellectuals of the day.
+Book 5: Of the Revenue of the Sovereign or Commonwealth
+
+Finally, Smith turns his attention to the national budget. He lays out the different costs
+incurred in governing a kingdom, from the building of roads and bridges, to the expense of
+palaces and carriages for the monarch. Some of these costs, he argues, can be minimized
+without resorting to taxation, but most cannot. In the "tax chapter," Smith gives a catalog
+of different tax systems that have been tried by Great Britain and its European neighbors.
+None of these, he admits, are perfect, but some—such as a tax on luxury goods—are less
+oppressive than others, and therefore more likely to be accepted by the public. The book
+closes with a sobering consideration of Britain's national debt, which Smith sees as having
+spiraled dangerously out of control. In order to get the debt back into line, he contends,
+Great Britain will either have to raise additional funds, perhaps via a commodity tax, or
+cut back on expenses. If the latter is to be done, Smith recommends letting go of the
+American colonies, whose upkeep has been a continual drain on Britain's resources.
+
+
+-----------------
+
+The Wealth of Nations Summary
+
+SuperSummary, a modern alternative to SparkNotes and CliffsNotes, offers high-quality study guides that feature detailed chapter summaries and analysis of major themes, characters, quotes, and essay topics.  This one-page guide includes a plot summary and brief analysis of The Wealth of Nations by Adam Smith.
+
+The Wealth of Nations is a seminal work of economic theory by the Scottish economist Adam Smith. It was published in 1776 and is one of the first treatises outlining the role and purpose of the free market.
+
+Smith begins the book by telling us that his goal is to lay out why some nations are wealthier than other nations; it is not that other countries work harder or have better resources. For Adam Smith, the answer is free trade. Smith walks us through the foundation of money and the ways that money makes trade easier. With the barter system, we must wait to trade things that other people want; money removes that obstacle. This system works well, and the fewer regulations there are to impede this free trade system, the smoother the system is.
+
+One of the central tenets of the treatise is a concept Smith calls “the invisible hand.” He suggests that the system of pricing and valuation reacts both directly and indirectly with governing bodies and these elements of the market interact. Buying and selling happen naturally and continue until the governing body steps in to regulate this system. When governments step out of regulation, the people who create products will always work to make the biggest profit. This spells success all around, because when business owners have the long view in mind, they will put out their best work. He gives the example of a butcher. If the butcher sells bad cuts of meat, his customers will not come back. He might make a profit in the short term, but in the long term, it is better to sell a good product for a price people are willing to pay.
+
+Continuing with the invisible hand of the market ensures a prosperous system that works for the good of the majority. Smith acknowledges that some will become super rich, and some will stay poor, but for him, this is a logical price to pay for a thriving economic system. In order for freedom to prevail, and for the majority to pursue their happiness and goals, the system must allow for some measures of inequality.
+
+Smith wrote The Wealth of Nations in response to the prevailing economic theory of the time, mercantilism. Mercantilism stated that the economic system is a collection of winners and losers. For one country to get rich, it is necessary that another country be poor. Resources are limited and it is right and just to benefit your own country at the expense of another. This theory meant that countries tried hard to bring money and resources within their borders, but blocked free exchange so that money stayed inside. Countries would levy large tariffs on goods coming from outside countries, sometimes at the expense of their own long-term good.
+
+Smith argues that free trade allows countries to import goods that are highly expensive to produce within their borders and export goods that are cheap to produce. Opening borders is better in the long term because the long-term cost of production is lower. We harm our own economic system by not allowing our people access to these better, cheaper products, and by disengaging with trade relationships that will ultimately benefit our economy.
+
+He closes the book with a discussion about a few systems that should fall outside the realm of the free market. He mentions that institutions such as public schools and the police should be government run and regulated because their purpose is not profit but the public good. Smith believes in taxes and government institutions precisely for this reason. For the sake of public good, these kinds of public institutions should be under the jurisdiction of the government.
+
+A major theme of the book is the concept of wealth building. Smith outlines the components of what he believes makes a successful economy. Those governments keep their hand off the market, which allows the consumers and producers to make the best decisions they can about goods. When the government tries to regulate the system, it removes producers from the responsibility of pursuing what is in their highest good. This, in turn, robs the economy of quality goods and ultimately stability.
+
+Competition is the basis of Smith’s system. What drives producers to create products to the best of their ability is the competition of the market. This is a good thing even across borders. When countries close down competition, either through regulation or restricting trade, the invisible hand of the system is not free to balance itself.
+
+Smith gives an example of wine in Scotland to illustrate this point. Scotland is ill-equipped to produce wine, and so limiting French wine imports ignores the positivity of competition and wastes the public’s money in the long run. Allowing French wine to be in competition with Scottish wine produces a better product and helps the Scottish economy eliminate the waste of attempting to produce something it cannot.
+
+Many people view Smith’s book as a representation of the birth of free-market economics. While it is not without fault, modern free market economists point to its basic principles as a starting point for refining free market capitalism in modern day terms.
+Copyright 2015 | Super Summary
+
+    About Us
+    Support
+    Privacy Policy
+
+

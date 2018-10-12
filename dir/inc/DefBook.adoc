@@ -18,6 +18,6 @@
 :scriptsdir:    ../../dir/js
 :pdf-stylesdir: ../../dir/yml
 :pdf-style: default-theme.yml
-:stylesheet: axbook.css
+//:stylesheet: axbook.css
 :dirs: true
 // :pdf-fontssdir: ./dir/font

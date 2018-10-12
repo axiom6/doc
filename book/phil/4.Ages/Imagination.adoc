@@ -1,0 +1,15 @@
+
+include::../../../dir/inc/DefPractice.adoc[]
+
+=== [.black]#The Imagination Age#
+
+The imagination age is a theoretical period beyond the information age where
+creativity and imagination will become the primary creators of economic value.
+This contrasts with the information age where analysis and thinking were the
+main activities.[1][2] The concept holds that technologies like virtual reality,
+user created content and YouTube will change the way humans interact with
+each other and how they create economic and social structures. A key concept
+is that the rise of the immersive virtual reality, the cyberspace or the
+metaverse will raise the value of imagination work of designers, artists,
+video makers and actors over rational thinking as a foundation of culture
+and economics.

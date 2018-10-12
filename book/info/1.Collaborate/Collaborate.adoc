@@ -11,5 +11,5 @@ include::Request.adoc[]
 
 include::Team.adoc[]
 
-include::Kanban.adoc[]
+include::Activity.adoc[]
 <<<
