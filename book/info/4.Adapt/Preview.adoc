@@ -1,13 +1,19 @@
 
 include::../../../dir/inc/DefPractice.adoc[]
 
-The fine tuning of doing. Concepts are broken down into Features that are all Traced and linked to Technology Components and Acceptance criteria for completion. Collaborative Team members pull Component activities from the Kanban queue with full creative freedom for completion. Supercedes Agile
+[#AdaptAbstract]
+The fine tuning of doing. Concepts are broken down into Features that are all
+Traced and linked to Technology Components and Acceptance criteria for completion.
+Collaborative Team members pull Component activities from the Kanban queue with
+full creative freedom for completion. Supercedes Agile
 
-//// image::graph/Adapt.png[alt="Adapt",align="center"]
+// image::graph/Adapt.png[alt="Adapt",align="center"]
 
+[#AdaptDescription]
 [horizontal]
-Status::     Accomplishments, Concerns, Plans and Issues.
 Feature::    Outline of concrete business requirements aligned to technology.
+Status::     Accomplishments, Concerns, Plans and Issues.
+Guide::      Technology guidance and parameter tuning.
 Component::  Technology Traced by: UI, Service, Database & Cloud tiers.
-Acceptance:: Completion criteria for Components traced back to Features.
+
 

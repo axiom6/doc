@@ -2,6 +2,6 @@
 include::../../../dir/inc/DefStudy.adoc[]
 
 ''''
-=== [.black]#Community#
+=== [.black]#Guide#
 
 

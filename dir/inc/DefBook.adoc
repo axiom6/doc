@@ -14,10 +14,11 @@
 :icon-set: fa
 :imagesdir:     ./img
 :iconsdir:      ../../dir/ico
-:stylesdir:     ../../dir/css
+:stylesdir:     ./
 :scriptsdir:    ../../dir/js
 :pdf-stylesdir: ../../dir/yml
 :pdf-style: default-theme.yml
-//:stylesheet: axbook.css
+:stylesheet: Text.css
+:linkcss:
 :dirs: true
 // :pdf-fontssdir: ./dir/font

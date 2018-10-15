@@ -4,8 +4,8 @@ include::../../../dir/inc/DefPractice.adoc[]
 == [.black]#Technology#
 include::Preview.adoc[]
 <<<
-include::UI.adoc[]
+include::UX.adoc[]
 include::Service.adoc[]
-include::Database.adoc[]
+include::Model.adoc[]
 include::Cloud.adoc[]
 <<<

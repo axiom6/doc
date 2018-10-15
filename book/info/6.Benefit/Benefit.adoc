@@ -4,8 +4,8 @@ include::../../../dir/inc/DefPractice.adoc[]
 == [.black]#Benefit#
 include::Preview.adoc[]
 <<<
-include::Quantify.adoc[]
-include::Patterns.adoc[]
-include::Risk.adoc[]
+include::Interpret.adoc[]
 include::Review.adoc[]
+include::Architect.adoc[]
+include::Realize.adoc[]
 <<<

@@ -4,8 +4,8 @@ include::../../../dir/inc/DefPractice.adoc[]
 == [.black]#Discover#
 include::Preview.adoc[]
 <<<
+include::Insight.adoc[]
 include::Vision.adoc[]
-include::Community.adoc[]
-include::Connect.adoc[]
-include::Assume.adoc[]
+include::Market.adoc[]
+include::Strategy.adoc[]
 <<<

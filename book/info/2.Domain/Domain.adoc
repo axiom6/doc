@@ -4,8 +4,8 @@ include::../../../dir/inc/DefPractice.adoc[]
 == [.black]#Product#
 include::Preview.adoc[]
 <<<
-include::Entitlement.adoc[]
-include::Proposition.adoc[]
-include::Document.adoc[]
+include::Entitle.adoc[]
+include::Propose.adoc[]
+include::Acquire.adoc[]
 include::Portfolio.adoc[]
 <<<

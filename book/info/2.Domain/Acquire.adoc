@@ -2,7 +2,7 @@
 include::../../../dir/inc/DefStudy.adoc[]
 
 ''''
-=== [.black]#Document#
+=== [.black]#Acquire#
 
 
 * A written, drawn and presented representation of thought

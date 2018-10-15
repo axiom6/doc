@@ -4,9 +4,9 @@ include::../../../dir/inc/DefPractice.adoc[]
 == [.black]#Adapt#
 include::Preview.adoc[]
 <<<
-include::Status.adoc[]
 include::Feature.adoc[]
+include::Status.adoc[]
+include::Guide.adoc[]
 include::Component.adoc[]
-include::Acceptance.adoc[]
 <<<
 

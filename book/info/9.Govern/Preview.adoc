@@ -1,16 +1,19 @@
 
 include::../../../dir/inc/DefPractice.adoc[]
 
+[#GovernAbstract]
 Enables careful Consideration for Maturity, Assets and Comply by incorporating:
 
 * Timely business data from Discovery.
 * Technical reviews from Benefit.
 * Asset status from Warehouse.
 
-//// image::graph/Govern.png[alt="Govern",align="center"]
+// image::graph/Govern.png[alt="Govern",align="center"]
 
+[#GovernDescription]
 [horizontal]
+Advise::   A thought out rational decision making process.
 Maturity:: Identifies opportunities and resources for improvement.
 Asset::    Manages the allocation of personnel, finances and assets.
 Comply::   Provides required reports and issues for legal audits.
-Consider:: A thought out rational decision making process.
+

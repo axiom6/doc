@@ -8,7 +8,7 @@ include::readme.adoc[]
 
 include::1.Collaborate/Collaborate.adoc[]
 
-include::2.Product/Product.adoc[]
+include::2.Domain/Domain.adoc[]
 
 include::3.Discover/Discover.adoc[]
 

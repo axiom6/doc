@@ -1,13 +1,18 @@
 
 include::../../../dir/inc/DefPractice.adoc[]
 
-Quantifies the assumptions from Discovery with Data Science interpretations. Establishes a reference Architecture with design Patterns that guides Technology and provides a foundation for Review.
+[#BenefitAbstract]
+Quantifies the assumptions from Discovery with Data Science interpretations.
+Establishes a reference Architecture with design Patterns that guides Technology
+and provides a foundation for Review.
 
-//// image::graph/Benefit.png[alt="Benefit",align="center"]
+// image::graph/Benefit.png[alt="Benefit",align="center"]
 
+[#BenefitDescription]
 [horizontal]
-Quantify::    The Data Science that strategically verifies Assumptions, Patterns and Risk.
-Patterns::    A reference architecture of design patterns for each component.
-Risk::        Mitigates uncertainty for Teams, Product and Discoveries
+Interpret::   The Data Science that strategically verifies Assumptions, Patterns and Risk.
 Review::      The oversight of business and technical options and guidelines.
+Architect::   A reference architecture of design patterns for each component.
+Realize::     Mitigates uncertainty for Teams, Product and Discoveries
+
 

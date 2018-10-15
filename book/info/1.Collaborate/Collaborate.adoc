@@ -5,11 +5,8 @@ include::../../../dir/inc/DefPractice.adoc[]
 
 include::Preview.adoc[]
 <<<
-include::Charter.adoc[]
-
 include::Request.adoc[]
-
+include::Charter.adoc[]
 include::Team.adoc[]
-
 include::Activity.adoc[]
 <<<

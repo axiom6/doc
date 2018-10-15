@@ -4,8 +4,8 @@ include::../../../dir/inc/DefPractice.adoc[]
 == [.black]#Govern#
 include::Preview.adoc[]
 <<<
+include::Advise.adoc[]
 include::Maturity.adoc[]
 include::Asset.adoc[]
 include::Comply.adoc[]
-include::Consider.adoc[]
 <<<

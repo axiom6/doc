@@ -1,13 +1,16 @@
 
 include::../../../dir/inc/DefPractice.adoc[]
 
-Initially conducts Tests to ascertain deployment readiness, mitigated by Transition and backed by repeatable automation to insure successful delivery to production.
+[#ChangeAbstract]
+Initially conducts Tests to ascertain deployment readiness, mitigated by Transition and
+backed by repeatable automation to insure successful delivery to production.
 
-//// image::graph/Change.png[alt="Change",align="center"]
+// image::graph/Change.png[alt="Change",align="center"]
 
+[#ChangeDescription]
 [horizontal]
-Test::       Quality, defect and risk measures at many levels and types.
 Transition:: Addresses new and updated deployments and disruptions.
+Test::       Quality, defect and risk measures at many levels and types.
 Deploy::     Continously noves new component to Deliver.
-Maintain::   Insures that Deliver is running smoothly.
+Prove::   Insures that Deliver is running smoothly.
 

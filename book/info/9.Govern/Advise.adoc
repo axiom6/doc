@@ -2,6 +2,6 @@
 include::../../../dir/inc/DefStudy.adoc[]
 
 ''''
-=== [.black]#Entitlement#
+=== [.black]#Advise#
 
 
