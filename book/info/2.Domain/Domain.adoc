@@ -1,7 +1,7 @@
 
 include::../../../dir/inc/DefPractice.adoc[]
 
-== [.black]#Product#
+== [.black]#Domain#
 include::Preview.adoc[]
 <<<
 include::Entitle.adoc[]
