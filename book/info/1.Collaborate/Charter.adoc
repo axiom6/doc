@@ -3,5 +3,9 @@ include::../../../dir/inc/DefStudy.adoc[]
 
 ''''
 === [.black]#Charter#
+[horizontal]
+Mission::   Internal
+Ethics::    External
+Value::     Priority
 
 

@@ -3,5 +3,9 @@ include::../../../dir/inc/DefStudy.adoc[]
 
 ''''
 === [.black]#Propose#
+[horizontal]
+Inquire::  Fashions products for clients.
+Concept::  Reinforces in house and open source technology.
+Context::  Open source, technology, business and suplliers.
 
 

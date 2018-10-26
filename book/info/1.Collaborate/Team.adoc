@@ -4,32 +4,30 @@ include::../../../dir/inc/DefStudy.adoc[]
 ''''
 === [.black]#Team#
 
-Expert Teams::
-Reinforces in house and open source technology.
-Comprised of members with similar interests and talents.
-Core business and technology foundations are conceived and built here.
-Individual contributions a best expressed within an Expert Team.
-Examples include Product, UI, Service, Database and Cloud expertise.
+[horizontal]
+Product:: Fashions products for clients.
+Expert::  Reinforces in house and open source technology.
+Parters:: Open source, technology, business and suplliers.
 
-Product Teams::
-Fashions products for clients.
-Product Expert who are intrinsically part the product's user community
-drive the business.
+==== [.black]#Product#
+Product teams are intrinsically part the product's user community drive the business.
 In addition at least one member from each Expert Team is assigned to
 directly contribute to the product and to coordinate the specific expertise.
 This provides the Product with both a breath and depth of expertise,
 with a natural meams of coordination.
 
-Dual Membership::
+==== [.black]#Expert#
+Comprised of members with similar interests and talents.
+Core business and technology foundations are conceived and built here.
+Individual contributions a best expressed within an Expert Team.
+Examples include Product, UI, Service, Database and Cloud expertise.
+
+==== [.black]#Membership#
 Everyone contributes to both to an Expert Team and to a Product Team and are
 scheduled to work on just one team at any given time.
 When a Product lifecycle is completed the Experts have gained insight about
 what works well with a core technology along with technical debt.
 This is an opportunity to refine  and retire.
-
-Parters::
-Open source, technology, business and supllier Partners are brought in
-to reinforce efforts
 
 
 

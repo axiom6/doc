@@ -13,7 +13,7 @@ our Assume for deeper assessment in Benefit.
 [horizontal]
 Insight::    The meaningful ways we reach out to our community.
 Vision::     Our shared vision the we communicate to everyone.
-Narket::     Our colleagues and customers that we serve.
+Market::     Our colleagues and customers that we serve.
 Strategy::   The working concepts that need to be assessed by Benefit.
 
 

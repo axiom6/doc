@@ -3,5 +3,8 @@ include::../../../dir/inc/DefStudy.adoc[]
 
 ''''
 === [.black]#Activity#
-
+[horizontal]
+Purpose::  Fashions products for clients.
+Combine::  Reinforces in house and open source technology.
+Kanban::   Open source, technology, business and suplliers.
 

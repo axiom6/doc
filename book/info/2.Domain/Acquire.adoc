@@ -3,6 +3,7 @@ include::../../../dir/inc/DefStudy.adoc[]
 
 ''''
 === [.black]#Acquire#
-
-
-* A written, drawn and presented representation of thought
+[horizontal]
+Collect:: Fashions products for clients.
+Refine::  Reinforces in house and open source technology.
+Prepare:: Open source, technology, business and suplliers.

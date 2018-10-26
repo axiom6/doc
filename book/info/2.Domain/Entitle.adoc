@@ -3,5 +3,9 @@ include::../../../dir/inc/DefStudy.adoc[]
 
 ''''
 === [.black]#Entitle#
+[horizontal]
+Party::  Fashions products for clients.
+Skill::  Reinforces in house and open source technology.
+Role::   Open source, technology, business and suplliers.
 
 

@@ -3,5 +3,9 @@ include::../../../dir/inc/DefStudy.adoc[]
 
 ''''
 === [.black]#Request#
+[horizontal]
+Internal::     Internal
+External::     External
+Priority::     Priority
 
 
