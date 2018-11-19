@@ -1,741 +1,931 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Asciidoctor 1.5.7.1">
-<meta name="author" content="Tom Flaherty">
-<title>Humanistic Practices</title>
-<link rel="stylesheet" href="./Text.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="UTF-8">
+  <!--[if IE]>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="generator" content="Asciidoctor 1.5.7.1">
+  <meta name="author" content="Tom Flaherty">
+  <title>Humanistic Practices</title>
+  <link rel="stylesheet" href="./Text.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body class="book toc2 toc-left">
 <div id="header">
-<h1><span class="black  text-center">Humanistic Practices</span></h1>
-<div class="details">
-<span id="author" class="author">Tom Flaherty</span><br>
-</div>
-<div id="toc" class="toc2">
-<div id="toctitle">Table of Contents</div>
-<ul class="sectlevel1">
-<li><a href="#_collaborate"><span class="black">Collaborate</span></a>
-<ul class="sectlevel2">
-<li><a href="#_request"><span class="black">Request</span></a></li>
-<li><a href="#_charter"><span class="black">Charter</span></a></li>
-<li><a href="#_team"><span class="black">Team</span></a></li>
-<li><a href="#_activity"><span class="black">Activity</span></a></li>
-</ul>
-</li>
-<li><a href="#_domain"><span class="black">Domain</span></a>
-<ul class="sectlevel2">
-<li><a href="#_entitle"><span class="black">Entitle</span></a></li>
-<li><a href="#_propose"><span class="black">Propose</span></a></li>
-<li><a href="#_acquire"><span class="black">Acquire</span></a></li>
-<li><a href="#_portfolio"><span class="black">Portfolio</span></a></li>
-</ul>
-</li>
-<li><a href="#_discover"><span class="black">Discover</span></a>
-<ul class="sectlevel2">
-<li><a href="#_insight"><span class="black">Insight</span></a></li>
-<li><a href="#_vision"><span class="black">Vision</span></a></li>
-<li><a href="#_market"><span class="black">Market</span></a></li>
-<li><a href="#_strategy"><span class="black">Strategy</span></a></li>
-</ul>
-</li>
-<li><a href="#_adapt"><span class="black">Adapt</span></a>
-<ul class="sectlevel2">
-<li><a href="#_feature"><span class="black">Feature</span></a></li>
-<li><a href="#_status"><span class="black">Status</span></a></li>
-<li><a href="#_guide"><span class="black">Guide</span></a></li>
-<li><a href="#_component"><span class="black">Component</span></a></li>
-</ul>
-</li>
-<li><a href="#_technology"><span class="black">Technology</span></a>
-<ul class="sectlevel2">
-<li><a href="#_ux"><span class="black">UX</span></a></li>
-<li><a href="#_service"><span class="black">Service</span></a></li>
-<li><a href="#_model"><span class="black">Model</span></a></li>
-<li><a href="#_cloud"><span class="black">Cloud</span></a></li>
-</ul>
-</li>
-<li><a href="#_benefit"><span class="black">Benefit</span></a>
-<ul class="sectlevel2">
-<li><a href="#_interpret"><span class="black">Interpret</span></a></li>
-<li><a href="#_review"><span class="black">Review</span></a></li>
-<li><a href="#_architect"><span class="black">Architect</span></a></li>
-<li><a href="#_realize"><span class="black">Realize</span></a></li>
-</ul>
-</li>
-<li><a href="#_change"><span class="black">Change</span></a>
-<ul class="sectlevel2">
-<li><a href="#_transition"><span class="black">Transition</span></a></li>
-<li><a href="#_test"><span class="black">Test</span></a></li>
-<li><a href="#_deploy"><span class="black">Deploy</span></a></li>
-<li><a href="#_prove"><span class="black">Prove</span></a></li>
-</ul>
-</li>
-<li><a href="#_deliver"><span class="black">Deliver</span></a>
-<ul class="sectlevel2">
-<li><a href="#_support"><span class="black">Support</span></a></li>
-<li><a href="#_network"><span class="black">Network</span></a></li>
-<li><a href="#_warehouse"><span class="black">Warehouse</span></a></li>
-<li><a href="#_security"><span class="black">Security</span></a></li>
-</ul>
-</li>
-<li><a href="#_govern"><span class="black">Govern</span></a>
-<ul class="sectlevel2">
-<li><a href="#_advise"><span class="black">Advise</span></a></li>
-<li><a href="#_maturity"><span class="black">Maturity</span></a></li>
-<li><a href="#_asset"><span class="black">Asset</span></a></li>
-<li><a href="#_comply"><span class="black">Comply</span></a></li>
-</ul>
-</li>
-</ul>
-</div>
+  <h1><span class="black  text-center">Humanistic Practices</span></h1>
+  <div class="details">
+    <span id="author" class="author">Tom Flaherty</span><br>
+  </div>
+  <div id="toc" class="toc2">
+    <div id="toctitle">Table of Contents</div>
+    <ul class="sectlevel1">
+      <li><a href="#_collaborate"><span class="black">Collaborate</span></a>
+        <ul class="sectlevel2">
+          <li><a href="#_request"><span class="black">Request</span></a></li>
+          <li><a href="#_charter"><span class="black">Charter</span></a></li>
+          <li><a href="#_team"><span class="black">Team</span></a>
+            <ul class="sectlevel3">
+              <li><a href="#_product"><span class="black">Product</span></a></li>
+              <li><a href="#_expert"><span class="black">Expert</span></a></li>
+              <li><a href="#_membership"><span class="black">Membership</span></a></li>
+            </ul>
+          </li>
+          <li><a href="#_activity"><span class="black">Activity</span></a></li>
+        </ul>
+      </li>
+      <li><a href="#_domain"><span class="black">Domain</span></a>
+        <ul class="sectlevel2">
+          <li><a href="#_entitle"><span class="black">Entitle</span></a></li>
+          <li><a href="#_propose"><span class="black">Propose</span></a></li>
+          <li><a href="#_acquire"><span class="black">Acquire</span></a></li>
+          <li><a href="#_portfolio"><span class="black">Portfolio</span></a></li>
+        </ul>
+      </li>
+      <li><a href="#_discover"><span class="black">Discover</span></a>
+        <ul class="sectlevel2">
+          <li><a href="#_insight"><span class="black">Insight</span></a></li>
+          <li><a href="#_vision"><span class="black">Vision</span></a></li>
+          <li><a href="#_market"><span class="black">Market</span></a></li>
+          <li><a href="#_strategy"><span class="black">Strategy</span></a></li>
+        </ul>
+      </li>
+      <li><a href="#_adapt"><span class="black">Adapt</span></a>
+        <ul class="sectlevel2">
+          <li><a href="#_feature"><span class="black">Feature</span></a></li>
+          <li><a href="#_status"><span class="black">Status</span></a></li>
+          <li><a href="#_guide"><span class="black">Guide</span></a></li>
+          <li><a href="#_component"><span class="black">Component</span></a></li>
+        </ul>
+      </li>
+      <li><a href="#_technology"><span class="black">Technology</span></a>
+        <ul class="sectlevel2">
+          <li><a href="#_ux"><span class="black">UX</span></a></li>
+          <li><a href="#_service"><span class="black">Service</span></a></li>
+          <li><a href="#_model"><span class="black">Model</span></a></li>
+          <li><a href="#_cloud"><span class="black">Cloud</span></a></li>
+        </ul>
+      </li>
+      <li><a href="#_benefit"><span class="black">Benefit</span></a>
+        <ul class="sectlevel2">
+          <li><a href="#_interpret"><span class="black">Interpret</span></a></li>
+          <li><a href="#_review"><span class="black">Review</span></a></li>
+          <li><a href="#_architect"><span class="black">Architect</span></a></li>
+          <li><a href="#_realize"><span class="black">Realize</span></a></li>
+        </ul>
+      </li>
+      <li><a href="#_change"><span class="black">Change</span></a>
+        <ul class="sectlevel2">
+          <li><a href="#_transition"><span class="black">Transition</span></a></li>
+          <li><a href="#_test"><span class="black">Test</span></a></li>
+          <li><a href="#_deploy"><span class="black">Deploy</span></a></li>
+          <li><a href="#_prove"><span class="black">Prove</span></a></li>
+        </ul>
+      </li>
+      <li><a href="#_deliver"><span class="black">Deliver</span></a>
+        <ul class="sectlevel2">
+          <li><a href="#_support"><span class="black">Support</span></a></li>
+          <li><a href="#_network"><span class="black">Network</span></a></li>
+          <li><a href="#_warehouse"><span class="black">Warehouse</span></a></li>
+          <li><a href="#_security"><span class="black">Security</span></a></li>
+        </ul>
+      </li>
+      <li><a href="#_govern"><span class="black">Govern</span></a>
+        <ul class="sectlevel2">
+          <li><a href="#_advise"><span class="black">Advise</span></a></li>
+          <li><a href="#_maturity"><span class="black">Maturity</span></a></li>
+          <li><a href="#_asset"><span class="black">Asset</span></a></li>
+          <li><a href="#_comply"><span class="black">Comply</span></a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
 </div>
 <div id="content">
-<div id="preamble">
-<div class="sectionbody">
-<div class="paragraph">
-<p>A humanistic methodology with a light weight ontology comprising nine practices
-that Embrace, Innovate and Encourage the processes of Learning, Doing and Sharing.</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_collaborate"><span class="black">Collaborate</span></h2>
-<div class="sectionbody">
-<div id="CollaborateAbstract" class="paragraph">
-<p>Working together to create propositions, transform them into services, build the
-technology and put it into production.</p>
-</div>
-<div id="CollaborateDescription" class="hdlist">
-<table>
-<tr>
-<td class="hdlist1">
-Request
-</td>
-<td class="hdlist2">
-<p>A proactive attitude to respond to and process requests.</p>
-</td>
-</tr>
-<tr>
-<td class="hdlist1">
-Charter
-</td>
-<td class="hdlist2">
-<p>A statement about the purpose and how teams see themselves.</p>
-</td>
-</tr>
-<tr>
-<td class="hdlist1">
-Team
-</td>
-<td class="hdlist2">
-<p>Everyone is assigned to a Project and their Expert group(s).</p>
-</td>
-</tr>
-<tr>
-<td class="hdlist1">
-Activity
-</td>
-<td class="hdlist2">
-<p>A queue for pulling activities when members are ready.</p>
-<div style="page-break-after: always;"></div>
-</td>
-</tr>
-</table>
-</div>
-<hr>
-<div class="sect2">
-<h3 id="_request"><span class="black">Request</span></h3>
-<hr>
-</div>
-<div class="sect2">
-<h3 id="_charter"><span class="black">Charter</span></h3>
-<hr>
-</div>
-<div class="sect2">
-<h3 id="_team"><span class="black">Team</span></h3>
-<div class="dlist">
-<dl>
-<dt class="hdlist1">Expert Teams</dt>
-<dd>
-<p>Reinforces in house and open source technology.
-Comprised of members with similar interests and talents.
-Core business and technology foundations are conceived and built here.
-Individual contributions a best expressed within an Expert Team.
-Examples include Product, UI, Service, Database and Cloud expertise.</p>
-</dd>
-<dt class="hdlist1">Product Teams</dt>
-<dd>
-<p>Fashions products for clients.
-Product Expert who are intrinsically part the product&#8217;s user community
-drive the business.
-In addition at least one member from each Expert Team is assigned to
-directly contribute to the product and to coordinate the specific expertise.
-This provides the Product with both a breath and depth of expertise,
-with a natural meams of coordination.</p>
-</dd>
-<dt class="hdlist1">Dual Membership</dt>
-<dd>
-<p>Everyone contributes to both to an Expert Team and to a Product Team and are
-scheduled to work on just one team at any given time.
-When a Product lifecycle is completed the Experts have gained insight about
-what works well with a core technology along with technical debt.
-This is an opportunity to refine  and retire.</p>
-</dd>
-<dt class="hdlist1">Parters</dt>
-<dd>
-<p>Open source, technology, business and supllier Partners are brought in
-to reinforce efforts</p>
-</dd>
-</dl>
-</div>
-<hr>
-</div>
-<div class="sect2">
-<h3 id="_activity"><span class="black">Activity</span></h3>
-<div style="page-break-after: always;"></div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_domain"><span class="black">Domain</span></h2>
-<div class="sectionbody">
-<div id="DomainAbstract" class="paragraph">
-<p>Viable Propositions are promoted to Value Propositions by Discovery and their parts
-categorized into Entitle, Portfolio and Acquire.</p>
-</div>
-<div id="DomainDescription" class="hdlist">
-<table>
-<tr>
-<td class="hdlist1">
-Entitle
-</td>
-<td class="hdlist2">
-<p>The secure allocation of resources by roles.</p>
-</td>
-</tr>
-<tr>
-<td class="hdlist1">
-Propose
-</td>
-<td class="hdlist2">
-<p>The proposed ideas for new products.</p>
-</td>
-</tr>
-<tr>
-<td class="hdlist1">
-Acquire
-</td>
-<td class="hdlist2">
-<p>A collected written, drawn and presented representation of thought.</p>
-</td>
-</tr>
-<tr>
-<td class="hdlist1">
-Portfolio
-</td>
-<td class="hdlist2">
-<p>The entire bundle of current and future products that a company offers.</p>
-</td>
-</tr>
-</table>
-</div>
-<div style="page-break-after: always;"></div>
-<hr>
-<div class="sect2">
-<h3 id="_entitle"><span class="black">Entitle</span></h3>
-<hr>
-</div>
-<div class="sect2">
-<h3 id="_propose"><span class="black">Propose</span></h3>
-<hr>
-</div>
-<div class="sect2">
-<h3 id="_acquire"><span class="black">Acquire</span></h3>
-<div class="ulist">
-<ul>
-<li>
-<p>A written, drawn and presented representation of thought</p>
-</li>
-</ul>
-</div>
-<hr>
-</div>
-<div class="sect2">
-<h3 id="_portfolio"><span class="black">Portfolio</span></h3>
-<div style="page-break-after: always;"></div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_discover"><span class="black">Discover</span></h2>
-<div class="sectionbody">
-<div id="DiscoverAbstract" class="paragraph">
-<p>We formulate a shared vision about ourselve and our Community.
-We then continuusly assess Product Propositions to see what
-Connection they may have for out Community. We carefully list
-our Assume for deeper assessment in Benefit.</p>
-</div>
-<div id="DiscoverDescription" class="hdlist">
-<table>
-<tr>
-<td class="hdlist1">
-Insight
-</td>
-<td class="hdlist2">
-<p>The meaningful ways we reach out to our community.</p>
-</td>
-</tr>
-<tr>
-<td class="hdlist1">
-Vision
-</td>
-<td class="hdlist2">
-<p>Our shared vision the we communicate to everyone.</p>
-</td>
-</tr>
-<tr>
-<td class="hdlist1">
-Narket
-</td>
-<td class="hdlist2">
-<p>Our colleagues and customers that we serve.</p>
-</td>
-</tr>
-<tr>
-<td class="hdlist1">
-Strategy
-</td>
-<td class="hdlist2">
-<p>The working concepts that need to be assessed by Benefit.</p>
-</td>
-</tr>
-</table>
-</div>
-<div style="page-break-after: always;"></div>
-<hr>
-<div class="sect2">
-<h3 id="_insight"><span class="black">Insight</span></h3>
-<hr>
-</div>
-<div class="sect2">
-<h3 id="_vision"><span class="black">Vision</span></h3>
-<hr>
-</div>
-<div class="sect2">
-<h3 id="_market"><span class="black">Market</span></h3>
-<hr>
-</div>
-<div class="sect2">
-<h3 id="_strategy"><span class="black">Strategy</span></h3>
-<div style="page-break-after: always;"></div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_adapt"><span class="black">Adapt</span></h2>
-<div class="sectionbody">
-<div id="AdaptAbstract" class="paragraph">
-<p>The fine tuning of doing. Concepts are broken down into Features that are all
-Traced and linked to Technology Components and Acceptance criteria for completion.
-Collaborative Team members pull Component activities from the Kanban queue with
-full creative freedom for completion. Supercedes Agile</p>
-</div>
-<div id="AdaptDescription" class="hdlist">
-<table>
-<tr>
-<td class="hdlist1">
-Feature
-</td>
-<td class="hdlist2">
-<p>Outline of concrete business requirements aligned to technology.</p>
-</td>
-</tr>
-<tr>
-<td class="hdlist1">
-Status
-</td>
-<td class="hdlist2">
-<p>Accomplishments, Concerns, Plans and Issues.</p>
-</td>
-</tr>
-<tr>
-<td class="hdlist1">
-Guide
-</td>
-<td class="hdlist2">
-<p>Technology guidance and parameter tuning.</p>
-</td>
-</tr>
-<tr>
-<td class="hdlist1">
-Component
-</td>
-<td class="hdlist2">
-<p>Technology Traced by: UI, Service, Database &amp; Cloud tiers.</p>
-</td>
-</tr>
-</table>
-</div>
-<div style="page-break-after: always;"></div>
-<hr>
-<div class="sect2">
-<h3 id="_feature"><span class="black">Feature</span></h3>
-<hr>
-</div>
-<div class="sect2">
-<h3 id="_status"><span class="black">Status</span></h3>
-<hr>
-</div>
-<div class="sect2">
-<h3 id="_guide"><span class="black">Guide</span></h3>
-<hr>
-</div>
-<div class="sect2">
-<h3 id="_component"><span class="black">Component</span></h3>
-<div style="page-break-after: always;"></div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_technology"><span class="black">Technology</span></h2>
-<div class="sectionbody">
-<div id="TechnologyAbstract" class="paragraph">
-<p>All the software components integrated by tiers that implement products.
-Architect, Engineer, and Construct Activities are tracked in Adapt
-and guided by the reference Architecture Patterns and Reviews in Benefit.</p>
-</div>
-<div id="TechnologyDescription" class="hdlist">
-<table>
-<tr>
-<td class="hdlist1">
-UX
-</td>
-<td class="hdlist2">
-<p>Applications (mobile) that access services on the Cloud.</p>
-</td>
-</tr>
-<tr>
-<td class="hdlist1">
-Service
-</td>
-<td class="hdlist2">
-<p>Integrated functionality for applications with REST interfaces.</p>
-</td>
-</tr>
-<tr>
-<td class="hdlist1">
-Model
-</td>
-<td class="hdlist2">
-<p>Persistent storage wrapped by Describe Predict Simulate and Neural.</p>
-</td>
-</tr>
-<tr>
-<td class="hdlist1">
-Cloud
-</td>
-<td class="hdlist2">
-<p>A Responsive, resilient, elastic, message driven service runtime.</p>
-<div style="page-break-after: always;"></div>
-<div style="page-break-after: always;"></div>
-</td>
-</tr>
-</table>
-</div>
-<hr>
-<div class="sect2">
-<h3 id="_ux"><span class="black">UX</span></h3>
-<hr>
-</div>
-<div class="sect2">
-<h3 id="_service"><span class="black">Service</span></h3>
-<hr>
-</div>
-<div class="sect2">
-<h3 id="_model"><span class="black">Model</span></h3>
-<hr>
-</div>
-<div class="sect2">
-<h3 id="_cloud"><span class="black">Cloud</span></h3>
-<div style="page-break-after: always;"></div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_benefit"><span class="black">Benefit</span></h2>
-<div class="sectionbody">
-<div id="BenefitAbstract" class="paragraph">
-<p>Quantifies the assumptions from Discovery with Data Science interpretations.
-Establishes a reference Architecture with design Patterns that guides Technology
-and provides a foundation for Review.</p>
-</div>
-<div id="BenefitDescription" class="hdlist">
-<table>
-<tr>
-<td class="hdlist1">
-Interpret
-</td>
-<td class="hdlist2">
-<p>The Data Science that strategically verifies Assumptions, Patterns and Risk.</p>
-</td>
-</tr>
-<tr>
-<td class="hdlist1">
-Review
-</td>
-<td class="hdlist2">
-<p>The oversight of business and technical options and guidelines.</p>
-</td>
-</tr>
-<tr>
-<td class="hdlist1">
-Architect
-</td>
-<td class="hdlist2">
-<p>A reference architecture of design patterns for each component.</p>
-</td>
-</tr>
-<tr>
-<td class="hdlist1">
-Realize
-</td>
-<td class="hdlist2">
-<p>Mitigates uncertainty for Teams, Product and Discoveries</p>
-</td>
-</tr>
-</table>
-</div>
-<div style="page-break-after: always;"></div>
-<hr>
-<div class="sect2">
-<h3 id="_interpret"><span class="black">Interpret</span></h3>
-<hr>
-</div>
-<div class="sect2">
-<h3 id="_review"><span class="black">Review</span></h3>
-<hr>
-</div>
-<div class="sect2">
-<h3 id="_architect"><span class="black">Architect</span></h3>
-<hr>
-</div>
-<div class="sect2">
-<h3 id="_realize"><span class="black">Realize</span></h3>
-<div style="page-break-after: always;"></div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_change"><span class="black">Change</span></h2>
-<div class="sectionbody">
-<div id="ChangeAbstract" class="paragraph">
-<p>Initially conducts Tests to ascertain deployment readiness, mitigated by Transition and
-backed by repeatable automation to insure successful delivery to production.</p>
-</div>
-<div id="ChangeDescription" class="hdlist">
-<table>
-<tr>
-<td class="hdlist1">
-Transition
-</td>
-<td class="hdlist2">
-<p>Addresses new and updated deployments and disruptions.</p>
-</td>
-</tr>
-<tr>
-<td class="hdlist1">
-Test
-</td>
-<td class="hdlist2">
-<p>Quality, defect and risk measures at many levels and types.</p>
-</td>
-</tr>
-<tr>
-<td class="hdlist1">
-Deploy
-</td>
-<td class="hdlist2">
-<p>Continously noves new component to Deliver.</p>
-</td>
-</tr>
-<tr>
-<td class="hdlist1">
-Prove
-</td>
-<td class="hdlist2">
-<p>Insures that Deliver is running smoothly.</p>
-</td>
-</tr>
-</table>
-</div>
-<div style="page-break-after: always;"></div>
-<hr>
-<div class="sect2">
-<h3 id="_transition"><span class="black">Transition</span></h3>
-<hr>
-</div>
-<div class="sect2">
-<h3 id="_test"><span class="black">Test</span></h3>
-<hr>
-</div>
-<div class="sect2">
-<h3 id="_deploy"><span class="black">Deploy</span></h3>
-<hr>
-</div>
-<div class="sect2">
-<h3 id="_prove"><span class="black">Prove</span></h3>
-<div style="page-break-after: always;"></div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_deliver"><span class="black">Deliver</span></h2>
-<div class="sectionbody">
-<div id="DeliverAbstract" class="paragraph">
-<p>Delivers product via a Secured cloud Network with complete Support and a Warehouse for
-measuring asset effectiveness with Data Science.</p>
-</div>
-<div id="DeliverDescription" class="hdlist">
-<table>
-<tr>
-<td class="hdlist1">
-Support
-</td>
-<td class="hdlist2">
-<p>Customer care, help desk, privileges, document and educate.</p>
-</td>
-</tr>
-<tr>
-<td class="hdlist1">
-Network
-</td>
-<td class="hdlist2">
-<p>Switches, routers, computers provisiond in secure zones.</p>
-</td>
-</tr>
-<tr>
-<td class="hdlist1">
-Warehouse
-</td>
-<td class="hdlist2">
-<p>Extended data for assets, Data Science and Govern queries.</p>
-</td>
-</tr>
-<tr>
-<td class="hdlist1">
-Security
-</td>
-<td class="hdlist2">
-<p>Defense in depth, response, pull proxies and encrypted data.</p>
-<div style="page-break-after: always;"></div>
-</td>
-</tr>
-</table>
-</div>
-<hr>
-<div class="sect2">
-<h3 id="_support"><span class="black">Support</span></h3>
-<hr>
-</div>
-<div class="sect2">
-<h3 id="_network"><span class="black">Network</span></h3>
-<hr>
-</div>
-<div class="sect2">
-<h3 id="_warehouse"><span class="black">Warehouse</span></h3>
-<hr>
-</div>
-<div class="sect2">
-<h3 id="_security"><span class="black">Security</span></h3>
-<div style="page-break-after: always;"></div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_govern"><span class="black">Govern</span></h2>
-<div class="sectionbody">
-<div id="GovernAbstract" class="paragraph">
-<p>Enables careful Consideration for Maturity, Assets and Comply by incorporating:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Timely business data from Discovery.</p>
-</li>
-<li>
-<p>Technical reviews from Benefit.</p>
-</li>
-<li>
-<p>Asset status from Warehouse.</p>
-</li>
-</ul>
-</div>
-<div id="GovernDescription" class="hdlist">
-<table>
-<tr>
-<td class="hdlist1">
-Advise
-</td>
-<td class="hdlist2">
-<p>A thought out rational decision making process.</p>
-</td>
-</tr>
-<tr>
-<td class="hdlist1">
-Maturity
-</td>
-<td class="hdlist2">
-<p>Identifies opportunities and resources for improvement.</p>
-</td>
-</tr>
-<tr>
-<td class="hdlist1">
-Asset
-</td>
-<td class="hdlist2">
-<p>Manages the allocation of personnel, finances and assets.</p>
-</td>
-</tr>
-<tr>
-<td class="hdlist1">
-Comply
-</td>
-<td class="hdlist2">
-<p>Provides required reports and issues for legal audits.</p>
-</td>
-</tr>
-</table>
-</div>
-<div style="page-break-after: always;"></div>
-<hr>
-<div class="sect2">
-<h3 id="_advise"><span class="black">Advise</span></h3>
-<hr>
-</div>
-<div class="sect2">
-<h3 id="_maturity"><span class="black">Maturity</span></h3>
-<hr>
-</div>
-<div class="sect2">
-<h3 id="_asset"><span class="black">Asset</span></h3>
-<hr>
-</div>
-<div class="sect2">
-<h3 id="_comply"><span class="black">Comply</span></h3>
-<div style="page-break-after: always;"></div>
-</div>
-</div>
-</div>
+  <div id="preamble">
+    <div class="sectionbody">
+      <div class="paragraph">
+        <p>A humanistic methodology with a light weight ontology comprising nine practices
+          that Embrace, Innovate and Encourage the processes of Learning, Doing and Sharing.</p>
+      </div>
+    </div>
+  </div>
+  <div class="sect1">
+    <h2 id="_collaborate"><span class="black">Collaborate</span></h2>
+    <div class="sectionbody">
+      <div id="CollaborateAbstract" class="paragraph">
+        <p>Working together to create propositions, transform them into services, build the
+          technology and put it into production.</p>
+      </div>
+      <div id="CollaborateDescription" class="hdlist">
+        <table>
+          <tr>
+            <td class="hdlist1">
+              Request
+            </td>
+            <td class="hdlist2">
+              <p>A proactive attitude to respond to and process requests.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="hdlist1">
+              Charter
+            </td>
+            <td class="hdlist2">
+              <p>A statement about the purpose and how teams see themselves.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="hdlist1">
+              Team
+            </td>
+            <td class="hdlist2">
+              <p>Everyone is assigned to a Project and their Expert group(s).</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="hdlist1">
+              Activity
+            </td>
+            <td class="hdlist2">
+              <p>A queue for pulling activities when members are ready.</p>
+              <div style="page-break-after: always;"></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <hr>
+      <div class="sect2">
+        <h3 id="_request"><span class="black">Request</span></h3>
+        <div class="hdlist">
+          <table>
+            <tr>
+              <td class="hdlist1">
+                Internal
+              </td>
+              <td class="hdlist2">
+                <p>Internal</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="hdlist1">
+                External
+              </td>
+              <td class="hdlist2">
+                <p>External</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="hdlist1">
+                Priority
+              </td>
+              <td class="hdlist2">
+                <p>Priority</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <hr>
+      </div>
+      <div class="sect2">
+        <h3 id="_charter"><span class="black">Charter</span></h3>
+        <div class="hdlist">
+          <table>
+            <tr>
+              <td class="hdlist1">
+                Mission
+              </td>
+              <td class="hdlist2">
+                <p>Internal</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="hdlist1">
+                Ethics
+              </td>
+              <td class="hdlist2">
+                <p>External</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="hdlist1">
+                Value
+              </td>
+              <td class="hdlist2">
+                <p>Priority</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <hr>
+      </div>
+      <div class="sect2">
+        <h3 id="_team"><span class="black">Team</span></h3>
+        <div class="hdlist">
+          <table>
+            <tr>
+              <td class="hdlist1">
+                Product
+              </td>
+              <td class="hdlist2">
+                <p>Fashions products for clients.</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="hdlist1">
+                Expert
+              </td>
+              <td class="hdlist2">
+                <p>Reinforces in house and open source technology.</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="hdlist1">
+                Parters
+              </td>
+              <td class="hdlist2">
+                <p>Open source, technology, business and suplliers.</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="sect3">
+          <h4 id="_product"><span class="black">Product</span></h4>
+          <div class="paragraph">
+            <p>Product teams are intrinsically part the product&#8217;s user community drive the business.
+              In addition at least one member from each Expert Team is assigned to
+              directly contribute to the product and to coordinate the specific expertise.
+              This provides the Product with both a breath and depth of expertise,
+              with a natural meams of coordination.</p>
+          </div>
+        </div>
+        <div class="sect3">
+          <h4 id="_expert"><span class="black">Expert</span></h4>
+          <div class="paragraph">
+            <p>Comprised of members with similar interests and talents.
+              Core business and technology foundations are conceived and built here.
+              Individual contributions a best expressed within an Expert Team.
+              Examples include Product, UI, Service, Database and Cloud expertise.</p>
+          </div>
+        </div>
+        <div class="sect3">
+          <h4 id="_membership"><span class="black">Membership</span></h4>
+          <div class="paragraph">
+            <p>Everyone contributes to both to an Expert Team and to a Product Team and are
+              scheduled to work on just one team at any given time.
+              When a Product lifecycle is completed the Experts have gained insight about
+              what works well with a core technology along with technical debt.
+              This is an opportunity to refine and retire.</p>
+          </div>
+          <hr>
+        </div>
+      </div>
+      <div class="sect2">
+        <h3 id="_activity"><span class="black">Activity</span></h3>
+        <div class="hdlist">
+          <table>
+            <tr>
+              <td class="hdlist1">
+                Purpose
+              </td>
+              <td class="hdlist2">
+                <p>Fashions products for clients.</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="hdlist1">
+                Combine
+              </td>
+              <td class="hdlist2">
+                <p>Reinforces in house and open source technology.</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="hdlist1">
+                Kanban
+              </td>
+              <td class="hdlist2">
+                <p>Open source, technology, business and suplliers.</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div style="page-break-after: always;"></div>
+      </div>
+    </div>
+  </div>
+  <div class="sect1">
+    <h2 id="_domain"><span class="black">Domain</span></h2>
+    <div class="sectionbody">
+      <div id="DomainAbstract" class="paragraph">
+        <p>Viable Propositions are promoted to Value Propositions by Discovery and their parts
+          categorized into Entitle, Portfolio and Acquire.</p>
+      </div>
+      <div id="DomainDescription" class="hdlist">
+        <table>
+          <tr>
+            <td class="hdlist1">
+              Entitle
+            </td>
+            <td class="hdlist2">
+              <p>The secure allocation of resources by roles.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="hdlist1">
+              Propose
+            </td>
+            <td class="hdlist2">
+              <p>The proposed ideas for new products.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="hdlist1">
+              Acquire
+            </td>
+            <td class="hdlist2">
+              <p>A collected written, drawn and presented representation of thought.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="hdlist1">
+              Portfolio
+            </td>
+            <td class="hdlist2">
+              <p>The entire bundle of current and future products that a company offers.</p>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div style="page-break-after: always;"></div>
+      <hr>
+      <div class="sect2">
+        <h3 id="_entitle"><span class="black">Entitle</span></h3>
+        <div class="hdlist">
+          <table>
+            <tr>
+              <td class="hdlist1">
+                Party
+              </td>
+              <td class="hdlist2">
+                <p>Fashions products for clients.</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="hdlist1">
+                Skill
+              </td>
+              <td class="hdlist2">
+                <p>Reinforces in house and open source technology.</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="hdlist1">
+                Role
+              </td>
+              <td class="hdlist2">
+                <p>Open source, technology, business and suplliers.</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <hr>
+      </div>
+      <div class="sect2">
+        <h3 id="_propose"><span class="black">Propose</span></h3>
+        <div class="hdlist">
+          <table>
+            <tr>
+              <td class="hdlist1">
+                Inquire
+              </td>
+              <td class="hdlist2">
+                <p>Fashions products for clients.</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="hdlist1">
+                Concept
+              </td>
+              <td class="hdlist2">
+                <p>Reinforces in house and open source technology.</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="hdlist1">
+                Context
+              </td>
+              <td class="hdlist2">
+                <p>Open source, technology, business and suplliers.</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <hr>
+      </div>
+      <div class="sect2">
+        <h3 id="_acquire"><span class="black">Acquire</span></h3>
+        <div class="hdlist">
+          <table>
+            <tr>
+              <td class="hdlist1">
+                Collect
+              </td>
+              <td class="hdlist2">
+                <p>Fashions products for clients.</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="hdlist1">
+                Refine
+              </td>
+              <td class="hdlist2">
+                <p>Reinforces in house and open source technology.</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="hdlist1">
+                Prepare
+              </td>
+              <td class="hdlist2">
+                <p>Open source, technology, business and suplliers.</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <hr>
+      </div>
+      <div class="sect2">
+        <h3 id="_portfolio"><span class="black">Portfolio</span></h3>
+        <div style="page-break-after: always;"></div>
+      </div>
+    </div>
+  </div>
+  <div class="sect1">
+    <h2 id="_discover"><span class="black">Discover</span></h2>
+    <div class="sectionbody">
+      <div id="DiscoverAbstract" class="paragraph">
+        <p>We formulate a shared vision about ourselve and our Community.
+          We then continuusly assess Product Propositions to see what
+          Connection they may have for out Community. We carefully list
+          our Assume for deeper assessment in Benefit.</p>
+      </div>
+      <div id="DiscoverDescription" class="hdlist">
+        <table>
+          <tr>
+            <td class="hdlist1">
+              Insight
+            </td>
+            <td class="hdlist2">
+              <p>The meaningful ways we reach out to our community.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="hdlist1">
+              Vision
+            </td>
+            <td class="hdlist2">
+              <p>Our shared vision the we communicate to everyone.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="hdlist1">
+              Market
+            </td>
+            <td class="hdlist2">
+              <p>Our colleagues and customers that we serve.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="hdlist1">
+              Strategy
+            </td>
+            <td class="hdlist2">
+              <p>The working concepts that need to be assessed by Benefit.</p>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div style="page-break-after: always;"></div>
+      <hr>
+      <div class="sect2">
+        <h3 id="_insight"><span class="black">Insight</span></h3>
+        <hr>
+      </div>
+      <div class="sect2">
+        <h3 id="_vision"><span class="black">Vision</span></h3>
+        <hr>
+      </div>
+      <div class="sect2">
+        <h3 id="_market"><span class="black">Market</span></h3>
+        <hr>
+      </div>
+      <div class="sect2">
+        <h3 id="_strategy"><span class="black">Strategy</span></h3>
+        <div style="page-break-after: always;"></div>
+      </div>
+    </div>
+  </div>
+  <div class="sect1">
+    <h2 id="_adapt"><span class="black">Adapt</span></h2>
+    <div class="sectionbody">
+      <div id="AdaptAbstract" class="paragraph">
+        <p>The fine tuning of doing. Concepts are broken down into Features that are all
+          Traced and linked to Technology Components and Acceptance criteria for completion.
+          Collaborative Team members pull Component activities from the Kanban queue with
+          full creative freedom for completion. Supercedes Agile</p>
+      </div>
+      <div id="AdaptDescription" class="hdlist">
+        <table>
+          <tr>
+            <td class="hdlist1">
+              Feature
+            </td>
+            <td class="hdlist2">
+              <p>Outline of concrete business requirements aligned to technology.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="hdlist1">
+              Status
+            </td>
+            <td class="hdlist2">
+              <p>Accomplishments, Concerns, Plans and Issues.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="hdlist1">
+              Guide
+            </td>
+            <td class="hdlist2">
+              <p>Technology guidance and parameter tuning.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="hdlist1">
+              Component
+            </td>
+            <td class="hdlist2">
+              <p>Technology Traced by: UI, Service, Database &amp; Cloud tiers.</p>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div style="page-break-after: always;"></div>
+      <hr>
+      <div class="sect2">
+        <h3 id="_feature"><span class="black">Feature</span></h3>
+        <hr>
+      </div>
+      <div class="sect2">
+        <h3 id="_status"><span class="black">Status</span></h3>
+        <hr>
+      </div>
+      <div class="sect2">
+        <h3 id="_guide"><span class="black">Guide</span></h3>
+        <hr>
+      </div>
+      <div class="sect2">
+        <h3 id="_component"><span class="black">Component</span></h3>
+        <div style="page-break-after: always;"></div>
+      </div>
+    </div>
+  </div>
+  <div class="sect1">
+    <h2 id="_technology"><span class="black">Technology</span></h2>
+    <div class="sectionbody">
+      <div id="TechnologyAbstract" class="paragraph">
+        <p>All the software components integrated by tiers that implement products.
+          Architect, Engineer, and Construct Activities are tracked in Adapt
+          and guided by the reference Architecture Patterns and Reviews in Benefit.</p>
+      </div>
+      <div id="TechnologyDescription" class="hdlist">
+        <table>
+          <tr>
+            <td class="hdlist1">
+              UX
+            </td>
+            <td class="hdlist2">
+              <p>Applications (mobile) that access services on the Cloud.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="hdlist1">
+              Service
+            </td>
+            <td class="hdlist2">
+              <p>Integrated functionality for applications with REST interfaces.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="hdlist1">
+              Model
+            </td>
+            <td class="hdlist2">
+              <p>Persistent storage wrapped by Describe Predict Simulate and Neural.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="hdlist1">
+              Cloud
+            </td>
+            <td class="hdlist2">
+              <p>A Responsive, resilient, elastic, message driven service runtime.</p>
+              <div style="page-break-after: always;"></div>
+              <div style="page-break-after: always;"></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <hr>
+      <div class="sect2">
+        <h3 id="_ux"><span class="black">UX</span></h3>
+        <hr>
+      </div>
+      <div class="sect2">
+        <h3 id="_service"><span class="black">Service</span></h3>
+        <hr>
+      </div>
+      <div class="sect2">
+        <h3 id="_model"><span class="black">Model</span></h3>
+        <hr>
+      </div>
+      <div class="sect2">
+        <h3 id="_cloud"><span class="black">Cloud</span></h3>
+        <div style="page-break-after: always;"></div>
+      </div>
+    </div>
+  </div>
+  <div class="sect1">
+    <h2 id="_benefit"><span class="black">Benefit</span></h2>
+    <div class="sectionbody">
+      <div id="BenefitAbstract" class="paragraph">
+        <p>Quantifies the assumptions from Discovery with Data Science interpretations.
+          Establishes a reference Architecture with design Patterns that guides Technology
+          and provides a foundation for Review.</p>
+      </div>
+      <div id="BenefitDescription" class="hdlist">
+        <table>
+          <tr>
+            <td class="hdlist1">
+              Interpret
+            </td>
+            <td class="hdlist2">
+              <p>The Data Science that strategically verifies Assumptions, Patterns and Risk.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="hdlist1">
+              Review
+            </td>
+            <td class="hdlist2">
+              <p>The oversight of business and technical options and guidelines.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="hdlist1">
+              Architect
+            </td>
+            <td class="hdlist2">
+              <p>A reference architecture of design patterns for each component.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="hdlist1">
+              Realize
+            </td>
+            <td class="hdlist2">
+              <p>Mitigates uncertainty for Teams, Product and Discoveries</p>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div style="page-break-after: always;"></div>
+      <hr>
+      <div class="sect2">
+        <h3 id="_interpret"><span class="black">Interpret</span></h3>
+        <hr>
+      </div>
+      <div class="sect2">
+        <h3 id="_review"><span class="black">Review</span></h3>
+        <hr>
+      </div>
+      <div class="sect2">
+        <h3 id="_architect"><span class="black">Architect</span></h3>
+        <hr>
+      </div>
+      <div class="sect2">
+        <h3 id="_realize"><span class="black">Realize</span></h3>
+        <div style="page-break-after: always;"></div>
+      </div>
+    </div>
+  </div>
+  <div class="sect1">
+    <h2 id="_change"><span class="black">Change</span></h2>
+    <div class="sectionbody">
+      <div id="ChangeAbstract" class="paragraph">
+        <p>Initially conducts Tests to ascertain deployment readiness, mitigated by Transition and
+          backed by repeatable automation to insure successful delivery to production.</p>
+      </div>
+      <div id="ChangeDescription" class="hdlist">
+        <table>
+          <tr>
+            <td class="hdlist1">
+              Transition
+            </td>
+            <td class="hdlist2">
+              <p>Addresses new and updated deployments and disruptions.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="hdlist1">
+              Test
+            </td>
+            <td class="hdlist2">
+              <p>Quality, defect and risk measures at many levels and types.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="hdlist1">
+              Deploy
+            </td>
+            <td class="hdlist2">
+              <p>Continously noves new component to Deliver.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="hdlist1">
+              Prove
+            </td>
+            <td class="hdlist2">
+              <p>Insures that Deliver is running smoothly.</p>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div style="page-break-after: always;"></div>
+      <hr>
+      <div class="sect2">
+        <h3 id="_transition"><span class="black">Transition</span></h3>
+        <hr>
+      </div>
+      <div class="sect2">
+        <h3 id="_test"><span class="black">Test</span></h3>
+        <hr>
+      </div>
+      <div class="sect2">
+        <h3 id="_deploy"><span class="black">Deploy</span></h3>
+        <hr>
+      </div>
+      <div class="sect2">
+        <h3 id="_prove"><span class="black">Prove</span></h3>
+        <div style="page-break-after: always;"></div>
+      </div>
+    </div>
+  </div>
+  <div class="sect1">
+    <h2 id="_deliver"><span class="black">Deliver</span></h2>
+    <div class="sectionbody">
+      <div id="DeliverAbstract" class="paragraph">
+        <p>Delivers product via a Secured cloud Network with complete Support and a Warehouse for
+          measuring asset effectiveness with Data Science.</p>
+      </div>
+      <div id="DeliverDescription" class="hdlist">
+        <table>
+          <tr>
+            <td class="hdlist1">
+              Support
+            </td>
+            <td class="hdlist2">
+              <p>Customer care, help desk, privileges, document and educate.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="hdlist1">
+              Network
+            </td>
+            <td class="hdlist2">
+              <p>Switches, routers, computers provisiond in secure zones.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="hdlist1">
+              Warehouse
+            </td>
+            <td class="hdlist2">
+              <p>Extended data for assets, Data Science and Govern queries.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="hdlist1">
+              Security
+            </td>
+            <td class="hdlist2">
+              <p>Defense in depth, response, pull proxies and encrypted data.</p>
+              <div style="page-break-after: always;"></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <hr>
+      <div class="sect2">
+        <h3 id="_support"><span class="black">Support</span></h3>
+        <hr>
+      </div>
+      <div class="sect2">
+        <h3 id="_network"><span class="black">Network</span></h3>
+        <hr>
+      </div>
+      <div class="sect2">
+        <h3 id="_warehouse"><span class="black">Warehouse</span></h3>
+        <hr>
+      </div>
+      <div class="sect2">
+        <h3 id="_security"><span class="black">Security</span></h3>
+        <div style="page-break-after: always;"></div>
+      </div>
+    </div>
+  </div>
+  <div class="sect1">
+    <h2 id="_govern"><span class="black">Govern</span></h2>
+    <div class="sectionbody">
+      <div id="GovernAbstract" class="paragraph">
+        <p>Enables careful Consideration for Maturity, Assets and Comply by incorporating:</p>
+      </div>
+      <div class="ulist">
+        <ul>
+          <li>
+            <p>Timely business data from Discovery.</p>
+          </li>
+          <li>
+            <p>Technical reviews from Benefit.</p>
+          </li>
+          <li>
+            <p>Asset status from Warehouse.</p>
+          </li>
+        </ul>
+      </div>
+      <div id="GovernDescription" class="hdlist">
+        <table>
+          <tr>
+            <td class="hdlist1">
+              Advise
+            </td>
+            <td class="hdlist2">
+              <p>A thought out rational decision making process.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="hdlist1">
+              Maturity
+            </td>
+            <td class="hdlist2">
+              <p>Identifies opportunities and resources for improvement.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="hdlist1">
+              Asset
+            </td>
+            <td class="hdlist2">
+              <p>Manages the allocation of personnel, finances and assets.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="hdlist1">
+              Comply
+            </td>
+            <td class="hdlist2">
+              <p>Provides required reports and issues for legal audits.</p>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div style="page-break-after: always;"></div>
+      <hr>
+      <div class="sect2">
+        <h3 id="_advise"><span class="black">Advise</span></h3>
+        <hr>
+      </div>
+      <div class="sect2">
+        <h3 id="_maturity"><span class="black">Maturity</span></h3>
+        <hr>
+      </div>
+      <div class="sect2">
+        <h3 id="_asset"><span class="black">Asset</span></h3>
+        <hr>
+      </div>
+      <div class="sect2">
+        <h3 id="_comply"><span class="black">Comply</span></h3>
+        <div style="page-break-after: always;"></div>
+      </div>
+    </div>
+  </div>
 </div>
 <div id="footer">
-<div id="footer-text">
-Last updated 2018-10-15 13:31:09 MDT
-</div>
+  <div id="footer-text">
+    Last updated 2018-10-15 13:31:09 MDT
+  </div>
 </div>
 </body>
 </html>
