@@ -2,15 +2,15 @@
 include::../../../dir/inc/DefPractice.adoc[]
 
 [#DomainAbstract]
-Viable Propositions are promoted to Value Propositions by Discovery and their parts
-categorized into Entitle, Portfolio and Acquire.
+Everyone is entilted to the resources they. Ideas are proposed. Relevant information in acquired for exploration.
+Active project and products are placed in a portfolio.
 
-// image::graph/Product.png[alt="Product",align="center"]
+image::graph/Domain.png[alt="Product",align="center"]
 
 [#DomainDescription]
 [horizontal]
-Entitle::     The secure allocation of resources by roles.
-Propose::     The proposed ideas for new products.
+Entitle::     The secure allocation of resources to team members by roles.
+Propose::     Proposed ideas for new products.
 Acquire::     A collected written, drawn and presented representation of thought.
 Portfolio::   The entire bundle of current and future products that a company offers.
 

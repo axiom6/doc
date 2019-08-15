@@ -1,0 +1,16 @@
+
+include::../../../dir/inc/DefPractice.adoc[]
+
+[#CollaborateAbstract]
+Working together to create products and adapt to changing conditions.
+
+
+image::graph/Collab.png[alt="Collaborate",align="center"]
+
+
+[#CollaborateDescription]
+[horizontal]
+Request::  A proactive attitude to respond to and incorporate requests.
+Charter::  A statement about the teams purpose and its roles..
+Team::     Members are valued for their expertise when assigned to projects.
+Activity:: A Kanban queue where team members pull activities.

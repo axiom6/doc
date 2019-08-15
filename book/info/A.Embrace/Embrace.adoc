@@ -8,7 +8,7 @@ include::Principles.adoc[]
 <<<
 
 === [.black]#Collaborate#
-include::../1.Collaborate/Preview.adoc[]
+include::../1.Collab/Preview.adoc[]
 <<<
 
 === [.black]#What Makes Embrace Work#

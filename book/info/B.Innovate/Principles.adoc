@@ -1,25 +1,38 @@
 
 include::../../../dir/inc/DefPractice.adoc[]
 
-==== [.black]#We Appreciate "Where Good Ideas Come From*"#
+image::humanistic/Innovate.png[alt="Innovate",align="center"]
+
+=== [.black]#Engage#
+[horizontal]
+Learning::    Leverage change to adopt new strategies.
+Agenda::      We have no hidden agendas.
+Space::       We create the space and entitle everyone for "Good Ideas" to emerge.
+Continuous::  Everyone is involved in continuously improvment.
+
+=== [.black]#Invent#
+[horizontal]
+Inception::   We appreciate where good ideas come From
+Hunches::     Ideas evolve over time as slow hunches rather than sudden breakthroughs.
+Extend::      Technologies engineered for one purpose are extended to other purposes.
+Refinement::  Improvement takes place at multiple levels.
+
+=== [.black]#Data#
+[horizontal]
+Share::       We document and share information freely with everyone.
+Transparent:: We are transparent with everything and everyone.
+Convergen::   Ideas converge in a shared physical or intellectual space.
+Excellence:: We strive for excellence in everything we do. 
+ 
+
+=== [.black]#Connect#
 [horizontal]
 Connection:: Chance favors the connected mind with serendipitous discoveries.
 Ecosystem::  Allows ideas to be diffused and be reconnected in novel ways.
 Adjacent::   Possibilities emerge and become close waiting to be connected.
-Hunches::    Ideas evolve over time as slow hunches rather than sudden breakthroughs.
-Extend::     Technologies engineered for one purpose are extended to other purposes.
-Convergen::  Ideas converge in a shared physical or intellectual space.
-Learning::   Leverage change to adopt new strategies.
-Space::      We create the space and entitle everyone for "Good Ideas" to emerge.
 
-==== [.black]#Improvement#
-[horizontal]
-Refinement:: Improvement takes place at multiple levels.
-Continuous:: Everyone is involved in continuously improvment.
-Excellence:: We strive for excellence in everything we do. 
 
-==== [.black]#Transparency#
-[horizontal]
-Share::      We document and share information freely with everyone.
-Transparent: We are transparent with everything and everyone.
-Agenda::     We have no hidden agendas. 
+
+
+
+

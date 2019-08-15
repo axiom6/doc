@@ -8,7 +8,7 @@ include::Principles.adoc[]
 <<<
 
 === [.black]#Product#
-include::../2.Product/Preview.adoc[]
+include::../2.Domain/Preview.adoc[]
 <<<
 
 === [.black]#What Makes Innovate Work#

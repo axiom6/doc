@@ -1,23 +1,27 @@
 
 include::../../../dir/inc/DefPractice.adoc[]
 
-==== [.black]#Vision#
+image::humanistic/Encourage.png[alt="Encourage",align="center"]
+
+=== [.black]#Augment#
+[horizontal]
+Track::  We list, track and challenge all our assumptions.
+Errors:: Our mistakes help us abandon our old assumptions.
+
+=== [.black]#Intent#
 [horizontal]
 Why::     We communicate our positive "Why" message to our community.
 Govern::  We govern by our vision and passion. 
 
-==== [.black]#Community#
+=== [.black]#Ethics#
 [horizontal]
 Benefit::  We benefit everyone with a minimum of Risk.
 Priority:: We recognize our teams and customers are the reason for our existence.
 
-==== [.black]#Connect#
+=== [.black]#Reflect#
 [horizontal]
 Strive::  We strive to discover and connect to out community.
 Genuine:: Our connections are genuine.
 
-==== [.black]#Assume#
-[horizontal]
-Track::  We list, track and challenge all our assumptions.
-Errors:: Our mistakes help us abandon our old assumptions.
+
 

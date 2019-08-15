@@ -2,14 +2,14 @@
 include::../../../dir/inc/DefPractice.adoc[]
 
 [#DeliverAbstract]
-Delivers product via a Secured cloud Network with complete Support and a Warehouse for
+Delivers product via a Secured cloud Network with complete Support and Simulations for
 measuring asset effectiveness with Data Science.
 
-// image::graph/Deliver.png[alt="Production",align="center"]
+image::graph/Deliver.png[alt="Production",align="center"]
 
 [#DeliverDescription]
 [horizontal]
 Support::   Customer care, help desk, privileges, document and educate.
-Network::   Switches, routers, computers provisiond in secure zones.
-Warehouse:: Extended data for assets, Data Science and Govern queries.
+Network::   Switches, routers, computers provisiond within secure zones.
+Simulate:: Extended data for assets, Data Science and Govern queries and simulations.
 Security::  Defense in depth, response, pull proxies and encrypted data.

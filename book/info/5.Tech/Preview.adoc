@@ -3,11 +3,9 @@ include::../../../dir/inc/DefPractice.adoc[]
 
 
 [#TechnologyAbstract]
-All the software components integrated by tiers that implement products.
-Architect, Engineer, and Construct Activities are tracked in Adapt
-and guided by the reference Architecture Patterns and Reviews in Benefit.
+Technology broken donw by tiers.
 
-// image::graph/Technology.png[alt="Technology",align="center"]
+image::graph/Tech.png[alt="Technology",align="center"]
 
 [#TechnologyDescription]
 [horizontal]

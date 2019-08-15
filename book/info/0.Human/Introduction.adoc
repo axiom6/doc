@@ -63,11 +63,40 @@ But most important their are millions of people who are experiencing this 21st C
 image::onto/InfoCenter.png[alt="Info",align="center"]
 
 <<<
-=== [.black]#Three Columns#
+== [.black]#Three Columns with 12 Concerns#
+=== [.black]#Embrace#
+image::humanistic/Embrace.png[alt="Embrace",align="center"]
+
+A tactical approach for human colaboration and adapting to change.
+
 [horizontal]
-Embrace::   A tactical approach for human colaboration and adapting to change.
-Innovate::  An innovative product definition, technology and delivery lifecycle.
-Encourage:: A shared strategic vision for discovery, benefits  governed by principles.
+Interact:: xxx
+Guide:: xxx
+Empower:: xxx
+Action:: xxx
+
+=== [.black]#Innovate#
+image::humanistic/Innovate.png[alt="Innovate",align="center"]
+
+An innovative product definition, technology and delivery lifecycle.
+
+[horizontal]
+Engage:: xxx
+Invent:: xxx
+Data:: xxx
+Connect:: xxx
+
+=== [.black]#Encourage#
+
+image::humanistic/Encourage.png[alt="Encourage",align="center"]
+
+A shared strategic vision for discovery, benefits and govern
+
+[horizontal]
+Augment:: xxx
+Intent:: xxx
+Ethics:: xxx
+Reflect:: xxx
 
 === [.black]#Three Rows#
 [horizontal]
@@ -96,7 +125,7 @@ Govern::      Improving maturity by careful consideration of assets with complia
 
 === [.black]#Thirty Six Studies#
 
-image::study/Information.png[alt="Info",align="center"]
+image::humanistic/InfoPrac.png[alt="Info",align="center"]
 
 <<<
 
@@ -107,7 +136,7 @@ image::study/Information.png[alt="Info",align="center"]
   ** The innovative flows from Product to Technology to Deliver are further
      broken out into a group of three.
 
-image::graph/Information.png[alt="Info",align="center"]
+image::graph/InfoConn.png[alt="Info",align="center"]
 
 <<<
 
