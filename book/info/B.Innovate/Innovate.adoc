@@ -2,41 +2,33 @@
 include::../../../dir/inc/DefPractice.adoc[]
 
 ==  [.black]#Innovate#
+image::humanistic/Innovate.png[alt="Innovate",align="center"]
 
-=== [.black]#Principles#
-include::Principles.adoc[]
-<<<
-
-=== [.black]#Product#
-include::../2.Domain/Preview.adoc[]
-<<<
-
-=== [.black]#What Makes Innovate Work#
-
-==== [.black]#Where Our Good Ideas Come From#
-
+=== [.black]#Engage#
 [horizontal]
-Connection:: Lots of connections as illustrated by the color coded rectangles.
-Ecosystem::  The connections alow ideas to flow and interactive in novel ways.
-Adjacent::   Interelated tiers represented by hexagons have adjacent sides with meaning.
-Hunches::    Everyone is Entitled to evolve their hunches.
-Extend::     Special purpose tiers are extended to other purposes.
-Convergent:: Propositions converge into the Product Portfolio and Services.
-Learning::   We Embrace Change to Adapt to, Discover and Govern new strategies.
-Space::      Our Practices provide a comprehensize space for "Good Ideas" to Emerge.
+Learning::    Leverage change to adopt new strategies.
+              Embrace change to Adapt to, Discover and Govern new strategies.
+Agenda::      We have no hidden agendas.
+Space::       We create the space and entitle everyone for "Good Ideas" to emerge.
+Continuous::  Everyone is involved in continuously improvment.
 
-==== [.black]#Improvement#
+=== [.black]#Invent#
 [horizontal]
-Refinement:: Our Products are successively refined by our Learn, Do and Share perspectives
-Continuous:: We continously track, Adapt and Deliver new Technology.
-Excellence:: We strive for excellence in everything we do. 
+Inception::   We appreciate where good ideas come From
+Hunches::     Ideas evolve over time as slow hunches rather than sudden breakthroughs.
+Extend::      Technologies engineered for one purpose are extended to other purposes.
+Refinement::  Improvement takes place at multiple levels.
 
-==== [.black]#Transparency#
+=== [.black]#Data#
 [horizontal]
-Share::      We Document, store and Warehouse all of our Information.
-Transparent: Our Infomation is always available at Learn, Do and Share perspectives.
-Agenda::     Our tactical Adaptations, Changes and strategic Vision are open.
+Share::       We document and share information freely with everyone.
+Transparent:: We are transparent with everything and everyone.
+Convergen::   Ideas converge in a shared physical or intellectual space.
+Excellence::  We strive for excellence in everything we do. 
 
-
-
-
+=== [.black]#Connect#
+[horizontal]
+Connection:: Chance favors the connected mind with serendipitous discoveries.
+             Lots of connections as illustrated by the color coded rectangles.
+Ecosystem::  Allows ideas to flow diffused and interact in novel ways.
+Adjacent::   Adjacency allows possibilities emerge and become connected.

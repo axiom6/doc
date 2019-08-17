@@ -1,9 +1,9 @@
 
 include::../../../dir/inc/DefPractice.adoc[]
 
-== [.black]#Introduction To Humanistic Practices#
+= [.black]#Introduction To Humanistic Practices#
 
-=== [.black]#A Humanistic Approach#
+== [.black]#A Humanistic Approach#
 
 "The Collaboration, Innovation & Encouragement from Open Source communities is
 the 21st century enlightenment that everyone is entitled too."
@@ -22,7 +22,7 @@ Humanistic Practices is all about.
 At first this may appear to be religious text, but this philosophy is what inspires the Open Source
 community at GitHub.
 
-=== [.black]#GitHub - The largest open source community in the world#
+== [.black]#GitHub - The largest open source community in the world#
 
 As of March 17, 2017 there are 27 million people with 57 open source reposities on GitHub.
 Join one or start your own.
@@ -36,7 +36,7 @@ Whatever your skill level, working on open source software is a great way to lea
 Work with the best in the field::
 Amazing developers use GitHub. Contribute code to projects that change how software is built.
 
-=== [.black]#What Can we Learn from Millions of People#
+== [.black]#What Can we Learn from Millions of People#
 
 We learn that great things have happened, are happening and will continue to happen.
 
@@ -46,11 +46,11 @@ We learn that great things have happened, are happening and will continue to hap
 
 But most important their are millions of people who are experiencing this 21st Century Enlightenment.
 
-=== [.black]#So What is 21st Century Enlightenment#
+== [.black]#So What is 21st Century Enlightenment#
 
-==== [.black]#TED Talks#
+=== [.black]#TED Talks#
 
-==== [.black]#The TED Radio Hour on Open Source#
+=== [.black]#The TED Radio Hour on Open Source#
 
 === [.black]#The Humanistic Approach#
 
@@ -58,54 +58,25 @@ But most important their are millions of people who are experiencing this 21st C
 * We successively refine what we Learn, Do and Share.
 
 <<<
-=== [.black]#Introducing a Humanistic Ontology#
+== [.black]#Introducing a Humanistic Ontology#
 
 image::onto/InfoCenter.png[alt="Info",align="center"]
 
 <<<
-== [.black]#Three Columns with 12 Concerns#
-=== [.black]#Embrace#
-image::humanistic/Embrace.png[alt="Embrace",align="center"]
-
-A tactical approach for human colaboration and adapting to change.
-
+== [.black]#Three Columns#
 [horizontal]
-Interact:: xxx
-Guide:: xxx
-Empower:: xxx
-Action:: xxx
+Embrace::   A tactical approach for human colaboration and adapting to change.
+Innovate::  An innovative product definition, technology and delivery lifecycle.
+Encourage:: A shared strategic vision for discovery, benefits and govern
 
-=== [.black]#Innovate#
-image::humanistic/Innovate.png[alt="Innovate",align="center"]
-
-An innovative product definition, technology and delivery lifecycle.
-
-[horizontal]
-Engage:: xxx
-Invent:: xxx
-Data:: xxx
-Connect:: xxx
-
-=== [.black]#Encourage#
-
-image::humanistic/Encourage.png[alt="Encourage",align="center"]
-
-A shared strategic vision for discovery, benefits and govern
-
-[horizontal]
-Augment:: xxx
-Intent:: xxx
-Ethics:: xxx
-Reflect:: xxx
-
-=== [.black]#Three Rows#
+== [.black]#Three Rows#
 [horizontal]
 Learn:: A collaborative means for conceiving products and discovering thier connection to customers.
 Do::    Technological adaptatiion and construction influenced by it benefits.
 Share:: Continuous change and delivery overseen by governance.
 
 <<<
-=== [.black]#Nine Practices#
+== [.black]#Nine Practices#
 
 Practices emerge at the intersections of columns and rows
 Practices focus the principles of its column and row.
@@ -123,13 +94,13 @@ Govern::      Improving maturity by careful consideration of assets with complia
 
 <<<
 
-=== [.black]#Thirty Six Studies#
+== [.black]#Thirty Six Studies#
 
 image::humanistic/InfoPrac.png[alt="Info",align="center"]
 
 <<<
 
-=== [.black]#Twelve Connections between Nine Practices#
+== [.black]#Twelve Connections between Nine Practices#
 
 * The six horizontal connections convey culture across columns.
 * The six vertical connections flow successive refinements down rows.
@@ -140,7 +111,7 @@ image::graph/InfoConn.png[alt="Info",align="center"]
 
 <<<
 
-=== [.black]#What's Next#
+== [.black]#What's Next#
 
 ////
 These working concepts are expressed in the following practices where
