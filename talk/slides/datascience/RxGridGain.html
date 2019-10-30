@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Grid Gain / Apache Ignite</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Reactive Paradigms in Data Science">
+  <meta name="author" content="Tom Flaherty">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <link href="../../../node_modules/font-awesome/css/font-awesome.css" rel="stylesheet">
+  <link href="../../../node_modules/reveal.js/css/reveal.css"          rel="stylesheet">
+  <link href="../../../node_modules/reveal.js/lib/css/zenburn.css"     rel="stylesheet">
+  <link href="../../../node_modules/reveal.js/css/theme/night.css"     rel="stylesheet" id="theme">
+  <link href="../../lib/css/talk.css"                                rel="stylesheet">
+
+  <script src="../../lib/js/jquery-3.2.1.js"></script>
+  <script src="../../../node_modules/reveal.js/lib/js/head.min.js"></script>
+  <script src="../../../node_modules/reveal.js/js/reveal.js"></script>
+  <script src="../../lib/js/util/Util.js"></script>
+  <script src="../../lib/js/RevealInit.js"></script>
+
+</head>
+
+<body>
+
+<div class="reveal">
+
+  <div class="slides">
+
+    <section>
+
+      <section>
+        <h1>Grid Gain / Apache Ignite</h1>
+        <a href="http://twitter.com/TheTomFlaherty">@TheTomFlaherty</a>
+      </section>
+
+      <section>
+        <h2>Outline</h2>
+        <ul>
+          <li>Too Many Technologies and Algorithms</li>
+          <li>Paradigm Shift</li>
+          <li>Underlying Principles
+            <ul>
+              <li>REST The Driving Force behind Big Data</li>
+              <li>Big Databases and the Cap Theorum</li>
+              <li>Hadoop and Map Reduce</li>
+              <li>Grid Gain</li>
+              <li>Functional Progamming</li>
+              <li>Reactive Manifesto</li>
+            </ul>
+          </li>
+          <li>Apache Spark
+            <ul>
+              <li>Responsive</li>
+              <li>Resilent</li>
+              <li>Elastic</li>
+              <li>Message Driven</li>
+            </ul>
+          </li>
+          <li>Architecture</li>
+        </ul>
+      </section>
+
+    </section>
+
+
+    <section>
+      <h2>Hadoop and Map Reduce</h2>
+    </section>
+
+    <section>
+      <section>
+        <h4>Grid Gain / Apache Ignite</h4>
+        <h4>Telepathic In Memory Computing</h4>
+        <img src="../../img/bigdata/GridGainFabric-770x428.png">
+      </section>
+      <section>
+        <h4>Grid Gain - Telepathic In Memory Computing</h4>
+        <img src="../../img/bigdata/IgniteFabric.jpg">
+      </section>
+      <section>
+        <h2>Key In-Memory Fabric Features</h2>
+        <p align="center">
+          Apache Ignite In-Memory Data Fabric is a high-performance,
+          integrated and distributed in-memory platform for computing
+          and transacting on large-scale data sets in real-time, orders
+          of magnitude faster than possible with traditional disk-based
+          or flash technologies.
+        </p>
+        <table cellspacing="5px" cellpadding="5px">
+          <tbody>
+          <tr>
+            <td class="datagrid"><a href="#">Data Grid</a></td>
+            <td class="computegrid"><a href="#">Compute Grid</a></td>
+            <td class="servicegrid"><a href="#">Service Grid</a></td>
+            <td class="streaming"><a href="#">Streaming</a></td>
+            <td class="hadoop"><a href="#">Hadoop Acceleration</a></td>
+          </tr>
+          <tr>
+            <td class="filesystem"><a href="#">Distributed File System</a></td>
+            <td class="clustering"><a href="#">Advanced Clustering</a></td>
+            <td class="messaging"><a href="#">Distributed Messaging</a></td>
+            <td class="events"><a href="#">Distributed Events</a></td>
+            <td class="datastructures"><a href="#">Distributed Data Structures</a></td>
+          </tr>
+          </tbody>
+        </table>
+      </section>
+      <section>
+        <p>Ignite and Spark share similar goals but "technologies are different".
+          While Spark was specially designed for data processing,
+          Ignite is "a more generic distributed computation middleware that lets
+          you easily farm out arbitrary tasks to nodes".
+        </p>
+      </section>
+      <section>
+        <p>With Spark, I think you get the following advantages over GridGain:
+          - High-level operators: Spark provides a range of operators including map, filter, groupBy, join, union, etc,
+          while GridGain only supports map and reduce (and the reduce only happens on one worker, i.e. it's not a "reduce by key" like MapReduce).
+          - Integration with storage systems: Spark works with any storage system that exposes a Hadoop InputFormat API
+          (HDFS, HBase, S3, Cassandra, Hypertable, etc).
+          - Ability to work with data that doesn't fit in memory: in this case,
+          Spark executes jobs the same way MapReduce and Dryad do (writing intermediate data to files).
+          - API: Spark's distributed dataset API looks much like standard Scala collections.
+          GridGain's API looks somewhat different, but this is probably because they support multiple JVM languages.
+
+          However, GridGain provides the following:
+
+          - It's a more generic distributed computation middleware that lets you easily farm out arbitrary tasks to nodes (not just data processing).
+          - It has APIs in Java and Groovy in addition to Scala (though we are working on other language bindings too!).
+        </p>
+      </section>
+    </section>
+
+    <section>
+      <h2>Functional Progamming</h2>
+    </section>
+
+
+
+    <section>
+      <h2>Architecture</h2>
+    </section>
+
+    <section>
+      <h2>References</h2>
+      <ul style="margin-left:0.6em; font-size:26px;">
+        <li><div class="width340">Big Data Driving Business</div><a href="http://www.ted.com/talks/philip_evans_how_data_will_transform_business">http://bit.ly/194auY9</a></li>
+        <li><div class="width340">REST</div><a href="http://www.reactivemanifesto.org/">www.reactivemanifesto.org/</a></li>
+        <li><div class="width340">CAP Theorum</div><a href="http://en.wikipedia.org/wiki/CAP_theorem">http://en.wikipedia.org/wiki/CAP_theorem</a></li>
+        <li><div class="width340">Hadoop</div><a href="http://hadoop.apache.org/">http://hadoop.apache.org/</a></li>
+        <li><div class="width340">Grid Gain</div><a href="http://www.gridgain.com/">http://www.gridgain.com/</a></li>
+        <li><div class="width340">Functional Programming</div><a href="http://deanwampler.github.io/polyglotprogramming/papers/BetterProgrammingThroughFP.pdf">http://bit.ly/1vAX8wI</a></li>
+        <li><div class="width340">The Reactive Manifesto</div><a href="http://www.reactivemanifesto.org/">www.reactivemanifesto.org/</a></li>
+        <li><div class="width340">Apache Spark</div><a href="https://spark.apache.org/">https://spark.apache.org/</a></li>
+        <li><div class="width340">RxMarbles</div><a href="http://rxmarbles.com/">http://rxmarbles.com/</a></li>
+        <li><div class="width340">PDF at Speaker Deck</div><a href="https://speakerdeck.com/axiom6">https://speakerdeck.com/axiom6/RxDataScience</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h1>THE END</h1>
+    </section>
+
+  </div>
+
+</div>
+
+
+</body>
+</html>

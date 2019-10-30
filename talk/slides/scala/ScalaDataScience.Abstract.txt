@@ -1,0 +1,44 @@
+
+
+
+Title: Getting to Know Scala For Data Science
+
+Abstract
+
+Recently Scala has gained a lot of traction in Data Science with Apache Spark.
+
+So what are Scala's success factors within a Data Science context?
+
+First lets look at data:
+
+Data loves Scala's strong typing for asserting its identity.
+Data loves resilient packaging, wrapped under the covers by Scala's Monads.
+Data loves a data driven world, which Scala accomplishes with Pattern Matching
+
+More Data love:
+
+Data loves to be promiscuous and not encapsulates by Objects, Scala' functional programming
+
+Second let looks at the scientists:
+
+Scientists love to alter reality, best accomplished by transforming data in Streams.
+Scientists love things to happen all at once, Scala concurrency
+Scientists love to have all their tools in one place with a multi-paradigm language on their desktop.
+
+More Scientists love:
+
+Scientists love to be prima-donnas
+
+Data Scientists love to fondle data
+
+So in this talk I will explore Scala's alignment to Data Science and then address the challenge's of
+Scala's multi-paradigm capabilities with simple code constructs.
+
+Note: C++ is also a multi-paradigm language and we know how that turned out, with only two peeple
+in the world who know it all.
+
+Bio:
+
+Tom Flaherty has been a Chief Architect for 20 years, where he first become enamored by Scala in 2006.
+Over the years he has written a symbolic math application in Scala at Glaxo in 2008 for molecular dynamics
+and in 2010 he created the Front Range Polyglot Panel and participated as its Scala expert.

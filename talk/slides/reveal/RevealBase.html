@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <title>Reveal Base Html</title>
+  <meta charset="utf-8">
+  <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+  <meta name="author" content="Hakim El Hattab">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+  <link href="../../node_modules/font-awesome/css/font-awesome.css" rel="stylesheet">
+  <link href="../../node_modules/reveal.js/css/reveal.css"          rel="stylesheet">
+  <link href="../../node_modules/reveal.js/lib/css/zenburn.css"     rel="stylesheet">
+  <link href="../../node_modules/reveal.js/css/theme/night.css"     rel="stylesheet" id="theme">
+  <link href="../../lib/css/talk.css"                               rel="stylesheet">
+
+  <script src="../../lib/js/jquery-3.2.1.js"></script>
+  <script src="../../node_modules/reveal.js/lib/js/head.min.js"></script>
+  <script src="../../node_modules/reveal.js/js/reveal.js"></script>
+  <script src="../../lib/js/RevealInit.js"></script>
+
+</head>
+
+<body>
+
+<div class="reveal">
+
+  <div class="slides">
+
+<section>
+  <h1>Reveal Base Html</h1>
+  <a style="font-size:3em;" href="http://twitter.com/TheTomFlaherty">@TheTomFlaherty</a>
+</section>
+
+<section>
+  <h2>Abstract</h2>
+  <p>
+  Data Science employs techniques from many fields that are so numerous that they make your head hurt.
+  So wouldn't be nice if there was a way for all these techniques to share their data and intent.
+  The answer is Reactive Streams that govern streams of data, especially “live” data with a publish and subscribe approach
+  that promotes data interaction while allowing the techniques and their dependencies to remain decoupled.
+  </p>
+</section>
+
+<section>
+  <h2>Outline</h2>
+  <ul>
+    <li>H1
+      <ul>
+        <li>T1</li>
+        <li>T2</li>
+      </ul>
+    </li>
+    <li>H2
+      <ul>
+        <li>T1</li>
+        <li>T2</li>
+      </ul>
+    </li>
+  </ul>
+
+</section>
+
+<section>
+  <h3>Getting to Know</h3>
+  <div></div>
+  <ul>
+    <li><a href="http://acko.net/blog/making-mathbox">Making-mathbox</a></li>
+    <li><a href="http://acko.net/files/fullfrontal/fullfrontal/slides-net">Making things with Maths</a></li>
+    <li><a href="http://bit.ly/ZXIkGu">Full Frontal You Tube Video</a></li>
+    <li><a href="https://github.com/unconed/MathBox.js">GitHub</a></li>
+  </ul>
+</section>
+
+<section id="themes">
+  <h2>Themes</h2>
+  <div>
+    reveal.js comes with a few themes built in: <br>
+    <!-- Hacks to swap themes after the page has loaded. Not flexible and only intended for the reveal.js demo deck. -->
+    <a href="#" onclick="document.getElementById('theme').setAttribute('href','../../node_modules/reveal.js/css/theme/black.css');     return false;">Black (default)</a> -
+    <a href="#" onclick="document.getElementById('theme').setAttribute('href','../../node_modules/reveal.js/css/theme/white.css');     return false;">White</a> -
+    <a href="#" onclick="document.getElementById('theme').setAttribute('href','../../node_modules/reveal.js/css/theme/league.css');    return false;">League</a> -
+    <a href="#" onclick="document.getElementById('theme').setAttribute('href','../../node_modules/reveal.js/css/theme/sky.css');       return false;">Sky</a> -
+    <a href="#" onclick="document.getElementById('theme').setAttribute('href','../../node_modules/reveal.js/css/theme/beige.css');     return false;">Beige</a> -
+    <a href="#" onclick="document.getElementById('theme').setAttribute('href','../../node_modules/reveal.js/css/theme/simple.css');    return false;">Simple</a> <br>
+    <a href="#" onclick="document.getElementById('theme').setAttribute('href','../../node_modules/reveal.js/css/theme/serif.css');     return false;">Serif</a> -
+    <a href="#" onclick="document.getElementById('theme').setAttribute('href','../../node_modules/reveal.js/css/theme/night.css');     return false;">Night</a> -
+    <a href="#" onclick="document.getElementById('theme').setAttribute('href','../../node_modules/reveal.js/css/theme/moon.css');      return false;">Moon</a> -
+    <a href="#" onclick="document.getElementById('theme').setAttribute('href','../../node_modules/reveal.js/css/theme/solarized.css'); return false;">Solarized</a>
+  </div>
+</section>
+
+<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
+  <h2>Tabular Tables</h2>
+  <table>
+    <thead>
+      <tr><th>Item</th><th>Value</th><th>Quantity</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Apples</td><td>$1</td><td>7</td><tr>
+      <tr><td>Lemonade</td><td>$2</td><td>18</td><tr>
+      <tr><td>Bread</td><td>$3</td><td>2</td><tr>
+    </tbody>
+  </table>
+</section>
+
+
+<section>
+  <h3>MathBox Chained Togther</h3>
+  <h4>Courtesy of tQuery</h4>
+  <pre class="javascript"><code style="font-size:1em; min-height:15em;">
+  mathbox
+  .viewport( { type:'cartesian', range:[[0,1], [0,1], [0,1]],
+  scale:[.7,.7,.7], polar:0 } )
+  .camera(   { orbit:4, phi:τ/4-.5, theta:.7 } )
+  .grid( { axis:[0,1], color:0xa0a0a0, offset:[0,0,0], ticks:[10,10] } )
+  .grid( { axis:[1,2], color:0xa0a0a0, offset:[0,0,0], ticks:[10,10] } )
+  .grid( { axis:[0,2], color:0xa0a0a0, offset:[0,0,0], ticks:[10,10] } )
+  .surface( { shaded:true,  domain:[[0,1],[0,1]], n:[32,32],
+  expression:surfaceWaves, opacity:.999  } )
+  .surface( { shaded:false, domain:[[0,1],[0,1]], n:[ 2, 2],
+  expression:surfaceSlice, opacity:.5, color:0x20C050 } );
+  </code></pre>
+</section>
+
+<section>
+  <h4 style="color:tan;">Differential Calculus with Pattern Matching case classes</h4>
+  <pre class="scala"><code style="font-size:1em; min-height:24em">
+    trait Differentiate
+    {
+      this:Exp => // Makes Differentiate aware of Exp for Exp case classes
+
+      def d( e:Exp ) : Exp = e match // d(u) and d(v) are recursive calls
+      {
+        case Num(n)   => Num(0)       // A diffential of a constant number is zero
+        case Var(s)   => Dif(Var(s))  // Variable "x" becomes dx
+        case Par(u)   => Par(d(u))    // Express parentheses by wrapping  Par(u)
+        case Neg(u)   => Neg(d(u))
+        case Pow(u,v) => Mul(Mul(v,Pow(u,Sub(v,1))),d(u))
+        case Mul(u,v) => Mul(Add(Mul(v,d(u))),u),d(v))
+        case Div(u,v) => Div(Sub(Mul(v,d(u)),Mul(u,d(v))),Pow(v,2))
+        case Add(u,v) => Add(d(u),d(v))
+        case Sub(u,v) => Sub(d(u),d(v))
+        case Dif(u)   => Dif(d(u))      // 2rd dif
+      }
+    }
+  </code></pre>
+</section>
+
+<section>
+  <h4>Differential Calculus with Pattern Matching and an Internal DSL</h4>
+  <pre class="scala"><code style="font-size:1em; min-height:24em">
+  trait Differentiate
+  {
+    this:Exp => // Makes Differentiate aware of Exp for Internal DSL
+
+    def d( e:Exp ) : Exp = e match   // d(u) and d(v) are recursive calls
+    {
+      case Num(n)   => 0             // A diffential of a constant number is zero
+      case Var(x)   => Dif(Var(x))   // Variable "x" becomes dx
+      case Par(u)   => Par(d(u))     // Express parentheses by wrapping  Par(u)
+      case Neg(u)   => -d(u)
+      case Pow(u,n) => n * u~^(n-1) * d(u)  //
+      case Mul(u,v) => v * d(u) + u * d(v)
+      case Div(u,v) => Par( v*d(u) - u*d(v) ) / v~^2
+      case Add(u,v) => d(u) + d(v)
+      case Sub(u,v) => d(u) - d(v)
+      case Dif(u)   => Dif(d(u))  // Wrap Dif(u) around d(u) for 2rd differential
+    }
+  }
+  </code></pre>
+</section>
+
+<section>
+  <h4>Clojure</h4>
+  <pre class="clojure"><code style="font-size:1em; min-height:24em">
+    ; Cool Clojure
+    (def
+      ^{:macro true
+        :added "1.0"}
+      let (fn* let [&form &env & decl] (cons 'let* decl)))
+
+    (def ^:dynamic chunk-size 17)
+
+    (defn next-chunk [rdr]
+      (let [buf (char-array chunk-size)
+            s (.read rdr buf)]
+      (when (pos? s)
+        (java.nio.CharBuffer/wrap buf 0 s))))
+
+    (defn chunk-seq [rdr]
+      (when-let [chunk (next-chunk rdr)]
+        (cons chunk (lazy-seq (chunk-seq rdr)))))
+  </code></pre>
+</section>
+
+
+<section>
+  <h2>Creative Commons Images</h2>
+</section>
+
+<section>
+  <h2>References</h2>
+  <ul style="margin-left:0.6em; font-size:26px;">
+    <li><div class="width340">The Reactive Manifesto</div><a href="http://www.reactivemanifesto.org/">www.reactivemanifesto.org/</a></li>
+    <li><div class="width340">RxMarbles</div><a href="http://rxmarbles.com/">http://rxmarbles.com/</a></li>
+    <li><div class="width340">RxJS</div><a href="https://github.com/Reactive-Extensions/RxJS">https://github.com/Reactive-Extensions/RxJS</a></li>
+    <li><div class="width340">Leaflet.js</div><a href="http://leafletjs.com">leafletjs.com</a></li>
+    <li><div class="width340">PDF at Speaker Deck</div><a href="https://speakerdeck.com/axiom6">https://speakerdeck.com/axiom6/RxStreams</a></li>
+    <li><div class="width340">Demo Source at GitHub</div><a href="https://github.com/axiom6/Talks">https://github.com/axiom6/Talks/Reactive/RxStreams</a></li>  </ul>
+</section>
+
+<section>
+  <h1 class="shadow">THE END</h1>
+  <ul style="margin-left:0.6em; font-size:30px;">
+    <li><div class="width340">PDF at Speaker Deck</div><a href="https://speakerdeck.com/axiom6">https://speakerdeck.com/axiom6</a></li>
+    <li><div class="width340">Slides Demos at GitHub</div><a href="https://github.com/axiom6/Talks">https://github.com/axiom6/Talks</a></li>
+  </ul>
+</section>
+
+
+  </div>
+</div>
+
+
+</body>
+</html>
