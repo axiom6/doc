@@ -9,17 +9,16 @@
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
-  <link href="../../../node_modules/font-awesome/css/font-awesome.css" rel="stylesheet">
-  <link href="../../../node_modules/reveal.js/css/reveal.css"          rel="stylesheet">
-  <link href="../../../node_modules/reveal.js/lib/css/zenburn.css"     rel="stylesheet">
-  <link href="../../../node_modules/reveal.js/css/theme/night.css"     rel="stylesheet" id="theme">
-  <link href="../../lib/css/talk.css"                                rel="stylesheet">
-
+  
+  <link href="../../lib/css/font-awesome.css" rel="stylesheet">
+  <link href="../../lib/css/reveal.css"       rel="stylesheet">
+  <link href="../../lib/css/night.css"        rel="stylesheet" id="theme">
+  <link href="../../lib/css/zenburn.css"      rel="stylesheet">
+  <link href="../../lib/css/talk.css"         rel="stylesheet">
+  
   <script src="../../lib/js/jquery-3.2.1.js"></script>
-  <script src="../../../node_modules/reveal.js/lib/js/head.min.js"></script>
-  <script src="../../../node_modules/reveal.js/js/reveal.js"></script>
-  <script src="../../lib/js/Util.js"></script>
+  <script src="../../lib/js/head.min.js"></script>
+  <script src="../../lib/js/reveal.js"></script>
   <script src="../../lib/js/RevealInit.js"></script>
 
 </head>
@@ -79,12 +78,12 @@
 
   <section id="SoManyTechnologies">
     <h2>So Many Technologies</h2>
-    <img src="../../img/bigdata/BigDataOpenSourceTools-800x450.jpg">
+    <img src="../../img/bigdata/BigDataOpenSourceTools-800x450.jpg" alt="x">
   </section>
 
     <section id="SoMuc Math">
       <h2>So Much Math</h2>
-      <img src ="../../img/bigdata/Data-Science-Chalk-Board.jpg">
+      <img src ="../../img/bigdata/Data-Science-Chalk-Board.jpg" alt="x">
     </section>
 
     <section id="PhilipEvans">
@@ -111,7 +110,7 @@
       <h3 style="font-size:1.4em;">A 100 fold increase in data volume under URIs</h3>
       <h4>Is driving the growth of the ecosystem</h4>
       <h4>The Big Data Market Forecast</h4>
-      <img src="../../img/bigdata/BigDataMarketForecast2013.png">
+      <img src="../../img/bigdata/BigDataMarketForecast2013.png" alt="x">
     </section>
 
     <section id="Rest">
@@ -128,7 +127,7 @@
       </ul>
       <table style="font-size:18px; color:beige; margin-top:0.75em;">
         <thead>
-        <tr align="center"><th>Operation</th><th>Method</th><th>URI</th><th>Database Changes</th><th>Return</th></tr>
+        <tr><th>Operation</th><th>Method</th><th>URI</th><th>Database Changes</th><th>Return</th></tr>
         </thead>
         <tbody>
         <tr><td>Create</td><td>POST</td>  <td>.../sales/cars           </td><td>Row Created from JSON</td><td>ID new</td><tr>
@@ -142,14 +141,14 @@
     </section>
 
     <section id="CapTheorum" style="background-color:black; padding:5px;">
-      <img src ="../../img/bigdata/CapTheorum.png" class="rx-img">
+      <img src ="../../img/bigdata/CapTheorum.png" class="rx-img" alt="x">
     </section>
 
     <section>
       <section id="GridGain">
         <h2>Grid Gain / Apache Ignite</h2>
         <h3>A Telepathic In Memory Computing Fabric</h3>
-        <img src="../../img/bigdata/GridGainFabric-770x428.png">
+        <img src="../../img/bigdata/GridGainFabric-770x428.png" alt="x">
       </section>
       <section id="">
         <h3>Grid Gain / Apache Ignite and Spark</h3>
@@ -166,7 +165,7 @@
     <section id="ApacheSparkTrad">
       <h2>Apache Spark</h2>
       <h4>Traditional View</h4>
-      <img src="../../img/spark/spark-stack.png" class="rx-img">
+      <img src="../../img/spark/spark-stack.png" class="rx-img" alt="x">
       <ul style="text-align:left; font-size:24px; list-style-type: none;">
         <li><span class="width150">Core:      </span>Distributed task dispatching, scheduling, and basic I/O</li>
         <li><span class="width150">GraphX:    </span>A distributed graph topology for RDDs based on Pregel for Page Rank</li>
@@ -177,7 +176,7 @@
     </section>
 
     <section id="ApacheSparkAll"  style="margin:0; padding:0; background-color:rgb(49,28,39);">
-      <img src="../../img/spark/Spark.png" class="rx-img">
+      <img src="../../img/spark/Spark.png" class="rx-img" alt="x">
       <ul id="icondesc" style="text-align:left; line-height:1.1; font-size:22px; list-style-type: none; color:wheat;">
         <li><i class="fa fa-database fa-rotate-90"></i> <span class="width150pad">RDD:        </span>Resilient Distributed Datasets logically partitioned across servers</li>
         <li><i class="fa fa-joomla"></i>                <span class="width150pad">GraphX:     </span>Distributed graph topology for RDDs based on Pregel (Page Rank)</li>
@@ -200,17 +199,17 @@
       <section id="Manifesto">
         <h2>The Reactive Manifesto</h2>
         <a href="http://www.reactivemanifesto.org/">www.reactivemanifesto.org/</a>
-        <img src ="../../img/reactive/reactive-traits.svg" class="rx-svg">
+        <img src ="../../img/reactive/reactive-traits.svg" class="rx-svg" alt="x">
         <ul style="text-align:left; font-size:24px; list-style-type: none;">
-          <li><img src="../../img/reactive/responsive.svg" class="rx-icon"><span class="width240">Responsive:    </span><span class="width150">In Memory </span>Always respond meaningfully in a timely manner</li>
-          <li><img src="../../img/reactive/elastic.svg"    class="rx-icon"><span class="width240">Elastic:       </span><span class="width150">Cluster   </span>Stay responsive under varying workload</li>
-          <li><img src="../../img/reactive/resilient.svg"  class="rx-icon"><span class="width240">Resilient:     </span><span class="width150">RDD       </span>Stay responsive in the face of failure</li>
-          <li><img src="../../img/reactive/message.svg"    class="rx-icon"><span class="width240">Message Driven:</span><span class="width150">Streaming </span>Wrap and stream messages asynchronously</li>
+          <li><img src="../../img/reactive/responsive.svg" class="rx-icon" alt="x"><span class="width240">Responsive:    </span><span class="width150">In Memory </span>Always respond meaningfully in a timely manner</li>
+          <li><img src="../../img/reactive/elastic.svg"    class="rx-icon" alt="x"><span class="width240">Elastic:       </span><span class="width150">Cluster   </span>Stay responsive under varying workload</li>
+          <li><img src="../../img/reactive/resilient.svg"  class="rx-icon" alt="x"><span class="width240">Resilient:     </span><span class="width150">RDD       </span>Stay responsive in the face of failure</li>
+          <li><img src="../../img/reactive/message.svg"    class="rx-icon" alt="x"><span class="width240">Message Driven:</span><span class="width150">Streaming </span>Wrap and stream messages asynchronously</li>
         </ul>
       </section>
 
       <section id="Responsive">
-        <h2 class="rx-h2"><img src="../../img/reactive/responsive.svg" class="rx-h2-img"><span class="rx-h2-span">Responsive</span></h2>
+        <h2 class="rx-h2"><img src="../../img/reactive/responsive.svg" class="rx-h2-img" alt="x"><span class="rx-h2-span">Responsive</span></h2>
         <h4>Always respond meaningfully in a timely manner</h4>
         <ul>
           <li>"In Memory" improves performance by 1-2 orders of magnitude</li>
@@ -223,7 +222,7 @@
       </section>
 
       <section id="Elastic">
-        <h2 class="rx-h2"><img src="../../img/reactive/elastic.svg" class="rx-h2-img"><span class="rx-h2-span">Elastic</span></h2>
+        <h2 class="rx-h2"><img src="../../img/reactive/elastic.svg" class="rx-h2-img" alt="x"><span class="rx-h2-span">Elastic</span></h2>
         <h4>Stay responsive under varying workload</h4>
         <ul>
           <li>Elasticity is the key value proposition for cloud hosting</li>
@@ -234,7 +233,7 @@
       </section>
 
       <section id="Resilient">
-        <h2 class="rx-h2"><img src="../../img/reactive/resilient.svg" class="rx-h2-img"><span class="rx-h2-span">Resilient</span></h2>
+        <h2 class="rx-h2"><img src="../../img/reactive/resilient.svg" class="rx-h2-img" alt="x"><span class="rx-h2-span">Resilient</span></h2>
         <h4>Stay responsive in the face of failure</h4>
         <ul>
           <li>Clustered servers and network links fail all the time</li>
@@ -247,7 +246,7 @@
       </section>
 
       <section id="MessageDriven">
-        <h2 class="rx-h2"><img src="../../img/reactive/message.svg" class="rx-h2-img"><span class="rx-h2-span">Message Driven</span></h2>
+        <h2 class="rx-h2"><img src="../../img/reactive/message.svg" class="rx-h2-img" alt="x"><span class="rx-h2-span">Message Driven</span></h2>
         <h4>Wrap and stream messages asynchronously</h4>
         <h4>Message Streams facilitate Data Science with these benefits</h4>
         <table style="font-size:18pt; color:wheat;">

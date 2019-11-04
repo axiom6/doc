@@ -13,18 +13,19 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-
-  <link rel="stylesheet" href="../../../node_modules/reveal.js/css/reveal.css">
-  <link rel="stylesheet" href="../../../node_modules/reveal.js/css/theme/black.css" id="theme">
-  <link rel="stylesheet" href="../../../node_modules/reveal.js/lib/css/zenburn.css">  <!-- Code syntax highlighting -->
-
-  <!-- Printing and PDF exports -->
+  
+  <link rel="stylesheet" href="../../lib/css/reveal.css">
+  <link rel="stylesheet" href="../../lib/css/black.css" id="theme">
+  <link rel="stylesheet" href="../../lib/css/zenburn.css">
+  
+    <!-- Printing and PDF exports -->
   <script>
+    var cssdir = '../../lib/css/';
     var link = document.createElement( 'link' );
     link.rel = 'stylesheet';
     link.type = 'text/css';
-    link.href = window.location.search.match( /print-pdf/gi ) ? '../../../node_modules/reveal.js/css/print/pdf.css'
-                                                              : '../../../node_modules/reveal.js/css/print/paper.css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? cssdir + 'print/pdf.css'
+                                                              : cssdir + 'paper.css';
     document.getElementsByTagName( 'head' )[0].appendChild( link );
   </script>
 
@@ -71,7 +72,8 @@
         <p>That's it, time to go back up.</p>
         <br>
         <a href="#/2">
-          <img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(180deg);">
+          <!--img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up
+          arrow" style="-webkit-transform: rotate(180deg);"-->
         </a>
       </section>
     </section>
@@ -89,7 +91,7 @@
         Press <strong>ESC</strong> to enter the slide overview.
       </p>
       <p>
-        Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
+        Hold down alt and click on any element to zoom in on it using . Alt + click anywhere to zoom back out.
       </p>
     </section>
 
@@ -318,7 +320,9 @@
     <section>
       <h2>Export to PDF</h2>
       <p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, here's an example:</p>
-      <iframe src="//www.slideshare.net/slideshow/embed_code/42840540" width="445" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+      <!--iframe src="//www.slideshare.net/slideshow/embed_code/42840540" width="445" height="355" frameborder="0"
+      marginwidth="0" marginheight="0" scrolling="no" style="border:3px solid #666; margin-bottom:5px; max-width:
+      100%;" allowfullscreen> </iframe-->
     </section>
 
     <section>
@@ -372,24 +376,25 @@
 
 </div>
 
-<script src="../../node_modules/reveal.js/lib/js/head.min.js"></script>
-<script src="../../node_modules/reveal.js/js/reveal.js"></script>
+<script src="../../lib/js/head.min.js"></script>
+<script src="../../lib/js/reveal.js"></script>
 
 <script>
 
 
   // Full list of configuration options available here:
   // https://github.com/hakimel/reveal.js#configuration
+  jsdir = '../../lib/js/'
   Reveal.initialize( { controls:true, progress:true, history:true, center:true,
     transition: 'slide', // none/fade/slide/convex/concave/zoom
     dependencies: [                                            // Optional libraries used to extend on reveal.js
-      { src: '../../node_modules/reveal.js/lib/js/classList.js',           condition: function() { return !document.body.classList; } },
-      { src: '../../node_modules/reveal.js/plugin/markdown/marked.js',     condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-      { src: '../../node_modules/reveal.js/plugin/markdown/markdown.js',   condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-      { src: '../../node_modules/reveal.js/plugin/highlight/highlight.js', condition: function() { return !!document.querySelector( 'pre code'        ); },
+      { src: jsdir + 'classList.js', condition: function() { return !document.body.classList; } },
+      { src: jsdir + 'marked.js',    condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+      { src: jsdir + 'markdown.js',  condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+      { src: jsdir + 'highlight.js', condition: function() { return !!document.querySelector( 'pre code'        ); },
          callback: function() { hljs.initHighlightingOnLoad(); }, async:true },
-      { src: '../../node_modules/reveal.js/plugin/zoom-js/zoom.js', async: true },
-      { src: '../../node_modules/reveal.js/plugin/notes/notes.js',  async: true }    ]
+      { src: jsdir + 'zoom.js',   async: true },
+      { src: jsdir + 'notes.js',  async: true }    ]
   });
 
 

@@ -12,6 +12,9 @@
 /*********************************************
  * GLOBAL STYLES
  *********************************************/
+
+@import url(../../lib/font/source-sans-pro/source-sans-pro.css);
+
 body {
     background-color: #111; }
 
