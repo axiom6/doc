@@ -1,12 +1,16 @@
-//include::../../../dir/inc/DefPractice.adoc[]
 
-:data-uri:
+:linkcss:
 include::../../dir/inc/DefBook.adoc[]
 
-= [.black]#Humanistic Practices#
+[preface]
+include::readme.adoc[]
 
-include::0.Introduction/Introduction.adoc[]
+include::1.Introduction/Introduction.adoc[]
 
-include::8.Principles/Principles.adoc[]
+include::2.Principles/Principles.adoc[]
 
-include::9.Ontology/Ontology.adoc[]
+include::3.Refinement/Refinement.adoc[]
+
+//include::4.Connection/Connection.adoc[]
+
+include::5.Information/Information.adoc[]

@@ -13,6 +13,6 @@
 :iconsdir:   ../../dir/ico
 :stylesdir:  ../../dir/css
 :scriptsdir: ../../dir/js
-:stylesheet: axbook.css
+:stylesheet: ../../dir/css/axbook.css
 :pdf-style: ../../dir/yml/default-theme.yml
 :dirs: true

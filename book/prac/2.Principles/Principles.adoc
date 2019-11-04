@@ -1,3 +1,4 @@
+
 include::../../../dir/inc/DefPractice.adoc[]
 
 == [.black]#Principles#
@@ -13,3 +14,4 @@ include::Innovate.adoc[]
 === [.black]#Encourage#
 include::Encourage.adoc[]
 <<<
+

@@ -1,7 +1,7 @@
 
 include::../../../dir/inc/DefPractice.adoc[]
 
-= [.black]#5. Information#
+== [.black]#5. Information#
 
 include::Collaborate.adoc[]
 <<<

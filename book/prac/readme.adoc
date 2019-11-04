@@ -1,0 +1,14 @@
+
+= Humanistic Practices
+
+== [.black]#Readme#
+
+=== [.black]#Introduction#
+
+=== [.black]#Principles#
+
+=== [.black]#Refinement#
+
+=== [.black]#Connection#
+
+=== [.black]#Information#

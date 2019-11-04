@@ -18,7 +18,8 @@
 :scriptsdir:    ../../dir/js
 :pdf-stylesdir: ../../dir/yml
 :pdf-style: default-theme.yml
-:stylesheet: Text.css
+//:stylesheet: Text.css
+:stylesheet: ../../dir/css/axbook.css
 :linkcss:
 :dirs: true
 // :pdf-fontssdir: ./dir/font

@@ -1,0 +1,16 @@
+
+include::../../../dir/inc/DefPractice.adoc[]
+
+== [.black]#Refinement#
+
+=== [.black]#Learn#
+include::Learn.adoc[]
+<<<
+
+=== [.black]#Do#
+include::Do.adoc[]
+<<<
+
+=== [.black]#Share#
+include::Share.adoc[]
+<<<

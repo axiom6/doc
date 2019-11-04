@@ -3,5 +3,9 @@ include::../../../dir/inc/DefPractice.adoc[]
 
 == [.black]#So What is 21st Century Enlightenment#
 
+== [.black]#Ontology#
+include::Ontology.adoc[]
+<<<
+
 
 

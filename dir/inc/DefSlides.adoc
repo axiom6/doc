@@ -17,5 +17,5 @@
 :scriptsdir:    ../../dir/js
 :pdf-stylesdir: ../../dir/yml
 :pdf-style: default-theme.yml
-:stylesheet: axbook.css
+:stylesheet: ../../dir/css/axbook.css
 :dirs: true

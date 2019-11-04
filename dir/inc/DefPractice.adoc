@@ -5,7 +5,6 @@ ifndef::dirs[]
 :icons: font
 :linkcss:
 :stylesheet: ../dir/css/axbook.css
-:stylesheet: ../dir/css/axbook.css
 :imagesdir:  ../img
 :dirs: true
 endif::[]
